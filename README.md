@@ -122,6 +122,7 @@ The GPU scripts read the data folder on the GPU server from `DATA_ROOT`. Hardwar
 ## Credits
 
 - AI tools were used for documentation and debugging.
+- The repository started from the Hack Apertus template (github.com/HackApertus/liebefeld).
 - The decision-model training and serving code is adapted from Kev (github.com/jaredpalmer/kev, Apache-2.0), an open implementation of the idea behind TypeSafe's System One models.
 - Data: OpenParlData.ch (open government data); Curia Vista data from the Parliamentary Services of the Federal Assembly.
 - Models: Apertus 1.5 by the Swiss AI Initiative (Apache-2.0, gated download with an acceptable use policy); harrier-oss-v1-0.6b (MIT).

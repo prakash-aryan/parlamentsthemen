@@ -83,7 +83,7 @@ On digitalisation, Apertus-ParlTopics-8B outperforms the legal XLM-RoBERTa (0.46
 
 ![Results](figures/fig_results.png)
 
-**Further results.** The recall for digitalisation is equal for federal and cantonal affairs (0.77) and reaches 0.90 or more in every language group at the monitoring threshold. Grouped by the authors' parliamentary groups, the F1 scores on 1,000 federal affairs lie between 0.66 and 0.74 without aggregate over- or under-assignment.
+**Further results.** The topic cards define subjects only and contain no judgement of political positions. The recall for digitalisation is equal for federal and cantonal affairs (0.77) and reaches 0.90 or more in every language group at the monitoring threshold. Grouped by the authors' parliamentary groups, the F1 scores on 1,000 federal affairs lie between 0.66 and 0.74 without aggregate over- or under-assignment.
 
 ## 5. Limitations
 
@@ -98,7 +98,8 @@ On digitalisation, Apertus-ParlTopics-8B outperforms the legal XLM-RoBERTa (0.46
 - **Runtime:** 4.9 affairs per second for one topic and 0.8 for all 29 topics on one GPU; one topic over all 318,801 affairs requires about 18 GPU-hours.
 - **Setup:** copy `.env.example` to `.env`, set `LLM_NAME`, `LLM_BASE_URL`, `LLM_API_KEY` and `DATABASE_URL`, and start the services with `docker compose` as described in the README, which also specifies the layout of the raw data.
 - **Code and results:** the scripts for training and serving the model are in `scripts/gpu/`. The training configuration, the metrics, the adapter and the head are published at https://huggingface.co/merabro/Apertus-ParlTopics-8B.
-- **Repository:** https://github.com/prakash-aryan/parlamentsthemen
+- **Seeds and split:** seed 20261018 for all samples and the bootstrap; the split is by date (before 2024 for training and calibration, 2024 to 2026 for testing).
+- **Repository:** https://github.com/prakash-aryan/parlamentsthemen, code as of commit e921cda
 
 ## License
 
