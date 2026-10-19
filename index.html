@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parlamentsthemen</title>
+<style>
+@font-face { font-family: "Excali"; src: url("fonts/Excalifont-Latin.woff2") format("woff2"); }
+@font-face { font-family: "Comic"; src: url("fonts/ComicShanns-Latin.woff2") format("woff2"); unicode-range: U+0000-218F, U+2200-10FFFF; }
+@font-face { font-family: "Comic"; src: url("fonts/ComicShanns-Symbols.woff2") format("woff2"); unicode-range: U+2190-21FF; }
+
+:root {
+  --ink: #1e1e1e;
+  --red: #e03131;
+  --blue: #1971c2;
+  --grey: #868e96;
+}
+@page { size: 1600px 900px; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: #ffffff; height: 100%; }
+body { font-family: "Comic", sans-serif; color: var(--ink); overflow: hidden; cursor: default; }
+
+#stage { position: absolute; left: 0; top: 0; width: 1600px; height: 900px; transform-origin: 0 0; }
+.slide {
+  position: absolute; left: 0; top: 0; width: 1600px; height: 900px; overflow: hidden; background: #ffffff;
+  padding: 36px 60px 36px; display: flex; flex-direction: column; align-items: center;
+  opacity: 0; visibility: hidden; transition: opacity .5s ease, visibility 0s linear .5s;
+}
+.slide.active { opacity: 1; visibility: visible; transition: opacity .5s ease, visibility 0s; }
+.slide > svg.deco { position: absolute; left: 0; top: 0; width: 1600px; height: 900px; z-index: 0; pointer-events: none; overflow: visible; }
+.slide > *:not(svg) { position: relative; z-index: 1; }
+.slide > .abs, .abs { position: absolute; }
+.slide.full { padding: 0; }
+#s-explainer { isolation: isolate; }
+#explainer, #explainer-still { z-index: -1 !important; }
+.pageno { position: absolute !important; right: 24px; bottom: 12px; font-size: 14px; color: var(--grey); }
+.fns { position: absolute !important; left: 60px; right: 80px; bottom: 10px; font-size: 12px; line-height: 1.38; color: var(--grey); }
+.fns p { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+sup.fn { font-size: 0.62em; color: var(--blue); vertical-align: super; line-height: 0; margin-left: 1px; }
+.fns sup.fn { font-size: 0.9em; vertical-align: baseline; color: var(--grey); }
+
+[data-at] { opacity: 0; transform: translateY(6px); transition: opacity .6s ease, transform .6s ease; }
+[data-at].on { opacity: 1; transform: none; }
+.deco g.fade { opacity: 0; transition: opacity .6s ease; }
+.deco g.fade.on { opacity: 1; }
+.deco g.grow { transform-box: fill-box; transform-origin: 0 50%; transform: scaleX(0); transition: transform 1.3s cubic-bezier(.2,.7,.2,1); }
+.deco g.grow.on { transform: scaleX(1); }
+.instant, .instant *, .instant g, .instant path { transition: none !important; }
+
+h1, h2, .hand { font-family: "Excali", "Comic", sans-serif; font-weight: normal; }
+h1 { color: var(--red); font-size: 112px; line-height: 1.05; text-align: center; }
+h2 { color: var(--red); font-size: 58px; line-height: 1.1; text-align: center; }
+h3 { font-family: "Excali", "Comic", sans-serif; font-weight: normal; color: var(--red); font-size: 30px; margin-bottom: 8px; }
+.ul { display: inline-block; }
+.sub { font-size: 23px; text-align: center; margin-top: 6px; line-height: 1.35; }
+.red { color: var(--red); }
+.blue { color: var(--blue); }
+.small { font-size: 16px; line-height: 1.35; }
+.center { text-align: center; }
+img.sk { display: block; object-fit: contain; }
+.rb { padding: 14px 20px; }
+.quote { font-size: 23px; text-align: center; line-height: 1.4; padding: 14px 30px; }
+.row { display: flex; gap: 26px; align-items: stretch; }
+.col { display: flex; flex-direction: column; }
+.grow1 { flex: 1; }
+.frame { padding: 8px; }
+.frame img, .frame video { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+ul.dots { list-style: none; }
+ul.dots li { position: relative; padding-left: 24px; margin: 6px 0; font-size: 18.5px; line-height: 1.34; }
+ul.dots li::before { content: ""; position: absolute; left: 2px; top: 9px; width: 10px; height: 10px; border-radius: 50% 45% 50% 48%; background: var(--ink); }
+
+/* problem */
+.counter { width: 330px; text-align: center; font-size: 20px; line-height: 1.35; padding: 16px 18px; }
+.counter .big { font-family: "Excali", sans-serif; font-size: 46px; line-height: 1.1; display: block; }
+
+/* flow and pipeline */
+.node { position: absolute !important; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-size: 16px; line-height: 1.3; padding: 10px 14px; }
+.node.ops { font-size: 15px; line-height: 1.28; padding: 8px 12px; }
+.node .nm { font-family: "Excali", sans-serif; font-size: 23px; color: var(--red); line-height: 1.15; margin: 4px 0 2px; }
+.node img { display: block; object-fit: contain; }
+.legend { display: flex; gap: 24px; align-items: center; font-size: 15.5px; }
+.legend span.item { display: inline-flex; align-items: center; gap: 8px; }
+.picon { display: inline-block; width: 20px; height: 24px; }
+.pills { position: absolute; top: -15px; right: 8px; display: flex; gap: 6px; }
+.pill { font-size: 13.5px; line-height: 1.25; padding: 3px 9px; white-space: nowrap; }
+
+/* results */
+.panel { padding: 12px 20px; display: flex; flex-direction: column; gap: 8px; }
+.grp { font-family: "Excali", sans-serif; color: var(--red); font-size: 25px; line-height: 1.15; }
+.apgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 22px; }
+.apl { font-size: 14.5px; line-height: 1.3; min-height: 38px; }
+.barrow { display: flex; align-items: center; gap: 10px; font-size: 16px; margin-top: 5px; }
+.barlabel { width: 112px; text-align: right; font-size: 15px; flex: none; }
+.bar { height: 24px; padding: 0; flex: none; }
+.val { font-family: "Excali", sans-serif; font-size: 21px; white-space: nowrap; }
+table.cmp { border-collapse: collapse; font-size: 16px; }
+table.cmp td, table.cmp th { padding: 5px 9px; text-align: left; vertical-align: middle; line-height: 1.25; }
+table.cmp th { font-family: "Excali", sans-serif; font-weight: normal; color: var(--blue); font-size: 18px; }
+.covrow { display: flex; align-items: center; gap: 12px; }
+.covl { width: 210px; flex: none; font-size: 15px; line-height: 1.25; text-align: right; }
+.track { display: flex; }
+.seg { height: 32px; display: flex; align-items: center; justify-content: center; font-size: 14.5px; white-space: nowrap; }
+.covaxis { display: flex; margin-left: 222px; font-size: 14px; color: var(--blue); white-space: nowrap; }
+
+.bignum { font-family: "Excali", sans-serif; font-size: 34px; line-height: 1.05; color: var(--ink); white-space: nowrap; }
+.bignum .unit { font-family: "Comic", sans-serif; font-size: 15px; color: var(--blue); }
+.st { font-size: 14.5px; line-height: 1.3; }
+table.cmp.tight td, table.cmp.tight th { padding: 3px 8px; }
+table.cmp.tight th { font-size: 15px; line-height: 1.15; }
+table.cmp.cmpx td, table.cmp.cmpx th { padding: 2px 6px; }
+table.cmp.cmpx th { font-size: 14px; }
+.callout { font-family: "Excali", sans-serif; font-size: 21px; line-height: 1.15; color: var(--blue); }
+.stat { flex: 1; display: flex; flex-direction: column; gap: 3px; }
+.stnum { font-size: 35px; }
+.stwhat { font-size: 16px; font-weight: bold; line-height: 1.25; }
+.stcmp { font-size: 13.5px; color: #868e96; line-height: 1.25; }
+a.lnk { color: var(--blue); text-decoration: underline; cursor: pointer; }
+.langchip { background: #ffffffdd; border-radius: 6px; padding: 5px 9px; display: flex; flex-direction: column; gap: 2px; }
+.kv { display: flex; gap: 14px; align-items: flex-start; }
+.kv .bignum { width: 78px; flex: none; }
+/* value */
+.stage { font-size: 20px; line-height: 1.38; padding: 14px 20px; }
+.stage b { font-weight: normal; font-family: "Excali", sans-serif; font-size: 22px; }
+.week { font-size: 18.5px; line-height: 1.36; padding: 14px 16px; width: 330px; }
+.week b { font-weight: normal; font-family: "Excali", sans-serif; font-size: 25px; color: var(--red); display: block; }
+
+/* team */
+.person { display: flex; flex-direction: column; align-items: center; width: 250px; }
+.ph { width: 150px; height: 150px; border-radius: 50%; background-repeat: no-repeat; background-color: #f1f3f5; }
+.pname { font-family: "Excali", sans-serif; font-size: 25px; margin-top: 16px; text-align: center; line-height: 1.15; }
+.prole { font-size: 17px; color: var(--blue); margin-top: 2px; }
+.thx { display: flex; align-items: center; gap: 18px; font-size: 17px; line-height: 1.3; }
+.thx .lg { width: 180px; height: 52px; flex: none; display: flex; align-items: center; justify-content: center; gap: 10px; }
+.thx .lg img { max-width: 100%; max-height: 52px; object-fit: contain; }
+
+.person.sm { width: auto; }
+.person.sm .ph { width: 104px; height: 104px; }
+.person.sm .pname { font-size: 20px; margin-top: 12px; }
+.thxgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px 8px; width: 100%; }
+.tg { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 4px; font-size: 13.5px; text-align: center; line-height: 1.2; }
+.tg img { max-width: 122px; object-fit: contain; }
+
+.ltr { display: inline-block; }
+.slide.active .ltr { animation: ltrIn .55s cubic-bezier(.2,.7,.2,1) both; }
+@keyframes ltrIn { from { opacity: 0; transform: translateY(18px) rotate(-4deg); } to { opacity: 1; transform: none; } }
+body.print .ltr { animation: none !important; }
+@media (prefers-reduced-motion: reduce) {
+  .slide.active .ltr { animation: none; }
+  .slide, .slide.active { transition: none; }
+}
+
+body.print { overflow: visible; height: auto; }
+body.print #stage { position: static; transform: none !important; height: auto; }
+body.print .slide { position: relative; opacity: 1; visibility: visible; transition: none; break-after: page; page-break-after: always; }
+body.print .slide:last-child { break-after: auto; page-break-after: auto; }
+</style>
+</head>
+<body>
+<div id="stage">
+
+<!-- 1 Title -->
+<section class="slide" data-mode="draw" id="s-title">
+  <div class="row" style="width:100%; justify-content:space-between; align-items:center; gap:0">
+    <img src="logos/hackapertus.svg" alt="Hack Apertus" style="height:52px">
+    <span class="small blue">OpenParlData challenge · Liebefeld · 19 October 2026</span>
+    <img src="logos/openparldata.svg" alt="OpenParlData.ch" style="height:78px">
+  </div>
+  <h1 style="margin-top:8px"><span class="ul"><span class="ltr" style="animation-delay:0.15s">P</span><span class="ltr" style="animation-delay:0.22s">a</span><span class="ltr" style="animation-delay:0.29s">r</span><span class="ltr" style="animation-delay:0.36s">l</span><span class="ltr" style="animation-delay:0.43s">a</span><span class="ltr" style="animation-delay:0.50s">m</span><span class="ltr" style="animation-delay:0.57s">e</span><span class="ltr" style="animation-delay:0.64s">n</span><span class="ltr" style="animation-delay:0.71s">t</span><span class="ltr" style="animation-delay:0.78s">s</span><span class="ltr" style="animation-delay:0.85s">t</span><span class="ltr" style="animation-delay:0.92s">h</span><span class="ltr" style="animation-delay:0.99s">e</span><span class="ltr" style="animation-delay:1.06s">m</span><span class="ltr" style="animation-delay:1.13s">e</span><span class="ltr" style="animation-delay:1.20s">n</span></span></h1>
+  <p class="sub red" data-at="1.2" style="font-size:30px; margin-top:12px">Topics for every Swiss parliamentary affair, in every national language, with Apertus</p>
+  <div style="height:318px"></div>
+
+  <div class="rb abs" data-at="1.6" data-fill="#ffffff" data-fs="solid" data-r="4" style="left:206px; top:362px; width:170px; height:196px; padding:0"></div>
+  <div class="rb abs" data-at="1.6" data-fill="#ffffff" data-fs="solid" data-r="4" style="left:198px; top:354px; width:170px; height:196px; padding:0"></div>
+  <div class="rb node" data-at="1.6" data-fill="#ffffff" data-fs="solid" data-r="4" style="left:190px; top:346px; width:170px; height:196px; text-align:left; align-items:flex-start; justify-content:flex-start; font-size:13.5px">
+    <span class="nm" style="font-size:19px">Motion 26.3759</span>
+    <span>Sichtbarkeit des Schweizer Musikschaffens auf digitalen Plattformen sicherstellen</span>
+  </div>
+  <span class="abs blue" data-at="1.6" style="left:150px; top:574px; width:260px; text-align:center; font-size:15px">one of 318,801 affairs</span>
+  <div class="rb node" data-at="2.0" data-fill="#ffec99" data-fs="solid" data-r="12" style="left:620px; top:404px; width:300px; height:110px">
+    <img src="logos/apertus.svg" alt="Apertus" style="height:16px">
+    <span class="nm" style="font-size:22px">Apertus-ParlTopics-8B</span>
+    <span>one probability per topic</span>
+  </div>
+  <div class="rb node" data-at="2.8" data-r="10" style="left:1130px; top:340px; width:400px; height:74px; align-items:flex-start; padding:8px 14px">
+    <span class="blue" style="font-size:13.5px">APS chapter</span>
+    <div class="barrow" style="margin-top:2px"><span style="font-family:Excali; font-size:17px; width:230px">Kultur, Sprache, Kirchen</span><div class="rb bar" data-fill="#b2f2bb" data-fs="solid" data-r="5" style="width:82px; height:18px"></div><span class="val" style="font-size:19px">0.82</span></div>
+  </div>
+  <div class="rb node" data-at="3.2" data-r="10" style="left:1130px; top:426px; width:400px; height:74px; align-items:flex-start; padding:8px 14px">
+    <span class="blue" style="font-size:13.5px">APS chapter</span>
+    <div class="barrow" style="margin-top:2px"><span style="font-family:Excali; font-size:17px; width:230px">Medien</span><div class="rb bar" data-fill="#b2f2bb" data-fs="solid" data-r="5" style="width:80px; height:18px"></div><span class="val" style="font-size:19px">0.80</span></div>
+  </div>
+  <div class="rb node" data-at="3.6" data-r="10" style="left:1130px; top:512px; width:400px; height:74px; align-items:flex-start; padding:8px 14px">
+    <span class="blue" style="font-size:13.5px">ad-hoc topic</span>
+    <div class="barrow" style="margin-top:2px"><span style="font-family:Excali; font-size:17px; width:230px">Digitalisierung</span><div class="rb bar" data-fill="#b2f2bb" data-fs="solid" data-r="5" style="width:56px; height:18px"></div><span class="val" style="font-size:19px">0.56</span></div>
+  </div>
+  <p class="hand center" data-at="4.2" style="font-size:36px; margin-top:12px"><span class="blue">Invincibles</span></p>
+  <div class="rb quote" data-fill="#e9ecef" data-r="16" data-at="4.4" style="margin-top:10px; width:1240px">
+    An open service that assigns standard and ad-hoc topics to the affairs in OpenParlData, shows the passage behind each suggested topic, and runs its trained Apertus model on a single GPU.
+  </div>
+  <span class="pageno">1</span>
+</section>
+
+<!-- 2 Problem -->
+<section class="slide" data-mode="draw" id="s-problem">
+  <h2><span class="ul">The Problem</span></h2>
+  <p class="sub">Affairs from all Swiss parliaments are searchable mainly by full text, and topic labels exist only in pockets.<sup class="fn">1</sup></p>
+  <div style="height:390px; margin-top:12px"></div>
+  <div class="rb abs" data-at="0.3" data-fill="#ffffff" data-fs="solid" data-r="4" style="left:316px; top:186px; width:140px; height:160px; padding:0"></div>
+  <div class="rb abs" data-at="0.3" data-fill="#ffffff" data-fs="solid" data-r="4" style="left:308px; top:178px; width:140px; height:160px; padding:0"></div>
+  <div class="rb node" id="p2pile" data-at="0.3" data-fill="#ffffff" data-fs="solid" data-r="4" style="left:300px; top:170px; width:140px; height:160px">
+    <span class="nm" style="font-size:20px; color:var(--ink)">OpenParlData: federal, cantonal, city</span>
+  </div>
+  <span class="abs blue" data-at="0.3" style="left:290px; top:350px; width:180px; text-align:center; font-size:19px; font-weight:bold">de / fr / it / rm</span>
+  <div class="abs row" id="p2bar" data-at="0.8" style="left:510px; top:226px; gap:0">
+    <div class="rb bar seg" data-fill="#b2f2bb" data-fs="solid" data-r="4" style="width:88px; height:56px; font-size:13.5px; line-height:1.15; white-space:normal; text-align:center">22%<br>have a topic</div>
+    <div class="rb bar seg" data-fill="#ffffff" data-fs="solid" data-r="4" style="width:312px; height:56px; font-size:15px">78% have none</div>
+  </div>
+  <div class="abs col" id="p2schemes" style="left:990px; top:152px; width:330px; gap:9px">
+    <div class="rb" data-at="1.4" data-fill="#a5d8ff" data-fs="hachure" data-r="4" style="padding:8px 14px; font-family:Excali; font-size:19px">Curia Vista: 28 areas (federal)</div>
+    <div class="rb" data-at="1.8" data-fill="#ffec99" data-fs="hachure" data-r="4" style="padding:8px 14px; font-family:Excali; font-size:19px">St. Gallen: 9 areas</div>
+    <div class="rb" data-at="2.2" data-fill="#ffec99" data-fs="hachure" data-r="4" style="padding:8px 14px; font-family:Excali; font-size:19px">Thurgau: 118 categories</div>
+    <div class="rb" data-at="2.6" data-fill="#ffec99" data-fs="hachure" data-r="4" style="padding:8px 14px; font-family:Excali; font-size:19px">City of Zug: 37 departments</div>
+    <div class="rb" data-at="3.0" data-fill="#ffc9c9" data-fs="hachure" data-r="4" style="padding:8px 14px; font-family:Excali; font-size:19px">APS: 22 chapters, 165 topics, no labels</div>
+  </div>
+  <i class="arrow" data-from="p2pile" data-to="p2bar"></i><i class="arrow" data-from="p2bar" data-to="p2schemes"></i>
+  <div class="rb abs" data-at="3.5" data-r="6" style="left:700px; top:430px; width:290px; height:46px; padding:9px 16px; font-family:Excali; font-size:21px">full-text search only</div>
+  <span class="abs blue" data-at="3.5" style="left:660px; top:484px; width:380px; text-align:center; font-family:Excali; font-size:19px">every language, every word guessed</span>
+  <div class="row" style="margin-top:16px; gap:28px">
+    <div class="rb counter" data-at="3.9" data-fill="#a5d8ff" data-fs="hachure" data-r="4"><span class="big"><span class="count" data-to="318801">318,801</span></span>affairs from 88 parliaments<sup class="fn">2</sup></div>
+    <div class="rb counter" data-at="4.3" data-fill="#e9ecef" data-fs="hachure" data-r="4"><span class="big"><span class="count" data-to="22">22</span>%</span>carry a subject area from Curia Vista or a local scheme<sup class="fn">3</sup></div>
+    <div class="rb counter" data-at="4.7" data-fill="#ffec99" data-fs="hachure" data-r="4"><span class="big"><span class="count" data-to="4">4</span> schemes</span>in four local parliaments, all different<sup class="fn">3</sup></div>
+    <div class="rb counter" data-at="5.1" data-fill="#ffc9c9" data-fs="hachure" data-r="4"><span class="big">0</span>affairs labelled with Année Politique Suisse topics supplied for the challenge<sup class="fn">4</sup></div>
+  </div>
+  <div class="row" data-at="5.6" style="margin-top:18px; align-items:center; gap:22px">
+    <img src="logos/dvs.svg" alt="Digitale Verwaltung Schweiz" style="height:50px">
+    <p style="font-size:20px; line-height:1.35; max-width:1040px">Digital Public Services Switzerland (DVS) relies on PolitMonitor's manually assigned digitalisation tags<sup class="fn">5</sup> and needs such affairs found across the whole dataset.</p>
+  </div>
+  <div class="fns">
+    <p><sup class="fn">1</sup> Challenge background: https://gitlab.com/groups/opendata.ch/openparldatach/-/wikis/Home/Future-Topics/Classification</p>
+    <p><sup class="fn">2</sup> OpenParlData: https://openparldata.ch; label folder: https://files.openparldata.ch/hackapertus/ &nbsp; <sup class="fn">3</sup> Counts from our cleaned snapshot: Technical report, section 4</p>
+    <p><sup class="fn">4</sup> Année Politique Suisse topics: https://anneepolitique.swiss/de/themen/ &nbsp; <sup class="fn">5</sup> DVS list: https://www.digital-public-services-switzerland.ch/en/news/political-activities-regarding-digitalisation</p>
+  </div>
+  <span class="pageno">2</span>
+</section>
+
+<!-- 3 Idea: decision-model explainer -->
+<section class="slide full" data-mode="static" id="s-explainer">
+  <iframe id="explainer" title="A topic is a card" style="position:absolute; left:0; top:0; width:1600px; height:852px; border:0; display:block; pointer-events:none" src="about:blank"></iframe>
+  <img id="explainer-still" class="abs" src="img/explainer_still.png" alt="" style="left:42.6px; top:0; width:1514.8px; height:852px; display:none">
+  <div class="rb abs row" data-fill="#d0bfff" data-fs="hachure" data-r="10" style="left:640px; top:14px; width:880px; padding:8px 18px; gap:18px; align-items:center">
+    <p class="hand red" style="font-size:25px; line-height:1.1; width:170px; flex:none">Interpretable by design</p>
+    <ul class="dots" style="font-size:15.5px">
+      <li style="font-size:15.5px; margin:2px 0">One calibrated probability per topic, not a black-box label</li>
+      <li style="font-size:15.5px; margin:2px 0">Topic cards in plain language: anyone can read and edit them</li>
+      <li style="font-size:15.5px; margin:2px 0">Every suggestion shows the passage and the reason behind it</li>
+    </ul>
+  </div>
+  <div class="rb abs" data-fill="#e9ecef" data-fs="solid" data-r="10" style="left:99.5px; top:802px; width:1401px; padding:4px 14px; font-size:12px; line-height:1.27">
+    <p>How we trained it: a decision model<sup class="fn">1</sup> built with Kev<sup class="fn">2</sup> on Apertus 1.5 8B<sup class="fn">3</sup>. 6,728 federal affairs from before 2024, with yes/no questions from Curia Vista labels (23 subject areas, 400 descriptors); a rank-16 LoRA adapter and a yes/no head on unchanged base weights; one epoch, 1 h 48 min on one A6000; per-topic Platt calibration and thresholds. APS, cantonal schemes and digitalisation: no labels used in training.</p>
+  </div>
+  <div class="fns" style="left:99.5px; bottom:4px; font-size:11px; line-height:1.3">
+    <p><sup class="fn">1</sup> TypeSafe, "Introducing System One models and Jev": https://typesafe.ai/blog/introducing-system-one-models-and-jev &nbsp; <sup class="fn">2</sup> Kev: https://github.com/jaredpalmer/kev &nbsp; Model card: https://huggingface.co/swiss-ai/Apertus-v1.5-8B</p>
+    <p><sup class="fn">3</sup> Project Apertus (ETH Zurich, EPFL, CSCS), "From Open Text Models to Open Multimodal Reasoners: Apertus v1.5 Technical Report", October 2026: https://huggingface.co/papers/2610.15542</p>
+  </div>
+  <span class="pageno">3</span>
+</section>
+
+<!-- 4 System flow -->
+<section class="slide" data-mode="draw" id="s-flow">
+  <h2 style="font-size:54px"><span class="ul">How the Service Runs</span></h2>
+
+  <div class="rb node" data-at="1.4" data-r="10" style="left:740px; top:160px; width:330px; height:100px">
+    <img src="logos/huggingface.svg" alt="Hugging Face" style="height:34px">
+    <span>harrier-oss-v1-0.6b: one vector per affair, for search by meaning</span>
+  </div>
+  <div class="rb node" data-at="0.2" data-r="10" style="left:40px; top:330px; width:240px; height:160px">
+    <img src="logos/openparldata.svg" alt="OpenParlData.ch" style="height:62px">
+    <span style="margin-top:6px">318,801 affairs from 88 parliaments, export and API<sup class="fn">1</sup></span>
+  </div>
+  <div class="rb node" data-at="0.8" data-r="10" style="left:370px; top:330px; width:270px; height:160px">
+    <img src="logos/apache_hop.svg" alt="Apache Hop" style="height:50px">
+    <span class="nm">Nightly job</span>
+    <span>new and changed affairs; unchanged texts are skipped</span>
+  </div>
+  <div class="rb node" data-at="2.0" data-fill="#ffec99" data-fs="solid" data-r="12" style="left:740px; top:310px; width:330px; height:200px">
+    <img src="logos/apertus.svg" alt="Apertus" style="height:22px">
+    <span class="nm" style="font-size:27px">Apertus-ParlTopics-8B</span>
+    <span>Apertus 1.5 8B<sup class="fn">2</sup> trained as a decision model with Kev (LoRA adapter and yes/no head); every card in one pass, one probability per card, on a single GPU</span>
+  </div>
+  <div class="rb node" data-at="1.4" data-fill="#b2f2bb" data-fs="hachure" data-r="10" style="left:370px; top:586px; width:270px; height:152px">
+    <span class="nm">Topic cards</span>
+    <span style="font-size:14px; line-height:1.25">APS chapters and topics, seven ad-hoc topics, and parliaments' own schemes (Curia Vista, St. Gallen), written once</span>
+    <span class="blue" style="font-size:12px; line-height:1.2; margin-top:3px">digitalisation, climate, housing, energy security, AI, Covid-19, war in Ukraine</span>
+  </div>
+  <div class="rb node" data-at="3.0" data-r="10" style="left:740px; top:590px; width:330px; height:150px">
+    <img src="logos/cscs.svg" alt="CSCS" style="height:40px">
+    <span style="margin-top:6px">Untrained Apertus 1.5 8B at CSCS through the organisers' gateway: passages and reasons on request</span>
+  </div>
+  <div class="rb node" data-at="2.6" data-fill="#a5d8ff" data-fs="hachure" data-r="10" style="left:1150px; top:190px; width:300px; height:150px">
+    <img src="logos/postgresql.png" alt="PostgreSQL" style="height:56px">
+    <span class="nm">PostgreSQL with pgvector</span>
+    <span>decisions, vectors and reports</span>
+  </div>
+  <div class="rb node" data-at="3.0" data-r="10" style="left:1150px; top:410px; width:300px; height:110px">
+    <img src="logos/fastapi.svg" alt="FastAPI" style="height:36px">
+    <span style="margin-top:6px">search, overview, topics, reports, read-aloud</span>
+  </div>
+  <div class="rb node" data-at="3.4" data-r="10" style="left:1150px; top:590px; width:300px; height:150px">
+    <img src="logos/nextjs.svg" alt="Next.js" style="height:24px">
+    <span class="nm">Search page</span>
+    <span>German, French, Italian and Romansh</span>
+  </div>
+  <div class="rb abs" data-at="3.8" data-r="18" data-dash="1" style="left:1125px; top:172px; width:350px; height:592px; padding:0"></div>
+  <div class="abs row" data-at="3.8" style="left:1130px; top:774px; align-items:center; gap:12px">
+    <img src="logos/docker.png" alt="Docker" style="height:46px">
+    <span style="font-size:15.5px; line-height:1.3">Docker Compose: two services,<br>a CPU-only image of 2.1 GB</span>
+  </div>
+  <span class="abs" data-at="4.0" style="left:1474px; top:718px; width:122px; text-align:center; font-size:14.5px; line-height:1.25">readers; reports go back for review</span>
+
+  <div class="abs legend" data-at="4.4" style="left:40px; top:806px">
+    <span class="item"><span class="picon" data-type="text"></span>affair text</span>
+    <span class="item"><span class="picon" data-type="card"></span>topic card</span>
+    <span class="item"><span class="picon" data-type="vec"></span>vector</span>
+    <span class="item"><span class="picon" data-type="score"></span>decision with probability</span>
+    <span class="item"><span class="picon" data-type="reason"></span>passage and reason</span>
+    <span class="item"><span class="picon" data-type="report"></span>report</span>
+  </div>
+  <div class="fns">
+    <p><sup class="fn">1</sup> OpenParlData: https://openparldata.ch &nbsp; <sup class="fn">2</sup> Apertus 1.5 8B model card: https://huggingface.co/swiss-ai/Apertus-v1.5-8B</p>
+  </div>
+  <span class="pageno">4</span>
+</section>
+
+<!-- 5 Results, coverage, comparison -->
+<section class="slide" data-mode="draw" style="padding-top:10px">
+  <h2 style="font-size:40px"><span class="ul">Results, Coverage and Comparison</span></h2>
+  <div class="row" style="margin-top:6px; gap:22px; width:1480px; align-items:stretch">
+    <div class="col" style="width:729px; gap:8px">
+    <div class="rb panel" data-at="0.2" data-r="10">
+      <p class="grp">APS, two levels<sup class="fn">1</sup> <span class="blue" style="font-family:Comic; font-size:14.5px">&nbsp;No APS labels used in training</span></p>
+      <div class="row" style="gap:16px">
+        <div class="stat"><p class="bignum stnum"><span class="count" data-to="0.74" data-dec="2">0.74</span></p><p class="stwhat">APS chapters, 1,000 federal affairs</p><p class="stcmp">ranking quality (AP); random: 0.15</p></div>
+        <div class="stat"><p class="bignum stnum" style="font-size:30px; padding-top:4px">0.66 / 0.57</p><p class="stwhat">APS chapters, cantonal / city affairs</p><p class="stcmp">agreement (F1) with Claude Opus 5.5<sup class="fn">2</sup></p></div>
+        <div class="stat"><p class="bignum stnum"><span class="count" data-to="0.61" data-dec="2">0.61</span></p><p class="stwhat">APS topics, second level</p><p class="stcmp">agreement (F1) with Claude Opus 5.5</p></div>
+      </div>
+      <p class="stcmp" style="font-size:13px; margin-top:2px">AP: 1.0 means every right affair ranked first. F1: 1.0 means perfect agreement.</p>
+    </div>
+    <div class="rb panel grow1" data-at="0.6" data-r="10" data-fill="#a5d8ff" data-fs="hachure" style="padding:8px 18px; gap:4px">
+      <p class="grp" style="font-size:23px; background:#ffffffcc; align-self:flex-start; padding:0 4px">Four national languages<sup class="fn">8</sup></p>
+      <div class="langchip">
+        <p class="stwhat" style="font-size:14.5px">Same quality in every language: German 0.71 · French 0.70 · Italian 0.70</p>
+        <p class="stcmp" style="font-size:12.5px">Curia Vista macro AP on the same 871 affairs</p>
+        <p class="stwhat" style="font-size:14.5px; margin-top:2px">A query in one language finds affairs in all others</p>
+        <p class="stwhat" style="font-size:14.5px">Interface, search and read-aloud also in Romansh</p>
+      </div>
+    </div>
+    </div>
+    <div class="rb panel" data-at="1.0" data-r="10" style="width:729px">
+      <p class="grp">Ad-hoc topics, no retraining</p>
+      <div class="row" style="gap:16px">
+        <div class="stat"><p class="bignum stnum"><span class="count" data-to="0.74" data-dec="2">0.74</span></p><p class="stwhat">7 ad-hoc topics, 400 affairs</p><p class="stcmp">agreement (F1) with Claude Opus 5.5; digitalisation 0.84, climate 0.67</p></div>
+        <div class="stat"><p class="bignum stnum">29 of 30</p><p class="stwhat">DVS-listed digitalisation affairs found<sup class="fn">3</sup></p><p class="stcmp">weekly monitoring shortlist</p></div>
+        <div class="stat"><p class="bignum stnum"><span class="count" data-to="0.70" data-dec="2">0.70</span></p><p class="stwhat">30 new topics, each from one keyword</p><p class="stcmp">ranking quality (AP); random: 0.02</p></div>
+      </div>
+      <div class="row" style="gap:22px; margin-top:4px">
+        <div class="col" style="gap:1px">
+          <div class="barrow" style="margin-top:0; gap:8px; line-height:1.15"><span style="width:212px; font-size:14px; flex:none">Climate change</span><div class="rb bar" data-fill="#b2f2bb" data-fs="solid" data-r="4" style="width:110px; height:15px"></div><span style="font-size:14px">2,187</span></div>
+          <div class="barrow" style="margin-top:0; gap:8px; line-height:1.15"><span style="width:212px; font-size:14px; flex:none">Digitalisation</span><div class="rb bar" data-fill="#b2f2bb" data-fs="solid" data-r="4" style="width:105px; height:15px"></div><span style="font-size:14px">2,084</span></div>
+          <div class="barrow" style="margin-top:0; gap:8px; line-height:1.15"><span style="width:212px; font-size:14px; flex:none">Housing shortage and rents</span><div class="rb bar" data-fill="#b2f2bb" data-fs="solid" data-r="4" style="width:45px; height:15px"></div><span style="font-size:14px">902</span></div>
+          <div class="barrow" style="margin-top:0; gap:8px; line-height:1.15"><span style="width:212px; font-size:14px; flex:none">Energy supply security</span><div class="rb bar" data-fill="#b2f2bb" data-fs="solid" data-r="4" style="width:33px; height:15px"></div><span style="font-size:14px">664</span></div>
+        </div>
+        <div class="col" style="gap:1px">
+          <div class="barrow" style="margin-top:0; gap:8px; line-height:1.15"><span style="width:196px; font-size:14px; flex:none">Artificial intelligence</span><div class="rb bar" data-fill="#b2f2bb" data-fs="solid" data-r="4" style="width:21px; height:15px"></div><span style="font-size:14px">416</span></div>
+          <div class="barrow" style="margin-top:0; gap:8px; line-height:1.15"><span style="width:196px; font-size:14px; flex:none">War in Ukraine</span><div class="rb bar" data-fill="#b2f2bb" data-fs="solid" data-r="4" style="width:18px; height:15px"></div><span style="font-size:14px">351</span></div>
+          <div class="barrow" style="margin-top:0; gap:8px; line-height:1.15"><span style="width:196px; font-size:14px; flex:none">Covid-19</span><div class="rb bar" data-fill="#b2f2bb" data-fs="solid" data-r="4" style="width:15px; height:15px"></div><span style="font-size:14px">301</span></div>
+        </div>
+      </div>
+      <p class="stcmp" style="font-size:12.5px; line-height:1.2">Affairs labelled per ad-hoc topic, 2024 to 2026 (49,978 affairs); each topic is one card, added without retraining.</p>
+    </div>
+  </div>
+  <div class="row" style="margin-top:6px; gap:22px; width:1480px; align-items:stretch">
+    <div class="rb panel" data-at="2.2" data-r="10" style="width:640px">
+      <p class="grp">Stored decisions today</p>
+      <div class="covrow"><span class="covl" style="width:120px">Digitalisation</span>
+        <div class="track"><div class="rb bar seg" data-fill="#b2f2bb" data-fs="solid" data-r="4" style="width:460px">all 318,801 affairs</div></div></div>
+      <div class="covrow"><span class="covl" style="width:120px">All 29 topics</span>
+        <div class="track"><div class="rb bar seg" data-fill="#b2f2bb" data-fs="solid" data-r="4" style="width:94px"></div><div class="rb bar seg" data-fill="#e9ecef" data-fs="solid" data-r="4" style="width:366px">64,978 of 318,801 (20%)</div></div></div>
+      <p class="small" style="font-size:13.5px">All 29 topics: 2024 to 2026 and the first 15,000 from 2023, newest first.</p>
+      <p class="small" style="font-size:13.5px">Backfill: about 8,000 affairs per hour on three GPUs; the remaining 254,000 affairs need about 90 GPU-hours (about 30 hours on three GPUs). New affairs: about one GPU-minute per night.</p>
+    </div>
+    <div class="rb panel" data-at="3.0" data-fill="#d0bfff" data-fs="hachure" data-r="10" style="width:818px">
+      <p class="grp" style="font-size:25px">As good as a frontier model<sup class="fn">6</sup></p>
+      <table class="cmp tight" style="font-size:15px; background:#ffffffcc">
+        <tr><th>Micro F1, full test sets, official labels</th><th>Claude Opus 5.5</th><th>Apertus-ParlTopics-8B</th></tr>
+        <tr><td>St. Gallen, 868 cantonal affairs</td><td>0.70</td><td><b class="hand" style="font-size:18px">0.71</b></td></tr>
+        <tr><td>Curia Vista, 1,000 federal affairs</td><td>0.69</td><td><b class="hand" style="font-size:18px">0.70</b></td></tr>
+        <tr><td>APS chapters, 1,000 federal affairs</td><td>0.62</td><td><b class="hand" style="font-size:18px">0.63</b></td></tr>
+      </table>
+      <p style="font-size:13px; line-height:1.28; background:#ffffffcc">Claude Opus 5.5: closed frontier model, size not disclosed, external API. Apertus-ParlTopics-8B: open, 8 billion parameters, runs on a single GPU. Differences within the 95% interval: level, ours ahead on every point estimate.</p>
+    </div>
+  </div>
+  <div class="rb" data-at="3.8" data-r="10" style="margin-top:6px; width:1480px; padding:4px 12px">
+    <table class="cmp tight cmpx" style="font-size:12px; width:1456px; table-layout:fixed">
+      <colgroup><col style="width:346px"><col style="width:416px"><col style="width:136px"><col style="width:126px"><col style="width:216px"><col style="width:216px"></colgroup>
+      <tr><th rowspan="2">System</th><th rowspan="2">Trained on</th><th rowspan="2">Digitalisation AP</th><th rowspan="2">Curia Vista AP (28 areas)</th><th colspan="2">New scheme or topics, no labels (macro AP)<sup class="fn">7</sup></th></tr>
+      <tr><th>St. Gallen (new scheme)</th><th>30 new topics</th></tr>
+      <tr><td>Legal XLM-RoBERTa (2023 study)<sup class="fn">2</sup></td><td>20,000 labelled affairs, only these 28 areas, 3 epochs</td><td>0.42</td><td>0.73</td><td style="color:#868e96">no output</td><td style="color:#868e96">no output</td></tr>
+      <tr><td>Embeddings and classifier (Demokratis)<sup class="fn">4</sup></td><td>20,000 labelled affairs, only these 28 areas</td><td>0.47</td><td>0.74</td><td>0.38</td><td>0.39</td></tr>
+      <tr><td><b class="hand" style="font-size:15.5px">Apertus-ParlTopics-8B (ours)</b></td><td>6,728 labelled affairs, 1 epoch; one model for every scheme</td><td>0.46</td><td>0.71</td><td style="background:#b2f2bb"><b class="hand" style="font-size:15.5px">0.70</b></td><td style="background:#b2f2bb"><b class="hand" style="font-size:15.5px">0.70</b></td></tr>
+      <tr><td>Apertus-ParlTopics-8B plus embedding classifier</td><td>as above</td><td style="background:#b2f2bb"><b class="hand" style="font-size:15.5px">0.49</b> (best of 23)</td><td style="background:#b2f2bb"><b class="hand" style="font-size:15.5px">0.76</b> (best)<sup class="fn">5</sup></td><td></td><td></td></tr>
+    </table>
+    <p style="font-size:12px; margin-top:3px; line-height:1.3">Combined with an embedding classifier, Apertus-ParlTopics-8B is the best system on both digitalisation (0.49) and Curia Vista (0.76); on its own it also handles new topics and schemes without new training.</p>
+    <p style="font-size:12px; line-height:1.3">Ahead of untrained Apertus 8B and 70B, open decision models (Kev-9B, decisio) and the 2023 legal XLM-RoBERTa on digitalisation; handles new topics and schemes without new training.</p>
+  </div>
+  <div class="fns">
+    <p><sup class="fn">1</sup> APS topics: https://anneepolitique.swiss/de/themen/ &nbsp; <sup class="fn">2</sup> Our evaluation, the baselines and the frontier-model judge (Claude Opus 5.5 and Claude Sonnet 5.5): Technical report, section 4</p>
+    <p><sup class="fn">3</sup> DVS list: https://www.digital-public-services-switzerland.ch/en/news/political-activities-regarding-digitalisation &nbsp; <sup class="fn">4</sup> Demokratis: https://github.com/Demokratis-ch/demokratis-ml</p>
+    <p><sup class="fn">5</sup> Comparison and blend (a logistic blend per area, fitted on earlier affairs): scripts/evaluation/metrics_build.py &nbsp; <sup class="fn">6</sup> Full frontier comparison: scripts/evaluation/judge_extend.py &nbsp; <sup class="fn">8</sup> Technical report, section 4</p>
+    <p><sup class="fn">7</sup> New-scheme scores: scripts/evaluation/zero_shot_embeddings.py (embeddings matched to the topic card text, no labels); the legal XLM-RoBERTa has no output there: it can only score the 28 areas it was trained on</p>
+  </div>
+  <span class="pageno">5</span>
+</section>
+
+<!-- 6 Accessibility and optimisations -->
+<section class="slide" data-mode="draw" id="s-access" style="padding-top:26px">
+  <h2 style="font-size:50px"><span class="ul">Accessible to Readers, Efficient to Run</span></h2>
+  <div class="rb frame abs" data-r="8" style="left:244px; top:102px; width:1152px; height:619px; padding:6px"><img src="img/a11y_page.png" alt="The search page with an opened affair" style="object-fit:cover"></div>
+  <p class="abs callout" data-at="0.6" style="left:18px; top:198px; width:185px; text-align:right">"Did you mean":<br>corrects typos</p>
+  <p class="abs callout" data-at="1.0" style="left:1406px; top:110px; width:180px; text-align:left">Speak your search</p>
+  <div class="abs col" data-at="1.4" style="left:1406px; top:207px; width:180px; gap:4px"><img src="img/a11y_langs.png" alt="DE FR IT RM EN" style="width:170px"><p class="callout">5 languages</p></div>
+  <p class="abs callout" data-at="1.8" style="left:18px; top:373px; width:185px; text-align:right">Search words<br>marked</p>
+  <div class="abs col" data-at="2.2" style="left:18px; top:447px; width:185px; align-items:flex-end; gap:3px"><p class="callout">Read aloud<sup class="fn">1</sup></p><img src="logos/elevenlabs.svg" alt="ElevenLabs" style="height:12px"></div>
+  <p class="abs callout" data-at="2.6" style="left:18px; top:545px; width:185px; text-align:right">Passage and reason<br>behind each topic</p>
+  <p class="abs callout" data-at="3.0" style="left:18px; top:688px; width:185px; text-align:right">People correct<br>topics</p>
+  <p class="abs callout" data-at="3.4" style="left:1406px; top:456px; width:180px; text-align:left">Outcomes per<br>parliament</p>
+  <p class="abs callout" data-at="3.8" style="left:1406px; top:592px; width:180px; text-align:left">Keyboard and<br>screen reader ready</p>
+  <div class="abs row" style="left:60px; top:730px; width:1480px; gap:58px; align-items:flex-start">
+    <div class="col" id="fb1" data-at="4.2" style="width:430px; gap:6px">
+      <div class="row" style="gap:10px; align-items:center; height:66px"><span class="rb pill" data-fill="#a5d8ff" data-r="12" style="font-family:Excali; font-size:19px">1</span><img src="img/fb_step1.png" alt="" style="height:28px"></div>
+      <p class="callout" style="font-size:19px">Reader clicks "prüfen lassen" on a doubtful topic</p>
+    </div>
+    <div class="col" id="fb2" data-at="4.8" style="width:440px; gap:6px">
+      <div class="row" style="gap:10px; align-items:center; height:66px"><span class="rb pill" data-fill="#d0bfff" data-r="12" style="font-family:Excali; font-size:19px">2</span><img src="img/fb_step2.png" alt="" style="height:66px"></div>
+      <p class="callout" style="font-size:19px">Report lands in the reviewers' queue</p>
+    </div>
+    <div class="col" id="fb3" data-at="5.4" style="width:494px; gap:6px">
+      <div class="row" style="gap:10px; align-items:center; height:66px"><span class="rb pill" data-fill="#b2f2bb" data-r="12" style="font-family:Excali; font-size:19px">3</span><img src="img/fb_step3.png" alt="" style="height:30px"></div>
+      <p class="callout" style="font-size:19px">Reviewer confirms, removes or adds; everyone sees ✓ geprüft, the model's original kept</p>
+    </div>
+  </div>
+  <i class="arrow" data-from="fb1" data-to="fb2"></i><i class="arrow" data-from="fb2" data-to="fb3"></i>
+  <div class="fns">
+    <p><sup class="fn">1</sup> Read-aloud voices: ElevenLabs models, https://elevenlabs.io/docs/overview/models</p>
+  </div>
+  <span class="pageno">6</span>
+</section>
+
+<!-- 7 Pipeline, value and next four weeks -->
+<section class="slide" data-mode="draw" id="s-ops" style="padding-top:26px">
+  <h2 style="font-size:48px"><span class="ul">The Pipeline: Built and What Remains</span></h2>
+  <div class="rb node ops" data-at="0.2" data-r="10" style="left:70px; top:108px; width:210px; height:140px">
+    <div class="pills"><span class="rb pill" data-fill="#e9ecef" data-r="8">input</span></div>
+    <img src="logos/openparldata.svg" alt="OpenParlData.ch" style="height:46px"><span style="margin-top:4px">Nightly export and API</span>
+  </div>
+  <div class="rb node ops" data-at="0.5" data-r="10" style="left:320px; top:108px; width:210px; height:140px">
+    <div class="pills"><span class="rb pill" data-fill="#b2f2bb" data-r="8">built</span><span class="rb pill" data-fill="#a5d8ff" data-r="8">to do</span></div>
+    <img src="logos/apache_hop.svg" alt="Apache Hop" style="height:36px"><span style="margin-top:4px">Nightly Hop job</span>
+  </div>
+  <div class="rb node ops" data-at="0.8" data-r="10" style="left:570px; top:108px; width:210px; height:140px">
+    <div class="pills"><span class="rb pill" data-fill="#b2f2bb" data-r="8">built</span></div>
+    <span>Skip unchanged texts</span>
+  </div>
+  <div class="rb node ops" data-at="1.1" data-r="10" style="left:820px; top:108px; width:210px; height:140px">
+    <div class="pills"><span class="rb pill" data-fill="#b2f2bb" data-r="8">built</span></div>
+    <img src="logos/huggingface.svg" alt="Hugging Face" style="height:28px"><span style="margin-top:4px">Embed into pgvector</span>
+  </div>
+  <div class="rb node ops" data-at="1.4" data-r="10" data-fill="#ffec99" data-fs="solid" style="left:1070px; top:108px; width:210px; height:140px">
+    <div class="pills"><span class="rb pill" data-fill="#b2f2bb" data-r="8">built</span></div>
+    <img src="logos/apertus.svg" alt="Apertus" style="height:13px"><span class="nm" style="font-size:21px">Apertus-<br>ParlTopics-8B</span><span>all cards, one pass</span>
+  </div>
+  <div class="rb node ops" data-at="1.7" data-r="10" style="left:1320px; top:108px; width:210px; height:140px">
+    <div class="pills"><span class="rb pill" data-fill="#b2f2bb" data-r="8">built</span></div>
+    <span>Per-topic calibration</span>
+  </div>
+  <div class="rb node ops" data-at="2.0" data-r="10" data-fill="#a5d8ff" data-fs="hachure" style="left:1230px; top:310px; width:300px; height:130px">
+    <div class="pills"><span class="rb pill" data-fill="#b2f2bb" data-r="8">built</span></div>
+    <img src="logos/postgresql.png" alt="PostgreSQL" style="height:34px"><span style="margin-top:4px">Store; re-score on change</span>
+  </div>
+  <div class="rb node ops" data-at="2.3" data-r="10" style="left:890px; top:310px; width:300px; height:130px">
+    <div class="pills"><span class="rb pill" data-fill="#b2f2bb" data-r="8">built</span><span class="rb pill" data-fill="#ffc9c9" data-r="8">to do</span></div>
+    <img src="logos/fastapi.svg" alt="FastAPI" style="height:26px"><span style="margin-top:6px">Search, API, DVS list</span>
+  </div>
+  <div class="rb node ops" data-at="2.6" data-r="10" style="left:550px; top:310px; width:300px; height:130px">
+    <div class="pills"><span class="rb pill" data-fill="#b2f2bb" data-r="8">built</span><span class="rb pill" data-fill="#d0bfff" data-r="8">to do</span></div>
+    <span>Reports and reviews</span>
+  </div>
+  <div class="rb node ops" data-at="2.9" data-r="10" data-dash="1" style="left:210px; top:310px; width:300px; height:130px">
+    <div class="pills"><span class="rb pill" data-fill="#ffec99" data-r="8">to do</span></div>
+    <span>Recalibration behind a gate</span>
+  </div>
+  <div class="rb node ops" data-at="3.2" data-r="10" data-dash="1" style="left:70px; top:470px; width:700px; height:64px">
+    <div class="pills"><span class="rb pill" data-fill="#ffec99" data-r="8">to do</span></div>
+    <span>Drift and failure monitoring</span>
+  </div>
+  <div class="rb node ops" data-at="3.4" data-r="10" style="left:830px; top:470px; width:700px; height:64px">
+    <div class="pills"><span class="rb pill" data-fill="#b2f2bb" data-r="8">card: built</span><span class="rb pill" data-fill="#ffec99" data-r="8">validation: next</span></div>
+    <span>New topic: card, validation</span>
+  </div>
+  <span class="abs blue" data-at="3.0" style="left:470px; top:257px; width:600px; text-align:center; font-size:13.5px">only after the gate</span>
+  <div class="abs legend" data-at="3.6" style="left:70px; top:552px; font-size:14px; gap:18px">
+    <span class="item"><span class="rb pill" data-fill="#b2f2bb" data-r="8">built</span>runs today</span>
+    <span class="item"><span class="rb pill" data-fill="#ffec99" data-r="8">to do</span>what remains</span>
+    <span class="item">dashed: not built yet<sup class="fn">1</sup></span>
+  </div>
+
+  <p class="abs hand red" data-at="3.8" style="left:70px; top:598px; font-size:28px">Value</p>
+  <div class="abs col" data-at="3.8" style="left:70px; top:640px; width:470px; gap:12px">
+    <div class="rb" data-fill="#b2f2bb" data-fs="solid" data-r="10" style="padding:10px 18px; font-size:19px">29 of 30 DVS affairs on the weekly list<sup class="fn">2</sup></div>
+    <div class="rb" data-fill="#ffec99" data-fs="solid" data-r="10" style="padding:10px 18px; font-size:19px">Open models, a single GPU</div>
+    <div class="rb" data-fill="#ffc9c9" data-fs="solid" data-r="10" style="padding:10px 18px; font-size:19px">About one GPU-minute per night</div>
+  </div>
+  <p class="abs hand red" data-at="4.2" style="left:600px; top:598px; font-size:28px">What remains</p>
+  <div class="abs row" data-at="4.2" style="left:600px; top:640px; width:930px; gap:36px; align-items:stretch">
+    <div class="rb week" id="w1" data-fill="#a5d8ff" data-fs="hachure" data-r="10" style="width:206px; font-size:20px">Schedule the nightly job; finish the backfill</div>
+    <div class="rb week" id="w2" data-fill="#d0bfff" data-fs="hachure" data-r="10" style="width:206px; font-size:20px">Review with DVS staff</div>
+    <div class="rb week" id="w3" data-fill="#ffec99" data-fs="hachure" data-r="10" style="width:206px; font-size:20px">Recalibration gate; drift alerts</div>
+    <div class="rb week" id="w4" data-fill="#ffc9c9" data-fs="hachure" data-r="10" style="width:206px; font-size:20px">DVS pilot: weekly shortlist</div>
+  </div>
+  <i class="arrow" data-from="w1" data-to="w2"></i><i class="arrow" data-from="w2" data-to="w3"></i><i class="arrow" data-from="w3" data-to="w4"></i>
+  <div class="fns">
+    <p><sup class="fn">1</sup> Pipeline status: Technical report, section 2 &nbsp; <sup class="fn">2</sup> DVS list: https://www.digital-public-services-switzerland.ch/en/news/political-activities-regarding-digitalisation</p>
+  </div>
+  <span class="pageno">7</span>
+</section>
+
+<!-- 8 Live demo, team and thanks -->
+<section class="slide" data-mode="static" id="s-demo">
+  <h2><span class="ul">Live Demo, Team and Thanks</span></h2>
+  <div class="row" style="margin-top:22px; gap:34px; width:1480px; align-items:flex-start">
+    <div class="col" style="width:900px; gap:10px; align-items:center">
+      <div class="rb frame" data-r="10" style="width:900px; height:522px">
+        <video id="demo" src="media/walkthrough.mp4" autoplay muted loop playsinline preload="auto" style="object-fit:contain; background:#ffffff"></video>
+        <img id="demo-still" src="img/walkthrough_still.png" alt="A frame of the recorded walkthrough" style="display:none; object-fit:contain">
+      </div>
+      <div class="rb quote" data-fill="#e9ecef" data-r="16" style="margin-top:6px; width:820px; font-size:20px; padding:8px 24px"><span class="hand red" style="font-size:28px">Parlamentsthemen</span> · Invincibles<br><span style="font-size:17px">Model: <a class="lnk" href="https://huggingface.co/merabro/Apertus-ParlTopics-8B" target="_blank" rel="noopener">huggingface.co/merabro/Apertus-ParlTopics-8B</a><br>Code: <a class="lnk" href="https://github.com/prakash-aryan/parlamentsthemen" target="_blank" rel="noopener">github.com/prakash-aryan/parlamentsthemen</a></span></div>
+    </div>
+    <div class="col grow1" style="gap:8px; align-items:center">
+      <h3 style="font-size:30px; margin-bottom:4px">Invincibles</h3>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px 10px; width:100%">
+        <div class="person sm"><div class="ph rc" data-c="#e03131" style="background-image:url('assets/team/kaushik.jpeg'); background-size:177px 177px; background-position:-3px -28px"></div><p class="pname">Kaushik Raghupathruni</p></div>
+        <div class="person sm"><div class="ph rc" data-c="#1971c2" style="background-image:url('assets/team/vilas.jpeg'); background-size:208px 208px; background-position:-71px 0"></div><p class="pname">Vilas Harapanahalli</p></div>
+        <div class="person sm"><div class="ph rc" data-c="#2f9e44" style="background-image:url('assets/team/vaibhav.jpeg'); background-size:135px 135px; background-position:-18px 0"></div><p class="pname">Vaibhav Motwani</p></div>
+        <div class="person sm"><div class="ph rc" data-c="#f08c00" style="background-image:url('assets/team/prakash_square.jpeg'); background-size:135px 135px; background-position:-15px 0"></div><p class="pname">Prakash Aryan</p></div>
+      </div>
+      <h3 style="font-size:30px; margin:14px 0 2px">With thanks to</h3>
+      <div class="thxgrid">
+        <div class="tg"><img src="logos/swissai.png" alt="" style="height:34px"><span>Swiss AI Initiative</span></div>
+        <div class="tg"><img src="logos/cscs.svg" alt="" style="height:40px"><span>CSCS</span></div>
+        <div class="tg"><img src="logos/elevenlabs.svg" alt="" style="height:20px; margin:10px 0"><span>ElevenLabs</span></div>
+        <div class="tg"><img src="logos/openparldata.svg" alt="" style="height:46px"><span>OpenParlData.ch</span></div>
+        <div class="tg"><img src="logos/hackapertus.svg" alt="" style="height:30px; margin:5px 0"><span>Hack Apertus</span></div>
+        <div class="tg"><img src="logos/dvs.svg" alt="" style="height:34px; margin:5px 0"><span>DVS</span></div>
+      </div>
+      <p class="blue center" style="font-size:14px; line-height:1.35; margin-top:8px">Open source: Kev, harrier-oss, FastAPI, PostgreSQL with pgvector, Next.js and Apache Hop.</p>
+    </div>
+  </div>
+  <span class="pageno">8</span>
+</section>
+
+</div>
+
+<script src="vendor/rough.js"></script>
+<script>
+const NS = "http://www.w3.org/2000/svg";
+const INK = "#1e1e1e";
+const P = new URLSearchParams(location.search);
+const PRINT = P.has("print");
+const stage = document.getElementById("stage");
+const slides = [...document.querySelectorAll(".slide")];
+const S = slides.map(() => ({ items: [], counters: [], papers: [], flow: null }));
+let cur = -1, t0 = 0;
+let seed = 7;
+
+const REDUCED = !!(window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches);
+const FIGS = { "s-problem": [{ x: 640, y: 400, t: 3.5, glass: true }] };
+const ARROWS = {
+  "s-access": [
+    { d: "M 210 228 C 250 224, 272 214, 300 208", t: 0.6 },
+    { d: "M 1400 145 C 1340 128, 1262 126, 1243 158", t: 1.0 },
+    { d: "M 210 394 C 330 382, 560 384, 640 408", t: 1.8 },
+    { d: "M 210 462 C 230 462, 246 469, 262 473", t: 2.2 },
+    { d: "M 210 571 L 269 571", t: 2.6 },
+    { d: "M 210 714 C 300 718, 460 716, 520 699", t: 3.0 },
+    { d: "M 1400 482 L 1335 482", t: 3.4 }
+  ],
+};
+const FLOWS = {
+  "s-title": {
+    start: 2.6, speed: 70, stop: 9,
+    edges: [
+      { d: "M 362 444 L 618 456", t: 2.0, type: "text" },
+      { d: "M 920 440 C 1010 440, 1040 377, 1128 377", t: 2.8, type: "score" },
+      { d: "M 920 459 L 1128 463", t: 3.2, type: "score" },
+      { d: "M 920 478 C 1010 478, 1040 549, 1128 549", t: 3.6, type: "score" },
+    ],
+  },
+  "s-flow": {
+    start: 4.6, speed: 55, figures: true,
+    edges: [
+      { d: "M 280 410 L 368 410", t: 0.8, type: "text" },
+      { d: "M 640 410 L 738 410", t: 2.0, type: "text" },
+      { d: "M 590 330 C 610 255, 670 212, 738 212", t: 1.4, type: "text" },
+      { d: "M 640 650 C 720 650, 790 600, 818 512", t: 2.0, type: "card" },
+      { d: "M 1070 212 C 1100 212, 1120 232, 1148 236", t: 2.6, type: "vec" },
+      { d: "M 1070 410 C 1112 410, 1108 300, 1148 300", t: 2.6, type: "score" },
+      { d: "M 1300 340 L 1300 408", t: 3.0, type: "score" },
+      { d: "M 1300 520 L 1300 588", t: 3.4, type: "score" },
+      { d: "M 1070 665 C 1112 665, 1108 470, 1148 470", t: 3.0, type: "reason" },
+      { d: "M 1535 606 L 1535 290 L 1453 290", t: 4.0, type: "report", color: "#e03131", dash: true },
+    ],
+  },
+  "s-ops": {
+    start: 4.4, speed: 40, dots: true,
+    edges: [
+      { d: "M 280 178 L 318 178", t: 0.5, type: "go" },
+      { d: "M 530 178 L 568 178", t: 0.8, type: "go" },
+      { d: "M 780 178 L 818 178", t: 1.1, type: "go" },
+      { d: "M 1030 178 L 1068 178", t: 1.4, type: "go" },
+      { d: "M 1280 178 L 1318 178", t: 1.7, type: "go" },
+      { d: "M 1425 248 L 1425 308", t: 2.0, type: "go" },
+      { d: "M 1230 375 L 1192 375", t: 2.3, type: "go" },
+      { d: "M 890 375 L 852 375", t: 2.6, type: "go" },
+      { d: "M 550 375 L 512 375", t: 2.9, type: "next" },
+      { d: "M 360 310 L 360 280 L 1175 280 L 1175 250", t: 3.0, type: "next", color: "#f08c00", dash: true },
+    ],
+  },
+};
+
+function fit() {
+  if (PRINT) return;
+  const s = Math.min(innerWidth / 1600, innerHeight / 900);
+  stage.style.transform = `scale(${s})`;
+  stage.style.left = `${(innerWidth - 1600 * s) / 2}px`;
+  stage.style.top = `${(innerHeight - 900 * s) / 2}px`;
+}
+
+function rel(el, slide) {
+  let x = 0, y = 0, e = el;
+  while (e && e !== slide) { x += e.offsetLeft; y += e.offsetTop; e = e.offsetParent; }
+  return { x, y, w: el.offsetWidth, h: el.offsetHeight };
+}
+
+function roundRectPath(x, y, w, h, r) {
+  r = Math.min(r, w / 2, h / 2);
+  return `M ${x + r} ${y} L ${x + w - r} ${y} Q ${x + w} ${y} ${x + w} ${y + r} L ${x + w} ${y + h - r} Q ${x + w} ${y + h} ${x + w - r} ${y + h} L ${x + r} ${y + h} Q ${x} ${y + h} ${x} ${y + h - r} L ${x} ${y + r} Q ${x} ${y} ${x + r} ${y} Z`;
+}
+
+function timeOf(el) {
+  const a = el.closest("[data-at]");
+  return a ? parseFloat(a.dataset.at) : 0;
+}
+
+function grp(svg, children) {
+  const g = document.createElementNS(NS, "g");
+  children.forEach(c => g.appendChild(c));
+  svg.appendChild(g);
+  return g;
+}
+
+function arrowHead(rc, x1, y1, x2, y2, o) {
+  const a = Math.atan2(y2 - y1, x2 - x1), L = 15, s = 0.45;
+  return [-s, s].map(d => rc.line(x2, y2, x2 - L * Math.cos(a + d), y2 - L * Math.sin(a + d), o));
+}
+
+function paperIcon(rc, type) {
+  const g = document.createElementNS(NS, "g");
+  if (type === "go" || type === "next") {
+    g.appendChild(rc.circle(0, 0, 13, { fill: type === "go" ? "#40c057" : "#fab005", fillStyle: "solid", stroke: INK, strokeWidth: 1.1, roughness: 0.6, seed: seed++ }));
+    return g;
+  }
+  const fill = { text: "#ffffff", card: "#ffec99", vec: "#a5d8ff", score: "#b2f2bb", reason: "#d0bfff", report: "#ffc9c9" }[type];
+  g.appendChild(rc.rectangle(-9, -11, 18, 22, { fill, fillStyle: "solid", stroke: INK, strokeWidth: 1.2, roughness: 0.8, seed: seed++ }));
+  for (let i = 0; i < 3; i++) g.appendChild(rc.line(-5, -5 + i * 5, 5, -5 + i * 5, { stroke: INK, strokeWidth: 0.9, roughness: 0.4, seed: seed++ }));
+  return g;
+}
+
+function stickFigure(rc, x, y) {
+  const o = () => ({ stroke: INK, strokeWidth: 1.8, roughness: 1, seed: seed++ });
+  return [
+    rc.circle(x, y + 12, 24, o()),
+    rc.line(x, y + 24, x, y + 62, o()),
+    rc.line(x, y + 36, x - 16, y + 52, o()),
+    rc.line(x, y + 36, x + 16, y + 50, o()),
+    rc.line(x, y + 62, x - 13, y + 88, o()),
+    rc.line(x, y + 62, x + 13, y + 88, o()),
+  ];
+}
+
+function addGroup(st, slide, g, t, kind) {
+  st.items.push({ t, g, kind: kind || (slide.dataset.mode === "draw" ? "draw" : (t > 0 ? "fade" : "none")) });
+}
+
+function buildSlide(slide, i) {
+  const st = S[i];
+  const svg = document.createElementNS(NS, "svg");
+  svg.setAttribute("class", "deco");
+  svg.setAttribute("viewBox", "0 0 1600 900");
+  slide.insertBefore(svg, slide.firstChild);
+  const rc = rough.svg(svg);
+  const base = { stroke: INK, strokeWidth: 1.6, roughness: 1.1, bowing: 1 };
+
+  slide.querySelectorAll(".rb").forEach(el => {
+    const r = rel(el, slide);
+    const small = el.classList.contains("pill");
+    const o = Object.assign({}, base, { seed: seed++ }, small ? { strokeWidth: 1.2, roughness: 0.8 } : {});
+    if (el.dataset.fill) {
+      o.fill = el.dataset.fill;
+      o.fillStyle = el.dataset.fs || "solid";
+      o.hachureGap = 7; o.fillWeight = 1.2; o.hachureAngle = -41;
+    }
+    if (el.dataset.dash) { o.strokeLineDash = [10, 8]; o.stroke = "#868e96"; }
+    const g = grp(svg, [rc.path(roundRectPath(r.x, r.y, r.w, r.h, +(el.dataset.r || 8)), o)]);
+    const isBar = el.classList.contains("bar");
+    addGroup(st, slide, g, timeOf(el), isBar && slide.dataset.mode === "draw" ? "grow" : (el.dataset.dash || small ? "fade" : undefined));
+  });
+
+  slide.querySelectorAll(".ul").forEach(el => {
+    const r = rel(el, slide);
+    const y = r.y + r.h - 2;
+    const g = grp(svg, [rc.line(r.x - 4, y, r.x + r.w + 4, y + 2, { stroke: "#e03131", strokeWidth: 2.4, roughness: 1.4, seed: seed++ })]);
+    addGroup(st, slide, g, 0.15, "draw");
+  });
+
+  slide.querySelectorAll(".rc").forEach(el => {
+    const r = rel(el, slide);
+    const g = grp(svg, [rc.circle(r.x + r.w / 2, r.y + r.h / 2, r.w + 16, { stroke: el.dataset.c || INK, strokeWidth: 2.6, roughness: 1.3, seed: seed++ })]);
+    addGroup(st, slide, g, timeOf(el));
+  });
+
+  slide.querySelectorAll("i.arrow").forEach(el => {
+    const a = rel(document.getElementById(el.dataset.from), slide);
+    const b = rel(document.getElementById(el.dataset.to), slide);
+    const x1 = a.x + a.w + 6, y1 = a.y + a.h / 2, x2 = b.x - 6, y2 = b.y + b.h / 2;
+    const o = { stroke: INK, strokeWidth: 2.2, roughness: 1, seed: seed++ };
+    const g = grp(svg, [rc.line(x1, y1, x2, y2, o), ...arrowHead(rc, x1, y1, x2, y2, o)]);
+    addGroup(st, slide, g, timeOf(document.getElementById(el.dataset.from)));
+  });
+
+  slide.querySelectorAll(".picon").forEach(el => {
+    const r = rel(el, slide);
+    const g = paperIcon(rc, el.dataset.type);
+    g.setAttribute("transform", `translate(${r.x + r.w / 2},${r.y + r.h / 2})`);
+    addGroup(st, slide, grp(svg, [g]), timeOf(el), "fade");
+  });
+
+  slide.querySelectorAll("[data-at]").forEach(el => st.items.push({ t: parseFloat(el.dataset.at), el }));
+  slide.querySelectorAll(".count").forEach(el => st.counters.push({ el, t: timeOf(el) }));
+
+  if (FLOWS[slide.id]) buildFlow(slide, svg, rc, st, FLOWS[slide.id]);
+  if (ARROWS[slide.id]) {
+    const top = document.createElementNS(NS, "svg");
+    top.setAttribute("class", "deco");
+    top.setAttribute("viewBox", "0 0 1600 900");
+    top.style.zIndex = 3;
+    slide.appendChild(top);
+    const rt = rough.svg(top);
+    ARROWS[slide.id].forEach(a => {
+      const ghost = document.createElementNS(NS, "path");
+      ghost.setAttribute("d", a.d);
+      top.appendChild(ghost);
+      const L = ghost.getTotalLength();
+      const p1 = ghost.getPointAtLength(Math.max(0, L - 12)), p2 = ghost.getPointAtLength(L);
+      top.removeChild(ghost);
+      const o = { stroke: "#1971c2", strokeWidth: 2.4, roughness: 1, bowing: 0.8, seed: seed++ };
+      addGroup(st, slide, grp(top, [rt.path(a.d, o), ...arrowHead(rt, p1.x, p1.y, p2.x, p2.y, o)]), a.t, "draw");
+    });
+  }
+  (FIGS[slide.id] || []).forEach(f => {
+    const parts = stickFigure(rc, f.x, f.y);
+    if (f.glass) {
+      const o = { stroke: INK, strokeWidth: 2, roughness: 1, seed: seed++ };
+      parts.push(rc.circle(f.x + 34, f.y + 40, 26, o), rc.line(f.x + 25, f.y + 50, f.x + 16, f.y + 50, o));
+    }
+    addGroup(st, slide, grp(svg, parts), f.t, "draw");
+  });
+
+  st.items.forEach(it => { if (it.g) prepare(it); });
+}
+
+function buildFlow(slide, svg, rc, st, cfg) {
+  st.flow = cfg;
+  const layer = document.createElementNS(NS, "g");
+  cfg.edges.forEach(e => {
+    const ghost = document.createElementNS(NS, "path");
+    ghost.setAttribute("d", e.d);
+    ghost.setAttribute("fill", "none");
+    ghost.setAttribute("stroke", "none");
+    svg.appendChild(ghost);
+    const L = ghost.getTotalLength();
+    const a = ghost.getPointAtLength(Math.max(0, L - 14)), b = ghost.getPointAtLength(L);
+    const o = { stroke: e.color || INK, strokeWidth: 2.1, roughness: 0.9, bowing: 0.6, seed: seed++ };
+    const lineOpts = Object.assign({}, o, e.dash ? { strokeLineDash: [9, 7] } : {});
+    const g = grp(svg, [rc.path(e.d, lineOpts), ...arrowHead(rc, a.x, a.y, b.x, b.y, o)]);
+    addGroup(st, slide, g, e.t, e.dash ? "fade" : "draw");
+    const n = Math.max(1, Math.round(L / 150));
+    for (let k = 0; k < n; k++) {
+      const p = paperIcon(rc, e.type);
+      p.style.opacity = 0;
+      layer.appendChild(p);
+      st.papers.push({ g: p, ghost, L, k, n });
+    }
+  });
+  if (cfg.figures) addGroup(st, slide, grp(svg, [...stickFigure(rc, 1512, 620), ...stickFigure(rc, 1562, 628)]), 4.0, "draw");
+  svg.appendChild(layer);
+}
+
+function movePapers(st, el) {
+  const cfg = st.flow;
+  for (const p of st.papers) {
+    if (el < cfg.start) { p.g.style.opacity = 0; continue; }
+    const u = (((el - cfg.start) * cfg.speed / p.L + p.k / p.n) % 1 + 1) % 1;
+    const pt = p.ghost.getPointAtLength(u * p.L);
+    p.g.setAttribute("transform", `translate(${pt.x.toFixed(1)},${pt.y.toFixed(1)})`);
+    const fadeOut = cfg.stop ? Math.max(0, Math.min(1, cfg.stop + 1 - el)) : 1;
+    p.g.style.opacity = Math.max(0, Math.min(1, u / 0.12, (1 - u) / 0.12, (el - cfg.start) / 0.8)) * fadeOut;
+  }
+}
+
+function prepare(it) {
+  const g = it.g;
+  g.classList.remove("on");
+  if (it.kind === "fade") g.classList.add("fade");
+  if (it.kind === "grow") g.classList.add("grow");
+  if (it.kind !== "draw") return;
+  g.querySelectorAll("path").forEach(p => {
+    const fill = p.getAttribute("fill");
+    p.style.transition = "none";
+    if (fill && fill !== "none") { p.style.opacity = 0; return; }
+    if (p.getAttribute("stroke-dasharray")) { p.style.opacity = 0; return; }
+    const L = p.getTotalLength();
+    p.dataset.len = L;
+    p.style.strokeDasharray = `${L} ${L}`;
+    p.style.strokeDashoffset = L;
+  });
+}
+
+function showItem(it, instant) {
+  it.shown = true;
+  if (it.el) { it.el.classList.add("on"); return; }
+  const g = it.g;
+  if (it.kind !== "draw") { g.classList.add("on"); return; }
+  g.querySelectorAll("path").forEach(p => {
+    if (instant) { p.style.transition = "none"; p.style.opacity = 1; p.style.strokeDashoffset = 0; return; }
+    if (p.style.opacity === "0") { p.style.transition = "opacity .7s ease"; p.style.opacity = 1; return; }
+    const L = +p.dataset.len || 0;
+    const dur = Math.min(1.3, Math.max(0.35, L / 900));
+    p.style.transition = `stroke-dashoffset ${dur}s ease-in-out`;
+    p.style.strokeDashoffset = 0;
+  });
+}
+
+function fmt(v, dec) { return v.toLocaleString("en-US", { minimumFractionDigits: dec, maximumFractionDigits: dec }); }
+
+function runCounter(c, instant) {
+  c.shown = true;
+  const to = parseFloat(c.el.dataset.to), dec = +(c.el.dataset.dec || 0);
+  const tok = c.tok = {};
+  if (instant) { c.el.textContent = fmt(to, dec); return; }
+  const s0 = performance.now(), dur = 1.6;
+  const step = now => {
+    if (c.tok !== tok) return;
+    const u = Math.min(1, (now - s0) / 1000 / dur);
+    c.el.textContent = fmt(to * (1 - Math.pow(1 - u, 3)), dec);
+    if (u < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+
+function resetSlide(i) {
+  const st = S[i];
+  slides[i].classList.add("instant");
+  st.items.forEach(it => { it.shown = false; if (it.el) it.el.classList.remove("on"); else prepare(it); });
+  st.counters.forEach(c => { c.shown = false; c.tok = null; c.el.textContent = fmt(0, +(c.el.dataset.dec || 0)); });
+  void slides[i].offsetWidth;
+  slides[i].classList.remove("instant");
+}
+
+function finishSlide(i) {
+  const st = S[i];
+  slides[i].classList.add("instant");
+  st.items.forEach(it => { if (!it.shown) showItem(it, true); });
+  st.counters.forEach(c => runCounter(c, true));
+  void slides[i].offsetWidth;
+  slides[i].classList.remove("instant");
+  if (i === cur) t0 = Math.min(t0, performance.now() - 1000 * (st.flow ? st.flow.start : 0));
+}
+
+function pending(i) { return S[i].items.some(it => !it.shown) || S[i].counters.some(c => !c.shown); }
+
+const explainer = document.getElementById("explainer");
+const demo = document.getElementById("demo");
+
+function enterHooks(i, instant) {
+  const id = slides[i].id;
+  if (id === "s-explainer") explainer.src = `explainer/decision_model_explainer.html?nonotnew=1&scale=2&${instant ? "t=24" : "once=1"}`;
+  if (id === "s-demo" && !REDUCED) { try { demo.currentTime = 0; } catch (e) {} demo.play().catch(() => {}); }
+  else demo.pause();
+}
+function leaveHooks(i) {
+  if (i < 0) return;
+  const id = slides[i].id;
+  if (id === "s-explainer") explainer.src = "about:blank";
+  if (id === "s-demo") demo.pause();
+}
+
+function go(i, instant = false) {
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (cur >= 0) { leaveHooks(cur); slides[cur].classList.remove("active"); }
+  cur = i;
+  resetSlide(i);
+  slides[i].classList.add("active");
+  t0 = performance.now();
+  if (instant || REDUCED) finishSlide(i);
+  enterHooks(i, instant || REDUCED);
+  history.replaceState(null, "", `#${i + 1}`);
+}
+
+function next() {
+  const id = slides[cur].id;
+  if (id !== "s-explainer" && id !== "s-demo" && pending(cur)) finishSlide(cur);
+  else if (cur < slides.length - 1) go(cur + 1);
+}
+
+function frame(now) {
+  if (cur >= 0) {
+    const el = (now - t0) / 1000, st = S[cur];
+    for (const it of st.items) if (!it.shown && el >= it.t) showItem(it, false);
+    for (const c of st.counters) if (!c.shown && el >= c.t) runCounter(c, false);
+    if (st.flow) movePapers(st, REDUCED ? st.flow.start + 2.3 : el);
+  }
+  requestAnimationFrame(frame);
+}
+
+addEventListener("keydown", e => {
+  if (["ArrowRight", "PageDown", " ", "Enter", "ArrowDown"].includes(e.key)) { e.preventDefault(); next(); }
+  else if (["ArrowLeft", "PageUp", "Backspace", "ArrowUp"].includes(e.key)) { e.preventDefault(); if (cur > 0) go(cur - 1, true); }
+  else if (e.key === "Home") go(0);
+  else if (e.key === "End") go(slides.length - 1, true);
+  else if (e.key === "r" || e.key === "R") go(cur);
+  else if (e.key === "f" || e.key === "F") {
+    if (document.fullscreenElement) document.exitFullscreen(); else document.documentElement.requestFullscreen();
+  }
+});
+addEventListener("click", e => { if (!e.target.closest("a")) next(); });
+addEventListener("resize", fit);
+
+function printAll() {
+  explainer.style.display = "none";
+  document.getElementById("explainer-still").style.display = "block";
+  demo.style.display = "none";
+  document.getElementById("demo-still").style.display = "block";
+  slides.forEach((s, i) => finishSlide(i));
+  S.forEach(st => { if (st.flow) movePapers(st, st.flow.start + 2.3); });
+}
+
+Promise.all([
+  document.fonts.load('20px "Excali"'), document.fonts.load('20px "Comic"'), document.fonts.ready,
+  ...Array.from(document.images).map(img => img.complete ? Promise.resolve() : new Promise(res => { img.onload = img.onerror = res; })),
+]).then(() => {
+  if (PRINT) document.body.classList.add("print");
+  slides.forEach((s, i) => buildSlide(s, i));
+  if (PRINT) { printAll(); document.body.setAttribute("data-ready", "1"); return; }
+  fit();
+  const h = parseInt((location.hash || "#1").slice(1), 10);
+  const start = parseInt(P.get("slide") || h || 1, 10) - 1;
+  go(isNaN(start) ? 0 : start);
+  requestAnimationFrame(frame);
+  document.body.setAttribute("data-ready", "1");
+});
+</script>
+</body>
+</html>

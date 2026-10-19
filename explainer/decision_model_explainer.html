@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Why a decision model</title>
+<style>
+@font-face { font-family: "Excali"; src: url("fonts/Excalifont-Latin.woff2") format("woff2"); }
+@font-face { font-family: "Comic"; src: url("fonts/ComicShanns-Latin.woff2") format("woff2"); unicode-range: U+0000-218F, U+2200-10FFFF; }
+@font-face { font-family: "Comic"; src: url("fonts/ComicShanns-Symbols.woff2") format("woff2"); unicode-range: U+2190-21FF; }
+html, body { margin: 0; height: 100%; background: #ffffff; }
+body { display: flex; align-items: center; justify-content: center; overflow: hidden; }
+canvas { display: block; }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<script src="vendor/rough.js"></script>
+<script>
+const DATA = {"affair": {"id": 334639, "number": "26.3759", "type": "Motion", "date": "18.06.2026", "title": "Sichtbarkeit des Schweizer Musikschaffens auf digitalen Plattformen sicherstellen"}, "topics": [{"name": "Digitalisierung", "p": 0.561, "thr": 0.406, "yes": true, "truth": true}, {"name": "Wirtschaft", "p": 0.381, "thr": 0.238, "yes": true, "truth": true}, {"name": "Gesundheit", "p": 0.003, "thr": 0.512, "yes": false, "truth": false}, {"name": "Staatspolitik", "p": 0.041, "thr": 0.315, "yes": false, "truth": false}, {"name": "Finanzwesen", "p": 0.017, "thr": 0.163, "yes": false, "truth": false}, {"name": "Umwelt", "p": 0.009, "thr": 0.583, "yes": false, "truth": false}, {"name": "Internationale Politik", "p": 0.017, "thr": 0.42, "yes": false, "truth": false}, {"name": "Soziale Fragen", "p": 0.032, "thr": 0.245, "yes": false, "truth": false}, {"name": "Sicherheitspolitik", "p": 0.007, "thr": 0.614, "yes": false, "truth": false}, {"name": "Verkehr", "p": 0.002, "thr": 0.622, "yes": false, "truth": false}, {"name": "Migration", "p": 0.0, "thr": 0.665, "yes": false, "truth": false}, {"name": "Medien und Kommunikation", "p": 0.879, "thr": 0.46, "yes": true, "truth": true}, {"name": "Landwirtschaft", "p": 0.003, "thr": 0.375, "yes": false, "truth": false}, {"name": "Energie", "p": 0.001, "thr": 0.725, "yes": false, "truth": false}, {"name": "Beschäftigung und Arbeit", "p": 0.003, "thr": 0.175, "yes": false, "truth": false}, {"name": "Europapolitik", "p": 0.002, "thr": 0.206, "yes": false, "truth": false}, {"name": "Recht Allgemein", "p": 0.014, "thr": 0.259, "yes": false, "truth": false}, {"name": "Bildung", "p": 0.0, "thr": 0.268, "yes": false, "truth": false}, {"name": "Sozialer Schutz", "p": 0.0, "thr": 0.35, "yes": false, "truth": false}, {"name": "Raumplanung und Wohnungswesen", "p": 0.002, "thr": 0.272, "yes": false, "truth": false}, {"name": "Steuer", "p": 0.005, "thr": 0.214, "yes": false, "truth": false}, {"name": "Menschenrechte", "p": 0.003, "thr": 0.366, "yes": false, "truth": false}, {"name": "Strafrecht", "p": 0.003, "thr": 0.277, "yes": false, "truth": false}, {"name": "Kultur", "p": 0.886, "thr": 0.339, "yes": true, "truth": true}, {"name": "Wissenschaft und Forschung", "p": 0.002, "thr": 0.345, "yes": false, "truth": false}, {"name": "Parlament", "p": 0.0, "thr": 0.421, "yes": false, "truth": false}, {"name": "Zivilrecht", "p": 0.0, "thr": 0.211, "yes": false, "truth": false}, {"name": "Internationales Recht", "p": 0.001, "thr": 0.192, "yes": false, "truth": false}, {"name": "Gerichtswesen", "p": 0.001, "thr": 0.302, "yes": false, "truth": false}], "chat": {"text": "{\n\"Digitalisierung\": true,\n\"Wirtschaft\": true,\n\"Gesundheit\": false,\n\"Staatspolitik\": true,\n\"Finanzwesen\": false,\n\"Umwelt\": false,\n\"Internationale Politik\": false,\n\"Soziale Fragen\": false,\n\"Sicherheitspolitik\": false,\n\"Verkehr\": false,\n\"Migration\": false,\n\"Medien und Kommunikation\": true,\n\"Landwirtschaft\": false,\n\"Energie\": false,\n\"Beschäftigung und Arbeit\": false,\n\"Europapolitik\": false,\n\"Recht Allgemein\": false,\n\"Bildung\": false,\n\"Sozialer Schutz\": false,\n\"Raumplanung und Wohnungswesen\": false,\n\"Steuer\": false,\n\"Menschenrechte\": false,\n\"Strafrecht\": false,\n\"Kultur\": true,\n\"Wissenschaft und Forschung\": false,\n\"Parlament\": true,\n\"Zivilrecht\": false,\n\"Internationales Recht\": false,\n\"Gerichtswesen\": false\n}", "tokens": 215}};
+const W = 1600, H = 900, DURATION = 24;
+const INK = "#1e1e1e", RED = "#e03131", BLUE = "#1971c2", GREY = "#868e96";
+const F = { red: "#ffc9c9", blue: "#a5d8ff", green: "#b2f2bb", yellow: "#ffec99", grey: "#e9ecef", violet: "#d0bfff" };
+const BADGE = ["#7048e8", "#f08c00", "#e64980", "#15aabf", "#2f9e44"];
+const params = new URLSearchParams(location.search);
+const SCALE = parseFloat(params.get("scale") || String(Math.max(1, window.devicePixelRatio || 1)));
+const canvas = document.getElementById("c");
+canvas.width = Math.round(W * SCALE);
+canvas.height = Math.round(H * SCALE);
+const ctx = canvas.getContext("2d");
+const rc = rough.canvas(canvas);
+
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const ramp = (t, a, b) => clamp((t - a) / (b - a));
+const ease = x => 1 - Math.pow(1 - x, 3);
+
+function rbox(x, y, w, h, r, o) {
+  const d = `M ${x + r} ${y} L ${x + w - r} ${y} Q ${x + w} ${y} ${x + w} ${y + r} L ${x + w} ${y + h - r} Q ${x + w} ${y + h} ${x + w - r} ${y + h} L ${x + r} ${y + h} Q ${x} ${y + h} ${x} ${y + h - r} L ${x} ${y + r} Q ${x} ${y} ${x + r} ${y} Z`;
+  rc.path(d, Object.assign({ roughness: 1.1, stroke: INK, strokeWidth: 1.6, bowing: 0.8, hachureGap: 7, fillWeight: 1.2 }, o));
+}
+
+function text(s, x, y, size, o = {}) {
+  ctx.save();
+  ctx.font = `${size}px ${o.face || "Comic"}`;
+  ctx.fillStyle = o.color || INK;
+  ctx.textAlign = o.align || "left";
+  ctx.textBaseline = "alphabetic";
+  ctx.fillText(s, x, y);
+  ctx.restore();
+}
+
+function measure(s, size, face = "Comic") {
+  ctx.save();
+  ctx.font = `${size}px ${face}`;
+  const w = ctx.measureText(s).width;
+  ctx.restore();
+  return w;
+}
+
+function wrap(s, size, maxW, face = "Comic") {
+  const words = s.split(" "), lines = [];
+  let cur = "";
+  for (const w of words) {
+    const next = cur ? cur + " " + w : w;
+    if (measure(next, size, face) > maxW && cur) { lines.push(cur); cur = w; } else cur = next;
+  }
+  if (cur) lines.push(cur);
+  return lines;
+}
+
+function para(s, x, y, size, maxW, lh, o = {}) {
+  const lines = wrap(s, size, maxW, o.face);
+  lines.forEach((l, i) => text(l, x, y + i * lh, size, o));
+  return lines.length;
+}
+
+function fade(a, fn) {
+  if (a <= 0) return;
+  ctx.save();
+  ctx.globalAlpha = a;
+  fn();
+  ctx.restore();
+}
+
+const TOPICS = DATA.topics;
+const LINES = DATA.chat.text.split("\n");
+const PIECES = [];
+LINES.forEach((line, li) => {
+  const parts = line.match(/\s+|"|[{}:,]|[^\s"{}:,]+/g) || [];
+  parts.forEach(p => PIECES.push({ li, p }));
+  if (li < LINES.length - 1) PIECES.push({ li, p: "\n" });
+});
+const TRUE_LINE = LINES.map(l => /:\s*true/.test(l));
+const LINE_TOPIC = LINES.map(l => { const m = l.match(/"([^"]+)"/); return m ? m[1] : null; });
+const TRUTH = Object.fromEntries(TOPICS.map(t => [t.name, t.truth]));
+
+const T = { title: [0, 0.8], strip: [0.4, 1.2], panes: [1.0, 1.8], stream: [2.0, 12.0], scan: [2.0, 3.0], grow: [3.0, 3.8], marks: [3.8, 4.4],
+            rnote: [5.0, 5.8], lhl: [12.2, 12.9], lnote: [12.4, 13.2], cards: [14.0, 15.3, 16.6, 17.9], notnew: [19.5, 20.3] };
+
+const PANE = { y: 204, h: 498, lx: 60, rx: 810, w: 730 };
+const ROW0 = 276, ROWH = 24;
+
+function drawHeader(t) {
+  fade(ease(ramp(t, ...T.title)), () => {
+    text("A topic is a card", 60, 76, 58, { face: "Excali", color: RED });
+  });
+  fade(ease(ramp(t, ...T.strip)), () => {
+    rbox(60, 130, 1480, 64, 8, { fill: F.yellow, fillStyle: "hachure", seed: 11 });
+    const a = DATA.affair;
+    text(`${a.type} ${a.number}, ${a.date}:  ${a.title}`, 80, 158, 22, { face: "Excali" });
+    text("Questions: Digitalisierung and 28 Curia Vista areas; APS and ad-hoc topics work the same way.   Assigned by the Parliamentary Services: Wirtschaft, Medien und Kommunikation, Kultur.", 80, 182, 13.5);
+  });
+}
+
+function drawPaneFrame(x, title, sub, fill, seed) {
+  rbox(x, PANE.y, PANE.w, PANE.h, 12, { seed });
+  rbox(x + 6, PANE.y + 6, PANE.w - 12, 50, 8, { fill, fillStyle: "solid", stroke: "transparent", seed: seed + 1 });
+  text(title, x + 22, PANE.y + 40, 30, { face: "Excali", color: RED });
+  text(sub, x + 22 + measure(title, 30, "Excali") + 16, PANE.y + 38, 15, { color: INK });
+}
+
+function counter(x, value, extra) {
+  text(`tokens written: ${value}`, x + PANE.w - 22, PANE.y + 33, 17, { align: "right" });
+  if (extra) text(extra, x + PANE.w - 22, PANE.y + 50, 12.5, { align: "right", color: BLUE });
+}
+
+function drawLeft(t) {
+  const x = PANE.lx;
+  const shownFrac = ramp(t, ...T.stream);
+  const nShown = Math.floor(shownFrac * PIECES.length);
+  const tokens = Math.round(DATA.chat.tokens * nShown / PIECES.length);
+  drawPaneFrame(x, "Chat model", "Apertus 8B, prompted for a JSON answer", F.red, 101);
+  counter(x, tokens, t >= T.stream[1] ? "one token after another" : (t >= T.stream[0] ? "writing..." : ""));
+  const shown = LINES.map(() => "");
+  for (let i = 0; i < nShown; i++) { const pc = PIECES[i]; if (pc.p !== "\n") shown[pc.li] += pc.p; }
+  const colX = [x + 26, x + 380];
+  const hl = ease(ramp(t, ...T.lhl));
+  LINES.forEach((line, li) => {
+    const col = li < 16 ? 0 : 1, row = li < 16 ? li : li - 15;
+    const yy = ROW0 + row * ROWH;
+    if (hl > 0 && TRUE_LINE[li]) {
+      const ok = TRUTH[LINE_TOPIC[li]];
+      fade(hl, () => rc.rectangle(colX[col] - 6, yy - 17, measure(line, 14.5) + 12, 22, { fill: ok ? F.green : F.red, fillStyle: "solid", stroke: "transparent", roughness: 1.2, seed: 300 + li }));
+    }
+    text(shown[li], colX[col], yy, 14.5);
+  });
+  if (t >= T.stream[0] && t < T.stream[1] + 0.4) {
+    let li = 0;
+    for (let i = nShown - 1; i >= 0; i--) { li = PIECES[i].li; if (PIECES[i].p === "\n") li += 1; break; }
+    const col = li < 16 ? 0 : 1, row = li < 16 ? li : li - 15;
+    if (Math.floor(t * 3) % 2 === 0) {
+      ctx.fillStyle = INK;
+      ctx.fillRect(colX[col] + measure(shown[li] || "", 14.5) + 2, ROW0 + row * ROWH - 14, 8, 17);
+    }
+  }
+  fade(ease(ramp(t, ...T.lnote)), () => {
+    para("A string to parse: true or false, no probability. It also marks Staatspolitik and Parlament, which the Parliamentary Services did not assign.", x + 26, 670, 14, PANE.w - 52, 18, { color: BLUE });
+  });
+}
+
+function drawRight(t) {
+  const x = PANE.rx;
+  drawPaneFrame(x, "Decision model", "Apertus 8B with a trained adapter", F.blue, 201);
+  const done = t >= T.marks[0];
+  counter(x, 0, t >= T.scan[0] ? "one forward pass" : "");
+  const g = ease(ramp(t, ...T.grow)), mk = ease(ramp(t, ...T.marks));
+  const scan = ramp(t, ...T.scan);
+  if (scan > 0 && scan < 1) {
+    fade(0.35 * Math.sin(Math.PI * scan), () => {
+      ctx.fillStyle = F.blue;
+      ctx.fillRect(x + 12, ROW0 + ROWH - 20, PANE.w - 24, 15 * ROWH + 2);
+    });
+    text("reading the affair and all 29 questions at once", x + PANE.w / 2, ROW0 + 16 * ROWH + 14, 15, { color: BLUE, align: "center" });
+  }
+  TOPICS.forEach((tp, i) => {
+    const col = i < 15 ? 0 : 1, row = i < 15 ? i : i - 15;
+    const cx = x + 24 + col * 350, yy = ROW0 + (row + 1) * ROWH;
+    const bx = cx + 214, bw = 70;
+    const named = done ? (tp.yes ? INK : GREY) : INK;
+    const fs = measure(tp.name, 13) > 200 ? 12 : 13;
+    if (mk > 0 && tp.yes) fade(mk, () => rc.rectangle(cx - 6, yy - 16, measure(tp.name, fs) + 12, 21, { fill: tp.truth ? F.green : F.red, fillStyle: "solid", stroke: "transparent", roughness: 1.2, seed: 400 + i }));
+    text(tp.name, cx, yy, fs, { color: named });
+    rc.rectangle(bx, yy - 13, bw, 15, { stroke: "#ced4da", strokeWidth: 1, roughness: 0.8, seed: 500 + i });
+    const w = bw * tp.p * g;
+    if (w > 1.5) rc.rectangle(bx, yy - 13, w, 15, { fill: done && tp.yes ? F.green : (done ? F.grey : F.blue), fillStyle: "solid", stroke: INK, strokeWidth: 1.1, roughness: 0.9, seed: 600 + i });
+    if (mk > 0) fade(mk, () => {
+      const tx = bx + bw * tp.thr;
+      rc.line(tx, yy - 17, tx, yy + 5, { stroke: BLUE, strokeWidth: 2, roughness: 0.6, seed: 700 + i });
+      text(tp.p.toFixed(2), bx + bw + 8, yy, 13, { color: tp.yes ? INK : GREY });
+    });
+  });
+  fade(ease(ramp(t, ...T.rnote)), () => {
+    para("One probability per question. A topic is marked when its bar passes the blue tick, a threshold fixed on earlier affairs. Here the marks match the assigned topics.", x + 26, 670, 14, PANE.w - 52, 18, { color: BLUE });
+  });
+}
+
+const CARDS = [
+  { big: "215 tokens", body: "The chat model writes token by token: 215 to 244 tokens and 1.4 to 2.4 s per affair (5 runs, hosted endpoint).", fill: F.red },
+  { big: "0 tokens", body: "The decision model writes nothing. One forward pass gives a probability for each question.", fill: F.blue },
+  { big: "1.2 s per affair", body: "28 questions per pass, timed over 1,000 test affairs on one RTX A6000: about 3,000 affairs per GPU hour.", fill: F.blue },
+  { big: "AP 0.74 · F1 0.74", body: "APS chapters: macro AP 0.74 on 1,000 federal affairs. Seven ad-hoc topics: F1 0.74 on 400 affairs.", fill: F.green },
+];
+
+function drawCards(t) {
+  CARDS.forEach((c, i) => {
+    const a = ease(ramp(t, T.cards[i], T.cards[i] + 0.6));
+    fade(a, () => {
+      const x = 60 + i * 375, y = 714, w = 355, h = 130;
+      rbox(x, y, w, h, 6, { fill: c.fill, fillStyle: "hachure", hachureGap: 9, seed: 900 + i });
+      rc.circle(x + 30, y + 30, 32, { fill: BADGE[i], fillStyle: "solid", stroke: BADGE[i], roughness: 0.8, seed: 950 + i });
+      text(String(i + 1), x + 30, y + 37, 20, { face: "Excali", color: "#ffffff", align: "center" });
+      text(c.big, x + 56, y + 40, 28, { face: "Excali", color: RED });
+      para(c.body, x + 16, y + 72, 13.5, w - 30, 18);
+    });
+  });
+  if (!params.has("nonotnew")) fade(ease(ramp(t, ...T.notnew)), () => {
+    rbox(60, 852, 1480, 42, 10, { fill: F.grey, fillStyle: "solid", seed: 990 });
+    para("Not new: answering typed questions in one pass with calibrated probabilities is the idea of TypeSafe's System One models (Jev), and we started from the open Kev implementation (github.com/jaredpalmer/kev, Apache-2.0). Our part is the adaptation to Apertus 1.5 8B and to Swiss parliamentary topics.", 78, 868, 13, 1440, 17);
+  });
+}
+
+function renderAt(t) {
+  ctx.setTransform(SCALE, 0, 0, SCALE, 0, 0);
+  ctx.fillStyle = "#ffffff";
+  ctx.fillRect(0, 0, W, H);
+  drawHeader(t);
+  fade(ease(ramp(t, ...T.panes)), () => { drawLeft(t); drawRight(t); });
+  drawCards(t);
+}
+
+function fit() {
+  const s = Math.min(window.innerWidth / W, window.innerHeight / H);
+  canvas.style.width = `${W * s}px`;
+  canvas.style.height = `${H * s}px`;
+}
+
+window.renderAt = renderAt;
+window.DURATION = DURATION;
+Promise.all([document.fonts.load('20px "Excali"'), document.fonts.load('20px "Comic"', "abc"), document.fonts.ready]).then(() => {
+  window.ready = true;
+  if (params.has("capture")) { canvas.style.width = `${canvas.width}px`; canvas.style.height = `${canvas.height}px`; return; }
+  fit();
+  window.addEventListener("resize", fit);
+  if (params.has("t")) { renderAt(parseFloat(params.get("t"))); return; }
+  const start = performance.now();
+  const once = params.has("once");
+  const loop = now => {
+    const s = (now - start) / 1000;
+    renderAt(once ? Math.min(s, DURATION) : s % (DURATION + 2));
+    if (!once || s < DURATION) requestAnimationFrame(loop);
+  };
+  requestAnimationFrame(loop);
+});
+</script>
+</body>
+</html>
