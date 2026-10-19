@@ -7,7 +7,7 @@ Topic classification for Swiss parliamentary affairs with Apertus.
 - **Team:** Invincibles (Kaushik Raghupathruni, Vilas Harapanahalli, Vaibhav Motwani, Prakash Aryan)
 - **Challenge:** OpenParlData, Topic classification for Swiss parliaments with Apertus (https://hackapertus.notion.site/openparldata)
 - **Event:** Liebefeld, 18 and 19 October 2026
-- **Demo:** to be added
+- **Demo:** https://prakash-aryan.github.io/parlamentsthemen/media/demo_captioned.mp4 (1 min 59 s); slides: https://prakash-aryan.github.io/parlamentsthemen/
 
 ## 1. Summary
 
@@ -35,7 +35,7 @@ On affairs from 2024 to 2026, Apertus-ParlTopics-8B achieves a macro average pre
 | Storage | Decisions with probability, threshold, model and card version; reports and corrections | PostgreSQL with pgvector |
 | Access | FastAPI and a Next.js search page with review mode, read-aloud and spoken queries | One container |
 
-The intended deployment is on premises: `docker compose` starts PostgreSQL and the web and API container, and the decision model runs on a separate GPU server.
+**Target architecture.** The service is deployable on premises (architecture a). `docker compose` starts PostgreSQL and the web and API container on the organisation's own infrastructure, and the decision model, whose weights are open, runs on a GPU server under the same administration. At build time, the setup downloads the Docker base images and the Python and Node packages; the embedding model is downloaded from Hugging Face on first start and cached, and the Apertus weights with our adapter are downloaded once for the GPU server. At runtime, with the decision model on the local GPU server, classification, search and storage need no external service. Three runtime dependencies remain, each replaceable or optional: the OpenParlData API for the nightly update, an Apertus endpoint for the explanations (the Keera gateway at CSCS in our setup, or a local server), and ElevenLabs for read-aloud and spoken queries, which is switched off without a key.
 
 **Operation.** A nightly job evaluates new and changed affairs and stores each decision with the model revision and card version; a change of model or card triggers re-evaluation. The remaining work comprises the scheduling of the nightly Apache Hop workflow, the completion of the older affairs, a review of the cards with Digital Public Services Switzerland (DVS), recalibration from reviewer corrections behind an evaluation gate, and a pilot of the weekly digitalisation shortlist with DVS.
 

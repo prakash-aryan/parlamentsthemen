@@ -8,6 +8,8 @@ OpenParlData.ch collects more than 300,000 affairs from Swiss federal, cantonal 
 | Apertus v1.5 70B (drafting topic cards) | [huggingface.co/swiss-ai/Apertus-v1.5-70B](https://huggingface.co/swiss-ai/Apertus-v1.5-70B) |
 | Apertus-ParlTopics-8B (our trained decision model) | [huggingface.co/merabro/Apertus-ParlTopics-8B](https://huggingface.co/merabro/Apertus-ParlTopics-8B) |
 
+Demo video (2 minutes): https://prakash-aryan.github.io/parlamentsthemen/media/demo_captioned.mp4. Slides: https://prakash-aryan.github.io/parlamentsthemen/. Technical report: [technical_report.md](technical_report.md) and [Invincibles_Report.pdf](Invincibles_Report.pdf).
+
 ## How it works
 
 ![How the service works](figures/fig_system.png)
