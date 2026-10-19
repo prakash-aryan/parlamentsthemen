@@ -630,7 +630,7 @@ export default function ParlTopics() {
                       <span className="rq-title">{titleFor(q) || `#${q.openparldata_id}`}</span>
                       <span className="rq-meta">{[bodyName(q.body_key, q.body_name, q.level), q.year ? String(Math.round(q.year)) : ""].filter(Boolean).join(" · ")}</span>
                       <span className="rq-topic">{topicName(q.topic)} · {q.decision ? L.rv_orig.replace("{d}", q.decision === "yes" ? L.rv_yesno_yes : L.rv_yesno_no) : L.rv_nostore}</span>
-                      {q.stored && (
+                      {(
                         <span className="rq-act">
                           <button type="button" className="rv yes" disabled={st === "sending"} onClick={() => correct(q.openparldata_id, q.topic, "yes")}>{L.rv_yes}</button>
                           <button type="button" className="rv no" disabled={st === "sending"} onClick={() => correct(q.openparldata_id, q.topic, "no")}>{L.rv_no}</button>

@@ -29,7 +29,7 @@ Every topic of every scheme is written as a short **topic card**. Apertus 1.5 8B
 | `web/` | The search page (Next.js, TypeScript), exported as static files and served by the API |
 | `cards/` | Topic cards (YAML) and their names in five languages |
 | `models/` | Calibration and thresholds per topic |
-| `scripts/` | Corpus labelling jobs; `scripts/gpu/` GPU jobs for training and evaluation; `scripts/evaluation/` evaluation and judge scripts |
+| `scripts/gpu/` | Kev setup, training and the model server |
 | `third_party/kev/` | The patch that adapts Kev to Apertus 1.5 |
 | `figures/` | Figures used in this README and in the technical report |
 
@@ -110,13 +110,12 @@ Local development without Docker: `uv sync --extra db --extra embed`, `cd web &&
    data/raw/labels/   (all label folder files, including che_affair_texts.ndjson.gz)
    ```
 
-2. **Topic cards.** `uv run python -m parltopics.cards` (one card) and `uv run python -m parltopics.aps_cards` (APS) draft cards with Apertus 70B; ad-hoc cards are in `cards/adhoc`.
+2. **Topic cards.** `uv run python -m parltopics.cards` drafts a topic card with Apertus 70B; the cards used in this work are in `cards/`.
 3. **Training.** `scripts/gpu/kev_setup.sh` installs Kev at upstream commit 1f04cfa with `third_party/kev/apertus.patch`; `parltopics.build_train` and `parltopics.build_extra` write the training data; `scripts/gpu/launch_train.sh` trains. Apertus-ParlTopics-8B's configuration, metrics, adapter (159 MB) and head (8 MB) are on https://huggingface.co/merabro/Apertus-ParlTopics-8B.
-4. **Evaluation.** `scripts/gpu/eval_trained.sh` scores the test sets; `parltopics.curia_eval`, `parltopics.schemes` and `parltopics.evaluate` compute the metrics; `scripts/gpu/xlmr_run.sh` and `parltopics.embed_clf` train the two supervised baselines; `scripts/evaluation/` holds the comparison, the frontier-model judge and the new-scheme tests. Seeds are fixed (20261018).
-5. **Corpus labelling.** `scripts/full2_prep.sh` (2024 to 2026) and `scripts/older_all_prep.sh` (older affairs, newest first) cut the corpus into chunks; `scripts/full_run.sh` scores them on one GPU each; `parltopics.db scores` loads the results. `scripts/gpu/embed_full.sh` computes the search embeddings.
-6. **Results.** The evaluation scripts in `scripts/evaluation/` recompute the figures in the technical report.
+4. **Corpus labelling.** `scripts/gpu/serve_model.sh` serves the trained model; `parltopics.systemone_multi` scores affairs against it for a set of topic cards, and `parltopics.db scores` loads the results. `parltopics.embed` computes the search embeddings.
+5. **Results.** The technical report describes the evaluation sets, the baselines and the metrics; `parltopics.evaluate` holds the calibration and metric functions.
 
-The GPU scripts assume a data root on the GPU server and need their paths adapted. Hardware used: four RTX A6000 (48 GB).
+The GPU scripts read the data folder on the GPU server from `DATA_ROOT`. Hardware used: four RTX A6000 (48 GB).
 
 ## Credits
 
