@@ -1,0 +1,8 @@
+{
+  "model": "apertus-parltopics-8b",
+  "card": "adhoc_digitalisation",
+  "a": 1.2625239652342415,
+  "b": -2.6621626355128454,
+  "threshold": 1.8056434160844386,
+  "fitted_on": "dev_sample.parquet, 2000 affairs before 2024, 500 positives"
+}

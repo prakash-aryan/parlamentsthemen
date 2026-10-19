@@ -1,0 +1,68 @@
+id: aps_6_2_6
+version: 1
+source_description: The topic "Kernenergie" ("Energie nucléaire") in the chapter "Energie" of the domain
+  "Infrastruktur und Umwelt" in the Année Politique Suisse classification of Swiss politics. Cover what
+  parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics of
+  the same chapter instead.
+name: Nuclear Energy
+definition: Parliamentary affairs on nuclear energy focus on the regulation, safety, operation, and future
+  of nuclear power plants in Switzerland, including decommissioning, waste management, and energy policy
+  implications.
+include:
+- nuclear power plant safety
+- radioactive waste disposal
+- nuclear phase-out strategy
+- energy transition and nuclear role
+- nuclear accident prevention
+- nuclear research and innovation
+- nuclear liability and insurance
+- decommissioning costs and funding
+exclude:
+- renewable energy sources (solar, wind, hydro)
+- fossil fuel energy policy
+- electricity market regulation
+- climate change mitigation strategies
+- energy efficiency measures
+- transportation energy use
+terms:
+  de:
+  - Kernenergie
+  - Atomkraft
+  - Kernkraftwerk
+  - Atommüllentsorgung
+  - Ausstieg aus der Kernenergie
+  - Kernkraftsicherheit
+  - Stilllegung
+  - Kosten für Rückbau
+  - Energiestrategie
+  - Radioaktiver Abfall
+  fr:
+  - énergie nucléaire
+  - centrales nucléaires
+  - gestion des déchets radioactifs
+  - sortie du nucléaire
+  - sécurité nucléaire
+  - démantèlement
+  - fonds de désaffectation
+  - stratégie énergétique
+  - déchets radioactifs
+  it:
+  - energia nucleare
+  - centrali nucleari
+  - gestione dei rifiuti radioattivi
+  - uscita dal nucleare
+  - sicurezza nucleare
+  - smantellamento
+  - costi di disattivazione
+  - strategia energetica
+  - rifiuti radioattivi
+  rm:
+  - energia nucleara
+  - centrala nucleara
+  - disposiziun da ruments radioactivs
+  - sortida da l'energia nucleara
+  - segirezza nucleara
+  - demontascha
+  - custs da dismessa
+  - strategia d'energia
+  - ruments radioactivs

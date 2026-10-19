@@ -1,0 +1,65 @@
+id: aps_7_1_2
+version: 1
+source_description: The topic "Strafrecht" ("Droit pénal") in the chapter "Rechtsordnung" of the domain
+  "Rechts- und Sicherheitspolitik" in the Année Politique Suisse classification of Swiss politics. Cover
+  what parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics
+  of the same chapter instead.
+name: Criminal Law
+definition: Parliamentary affairs concerning the formulation, amendment, and application of criminal law
+  in Switzerland, including penalties, criminal procedure, and the protection of victims. This includes
+  debates on new criminal offenses, sentencing guidelines, and the effectiveness of existing criminal
+  legislation.
+include:
+- criminal code amendments
+- penalty severity
+- criminal procedure reform
+- victim protection laws
+- organized crime legislation
+- cybercrime regulations
+- juvenile delinquency measures
+- extradition treaties
+exclude:
+- civil liability
+- contract law
+- property rights
+- family law
+- administrative law
+- tax law
+- constitutional law
+terms:
+  de:
+  - Strafgesetzbuch
+  - Strafprozessordnung
+  - Strafzumessung
+  - Opferschutz
+  - Organisierte Kriminalität
+  - Cyberkriminalität
+  - Jugendstrafrecht
+  - Auslieferungsrecht
+  fr:
+  - Code pénal
+  - procédure pénale
+  - peines et mesures
+  - protection des victimes
+  - crime organisé
+  - cybercriminalité
+  - droit pénal des mineurs
+  - extradition
+  it:
+  - Codice penale
+  - procedura penale
+  - pene e misure
+  - protezione delle vittime
+  - criminalità organizzata
+  - criminalità informatica
+  - diritto penale minorile
+  - estradizione
+  rm:
+  - cudesch penal
+  - procedura penala
+  - puniziuns e mesiras
+  - protecziun da victimas
+  - criminalitad organisada
+  - criminalitad digitala
+  - dretg penal per giuvenils
+  - extradiziun

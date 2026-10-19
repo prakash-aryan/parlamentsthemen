@@ -1,0 +1,59 @@
+id: adhoc_ukraine
+version: 1
+source_description: 'War in Ukraine: parliamentary affairs about the Russian war against Ukraine and its
+  consequences for Switzerland, including sanctions against Russia, neutrality and arms re-export questions,
+  refugees from Ukraine and protection status S, humanitarian aid and reconstruction, and economic effects
+  of the war. Excludes foreign policy unrelated to this war.'
+name: Swiss Response to the War in Ukraine
+definition: Parliamentary affairs concerning Switzerland's stance, policies, and actions related to the
+  Russian war against Ukraine, including sanctions, neutrality implications, arms re-export, refugee protection,
+  humanitarian aid, and economic impacts.
+include:
+- sanctions against Russia
+- neutrality and arms re-export
+- refugees from Ukraine
+- protection status S
+- humanitarian aid
+- reconstruction support
+- economic effects of the war
+exclude:
+- general foreign policy
+- conflicts unrelated to Ukraine
+- domestic issues with no Ukraine link
+terms:
+  de:
+  - Ukraine-Krieg
+  - Sanktionen gegen Russland
+  - Neutralität
+  - Wiederausfuhr von Waffen
+  - Flüchtlinge aus der Ukraine
+  - Schutzstatus S
+  - humanitäre Hilfe
+  - wirtschaftliche Auswirkungen
+  fr:
+  - guerre en Ukraine
+  - sanctions contre la Russie
+  - neutralité
+  - réexportation d'armes
+  - réfugiés ukrainiens
+  - statut de protection S
+  - aide humanitaire
+  - effets économiques
+  it:
+  - guerra in Ucraina
+  - sanzioni contro la Russia
+  - neutralità
+  - re-esportazione di armi
+  - rifugiati ucraini
+  - statuto di protezione S
+  - aiuto umanitario
+  - effetti economici
+  rm:
+  - guerra en l'Ucraina
+  - sancziuns cunter la Russia
+  - neutralitad
+  - reexport da armas
+  - refugiads da l'Ucraina
+  - statut da protecziun S
+  - agid umanitar
+  - effects economics

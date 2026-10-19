@@ -1,0 +1,82 @@
+id: aps_5_1
+version: 1
+source_description: 'The chapter "Gesundheit, Sozialhilfe, Sport" ("Santé, assistance sociale, sport")
+  of the domain "Gesundheit und Sozialsystem" in the Année Politique Suisse classification of Swiss politics.
+  It contains these topics: Gesundheitspolitik; Ärzte und Pflegepersonal; Spitäler; Medikamente; Suchtmittel;
+  Medizinische Forschung; Fortpflanzungsmedizin; Epidemien und Pandemien; Sozialhilfe; Sport. Cover what
+  parliamentary affairs in this chapter are typically about.'
+name: Health, Social Welfare, and Sport
+definition: This topic covers parliamentary discussions and decisions related to public health policies,
+  healthcare services, medical research, reproductive medicine, epidemic and pandemic management, social
+  welfare programs, and sports development in Switzerland.
+include:
+- healthcare policy
+- doctors and nursing staff
+- hospitals
+- medications
+- addictive substances
+- medical research
+- reproductive medicine
+- epidemics and pandemics
+- social assistance
+- sports development
+exclude:
+- environmental protection
+- education policy
+- transport infrastructure
+- economic regulation
+- foreign policy
+- criminal justice
+terms:
+  de:
+  - Gesundheitspolitik
+  - Ärzte
+  - Pflegepersonal
+  - Spitäler
+  - Medikamente
+  - Suchtmittel
+  - medizinische Forschung
+  - Fortpflanzungsmedizin
+  - Epidemien
+  - Pandemien
+  - Sozialhilfe
+  - Sport
+  fr:
+  - politique de la santé
+  - médecins
+  - personnel soignant
+  - hôpitaux
+  - médicaments
+  - substances addictives
+  - recherche médicale
+  - médecine de la reproduction
+  - épidémies
+  - pandémies
+  - aide sociale
+  - sport
+  it:
+  - politica sanitaria
+  - medici
+  - personale sanitario
+  - ospedali
+  - farmaci
+  - sostanze stupefacenti
+  - ricerca medica
+  - medicina della riproduzione
+  - epidemie
+  - pandemie
+  - assistenza sociale
+  - sport
+  rm:
+  - politica da sanadad
+  - miedis
+  - persunal da tgira
+  - spitals
+  - medicaments
+  - substanzas addictivas
+  - perscrutaziun medicinala
+  - medischina da reproducziun
+  - epidemias
+  - pandemias
+  - agid social
+  - sport

@@ -1,0 +1,63 @@
+id: aps_5_2_9
+version: 1
+source_description: The topic "Berufliche Vorsorge" ("Prévoyance professionnelle") in the chapter "Sozialversicherungen"
+  of the domain "Gesundheit und Sozialsystem" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Professional Pensions
+definition: Parliamentary affairs concerning the regulation, funding, and administration of occupational
+  pension schemes in Switzerland, including retirement benefits, investment policies, and coordination
+  with other social insurance systems.
+include:
+- occupational pension funds
+- second pillar of the Swiss pension system
+- pension fund governance
+- investment rules for pension assets
+- coordination with AHV/IV
+- pension fund solvency
+- retirement age and benefits
+- employee and employer contributions
+exclude:
+- health insurance (LAMal/LCA)
+- unemployment insurance
+- social assistance
+- family benefits
+- disability insurance
+- old-age and survivors' insurance (AHV)
+terms:
+  de:
+  - berufliche Vorsorge
+  - Pensionskasse
+  - zweiter Säule
+  - Leistungen
+  - Finanzierung
+  - Deckungsgrad
+  - Anlagereglement
+  - Koordination mit AHV/IV
+  fr:
+  - prévoyance professionnelle
+  - caisse de pension
+  - deuxième pilier
+  - rente
+  - financement
+  - taux de couverture
+  - règles de placement
+  - coordination avec AVS/AI
+  it:
+  - previdenza professionale
+  - cassa pensione
+  - secondo pilastro
+  - prestazioni pensionistiche
+  - finanziamento
+  - tasso di copertura
+  - regole di investimento
+  - coordinamento con AVS/AI
+  rm:
+  - prevenziun professiunala
+  - cassa da pensiun
+  - segund pilier
+  - rendita
+  - finanziaziun
+  - quota da cuvierta
+  - regulas d'investiziun
+  - coordinaziun cun AVS/AI

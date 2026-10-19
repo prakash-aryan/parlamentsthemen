@@ -1,0 +1,64 @@
+id: curia_2846
+version: 1
+source_description: 'The subject area "Raumplanung und Wohnungswesen" (French: "Aménagement du territoire
+  et logement", Italian: "Pianificazione territoriale e alloggi") that the Swiss Parliamentary Services
+  assign to federal parliamentary affairs in Curia Vista. Cover what affairs in this subject area are
+  typically about.'
+name: Spatial Planning and Housing
+definition: This topic covers parliamentary affairs related to the organization and development of land
+  use, urban development, and housing policies at the federal level in Switzerland. It includes debates
+  on zoning laws, sustainable construction, affordable housing initiatives, and the balance between urban
+  and rural development.
+include:
+- land use planning
+- urban development
+- housing policy
+- affordable housing
+- zoning regulations
+- sustainable construction
+- rural development
+- infrastructure planning
+exclude:
+- cantonal tax policy
+- education system
+- healthcare services
+- transportation infrastructure
+- environmental protection (general)
+- agricultural subsidies
+terms:
+  de:
+  - Raumplanung
+  - Wohnungswesen
+  - Bau- und Zonenordnung
+  - Nachhaltige Entwicklung
+  - Wohnbauförderung
+  - Städtebau
+  - Landesentwicklung
+  - Siedlungsentwicklung
+  fr:
+  - aménagement du territoire
+  - logement
+  - planification urbaine
+  - politique du logement
+  - réglementation des constructions
+  - développement durable
+  - habitat abordable
+  - développement régional
+  it:
+  - pianificazione territoriale
+  - edilizia abitativa
+  - politica abitativa
+  - normative edilizie
+  - sviluppo sostenibile
+  - abitazione economica
+  - urbanistica
+  - sviluppo regionale
+  rm:
+  - planisaziun dal territori
+  - habitaziun
+  - ordinaziun da construcziun e zonas
+  - svilup durabel
+  - promoziun d'abitaziuns
+  - urbanistica
+  - svilup regiunal
+  - settlements

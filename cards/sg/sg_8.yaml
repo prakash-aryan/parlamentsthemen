@@ -1,0 +1,67 @@
+id: sg_8
+version: 1
+source_description: The subject area "Verkehr, Bau, Energie, Gewässer" of the systematic law collection
+  of the canton of St. Gallen, which the canton uses to classify the affairs of its cantonal parliament.
+  Cover what cantonal affairs in this subject area are typically about.
+name: Cantonal Transport, Construction, Energy, and Water Affairs
+definition: This topic covers parliamentary matters related to infrastructure development, mobility systems,
+  energy supply and sustainability, as well as water management and protection within the canton of St.
+  Gallen. It includes policy proposals, debates, and oversight related to roads, public transport, building
+  regulations, renewable energy projects, and water resources.
+include:
+- road infrastructure
+- public transport systems
+- building and construction regulations
+- renewable energy projects
+- energy supply and efficiency
+- water management and protection
+- flood prevention and control
+- urban planning and development
+exclude:
+- federal-level transport policy
+- national energy strategy
+- international water treaties
+- private real estate development
+- municipal zoning decisions
+- national environmental legislation
+terms:
+  de:
+  - Verkehr
+  - Bauwesen
+  - Energieversorgung
+  - Wasserwirtschaft
+  - Infrastruktur
+  - Öffentlicher Verkehr
+  - Nachhaltigkeit
+  - Stromversorgung
+  - Gewässerschutz
+  fr:
+  - transport
+  - construction
+  - énergie
+  - eau
+  - infrastructure
+  - transports publics
+  - développement durable
+  - gestion de l'eau
+  - protection des eaux
+  it:
+  - trasporti
+  - costruzioni
+  - energia
+  - acqua
+  - infrastrutture
+  - trasporto pubblico
+  - sostenibilità
+  - approvvigionamento energetico
+  - protezione delle acque
+  rm:
+  - traffic
+  - construcziun
+  - energia
+  - aua
+  - infrastructura
+  - transport public
+  - sostenibilitad
+  - provedimaint d'energia
+  - protecziun da las auas

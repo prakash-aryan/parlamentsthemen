@@ -1,0 +1,59 @@
+id: aps_3_1_8
+version: 1
+source_description: The topic "Auslandschweizerinnen und -schweizer" ("Suisses de l'étranger") in the
+  chapter "Europa- und Aussenpolitik" of the domain "Europa- und Aussenpolitik" in the Année Politique
+  Suisse classification of Swiss politics. Cover what parliamentary affairs on this topic are typically
+  about, and what belongs to neighbouring topics of the same chapter instead.
+name: Swiss Abroad Policy
+definition: Parliamentary affairs concerning the rights, representation, and welfare of Swiss citizens
+  living outside Switzerland, including consular services, dual citizenship, and integration of expatriates
+  into Swiss society.
+include:
+- consular protection for Swiss citizens abroad
+- dual citizenship regulations
+- voting rights for Swiss abroad
+- integration of Swiss expatriates
+- representation of Swiss abroad in federal policy
+- social security for Swiss citizens living overseas
+- cultural ties and promotion of Swiss identity abroad
+exclude:
+- foreign policy negotiations with non-Swiss states
+- EU-Swiss relations
+- international trade agreements
+- immigration policy for non-Swiss nationals
+- diplomatic missions and embassies
+- global humanitarian aid programs
+terms:
+  de:
+  - Schweizer im Ausland
+  - Auslandschweizerinnen und -schweizer
+  - Konsularschutz
+  - Doppelbürgerschaft
+  - Abstimmungsrecht
+  - Integration
+  - Sozialversicherung
+  - Kulturförderung
+  fr:
+  - Suisses de l'étranger
+  - protection consulaire
+  - double nationalité
+  - droit de vote
+  - intégration
+  - sécurité sociale
+  - identité culturelle
+  it:
+  - Svizzeri all'estero
+  - protezione consolare
+  - doppia cittadinanza
+  - diritto di voto
+  - integrazione
+  - sicurezza sociale
+  - identità culturale
+  rm:
+  - Svizzers a l'exteriur
+  - protecziun consulara
+  - dupla burgaisia
+  - dretg da vuschar
+  - integraziun
+  - segirezza sociala
+  - identitad culturala

@@ -1,0 +1,72 @@
+id: aps_6_1_3
+version: 1
+source_description: The topic "Strassenverkehr" ("Trafic routier") in the chapter "Verkehr und Kommunikation"
+  of the domain "Infrastruktur und Umwelt" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Road Traffic
+definition: Parliamentary affairs concerning the regulation, safety, infrastructure, and environmental
+  impact of road transport systems within Switzerland, including vehicle licensing, traffic rules, and
+  road construction projects.
+include:
+- motor vehicle licensing
+- traffic regulations and enforcement
+- road infrastructure development
+- traffic safety measures
+- emissions standards for vehicles
+- public transport integration with road networks
+- parking policies and management
+- road maintenance and winter services
+exclude:
+- rail transport systems
+- air traffic management
+- maritime transport regulations
+- telecommunications networks
+- postal services
+- aviation safety
+- railway infrastructure
+terms:
+  de:
+  - Strassenverkehr
+  - Verkehrsregeln
+  - Strasseninfrastruktur
+  - Fahrzeugzulassung
+  - Verkehrssicherheit
+  - Abgasnormen
+  - Parkraumbewirtschaftung
+  - Winterdienst
+  - Verkehrsmanagement
+  - Lärmschutz an Strassen
+  fr:
+  - trafic routier
+  - réglementation routière
+  - infrastructure routière
+  - sécurité routière
+  - homologation des véhicules
+  - normes d'émissions
+  - gestion des parkings
+  - service hivernal
+  - gestion du trafic
+  - protection contre le bruit
+  it:
+  - traffico stradale
+  - normative stradali
+  - infrastruttura stradale
+  - sicurezza stradale
+  - omologazione veicoli
+  - norme emissioni
+  - gestione parcheggi
+  - servizio invernale
+  - gestione del traffico
+  - protezione dal rumore
+  rm:
+  - traffic stradal
+  - reglamaintas da traffic
+  - infrastructura stradala
+  - segirezza stradala
+  - homologaziun da vehichels
+  - normas d'emissiuns
+  - gestiun da parcar
+  - servetsch d'unviern
+  - gestiun da traffic
+  - protecziun cunter la canera

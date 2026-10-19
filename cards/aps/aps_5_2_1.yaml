@@ -1,0 +1,67 @@
+id: aps_5_2_1
+version: 1
+source_description: The topic "Sozialversicherungen allgemein" ("Assurances sociales en général") in the
+  chapter "Sozialversicherungen" of the domain "Gesundheit und Sozialsystem" in the Année Politique Suisse
+  classification of Swiss politics. Cover what parliamentary affairs on this topic are typically about,
+  and what belongs to neighbouring topics of the same chapter instead.
+name: General Social Insurance
+definition: Parliamentary affairs concerning the overarching framework, principles, and coordination of
+  Switzerland's social insurance systems, including AHV, IV, EO, ALV, and accident insurance. This includes
+  debates on financing models, inter-institutional cooperation, and the general policy direction of social
+  security.
+include:
+- AHV (Old-Age and Survivors' Insurance)
+- IV (Invalidity Insurance)
+- EO (Military Insurance)
+- ALV (Unemployment Insurance)
+- Accident insurance coordination
+- Financing of social insurances
+- Inter-institutional cooperation
+- General social security policy
+exclude:
+- Healthcare services and hospitals
+- Long-term care insurance (LPP)
+- Family policy and child benefits
+- Pension fund regulation
+- Specific occupational health hazards
+terms:
+  de:
+  - Sozialversicherungen allgemein
+  - AHV
+  - IV
+  - EO
+  - ALV
+  - Finanzierung
+  - Koordination
+  - Sozialversicherungspolitik
+  - Interinstitutionelle Zusammenarbeit
+  fr:
+  - Assurances sociales en général
+  - AVS
+  - AI
+  - APG
+  - AC
+  - Financement
+  - Coordination
+  - Politique des assurances sociales
+  - Collaboration interinstitutionnelle
+  it:
+  - Assicurazioni sociali generali
+  - AVS
+  - AI
+  - IPG
+  - AD
+  - Finanziamento
+  - Coordinamento
+  - Politica delle assicurazioni sociali
+  - Collaborazione interistituzionale
+  rm:
+  - Segiranzas socialas generalas
+  - AVS
+  - AI
+  - IPG
+  - AD
+  - Finanziaziun
+  - Coordinaziun
+  - Politica da las assicuranzas socialas
+  - Collavuraziun interinstituziunala

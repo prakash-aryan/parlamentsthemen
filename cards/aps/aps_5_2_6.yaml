@@ -1,0 +1,62 @@
+id: aps_5_2_6
+version: 1
+source_description: The topic "Arbeitslosenversicherung (ALV)" ("Assurance-chômage") in the chapter "Sozialversicherungen"
+  of the domain "Gesundheit und Sozialsystem" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Unemployment Insurance (ALV)
+definition: Parliamentary affairs concerning the Swiss unemployment insurance system, including its financing,
+  benefit levels, duration, eligibility criteria, and administration. It also covers debates on reforms,
+  effectiveness, and coordination with other social security measures.
+include:
+- ALV benefit duration
+- unemployment benefit eligibility
+- ALV financing and premiums
+- job placement services
+- insurance fund management
+- reforms to ALV legislation
+- coordination with other social insurances
+- ALV administration and efficiency
+exclude:
+- health insurance (KVG/LAMal)
+- pensions and old-age insurance (AHV)
+- disability insurance (IV)
+- family allowances
+- social assistance (Sozialhilfe)
+terms:
+  de:
+  - Arbeitslosenversicherung (ALV)
+  - Arbeitslosenentschädigung
+  - ALV-Beiträge
+  - Anspruchsberechtigung
+  - Rahmenfrist
+  - Arbeitslosenkasse
+  - Reform der ALV
+  - Arbeitsmarktintegration
+  fr:
+  - assurance-chômage (AC)
+  - indemnité de chômage
+  - cotisations AC
+  - droit aux prestations
+  - délai-cadre
+  - caisse de chômage
+  - réforme de l'AC
+  - insertion professionnelle
+  it:
+  - assicurazione contro la disoccupazione (AD)
+  - indennità di disoccupazione
+  - contributi AD
+  - diritto alle prestazioni
+  - periodo quadro
+  - cassa di disoccupazione
+  - riforma dell'AD
+  - reinserimento nel mercato del lavoro
+  rm:
+  - segirada cunter dischoccupaziun (SdC)
+  - indemnisaziun da dischoccupaziun
+  - contribuziuns SdC
+  - dretg a prestaziuns
+  - temp da basa
+  - cassa da dischoccupaziun
+  - refurma da la SdC
+  - reintegraziun en il martgà da lavur

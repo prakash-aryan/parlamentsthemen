@@ -1,0 +1,68 @@
+id: aps_7_1_4
+version: 1
+source_description: The topic "Internationales Recht" ("Droit international") in the chapter "Rechtsordnung"
+  of the domain "Rechts- und Sicherheitspolitik" in the Année Politique Suisse classification of Swiss
+  politics. Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: International Law
+definition: Parliamentary affairs concerning Switzerland's adherence to, interpretation of, and implementation
+  of international treaties, conventions, and customary international law, including human rights, humanitarian
+  law, and international trade agreements.
+include:
+- ratification of international treaties
+- implementation of UN conventions
+- human rights obligations
+- international trade agreements
+- customary international law
+- Swiss participation in international courts
+- international humanitarian law
+- cross-border legal cooperation
+exclude:
+- domestic criminal law
+- civil law
+- criminal procedure
+- immigration policy
+- national security strategy
+- intelligence services oversight
+- military doctrine
+terms:
+  de:
+  - Völkerrecht
+  - völkerrechtliche Verträge
+  - Menschenrechte
+  - humanitäres Völkerrecht
+  - UNO-Konventionen
+  - internationale Handelsabkommen
+  - völkerrechtliche Verpflichtungen
+  - internationale Gerichte
+  - Rechtsdurchsetzung
+  fr:
+  - droit international
+  - traités internationaux
+  - droits de l'homme
+  - droit humanitaire
+  - conventions de l'ONU
+  - accords commerciaux internationaux
+  - obligations juridiques internationales
+  - cours internationales
+  - mise en œuvre du droit
+  it:
+  - diritto internazionale
+  - trattati internazionali
+  - diritti umani
+  - diritto umanitario
+  - convenzioni ONU
+  - accordi commerciali internazionali
+  - obblighi giuridici internazionali
+  - tribunali internazionali
+  - attuazione del diritto
+  rm:
+  - dretg internaziunal
+  - tractats internaziunals
+  - dretgs umans
+  - dretg umanitar
+  - convenziuns ONU
+  - accords da commerzi internaziunals
+  - obligaziuns giuridicas internaziunals
+  - tribunals internaziunals
+  - realisaziun dal dretg

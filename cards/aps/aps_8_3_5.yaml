@@ -1,0 +1,64 @@
+id: aps_8_3_5
+version: 1
+source_description: The topic "Börsen" ("Bourses") in the chapter "Geld, Währung und Kredit" of the domain
+  "Wirtschaft und Finanzen" in the Année Politique Suisse classification of Swiss politics. Cover what
+  parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics of
+  the same chapter instead.
+name: Stock Exchanges
+definition: Parliamentary affairs under this topic focus on the regulation, oversight, and functioning
+  of stock exchanges within Switzerland, including market transparency, investor protection, and the role
+  of financial markets in the national economy.
+include:
+- stock exchange regulation
+- market transparency
+- investor protection
+- financial market oversight
+- trading rules and standards
+- securities listing requirements
+- exchange supervision
+- capital market stability
+exclude:
+- banking sector regulation
+- monetary policy
+- currency exchange rates
+- credit market practices
+- financial product taxation
+- central bank operations
+- private pension systems
+terms:
+  de:
+  - Börsenregulierung
+  - Markttransparenz
+  - Anlegerschutz
+  - Finanzmarktaufsicht
+  - Handelsregeln
+  - Wertpapierlisting
+  - Börsenaufsicht
+  - Kapitalmarktstabilität
+  fr:
+  - régulation des bourses
+  - transparence du marché
+  - protection des investisseurs
+  - surveillance des marchés financiers
+  - règles de négociation
+  - listing des valeurs mobilières
+  - surveillance boursière
+  - stabilité des marchés de capitaux
+  it:
+  - regolamentazione delle borse
+  - trasparenza del mercato
+  - protezione degli investitori
+  - sorveglianza dei mercati finanziari
+  - norme di negoziazione
+  - listing di titoli
+  - vigilanza borsistica
+  - stabilità dei mercati dei capitali
+  rm:
+  - regulaziun da las bursas
+  - transparenza dal martgà
+  - protecziun dals investurs
+  - surveglianza dals martgads finanzials
+  - reglas da commerzi
+  - listing da vaglias
+  - surveglianza da las bursas
+  - stabilitad dals martgads da chapital

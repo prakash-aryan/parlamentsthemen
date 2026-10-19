@@ -1,0 +1,64 @@
+id: aps_6_3_1
+version: 1
+source_description: The topic "Raumplanung" ("Aménagement du territoire") in the chapter "Raumplanung
+  und Wohnungswesen" of the domain "Infrastruktur und Umwelt" in the Année Politique Suisse classification
+  of Swiss politics. Cover what parliamentary affairs on this topic are typically about, and what belongs
+  to neighbouring topics of the same chapter instead.
+name: Spatial Planning
+definition: Parliamentary affairs under this topic address the organization, development, and regulation
+  of land use across Switzerland, balancing urban growth, environmental protection, and regional equity.
+  It includes debates on zoning laws, infrastructure projects, and sustainable development strategies
+  at federal, cantonal, and municipal levels.
+include:
+- land use zoning
+- urban development
+- regional planning
+- environmental protection
+- infrastructure projects
+- sustainable development
+- housing policy coordination
+- transportation networks
+exclude:
+- individual housing subsidies
+- rent control
+- building permits for single structures
+- municipal waste management
+- local road maintenance
+- school construction planning
+terms:
+  de:
+  - Raumplanung
+  - Zonenplanung
+  - Siedlungsentwicklung
+  - Umweltschutz
+  - Nachhaltige Entwicklung
+  - Infrastrukturprojekte
+  - Regionale Planung
+  - Flächennutzung
+  fr:
+  - aménagement du territoire
+  - planification des zones
+  - développement urbain
+  - protection de l'environnement
+  - développement durable
+  - projets d'infrastructure
+  - planification régionale
+  - utilisation du sol
+  it:
+  - pianificazione territoriale
+  - zonizzazione
+  - sviluppo urbano
+  - protezione ambientale
+  - sviluppo sostenibile
+  - progetti infrastrutturali
+  - pianificazione regionale
+  - uso del suolo
+  rm:
+  - planisaziun dal territori
+  - zonaziun
+  - svilup urban
+  - protecziun da l'ambient
+  - svilup durabel
+  - projects d'infrastructura
+  - planisaziun regiunala
+  - utilisaziun dal terren

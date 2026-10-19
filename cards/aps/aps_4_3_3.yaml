@@ -1,0 +1,67 @@
+id: aps_4_3_3
+version: 1
+source_description: The topic "Religion und Kirchen" ("Religion et Eglises") in the chapter "Kultur, Sprache,
+  Kirchen" of the domain "Gesellschaft und Kultur" in the Année Politique Suisse classification of Swiss
+  politics. Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Religion and Churches
+definition: Parliamentary affairs under this topic address the role of religion and churches in Swiss
+  society, including state-church relations, religious freedom, church financing, and cultural preservation
+  linked to religious institutions.
+include:
+- state-church relations
+- religious freedom and tolerance
+- church financing and subsidies
+- protection of religious heritage
+- interfaith dialogue
+- secularism and neutrality
+- religious education in schools
+- rights of religious minorities
+exclude:
+- language policy
+- cultural diversity programs
+- media regulation
+- art and museum funding
+- heritage preservation (non-religious)
+- education system reforms (non-religious)
+terms:
+  de:
+  - Religion
+  - Kirche
+  - Staat-Kirche-Beziehung
+  - Religionsfreiheit
+  - Kirchenfinanzierung
+  - Kulturerbe
+  - Interreligiöser Dialog
+  - Säkularismus
+  - Religiöse Minderheitenrechte
+  fr:
+  - religion
+  - églises
+  - relations État-Églises
+  - liberté religieuse
+  - financement des églises
+  - patrimoine religieux
+  - dialogue interreligieux
+  - laïcité
+  - droits des minorités religieuses
+  it:
+  - religione
+  - chiese
+  - rapporti Stato-chiese
+  - libertà religiosa
+  - finanziamento delle chiese
+  - patrimonio religioso
+  - dialogo interreligioso
+  - laicità
+  - diritti delle minoranze religiose
+  rm:
+  - religiun
+  - baselgias
+  - relaziuns stadi-baselgia
+  - libertad religiusa
+  - finanziaziun da baselgias
+  - patrimoni religius
+  - dialog interreligius
+  - secularissem
+  - dretgs da minoritads religiusas

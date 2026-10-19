@@ -1,0 +1,63 @@
+id: aps_8_3_2
+version: 1
+source_description: The topic "Finanzwesen" ("Affaires financières") in the chapter "Geld, Währung und
+  Kredit" of the domain "Wirtschaft und Finanzen" in the Année Politique Suisse classification of Swiss
+  politics. Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Public Finance and Fiscal Policy
+definition: Parliamentary affairs under this topic focus on the management of public funds, budgetary
+  processes, taxation, debt, and financial regulations at federal, cantonal, and city levels. It includes
+  debates on revenue generation, allocation of public resources, fiscal responsibility, and oversight
+  of financial institutions and economic stability.
+include:
+- budget planning and approval
+- taxation and revenue policy
+- public debt management
+- fiscal rules and transparency
+- public spending allocation
+- financial regulation and supervision
+- economic stability and monetary policy coordination
+exclude:
+- private banking and financial services
+- personal consumer credit
+- corporate finance and investment
+- stock market regulation
+- currency exchange rates (purely)
+- microeconomic business support programs
+terms:
+  de:
+  - Finanzwesen
+  - Staatshaushalt
+  - Steuerpolitik
+  - Schuldenmanagement
+  - Finanzaufsicht
+  - Fiskalregeln
+  - öffentliche Ausgaben
+  - Finanztransparenz
+  fr:
+  - affaires financières
+  - budget de l'État
+  - politique fiscale
+  - gestion de la dette publique
+  - régulation financière
+  - règles budgétaires
+  - dépenses publiques
+  - transparence financière
+  it:
+  - affari finanziarie
+  - bilancio statale
+  - politica fiscale
+  - gestione del debito pubblico
+  - regolamentazione finanziaria
+  - norme fiscali
+  - spese pubbliche
+  - trasparenza finanziaria
+  rm:
+  - finanzas publicas
+  - budget dal stadi
+  - politica da taglia
+  - gestiun da debits publics
+  - surveglianza finanziala
+  - reglas fiscals
+  - expensas publicas
+  - transparenza finanziala

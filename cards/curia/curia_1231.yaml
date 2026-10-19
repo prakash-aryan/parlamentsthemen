@@ -1,0 +1,64 @@
+id: curia_1231
+version: 1
+source_description: 'The subject area "Internationales Recht" (French: "Droit international", Italian:
+  "Diritto internazionale") that the Swiss Parliamentary Services assign to federal parliamentary affairs
+  in Curia Vista. Cover what affairs in this subject area are typically about.'
+name: International Law
+definition: This topic covers parliamentary affairs related to Switzerland's adherence to, interpretation
+  of, and implementation of international treaties, conventions, and legal norms. It includes matters
+  concerning Switzerland's international legal obligations, participation in international organizations,
+  and the impact of international law on domestic legislation and policy. It also encompasses issues related
+  to international jurisdiction, human rights law, and the resolution of international disputes.
+include:
+- International treaties and conventions
+- Switzerland's membership in international organizations
+- Implementation of international law in domestic legislation
+- International jurisdiction and legal cooperation
+- Human rights obligations under international law
+- Cross-border legal disputes and arbitration
+- Swiss foreign policy legal framework
+- International criminal law and jurisdiction
+exclude:
+- Domestic criminal law
+- Cantonal or municipal law
+- Purely economic trade agreements (unless legally binding)
+- Internal administrative procedures
+- Bilateral agreements not covered by international law
+- Purely symbolic or political resolutions
+terms:
+  de:
+  - Völkerrecht
+  - internationale Verträge
+  - UNO-Mitgliedschaft
+  - Rechtsdurchsetzung
+  - internationale Gerichtsbarkeit
+  - Menschenrechte
+  - Staatenverantwortung
+  - multilaterale Abkommen
+  fr:
+  - droit international
+  - traités internationaux
+  - Organisation des Nations Unies
+  - juridiction internationale
+  - droits de l'homme
+  - responsabilité de l'État
+  - accords multilatéraux
+  - arbitrage international
+  it:
+  - diritto internazionale
+  - trattati internazionali
+  - Organizzazione delle Nazioni Unite
+  - giurisdizione internazionale
+  - diritti umani
+  - responsabilità dello Stato
+  - accordi multilaterali
+  - arbitrato internazionale
+  rm:
+  - dretg internaziunal
+  - tractats internaziunals
+  - Organisaziun da las Naziuns Unidas
+  - giurisdicziun internaziunala
+  - dretgs umans
+  - respunsabladad dal stadi
+  - cunvegnas multilaterals
+  - arbitragi internaziunal

@@ -1,0 +1,64 @@
+id: aps_4_3_2
+version: 1
+source_description: The topic "Sprachfragen" ("Questions linguistiques") in the chapter "Kultur, Sprache,
+  Kirchen" of the domain "Gesellschaft und Kultur" in the Année Politique Suisse classification of Swiss
+  politics. Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Language Policy and Linguistic Diversity
+definition: Parliamentary affairs concerning the promotion, protection, and regulation of Switzerland's
+  multilingualism, including language rights, official language use, support for minority languages, and
+  measures to ensure linguistic equality across the country.
+include:
+- Official language status
+- Language rights of minorities
+- Promotion of Romansh
+- Bilingual/multilingual education
+- Language use in public administration
+- Support for regional languages
+- Linguistic integration policies
+- Protection of linguistic diversity
+exclude:
+- Media regulation
+- Cultural heritage preservation
+- Religious affairs
+- Education curriculum content
+- Tourism promotion
+- Intellectual property
+- Immigration language requirements
+terms:
+  de:
+  - Sprachpolitik
+  - Amtssprachen
+  - Minderheitensprachen
+  - Rätoromanisch
+  - Bilingualer Unterricht
+  - Sprachgebrauch in der Verwaltung
+  - Sprachliche Gleichberechtigung
+  - Mehrsprachigkeit
+  fr:
+  - Politique linguistique
+  - Langues officielles
+  - Langues minoritaires
+  - Roumain
+  - Enseignement bilingue
+  - Usage des langues dans l'administration
+  - Égalité linguistique
+  - Multilinguisme
+  it:
+  - Politica linguistica
+  - Lingue ufficiali
+  - Lingue minoritarie
+  - Romancio
+  - Istruzione bilingue
+  - Uso delle lingue nell'amministrazione
+  - Parità linguistica
+  - Multilinguismo
+  rm:
+  - Politica da lingua
+  - Lingias uffizialas
+  - Lingias minoritaras
+  - Rumantsch
+  - Instrucziun bilingua
+  - Diever da las linguas en l'administraziun
+  - Egualitad linguistica
+  - Multilinguitad

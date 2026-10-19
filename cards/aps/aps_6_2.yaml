@@ -1,0 +1,63 @@
+id: aps_6_2
+version: 1
+source_description: 'The chapter "Energie" ("Energie") of the domain "Infrastruktur und Umwelt" in the
+  Année Politique Suisse classification of Swiss politics. It contains these topics: Energiepolitik; Stromnetz
+  und -vertrieb; Erdöl und Erdgas; Wasserkraft; Erneuerbare Energien; Kernenergie. Cover what parliamentary
+  affairs in this chapter are typically about.'
+name: Energy Policy and Infrastructure
+definition: This topic covers parliamentary discussions and decisions related to the production, distribution,
+  and regulation of energy in Switzerland, including policies on electricity, fossil fuels, hydropower,
+  renewable energy sources, and nuclear energy.
+include:
+- Electricity grid and distribution
+- Oil and natural gas
+- Hydropower
+- Renewable energy sources
+- Nuclear energy
+- Energy policy and legislation
+- Energy infrastructure development
+- Energy market regulation
+exclude:
+- Transportation infrastructure
+- Agricultural policy
+- Healthcare systems
+- Educational reforms
+- Taxation policies
+- Social welfare programs
+terms:
+  de:
+  - Energiepolitik
+  - Stromnetz
+  - Erdöl und Erdgas
+  - Wasserkraft
+  - Erneuerbare Energien
+  - Kernenergie
+  - Energieversorgung
+  - Energiegesetzgebung
+  fr:
+  - Politique énergétique
+  - Réseau électrique
+  - Pétrole et gaz naturel
+  - Hydroélectricité
+  - Énergies renouvelables
+  - Énergie nucléaire
+  - Approvisionnement énergétique
+  - Législation énergétique
+  it:
+  - Politica energetica
+  - Rete elettrica
+  - Petrolio e gas naturale
+  - Idroelettricità
+  - Energia rinnovabile
+  - Energia nucleare
+  - Approvvigionamento energetico
+  - Legislazione energetica
+  rm:
+  - Politica d'energia
+  - Rait d'electricitad
+  - Petroli e gas natiral
+  - Idroenergia
+  - Energia regenerabla
+  - Energia nucleara
+  - Provediment d'energia
+  - Legislaziun d'energia

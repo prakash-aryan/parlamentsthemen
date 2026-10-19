@@ -1,0 +1,63 @@
+id: aps_8_4_5
+version: 1
+source_description: The topic "Tierische Produktion" ("Production animale") in the chapter "Landwirtschaft"
+  of the domain "Wirtschaft und Finanzen" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Animal Production
+definition: Parliamentary affairs concerning the breeding, husbandry, welfare, and economic aspects of
+  livestock farming within Switzerland's agricultural sector. Includes debates on regulations, subsidies,
+  disease control, and sustainability practices related to animal production systems.
+include:
+- livestock breeding
+- animal welfare standards
+- disease prevention in animals
+- subsidies for animal production
+- sustainable farming practices
+- meat and dairy production regulations
+- feed quality and safety
+- organic animal farming
+exclude:
+- crop cultivation
+- agricultural land use
+- food processing and distribution
+- forestry
+- rural development policies
+- agricultural trade agreements
+terms:
+  de:
+  - Tierische Produktion
+  - Nutztierhaltung
+  - Tierwohl
+  - Tierseuchenbekämpfung
+  - Tierhaltungsregeln
+  - Futtermittel
+  - Milch- und Fleischproduktion
+  - Nachhaltige Tierhaltung
+  fr:
+  - production animale
+  - bétail
+  - bien-être animal
+  - lutte contre les épizooties
+  - réglementation de l'élevage
+  - fourrages
+  - production laitière et carnée
+  - élevage durable
+  it:
+  - produzione animale
+  - allevamento
+  - benessere animale
+  - lotta alle epizoozie
+  - normative per l'allevamento
+  - mangimi
+  - produzione lattiera e di carne
+  - allevamento sostenibile
+  rm:
+  - producziun d'animals
+  - tratga da biestga
+  - bainstar d'animals
+  - cumbat cunter epizoozias
+  - reglamentaziun da l'allevament
+  - pavel
+  - producziun da latg e charn
+  - allevament durabel

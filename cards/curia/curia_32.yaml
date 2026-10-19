@@ -1,0 +1,63 @@
+id: curia_32
+version: 1
+source_description: 'The subject area "Bildung" (French: "Éducation", Italian: "Formazione") that the
+  Swiss Parliamentary Services assign to federal parliamentary affairs in Curia Vista. Cover what affairs
+  in this subject area are typically about.'
+name: Education Policy
+definition: This topic covers parliamentary affairs related to the Swiss education system, including school
+  curricula, vocational training, higher education, language policies in schools, and the role of federal,
+  cantonal, and municipal authorities in education governance.
+include:
+- school curricula
+- vocational training
+- higher education
+- language education
+- educational standards
+- teacher training
+- school infrastructure
+- equal access to education
+exclude:
+- healthcare policy
+- social welfare programs
+- cultural funding
+- transportation infrastructure
+- environmental regulations
+- economic development
+- immigration policy
+terms:
+  de:
+  - Bildungspolitik
+  - Schulwesen
+  - Berufsbildung
+  - Hochschulpolitik
+  - Sprachunterricht
+  - Lehrerausbildung
+  - Schulbau
+  - Bildungsgleichheit
+  fr:
+  - politique de l'éducation
+  - système scolaire
+  - formation professionnelle
+  - enseignement supérieur
+  - enseignement des langues
+  - formation des enseignants
+  - infrastructure scolaire
+  - égalité des chances en éducation
+  it:
+  - politica dell'istruzione
+  - sistema scolastico
+  - formazione professionale
+  - istruzione superiore
+  - insegnamento delle lingue
+  - formazione degli insegnanti
+  - infrastrutture scolastiche
+  - parità di accesso all'istruzione
+  rm:
+  - politica da furmaziun
+  - sistem da scola
+  - furmaziun professiunala
+  - furmaziun superiura
+  - instrucziun da linguas
+  - furmaziun da scolasts
+  - infrastructura da scola
+  - egualitad d'access a l'educaziun

@@ -1,0 +1,65 @@
+id: aps_8_4_2
+version: 1
+source_description: The topic "Beschäftigte in der Landwirtschaft" ("Personnes employées dans l'agriculture")
+  in the chapter "Landwirtschaft" of the domain "Wirtschaft und Finanzen" in the Année Politique Suisse
+  classification of Swiss politics. Cover what parliamentary affairs on this topic are typically about,
+  and what belongs to neighbouring topics of the same chapter instead.
+name: Agricultural Employment
+definition: Parliamentary affairs on this topic focus on the workforce within the agricultural sector,
+  including employment conditions, labor market dynamics, and social aspects of farming jobs across Switzerland.
+  It covers issues related to the number of agricultural workers, their working conditions, training,
+  and the impact of agricultural policies on employment.
+include:
+- agricultural labor market
+- farm worker conditions
+- agricultural employment policies
+- training and education for agricultural workers
+- social security for agricultural employees
+- seasonal employment in agriculture
+- gender equality in agricultural work
+- immigration and foreign agricultural workers
+exclude:
+- agricultural production volumes
+- farm subsidies and financial support
+- agricultural land use and zoning
+- animal welfare regulations
+- agricultural product quality standards
+- food safety and inspection
+- agricultural research and innovation
+terms:
+  de:
+  - Landwirtschaftliche Beschäftigte
+  - Arbeitsbedingungen in der Landwirtschaft
+  - Landarbeiter
+  - Ausbildung im Agrarsektor
+  - Sozialversicherung für Landwirte
+  - Saisonarbeit
+  - Gleichstellung in der Landwirtschaft
+  - Arbeitsmigration im Agrarbereich
+  fr:
+  - Personnes employées dans l'agriculture
+  - Conditions de travail agricoles
+  - Main-d'œuvre agricole
+  - Formation professionnelle agricole
+  - Sécurité sociale des agriculteurs
+  - Travail saisonnier
+  - Égalité des genres en agriculture
+  - Migration de travailleurs agricoles
+  it:
+  - Impiegati nel settore agricolo
+  - Condizioni di lavoro in agricoltura
+  - Lavoratori agricoli
+  - Formazione professionale agricola
+  - Previdenza sociale per agricoltori
+  - Lavoro stagionale
+  - Parità di genere in agricoltura
+  - Migrazione di lavoratori agricoli
+  rm:
+  - Impiegads en agricultura
+  - Cundiziuns da lavur en agricultura
+  - Lavuraders agriculs
+  - Scolaziun professiunala agricula
+  - Segiranza sociala per purs
+  - Lavur stagiunala
+  - Egualitad da geners en agricultura
+  - Migraziun da lavuraders agriculs

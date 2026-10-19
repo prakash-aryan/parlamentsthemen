@@ -1,0 +1,63 @@
+id: aps_5_1_5
+version: 1
+source_description: The topic "Suchtmittel" ("Stupéfiants") in the chapter "Gesundheit, Sozialhilfe, Sport"
+  of the domain "Gesundheit und Sozialsystem" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Drug Policy and Addiction
+definition: Parliamentary affairs under this topic address the regulation, control, and treatment of addictive
+  substances, harm reduction strategies, prevention programs, and the social support systems for individuals
+  affected by substance abuse.
+include:
+- Regulation of narcotics and psychotropic substances
+- Harm reduction measures (e.g., needle exchange programs)
+- Addiction treatment and rehabilitation services
+- Prevention campaigns and public health education
+- Funding for addiction support organizations
+- Monitoring of drug trafficking and illegal markets
+- Legal framework for medical and therapeutic use of controlled substances
+- Evaluation of drug policy effectiveness
+exclude:
+- General healthcare infrastructure
+- Sports funding and facilities
+- Social welfare benefits unrelated to addiction
+- Mental health disorders not directly linked to substance use
+- Public safety unrelated to drug-related crimes
+- Environmental health issues
+terms:
+  de:
+  - Betäubungsmittelgesetz
+  - Suchtprävention
+  - Harm Reduction
+  - Suchttherapie
+  - Drogenhandel
+  - Medizinische Anwendung
+  - Abhängigkeitserkrankungen
+  - Drogenpolitik
+  fr:
+  - Loi sur les stupéfiants
+  - Prévention de la toxicomanie
+  - Réduction des risques
+  - Traitement de la dépendance
+  - Trafic de drogue
+  - Usage thérapeutique
+  - Maladies de dépendance
+  - Politique des drogues
+  it:
+  - Legge sugli stupefacenti
+  - Prevenzione della tossicodipendenza
+  - Riduzione del danno
+  - Terapia della dipendenza
+  - Traffico di droga
+  - Uso terapeutico
+  - Malattie da dipendenza
+  - Politica sulle droghe
+  rm:
+  - Lescha davart ils narcotics
+  - Prevenziun da toxicomania
+  - Reducziun dals donns
+  - Terapia da dependenza
+  - Traffic da drogas
+  - Applicaziun medicinala
+  - Maladias da dependenza
+  - Politica da drogas

@@ -1,0 +1,62 @@
+id: aps_8_3_4
+version: 1
+source_description: The topic "Banken" ("Banques") in the chapter "Geld, Währung und Kredit" of the domain
+  "Wirtschaft und Finanzen" in the Année Politique Suisse classification of Swiss politics. Cover what
+  parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics of
+  the same chapter instead.
+name: Banking Sector Regulation
+definition: Parliamentary affairs concerning the regulation, supervision, and oversight of banks and financial
+  institutions within Switzerland, including issues related to stability, consumer protection, and systemic
+  risk management.
+include:
+- banking supervision
+- financial stability
+- consumer protection in banking
+- banking licenses and authorizations
+- anti-money laundering measures
+- bank bailout mechanisms
+- cross-border banking regulation
+exclude:
+- monetary policy
+- exchange rate management
+- taxation of financial transactions
+- private investment funds
+- insurance sector regulation
+- real estate financing
+terms:
+  de:
+  - Bankenaufsicht
+  - Finanzstabilität
+  - Kundenrecht
+  - Banklizenz
+  - Geldwäscherei
+  - Sicherungsmechanismus
+  - systemrelevante Banken
+  - Finanzmarktregulierung
+  fr:
+  - régulation bancaire
+  - stabilité financière
+  - protection des clients
+  - autorisation bancaire
+  - blanchiment d'argent
+  - mécanisme de garantie
+  - banques systémiques
+  - réglementation des marchés financiers
+  it:
+  - regolamentazione bancaria
+  - stabilità finanziaria
+  - protezione dei clienti
+  - licenza bancaria
+  - riciclaggio di denaro
+  - meccanismo di garanzia
+  - banche sistemiche
+  - regolamentazione dei mercati finanziari
+  rm:
+  - regulaziun da bancas
+  - stabilitad finanziala
+  - protecziun dals clients
+  - licenza da banca
+  - lavandia da daners
+  - mecanissem da garanzia
+  - bancas sistemicas
+  - regulaziun dals martgads finanzials

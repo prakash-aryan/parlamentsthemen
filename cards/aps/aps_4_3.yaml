@@ -1,0 +1,53 @@
+id: aps_4_3
+version: 1
+source_description: 'The chapter "Kultur, Sprache, Kirchen" ("Culture, langues, églises") of the domain
+  "Gesellschaft und Kultur" in the Année Politique Suisse classification of Swiss politics. It contains
+  these topics: Kultur; Sprachfragen; Religion und Kirchen; Heimatschutz und Denkmalpflege; Urheberrecht.
+  Cover what parliamentary affairs in this chapter are typically about.'
+name: Culture, Language, and Religion Affairs
+definition: This topic covers parliamentary discussions and decisions related to cultural preservation,
+  linguistic diversity, religious matters, heritage protection, and intellectual property rights within
+  Switzerland's political landscape.
+include:
+- Cultural preservation
+- Language policy
+- Religious affairs
+- Heritage protection
+- Monument conservation
+- Copyright and intellectual property
+exclude:
+- Economic policy
+- Healthcare
+- Education system
+- Environmental regulations
+- Transport infrastructure
+- Labor market
+terms:
+  de:
+  - Kulturpolitik
+  - Sprachfragen
+  - Religionspolitik
+  - Heimatschutz
+  - Denkmalpflege
+  - Urheberrecht
+  fr:
+  - Politique culturelle
+  - Questions linguistiques
+  - Affaires religieuses
+  - Protection du patrimoine
+  - Conservation des monuments
+  - Droit d'auteur
+  it:
+  - Politica culturale
+  - Questioni linguistiche
+  - Affari religiosi
+  - Protezione del patrimonio
+  - Conservazione dei monumenti
+  - Diritto d'autore
+  rm:
+  - Politica culturala
+  - Dumondas linguisticas
+  - Affars religius
+  - Protecziun da patrimoni
+  - Conservaziun da monuments
+  - Dretg d'autur

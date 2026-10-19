@@ -1,0 +1,68 @@
+id: aps_1_2_11
+version: 1
+source_description: The topic "Parteien" ("Partis") in the chapter "Institutionen" of the domain "Akteure
+  und Institutionen" in the Année Politique Suisse classification of Swiss politics. Cover what parliamentary
+  affairs on this topic are typically about, and what belongs to neighbouring topics of the same chapter
+  instead.
+name: Political Parties
+definition: This topic covers parliamentary affairs related to the role, organization, financing, and
+  activities of political parties within the Swiss political system, including their influence on elections,
+  policy-making, and representation in parliaments.
+include:
+- party financing
+- party membership
+- party platforms
+- electoral alliances
+- party discipline
+- party representation in parliaments
+- transparency of party funding
+- role of parties in coalition building
+exclude:
+- individual politicians
+- specific legislative proposals
+- government formation
+- election administration
+- civil society organizations
+- interest groups
+- political ideologies in general
+terms:
+  de:
+  - Politische Parteien
+  - Parteifinanzierung
+  - Parteimitgliedschaft
+  - Parteiprogramme
+  - Wahlallianzen
+  - Parteidisziplin
+  - Parlamentsvertretung
+  - Transparenz der Parteifinanzen
+  - Koalitionsbildung
+  fr:
+  - Partis politiques
+  - Financement des partis
+  - Adhésion aux partis
+  - Programmes des partis
+  - Alliances électorales
+  - Discipline de parti
+  - Représentation parlementaire
+  - Transparence du financement
+  - Construction de coalitions
+  it:
+  - Partiti politici
+  - Finanziamento dei partiti
+  - Iscrizione ai partiti
+  - Programmi dei partiti
+  - Alleanze elettorali
+  - Disciplina di partito
+  - Rappresentanza parlamentare
+  - Trasparenza del finanziamento
+  - Formazione di coalizioni
+  rm:
+  - Partidas politicas
+  - Finanziaziun da partidas
+  - Commembranza da partidas
+  - Programs da partidas
+  - Allianzas electoralas
+  - Disciplina da partida
+  - Rappresentanza en parlaments
+  - Transparenza da la finanziaziun
+  - Formaziun da coaliziuns

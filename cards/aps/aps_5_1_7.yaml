@@ -1,0 +1,68 @@
+id: aps_5_1_7
+version: 1
+source_description: The topic "Fortpflanzungsmedizin" ("Procréation médicalement assistée") in the chapter
+  "Gesundheit, Sozialhilfe, Sport" of the domain "Gesundheit und Sozialsystem" in the Année Politique
+  Suisse classification of Swiss politics. Cover what parliamentary affairs on this topic are typically
+  about, and what belongs to neighbouring topics of the same chapter instead.
+name: Assisted Reproductive Medicine
+definition: Parliamentary affairs on assisted reproductive medicine address ethical, legal, and medical
+  aspects of techniques such as in vitro fertilization, sperm donation, egg donation, and surrogacy within
+  Switzerland's healthcare system.
+include:
+- IVF regulations
+- sperm and egg donation laws
+- surrogacy legality
+- reproductive rights
+- medical ethics in fertility treatments
+- insurance coverage for assisted reproduction
+- national guidelines on fertility clinics
+- public funding for reproductive technologies
+exclude:
+- general healthcare policy
+- social welfare programs
+- sports policy
+- mental health services
+- drug approval processes
+- public health campaigns
+terms:
+  de:
+  - assistierte Reproduktion
+  - In-vitro-Fertilisation (IVF)
+  - Samenspende
+  - Eizellspende
+  - Leihmutterschaft
+  - Fruchtbarkeitsbehandlungen
+  - Reproduktionsmedizin
+  - medizinische Ethik
+  - Versicherungsdeckung
+  - Gesetzgebung
+  fr:
+  - procréation médicalement assistée
+  - fécondation in vitro (FIV)
+  - don de sperme
+  - don d'ovocytes
+  - grossesse pour autrui
+  - traitements de fertilité
+  - éthique médicale
+  - couverture d'assurance
+  - législation
+  it:
+  - procreazione medicalmente assistita
+  - fecondazione in vitro (FIV)
+  - donazione di spermatozoi
+  - donazione di ovociti
+  - maternità surrogata
+  - trattamenti di fertilità
+  - etica medica
+  - copertura assicurativa
+  - normativa
+  rm:
+  - procreaziun assistida medicinalmain
+  - fertilisaziun in vitro (FIV)
+  - donaziun da sperma
+  - donaziun d'ovs
+  - maternitad da substituziun
+  - trattaments da fertilitad
+  - etica da la medischina
+  - cuvierta da l'assicuranza
+  - legislaziun

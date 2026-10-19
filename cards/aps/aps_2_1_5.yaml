@@ -1,0 +1,63 @@
+id: aps_2_1_5
+version: 1
+source_description: The topic "Wahl- und Abstimmungsverfahren" ("Procédure de vote et d'élection") in
+  the chapter "Direkte Demokratie" of the domain "Direkte Demokratie und Wahlen" in the Année Politique
+  Suisse classification of Swiss politics. Cover what parliamentary affairs on this topic are typically
+  about, and what belongs to neighbouring topics of the same chapter instead.
+name: Voting and Election Procedures
+definition: This topic covers parliamentary affairs related to the rules, processes, and mechanisms governing
+  elections and votes within Swiss political institutions, including ballot design, voter eligibility,
+  counting methods, and the implementation of direct democratic instruments.
+include:
+- ballot design and layout
+- electoral thresholds
+- voter eligibility criteria
+- vote counting procedures
+- implementation of referendums
+- election of parliamentary members
+- electoral roll management
+- quorum requirements for votes
+exclude:
+- campaign financing regulations
+- political party organization
+- electoral district boundaries
+- voter turnout analysis
+- post-election dispute resolution
+- electoral law amendments
+terms:
+  de:
+  - Wahlverfahren
+  - Abstimmungsprozedur
+  - Stimmzettelgestaltung
+  - Wählbarkeit
+  - Stimmenauszählung
+  - Referendumsdurchführung
+  - Quorum
+  - Wahlkreisorganisation
+  fr:
+  - procédure de vote
+  - mode d'élection
+  - conception du bulletin
+  - éligibilité
+  - dépouillement
+  - mise en œuvre du référendum
+  - quorum
+  - organisation des circonscriptions
+  it:
+  - procedure di voto
+  - modalità di elezione
+  - disegno della scheda
+  - eleggibilità
+  - spoglio
+  - attuazione del referendum
+  - quorum
+  - organizzazione dei circondari
+  rm:
+  - procedura da vuschar
+  - moda d'eleger
+  - concepziun dal cedel da vuschar
+  - eleggibiltad
+  - dumbraziun
+  - realisaziun dal referendum
+  - quorum
+  - organisaziun dals circuls

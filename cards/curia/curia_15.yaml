@@ -1,0 +1,69 @@
+id: curia_15
+version: 1
+source_description: 'The subject area "Wirtschaft" (French: "Économie", Italian: "Economia") that the
+  Swiss Parliamentary Services assign to federal parliamentary affairs in Curia Vista. Cover what affairs
+  in this subject area are typically about.'
+name: Economic Affairs
+definition: This topic covers parliamentary matters related to Switzerland's economic policy, including
+  financial markets, trade, industry, employment, innovation, and fiscal measures. It encompasses debates
+  and proposals on economic development, competitiveness, and the regulation of economic activities at
+  the federal level.
+include:
+- economic policy
+- financial markets
+- trade agreements
+- industrial development
+- employment and labor market
+- innovation and technology
+- fiscal and monetary policy
+- competitiveness
+- economic regulation
+exclude:
+- environmental policy
+- social welfare
+- education policy
+- healthcare policy
+- cultural affairs
+- transport infrastructure
+- agricultural policy
+terms:
+  de:
+  - Wirtschaftspolitik
+  - Finanzmarkt
+  - Handelsabkommen
+  - Industriepolitik
+  - Arbeitsmarkt
+  - Innovation
+  - Fiskalpolitik
+  - Wettbewerbsfähigkeit
+  - Wirtschaftsregulierung
+  fr:
+  - politique économique
+  - marché financier
+  - accords commerciaux
+  - politique industrielle
+  - marché du travail
+  - innovation
+  - politique fiscale
+  - compétitivité
+  - régulation économique
+  it:
+  - politica economica
+  - mercato finanziario
+  - accordi commerciali
+  - politica industriale
+  - mercato del lavoro
+  - innovazione
+  - politica fiscale
+  - competitività
+  - regolamentazione economica
+  rm:
+  - politica economica
+  - martgà da finanzas
+  - cunvegnas da commerzi
+  - politica industriala
+  - martgà da lavur
+  - innovaziun
+  - politica fiscala
+  - cumpetitivitad
+  - regulaziun economica

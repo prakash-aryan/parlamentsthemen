@@ -1,0 +1,75 @@
+id: aps_6_2_5
+version: 1
+source_description: The topic "Erneuerbare Energien" ("Energies renouvelables") in the chapter "Energie"
+  of the domain "Infrastruktur und Umwelt" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Renewable Energy
+definition: Parliamentary affairs under this topic focus on policies, incentives, and regulations promoting
+  the development, deployment, and integration of renewable energy sources such as solar, wind, hydro,
+  geothermal, and biomass within Switzerland's energy mix. It covers debates on energy transition, sustainability
+  targets, investment in green technologies, and measures to reduce dependence on fossil fuels and nuclear
+  power.
+include:
+- solar power expansion
+- wind energy projects
+- hydropower modernization
+- geothermal energy development
+- biomass utilization
+- energy transition strategies
+- renewable energy subsidies
+- grid integration of renewables
+- sustainability targets in energy sector
+exclude:
+- nuclear energy phase-out
+- fossil fuel regulation
+- energy efficiency in buildings
+- electric vehicle infrastructure
+- waste-to-energy plants
+- national energy security
+- energy pricing and tariffs
+terms:
+  de:
+  - Erneuerbare Energien
+  - Energiewende
+  - Solarenergie
+  - Windenergie
+  - Wasserkraft
+  - Geothermie
+  - Biomasse
+  - Netzintegration
+  - Nachhaltigkeitsziele
+  - Förderprogramme
+  fr:
+  - énergies renouvelables
+  - transition énergétique
+  - énergie solaire
+  - énergie éolienne
+  - hydroélectricité
+  - géothermie
+  - biomasse
+  - intégration au réseau
+  - objectifs de durabilité
+  - programmes de soutien
+  it:
+  - energie rinnovabili
+  - transizione energetica
+  - energia solare
+  - energia eolica
+  - energia idroelettrica
+  - geotermia
+  - biomasse
+  - integrazione nella rete
+  - obiettivi di sostenibilità
+  - programmi di incentivazione
+  rm:
+  - energias regenerablas
+  - midada d'energia
+  - energia solara
+  - energia eolica
+  - energia idraulica
+  - geotermia
+  - biomasa
+  - integraziun en la rait
+  - mira da persistenza
+  - programs da sustegn

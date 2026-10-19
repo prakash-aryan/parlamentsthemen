@@ -1,0 +1,70 @@
+id: aps_1_2_2
+version: 1
+source_description: The topic "Verwaltung" ("Administration") in the chapter "Institutionen" of the domain
+  "Akteure und Institutionen" in the Année Politique Suisse classification of Swiss politics. Cover what
+  parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics of
+  the same chapter instead.
+name: Parliamentary Oversight of Administration
+definition: This topic covers parliamentary inquiries, motions, postulates, interpellations, and questions
+  that scrutinize the functioning, efficiency, and accountability of public administration at federal,
+  cantonal, and municipal levels. It includes debates on administrative procedures, resource allocation,
+  service delivery, and compliance with legal frameworks. It also encompasses oversight of administrative
+  bodies, agencies, and civil servants.
+include:
+- administrative efficiency
+- public service delivery
+- civil service accountability
+- budget allocation for administration
+- compliance with administrative law
+- oversight of federal agencies
+- transparency in administrative processes
+- performance evaluation of public bodies
+exclude:
+- legislative drafting
+- judicial decisions
+- foreign policy
+- taxation policy
+- social welfare programs
+- infrastructure projects
+- environmental regulations
+terms:
+  de:
+  - Verwaltungsaufsicht
+  - Verwaltungseffizienz
+  - Beamtenhaftung
+  - Verwaltungsrecht
+  - Bundesamt
+  - Kantonsverwaltung
+  - Gemeindeverwaltung
+  - Transparenz
+  - Kosten-Nutzen-Analyse
+  fr:
+  - surveillance de l'administration
+  - efficacité administrative
+  - responsabilité des fonctionnaires
+  - droit administratif
+  - office fédéral
+  - administration cantonale
+  - administration communale
+  - transparence
+  - analyse coûts-bénéfices
+  it:
+  - sorveglianza dell'amministrazione
+  - efficienza amministrativa
+  - responsabilità dei funzionari
+  - diritto amministrativo
+  - ufficio federale
+  - amministrazione cantonale
+  - amministrazione comunale
+  - trasparenza
+  - analisi costi-benefici
+  rm:
+  - surveglianza da l’administraziun
+  - efficienza administrativa
+  - respunsabladad dals funcziunaris
+  - dretg administrativ
+  - uffizi federal
+  - administraziun chantunala
+  - administraziun communala
+  - transparenza
+  - analisa da custs e benefizis

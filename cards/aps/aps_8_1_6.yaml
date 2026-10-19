@@ -1,0 +1,67 @@
+id: aps_8_1_6
+version: 1
+source_description: The topic "Tourismus" ("Tourisme") in the chapter "Wirtschaftspolitik" of the domain
+  "Wirtschaft und Finanzen" in the Année Politique Suisse classification of Swiss politics. Cover what
+  parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics of
+  the same chapter instead.
+name: Tourism Policy
+definition: Parliamentary affairs concerning the promotion, regulation, and economic impact of tourism
+  within Switzerland, including infrastructure, sustainability, regional development, and visitor management.
+include:
+- tourism infrastructure development
+- sustainable tourism practices
+- regional tourism promotion
+- visitor management and capacity limits
+- economic impact of tourism
+- tourism-related taxation and funding
+- seasonal employment in tourism
+- tourism marketing and branding
+exclude:
+- general economic growth policies
+- financial market regulation
+- industrial sector support
+- agricultural subsidies
+- trade agreements
+- monetary policy
+- banking regulation
+terms:
+  de:
+  - Tourismuspolitik
+  - Fremdenverkehr
+  - Nachhaltiger Tourismus
+  - Tourismusinfrastruktur
+  - Regionale Tourismusförderung
+  - Besucherlenkung
+  - Tourismusfinanzierung
+  - Saisonbeschäftigung
+  - Tourismusmarketing
+  fr:
+  - politique du tourisme
+  - tourisme durable
+  - infrastructure touristique
+  - promotion touristique régionale
+  - gestion des flux de visiteurs
+  - impact économique du tourisme
+  - financement du tourisme
+  - emploi saisonnier
+  - marketing touristique
+  it:
+  - politica turistica
+  - turismo sostenibile
+  - infrastrutture turistiche
+  - promozione turistica regionale
+  - gestione dei flussi turistici
+  - impatto economico del turismo
+  - finanziamento del turismo
+  - occupazione stagionale
+  - marketing turistico
+  rm:
+  - politica da turissem
+  - turissem durabel
+  - infrastructura turistica
+  - promoziun turistica regiunala
+  - gestiun da fluss da visitaders
+  - impact economic dal turissem
+  - finanziaziun dal turissem
+  - lavur stagiunala
+  - marketing turistic

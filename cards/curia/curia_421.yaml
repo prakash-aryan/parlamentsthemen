@@ -1,0 +1,63 @@
+id: curia_421
+version: 1
+source_description: 'The subject area "Parlament" (French: "Parlement", Italian: "Parlamento") that the
+  Swiss Parliamentary Services assign to federal parliamentary affairs in Curia Vista. Cover what affairs
+  in this subject area are typically about.'
+name: General Parliamentary Affairs
+definition: This subject area encompasses broad, overarching matters related to the functioning, organization,
+  and procedures of the Swiss parliament at the federal level. It includes topics that do not fall under
+  more specific categories such as legislation, budget, or specific policy areas. It covers the institutional
+  framework, parliamentary rules, and general governance aspects.
+include:
+- Parliamentary rules and procedures
+- Institutional organization of parliament
+- Parliamentary sessions and agendas
+- Speaker and leadership roles
+- Parliamentary services and administration
+- Interparliamentary relations
+- Parliamentary privileges and immunities
+- General governance and oversight
+exclude:
+- Specific legislative proposals
+- Budgetary matters
+- Policy-specific debates
+- Committee-specific investigations
+- International treaties
+- Cabinet appointments
+terms:
+  de:
+  - Parlamentsbetrieb
+  - Parlamentsreglement
+  - Sitzungsordnung
+  - Parlamentspräsident
+  - Parlamentsdienste
+  - Interparlamentarische Beziehungen
+  - Parlamentsimmunität
+  - Allgemeine Geschäftsordnung
+  fr:
+  - Fonctionnement du Parlement
+  - Règlement du Parlement
+  - Ordre du jour
+  - Président du Parlement
+  - Services parlementaires
+  - Relations interparlementaires
+  - Immunités parlementaires
+  - Gouvernance générale
+  it:
+  - Funzionamento del Parlamento
+  - Regolamento parlamentare
+  - Ordine del giorno
+  - Presidente del Parlamento
+  - Servizi parlamentari
+  - Relazioni interparlamentari
+  - Immunità parlamentari
+  - Governance generale
+  rm:
+  - Funcziun dal Parlament
+  - Regulativ dal Parlament
+  - Uorden dal di
+  - President dal Parlament
+  - Servetschs parlamentars
+  - Relaziuns interparlamentaras
+  - Immunitads parlamentaras
+  - Governanza generala

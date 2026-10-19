@@ -1,0 +1,63 @@
+id: aps_8_1_5
+version: 1
+source_description: The topic "Konsumentinnen- und Konsumentenschutz" ("Protection des consommateurs/trices")
+  in the chapter "Wirtschaftspolitik" of the domain "Wirtschaft und Finanzen" in the Année Politique Suisse
+  classification of Swiss politics. Cover what parliamentary affairs on this topic are typically about,
+  and what belongs to neighbouring topics of the same chapter instead.
+name: Consumer Protection
+definition: Parliamentary affairs concerning the rights, safety, and information of consumers in the marketplace,
+  including product safety, fair trade practices, and consumer rights enforcement.
+include:
+- product safety standards
+- consumer rights enforcement
+- fair trade and advertising practices
+- labeling and transparency requirements
+- consumer complaint mechanisms
+- protection against fraud
+- digital consumer rights
+- consumer education programs
+exclude:
+- general economic policy
+- financial market regulation
+- taxation policy
+- employment law
+- intellectual property rights
+- competition law
+- environmental product standards
+terms:
+  de:
+  - Konsumentenschutz
+  - Produktsicherheit
+  - Werbung und Etikettierung
+  - Verbraucherrechte
+  - Missbrauchsbekämpfung
+  - Onlinehandel
+  - Verbraucherinformation
+  - Beschwerdeverfahren
+  fr:
+  - protection des consommateurs
+  - sécurité des produits
+  - pratiques commerciales loyales
+  - droits des consommateurs
+  - lutte contre les abus
+  - commerce électronique
+  - information aux consommateurs
+  - mécanismes de plainte
+  it:
+  - protezione dei consumatori
+  - sicurezza dei prodotti
+  - pratiche commerciali leali
+  - diritti dei consumatori
+  - lotta agli abusi
+  - commercio elettronico
+  - informazione ai consumatori
+  - procedure di reclamo
+  rm:
+  - protecziun dals consuments
+  - segirezza dals products
+  - praticas commerzialas loialas
+  - dretgs dals consuments
+  - cumbat cunter abus
+  - commerzi electronic
+  - infurmaziun als consuments
+  - proceduras da reclamaziun

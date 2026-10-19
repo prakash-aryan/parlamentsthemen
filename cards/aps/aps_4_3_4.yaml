@@ -1,0 +1,63 @@
+id: aps_4_3_4
+version: 1
+source_description: The topic "Heimatschutz und Denkmalpflege" ("Protection des sites et du patrimoine")
+  in the chapter "Kultur, Sprache, Kirchen" of the domain "Gesellschaft und Kultur" in the Année Politique
+  Suisse classification of Swiss politics. Cover what parliamentary affairs on this topic are typically
+  about, and what belongs to neighbouring topics of the same chapter instead.
+name: Cultural Heritage Protection
+definition: Parliamentary affairs concerning the preservation of historical buildings, monuments, and
+  cultural landscapes, including policies on heritage conservation, restoration funding, and protection
+  against inappropriate development or demolition.
+include:
+- heritage conservation
+- monument preservation
+- historical building protection
+- cultural landscape safeguarding
+- restoration funding
+- heritage policy
+- architectural heritage
+- cultural site designation
+exclude:
+- language policy
+- religious affairs
+- contemporary art funding
+- museum operations
+- literary promotion
+- film industry support
+terms:
+  de:
+  - Heimatschutz
+  - Denkmalpflege
+  - Kulturdenkmäler
+  - Bau- und Ortsbildschutz
+  - Denkmalschutzgesetzgebung
+  - Erhalt historischer Bauten
+  - Kulturlandschaftsschutz
+  - Denkmalinventar
+  fr:
+  - protection du patrimoine
+  - conservation des monuments
+  - sites historiques
+  - protection du paysage culturel
+  - législation sur les monuments
+  - sauvegarde des bâtiments anciens
+  - inventaire des monuments
+  - patrimoine bâti
+  it:
+  - protezione del patrimonio culturale
+  - conservazione dei monumenti
+  - paesaggio storico
+  - tutela dei siti
+  - legislazione sui monumenti
+  - salvaguardia degli edifici storici
+  - inventario dei monumenti
+  - patrimonio architettonico
+  rm:
+  - protecziun da patrimoni cultural
+  - conservaziun da monuments
+  - sites istorics
+  - protecziun da la cuntrada culturala
+  - legislaziun davart monuments
+  - salvaguardia da bietgs istorics
+  - inventari da monuments
+  - patrimoni architectonic

@@ -1,0 +1,67 @@
+id: aps_8_4_11
+version: 1
+source_description: The topic "Gentechnologie" ("Génie génétique") in the chapter "Landwirtschaft" of
+  the domain "Wirtschaft und Finanzen" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Genetic Engineering in Agriculture
+definition: Parliamentary affairs concerning the use, regulation, and impact of genetic engineering techniques
+  in agricultural production, including crop modification, livestock breeding, and food safety implications
+  within Switzerland's agricultural sector.
+include:
+- Genetically modified crops
+- Livestock genetic modification
+- Agricultural biotechnology regulation
+- Food safety and labeling
+- Sustainable farming practices
+- Impact on biodiversity
+- Public acceptance and ethics
+- Research funding for agricultural biotech
+exclude:
+- General environmental protection policies
+- Organic farming standards
+- Agricultural subsidies and market support
+- Rural development programs
+- International trade agreements on agriculture
+- General biotechnology outside agriculture
+terms:
+  de:
+  - Gentechnologie
+  - Gentechnisch veränderte Organismen
+  - Landwirtschaft
+  - Pflanzenzüchtung
+  - Lebensmittelsicherheit
+  - Nachhaltige Landwirtschaft
+  - Öffentliche Akzeptanz
+  - Regulierung
+  - Forschung
+  fr:
+  - génie génétique
+  - organismes génétiquement modifiés
+  - agriculture
+  - reproduction des plantes
+  - sécurité alimentaire
+  - agriculture durable
+  - acceptation publique
+  - réglementation
+  - recherche
+  it:
+  - ingegneria genetica
+  - organismi geneticamente modificati
+  - agricoltura
+  - allevamento selettivo
+  - sicurezza alimentare
+  - agricoltura sostenibile
+  - accettazione pubblica
+  - regolamentazione
+  - ricerca
+  rm:
+  - tecnologia genetica
+  - organissems modifitgai geneticamain
+  - agricultura
+  - cultivaziun da plantas
+  - segirezza da victualias
+  - agricultura durabla
+  - acceptanza publica
+  - regulaziun
+  - perscrutaziun

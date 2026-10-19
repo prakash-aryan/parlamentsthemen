@@ -1,0 +1,64 @@
+id: aps_1_2_5
+version: 1
+source_description: The topic "Lobbyismus" ("Lobbyisme") in the chapter "Institutionen" of the domain
+  "Akteure und Institutionen" in the Année Politique Suisse classification of Swiss politics. Cover what
+  parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics of
+  the same chapter instead.
+name: Parliamentary Lobbying
+definition: Parliamentary affairs on lobbying cover the influence of interest groups on lawmaking, transparency
+  of lobbying activities, ethical guidelines for interactions between parliamentarians and lobbyists,
+  and measures to regulate or disclose lobbying practices within Swiss parliaments.
+include:
+- transparency of lobbying activities
+- ethical guidelines for parliamentarians
+- regulation of interest group influence
+- disclosure requirements for lobbyists
+- conflict of interest rules
+- parliamentary codes of conduct
+- monitoring of lobbying practices
+- public access to lobbying registers
+exclude:
+- internal parliamentary procedures
+- legislative drafting process
+- committee work and hearings
+- party politics and alliances
+- election campaign financing
+- administrative oversight of government
+- judicial review of laws
+terms:
+  de:
+  - Lobbyismus
+  - Interessenvertretung
+  - Transparenzpflichten
+  - Verhaltenskodex
+  - Interessenkonflikt
+  - Lobbyregister
+  - Einflussnahme
+  - Kontaktmanagement
+  fr:
+  - lobbyisme
+  - représentation d'intérêts
+  - obligations de transparence
+  - code de conduite
+  - conflit d'intérêts
+  - registre des lobbyistes
+  - influence
+  - gestion des contacts
+  it:
+  - lobbying
+  - rappresentanza di interessi
+  - obblighi di trasparenza
+  - codice di condotta
+  - conflitto di interessi
+  - registro dei lobbisti
+  - influenza
+  - gestione dei contatti
+  rm:
+  - lobbying
+  - represchentaziun d'interess
+  - obligaziuns da transparenza
+  - code da cumportament
+  - cunflit d'interess
+  - register da lobists
+  - influenza
+  - gestiun dals contacts

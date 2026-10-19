@@ -1,0 +1,73 @@
+id: sg_7
+version: 1
+source_description: The subject area "Landwirtschaft, Tierhaltung, Waldwirtschaft, Umweltschutz" of the
+  systematic law collection of the canton of St. Gallen, which the canton uses to classify the affairs
+  of its cantonal parliament. Cover what cantonal affairs in this subject area are typically about.
+name: Agriculture, Animal Husbandry, Forestry, Environmental Protection
+definition: This topic covers cantonal parliamentary affairs related to agricultural practices, livestock
+  management, forestry policies, and environmental protection measures within the canton of St. Gallen.
+include:
+- Agricultural subsidies
+- Animal welfare regulations
+- Forest management plans
+- Environmental impact assessments
+- Sustainable farming practices
+- Pesticide use restrictions
+- Biodiversity conservation
+- Soil protection measures
+exclude:
+- Federal agricultural policy
+- International trade agreements
+- National environmental laws
+- Private land ownership disputes
+- Urban planning
+- Transportation infrastructure
+terms:
+  de:
+  - Landwirtschaft
+  - Tierhaltung
+  - Waldwirtschaft
+  - Umweltschutz
+  - Nachhaltige Landwirtschaft
+  - Tierwohl
+  - Forstwirtschaft
+  - Biodiversität
+  - Umweltverträglichkeit
+  - Pestizidverwendung
+  - Bodenfruchtbarkeit
+  fr:
+  - Agriculture
+  - Élevage
+  - Sylviculture
+  - Protection de l'environnement
+  - Agriculture durable
+  - Bien-être animal
+  - Gestion forestière
+  - Biodiversité
+  - Compatibilité environnementale
+  - Utilisation des pesticides
+  - Fertilité des sols
+  it:
+  - Agricoltura
+  - Allevamento
+  - Silvicoltura
+  - Protezione ambientale
+  - Agricoltura sostenibile
+  - Benessere animale
+  - Gestione forestale
+  - Biodiversità
+  - Compatibilità ambientale
+  - Uso di pesticidi
+  - Fertilità del suolo
+  rm:
+  - Agricultura
+  - Tevladiras
+  - Silvicultura
+  - Protecziun digl ambiaint
+  - Agricultura durabla
+  - Bainstar digls animals
+  - Gestiun digl gôt
+  - Biodiversitad
+  - Cumpatibilitad ambientala
+  - Adiever da pesticids
+  - Fertilitad digl taratsch

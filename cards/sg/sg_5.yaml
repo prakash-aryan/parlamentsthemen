@@ -1,0 +1,66 @@
+id: sg_5
+version: 1
+source_description: The subject area "Grundlagen und Organisation" of the systematic law collection of
+  the canton of St. Gallen, which the canton uses to classify the affairs of its cantonal parliament.
+  Cover what cantonal affairs in this subject area are typically about.
+name: Cantonal Legislative Foundations and Organization
+definition: This subject area encompasses the fundamental legal and structural framework governing the
+  cantonal parliament of St. Gallen, including its powers, procedures, composition, and relationship with
+  the cantonal government and administration.
+include:
+- Parliamentary rules of procedure
+- Composition and election of parliament
+- Powers and duties of the cantonal parliament
+- Relationship between parliament and government
+- Legislative process and lawmaking
+- Parliamentary committees and their mandates
+- Accountability mechanisms for the executive
+- Amendments to the cantonal constitution
+exclude:
+- Federal legislative procedures
+- Municipal council organization
+- Cantonal administrative regulations
+- Budgetary allocations (specific)
+- Individual policy areas (e.g., education, health)
+- International relations of the canton
+terms:
+  de:
+  - Parlamentsorganisation
+  - Geschäftsordnung
+  - Wahlrecht
+  - Kompetenzen des Kantonsparlaments
+  - Verhältnis Parlament-Regierung
+  - Gesetzgebungsverfahren
+  - Parlamentarische Kommissionen
+  - Verfassungsrevision
+  - Abstimmungsverfahren
+  fr:
+  - Organisation du parlement cantonal
+  - Règlement du parlement
+  - Droit de vote
+  - Compétences du parlement cantonal
+  - Relation parlement-gouvernement
+  - Procédure législative
+  - Commissions parlementaires
+  - Révision constitutionnelle
+  - Mode de scrutin
+  it:
+  - Organizzazione del parlamento cantonale
+  - Regolamento parlamentare
+  - Diritto di voto
+  - Competenze del parlamento cantonale
+  - Relazione parlamento-governo
+  - Procedura legislativa
+  - Commissioni parlamentari
+  - Revisione costituzionale
+  - Procedura di voto
+  rm:
+  - Organisaziun dal parlament chantunal
+  - Regulativ dal parlament
+  - Dretg da vuschar
+  - Cumpetenzas dal parlament chantunal
+  - Relaziun parlament-giuvament
+  - Procedura legislativa
+  - Comissiuns parlamentarias
+  - Revisiun constituziunala
+  - Procedura da votaziun

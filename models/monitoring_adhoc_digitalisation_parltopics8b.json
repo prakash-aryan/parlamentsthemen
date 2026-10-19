@@ -1,0 +1,9 @@
+{
+  "model": "apertus-parltopics-8b",
+  "card": "adhoc_digitalisation",
+  "a": 1.2625239652342415,
+  "b": -2.6621626355128454,
+  "threshold": -0.7199681343691345,
+  "fitted_on": "dev_sample.parquet, affairs before 2024: lowest threshold reaching 90% weighted recall",
+  "purpose": "monitoring shortlist"
+}

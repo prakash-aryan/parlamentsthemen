@@ -1,0 +1,78 @@
+id: aps_5_2
+version: 1
+source_description: 'The chapter "Sozialversicherungen" ("Assurances sociales") of the domain "Gesundheit
+  und Sozialsystem" in the Année Politique Suisse classification of Swiss politics. It contains these
+  topics: Sozialversicherungen allgemein; Alters- und Hinterlassenenversicherung (AHV); Invalidenversicherung
+  (IV); Krankenversicherung; Unfallversicherung; Arbeitslosenversicherung (ALV); Mutterschaftsversicherung;
+  Erwerbsersatzordnung (EO); Berufliche Vorsorge; Private Vorsorge; Ergänzungsleistungen (EL). Cover what
+  parliamentary affairs in this chapter are typically about.'
+name: Swiss Social Insurance
+definition: This topic covers parliamentary discussions and legislative matters related to Switzerland's
+  social insurance system, including pensions, disability, health, unemployment, maternity, and supplementary
+  benefits, as well as aspects of occupational and private pension schemes.
+include:
+- Old-age and survivors' insurance (AHV)
+- Disability insurance (IV)
+- Health insurance
+- Unemployment insurance (ALV)
+- Maternity insurance
+- Erwerbsersatzordnung (EO)
+- Occupational pension schemes
+- Private pension schemes
+- Supplementary benefits (EL)
+exclude:
+- General healthcare policy
+- Economic stimulus packages
+- Taxation reforms
+- Environmental regulations
+- Education system funding
+- Infrastructure development
+terms:
+  de:
+  - Sozialversicherungen
+  - AHV
+  - IV
+  - Krankenversicherung
+  - Unfallversicherung
+  - Arbeitslosenversicherung (ALV)
+  - Mutterschaftsversicherung
+  - Erwerbsersatzordnung (EO)
+  - Berufliche Vorsorge
+  - Private Vorsorge
+  - Ergänzungsleistungen (EL)
+  fr:
+  - Assurances sociales
+  - AVS
+  - AI
+  - Assurance-maladie
+  - Assurance-accidents
+  - Assurance-chômage (AC)
+  - Assurance-maternité
+  - Allocation pour perte de gain (APG)
+  - Prévoyance professionnelle
+  - Prévoyance privée
+  - Prestations complémentaires (PC)
+  it:
+  - Assicurazioni sociali
+  - AVS
+  - AI
+  - Assicurazione malattie
+  - Assicurazione infortuni
+  - Assicurazione disoccupazione (AD)
+  - Assicurazione maternità
+  - Indennità di perdita di guadagno (IPG)
+  - Previdenza professionale
+  - Previdenza privata
+  - Prestazioni complementari (PC)
+  rm:
+  - Segiranzas sozialas
+  - AVS
+  - AI
+  - Segiranza da malsogna
+  - Segiranza d'accidents
+  - Segiranza da dischoccupaziun (AD)
+  - Segiranza da maternitad
+  - Ordnung da cumpensaziun da gudogn (OCG)
+  - Prevenziun professiunala
+  - Prevenziun privata
+  - Prestaziuns cumplementaras (PC)

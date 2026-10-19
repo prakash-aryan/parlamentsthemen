@@ -1,0 +1,67 @@
+id: aps_8_5_1
+version: 1
+source_description: The topic "Arbeitsrecht" ("Droit du travail") in the chapter "Arbeit" of the domain
+  "Wirtschaft und Finanzen" in the Année Politique Suisse classification of Swiss politics. Cover what
+  parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics of
+  the same chapter instead.
+name: Labor Law
+definition: Parliamentary affairs concerning the legal framework governing employment relationships, including
+  worker protection, working conditions, labor market regulations, and social security provisions within
+  the economic and financial policy domain.
+include:
+- employment contracts
+- working hours
+- minimum wage
+- worker protection
+- occupational safety
+- equal pay
+- labor market regulations
+- social security in employment
+exclude:
+- industrial policy
+- economic development
+- taxation
+- financial market regulation
+- trade agreements
+- entrepreneurship support
+terms:
+  de:
+  - Arbeitsrecht
+  - Arbeitsbedingungen
+  - Kündigungsschutz
+  - Arbeitszeitgesetz
+  - Lohn- und Entgeltfragen
+  - Arbeitnehmerschutz
+  - Sozialversicherung im Arbeitsverhältnis
+  - Gleichstellung am Arbeitsplatz
+  - Tarifverträge
+  fr:
+  - droit du travail
+  - conditions de travail
+  - protection contre les licenciements
+  - temps de travail
+  - rémunération
+  - sécurité et santé au travail
+  - assurances sociales liées à l'emploi
+  - égalité salariale
+  - conventions collectives
+  it:
+  - diritto del lavoro
+  - condizioni di lavoro
+  - tutela contro il licenziamento
+  - orario di lavoro
+  - retribuzione
+  - sicurezza sul lavoro
+  - assicurazioni sociali legate all'impiego
+  - parità salariale
+  - contratti collettivi
+  rm:
+  - dretg da lavur
+  - cundiziuns da lavur
+  - protecziun cunter relaschada
+  - uras da lavur
+  - pajaglia
+  - segirezza sin il plaz da lavur
+  - segiranzas socialas en relaziun da lavur
+  - egualitad da salarisaziun
+  - cunvegnas collectivs

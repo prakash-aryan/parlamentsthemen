@@ -1,0 +1,62 @@
+id: aps_7_2_10
+version: 1
+source_description: The topic "Versorgungssicherheit" ("Sécurité d'approvisionnement") in the chapter
+  "Sicherheitspolitik" of the domain "Rechts- und Sicherheitspolitik" in the Année Politique Suisse classification
+  of Swiss politics. Cover what parliamentary affairs on this topic are typically about, and what belongs
+  to neighbouring topics of the same chapter instead.
+name: Supply Security
+definition: Parliamentary affairs under this topic focus on ensuring the uninterrupted availability of
+  essential goods, services, and resources (e.g., energy, food, water, medical supplies) to safeguard
+  national and regional resilience against disruptions, crises, or geopolitical risks.
+include:
+- energy supply resilience
+- food security and stockpiles
+- medical and pharmaceutical supply chains
+- water and critical infrastructure protection
+- strategic reserves and emergency stocks
+- import dependency and diversification
+- crisis response and contingency planning
+exclude:
+- military defense and armed forces
+- intelligence and counterterrorism
+- cybersecurity and data protection
+- border control and migration policy
+- international sanctions and trade policy
+- civil protection and disaster response coordination
+terms:
+  de:
+  - Versorgungssicherheit
+  - Energieversorgung
+  - Lebensmittelreserven
+  - Medizinische Versorgung
+  - Kritische Infrastruktur
+  - Notvorräte
+  - Importabhängigkeit
+  - Krisenmanagement
+  fr:
+  - sécurité d'approvisionnement
+  - approvisionnement énergétique
+  - réserves alimentaires
+  - chaîne d'approvisionnement médicale
+  - infrastructure critique
+  - stocks d'urgence
+  - dépendance aux importations
+  - gestion de crise
+  it:
+  - sicurezza dell'approvvigionamento
+  - approvvigionamento energetico
+  - riserve alimentari
+  - catena di approvvigionamento medico
+  - infrastrutture critiche
+  - scorte d'emergenza
+  - dipendenza dalle importazioni
+  - gestione delle crisi
+  rm:
+  - segirezza da provedimaint
+  - provedimaint d'energia
+  - reservas da victualias
+  - chadaina da provedimaint medicinal
+  - infrastructura critica
+  - provedimaints d'urgenza
+  - dependenza d'imports
+  - gestiun da crisas

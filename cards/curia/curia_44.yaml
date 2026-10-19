@@ -1,0 +1,57 @@
+id: curia_44
+version: 1
+source_description: 'The subject area "Beschäftigung und Arbeit" (French: "Emploi et travail", Italian:
+  "Occupazione e lavoro") that the Swiss Parliamentary Services assign to federal parliamentary affairs
+  in Curia Vista. Cover what affairs in this subject area are typically about.'
+name: Employment and Labor
+definition: This subject area encompasses parliamentary affairs related to labor market policies, working
+  conditions, employment rates, vocational training, social security for workers, and measures to combat
+  unemployment and promote job creation in Switzerland.
+include:
+- labor market policies
+- working conditions
+- employment rates
+- vocational training
+- social security for workers
+- unemployment measures
+- job creation initiatives
+exclude:
+- healthcare policy
+- education system
+- environmental regulations
+- taxation
+- immigration policy
+- housing policy
+terms:
+  de:
+  - Arbeitsmarktpolitik
+  - Arbeitsbedingungen
+  - Beschäftigungsrate
+  - Berufsbildung
+  - Arbeitnehmerschutz
+  - Arbeitslosenversicherung
+  - Arbeitsplatzförderung
+  fr:
+  - politique de l'emploi
+  - conditions de travail
+  - taux d'emploi
+  - formation professionnelle
+  - protection des travailleurs
+  - assurance-chômage
+  - création d'emplois
+  it:
+  - politica occupazionale
+  - condizioni di lavoro
+  - tasso di occupazione
+  - formazione professionale
+  - protezione dei lavoratori
+  - assicurazione disoccupazione
+  - promozione dell'occupazione
+  rm:
+  - politica da lavur
+  - cundiziuns da lavur
+  - taxa d'occupaziun
+  - scolaziun professiunala
+  - protecziun dals lavuraints
+  - segiranza cunter dischoccupaziun
+  - promoziun da plazzas da lavur

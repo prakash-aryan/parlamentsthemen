@@ -1,0 +1,64 @@
+id: curia_34
+version: 1
+source_description: 'The subject area "Medien und Kommunikation" (French: "Médias et communication", Italian:
+  "Media e comunicazione") that the Swiss Parliamentary Services assign to federal parliamentary affairs
+  in Curia Vista. Cover what affairs in this subject area are typically about.'
+name: Media and Communication
+definition: This topic covers parliamentary affairs related to the functioning, regulation, and impact
+  of media and communication systems in Switzerland. It includes discussions on press freedom, media diversity,
+  digital communication platforms, information policy, and the role of public and private media in democratic
+  processes. It also encompasses issues related to transparency, access to information, and the responsibilities
+  of media in society.
+include:
+- press freedom
+- media regulation
+- digital communication
+- information policy
+- media diversity
+- transparency in government
+- public information campaigns
+- social media governance
+exclude:
+- criminal law
+- intellectual property
+- copyright issues
+- telecommunications infrastructure
+- data protection
+- privacy laws
+terms:
+  de:
+  - Medienfreiheit
+  - Medienregulierung
+  - Kommunikationspolitik
+  - Informationsfreiheit
+  - Medienvielfalt
+  - Öffentlichkeitsprinzip
+  - Informationskampagnen
+  - Social Media Governance
+  fr:
+  - liberté de la presse
+  - régulation des médias
+  - politique de communication
+  - transparence de l'information
+  - diversité médiatique
+  - principe de transparence
+  - campagnes d'information publique
+  - gouvernance des médias sociaux
+  it:
+  - libertà di stampa
+  - regolamentazione dei media
+  - politica della comunicazione
+  - trasparenza dell'informazione
+  - diversità mediatica
+  - principio di trasparenza
+  - campagne informative pubbliche
+  - governance dei social media
+  rm:
+  - libertad da pressa
+  - regulaziun da medias
+  - politica da communicaziun
+  - transparenza da l’infurmaziun
+  - diversitad da medias
+  - princip da transparenza
+  - campagnas d’infurmaziun publicas
+  - governanza da medias socialas

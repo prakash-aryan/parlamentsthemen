@@ -1,0 +1,69 @@
+id: aps_2_1_3
+version: 1
+source_description: The topic "Volksinitiative" ("Initiative populaire") in the chapter "Direkte Demokratie"
+  of the domain "Direkte Demokratie und Wahlen" in the Année Politique Suisse classification of Swiss
+  politics. Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Popular Initiative
+definition: Parliamentary affairs concerning the processing of popular initiatives submitted by citizens
+  to propose amendments to the Swiss Federal Constitution or to trigger a referendum on existing laws.
+  This includes discussions on admissibility, counterproposals, and the legislative follow-up to approved
+  initiatives.
+include:
+- submission of citizen-initiated constitutional amendments
+- parliamentary debate on initiative admissibility
+- formulation of counterproposals
+- legislative implementation of approved initiatives
+- referendum triggers based on popular initiatives
+- popular initiative campaigns
+- initiative committee activities
+- popular vote organization
+exclude:
+- ordinary parliamentary motions
+- postulates
+- interpellations
+- simple parliamentary questions
+- election procedures
+- cantonal or municipal referendums
+- binding cantonal initiatives
+terms:
+  de:
+  - Volksinitiative
+  - Initiativtext
+  - Volksabstimmung
+  - Gegenvorschlag
+  - Initiativkomitee
+  - Volksbegehren
+  - Referendum
+  - Verfassungsänderung
+  - Initiativfrist
+  fr:
+  - initiative populaire
+  - texte d'initiative
+  - votation populaire
+  - contre-projet
+  - comité d'initiative
+  - demande populaire
+  - référendum
+  - modification constitutionnelle
+  - délai d'initiative
+  it:
+  - iniziativa popolare
+  - testo d'iniziativa
+  - votazione popolare
+  - controprogetto
+  - comitato d'iniziativa
+  - domanda popolare
+  - referendum
+  - modifica costituzionale
+  - termine d'iniziativa
+  rm:
+  - iniziativa dal pievel
+  - text d'iniziativa
+  - votaziun dal pievel
+  - cunterproposta
+  - cumité d'iniziativa
+  - dumonda dal pievel
+  - referendum
+  - midada da la constituziun
+  - termin d'iniziativa

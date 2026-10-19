@@ -1,0 +1,89 @@
+id: aps_8_4
+version: 1
+source_description: 'The chapter "Landwirtschaft" ("Agriculture") of the domain "Wirtschaft und Finanzen"
+  in the Année Politique Suisse classification of Swiss politics. It contains these topics: Agrarpolitik;
+  Beschäftigte in der Landwirtschaft; Lebensmittel; Pflanzliche Produktion; Tierische Produktion; Tierhaltung
+  und Tierschutz; Tierversuche; Jagd und Fischerei; Grossraubtiere; Forstwirtschaft; Gentechnologie; Umweltschutz
+  in der Landwirtschaft. Cover what parliamentary affairs in this chapter are typically about.'
+name: Swiss Agricultural Policy and Practices
+definition: This topic covers parliamentary discussions and decisions related to agriculture in Switzerland,
+  including food production, livestock management, environmental protection in farming, and the impact
+  of technology and biodiversity on agricultural practices.
+include:
+- Agricultural policy
+- Agricultural employment
+- Food production
+- Plant production
+- Animal production
+- Animal husbandry and welfare
+- Animal testing
+- Hunting and fishing
+- Large predators
+- Forestry
+- Genetic technology
+- Environmental protection in agriculture
+exclude:
+- Industrial manufacturing
+- Urban development
+- Transportation infrastructure
+- Healthcare policy
+- Education policy
+- Energy production
+- Tourism industry
+terms:
+  de:
+  - Landwirtschaftspolitik
+  - Landwirtschaftsbetriebe
+  - Lebensmittelproduktion
+  - Pflanzenproduktion
+  - Tierproduktion
+  - Tierhaltung
+  - Tierschutz
+  - Tierversuche
+  - Jagd und Fischerei
+  - Großraubtiere
+  - Forstwirtschaft
+  - Gentechnologie
+  - Umweltschutz in der Landwirtschaft
+  fr:
+  - Politique agricole
+  - Emploi agricole
+  - Production alimentaire
+  - Production végétale
+  - Production animale
+  - Élevage
+  - Protection des animaux
+  - Expérimentation animale
+  - Chasse et pêche
+  - Grandes espèces carnivores
+  - Sylviculture
+  - Technologie génétique
+  - Protection de l'environnement en agriculture
+  it:
+  - Politica agricola
+  - Occupazione agricola
+  - Produzione alimentare
+  - Produzione vegetale
+  - Produzione animale
+  - Allevamento
+  - Protezione degli animali
+  - Test sugli animali
+  - Caccia e pesca
+  - Grandi predatori
+  - Silvicoltura
+  - Tecnologia genetica
+  - Protezione ambientale in agricoltura
+  rm:
+  - Politica agricola
+  - Emploi en agricultura
+  - Producziun da vivonda
+  - Producziun da plantas
+  - Producziun d'animals
+  - Tgira d'animals
+  - Protecziun d'animals
+  - Experiments cun animals
+  - Chatscha e pestga
+  - Animals da rapina gronds
+  - Silvicultura
+  - Tecnologia genetica
+  - Protecziun da l'ambient en agricultura

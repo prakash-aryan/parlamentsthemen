@@ -1,0 +1,64 @@
+id: aps_6_1_9
+version: 1
+source_description: The topic "Digitalisierung" ("Numérisation") in the chapter "Verkehr und Kommunikation"
+  of the domain "Infrastruktur und Umwelt" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Digitalization in Transport and Communication
+definition: Parliamentary affairs concerning the digital transformation of transport systems, communication
+  networks, and related infrastructure within Switzerland. This includes topics such as digitalization
+  of public transport, smart mobility solutions, digital communication infrastructure, and the integration
+  of digital technologies to enhance efficiency and sustainability in transport and communication sectors.
+include:
+- digital public transport systems
+- smart mobility solutions
+- digital communication infrastructure
+- data exchange in transport networks
+- cybersecurity in transport and communication
+- digitalization of logistics
+- integration of digital technologies in transport
+- sustainable digital infrastructure
+exclude:
+- traditional transport infrastructure construction
+- physical road or rail network expansion
+- telecommunications spectrum allocation
+- general digital policy outside transport/communication
+- digital privacy laws unrelated to transport/communication
+- IT procurement for non-transport/communication sectors
+terms:
+  de:
+  - Digitalisierung
+  - Verkehr
+  - Kommunikation
+  - Smart Mobility
+  - Digitale Infrastruktur
+  - Cybersicherheit
+  - Datenmanagement
+  - Nachhaltige Technologien
+  fr:
+  - numérisation
+  - transport
+  - communication
+  - mobilité intelligente
+  - infrastructure numérique
+  - cybersécurité
+  - gestion des données
+  - technologies durables
+  it:
+  - digitalizzazione
+  - trasporti
+  - comunicazione
+  - mobilità intelligente
+  - infrastruttura digitale
+  - cybersicurezza
+  - gestione dei dati
+  - tecnologie sostenibili
+  rm:
+  - digitalisaziun
+  - transport
+  - communicaziun
+  - mobilitad intelligenta
+  - infrastructura digitala
+  - cybersicurezza
+  - gestiun da datas
+  - tecnologias durablas

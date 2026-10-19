@@ -1,0 +1,63 @@
+id: aps_3_1_4
+version: 1
+source_description: The topic "Neutralität" ("Neutralité") in the chapter "Europa- und Aussenpolitik"
+  of the domain "Europa- und Aussenpolitik" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Swiss Neutrality
+definition: Parliamentary affairs on Swiss neutrality address the preservation, interpretation, and application
+  of Switzerland's traditional policy of neutrality in international relations, including its implications
+  for foreign policy, military doctrine, international cooperation, and crisis management.
+include:
+- preservation of neutrality
+- interpretation of neutrality in modern conflicts
+- military non-participation
+- international humanitarian aid
+- neutrality in peacekeeping
+- neutrality and international treaties
+- neutrality in sanctions regimes
+- neutrality and diplomatic impartiality
+exclude:
+- EU membership negotiations
+- bilateral agreements with the EU
+- Swiss foreign aid policy
+- arms exports
+- Swiss participation in NATO partnerships
+- Swiss defense industry
+terms:
+  de:
+  - Neutralität
+  - immerwährende Neutralität
+  - Neutralitätsgesetz
+  - militärische Neutralität
+  - diplomatische Neutralität
+  - Neutralitätsverletzung
+  - Neutralitätsinterpretation
+  - Neutralitätsverpflichtung
+  fr:
+  - neutralité
+  - neutralité perpétuelle
+  - loi sur la neutralité
+  - neutralité militaire
+  - neutralité diplomatique
+  - violation de la neutralité
+  - interprétation de la neutralité
+  - obligation de neutralité
+  it:
+  - neutralità
+  - neutralità perpetua
+  - legge sulla neutralità
+  - neutralità militare
+  - neutralità diplomatica
+  - violazione della neutralità
+  - interpretazione della neutralità
+  - obbligo di neutralità
+  rm:
+  - neutralitad
+  - neutralitad perpetna
+  - lescha da neutralitad
+  - neutralitad militara
+  - neutralitad diplomatica
+  - violaziun da la neutralitad
+  - interpretaziun da la neutralitad
+  - obligaziun da neutralitad

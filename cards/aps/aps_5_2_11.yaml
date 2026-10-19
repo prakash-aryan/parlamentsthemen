@@ -1,0 +1,64 @@
+id: aps_5_2_11
+version: 1
+source_description: The topic "Ergänzungsleistungen (EL)" ("Prestations complémentaires (PC)") in the
+  chapter "Sozialversicherungen" of the domain "Gesundheit und Sozialsystem" in the Année Politique Suisse
+  classification of Swiss politics. Cover what parliamentary affairs on this topic are typically about,
+  and what belongs to neighbouring topics of the same chapter instead.
+name: Complementary Benefits (EL/PC)
+definition: Parliamentary affairs concerning supplementary financial assistance for individuals whose
+  basic social insurance benefits (such as AHV/AVS or IV/ AI) do not cover their minimum living expenses.
+  Includes debates on eligibility criteria, benefit levels, administrative procedures, and financing of
+  these social safety-net programs.
+include:
+- eligibility criteria for supplementary benefits
+- calculation of benefit amounts
+- coordination with other social insurance schemes
+- administrative processes and appeals
+- financing and budget allocation
+- impact on poverty reduction
+- integration of cantonal supplements
+exclude:
+- basic old-age and disability pensions (AHV/AVS, IV/AI)
+- unemployment insurance benefits
+- healthcare costs coverage
+- social assistance (Sozialhilfe)
+- family allowances
+- housing subsidies
+terms:
+  de:
+  - Ergänzungsleistungen (EL)
+  - Prestations complémentaires (PC)
+  - Anspruchsvoraussetzungen
+  - Berechnung der Leistungen
+  - Koordination mit AHV/IV
+  - Verwaltungsverfahren
+  - Finanzierung
+  - Armutsprävention
+  - Kantonale Ergänzungsleistungen
+  fr:
+  - Prestations complémentaires (PC)
+  - Conditions d'octroi
+  - Calcul des prestations
+  - Coordination avec AVS/AI
+  - Procédures administratives
+  - Financement
+  - Prévention de la pauvreté
+  - Prestations complémentaires cantonales
+  it:
+  - Prestazioni complementari (PC)
+  - Requisiti di diritto
+  - Calcolo delle prestazioni
+  - Coordinamento con AVS/AI
+  - Procedimenti amministrativi
+  - Finanziamento
+  - Prevenzione della povertà
+  - Prestazioni complementari cantonali
+  rm:
+  - Prestaziuns cumplementaras (PC)
+  - Cundiziuns da dretg
+  - Calcul da las prestaziuns
+  - Coordinaziun cun AVS/AI
+  - Proceduras administrativas
+  - Finanziaziun
+  - Prevenziun da la povertad
+  - Prestaziuns cumplementaras chantunalas

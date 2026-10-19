@@ -1,0 +1,74 @@
+id: curia_36
+version: 1
+source_description: 'The subject area "Wissenschaft und Forschung" (French: "Science et recherche", Italian:
+  "Scienza e ricerca") that the Swiss Parliamentary Services assign to federal parliamentary affairs in
+  Curia Vista. Cover what affairs in this subject area are typically about.'
+name: Science and Research
+definition: This topic covers parliamentary affairs related to the promotion, funding, regulation, and
+  strategic direction of scientific research and innovation in Switzerland. It includes discussions on
+  research infrastructure, academic institutions, technology transfer, and policies supporting scientific
+  advancement across various disciplines. It also encompasses ethical considerations, international research
+  collaborations, and the role of science in addressing societal challenges.
+include:
+- Research funding
+- Scientific infrastructure
+- Innovation policy
+- Academic institutions
+- Technology transfer
+- Research ethics
+- International collaborations
+- STEM education
+- Research grants
+exclude:
+- Healthcare policy
+- Environmental protection
+- Energy policy
+- Agricultural policy
+- Economic development
+- Cultural affairs
+- Transportation infrastructure
+terms:
+  de:
+  - Wissenschaft
+  - Forschung
+  - Innovation
+  - Forschungsförderung
+  - Hochschulen
+  - Technologietransfer
+  - Forschungsethik
+  - Internationale Zusammenarbeit
+  - Wissenschaftspolitik
+  - Fachhochschulen
+  fr:
+  - Science
+  - Recherche
+  - Innovation
+  - Financement de la recherche
+  - Institutions académiques
+  - Transfert de technologie
+  - Éthique de la recherche
+  - Collaboration internationale
+  - Politique scientifique
+  - Hautes écoles
+  it:
+  - Scienza
+  - Ricerca
+  - Innovazione
+  - Finanziamento della ricerca
+  - Istituzioni accademiche
+  - Trasferimento tecnologico
+  - Etica della ricerca
+  - Collaborazione internazionale
+  - Politica scientifica
+  - Scuole universitarie
+  rm:
+  - Scienza
+  - Perscrutaziun
+  - Innovaziun
+  - Finanziaziun da perscrutaziun
+  - Instituziuns academicas
+  - Transfer da tecnologia
+  - Etica da perscrutaziun
+  - Collavuraziun internaziunala
+  - Politica da scienza
+  - Scolas universitarias

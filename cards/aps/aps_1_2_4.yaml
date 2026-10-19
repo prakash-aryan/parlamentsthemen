@@ -1,0 +1,63 @@
+id: aps_1_2_4
+version: 1
+source_description: The topic "Parlament" ("Parlement") in the chapter "Institutionen" of the domain "Akteure
+  und Institutionen" in the Année Politique Suisse classification of Swiss politics. Cover what parliamentary
+  affairs on this topic are typically about, and what belongs to neighbouring topics of the same chapter
+  instead.
+name: Parliamentary Institutions
+definition: This topic covers the structure, organization, and functioning of Swiss parliaments (federal,
+  cantonal, and city levels), including their composition, procedures, powers, and internal rules. It
+  focuses on the institutional framework that enables legislative activity and democratic representation.
+include:
+- composition of parliaments
+- parliamentary procedures
+- legislative powers
+- internal rules and regulations
+- separation of powers
+- parliamentary committees
+- quorum and voting rules
+- parliamentary immunity
+exclude:
+- specific legislative proposals (motions, postulates, interpellations)
+- individual parliamentary questions
+- policy content of debates
+- executive branch actions
+- judicial decisions
+- electoral processes
+terms:
+  de:
+  - Parlamentsstruktur
+  - Parlamentsprozeduren
+  - Legislative Befugnisse
+  - Geschäftsordnung
+  - Kommissionen
+  - Quorum
+  - Abgeordnetenimmunität
+  - Gewaltenteilung
+  fr:
+  - structure du parlement
+  - procédures parlementaires
+  - pouvoirs législatifs
+  - règlement intérieur
+  - commissions parlementaires
+  - quorum
+  - immunité parlementaire
+  - séparation des pouvoirs
+  it:
+  - struttura del parlamento
+  - procedure parlamentari
+  - poteri legislativi
+  - regolamento interno
+  - commissioni parlamentari
+  - quorum
+  - immunità parlamentare
+  - separazione dei poteri
+  rm:
+  - structura dal parlament
+  - proceduras parlamentaras
+  - cumpetenzas legislativas
+  - urden da gestiun
+  - cumissiuns parlamentaras
+  - quorum
+  - immunitad parlamentara
+  - separaziun da las pussanzas

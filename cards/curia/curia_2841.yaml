@@ -1,0 +1,61 @@
+id: curia_2841
+version: 1
+source_description: 'The subject area "Gesundheit" (French: "Santé", Italian: "Salute") that the Swiss
+  Parliamentary Services assign to federal parliamentary affairs in Curia Vista. Cover what affairs in
+  this subject area are typically about.'
+name: Health Policy
+definition: This topic covers parliamentary affairs related to public health, healthcare systems, medical
+  services, disease prevention, health promotion, and the regulation of health-related products and practices
+  in Switzerland.
+include:
+- public health initiatives
+- healthcare system reform
+- disease prevention and control
+- medical services and facilities
+- health promotion and education
+- regulation of pharmaceuticals
+- health insurance and coverage
+exclude:
+- environmental pollution
+- agricultural policy
+- transport infrastructure
+- education system
+- social welfare programs
+- criminal law
+terms:
+  de:
+  - Gesundheitspolitik
+  - Krankenversicherung
+  - Prävention
+  - Gesundheitsförderung
+  - Medizinische Versorgung
+  - Pharmazeutische Produkte
+  - Epidemiologie
+  - Gesundheitswesen
+  fr:
+  - politique de santé
+  - assurance-maladie
+  - prévention
+  - promotion de la santé
+  - soins médicaux
+  - produits pharmaceutiques
+  - épidémiologie
+  - système de santé
+  it:
+  - politica sanitaria
+  - assicurazione malattia
+  - prevenzione
+  - promozione della salute
+  - servizi sanitari
+  - prodotti farmaceutici
+  - epidemiologia
+  - sistema sanitario
+  rm:
+  - politica da sanadad
+  - segirada da malsogna
+  - prevenziun
+  - promoziun da la sanadad
+  - provedimaints medicinals
+  - products farmaceutics
+  - epidemiologia
+  - sistem da sanadad

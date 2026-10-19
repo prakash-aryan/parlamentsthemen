@@ -1,0 +1,68 @@
+id: aps_6_4_3
+version: 1
+source_description: The topic "Bodenschutz" ("Protection des sols") in the chapter "Umweltschutz" of the
+  domain "Infrastruktur und Umwelt" in the Année Politique Suisse classification of Swiss politics. Cover
+  what parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics
+  of the same chapter instead.
+name: Soil Protection
+definition: Parliamentary affairs concerning the conservation, sustainable use, and remediation of soil
+  resources to prevent degradation, contamination, and loss of fertility, ensuring long-term environmental
+  and agricultural viability.
+include:
+- soil contamination prevention
+- soil remediation measures
+- sustainable land use policies
+- agricultural soil protection
+- urban soil quality
+- soil erosion control
+- organic farming incentives
+- soil biodiversity preservation
+exclude:
+- water pollution
+- air quality regulation
+- waste management
+- climate change mitigation
+- biodiversity conservation (non-soil)
+- forest protection
+- chemical pesticide regulation
+terms:
+  de:
+  - Bodenschutz
+  - Bodenverunreinigung
+  - Bodenfruchtbarkeit
+  - Bodenerosion
+  - Bodenrekultivierung
+  - Nachhaltige Bodenbewirtschaftung
+  - Schadstoffbelastung des Bodens
+  - Bodenmonitoring
+  - Bodenqualität
+  fr:
+  - protection des sols
+  - pollution des sols
+  - fécondité du sol
+  - érosion des sols
+  - restauration des sols
+  - gestion durable des sols
+  - contamination du sol
+  - surveillance de la qualité des sols
+  - qualité du sol
+  it:
+  - protezione del suolo
+  - inquinamento del suolo
+  - fertilità del suolo
+  - erosione del suolo
+  - ripristino del suolo
+  - gestione sostenibile del suolo
+  - contaminazione del suolo
+  - monitoraggio della qualità del suolo
+  - qualità del suolo
+  rm:
+  - protecziun dal terren
+  - contaminaziun dal terren
+  - fritgevladad dal terren
+  - erosiun dal terren
+  - rekuvraziun dal terren
+  - gestiun durabla dal terren
+  - contaminaziun dal terren
+  - monitorisaziun da la qualitad dal terren
+  - qualitad dal terren

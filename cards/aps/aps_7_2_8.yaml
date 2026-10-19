@@ -1,0 +1,67 @@
+id: aps_7_2_8
+version: 1
+source_description: The topic "Polizei" ("Police") in the chapter "Sicherheitspolitik" of the domain "Rechts-
+  und Sicherheitspolitik" in the Année Politique Suisse classification of Swiss politics. Cover what parliamentary
+  affairs on this topic are typically about, and what belongs to neighbouring topics of the same chapter
+  instead.
+name: Swiss Police Policy
+definition: Parliamentary affairs concerning the organization, powers, funding, and oversight of police
+  forces at federal, cantonal, and municipal levels in Switzerland, including law enforcement, public
+  safety, and police cooperation.
+include:
+- police organization and structure
+- police powers and jurisdiction
+- police funding and budget
+- police oversight and accountability
+- intercantonal police cooperation
+- municipal police responsibilities
+- police equipment and technology
+- data protection in policing
+exclude:
+- military defense and armed forces
+- intelligence and counterterrorism
+- criminal justice procedures
+- immigration and border control
+- fire and rescue services
+- private security services
+terms:
+  de:
+  - Polizei
+  - Polizeiorganisation
+  - Polizeikompetenzen
+  - Polizeiförderung
+  - Polizeiaufsicht
+  - interkantonale Polizeizusammenarbeit
+  - Gemeindepolizei
+  - Polizeitechnik
+  - Datenschutz in der Polizei
+  fr:
+  - police
+  - organisation policière
+  - compétences policières
+  - financement de la police
+  - contrôle de la police
+  - coopération policière intercantonale
+  - police municipale
+  - technologie policière
+  - protection des données policières
+  it:
+  - polizia
+  - organizzazione della polizia
+  - competenze di polizia
+  - finanziamento della polizia
+  - controllo della polizia
+  - cooperazione di polizia intercantonale
+  - polizia comunale
+  - tecnologia di polizia
+  - protezione dei dati in ambito di polizia
+  rm:
+  - polizia
+  - organisaziun da la polizia
+  - cumpetenzas da la polizia
+  - finanziaziun da la polizia
+  - surveglianza da la polizia
+  - cooperaziun da polizia intercantunala
+  - polizia communala
+  - tecnologia da polizia
+  - protecziun da datas en polizia

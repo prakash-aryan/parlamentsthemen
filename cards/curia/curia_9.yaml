@@ -1,0 +1,74 @@
+id: curia_9
+version: 1
+source_description: 'The subject area "Sicherheitspolitik" (French: "Politique de sécurité", Italian:
+  "Politica di sicurezza") that the Swiss Parliamentary Services assign to federal parliamentary affairs
+  in Curia Vista. Cover what affairs in this subject area are typically about.'
+name: Swiss Security Policy
+definition: This topic covers parliamentary affairs related to Switzerland's national security strategy,
+  defense capabilities, crisis management, and protection of critical infrastructure and citizens. It
+  includes debates on military preparedness, cybersecurity, counterterrorism, intelligence services, and
+  Switzerland's role in international security cooperation while respecting neutrality.
+include:
+- military defense strategy
+- crisis and disaster management
+- cybersecurity and digital defense
+- counterterrorism measures
+- intelligence and surveillance
+- critical infrastructure protection
+- international security cooperation
+- border security and migration control
+- civil protection and emergency services
+exclude:
+- criminal law enforcement
+- domestic policing
+- social welfare programs
+- economic trade policy
+- environmental protection
+- cultural heritage preservation
+- education policy
+- healthcare systems
+terms:
+  de:
+  - Sicherheitspolitik
+  - Verteidigung
+  - Krisenmanagement
+  - Cybersicherheit
+  - Terrorismusbekämpfung
+  - Nachrichtendienste
+  - kritische Infrastruktur
+  - internationale Sicherheitspartnerschaften
+  - Neutralität
+  - Zivilschutz
+  fr:
+  - politique de sécurité
+  - défense nationale
+  - gestion de crise
+  - sécurité cybernétique
+  - lutte contre le terrorisme
+  - services de renseignement
+  - infrastructure critique
+  - coopération internationale en matière de sécurité
+  - neutralité
+  - protection civile
+  it:
+  - politica di sicurezza
+  - difesa nazionale
+  - gestione delle crisi
+  - sicurezza informatica
+  - lotta al terrorismo
+  - servizi di intelligence
+  - infrastrutture critiche
+  - cooperazione internazionale in materia di sicurezza
+  - neutralità
+  - protezione civile
+  rm:
+  - politica da segirezza
+  - defensiun
+  - gestiun da crisas
+  - segirezza da cyber
+  - cumbat cunter il terrorissem
+  - servetschs d'infurmaziun
+  - infrastructuras criticas
+  - cooperaziun internaziunala en materia da segirezza
+  - neutralitad
+  - protecziun civila

@@ -1,0 +1,67 @@
+id: aps_7_2_2
+version: 1
+source_description: The topic "Militärorganisation" ("Organisation militaire") in the chapter "Sicherheitspolitik"
+  of the domain "Rechts- und Sicherheitspolitik" in the Année Politique Suisse classification of Swiss
+  politics. Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Military Organization
+definition: Parliamentary affairs under this topic focus on the structure, organization, and operational
+  framework of the Swiss Armed Forces, including personnel management, command structures, and integration
+  of military components within national security strategy.
+include:
+- Swiss Armed Forces structure
+- military personnel management
+- command and control systems
+- integration of military components
+- defense infrastructure
+- military training and readiness
+- civil-military cooperation
+- military budget allocation for organization
+exclude:
+- foreign military alliances
+- arms exports and procurement
+- civil defense and emergency response
+- intelligence and cybersecurity
+- military doctrine and strategy
+- international peacekeeping missions
+terms:
+  de:
+  - Militärorganisation
+  - Heerestruktur
+  - Kommandoorganisation
+  - Militärpersonal
+  - Ausbildung
+  - Infrastruktur
+  - Zivil-militärische Zusammenarbeit
+  - Wehrpflicht
+  - Militärische Führung
+  fr:
+  - organisation militaire
+  - structure de l'armée
+  - commandement
+  - personnel militaire
+  - infrastructure de défense
+  - formation
+  - collaboration civilo-militaire
+  - obligation de servir
+  - direction militaire
+  it:
+  - organizzazione militare
+  - struttura dell'esercito
+  - comando
+  - personale militare
+  - infrastrutture di difesa
+  - addestramento
+  - cooperazione civile-militare
+  - servizio militare obbligatorio
+  - comando militare
+  rm:
+  - organisaziun militara
+  - structura da l'armada
+  - commando
+  - persunal militar
+  - infrastructura da defensiun
+  - instrucziun
+  - collavuraziun civilo-militara
+  - obligaziun da servir
+  - cumond militar

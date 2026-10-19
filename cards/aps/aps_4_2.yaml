@@ -1,0 +1,64 @@
+id: aps_4_2
+version: 1
+source_description: 'The chapter "Bildung und Forschung" ("Enseignement et recherche") of the domain "Gesellschaft
+  und Kultur" in the Année Politique Suisse classification of Swiss politics. It contains these topics:
+  Grundschulen; Berufsbildung; Mittelschulen; Hochschulen; Forschung. Cover what parliamentary affairs
+  in this chapter are typically about.'
+name: Education and Research
+definition: This topic covers parliamentary discussions and decisions related to Switzerland's education
+  system and research activities, including school types, vocational training, higher education institutions,
+  and scientific research funding and policy.
+include:
+- primary schools
+- vocational education
+- secondary schools
+- universities
+- research funding
+- educational policy
+- curriculum development
+- student support programs
+exclude:
+- healthcare policy
+- social welfare
+- transport infrastructure
+- environmental regulations
+- economic development
+- cultural heritage preservation
+- defense and security
+terms:
+  de:
+  - Bildung
+  - Schulen
+  - Berufsbildung
+  - Hochschulen
+  - Forschung
+  - Lehre
+  - Studium
+  - Bildungspolitik
+  fr:
+  - éducation
+  - recherche
+  - écoles
+  - formation professionnelle
+  - universités
+  - politique éducative
+  - enseignement
+  - recherche scientifique
+  it:
+  - istruzione
+  - ricerca
+  - scuole
+  - formazione professionale
+  - università
+  - politica educativa
+  - insegnamento
+  - ricerca scientifica
+  rm:
+  - scolaziun
+  - perscrutaziun
+  - scolas
+  - furmaziun professiunala
+  - universitads
+  - politica da scolaziun
+  - instrucziun
+  - ricerca scientifica

@@ -1,0 +1,67 @@
+id: aps_5_1_1
+version: 1
+source_description: The topic "Gesundheitspolitik" ("Politique de la santé") in the chapter "Gesundheit,
+  Sozialhilfe, Sport" of the domain "Gesundheit und Sozialsystem" in the Année Politique Suisse classification
+  of Swiss politics. Cover what parliamentary affairs on this topic are typically about, and what belongs
+  to neighbouring topics of the same chapter instead.
+name: Health Policy
+definition: Parliamentary affairs concerning the organization, financing, and regulation of the healthcare
+  system in Switzerland, including access to care, public health measures, and the role of different levels
+  of government in health services.
+include:
+- healthcare financing
+- public health programs
+- medical services regulation
+- healthcare infrastructure
+- drug policy and approval
+- preventive health measures
+- health insurance systems
+- cross-border medical care
+exclude:
+- social welfare benefits
+- sports policy and funding
+- disability support services
+- elderly care facilities
+- youth health programs
+- school health services
+terms:
+  de:
+  - Gesundheitspolitik
+  - Krankenversicherung
+  - Gesundheitswesen
+  - Krankenpflege
+  - Prävention
+  - Medikamentenpolitik
+  - Spitalversorgung
+  - Öffentliche Gesundheit
+  - Gesundheitsfinanzierung
+  fr:
+  - politique de la santé
+  - assurance-maladie
+  - système de santé
+  - soins médicaux
+  - prévention
+  - politique des médicaments
+  - financement de la santé
+  - santé publique
+  - infrastructure hospitalière
+  it:
+  - politica sanitaria
+  - assicurazione malattia
+  - sistema sanitario
+  - cure mediche
+  - prevenzione
+  - politica dei farmaci
+  - finanziamento sanitario
+  - salute pubblica
+  - strutture ospedaliere
+  rm:
+  - politica da sanadad
+  - segirada da malsogna
+  - sistem da sanadad
+  - cura medicinala
+  - prevenziun
+  - politica da medicaments
+  - finanziaziun da la sanadad
+  - sanadad publica
+  - infrastructura ospitaliera

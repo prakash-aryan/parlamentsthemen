@@ -1,0 +1,66 @@
+id: aps_7_1_3
+version: 1
+source_description: The topic "Zivilrecht" ("Droit civil") in the chapter "Rechtsordnung" of the domain
+  "Rechts- und Sicherheitspolitik" in the Année Politique Suisse classification of Swiss politics. Cover
+  what parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics
+  of the same chapter instead.
+name: Civil Law
+definition: Parliamentary affairs concerning the body of law governing private rights and obligations
+  between individuals, including family law, property law, inheritance law, and obligations arising from
+  contracts or torts.
+include:
+- family law
+- property rights
+- inheritance and succession
+- contractual obligations
+- tort law and liability
+- civil procedure
+- legal capacity and guardianship
+exclude:
+- criminal law
+- administrative law
+- constitutional law
+- international law
+- tax law
+- labour law
+terms:
+  de:
+  - Zivilrecht
+  - Familienrecht
+  - Eigentumsrecht
+  - Erbrecht
+  - Vertragsrecht
+  - Haftpflichtrecht
+  - Zivilprozessordnung
+  - Handlungsfähigkeit
+  - Vormundschaft
+  fr:
+  - droit civil
+  - droit de la famille
+  - droit de la propriété
+  - droit des successions
+  - droit des contrats
+  - responsabilité civile
+  - procédure civile
+  - capacité civile
+  - tutelle
+  it:
+  - diritto civile
+  - diritto di famiglia
+  - diritto di proprietà
+  - diritto successorio
+  - diritto contrattuale
+  - responsabilità civile
+  - procedura civile
+  - capacità civile
+  - tutela
+  rm:
+  - dretg civil
+  - dretg da famiglia
+  - dretg da proprietad
+  - dretg d'ierta
+  - dretg da contracts
+  - responsabladad civila
+  - procedura civila
+  - capacitad civila
+  - tutella

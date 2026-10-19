@@ -1,0 +1,67 @@
+id: aps_3_1_1
+version: 1
+source_description: The topic "Beziehungen zur EU" ("Relations avec l'Union européenne (UE)") in the chapter
+  "Europa- und Aussenpolitik" of the domain "Europa- und Aussenpolitik" in the Année Politique Suisse
+  classification of Swiss politics. Cover what parliamentary affairs on this topic are typically about,
+  and what belongs to neighbouring topics of the same chapter instead.
+name: Swiss-EU Relations
+definition: Parliamentary affairs concerning Switzerland's political, economic, and legal ties with the
+  European Union, including negotiations, agreements, and alignment with EU policies while preserving
+  Swiss sovereignty.
+include:
+- Bilateral agreements with the EU
+- Swiss participation in EU programs
+- Free movement of persons
+- Customs and trade relations
+- Legal harmonization
+- Energy cooperation
+- Research and innovation collaboration
+- Migration and asylum coordination
+exclude:
+- Domestic Swiss federalism issues
+- Cantonal foreign policy autonomy
+- Swiss relations with non-EU countries
+- Internal Swiss economic regulation
+- Swiss neutrality doctrine
+- EU accession debates
+terms:
+  de:
+  - Beziehungen zur EU
+  - Bilaterale Abkommen
+  - Freizügigkeit
+  - Handelsbeziehungen
+  - Rechtsharmonisierung
+  - Energiekooperation
+  - Forschungszusammenarbeit
+  - Asyl- und Migrationspolitik
+  - EU-Swiss Dialog
+  fr:
+  - Relations avec l'UE
+  - Accords bilatéraux
+  - Libre circulation des personnes
+  - Relations commerciales
+  - Harmonisation juridique
+  - Coopération énergétique
+  - Collaboration en recherche
+  - Politique d'asile et migration
+  - Dialogue UE-Suisse
+  it:
+  - Relazioni con l'UE
+  - Accordi bilaterali
+  - Libera circolazione delle persone
+  - Relazioni commerciali
+  - Armonizzazione giuridica
+  - Cooperazione energetica
+  - Collaborazione nella ricerca
+  - Politica d'asilo e migrazione
+  - Dialogo UE-Svizzera
+  rm:
+  - Relaziuns cun l'UE
+  - Accords bilaterals
+  - Moviment liber da persunas
+  - Relaziuns commerzialas
+  - Armonisaziun giuridica
+  - Cooperaziun energetica
+  - Collavuraziun en perscrutaziun
+  - Politica d'asil e migraziun
+  - Dialog UE-Svizra

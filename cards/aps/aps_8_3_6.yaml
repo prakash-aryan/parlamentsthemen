@@ -1,0 +1,69 @@
+id: aps_8_3_6
+version: 1
+source_description: The topic "Versicherungen" ("Assurances") in the chapter "Geld, Währung und Kredit"
+  of the domain "Wirtschaft und Finanzen" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Insurance Policies
+definition: Parliamentary affairs under this topic focus on regulations, oversight, and reforms related
+  to insurance sectors, including health, life, property, and liability insurance. It covers debates on
+  premiums, coverage, market competition, consumer protection, and the role of public versus private insurance
+  providers.
+include:
+- health insurance regulation
+- life insurance supervision
+- property and casualty insurance
+- liability insurance frameworks
+- insurance market competition
+- consumer protection in insurance
+- public insurance mandates
+- insurance fraud prevention
+exclude:
+- banking regulations
+- monetary policy
+- currency exchange rates
+- credit market oversight
+- financial market stability
+- taxation of insurance products
+- pension fund management
+terms:
+  de:
+  - Versicherungswesen
+  - Krankenversicherung
+  - Lebensversicherung
+  - Haftpflichtversicherung
+  - Prämiengestaltung
+  - Versicherungsaufsicht
+  - Konsumentenschutz
+  - Marktregulierung
+  - Versicherungsbetrug
+  fr:
+  - assurances
+  - assurance-maladie
+  - assurance-vie
+  - responsabilité civile
+  - régulation des primes
+  - surveillance des assurances
+  - protection des consommateurs
+  - concurrence sur le marché
+  - fraude à l'assurance
+  it:
+  - assicurazioni
+  - assicurazione malattia
+  - assicurazione sulla vita
+  - responsabilità civile
+  - tariffe dei premi
+  - sorveglianza delle assicurazioni
+  - protezione dei consumatori
+  - regolamentazione del mercato
+  - frode assicurativa
+  rm:
+  - segiranzas
+  - segiranza da sanadad
+  - segiranza da vita
+  - responsabladad civila
+  - tariffas da premi
+  - surveglianza da las segiranzas
+  - protecziun da consuments
+  - regulaziun dal martgà
+  - fraud a las segiranzas

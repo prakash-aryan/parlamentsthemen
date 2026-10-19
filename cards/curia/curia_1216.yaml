@@ -1,0 +1,64 @@
+id: curia_1216
+version: 1
+source_description: 'The subject area "Strafrecht" (French: "Droit pénal", Italian: "Diritto penale")
+  that the Swiss Parliamentary Services assign to federal parliamentary affairs in Curia Vista. Cover
+  what affairs in this subject area are typically about.'
+name: Criminal Law
+definition: This topic covers parliamentary affairs related to the formulation, amendment, and interpretation
+  of criminal legislation at the federal level in Switzerland. It includes discussions on penalties, criminal
+  procedures, and the protection of victims within the Swiss legal framework. Matters may also address
+  the balance between security, individual rights, and the effectiveness of criminal justice.
+include:
+- federal criminal code
+- penal sanctions
+- criminal procedure
+- victim protection
+- white-collar crime
+- organized crime
+- international criminal law
+- juvenile delinquency
+exclude:
+- civil law
+- administrative law
+- constitutional law
+- tax law
+- family law
+- intellectual property law
+- environmental law
+terms:
+  de:
+  - Strafrecht
+  - Strafgesetzbuch
+  - Strafverfahren
+  - Strafandrohung
+  - Opferschutz
+  - Kriminalitätsbekämpfung
+  - Jugendstrafrecht
+  - Wirtschaftskriminalität
+  fr:
+  - droit pénal
+  - code pénal
+  - procédure pénale
+  - peine
+  - protection des victimes
+  - lutte contre la criminalité
+  - délinquance juvénile
+  - crime économique
+  it:
+  - diritto penale
+  - codice penale
+  - procedura penale
+  - pena
+  - protezione delle vittime
+  - lotta alla criminalità
+  - delinquenza minorile
+  - crimini economici
+  rm:
+  - dretg penal
+  - cudesch penal
+  - procedura penala
+  - puniziun
+  - protecziun da las victimas
+  - cumbat cunter la criminalitad
+  - delinquenza giuvenila
+  - crims economics

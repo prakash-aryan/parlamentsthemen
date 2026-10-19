@@ -1,0 +1,67 @@
+id: aps_5_2_4
+version: 1
+source_description: The topic "Krankenversicherung" ("Assurance-maladie") in the chapter "Sozialversicherungen"
+  of the domain "Gesundheit und Sozialsystem" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Health Insurance
+definition: Parliamentary affairs concerning the regulation, funding, and administration of mandatory
+  health insurance in Switzerland, including premiums, coverage scope, provider networks, and reforms
+  to the system.
+include:
+- health insurance premiums
+- mandatory coverage scope
+- insurance provider networks
+- reforms to health insurance law
+- financing of health care
+- coverage of medical treatments
+- insurance for chronic illnesses
+- prevention and health promotion programs
+exclude:
+- social assistance benefits
+- unemployment insurance
+- pensions and old-age insurance
+- disability insurance
+- healthcare infrastructure planning
+- public health campaigns (non-insurance related)
+terms:
+  de:
+  - Krankenversicherung
+  - Prämien
+  - Leistungskatalog
+  - Kostenbeteiligung
+  - Versicherer
+  - Finanzierung
+  - Reform
+  - Deckung
+  - Zusatzversicherung
+  fr:
+  - assurance-maladie
+  - primes
+  - catalogue des prestations
+  - franchise
+  - assureurs
+  - financement
+  - réforme
+  - couverture
+  - assurance complémentaire
+  it:
+  - assicurazione malattia
+  - premi
+  - elenco prestazioni
+  - franchigia
+  - assicuratori
+  - finanziamento
+  - riforma
+  - copertura
+  - assicurazione complementare
+  rm:
+  - segirada da malsogna
+  - premias
+  - glista da prestaziuns
+  - franchisa
+  - segiraders
+  - finanziaziun
+  - refurma
+  - cuvierta
+  - segirada cumplementara

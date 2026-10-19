@@ -1,0 +1,68 @@
+id: aps_6_4_6
+version: 1
+source_description: The topic "Klimapolitik" ("Politique climatique") in the chapter "Umweltschutz" of
+  the domain "Infrastruktur und Umwelt" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Climate Policy
+definition: Parliamentary affairs concerning Switzerland's strategies, measures, and legislation to mitigate
+  climate change, reduce greenhouse gas emissions, and adapt to its impacts. This includes debates on
+  national and international climate commitments, renewable energy transitions, carbon pricing mechanisms,
+  and environmental sustainability standards.
+include:
+- national climate targets
+- greenhouse gas reduction strategies
+- renewable energy promotion
+- carbon pricing and emissions trading
+- climate adaptation measures
+- international climate agreements implementation
+- sustainable infrastructure development
+- environmental impact assessments
+exclude:
+- waste management
+- nuclear energy regulation
+- water resource management
+- biodiversity conservation
+- air quality control
+- chemical substance regulation
+terms:
+  de:
+  - Klimapolitik
+  - Treibhausgasreduktion
+  - Erneuerbare Energien
+  - CO₂-Preis
+  - Klimawandel-Anpassung
+  - Nachhaltige Entwicklung
+  - Klimaziele
+  - Energieeffizienz
+  - Klimaschutzgesetzgebung
+  fr:
+  - politique climatique
+  - réduction des gaz à effet de serre
+  - énergies renouvelables
+  - prix du carbone
+  - adaptation au changement climatique
+  - développement durable
+  - objectifs climatiques
+  - efficacité énergétique
+  - législation climat
+  it:
+  - politica climatica
+  - riduzione gas serra
+  - energie rinnovabili
+  - prezzo del carbonio
+  - adattamento ai cambiamenti climatici
+  - sviluppo sostenibile
+  - obiettivi climatici
+  - efficienza energetica
+  - legislazione climatica
+  rm:
+  - politica climatica
+  - reducziun da gas da serra
+  - energias regenerablas
+  - pretsch da carbon
+  - adattaziun al midadas climaticas
+  - svilup durabel
+  - mira climatica
+  - efficienza energetica
+  - legislaziun da clima

@@ -1,0 +1,69 @@
+id: aps_5_1_3
+version: 1
+source_description: The topic "Spitäler" ("Hôpitaux") in the chapter "Gesundheit, Sozialhilfe, Sport"
+  of the domain "Gesundheit und Sozialsystem" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Hospital Care
+definition: Parliamentary affairs under this topic focus on the organization, funding, accessibility,
+  and quality of hospital services within Switzerland's healthcare system. It includes debates on hospital
+  infrastructure, staffing levels, emergency care provisions, and integration with primary and outpatient
+  care. Issues such as hospital mergers, regional distribution of services, and the role of public versus
+  private hospitals are commonly addressed.
+include:
+- hospital infrastructure development
+- staffing and workforce planning
+- emergency and acute care services
+- hospital financing and subsidies
+- public vs. private hospital operations
+- regional distribution of hospital services
+- integration with primary care networks
+- quality standards and patient outcomes
+exclude:
+- general health promotion campaigns
+- sports policy and funding
+- social welfare benefits administration
+- long-term care facilities
+- pharmaceutical pricing and regulation
+- public health surveillance and epidemics
+terms:
+  de:
+  - Spitäler
+  - Krankenhausversorgung
+  - Notfallmedizin
+  - Spitalfinanzierung
+  - Personalplanung
+  - Regionale Spitalversorgung
+  - Qualitätssicherung
+  - Privatspitäler
+  - Öffentliche Spitäler
+  fr:
+  - hôpitaux
+  - soins hospitaliers
+  - financement hospitalier
+  - personnel soignant
+  - urgence médicale
+  - répartition régionale
+  - qualité des soins
+  - hôpitaux publics
+  - hôpitaux privés
+  it:
+  - ospedali
+  - assistenza ospedaliera
+  - finanziamento ospedaliero
+  - personale sanitario
+  - emergenza medica
+  - distribuzione regionale
+  - qualità delle cure
+  - ospedali pubblici
+  - ospedali privati
+  rm:
+  - spitals
+  - cura ospitala
+  - finanziaziun dals spitals
+  - persunal da tgira
+  - urgenza medicala
+  - repartiziun regiunala
+  - qualitad da las tgiras
+  - spitals publics
+  - spitals privats

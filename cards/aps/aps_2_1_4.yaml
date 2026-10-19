@@ -1,0 +1,66 @@
+id: aps_2_1_4
+version: 1
+source_description: The topic "Landsgemeinde" ("Landsgemeinde") in the chapter "Direkte Demokratie" of
+  the domain "Direkte Demokratie und Wahlen" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Landsgemeinde
+definition: Parliamentary affairs concerning the Landsgemeinde, a traditional form of direct democracy
+  practiced in some Swiss cantons where citizens gather to vote on laws and elect officials. These affairs
+  focus on the organization, procedures, and legal framework of the Landsgemeinde as a unique democratic
+  institution. They also address its preservation, modernization, and integration with contemporary democratic
+  practices.
+include:
+- traditional cantonal assembly
+- direct citizen voting
+- cantonal law adoption
+- election of cantonal officials
+- procedure and rules of Landsgemeinde
+- preservation of historical practice
+- modernization of direct democracy
+- legal status and reforms
+exclude:
+- federal referendums
+- popular initiatives
+- parliamentary motions
+- postulates
+- interpellations
+- questions to the government
+- electoral law reforms (general)
+terms:
+  de:
+  - Landsgemeinde
+  - Bürgerversammlung
+  - direkte Demokratie
+  - Gesetzesabstimmung
+  - Wahl der Behörden
+  - Verfahrensregeln
+  - Traditionspflege
+  - Reformvorschläge
+  fr:
+  - Landsgemeinde
+  - assemblée des citoyens
+  - démocratie directe
+  - vote législatif
+  - élection des autorités
+  - règles de procédure
+  - sauvegarde de la tradition
+  - propositions de réforme
+  it:
+  - Landsgemeinde
+  - assemblea dei cittadini
+  - democrazia diretta
+  - votazione legislativa
+  - elezione delle autorità
+  - norme procedurali
+  - conservazione della tradizione
+  - proposte di riforma
+  rm:
+  - Landsgemeinde
+  - radunanza dals burgais
+  - democrazia directa
+  - votaziun legislativa
+  - elecziun da las autoritads
+  - reglas da procedura
+  - mantegniment da la tradiziun
+  - propostas da refurma

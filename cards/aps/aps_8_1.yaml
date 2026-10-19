@@ -1,0 +1,62 @@
+id: aps_8_1
+version: 1
+source_description: 'The chapter "Wirtschaftspolitik" ("Politique économique") of the domain "Wirtschaft
+  und Finanzen" in the Année Politique Suisse classification of Swiss politics. It contains these topics:
+  Konjunkturlage und -politik; Strukturpolitik; Gesellschaftsrecht; Wettbewerb; Konsumentinnen- und Konsumentenschutz;
+  Tourismus; Wirtschaftsordnung. Cover what parliamentary affairs in this chapter are typically about.'
+name: Economic Policy
+definition: This topic covers parliamentary discussions and decisions related to Switzerland's economic
+  framework, including measures to influence economic cycles, structural reforms, corporate law, competition
+  regulation, consumer protection, tourism development, and the overall economic order.
+include:
+- Economic cycle management
+- Structural economic reforms
+- Corporate and company law
+- Competition policy
+- Consumer protection
+- Tourism promotion
+- Economic system regulation
+exclude:
+- Environmental policy
+- Labor market regulations
+- Taxation policy
+- Social welfare programs
+- Agricultural policy
+- Energy policy
+terms:
+  de:
+  - Wirtschaftspolitik
+  - Konjunkturpolitik
+  - Strukturpolitik
+  - Gesellschaftsrecht
+  - Wettbewerbspolitik
+  - Konsumentenschutz
+  - Tourismuspolitik
+  - Wirtschaftsordnung
+  fr:
+  - Politique économique
+  - Politique conjoncturelle
+  - Politique structurelle
+  - Droit des sociétés
+  - Politique de la concurrence
+  - Protection des consommateurs
+  - Politique touristique
+  - Ordre économique
+  it:
+  - Politica economica
+  - Politica congiunturale
+  - Politica strutturale
+  - Diritto societario
+  - Politica della concorrenza
+  - Protezione dei consumatori
+  - Politica turistica
+  - Ordinamento economico
+  rm:
+  - Politica economica
+  - Politica conjuncturala
+  - Politica structurala
+  - Dretg da societads
+  - Politica da concurrenza
+  - Protecziun da consuments
+  - Politica turistica
+  - Orden economic

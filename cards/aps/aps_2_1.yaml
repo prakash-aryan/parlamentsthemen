@@ -1,0 +1,64 @@
+id: aps_2_1
+version: 1
+source_description: 'The chapter "Direkte Demokratie" ("Démocratie directe") of the domain "Direkte Demokratie
+  und Wahlen" in the Année Politique Suisse classification of Swiss politics. It contains these topics:
+  Volksabstimmung; Referendum; Volksinitiative; Landsgemeinde; Wahl- und Abstimmungsverfahren; Stimm-
+  und Wahlrecht; Politische Beteiligung; Politische Kampagnen; Politikfinanzierung. Cover what parliamentary
+  affairs in this chapter are typically about.'
+name: Direct Democracy Mechanisms
+definition: This topic covers parliamentary affairs related to the instruments and processes of direct
+  democracy in Switzerland, including how citizens can directly influence legislation and policy through
+  votes, initiatives, and referendums.
+include:
+- Volksabstimmung (referendums)
+- Volksinitiative (popular initiatives)
+- Landsgemeinde (open-air assemblies)
+- Wahl- und Abstimmungsverfahren (election and voting procedures)
+- Stimm- und Wahlrecht (voting and electoral rights)
+- Politische Beteiligung (political participation)
+- Politische Kampagnen (political campaigns)
+- Politikfinanzierung (political financing)
+exclude:
+- Parliamentary debates on ordinary legislation
+- Cabinet decisions without popular vote
+- Party internal affairs
+- International treaties ratification
+- Administrative regulations
+terms:
+  de:
+  - Volksabstimmung
+  - Referendum
+  - Volksinitiative
+  - Landsgemeinde
+  - Stimmrecht
+  - Wahlverfahren
+  - Politische Beteiligung
+  - Kampagnenfinanzierung
+  - Wahl- und Abstimmungsrecht
+  fr:
+  - référendum
+  - initiative populaire
+  - Landsgemeinde
+  - procédure de vote
+  - droit de vote
+  - participation politique
+  - financement des campagnes
+  - procédure électorale
+  it:
+  - referendum
+  - iniziativa popolare
+  - Landsgemeinde
+  - procedure di voto
+  - diritto di voto
+  - partecipazione politica
+  - finanziamento delle campagne
+  - procedure elettorali
+  rm:
+  - referendum
+  - iniziativa populara
+  - Landsgemeinde
+  - procedura da votaziun
+  - dretg da votar
+  - participaziun politica
+  - finanziaziun da las campagnas
+  - proceduras electoralas

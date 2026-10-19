@@ -1,0 +1,9 @@
+{
+  "model": "apertus-parltopics-8b",
+  "card": "aps_7_2",
+  "a": 1.465839261597092,
+  "b": -0.8015317987136011,
+  "threshold": 0.9325366129461913,
+  "calibrated": true,
+  "fitted_on": "curia_dev_sample.parquet, 600 federal affairs before 2024, 67 positives through the Curia Vista to APS mapping (areas that map to this chapter only)"
+}

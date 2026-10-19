@@ -1,0 +1,67 @@
+id: aps_2_2_1
+version: 1
+source_description: The topic "National- und Ständeratswahlen" ("Elections du Conseil national et du Conseil
+  des Etats") in the chapter "Wahlen" of the domain "Direkte Demokratie und Wahlen" in the Année Politique
+  Suisse classification of Swiss politics. Cover what parliamentary affairs on this topic are typically
+  about, and what belongs to neighbouring topics of the same chapter instead.
+name: Swiss National and Council of States Elections
+definition: This topic covers parliamentary affairs related to the organization, conduct, and regulation
+  of elections for the National Council and the Council of States, including electoral law, voting procedures,
+  campaign financing, and electoral reforms.
+include:
+- electoral law amendments
+- voting procedures
+- electoral roll management
+- campaign financing rules
+- electoral district boundaries
+- ballot design and accessibility
+- e-voting trials and implementation
+- election monitoring and oversight
+exclude:
+- referendums and initiatives
+- municipal or cantonal elections
+- parliamentary motions or postulates
+- party financing
+- civil service neutrality in elections
+- voter turnout analysis
+terms:
+  de:
+  - Nationalratswahlen
+  - Ständeratswahlen
+  - Wahlgesetz
+  - Wahlverfahren
+  - Wahlkreis
+  - Stimmzettel
+  - Wahlkampffinanzierung
+  - Wahlbeteiligung
+  - Wahlbehörde
+  fr:
+  - élections au Conseil national
+  - élections au Conseil des États
+  - loi électorale
+  - procédure de vote
+  - circonscription électorale
+  - bulletin de vote
+  - financement des campagnes
+  - participation électorale
+  - autorité électorale
+  it:
+  - elezioni al Consiglio nazionale
+  - elezioni al Consiglio degli Stati
+  - legge elettorale
+  - procedura di voto
+  - circoscrizione elettorale
+  - scheda elettorale
+  - finanziamento delle campagne
+  - partecipazione elettorale
+  - autorità elettorale
+  rm:
+  - elecziuns dal Cussegl naziunal
+  - elecziuns dal Cussegl dals stadis
+  - lescha electorala
+  - procedura da votaziun
+  - circuisiun electorala
+  - cedel da votaziun
+  - finanziaziun da las campaigns
+  - participaziun electorala
+  - autoritad electorala

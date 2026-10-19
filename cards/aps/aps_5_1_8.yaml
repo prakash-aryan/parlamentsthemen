@@ -1,0 +1,71 @@
+id: aps_5_1_8
+version: 1
+source_description: The topic "Epidemien und Pandemien" ("Epidémies et pandémies") in the chapter "Gesundheit,
+  Sozialhilfe, Sport" of the domain "Gesundheit und Sozialsystem" in the Année Politique Suisse classification
+  of Swiss politics. Cover what parliamentary affairs on this topic are typically about, and what belongs
+  to neighbouring topics of the same chapter instead.
+name: Epidemics and Pandemics
+definition: Parliamentary affairs concerning the prevention, management, and response to infectious disease
+  outbreaks, including public health measures, vaccination strategies, healthcare system preparedness,
+  and coordination between federal, cantonal, and local authorities during epidemics and pandemics.
+include:
+- public health emergency response
+- vaccination campaigns
+- healthcare system capacity
+- infectious disease surveillance
+- cross-border health coordination
+- quarantine and isolation measures
+- healthcare workforce planning
+- pandemic preparedness legislation
+exclude:
+- general healthcare policy
+- social welfare programs
+- sports infrastructure funding
+- non-communicable disease prevention
+- pharmaceutical pricing regulation
+- long-term care financing
+terms:
+  de:
+  - Epidemie
+  - Pandemie
+  - Gesundheitsnotstand
+  - Impfstrategie
+  - Seuchenbekämpfung
+  - Gesundheitsversorgung
+  - Krisenmanagement
+  - Infektionsschutz
+  - Bevölkerungsgesundheit
+  - Koordination zwischen Kantonen
+  fr:
+  - épidémie
+  - pandémie
+  - urgence sanitaire
+  - stratégie vaccinale
+  - lutte contre les maladies infectieuses
+  - capacité du système de santé
+  - gestion de crise
+  - protection de la santé publique
+  - coordination intercantonale
+  - surveillance épidémiologique
+  it:
+  - epidemia
+  - pandemia
+  - emergenza sanitaria
+  - strategia vaccinale
+  - lotta alle malattie infettive
+  - capacità del sistema sanitario
+  - gestione delle crisi
+  - protezione della salute pubblica
+  - coordinamento intercantonale
+  - sorveglianza epidemiologica
+  rm:
+  - epidemia
+  - pandemia
+  - urgenza sanitara
+  - strategia da vaccinar
+  - cumbat cunter malsognas infectivas
+  - capacitad dal sistem da sanadad
+  - gestiun da crisas
+  - protecziun da la sanadad publica
+  - coordinaziun tranter chantuns
+  - surveglianza epidemiologica

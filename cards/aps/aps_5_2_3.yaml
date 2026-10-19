@@ -1,0 +1,67 @@
+id: aps_5_2_3
+version: 1
+source_description: The topic "Invalidenversicherung (IV)" ("Assurance-invalidité (AI)") in the chapter
+  "Sozialversicherungen" of the domain "Gesundheit und Sozialsystem" in the Année Politique Suisse classification
+  of Swiss politics. Cover what parliamentary affairs on this topic are typically about, and what belongs
+  to neighbouring topics of the same chapter instead.
+name: Disability Insurance (IV/AI)
+definition: Parliamentary affairs concerning the Swiss Invalidenversicherung (IV) or French Assurance-invalidité
+  (AI), including funding, benefit levels, eligibility criteria, and implementation of disability-related
+  social security policies.
+include:
+- IV benefit amounts
+- eligibility for disability pensions
+- rehabilitation programs
+- integration of disabled persons into the workforce
+- coordination with other social insurances
+- administrative procedures and reforms
+- financing of disability services
+- monitoring of IV effectiveness
+exclude:
+- healthcare services (e.g., hospitals, medical treatments)
+- unemployment insurance
+- old-age and survivors' insurance
+- family allowances
+- social assistance (Sozialhilfe)
+- mental health policy (unless directly linked to disability)
+terms:
+  de:
+  - Invalidenversicherung (IV)
+  - Invalidenrente
+  - Eingliederungsmassnahmen
+  - Arbeitsintegration
+  - Leistungsanspruch
+  - Verwaltungsverfahren
+  - Finanzierung
+  - Revision der IV
+  - Behindertenpolitik
+  fr:
+  - Assurance-invalidité (AI)
+  - rente d'invalidité
+  - mesures de réadaptation
+  - insertion professionnelle
+  - droit aux prestations
+  - procédures administratives
+  - financement
+  - révision de l'AI
+  - politique en faveur des personnes handicapées
+  it:
+  - Assicurazione per l'invalidità (AI)
+  - rendita d'invalidità
+  - misure di reintegrazione
+  - integrazione professionale
+  - diritto alle prestazioni
+  - procedure amministrative
+  - finanziamento
+  - revisione dell'AI
+  - politica per le persone con disabilità
+  rm:
+  - Assicuranza d'invaliditad (AI)
+  - renta d'invaliditad
+  - mesiras da reintegraziun
+  - integraziun professiunala
+  - dretg a prestaziuns
+  - proceduras administrativas
+  - finanziaziun
+  - revisiun da l'AI
+  - politica per persunas cun impediments

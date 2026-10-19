@@ -1,0 +1,73 @@
+id: aps_6_2_3
+version: 1
+source_description: The topic "Erdöl und Erdgas" ("Produits pétroliers et gaz") in the chapter "Energie"
+  of the domain "Infrastruktur und Umwelt" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Petroleum and Natural Gas
+definition: Parliamentary affairs on petroleum and natural gas focus on the exploration, extraction, import,
+  storage, distribution, pricing, and regulation of these fossil fuels within Switzerland. They also address
+  energy security, environmental impacts, and the transition to renewable energy sources in relation to
+  these hydrocarbons.
+include:
+- fossil fuel exploration
+- import and export regulations
+- storage facilities
+- distribution networks
+- pricing mechanisms
+- environmental impact assessments
+- energy security policies
+- transition strategies from fossil fuels
+exclude:
+- electricity generation from renewables
+- nuclear energy policies
+- waste management
+- transportation infrastructure
+- building energy efficiency
+- carbon pricing schemes
+- climate change mitigation targets
+terms:
+  de:
+  - Erdöl
+  - Erdgas
+  - Fossile Brennstoffe
+  - Importregulierung
+  - Lagerung
+  - Verteilung
+  - Preisgestaltung
+  - Umweltauswirkungen
+  - Energieversorgungssicherheit
+  - Übergangsstrategien
+  fr:
+  - Pétrole
+  - Gaz naturel
+  - Combustibles fossiles
+  - Réglementation des importations
+  - Stockage
+  - Distribution
+  - Tarification
+  - Impacts environnementaux
+  - Sécurité énergétique
+  - Stratégies de transition
+  it:
+  - Petrolio
+  - Gas naturale
+  - Combustibili fossili
+  - Regolamentazione delle importazioni
+  - Stoccaggio
+  - Distribuzione
+  - Tariffazione
+  - Impatti ambientali
+  - Sicurezza dell'approvvigionamento energetico
+  - Strategie di transizione
+  rm:
+  - Petrol
+  - Gas natiral
+  - Combustibels fossils
+  - Regulaziun d'import
+  - Magazinaziun
+  - Distribuziun
+  - Tariffaziun
+  - Impacts sin l'ambient
+  - Segirezza dal provedimaint d'energia
+  - Strategias da transiziun

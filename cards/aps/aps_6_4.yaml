@@ -1,0 +1,79 @@
+id: aps_6_4
+version: 1
+source_description: 'The chapter "Umweltschutz" ("Protection de l''environnement") of the domain "Infrastruktur
+  und Umwelt" in the Année Politique Suisse classification of Swiss politics. It contains these topics:
+  Allgemeiner Umweltschutz; Naturschutz; Bodenschutz; Gewässerschutz; Luftreinhaltung; Klimapolitik; Lärmschutz;
+  Abfälle und Recycling; Schutz vor Naturgefahren. Cover what parliamentary affairs in this chapter are
+  typically about.'
+name: Environmental Protection
+definition: This topic covers parliamentary discussions and decisions related to safeguarding the natural
+  environment, managing natural resources, and mitigating environmental hazards across Switzerland. It
+  includes policies on nature conservation, soil protection, water quality, air pollution control, climate
+  change mitigation, noise reduction, waste management, and protection against natural disasters.
+include:
+- General environmental protection
+- Nature conservation
+- Soil protection
+- Water protection
+- Air quality control
+- Climate policy
+- Noise abatement
+- Waste management and recycling
+- Protection against natural hazards
+exclude:
+- Economic development policies
+- Labor market regulations
+- Healthcare system reforms
+- Education system changes
+- Taxation policies
+- Transport infrastructure planning
+- Energy production and distribution
+terms:
+  de:
+  - Umweltschutz
+  - Naturschutz
+  - Bodenschutz
+  - Gewässerschutz
+  - Luftreinhaltung
+  - Klimapolitik
+  - Lärmschutz
+  - Abfall und Recycling
+  - Schutz vor Naturgefahren
+  - Umweltverträglichkeit
+  - Nachhaltigkeit
+  fr:
+  - Protection de l'environnement
+  - Conservation de la nature
+  - Protection des sols
+  - Protection des eaux
+  - Lutte contre la pollution de l'air
+  - Politique climatique
+  - Protection contre le bruit
+  - Gestion des déchets et recyclage
+  - Protection contre les dangers naturels
+  - Compatibilité environnementale
+  - Développement durable
+  it:
+  - Protezione dell'ambiente
+  - Conservazione della natura
+  - Protezione del suolo
+  - Protezione delle acque
+  - Riduzione dell'inquinamento atmosferico
+  - Politica climatica
+  - Protezione dal rumore
+  - Gestione dei rifiuti e riciclaggio
+  - Protezione dai pericoli naturali
+  - Compatibilità ambientale
+  - Sostenibilità
+  rm:
+  - Protecziun da l'ambient
+  - Conservaziun da la natira
+  - Protecziun dal terren
+  - Protecziun da las auas
+  - Reducziun da la polluziun da l'aria
+  - Politica climatica
+  - Protecziun cunter la canera
+  - Gestiun da ruments e recicladi
+  - Protecziun cunter privels natirals
+  - Cumpatibilitad ambientala
+  - Sostenibilitad

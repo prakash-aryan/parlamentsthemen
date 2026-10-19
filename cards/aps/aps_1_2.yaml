@@ -1,0 +1,88 @@
+id: aps_1_2
+version: 1
+source_description: 'The chapter "Institutionen" ("Institutions") of the domain "Akteure und Institutionen"
+  in the Année Politique Suisse classification of Swiss politics. It contains these topics: Bundesrat;
+  Verwaltung; Konkordanz; Parlament; Lobbyismus; Judikative; Föderalismus; Kantone; Städte, Regionen,
+  Gemeinden; Parteiensystem; Parteien; Verbände. Cover what parliamentary affairs in this chapter are
+  typically about.'
+name: Swiss Political Institutions
+definition: This topic covers the structure, functioning, and interrelations of Switzerland's political
+  institutions, including federal, cantonal, and municipal levels, as well as the mechanisms of consensus,
+  federalism, and the role of interest groups and parties.
+include:
+- Federal Council
+- Federal Administration
+- Concordance system
+- Parliament
+- Lobbying
+- Judiciary
+- Federalism
+- Cantons
+- Cities, regions, municipalities
+- Party system
+- Political parties
+- Interest groups
+exclude:
+- Specific legislation or bills
+- Budgetary details
+- International relations
+- Individual policy areas (e.g., health, education)
+- Electoral processes
+- Public opinion or surveys
+terms:
+  de:
+  - Institutionen
+  - Bundesrat
+  - Verwaltung
+  - Konkordanz
+  - Parlament
+  - Lobbyismus
+  - Judikative
+  - Föderalismus
+  - Kantone
+  - Städte, Regionen, Gemeinden
+  - Parteiensystem
+  - Parteien
+  - Verbände
+  fr:
+  - Institutions
+  - Conseil fédéral
+  - Administration
+  - Concordance
+  - Parlement
+  - Lobbying
+  - Pouvoir judiciaire
+  - Fédéralisme
+  - Cantons
+  - Villes, régions, communes
+  - Système partisan
+  - Partis politiques
+  - Groupes d'intérêt
+  it:
+  - Istituzioni
+  - Consiglio federale
+  - Amministrazione
+  - Concordanza
+  - Parlamento
+  - Lobbying
+  - Potere giudiziario
+  - Federalismo
+  - Cantoni
+  - Città, regioni, comuni
+  - Sistema partitico
+  - Partiti
+  - Associazioni
+  rm:
+  - Instituziuns
+  - Cussegl federal
+  - Administraziun
+  - Concordanza
+  - Parlament
+  - Lobbying
+  - Giudicativa
+  - Federalissem
+  - Cantuns
+  - Vitgs, regiuns, vischnancas
+  - Sistem da partidas
+  - Partidas
+  - Associaziuns

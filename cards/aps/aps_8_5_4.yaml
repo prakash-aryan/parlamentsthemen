@@ -1,0 +1,64 @@
+id: aps_8_5_4
+version: 1
+source_description: The topic "Sozialpartnerschaft" ("Partenariat social") in the chapter "Arbeit" of
+  the domain "Wirtschaft und Finanzen" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Social Partnership
+definition: Parliamentary affairs concerning the tripartite cooperation between trade unions, employer
+  associations, and government in shaping labor market policies, collective bargaining frameworks, and
+  social welfare systems in Switzerland.
+include:
+- collective bargaining agreements
+- labor market regulation
+- social dialogue
+- employment policy coordination
+- wage setting mechanisms
+- social security reforms
+- industrial relations
+- tripartite negotiations
+exclude:
+- individual unemployment benefits
+- minimum wage legislation
+- specific sectoral strikes
+- company-level labor disputes
+- international trade agreements
+- tax policy
+- monetary policy
+terms:
+  de:
+  - Sozialpartnerschaft
+  - Arbeitsmarktpolitik
+  - Tarifverhandlungen
+  - Sozialer Dialog
+  - Lohnfindung
+  - Arbeitsbedingungen
+  - Tripartite Verhandlungen
+  - Sozialversicherungen
+  fr:
+  - partenariat social
+  - politique du marché du travail
+  - négociations collectives
+  - dialogue social
+  - fixation des salaires
+  - conditions de travail
+  - négociations tripartites
+  - assurances sociales
+  it:
+  - partenariato sociale
+  - politica del mercato del lavoro
+  - contrattazione collettiva
+  - dialogo sociale
+  - determinazione dei salari
+  - condizioni di lavoro
+  - negoziazioni tripartite
+  - assicurazioni sociali
+  rm:
+  - partenadi social
+  - politica dal martgà da lavur
+  - contractaziun collectiva
+  - dialog social
+  - fixaziun da las pajas
+  - cundiziuns da lavur
+  - negoziaziuns tripartitas
+  - segiranzas socialas

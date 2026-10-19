@@ -1,0 +1,62 @@
+id: adhoc_energy_security
+version: 1
+source_description: 'Energy supply security: parliamentary affairs about securing the supply of electricity
+  and gas, including the risk of shortages in winter, reserve power plants, storage, imports and the electricity
+  agreement with the EU, expansion of domestic production to secure supply, and emergency plans for energy
+  shortages. Excludes energy policy that does not concern security of supply.'
+name: Energy Supply Security
+definition: Parliamentary affairs focused on ensuring a reliable and uninterrupted supply of electricity
+  and gas, addressing risks such as winter shortages, establishing reserve power capacity, developing
+  storage solutions, managing imports, and implementing emergency plans for energy crises.
+include:
+- winter electricity/gas shortages
+- reserve power plants
+- energy storage solutions
+- imports of electricity/gas
+- EU electricity agreement
+- domestic energy production expansion
+- emergency energy shortage plans
+exclude:
+- general energy policy
+- renewable energy promotion
+- climate change mitigation
+- energy efficiency measures
+- nuclear phase-out debates
+- electricity pricing reforms
+terms:
+  de:
+  - Energieversorgungssicherheit
+  - Strom- und Gasreserven
+  - Winterreserve
+  - Energieimporte
+  - EU-Stromabkommen
+  - Inlandproduktion
+  - Notstromversorgung
+  - Versorgungsengpässe
+  fr:
+  - sécurité de l'approvisionnement énergétique
+  - réserves d'électricité et de gaz
+  - stockage d'énergie
+  - importations d'électricité et de gaz
+  - accord sur l'électricité avec l'UE
+  - production nationale
+  - plans d'urgence
+  - pénuries hivernales
+  it:
+  - sicurezza dell'approvvigionamento energetico
+  - riserve di elettricità e gas
+  - stoccaggio energetico
+  - importazioni di elettricità e gas
+  - accordo UE sull'elettricità
+  - produzione nazionale
+  - piani d'emergenza
+  - carenze invernali
+  rm:
+  - segirezza dal provedimaint d'energia
+  - reservas d'electricitad e gas
+  - reserva d'enviern
+  - imports d'electricitad e gas
+  - cunvegna cun l'UE davart l'electricitad
+  - producziun indigena
+  - plans d'urgenza
+  - mancanzas d'energia

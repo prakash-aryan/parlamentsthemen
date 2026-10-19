@@ -1,0 +1,67 @@
+id: aps_2_2_3
+version: 1
+source_description: The topic "Wahlen in kantonale Parlamente" ("Elections des parlements cantonaux")
+  in the chapter "Wahlen" of the domain "Direkte Demokratie und Wahlen" in the Année Politique Suisse
+  classification of Swiss politics. Cover what parliamentary affairs on this topic are typically about,
+  and what belongs to neighbouring topics of the same chapter instead.
+name: Cantonal Parliament Elections
+definition: This topic covers parliamentary affairs related to the election of members to cantonal parliaments,
+  including electoral procedures, voter turnout, campaign financing rules, and the implementation of cantonal
+  electoral laws.
+include:
+- cantonal election procedures
+- electoral law amendments
+- voter registration
+- campaign financing regulations
+- electoral district boundaries
+- ballot access rules
+- election monitoring
+- electoral reform proposals
+exclude:
+- federal parliament elections
+- municipal council elections
+- referendums and initiatives
+- electoral disputes and appeals
+- voter education programs
+- ballot design and accessibility
+terms:
+  de:
+  - Wahlen in kantonale Parlamente
+  - Wahlverfahren
+  - Wahlkreisgrenzen
+  - Stimmregister
+  - Wahlkampffinanzierung
+  - Wahlrechtsreform
+  - Wahlbeteiligung
+  - Stimmabgabe
+  - Wahltermin
+  fr:
+  - élections aux parlements cantonaux
+  - procédures électorales
+  - délimitation des circonscriptions
+  - financement des campagnes
+  - réforme du droit de vote
+  - inscription des électeurs
+  - participation électorale
+  - dépouillement des votes
+  - calendrier électoral
+  it:
+  - elezioni ai parlamenti cantonali
+  - procedure elettorali
+  - delimitazione dei circondari
+  - finanziamento delle campagne
+  - riforma del diritto di voto
+  - registro degli elettori
+  - partecipazione elettorale
+  - spoglio dei voti
+  - calendario elettorale
+  rm:
+  - elecziuns dals parlaments chantunals
+  - proceduras electoralas
+  - delimitaziun dals circuls
+  - finanziaziun da las campagnas
+  - reforma dal dretg da vuschar
+  - registraziun dals electurs
+  - participaziun electorala
+  - scrutini dals vuschs
+  - calender electoral

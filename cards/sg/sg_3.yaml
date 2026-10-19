@@ -1,0 +1,71 @@
+id: sg_3
+version: 1
+source_description: The subject area "Finanzen, Regalien, Unternehmungen, Feuerschutz" of the systematic
+  law collection of the canton of St. Gallen, which the canton uses to classify the affairs of its cantonal
+  parliament. Cover what cantonal affairs in this subject area are typically about.
+name: Cantonal Financial and Economic Affairs
+definition: This topic covers cantonal matters related to public finances, economic activities, state-owned
+  enterprises, and fire protection services within the canton of St. Gallen. It includes debates and decisions
+  on budgeting, taxation, investment in public enterprises, and the organization of fire services under
+  cantonal jurisdiction.
+include:
+- cantonal budget planning
+- taxation and revenue collection
+- state-owned enterprises
+- economic development policies
+- public investment projects
+- fire protection services
+- regal rights and monopolies
+- financial oversight and audits
+exclude:
+- federal tax legislation
+- international trade agreements
+- municipal fire brigades
+- private sector business regulation
+- national defense spending
+- social welfare programs
+terms:
+  de:
+  - Finanzen
+  - Regalien
+  - Unternehmungen
+  - Feuerschutz
+  - Kantonshaushalt
+  - Steuerwesen
+  - Wirtschaftsförderung
+  - öffentliche Investitionen
+  - Finanzaufsicht
+  - Regalrechte
+  fr:
+  - Finances cantonales
+  - Régales
+  - Entreprises publiques
+  - Protection contre l'incendie
+  - Budget cantonal
+  - Fiscalité
+  - Promotion économique
+  - Investissements publics
+  - Surveillance financière
+  - Droits régaliens
+  it:
+  - Finanze cantonali
+  - Regalie
+  - Imprese pubbliche
+  - Protezione antincendio
+  - Bilancio cantonale
+  - Fiscalità
+  - Promozione economica
+  - Investimenti pubblici
+  - Controllo finanziario
+  - Diritti regali
+  rm:
+  - finanzas chantunalas
+  - regalias
+  - interpresas publicas
+  - protecziun cunter fi
+  - budget chantunal
+  - impostas
+  - promoziun economica
+  - investiziuns publicas
+  - surveglianza finanziala
+  - dretgs regals

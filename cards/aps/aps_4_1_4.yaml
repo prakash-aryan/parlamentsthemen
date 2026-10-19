@@ -1,0 +1,67 @@
+id: aps_4_1_4
+version: 1
+source_description: The topic "Frauen- und Gleichstellungsfragen" ("Femmes et égalité des sexes") in the
+  chapter "Soziale Gruppen" of the domain "Gesellschaft und Kultur" in the Année Politique Suisse classification
+  of Swiss politics. Cover what parliamentary affairs on this topic are typically about, and what belongs
+  to neighbouring topics of the same chapter instead.
+name: Gender Equality and Women's Issues
+definition: Parliamentary affairs focusing on policies, measures, and initiatives aimed at achieving gender
+  equality, promoting women's rights, and addressing discrimination based on sex in all areas of society,
+  including employment, education, family, and political representation.
+include:
+- women's rights
+- gender equality policies
+- pay equity
+- representation of women in politics
+- prevention of gender-based violence
+- family and work-life balance
+- gender mainstreaming in legislation
+- women's health and reproductive rights
+exclude:
+- youth policies
+- elderly care
+- immigration and integration
+- cultural heritage preservation
+- environmental protection
+- economic development strategies
+terms:
+  de:
+  - Frauenförderung
+  - Gleichstellung der Geschlechter
+  - Lohngleichheit
+  - Frauenquote
+  - Gewalt gegen Frauen
+  - Reproduktionsrechte
+  - Gender Mainstreaming
+  - Frauen in der Politik
+  - Diskriminierung aufgrund des Geschlechts
+  fr:
+  - égalité des sexes
+  - promotion de la femme
+  - égalité salariale
+  - quotas féminins
+  - violence faite aux femmes
+  - droits reproductifs
+  - mainstreaming du genre
+  - femmes en politique
+  - discrimination sexuelle
+  it:
+  - parità di genere
+  - promozione della donna
+  - uguaglianza salariale
+  - quote femminili
+  - violenza contro le donne
+  - diritti riproduttivi
+  - mainstreaming di genere
+  - donne in politica
+  - discriminazione di genere
+  rm:
+  - egualitad da las dunnas
+  - egualitad tranter ils sexs
+  - egualitad da las pajas
+  - quota da dunnas
+  - violenza cunter las dunnas
+  - dretgs reproductivs
+  - mainstreaming da gender
+  - dunnas en la politica
+  - discriminaziun tenor il sex

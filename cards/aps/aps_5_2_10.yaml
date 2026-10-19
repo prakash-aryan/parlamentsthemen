@@ -1,0 +1,70 @@
+id: aps_5_2_10
+version: 1
+source_description: The topic "Private Vorsorge" ("Prévoyance privée") in the chapter "Sozialversicherungen"
+  of the domain "Gesundheit und Sozialsystem" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Private Pension Provision
+definition: Parliamentary affairs on private pension provision focus on the regulation, promotion, and
+  oversight of voluntary retirement savings schemes outside the mandatory state pension system. This includes
+  debates on tax incentives, investment regulations, consumer protection, and the role of private insurers
+  and pension funds in ensuring financial security for individuals in old age. It also covers issues related
+  to portability, transparency, and the adequacy of private pension benefits.
+include:
+- voluntary retirement savings
+- pillar 3a and pillar 3b schemes
+- private pension funds
+- tax incentives for pension savings
+- investment regulations for pension assets
+- consumer protection in pension products
+- portability of pension benefits
+- transparency of pension fund management
+exclude:
+- mandatory state pension (AHV)
+- unemployment insurance
+- disability and survivor benefits
+- health insurance
+- social assistance and welfare
+- occupational pension schemes (if classified separately)
+terms:
+  de:
+  - private Vorsorge
+  - Pensionskasse
+  - Säule 3a
+  - Säule 3b
+  - Steueranreize
+  - Pensionsfonds
+  - Altersvorsorge
+  - Portabilität
+  - Transparenz
+  - Anlageregulierung
+  fr:
+  - prévoyance privée
+  - pilier 3a
+  - pilier 3b
+  - incitations fiscales
+  - caisse de pension
+  - sécurité de la vieillesse
+  - transparence
+  - portabilité
+  - réglementation des placements
+  it:
+  - previdenza privata
+  - pilastro 3a
+  - pilastro 3b
+  - incentivi fiscali
+  - fondi pensione
+  - sicurezza nella vecchiaia
+  - trasferibilità
+  - trasparenza
+  - regolamentazione degli investimenti
+  rm:
+  - prevenziun privata
+  - pilier 3a
+  - pilier 3b
+  - incitaments fiscals
+  - cassa da pensiun
+  - segirezza en la vegliadetgna
+  - transferibilitad
+  - transparenza
+  - regulaziun dals investiziuns

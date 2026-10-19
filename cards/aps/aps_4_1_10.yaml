@@ -1,0 +1,62 @@
+id: aps_4_1_10
+version: 1
+source_description: The topic "Fahrende" ("Gens du voyage") in the chapter "Soziale Gruppen" of the domain
+  "Gesellschaft und Kultur" in the Année Politique Suisse classification of Swiss politics. Cover what
+  parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics of
+  the same chapter instead.
+name: Fahrende (Gens du voyage)
+definition: Parliamentary affairs concerning the social, legal, and cultural status of the Swiss Sinti
+  and Roma communities, including their rights, living conditions, discrimination, and integration policies.
+include:
+- rights of Sinti and Roma
+- discrimination against nomadic groups
+- living and camping sites
+- integration and social inclusion
+- cultural preservation
+- anti-racism measures
+- access to education and healthcare
+- legal status and residency
+exclude:
+- general minority rights
+- immigration policy
+- housing policy for all citizens
+- tourism infrastructure
+- cultural heritage of settled populations
+- anti-discrimination laws in general
+terms:
+  de:
+  - Fahrende
+  - Sinti und Roma
+  - Diskriminierung
+  - Wohn- und Campingplätze
+  - Integration
+  - Rechte
+  - Antirassismus
+  - Kulturelle Identität
+  fr:
+  - gens du voyage
+  - Manouches et Roms
+  - discrimination
+  - aires d'accueil
+  - intégration
+  - droits
+  - antiracisme
+  - identité culturelle
+  it:
+  - popolazioni itineranti
+  - Sinti e Rom
+  - discriminazione
+  - aree di sosta
+  - integrazione
+  - diritti
+  - antirazzismo
+  - identità culturale
+  rm:
+  - quels da viadi
+  - Sinti e Rroms
+  - discriminaziun
+  - plazzas da dimora
+  - integraziun
+  - dretgs
+  - antirassissem
+  - identitad culturala

@@ -1,0 +1,82 @@
+id: aps_7_2
+version: 1
+source_description: 'The chapter "Sicherheitspolitik" ("Politique de sécurité") of the domain "Rechts-
+  und Sicherheitspolitik" in the Année Politique Suisse classification of Swiss politics. It contains
+  these topics: Grundfragen zur Armee; Militärorganisation; Rüstung; Militäreinsätze; Bevölkerungsschutz;
+  Zivildienst und Dienstverweigerung; Öffentliche Sicherheit; Polizei; Cybersicherheit; Versorgungssicherheit.
+  Cover what parliamentary affairs in this chapter are typically about.'
+name: Swiss Security Policy
+definition: This topic covers parliamentary debates and decisions related to Switzerland's defense, civil
+  protection, public safety, and cybersecurity, including military organization, arms control, peacekeeping
+  missions, alternative service, and ensuring national resilience against various threats.
+include:
+- Army organization
+- Arms and armaments
+- Military deployments
+- Civil protection
+- Alternative service and conscientious objection
+- Public safety
+- Police matters
+- Cybersecurity
+- Supply security
+exclude:
+- Foreign policy
+- Economic policy
+- Health policy
+- Environmental policy
+- Education policy
+- Social welfare
+- Transport infrastructure
+terms:
+  de:
+  - Sicherheitspolitik
+  - Armee
+  - Militärorganisation
+  - Rüstung
+  - Militäreinsätze
+  - Bevölkerungsschutz
+  - Zivildienst
+  - Dienstverweigerung
+  - Öffentliche Sicherheit
+  - Polizei
+  - Cybersicherheit
+  - Versorgungssicherheit
+  fr:
+  - politique de sécurité
+  - armée
+  - organisation militaire
+  - armement
+  - engagements militaires
+  - protection de la population
+  - service civil
+  - objection de conscience
+  - sécurité publique
+  - police
+  - cybersécurité
+  - sécurité de l'approvisionnement
+  it:
+  - politica di sicurezza
+  - esercito
+  - organizzazione militare
+  - armamenti
+  - interventi militari
+  - protezione della popolazione
+  - servizio civile
+  - obiezione di coscienza
+  - sicurezza pubblica
+  - polizia
+  - cybersicurezza
+  - sicurezza dell'approvvigionamento
+  rm:
+  - politica da segirezza
+  - armada
+  - organisaziun militara
+  - armament
+  - engaschaments militars
+  - protecziun da la populaziun
+  - servetsch civil
+  - obieziun da conscienza
+  - segirezza publica
+  - polizia
+  - cybersicurezza
+  - segirezza dal provediment

@@ -1,0 +1,72 @@
+id: aps_4_4
+version: 1
+source_description: 'The chapter "Medien" ("Médias") of the domain "Gesellschaft und Kultur" in the Année
+  Politique Suisse classification of Swiss politics. It contains these topics: Medienpolitische Grundfragen;
+  Presse; Radio und Fernsehen; Digitale Medien; Meinungsforschung. Cover what parliamentary affairs in
+  this chapter are typically about.'
+name: Media Policy and Landscape
+definition: This topic covers parliamentary discussions and decisions related to the media sector in Switzerland,
+  including foundational media policy questions, the role and regulation of the press, broadcasting (radio
+  and television), digital media platforms, and research on public opinion.
+include:
+- media regulation
+- press freedom
+- broadcasting standards
+- digital media governance
+- public opinion research
+- media diversity
+- journalism ethics
+- media funding models
+exclude:
+- cultural heritage preservation
+- language policy
+- education system reforms
+- healthcare policy
+- transport infrastructure
+- economic development
+- environmental protection
+terms:
+  de:
+  - Medienpolitik
+  - Pressefreiheit
+  - Radio- und Fernsehregulierung
+  - Digitale Medien
+  - Meinungsforschung
+  - Medienvielfalt
+  - Journalismus
+  - Medienfinanzierung
+  - Medienkonzentration
+  - Online-Plattformen
+  fr:
+  - politique des médias
+  - liberté de la presse
+  - régulation de la radio et de la télévision
+  - médias numériques
+  - recherche d'opinion publique
+  - diversité médiatique
+  - éthique journalistique
+  - financement des médias
+  - concentration des médias
+  - plateformes en ligne
+  it:
+  - politica dei media
+  - libertà di stampa
+  - regolamentazione radio e TV
+  - media digitali
+  - ricerca dell'opinione pubblica
+  - diversità mediatica
+  - etica giornalistica
+  - finanziamento dei media
+  - concentrazione dei media
+  - piattaforme online
+  rm:
+  - politica da medias
+  - libertad da pressa
+  - regulaziun da radio e televisiun
+  - medias digitals
+  - perscrutaziun da l'opiniun publica
+  - diversitad da medias
+  - etica da schurnalissem
+  - finanziaziun da medias
+  - concentraziun da medias
+  - plattafurmas online

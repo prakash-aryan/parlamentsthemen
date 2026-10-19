@@ -1,0 +1,9 @@
+{
+  "model": "apertus-parltopics-8b",
+  "card": "default for topics without labels",
+  "a": 1.0,
+  "b": -1.07,
+  "threshold": 1.07,
+  "calibrated": false,
+  "fitted_on": "median of the Apertus-ParlTopics-8B thresholds fitted on dev affairs before 2024 for the 28 Curia Vista areas and digitalisation; on the Curia Vista test affairs this shared threshold gives macro F1 0.642 against 0.644 with per-area thresholds"
+}

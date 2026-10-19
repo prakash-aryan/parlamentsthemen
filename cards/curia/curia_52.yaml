@@ -1,0 +1,69 @@
+id: curia_52
+version: 1
+source_description: 'The subject area "Umwelt" (French: "Environnement", Italian: "Ambiente") that the
+  Swiss Parliamentary Services assign to federal parliamentary affairs in Curia Vista. Cover what affairs
+  in this subject area are typically about.'
+name: Environmental Policy
+definition: This topic covers parliamentary affairs related to the protection of natural resources, reduction
+  of pollution, climate change mitigation, sustainable development, biodiversity conservation, and environmental
+  regulation at the federal level in Switzerland.
+include:
+- climate change mitigation
+- air and water quality regulation
+- waste management and recycling
+- biodiversity and species protection
+- sustainable energy transition
+- environmental impact assessments
+- pollution control and emissions reduction
+- green infrastructure and urban ecology
+exclude:
+- cultural heritage preservation
+- language policy
+- educational curriculum standards
+- healthcare system organization
+- transport infrastructure planning
+- taxation and fiscal policy
+- immigration and asylum procedures
+terms:
+  de:
+  - Umweltpolitik
+  - Klimaschutz
+  - Luftreinhaltung
+  - Wasserqualität
+  - Abfallwirtschaft
+  - Nachhaltigkeit
+  - Biodiversität
+  - Umweltverträglichkeitsprüfung
+  - Energieeffizienz
+  - CO₂-Reduktion
+  fr:
+  - politique environnementale
+  - lutte contre le changement climatique
+  - qualité de l'air
+  - gestion des déchets
+  - protection de la biodiversité
+  - développement durable
+  - réglementation des émissions
+  - efficacité énergétique
+  - impact environnemental
+  it:
+  - politica ambientale
+  - lotta al cambiamento climatico
+  - qualità dell'aria e dell'acqua
+  - gestione dei rifiuti
+  - biodiversità
+  - sviluppo sostenibile
+  - efficienza energetica
+  - riduzione delle emissioni
+  - valutazione d'impatto ambientale
+  rm:
+  - politica d'ambient
+  - cumbatter il midament climatic
+  - qualitad da l'aria
+  - qualitad da l'aua
+  - gestiun da rumient
+  - sustainabilitad
+  - biodiversitad
+  - valitaziun d'impact ambiental
+  - efficienza energetica
+  - reducziun da las emissiuns

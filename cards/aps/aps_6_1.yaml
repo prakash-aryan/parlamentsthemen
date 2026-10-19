@@ -1,0 +1,80 @@
+id: aps_6_1
+version: 1
+source_description: 'The chapter "Verkehr und Kommunikation" ("Transports et communications") of the domain
+  "Infrastruktur und Umwelt" in the Année Politique Suisse classification of Swiss politics. It contains
+  these topics: Verkehrspolitik; Öffentlicher Verkehr; Strassenverkehr; Eisenbahn; Luftfahrt; Schifffahrt;
+  Post; Telekommunikation; Digitalisierung. Cover what parliamentary affairs in this chapter are typically
+  about.'
+name: Transport and Communication Policy
+definition: This topic covers parliamentary discussions and decisions related to the planning, regulation,
+  and development of transport systems and communication networks across Switzerland. It includes policies
+  governing road, rail, air, and water transport, as well as postal services, telecommunications, and
+  digital infrastructure. The focus is on ensuring efficient, sustainable, and accessible mobility and
+  communication for the population and economy.
+include:
+- public transport systems
+- road traffic regulation
+- railway infrastructure
+- air transport policy
+- shipping and waterways
+- postal services
+- telecommunications networks
+- digitalization of services
+- transport infrastructure funding
+exclude:
+- energy policy
+- agricultural subsidies
+- healthcare services
+- education systems
+- housing policy
+- cultural funding
+- defense and security
+terms:
+  de:
+  - Verkehrspolitik
+  - Öffentlicher Verkehr
+  - Strassenverkehr
+  - Eisenbahn
+  - Luftfahrt
+  - Schifffahrt
+  - Postwesen
+  - Telekommunikation
+  - Digitalisierung
+  - Infrastrukturfinanzierung
+  - Nachhaltigkeit im Verkehr
+  fr:
+  - politique des transports
+  - transports publics
+  - circulation routière
+  - chemin de fer
+  - aviation
+  - navigation
+  - services postaux
+  - télécommunications
+  - numérisation
+  - financement des infrastructures
+  - développement durable
+  it:
+  - politica dei trasporti
+  - trasporto pubblico
+  - circolazione stradale
+  - ferrovia
+  - aviazione
+  - navigazione
+  - servizi postali
+  - telecomunicazioni
+  - digitalizzazione
+  - finanziamento delle infrastrutture
+  - sostenibilità dei trasporti
+  rm:
+  - politica da transports
+  - transport public
+  - traffic stradal
+  - viafier
+  - aviatica
+  - navigaziun
+  - servetsch postal
+  - telecommunicaziun
+  - digitalisaziun
+  - finanziaziun d'infrastructuras
+  - sostenibilitad dals transports

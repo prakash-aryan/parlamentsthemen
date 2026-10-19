@@ -1,0 +1,66 @@
+id: aps_8_1_2
+version: 1
+source_description: The topic "Strukturpolitik" ("Politique structurelle") in the chapter "Wirtschaftspolitik"
+  of the domain "Wirtschaft und Finanzen" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Structural Economic Policy
+definition: Parliamentary affairs under this topic focus on long-term frameworks, institutions, and conditions
+  that shape economic development, competitiveness, and regional balance in Switzerland. It includes debates
+  on industrial policy, innovation ecosystems, and structural adjustments to support sustainable economic
+  growth. The topic examines how policy structures influence economic performance across different sectors
+  and regions.
+include:
+- industrial policy
+- innovation and R&D frameworks
+- regional economic development
+- competitiveness strategies
+- economic infrastructure planning
+- sector-specific structural reforms
+- support for SMEs and entrepreneurship
+- frameworks for sustainable economic growth
+exclude:
+- short-term fiscal stimulus
+- annual budget allocations
+- tax rate adjustments
+- immediate unemployment measures
+- specific subsidy programs
+- currency or interest rate policy
+- one-off economic interventions
+terms:
+  de:
+  - Strukturpolitik
+  - Industriepolitik
+  - Innovationsförderung
+  - Regionalentwicklung
+  - Wirtschaftsstandort
+  - Wettbewerbsfähigkeit
+  - Institutionelle Rahmenbedingungen
+  - Langfristige Wirtschaftsförderung
+  fr:
+  - politique structurelle
+  - politique industrielle
+  - innovation
+  - développement régional
+  - attractivité économique
+  - cadres institutionnels
+  - croissance durable
+  - politique à long terme
+  it:
+  - politica strutturale
+  - politica industriale
+  - innovazione
+  - sviluppo regionale
+  - attrattività economica
+  - quadri istituzionali
+  - crescita sostenibile
+  - politica a lungo termine
+  rm:
+  - politica structurala
+  - politica industriala
+  - innovaziun
+  - svilup regiunal
+  - attractivitad economica
+  - cundiziuns instituziunalas
+  - creschientscha durabla
+  - politica a lunga vista

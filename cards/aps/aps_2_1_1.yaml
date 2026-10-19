@@ -1,0 +1,71 @@
+id: aps_2_1_1
+version: 1
+source_description: The topic "Volksabstimmung" ("Votation populaire") in the chapter "Direkte Demokratie"
+  of the domain "Direkte Demokratie und Wahlen" in the Année Politique Suisse classification of Swiss
+  politics. Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Popular Vote (Votation populaire)
+definition: Parliamentary affairs concerning the organization, conduct, and legal framework of popular
+  votes in Switzerland, including referendums and initiatives. This includes discussions on vote scheduling,
+  campaign financing rules, ballot design, and the interpretation of vote results.
+include:
+- referendum organization
+- initiative process
+- ballot question wording
+- campaign finance regulations
+- vote result validation
+- electoral law amendments
+- popular vote scheduling
+- citizen participation in votes
+exclude:
+- election of parliament members
+- parliamentary motions
+- postulates
+- interpellations
+- oral questions
+- cantonal or municipal voting procedures
+terms:
+  de:
+  - Volksabstimmung
+  - Referendum
+  - Initiative
+  - Stimmabgabe
+  - Wahltermin
+  - Stimmzettel
+  - Ergebnisauswertung
+  - Volkswillen
+  - Referendumsrecht
+  - Initiativrecht
+  fr:
+  - votation populaire
+  - référendum
+  - initiative populaire
+  - scrutin
+  - date du vote
+  - bulletin de vote
+  - validation des résultats
+  - volonté populaire
+  - droit de référendum
+  - droit d'initiative
+  it:
+  - voto popolare
+  - referendum
+  - iniziativa popolare
+  - scrutinio
+  - data della votazione
+  - scheda elettorale
+  - validazione dei risultati
+  - volontà popolare
+  - diritto di referendum
+  - diritto d'iniziativa
+  rm:
+  - votaziun dal pievel
+  - referendum
+  - iniziativa dal pievel
+  - scrutini
+  - data da la votaziun
+  - cedel da votaziun
+  - valitaziun dals resultats
+  - voluntad dal pievel
+  - dretg da referendum
+  - dretg d'iniziativa

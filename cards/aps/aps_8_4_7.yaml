@@ -1,0 +1,63 @@
+id: aps_8_4_7
+version: 1
+source_description: The topic "Tierversuche" ("Expérimentation animale") in the chapter "Landwirtschaft"
+  of the domain "Wirtschaft und Finanzen" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Animal experimentation in agriculture
+definition: Parliamentary affairs concerning the use of animals in agricultural research, testing of farming
+  practices, and development of new agricultural products, including ethical considerations, regulation,
+  and alternatives to animal testing.
+include:
+- animal testing in agricultural research
+- ethical guidelines for farm animal experiments
+- alternatives to animal testing in agriculture
+- regulation of animal trials in farming
+- impact of animal experimentation on agricultural innovation
+- animal welfare in agricultural research
+- public funding for agricultural animal testing
+- transparency in agricultural animal trials
+exclude:
+- general animal welfare legislation
+- wildlife conservation policies
+- food safety testing outside agriculture
+- animal husbandry practices
+- veterinary medicine research unrelated to agriculture
+- biotechnology patents unrelated to farming
+terms:
+  de:
+  - Tierversuche in der Landwirtschaft
+  - Tierversuchsverordnung
+  - Alternativen zu Tierversuchen
+  - Tierschutz in der Agrarforschung
+  - Regulierung landwirtschaftlicher Tierversuche
+  - Förderung tierversuchsfreier Methoden
+  - Ethische Richtlinien für Agrarforschung
+  - Transparenz bei Tierversuchen in der Landwirtschaft
+  fr:
+  - expérimentation animale en agriculture
+  - réglementation des essais sur les animaux
+  - alternatives aux tests sur les animaux
+  - bien-être animal dans la recherche agricole
+  - financement public des essais agricoles
+  - directives éthiques en agronomie
+  - transparence des essais sur les animaux
+  - méthodes sans animaux en agriculture
+  it:
+  - sperimentazione animale in agricoltura
+  - regolamentazione dei test sugli animali
+  - alternative ai test sugli animali
+  - benessere animale nella ricerca agricola
+  - finanziamento pubblico di sperimentazioni agricole
+  - linee guida etiche per l'agricoltura
+  - trasparenza nei test sugli animali
+  - metodi senza animali in agricoltura
+  rm:
+  - experimentaziun d’animals en agricultura
+  - ordinaziun davart ils experiments cun animals
+  - alternativas als experiments cun animals
+  - schurmetg d’animals en la perscrutaziun agricola
+  - regulaziun dals experiments cun animals en agricultura
+  - promoziun da metodas senza animals
+  - directivas eticas per la perscrutaziun agricola
+  - transparenza en experiments cun animals

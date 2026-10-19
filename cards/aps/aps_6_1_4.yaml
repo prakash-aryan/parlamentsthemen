@@ -1,0 +1,72 @@
+id: aps_6_1_4
+version: 1
+source_description: The topic "Eisenbahn" ("Chemin de fer") in the chapter "Verkehr und Kommunikation"
+  of the domain "Infrastruktur und Umwelt" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Rail Transport
+definition: Parliamentary affairs concerning the development, operation, regulation, and funding of rail
+  infrastructure and services in Switzerland, including national and regional rail networks, safety standards,
+  and integration with other transport modes.
+include:
+- Swiss Federal Railways (SBB)
+- regional and commuter rail services
+- rail infrastructure projects
+- rail safety regulations
+- integration with public transport systems
+- rail electrification and modernization
+- rail freight transport
+- accessibility and passenger services
+exclude:
+- road transport infrastructure
+- air transport policy
+- maritime transport
+- telecommunications networks
+- postal services
+- urban public transport planning
+- private car usage regulations
+terms:
+  de:
+  - Eisenbahn
+  - Bahninfrastruktur
+  - Bahnbetrieb
+  - Sicherheitsstandards
+  - Elektrifizierung
+  - Regionalverkehr
+  - Personen- und Güterverkehr
+  - Bahnprojekte
+  - SBB
+  - Bahnintegration
+  fr:
+  - chemin de fer
+  - infrastructure ferroviaire
+  - exploitation ferroviaire
+  - sécurité ferroviaire
+  - électrification
+  - transport régional
+  - transport de voyageurs et marchandises
+  - projets ferroviaires
+  - CFF
+  - intégration des transports
+  it:
+  - ferrovia
+  - infrastruttura ferroviaria
+  - esercizio ferroviario
+  - norme di sicurezza
+  - elettrificazione
+  - trasporto regionale
+  - trasporto passeggeri e merci
+  - progetti ferroviari
+  - FFS
+  - integrazione dei trasporti
+  rm:
+  - viafier
+  - infrastructura da viafier
+  - manaschi da viafier
+  - normas da segirtad
+  - electrificaziun
+  - transport regiunal
+  - transport da persunas e rauba
+  - projects da viafier
+  - VFF
+  - integraziun dals transports

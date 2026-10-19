@@ -1,0 +1,67 @@
+id: aps_8_4_4
+version: 1
+source_description: The topic "Pflanzliche Produktion" ("Production végétale") in the chapter "Landwirtschaft"
+  of the domain "Wirtschaft und Finanzen" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Plant Production
+definition: Parliamentary affairs concerning the cultivation, breeding, and production of plants for agricultural,
+  food, and economic purposes. This includes debates on crop yields, sustainable farming practices, plant
+  protection, and the economic viability of plant-based production systems.
+include:
+- Crop cultivation techniques
+- Sustainable agriculture practices
+- Plant breeding and genetics
+- Organic farming methods
+- Plant protection and pesticides
+- Agricultural subsidies for plant production
+- Export of plant-based agricultural products
+- Soil health and fertility management
+exclude:
+- Animal husbandry and livestock farming
+- Food processing and manufacturing
+- Forestry and timber production
+- Fisheries and aquaculture
+- Agricultural trade policy (general)
+- Rural development programs (non-plant specific)
+terms:
+  de:
+  - Pflanzenproduktion
+  - Getreideanbau
+  - Obst- und Gemüsebau
+  - Nachhaltige Landwirtschaft
+  - Pflanzenschutz
+  - Sortenzüchtung
+  - Bodenfruchtbarkeit
+  - Agrarförderung
+  - Biologischer Landbau
+  fr:
+  - Production végétale
+  - Culture céréalière
+  - Arboriculture et maraîchage
+  - Agriculture durable
+  - Protection des plantes
+  - Sélection végétale
+  - Fertilité des sols
+  - Subventions agricoles
+  - Agriculture biologique
+  it:
+  - Produzione vegetale
+  - Coltivazione di cereali
+  - Orticoltura e frutticoltura
+  - Agricoltura sostenibile
+  - Protezione delle piante
+  - Selezione delle specie vegetali
+  - Fertilità del suolo
+  - Sussidi agricoli
+  - Agricoltura biologica
+  rm:
+  - Producziun vegetala
+  - Cultivaziun da granezza
+  - Orticultura e pomicultura
+  - Agricultura durabla
+  - Protecziun da las plantas
+  - Selecziun da spezias vegetalas
+  - Fertilitad dal terren
+  - Subvenziuns agriculas
+  - Agricultura biologica

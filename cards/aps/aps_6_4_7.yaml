@@ -1,0 +1,72 @@
+id: aps_6_4_7
+version: 1
+source_description: The topic "Lärmschutz" ("Mesures contre le bruit") in the chapter "Umweltschutz" of
+  the domain "Infrastruktur und Umwelt" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Noise Protection
+definition: Parliamentary affairs concerning measures to reduce, regulate, and mitigate noise pollution
+  from transport, industry, construction, and other sources, with a focus on environmental protection
+  and public health.
+include:
+- traffic noise abatement
+- industrial noise regulations
+- construction noise limits
+- urban noise control
+- aviation noise mitigation
+- railway noise reduction
+- noise impact assessments
+- soundproofing requirements
+exclude:
+- air quality monitoring
+- waste management
+- water pollution control
+- climate change mitigation
+- energy efficiency standards
+- biodiversity conservation
+- chemical substance regulation
+terms:
+  de:
+  - Lärmschutz
+  - Lärmreduktion
+  - Lärmschutzmassnahmen
+  - Verkehrslärm
+  - Industriegeräusche
+  - Baugeräusche
+  - Umweltlärm
+  - Schallschutz
+  - Lärmschutzverordnung
+  - Lärmsanierung
+  fr:
+  - protection contre le bruit
+  - réduction du bruit
+  - mesures anti-bruit
+  - bruit du trafic
+  - bruits industriels
+  - bruits de chantier
+  - bruit environnemental
+  - isolation phonique
+  - ordonnance sur la protection contre le bruit
+  - assainissement acoustique
+  it:
+  - protezione contro il rumore
+  - riduzione del rumore
+  - misure antirumore
+  - rumore del traffico
+  - rumori industriali
+  - rumori edili
+  - inquinamento acustico
+  - isolamento acustico
+  - ordinanza sulla protezione contro il rumore
+  - risanamento acustico
+  rm:
+  - protecziun cunter la canera
+  - reducziun da la canera
+  - mesiras cunter la canera
+  - canera da traffic
+  - canera industriala
+  - canera da construcziun
+  - inquinaziun acustica
+  - isolaziun acustica
+  - ordinaziun davart la protecziun cunter la canera
+  - sanaziun acustica

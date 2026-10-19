@@ -1,0 +1,66 @@
+id: aps_4_2_3
+version: 1
+source_description: The topic "Mittelschulen" ("Enseignement secondaire supérieur") in the chapter "Bildung
+  und Forschung" of the domain "Gesellschaft und Kultur" in the Année Politique Suisse classification
+  of Swiss politics. Cover what parliamentary affairs on this topic are typically about, and what belongs
+  to neighbouring topics of the same chapter instead.
+name: Secondary Education
+definition: Parliamentary affairs concerning the organization, funding, curriculum, and quality of secondary
+  schools in Switzerland, including vocational, academic, and general education tracks.
+include:
+- secondary school curriculum
+- vocational education and training
+- school funding and subsidies
+- teacher training and qualifications
+- equality in access to secondary education
+- integration of students with special needs
+- digitalization in secondary schools
+- language education at secondary level
+exclude:
+- primary education
+- higher education and universities
+- adult education and continuing training
+- research funding and innovation
+- cultural policy and heritage
+- youth welfare and child protection
+terms:
+  de:
+  - Mittelschulen
+  - Sekundarstufe
+  - Berufsbildung
+  - Lehrpläne
+  - Schulfinanzierung
+  - Lehrerausbildung
+  - Inklusion
+  - Digitalisierung
+  - Sprachförderung
+  fr:
+  - écoles secondaires
+  - enseignement secondaire
+  - formation professionnelle
+  - programmes scolaires
+  - financement scolaire
+  - formation des enseignants
+  - inclusion
+  - numérisation
+  - enseignement des langues
+  it:
+  - scuole secondarie
+  - istruzione secondaria
+  - formazione professionale
+  - programmi scolastici
+  - finanziamento scolastico
+  - formazione degli insegnanti
+  - inclusione
+  - digitalizzazione
+  - insegnamento delle lingue
+  rm:
+  - scolas medias
+  - instrucziun secundara
+  - furmaziun professiunala
+  - plans d'instrucziun
+  - finanziaziun da scola
+  - furmaziun dals scolasts
+  - inclusiun
+  - digitalisaziun
+  - instrucziun da linguas

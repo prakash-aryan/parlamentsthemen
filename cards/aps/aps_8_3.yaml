@@ -1,0 +1,72 @@
+id: aps_8_3
+version: 1
+source_description: 'The chapter "Geld, Währung und Kredit" ("Credit et monnaie") of the domain "Wirtschaft
+  und Finanzen" in the Année Politique Suisse classification of Swiss politics. It contains these topics:
+  Geld- und Währungspolitik; Finanzwesen; Nationalbank; Banken; Börsen; Versicherungen. Cover what parliamentary
+  affairs in this chapter are typically about.'
+name: Monetary and Financial Affairs
+definition: This topic covers parliamentary discussions and decisions related to Switzerland's monetary
+  policy, financial systems, central banking, banking regulation, stock exchanges, and insurance sector
+  oversight.
+include:
+- Monetary policy
+- Financial regulation
+- Swiss National Bank
+- Banking sector
+- Stock exchange oversight
+- Insurance industry regulation
+- Currency stability
+- Credit markets
+exclude:
+- Taxation policy
+- Labor market regulations
+- Environmental protection
+- Healthcare systems
+- Education policy
+- Infrastructure development
+- Agricultural subsidies
+terms:
+  de:
+  - Geldpolitik
+  - Währungspolitik
+  - Finanzwesen
+  - Nationalbank
+  - Banken
+  - Börsen
+  - Versicherungen
+  - Kreditwesen
+  - Finanzmarktregulierung
+  - Währungsstabilität
+  fr:
+  - Politique monétaire
+  - Politique de change
+  - Système financier
+  - Banque nationale
+  - Banques
+  - Bourses
+  - Assurances
+  - Marché du crédit
+  - Régulation financière
+  - Stabilité monétaire
+  it:
+  - Politica monetaria
+  - Politica valutaria
+  - Sistema finanziario
+  - Banca nazionale
+  - Banche
+  - Borse
+  - Assicurazioni
+  - Credito
+  - Regolamentazione finanziaria
+  - Stabilità valutaria
+  rm:
+  - Politica monetara
+  - Politica da valuta
+  - Sistem finanzial
+  - Banca naziunala
+  - Bancas
+  - Bursas
+  - Segiradas
+  - Credits
+  - Regulaziun finanziala
+  - Stabilitad monetara

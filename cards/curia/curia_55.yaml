@@ -1,0 +1,60 @@
+id: curia_55
+version: 1
+source_description: 'The subject area "Landwirtschaft" (French: "Agriculture", Italian: "Agricoltura")
+  that the Swiss Parliamentary Services assign to federal parliamentary affairs in Curia Vista. Cover
+  what affairs in this subject area are typically about.'
+name: Swiss Agriculture Policy
+definition: This topic covers parliamentary affairs related to farming practices, rural development, food
+  security, agricultural subsidies, environmental sustainability in farming, livestock management, and
+  the economic viability of Swiss agriculture.
+include:
+- farming practices
+- rural development
+- food security
+- agricultural subsidies
+- environmental sustainability in farming
+- livestock management
+- economic viability of agriculture
+exclude:
+- urban planning
+- industrial manufacturing
+- international trade agreements (unless agriculture-specific)
+- forestry management
+- fisheries
+terms:
+  de:
+  - Landwirtschaftspolitik
+  - Bauernhöfe
+  - Direktzahlungen
+  - Nachhaltige Landwirtschaft
+  - Tierhaltung
+  - Lebensmittelsicherheit
+  - Flächenförderung
+  - Biodiversität in der Landwirtschaft
+  fr:
+  - politique agricole
+  - exploitation agricole
+  - paiements directs
+  - agriculture durable
+  - élevage
+  - sécurité alimentaire
+  - développement rural
+  - biodiversité agricole
+  it:
+  - politica agricola
+  - aziende agricole
+  - pagamenti diretti
+  - agricoltura sostenibile
+  - allevamento
+  - sicurezza alimentare
+  - sviluppo rurale
+  - biodiversità agricola
+  rm:
+  - politica agricola
+  - puraziun agricula
+  - pajaments directs
+  - agricultura durabla
+  - tratga da biestga
+  - segirezza alimentara
+  - svilup rural
+  - biodiversitad agricula

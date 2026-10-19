@@ -1,0 +1,62 @@
+id: aps_1_2_8
+version: 1
+source_description: The topic "Kantone" ("Cantons") in the chapter "Institutionen" of the domain "Akteure
+  und Institutionen" in the Année Politique Suisse classification of Swiss politics. Cover what parliamentary
+  affairs on this topic are typically about, and what belongs to neighbouring topics of the same chapter
+  instead.
+name: Cantonal Autonomy and Powers
+definition: Parliamentary affairs concerning the constitutional status, competencies, and autonomy of
+  Swiss cantons within the federal system, including their legislative, executive, and financial powers.
+include:
+- cantonal jurisdiction
+- federal-cantonal division of powers
+- cantonal constitutions
+- cantonal administrative structures
+- cantonal tax autonomy
+- cantonal education systems
+- cantonal police and law enforcement
+- cantonal environmental regulations
+exclude:
+- federal legislative proposals
+- national budget debates
+- foreign policy matters
+- direct democracy initiatives
+- municipal governance issues
+- inter-cantonal agreements
+terms:
+  de:
+  - Kantonsautonomie
+  - Kantonskompetenzen
+  - Kantonsverfassungen
+  - Finanzautonomie
+  - Gesetzgebungskompetenzen
+  - Verwaltungsorganisation
+  - Polizeikompetenzen
+  - Bildungshoheit
+  fr:
+  - autonomie cantonale
+  - compétences cantonales
+  - constitutions cantonales
+  - autonomie financière
+  - compétences législatives
+  - organisation administrative
+  - compétences policières
+  - souveraineté en matière d'éducation
+  it:
+  - autonomia cantonale
+  - competenze cantonali
+  - costituzioni cantonali
+  - autonomia finanziaria
+  - competenze legislative
+  - organizzazione amministrativa
+  - competenze di polizia
+  - sovranità in materia di istruzione
+  rm:
+  - autonomia chantunala
+  - cumpetenzas chantunalas
+  - constituziuns chantunalas
+  - autonomia finanziala
+  - cumpetenzas legislativas
+  - organisaziun administrativa
+  - cumpetenzas da polizia
+  - suveranitad en materia da scolaziun

@@ -1,0 +1,64 @@
+id: aps_1_1
+version: 1
+source_description: 'The chapter "Politische Grundfragen" ("Problèmes politiques fondamentaux") of the
+  domain "Akteure und Institutionen" in the Année Politique Suisse classification of Swiss politics. It
+  contains these topics: Nationale Identität; Verfassungsfragen; Territorialfragen; Jurafrage. Cover what
+  parliamentary affairs in this chapter are typically about.'
+name: Political Foundations
+definition: This topic covers core political questions concerning the identity, structure, and territorial
+  integrity of Switzerland, including debates on national identity, constitutional reforms, and territorial
+  organization.
+include:
+- National identity
+- Constitutional issues
+- Territorial questions
+- Jura question
+- Swiss federalism
+- Cantonal autonomy
+- National unity
+- State structure
+exclude:
+- Economic policy
+- Social welfare programs
+- Environmental regulations
+- Foreign policy
+- Taxation
+- Labor laws
+- Education policy
+terms:
+  de:
+  - Nationale Identität
+  - Verfassungsfragen
+  - Territorialfragen
+  - Jurafrage
+  - Bundesstaat
+  - Kantonsautonomie
+  - Staatsstruktur
+  - Nationales Selbstverständnis
+  fr:
+  - Identité nationale
+  - Questions constitutionnelles
+  - Questions territoriales
+  - Question jurassienne
+  - Fédéralisme
+  - Autonomie cantonale
+  - Structure de l'État
+  - Sentiment national
+  it:
+  - Identità nazionale
+  - Questioni costituzionali
+  - Questioni territoriali
+  - Questione giurassiana
+  - Federalismo
+  - Autonomia cantonale
+  - Struttura dello Stato
+  - Senso di appartenenza nazionale
+  rm:
+  - Identitad naziunala
+  - Dumondas constituziunalas
+  - Dumondas territorialas
+  - Dumonda giurassiana
+  - Federalissem
+  - Autonomia chantunala
+  - Structura dal stadi
+  - Sentiment naziunal

@@ -1,0 +1,63 @@
+id: aps_1_1_4
+version: 1
+source_description: The topic "Jurafrage" ("Question jurassienne") in the chapter "Politische Grundfragen"
+  of the domain "Akteure und Institutionen" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Jura Question
+definition: Parliamentary affairs concerning the political status, autonomy, and identity of the Jura
+  region, including discussions on cantonal borders, linguistic rights, and the historical and ongoing
+  efforts to resolve the Jura question through democratic means.
+include:
+- Jura region autonomy
+- cantonal border adjustments
+- linguistic minority rights
+- Jura identity and self-determination
+- historical resolution efforts
+- federal-state relations
+- regional development policies
+- cultural preservation initiatives
+exclude:
+- general cantonal administration
+- municipal governance issues
+- national economic policies
+- immigration and asylum laws
+- environmental regulations
+- education system reforms
+terms:
+  de:
+  - Jurafrage
+  - Juraautonomie
+  - Kantonsgrenzen
+  - Sprachrechte
+  - Selbstbestimmung
+  - historische Konfliktlösung
+  - föderale Beziehungen
+  - regionale Entwicklung
+  fr:
+  - question jurassienne
+  - autonomie du Jura
+  - frontières cantonales
+  - droits linguistiques
+  - identité jurassienne
+  - détermination du peuple
+  - relations Confédération-cantons
+  - développement régional
+  it:
+  - questione giurassiana
+  - autonomia del Giura
+  - confini cantonali
+  - diritti linguistici
+  - identità giurassiana
+  - autodeterminazione
+  - relazioni Confederazione-cantoni
+  - sviluppo regionale
+  rm:
+  - dumonda giurassiana
+  - autonomia dal Giura
+  - cunfins chantunals
+  - dretgs linguistics
+  - identitad giurassiana
+  - autodeterminaziun
+  - relaziuns Confederaziun-chantuns
+  - svilup regiunal

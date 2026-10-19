@@ -1,0 +1,61 @@
+id: curia_8
+version: 1
+source_description: 'The subject area "Internationale Politik" (French: "Politique internationale", Italian:
+  "Politica internazionale") that the Swiss Parliamentary Services assign to federal parliamentary affairs
+  in Curia Vista. Cover what affairs in this subject area are typically about.'
+name: International Policy
+definition: This subject area covers Swiss parliamentary affairs related to Switzerland's foreign relations,
+  international treaties, global cooperation, diplomatic engagements, and Switzerland's role in international
+  organizations and multilateral forums.
+include:
+- foreign relations
+- international treaties
+- global cooperation
+- diplomatic engagements
+- Swiss role in UN and other international organizations
+- multilateral agreements
+- international trade policy
+- global security and peacekeeping
+exclude:
+- domestic social policy
+- cantonal or municipal affairs
+- internal federal administration
+- national economic regulation
+- cultural exchange programs (unless tied to foreign policy)
+terms:
+  de:
+  - Aussenpolitik
+  - internationale Verträge
+  - diplomatische Beziehungen
+  - UNO und andere internationale Organisationen
+  - multilaterale Zusammenarbeit
+  - globale Sicherheit
+  - Handelspolitik
+  - völkerrechtliche Fragen
+  fr:
+  - politique étrangère
+  - traités internationaux
+  - relations diplomatiques
+  - Organisation des Nations Unies
+  - coopération multilatérale
+  - sécurité internationale
+  - politique commerciale
+  - droit international
+  it:
+  - politica estera
+  - trattati internazionali
+  - relazioni diplomatiche
+  - Organizzazione delle Nazioni Unite
+  - cooperazione multilaterale
+  - sicurezza globale
+  - politica commerciale
+  - diritto internazionale
+  rm:
+  - politica exteriura
+  - tractats internaziunals
+  - relaziuns diplomaticas
+  - Organisaziun da las Naziuns Unidas
+  - cooperaziun multilaterala
+  - segirezza globala
+  - politica da commerzi
+  - dretg internaziunal

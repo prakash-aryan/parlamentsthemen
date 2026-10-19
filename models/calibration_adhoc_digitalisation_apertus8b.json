@@ -1,0 +1,8 @@
+{
+  "model": "apertus-v1-5-8b",
+  "card": "cards/adhoc/adhoc_digitalisation.yaml",
+  "a": 0.09107340061244283,
+  "b": -2.1052472657954517,
+  "threshold": 19.288749999999993,
+  "fitted_on": "dev_sample (affairs before 2024)"
+}

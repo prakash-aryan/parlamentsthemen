@@ -1,0 +1,67 @@
+id: aps_5_1_10
+version: 1
+source_description: The topic "Sport" ("Sport") in the chapter "Gesundheit, Sozialhilfe, Sport" of the
+  domain "Gesundheit und Sozialsystem" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Sport
+definition: Parliamentary affairs under this topic focus on policies, funding, infrastructure, and promotion
+  of sports activities across all levels of society, including youth, amateur, and professional sports.
+  It covers issues related to physical activity, sports facilities, health benefits of sport, and the
+  role of sports in social integration and education. The topic also addresses the organization and support
+  of sports associations, events, and initiatives that encourage widespread participation in sports.
+include:
+- sports infrastructure development
+- youth sports programs
+- funding for sports associations
+- promotion of physical activity
+- sports facilities construction and maintenance
+- support for amateur and professional sports
+- integration of sports in education
+- sports events and competitions
+- public health through sport
+exclude:
+- healthcare services and medical treatment
+- social welfare and poverty alleviation
+- elderly care and disability support
+- school curricula beyond physical education
+- cultural events and arts funding
+- transportation infrastructure
+- environmental protection policies
+terms:
+  de:
+  - Sportförderung
+  - Sportinfrastruktur
+  - Jugend- und Breitensport
+  - Sportvereine
+  - Sportförderungsprogramme
+  - Bewegung und Gesundheit
+  - Sportveranstaltungen
+  - Integration durch Sport
+  fr:
+  - promotion du sport
+  - infrastructure sportive
+  - sport de masse et jeunesse
+  - associations sportives
+  - programmes de soutien
+  - activité physique
+  - événements sportifs
+  - intégration par le sport
+  it:
+  - promozione dello sport
+  - infrastrutture sportive
+  - sport di massa e giovanile
+  - associazioni sportive
+  - programmi di sostegno
+  - attività fisica
+  - manifestazioni sportive
+  - integrazione tramite lo sport
+  rm:
+  - promoziun dal sport
+  - infrastructura da sport
+  - sport da massa e giuvenil
+  - uniuns da sport
+  - programs da sustegn
+  - activitad fisica
+  - eveniments da sport
+  - integraziun tras il sport

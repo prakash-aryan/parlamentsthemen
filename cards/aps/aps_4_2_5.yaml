@@ -1,0 +1,62 @@
+id: aps_4_2_5
+version: 1
+source_description: The topic "Forschung" ("Recherche") in the chapter "Bildung und Forschung" of the
+  domain "Gesellschaft und Kultur" in the Année Politique Suisse classification of Swiss politics. Cover
+  what parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics
+  of the same chapter instead.
+name: Research
+definition: Parliamentary affairs concerning the promotion, funding, organization, and regulation of research
+  activities across all academic and applied fields, including higher education institutions, research
+  institutes, and innovation ecosystems.
+include:
+- funding for research projects
+- support for universities and research institutions
+- innovation and technology development
+- intellectual property and research data management
+- international research collaboration
+- research ethics and standards
+- transfer of research results to industry
+exclude:
+- school curricula and primary/secondary education
+- cultural heritage preservation
+- arts and creative industries funding
+- language policy and promotion
+- youth and adult education programs
+- museum and library funding
+terms:
+  de:
+  - Forschung
+  - Forschungsförderung
+  - Hochschulen
+  - Innovation
+  - Wissenschaft
+  - Forschungsinstitute
+  - Knowledge transfer
+  - Forschungsethik
+  fr:
+  - recherche
+  - financement de la recherche
+  - universités
+  - innovation
+  - sciences
+  - instituts de recherche
+  - transfert de savoir
+  - éthique de la recherche
+  it:
+  - ricerca
+  - finanziamento della ricerca
+  - università
+  - innovazione
+  - scienza
+  - istituti di ricerca
+  - trasferimento tecnologico
+  - etica della ricerca
+  rm:
+  - perscrutaziun
+  - finanziaziun da perscrutaziun
+  - universitads
+  - innovaziun
+  - scienza
+  - instituziuns da perscrutaziun
+  - transfer da savida
+  - etica da perscrutaziun

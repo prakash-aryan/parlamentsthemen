@@ -1,0 +1,61 @@
+id: aps_4_1_9
+version: 1
+source_description: The topic "Menschen mit Behinderungen" ("Personnes en situation de handicap") in the
+  chapter "Soziale Gruppen" of the domain "Gesellschaft und Kultur" in the Année Politique Suisse classification
+  of Swiss politics. Cover what parliamentary affairs on this topic are typically about, and what belongs
+  to neighbouring topics of the same chapter instead.
+name: Disability and Inclusion
+definition: Parliamentary affairs on this topic address the rights, accessibility, social participation,
+  and support systems for people with disabilities across federal, cantonal, and city levels. It covers
+  legislation, funding, services, and policies aimed at removing barriers and promoting equal opportunities
+  for disabled individuals in education, employment, housing, and public life.
+include:
+- accessibility standards
+- rights of persons with disabilities
+- integration and inclusion programs
+- support services and funding
+- employment of disabled persons
+- education for disabled individuals
+- housing and living conditions
+- transportation accessibility
+exclude:
+- elderly care
+- youth policies
+- immigration and asylum
+- family and child welfare
+- healthcare system reform
+- social security benefits (general)
+terms:
+  de:
+  - Menschen mit Behinderungen
+  - Inklusion
+  - Barrierefreiheit
+  - Assistenz
+  - Rechte von Menschen mit Behinderung
+  - Soziale Teilhabe
+  - Behindertenpolitik
+  - Leistungen für Behinderte
+  fr:
+  - personnes en situation de handicap
+  - inclusion
+  - accessibilité
+  - aide à la personne
+  - droits des personnes handicapées
+  - participation sociale
+  - politique du handicap
+  it:
+  - persone con disabilità
+  - inclusione
+  - accessibilità
+  - assistenza
+  - diritti delle persone con disabilità
+  - partecipazione sociale
+  - politica per i disabili
+  rm:
+  - persunas cun impediments
+  - inclusiun
+  - accessibladad
+  - assistenza
+  - dretgs da persunas cun impediments
+  - participaziun sociala
+  - politica per persunas cun impediments

@@ -1,0 +1,66 @@
+id: aps_7_2_4
+version: 1
+source_description: The topic "Militäreinsätze" ("Engagements militaires") in the chapter "Sicherheitspolitik"
+  of the domain "Rechts- und Sicherheitspolitik" in the Année Politique Suisse classification of Swiss
+  politics. Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Military Operations
+definition: Parliamentary affairs under this topic focus on Switzerland's participation in international
+  military missions, peacekeeping operations, and deployments of Swiss Armed Forces abroad. It covers
+  debates on authorization, scope, objectives, and evaluation of such engagements within the framework
+  of Swiss neutrality and foreign policy. The topic also addresses implications for national security,
+  diplomatic relations, and compliance with international law.
+include:
+- Swiss Armed Forces deployments abroad
+- Peacekeeping missions
+- Authorization of military engagements
+- Evaluation of mission outcomes
+- Neutrality policy implications
+- International cooperation in security
+- Humanitarian military interventions
+- Budgetary aspects of military operations
+exclude:
+- Domestic defense infrastructure
+- Arms procurement and production
+- Cybersecurity defense
+- Intelligence services operations
+- Civil protection and disaster response
+- Border security measures
+- Military training and doctrine development
+terms:
+  de:
+  - Militäreinsätze
+  - Friedensmissionen
+  - Auslandseinsatz
+  - Militärische Beteiligung
+  - Neutralitätspolitik
+  - Einsatzmandat
+  - Missionsevaluation
+  - Internationale Sicherheitspartnerschaften
+  fr:
+  - engagements militaires
+  - missions de paix
+  - interventions armées
+  - neutralité
+  - mandat d'engagement
+  - évaluation de mission
+  - coopération sécuritaire internationale
+  - forces armées suisses à l'étranger
+  it:
+  - impegni militari
+  - missioni di pace
+  - interventi armati
+  - neutralità
+  - mandato d'impiego
+  - valutazione della missione
+  - cooperazione internazionale in materia di sicurezza
+  - forze armate svizzere all'estero
+  rm:
+  - engaschis militars
+  - missiuns da pasch
+  - intervenziuns armadas
+  - neutralitad
+  - mandat d'engaschament
+  - valitaziun da la missiun
+  - cooperaziun internaziunala en materia da segirezza
+  - forzas armadas svizras a l'exteriur

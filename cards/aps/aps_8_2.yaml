@@ -1,0 +1,78 @@
+id: aps_8_2
+version: 1
+source_description: 'The chapter "Öffentliche Finanzen" ("Finances publiques") of the domain "Wirtschaft
+  und Finanzen" in the Année Politique Suisse classification of Swiss politics. It contains these topics:
+  Budget; Staatsrechnung; Finanzordnung und Sparmassnahmen; Steuern; Finanzausgleich; Finanzhaushalt der
+  Kantone und Gemeinden. Cover what parliamentary affairs in this chapter are typically about.'
+name: Public Finances
+definition: This topic covers parliamentary discussions and decisions related to the management, allocation,
+  and regulation of public funds at federal, cantonal, and municipal levels in Switzerland. It includes
+  debates on budget planning, financial reporting, fiscal policies, tax systems, intergovernmental financial
+  equalization, and the financial administration of cantons and municipalities.
+include:
+- Budget planning
+- State accounts
+- Fiscal order and austerity measures
+- Taxation
+- Intergovernmental financial equalization
+- Cantonal and municipal financial administration
+- Public expenditure management
+- Debt management
+- Financial reporting and audits
+exclude:
+- Private sector finance
+- Banking regulation
+- Monetary policy
+- Economic development incentives
+- Labor market policies
+- Environmental regulations
+- Healthcare financing (unless directly tied to public budget)
+terms:
+  de:
+  - Staatshaushalt
+  - Finanzordnung
+  - Sparmassnahmen
+  - Steuern
+  - Finanzausgleich
+  - Staatsrechnung
+  - Budget
+  - Kantonsfinanzen
+  - Gemeindefinanzen
+  - Schuldenmanagement
+  - Finanzbericht
+  fr:
+  - Finances publiques
+  - Budget de l'État
+  - Compte d'État
+  - Ordre financier
+  - Mesures d'économies
+  - Impôts
+  - Péréquation financière
+  - Finances cantonales
+  - Finances communales
+  - Gestion de la dette
+  - Rapport financier
+  it:
+  - Finanze pubbliche
+  - Bilancio dello Stato
+  - Conto di Stato
+  - Ordinamento finanziario
+  - Misure di risparmio
+  - Imposte
+  - Perequazione finanziaria
+  - Finanze cantonali
+  - Finanze comunali
+  - Gestione del debito
+  - Relazione finanziaria
+  rm:
+  - finanzas publicas
+  - budget dal stadi
+  - quint dal stadi
+  - ordinaziun finanziala
+  - mesiras da spargn
+  - taglias
+  - gulivaziun finanziala
+  - finanzas dals chantuns
+  - finanzas da las vischnancas
+  - gestiun da debits
+  - rapport finanzial

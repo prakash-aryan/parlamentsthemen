@@ -1,0 +1,68 @@
+id: aps_8_5
+version: 1
+source_description: 'The chapter "Arbeit" ("Travail") of the domain "Wirtschaft und Finanzen" in the Année
+  Politique Suisse classification of Swiss politics. It contains these topics: Arbeitsrecht; Arbeitsmarkt;
+  Löhne; Sozialpartnerschaft; Arbeitszeit; Arbeitnehmendenschutz. Cover what parliamentary affairs in
+  this chapter are typically about.'
+name: Labor and Employment
+definition: This topic covers parliamentary discussions and legislative matters related to the regulation
+  of work, labor market dynamics, wage policies, social partnership between employers and employees, working
+  time regulations, and protection of workers' rights in Switzerland.
+include:
+- Labor law
+- Labor market
+- Wages
+- Social partnership
+- Working hours
+- Employee protection
+- Employment policy
+- Labor relations
+exclude:
+- Taxation
+- Monetary policy
+- Trade agreements
+- Environmental regulations
+- Healthcare policy
+- Education policy
+- Housing policy
+terms:
+  de:
+  - Arbeitsrecht
+  - Arbeitsmarkt
+  - Löhne
+  - Sozialpartnerschaft
+  - Arbeitszeit
+  - Arbeitnehmerschutz
+  - Beschäftigungspolitik
+  - Arbeitsbedingungen
+  - Tarifverträge
+  fr:
+  - Droit du travail
+  - Marché du travail
+  - Salaires
+  - Partenariat social
+  - Temps de travail
+  - Protection des travailleurs
+  - Politique de l'emploi
+  - Conditions de travail
+  - Conventions collectives
+  it:
+  - Diritto del lavoro
+  - Mercato del lavoro
+  - Stipendi
+  - Partenariato sociale
+  - Orario di lavoro
+  - Protezione dei lavoratori
+  - Politica dell'occupazione
+  - Condizioni di lavoro
+  - Contratti collettivi
+  rm:
+  - Dretg da lavur
+  - Mercat da lavur
+  - Pajaglia
+  - Partenadi social
+  - Temps da lavur
+  - Protecziun dals lavuraints
+  - Politica d'occupaziun
+  - Cundiziuns da lavur
+  - Contracts collectivs

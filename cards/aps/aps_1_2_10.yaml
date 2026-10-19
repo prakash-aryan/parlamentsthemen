@@ -1,0 +1,74 @@
+id: aps_1_2_10
+version: 1
+source_description: The topic "Parteiensystem" ("Système des partis") in the chapter "Institutionen" of
+  the domain "Akteure und Institutionen" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Party System
+definition: Parliamentary affairs on the party system examine the structure, organization, and functioning
+  of political parties within Switzerland's multi-level political framework. They address issues such
+  as party financing, internal democracy, electoral strategies, coalition building, and the role of parties
+  in shaping legislation and governance across federal, cantonal, and municipal levels.
+include:
+- party organization and internal rules
+- party financing and transparency
+- electoral strategies and campaign financing
+- coalition formation and governance
+- role of parties in legislative processes
+- party discipline and voting behavior
+- party membership and recruitment
+- comparative analysis of party systems across cantons
+exclude:
+- individual politicians' biographies
+- specific legislative proposals (motions, postulates)
+- government formation procedures
+- electoral law reforms
+- referendum and initiative campaigns
+- political ideologies in abstract
+- party leadership changes
+- party mergers and splits
+terms:
+  de:
+  - Parteiensystem
+  - Parteiorganisation
+  - Parteifinanzierung
+  - Wahlstrategie
+  - Koalitionsbildung
+  - Parteidisziplin
+  - Mitgliedschaft
+  - Parteienspektrum
+  - Parteiführerschaft
+  - Parteientwicklung
+  fr:
+  - système des partis
+  - organisation partisane
+  - financement des partis
+  - stratégie électorale
+  - formation de coalitions
+  - discipline de parti
+  - adhésion
+  - échelle partisane
+  - direction du parti
+  - évolution partisane
+  it:
+  - sistema dei partiti
+  - organizzazione partitica
+  - finanziamento dei partiti
+  - strategia elettorale
+  - formazione di coalizioni
+  - disciplina di voto
+  - adesione
+  - spettro partitico
+  - leadership del partito
+  - sviluppo partitico
+  rm:
+  - sistem da partidas
+  - organisaziun da partidas
+  - finanziaziun da partidas
+  - strategia electorala
+  - furmaziun da coaliziuns
+  - disciplina da vuschar
+  - commembranza
+  - spazi da partidas
+  - direcziun da la partida
+  - svilup da partidas

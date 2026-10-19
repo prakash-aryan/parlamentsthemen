@@ -1,0 +1,67 @@
+id: aps_4_4_5
+version: 1
+source_description: The topic "Meinungsforschung" ("Sondages") in the chapter "Medien" of the domain "Gesellschaft
+  und Kultur" in the Année Politique Suisse classification of Swiss politics. Cover what parliamentary
+  affairs on this topic are typically about, and what belongs to neighbouring topics of the same chapter
+  instead.
+name: Parliamentary Opinion Polls
+definition: Parliamentary affairs concerning the methodology, regulation, and impact of opinion polls
+  and surveys on public discourse, political decision-making, and democratic processes within the media
+  landscape.
+include:
+- Regulation of polling agencies
+- Transparency of survey methodology
+- Impact of polls on election campaigns
+- Media responsibility in reporting polls
+- Public trust in polling data
+- Ethical guidelines for political surveys
+- Use of polls in policy formulation
+- Access to polling data for parliamentarians
+exclude:
+- Media ownership structures
+- Press freedom and censorship
+- Journalistic ethics in reporting
+- Social media influence on public opinion
+- Media content regulation
+- Broadcasting licensing and frequencies
+terms:
+  de:
+  - Meinungsforschung
+  - Umfragen
+  - Methodik
+  - Transparenz
+  - Wirkung auf Politik
+  - Medienverantwortung
+  - Ethikrichtlinien
+  - Datennutzung
+  - Öffentliches Vertrauen
+  fr:
+  - Sondages d'opinion
+  - Méthodologie
+  - Transparence
+  - Impact sur la politique
+  - Responsabilité médiatique
+  - Lignes directrices éthiques
+  - Utilisation des données
+  - Confiance du public
+  - Processus décisionnels
+  it:
+  - Sondaggi d'opinione
+  - Metodologia
+  - Trasparenza
+  - Impatto sulla politica
+  - Responsabilità dei media
+  - Linee guida etiche
+  - Utilizzo dei dati
+  - Fiducia pubblica
+  - Processi decisionali
+  rm:
+  - Sondagis d'opiniun
+  - Metodologia
+  - Transparenza
+  - Efect sin politica
+  - Responsabladad da medias
+  - Directivas eticas
+  - Utilisaziun da datas
+  - Fidanza publica
+  - Process decisorics

@@ -1,0 +1,67 @@
+id: aps_1_2_9
+version: 1
+source_description: The topic "Städte, Regionen, Gemeinden" ("Villes, régions, communes") in the chapter
+  "Institutionen" of the domain "Akteure und Institutionen" in the Année Politique Suisse classification
+  of Swiss politics. Cover what parliamentary affairs on this topic are typically about, and what belongs
+  to neighbouring topics of the same chapter instead.
+name: Local Government Entities
+definition: Parliamentary affairs concerning the structure, powers, responsibilities, and interrelations
+  of cities, regions, and municipalities within the Swiss federal system. This includes debates on decentralization,
+  financial autonomy, administrative competencies, and coordination between different levels of government.
+include:
+- municipal governance
+- regional administrative boundaries
+- city-state competencies
+- decentralization of powers
+- intercantonal cooperation
+- municipal finance and taxation
+- local infrastructure development
+- municipal law and ordinances
+exclude:
+- federal-state relations
+- direct democracy mechanisms
+- parliamentary procedure rules
+- national budget allocation
+- foreign policy
+- cantonal legislative authority
+terms:
+  de:
+  - Gemeinden
+  - Städte
+  - Regionen
+  - Dezentralisierung
+  - Kompetenzabgrenzung
+  - Finanzautonomie
+  - interkommunale Zusammenarbeit
+  - lokale Gesetzgebung
+  - Verwaltungsorganisation
+  fr:
+  - villes
+  - régions
+  - communes
+  - décentralisation
+  - compétences communales
+  - autonomie financière
+  - coopération intercommunale
+  - législation locale
+  - organisation administrative
+  it:
+  - comuni
+  - città
+  - regioni
+  - decentralizzazione
+  - competenze comunali
+  - autonomia finanziaria
+  - cooperazione intercomunale
+  - legislazione locale
+  - organizzazione amministrativa
+  rm:
+  - vischnancas
+  - citeds
+  - regiuns
+  - decentralisaziun
+  - cumpetenzas communalas
+  - autonomia finanziala
+  - cooperaziun intercommunala
+  - legislaziun locala
+  - organisaziun administrativa

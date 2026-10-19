@@ -1,0 +1,67 @@
+id: aps_4_3_5
+version: 1
+source_description: The topic "Urheberrecht" ("Droit d'auteur") in the chapter "Kultur, Sprache, Kirchen"
+  of the domain "Gesellschaft und Kultur" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Copyright and Intellectual Property
+definition: Parliamentary affairs on copyright and intellectual property focus on the legal protection
+  of creative works, authors' rights, licensing models, digital distribution, and the balance between
+  creators' interests and public access to culture.
+include:
+- protection of authors' rights
+- licensing and royalties
+- digital copyright enforcement
+- fair use and exceptions
+- collective management of rights
+- copyright duration and limitations
+- international copyright treaties
+- copyright in the digital age
+exclude:
+- language policy and promotion
+- religious freedom and church-state relations
+- cultural heritage preservation
+- museum and library funding
+- film and arts subsidies
+- public broadcasting regulation
+terms:
+  de:
+  - Urheberrecht
+  - geistiges Eigentum
+  - Lizenzierung
+  - digitale Rechte
+  - Schutzfristen
+  - Kollektivverwertung
+  - Creative Commons
+  - Urhebervergütung
+  - Online-Verbreitung
+  fr:
+  - droit d'auteur
+  - propriété intellectuelle
+  - licences
+  - droits numériques
+  - durée de protection
+  - gestion collective
+  - rémunération des auteurs
+  - exception au droit d'auteur
+  - diffusion en ligne
+  it:
+  - diritto d'autore
+  - proprietà intellettuale
+  - licenze
+  - diritti digitali
+  - durata della protezione
+  - gestione collettiva
+  - remunerazione degli autori
+  - eccezioni al diritto d'autore
+  - diffusione online
+  rm:
+  - dretg d'autur
+  - proprietad intellectuala
+  - licenzas
+  - dretgs digitals
+  - durada da protecziun
+  - gestiun collectiva
+  - remuneraziun d'auturs
+  - excepziuns al dretg d'autur
+  - derasaziun online

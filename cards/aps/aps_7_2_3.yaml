@@ -1,0 +1,63 @@
+id: aps_7_2_3
+version: 1
+source_description: The topic "Rüstung" ("Armement") in the chapter "Sicherheitspolitik" of the domain
+  "Rechts- und Sicherheitspolitik" in the Année Politique Suisse classification of Swiss politics. Cover
+  what parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics
+  of the same chapter instead.
+name: Arms Policy
+definition: Parliamentary affairs concerning Switzerland's national and international arms control, defense
+  capabilities, military equipment procurement, and the regulation of weapons exports and domestic arms
+  trade.
+include:
+- military equipment procurement
+- arms exports regulation
+- defense capabilities assessment
+- international arms control treaties
+- domestic arms trade oversight
+- military technology development
+- security implications of armament
+exclude:
+- civilian cybersecurity
+- internal police equipment
+- border control infrastructure
+- disarmament campaigns
+- private security services
+- space defense programs
+- nuclear non-proliferation
+terms:
+  de:
+  - Rüstungspolitik
+  - Waffenexportkontrolle
+  - Militärtechnologie
+  - Verteidigungsfähigkeit
+  - Kriegsmaterialgesetz
+  - internationale Abrüstung
+  - Rüstungsbeschaffung
+  - Sicherheitsanalyse
+  fr:
+  - politique d'armement
+  - contrôle des exportations d'armes
+  - technologie militaire
+  - capacité de défense
+  - loi sur le matériel de guerre
+  - désarmement international
+  - acquisition d'armements
+  - analyse de sécurité
+  it:
+  - politica degli armamenti
+  - controllo delle esportazioni di armi
+  - tecnologia militare
+  - capacità di difesa
+  - legge sul materiale bellico
+  - disarmo internazionale
+  - acquisto di armamenti
+  - analisi di sicurezza
+  rm:
+  - politica d’armamaint
+  - controlla da l’export d’armas
+  - tecnologia militara
+  - capacitad da defensiun
+  - lescha davart il material da guerra
+  - disarmament internaziunal
+  - acquist d’armamaint
+  - analisa da segirezza

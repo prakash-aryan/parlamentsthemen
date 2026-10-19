@@ -1,0 +1,62 @@
+id: aps_6_4_8
+version: 1
+source_description: The topic "Abfälle und Recycling" ("Déchets et recyclage") in the chapter "Umweltschutz"
+  of the domain "Infrastruktur und Umwelt" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Waste and Recycling
+definition: Parliamentary affairs on waste and recycling focus on the management, reduction, and sustainable
+  handling of solid and hazardous waste, including collection systems, recycling targets, landfill policies,
+  and circular economy initiatives within Switzerland's environmental framework.
+include:
+- municipal waste collection
+- recycling targets and quotas
+- landfill regulations
+- hazardous waste disposal
+- circular economy policies
+- biowaste treatment
+- packaging waste reduction
+exclude:
+- air pollution control
+- water quality management
+- climate change mitigation
+- energy efficiency standards
+- biodiversity protection
+- noise pollution regulation
+terms:
+  de:
+  - Abfallentsorgung
+  - Recyclingquote
+  - Sonderabfall
+  - Kreislaufwirtschaft
+  - Deponieverordnung
+  - Biogasnutzung
+  - Verpackungsverordnung
+  - Wertstoffkreislauf
+  fr:
+  - gestion des déchets
+  - taux de recyclage
+  - déchets spéciaux
+  - économie circulaire
+  - réglementation des décharges
+  - traitement des biodéchets
+  - réduction des emballages
+  - collecte sélective
+  it:
+  - gestione dei rifiuti
+  - tasso di riciclaggio
+  - rifiuti pericolosi
+  - economia circolare
+  - normative discariche
+  - trattamento biomasse
+  - riduzione imballaggi
+  - raccolta differenziata
+  rm:
+  - gestiun da rumient
+  - quota da recicladi
+  - rumient periculus
+  - economia circulara
+  - ordinaziun da deponias
+  - trattamaint da biogas
+  - reducziun d'emballadi
+  - raccolta separada

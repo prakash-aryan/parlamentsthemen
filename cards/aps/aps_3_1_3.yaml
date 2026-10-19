@@ -1,0 +1,63 @@
+id: aps_3_1_3
+version: 1
+source_description: The topic "Beziehungen zu internationalen Organisationen" ("Relations avec des organisations
+  internationales") in the chapter "Europa- und Aussenpolitik" of the domain "Europa- und Aussenpolitik"
+  in the Année Politique Suisse classification of Swiss politics. Cover what parliamentary affairs on
+  this topic are typically about, and what belongs to neighbouring topics of the same chapter instead.
+name: Swiss Relations with International Organizations
+definition: Parliamentary affairs concerning Switzerland's engagement, cooperation, and diplomatic relations
+  with international organizations such as the United Nations, World Trade Organization, and other multilateral
+  bodies. Includes debates on membership, participation, funding, and alignment with international norms
+  and policies.
+include:
+- UN membership and participation
+- WTO trade agreements and compliance
+- Multilateral treaty ratification
+- Swiss representation in international bodies
+- Funding contributions to international organizations
+- Adherence to international human rights conventions
+- Swiss neutrality in global governance
+- International development cooperation programs
+exclude:
+- Bilateral diplomatic relations with individual countries
+- Domestic implementation of international agreements
+- National security and defense policy
+- EU accession negotiations
+- Regional cooperation within Europe (e.g., Schengen, EFTA)
+terms:
+  de:
+  - Beziehungen zu internationalen Organisationen
+  - UN-Mitgliedschaft
+  - WTO-Verhandlungen
+  - multilaterale Zusammenarbeit
+  - völkerrechtliche Verträge
+  - Entwicklungshilfe
+  - Neutralität in der internationalen Politik
+  - Vertretung in internationalen Gremien
+  fr:
+  - Relations avec les organisations internationales
+  - Membre de l'ONU
+  - Accords de l'OMC
+  - coopération multilatérale
+  - ratification de traités internationaux
+  - aide au développement
+  - neutralité dans la politique mondiale
+  - représentation dans les instances internationales
+  it:
+  - Relazioni con le organizzazioni internazionali
+  - membership ONU
+  - accordi OMC
+  - cooperazione multilaterale
+  - ratifica di trattati internazionali
+  - cooperazione allo sviluppo
+  - neutralità nella politica mondiale
+  - rappresentanza in organismi internazionali
+  rm:
+  - Relaziuns cun organisaziuns internaziunalas
+  - commembranza da l'ONU
+  - accords da l'OMC
+  - cooperaziun multilaterala
+  - ratificaziun da contracts internaziunals
+  - agid al svilup
+  - neutralitad en la politica mundiala
+  - represchentanza en gremis internaziunals

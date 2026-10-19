@@ -1,0 +1,62 @@
+id: aps_2_1_7
+version: 1
+source_description: The topic "Politische Beteiligung" ("Participation politique") in the chapter "Direkte
+  Demokratie" of the domain "Direkte Demokratie und Wahlen" in the Année Politique Suisse classification
+  of Swiss politics. Cover what parliamentary affairs on this topic are typically about, and what belongs
+  to neighbouring topics of the same chapter instead.
+name: Parliamentary Participation Mechanisms
+definition: This topic covers parliamentary instruments and procedures through which citizens and interest
+  groups engage with legislators to influence policy, request information, or prompt government action,
+  including motions, postulates, interpellations, and questions.
+include:
+- motions
+- postulates
+- interpellations
+- parliamentary questions
+- citizen petitions
+- parliamentary inquiries
+- legislative follow-up procedures
+exclude:
+- referendums
+- initiatives
+- popular votes
+- elections
+- constituency services
+- committee hearings
+terms:
+  de:
+  - Motion
+  - Postulat
+  - Interpellation
+  - Parlamentarische Anfrage
+  - Bürgerbeteiligung
+  - Parlamentsinitiative
+  - Folgeabklärung
+  - Parlamentarische Aufsicht
+  fr:
+  - motion
+  - postulat
+  - interpellation
+  - question parlementaire
+  - participation citoyenne
+  - initiative parlementaire
+  - suivi parlementaire
+  - contrôle parlementaire
+  it:
+  - mozione
+  - postulato
+  - interpellanza
+  - domanda parlamentare
+  - partecipazione politica
+  - iniziativa parlamentare
+  - seguimento parlamentare
+  - controllo parlamentare
+  rm:
+  - moziun
+  - postulat
+  - interpellaziun
+  - dumonda parlamentara
+  - participaziun politica
+  - iniziativa parlamentara
+  - seguiment parlamentar
+  - survagliaziun parlamentara

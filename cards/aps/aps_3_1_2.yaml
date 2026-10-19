@@ -1,0 +1,71 @@
+id: aps_3_1_2
+version: 1
+source_description: The topic "Zwischenstaatliche Beziehungen" ("Relations avec d'autres Etats") in the
+  chapter "Europa- und Aussenpolitik" of the domain "Europa- und Aussenpolitik" in the Année Politique
+  Suisse classification of Swiss politics. Cover what parliamentary affairs on this topic are typically
+  about, and what belongs to neighbouring topics of the same chapter instead.
+name: Interstate Relations
+definition: Parliamentary affairs concerning Switzerland's diplomatic, political, and economic relations
+  with foreign states and international organizations, including treaties, alliances, and global cooperation
+  initiatives.
+include:
+- bilateral treaties
+- multilateral agreements
+- diplomatic missions
+- international organizations (e.g., UN, EU)
+- foreign aid and development cooperation
+- trade relations
+- crisis diplomacy
+- global security cooperation
+exclude:
+- domestic cantonal or municipal foreign policy
+- internal federal-state relations
+- human rights issues within Switzerland
+- immigration policy
+- cultural exchange programs (non-political)
+- Swiss neutrality doctrine interpretation
+terms:
+  de:
+  - zwischenstaatliche Beziehungen
+  - diplomatische Beziehungen
+  - völkerrechtliche Verträge
+  - internationale Organisationen
+  - Handelsbeziehungen
+  - Entwicklungshilfe
+  - Krisendiplomatie
+  - globale Sicherheit
+  - Allianzen
+  - multilaterale Abkommen
+  fr:
+  - relations interétatiques
+  - diplomatie
+  - traités internationaux
+  - organisations internationales
+  - relations commerciales
+  - aide au développement
+  - diplomatie de crise
+  - sécurité mondiale
+  - alliances
+  - accords multilatéraux
+  it:
+  - relazioni interstatali
+  - diplomazia
+  - trattati internazionali
+  - organizzazioni internazionali
+  - relazioni commerciali
+  - cooperazione allo sviluppo
+  - diplomazia di crisi
+  - sicurezza globale
+  - alleanze
+  - accordi multilaterali
+  rm:
+  - relaziuns interstatalas
+  - diplomazia
+  - tractats internaziunals
+  - organisaziuns internaziunalas
+  - relaziuns commerzialas
+  - agid al svilup
+  - diplomazia da crisa
+  - segirezza globala
+  - allianzas
+  - accords multilaterals

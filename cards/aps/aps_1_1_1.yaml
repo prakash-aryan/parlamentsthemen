@@ -1,0 +1,64 @@
+id: aps_1_1_1
+version: 1
+source_description: The topic "Nationale Identität" ("Identité nationale") in the chapter "Politische
+  Grundfragen" of the domain "Akteure und Institutionen" in the Année Politique Suisse classification
+  of Swiss politics. Cover what parliamentary affairs on this topic are typically about, and what belongs
+  to neighbouring topics of the same chapter instead.
+name: National Identity
+definition: Parliamentary affairs on national identity focus on defining, preserving, and promoting Switzerland's
+  collective identity, including cultural heritage, values, symbols, and the sense of belonging among
+  citizens across linguistic and regional divides.
+include:
+- Swiss national symbols
+- cultural heritage preservation
+- language policy and multilingualism
+- integration of diverse communities
+- national values and civic education
+- identity in federalism
+- commemorative events and traditions
+- national narrative and history
+exclude:
+- immigration policy
+- foreign policy
+- constitutional amendments
+- security and defense
+- economic policy
+- education system reforms
+- cantonal autonomy issues
+terms:
+  de:
+  - nationale Identität
+  - Kulturerbe
+  - Sprachenvielfalt
+  - Integration
+  - Bürgerwerte
+  - föderalistische Identität
+  - Nationalgeschichte
+  - Symbolpolitik
+  fr:
+  - identité nationale
+  - patrimoine culturel
+  - multilinguisme
+  - intégration
+  - valeurs civiques
+  - fédéralisme
+  - histoire nationale
+  - symboles nationaux
+  it:
+  - identità nazionale
+  - patrimonio culturale
+  - plurilinguismo
+  - integrazione
+  - valori civici
+  - federalismo
+  - storia nazionale
+  - simboli nazionali
+  rm:
+  - identitad naziunala
+  - patrimoni cultural
+  - plurilinguitad
+  - integraziun
+  - valurs civics
+  - federalissem
+  - istorgia naziunala
+  - simbols naziunals

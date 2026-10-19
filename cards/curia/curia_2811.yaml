@@ -1,0 +1,65 @@
+id: curia_2811
+version: 1
+source_description: 'The subject area "Migration" (French: "Politique migratoire", Italian: "Migrazione")
+  that the Swiss Parliamentary Services assign to federal parliamentary affairs in Curia Vista. Cover
+  what affairs in this subject area are typically about.'
+name: Swiss Migration Policy
+definition: This topic covers parliamentary affairs related to Switzerland's policies on immigration,
+  asylum, integration of foreign nationals, border controls, and the legal framework governing the movement
+  and residence of people within Switzerland.
+include:
+- immigration rules
+- asylum procedures
+- integration programs
+- border security
+- residency permits
+- refugee status
+- foreign worker regulations
+exclude:
+- domestic labor market
+- criminal law
+- taxation
+- environmental policy
+- education system
+- healthcare services
+terms:
+  de:
+  - Migrationspolitik
+  - Asylverfahren
+  - Integration
+  - Aufenthaltsbewilligung
+  - Grenzkontrolle
+  - Flüchtlingsstatus
+  - Ausländerrecht
+  - Arbeitsmigration
+  - Dublin-Verfahren
+  fr:
+  - politique migratoire
+  - demande d'asile
+  - intégration
+  - permis de séjour
+  - contrôle aux frontières
+  - statut de réfugié
+  - législation sur les étrangers
+  - migration de travail
+  - procédure de Dublin
+  it:
+  - politica migratoria
+  - procedura d'asilo
+  - integrazione
+  - permesso di soggiorno
+  - controllo alle frontiere
+  - status di rifugiato
+  - legge sugli stranieri
+  - migrazione lavorativa
+  - procedura di Dublino
+  rm:
+  - politica da migraziun
+  - procedura d'asil
+  - integraziun
+  - permiss da dimora
+  - controlla als cunfins
+  - status da fugitiv
+  - lescha davart ils esters
+  - migraziun da lavur
+  - procedura da Dublin

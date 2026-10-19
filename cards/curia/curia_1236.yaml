@@ -1,0 +1,67 @@
+id: curia_1236
+version: 1
+source_description: 'The subject area "Menschenrechte" (French: "Droits de l''homme", Italian: "Diritti
+  umani") that the Swiss Parliamentary Services assign to federal parliamentary affairs in Curia Vista.
+  Cover what affairs in this subject area are typically about.'
+name: Human Rights
+definition: This topic covers parliamentary affairs related to the protection, promotion, and enforcement
+  of fundamental human rights within Switzerland and in its international relations. It includes debates
+  on civil liberties, equality, non-discrimination, and the implementation of international human rights
+  conventions. It also encompasses issues related to asylum, refugees, and the treatment of vulnerable
+  groups.
+include:
+- Protection of civil liberties
+- Non-discrimination and equality
+- Refugee and asylum policies
+- Implementation of international human rights conventions
+- Treatment of vulnerable groups
+- Freedom of expression and religion
+- Human rights in foreign policy
+exclude:
+- Purely domestic criminal law
+- General administrative procedures
+- Economic trade agreements
+- Purely environmental regulations
+- Healthcare policy unrelated to human rights
+- Education curriculum design
+terms:
+  de:
+  - Menschenrechte
+  - Grundrechte
+  - Nichtdiskriminierung
+  - Asylpolitik
+  - Flüchtlingswesen
+  - Freiheit der Meinungsäusserung
+  - Religionsfreiheit
+  - Menschenwürde
+  - Internationale Menschenrechtskonventionen
+  fr:
+  - Droits de l'homme
+  - Libertés fondamentales
+  - Non-discrimination
+  - Politique d'asile
+  - Réfugiés
+  - Liberté d'expression
+  - Liberté de religion
+  - Dignité humaine
+  - Conventions internationales des droits de l'homme
+  it:
+  - Diritti umani
+  - Libertà fondamentali
+  - Non discriminazione
+  - Politica d'asilo
+  - Rifugiati
+  - Libertà di espressione
+  - Libertà di religione
+  - Dignità umana
+  - Convenzioni internazionali sui diritti umani
+  rm:
+  - Dretgs umans
+  - Dretgs fundamentals
+  - Betg discriminaziun
+  - Politica d'asil
+  - Refugiads
+  - Libertad d'expressiun
+  - Libertad da religiun
+  - Dignitad umana
+  - Convenziuns internaziunalas dals dretgs umans

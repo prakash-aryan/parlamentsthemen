@@ -1,0 +1,62 @@
+id: aps_4_1_5
+version: 1
+source_description: The topic "Familien" ("Familles") in the chapter "Soziale Gruppen" of the domain "Gesellschaft
+  und Kultur" in the Année Politique Suisse classification of Swiss politics. Cover what parliamentary
+  affairs on this topic are typically about, and what belongs to neighbouring topics of the same chapter
+  instead.
+name: Family Affairs
+definition: Parliamentary matters concerning family structures, policies, support systems, and the well-being
+  of families in Switzerland, including childcare, parental leave, family benefits, and domestic relations.
+include:
+- childcare and early education
+- parental leave and work-life balance
+- family benefits and allowances
+- domestic violence prevention
+- family reunification
+- support for single-parent families
+- elderly care within families
+- family-friendly housing policies
+exclude:
+- youth and education policy
+- women's rights and gender equality
+- immigration and asylum
+- social welfare and poverty
+- healthcare and medical services
+- labor market and employment
+terms:
+  de:
+  - Familienpolitik
+  - Kinderbetreuung
+  - Elternzeit
+  - Familienzulagen
+  - häusliche Gewalt
+  - Wiedervereinigung
+  - Alleinerziehende
+  - familienfreundlicher Wohnungsbau
+  fr:
+  - politique familiale
+  - garde d'enfants
+  - congé parental
+  - allocations familiales
+  - violence domestique
+  - réunification familiale
+  - familles monoparentales
+  - logement adapté aux familles
+  it:
+  - politica familiare
+  - cura dell'infanzia
+  - congedo parentale
+  - assegni familiari
+  - violenza domestica
+  - ricongiungimento familiare
+  - famiglie monoparentali
+  - edilizia abitativa a misura di famiglia
+  rm:
+  - politica da famiglia
+  - cura d'uffants
+  - congedi da geniturs
+  - supplements da famiglia
+  - violenza en famiglia
+  - reunificaziun da famiglia
+  - famiglias cun in genitur
+  - habitaziun adattada a las famiglias

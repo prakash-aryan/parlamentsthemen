@@ -1,0 +1,58 @@
+id: aps_6_1_6
+version: 1
+source_description: The topic "Schifffahrt" ("Navigation") in the chapter "Verkehr und Kommunikation"
+  of the domain "Infrastruktur und Umwelt" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Waterway Navigation
+definition: Parliamentary affairs concerning the regulation, operation, and infrastructure of inland waterways,
+  maritime transport, and related services within Switzerland's transport and communication framework.
+include:
+- Inland waterway infrastructure
+- Maritime transport regulations
+- Port operations and management
+- Navigation safety standards
+- Waterway environmental protection
+- Shipping industry support
+- Intermodal transport connections
+exclude:
+- Road transport infrastructure
+- Railway transport systems
+- Air transport policies
+- Telecommunications networks
+- Postal services
+- Cycling and pedestrian pathways
+terms:
+  de:
+  - Schifffahrt
+  - Binnenschifffahrt
+  - Häfen
+  - Wasserwege
+  - Schifffahrtsrecht
+  - Schiffsverkehr
+  - Seeverkehr
+  - Intermodaler Verkehr
+  fr:
+  - Navigation
+  - Voies navigables
+  - Ports
+  - Transports maritimes
+  - Sécurité de la navigation
+  - Infrastructure fluviale
+  - Transport intermodal
+  it:
+  - Navigazione
+  - Vie navigabili
+  - Porti
+  - Trasporti marittimi
+  - Sicurezza della navigazione
+  - Infrastrutture fluviali
+  - Trasporto intermodale
+  rm:
+  - Navigaziun
+  - Vias navigablas
+  - Ports
+  - Trasport maritim
+  - Segirezza da navigaziun
+  - Infrastructura fluviala
+  - Trasport intermodal

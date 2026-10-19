@@ -1,0 +1,62 @@
+id: aps_8_5_2
+version: 1
+source_description: The topic "Arbeitsmarkt" ("Marché du travail") in the chapter "Arbeit" of the domain
+  "Wirtschaft und Finanzen" in the Année Politique Suisse classification of Swiss politics. Cover what
+  parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics of
+  the same chapter instead.
+name: Labor Market
+definition: Parliamentary affairs concerning the regulation, development, and conditions of the labor
+  market in Switzerland, including employment policies, labor relations, vocational training, and social
+  security aspects related to work.
+include:
+- employment policies
+- labor market regulation
+- vocational training
+- labor relations
+- unemployment measures
+- working conditions
+- social security for workers
+exclude:
+- monetary policy
+- taxation
+- economic growth
+- industrial subsidies
+- trade agreements
+- financial market regulation
+terms:
+  de:
+  - Arbeitsmarkt
+  - Beschäftigungspolitik
+  - Arbeitsbedingungen
+  - Lehre
+  - Arbeitslosenversicherung
+  - Arbeitsrecht
+  - Berufsbildung
+  - Lohnpolitik
+  fr:
+  - marché du travail
+  - politique de l'emploi
+  - conditions de travail
+  - formation professionnelle
+  - assurance-chômage
+  - droit du travail
+  - formation
+  - politique salariale
+  it:
+  - mercato del lavoro
+  - politica dell'occupazione
+  - condizioni di lavoro
+  - formazione professionale
+  - assicurazione contro la disoccupazione
+  - diritto del lavoro
+  - formazione
+  - politica salariale
+  rm:
+  - martgà da lavur
+  - politica d'occupaziun
+  - cundiziuns da lavur
+  - scolaziun professiunala
+  - segirada cunter dischoccupaziun
+  - dretg da lavur
+  - scolaziun
+  - politica da salarisaziun

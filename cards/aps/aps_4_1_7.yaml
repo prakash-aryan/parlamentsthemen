@@ -1,0 +1,62 @@
+id: aps_4_1_7
+version: 1
+source_description: The topic "Altersfragen" ("Questions relatives à l'âge") in the chapter "Soziale Gruppen"
+  of the domain "Gesellschaft und Kultur" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Aging and Elderly Affairs
+definition: Parliamentary matters concerning the social, economic, and health-related issues affecting
+  older adults, including pension systems, long-term care, age discrimination, and intergenerational equity.
+include:
+- pension system reform
+- long-term care financing
+- elderly healthcare services
+- age-friendly infrastructure
+- intergenerational solidarity
+- retirement age policy
+- elder abuse prevention
+- senior employment support
+exclude:
+- youth unemployment
+- child welfare
+- education policy
+- family benefits
+- disability rights
+- immigration integration
+terms:
+  de:
+  - Alterspolitik
+  - AHV-Reform
+  - Langzeitpflege
+  - Seniorenförderung
+  - Altersdiskriminierung
+  - Generationenvertrag
+  - Rentenalter
+  - Betreuungsinfrastruktur
+  fr:
+  - politique de la vieillesse
+  - réforme de l'AVS
+  - soins de longue durée
+  - aménagement pour personnes âgées
+  - discrimination liée à l'âge
+  - solidarité intergénérationnelle
+  - âge de la retraite
+  - infrastructures de soin
+  it:
+  - politica dell'invecchiamento
+  - riforma dell'AVS
+  - cure a lungo termine
+  - infrastrutture per anziani
+  - discriminazione per età
+  - solidarietà intergenerazionale
+  - età pensionabile
+  - assistenza agli anziani
+  rm:
+  - politica da vegls
+  - reforma da l'AVS
+  - tgira a lunga durada
+  - infrastructuras per seniors
+  - discriminaziun pervia da vegliadetgna
+  - solidaritad intergeneraziunala
+  - vegliadetgna da pensiun
+  - assistenza als seniors

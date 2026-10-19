@@ -1,0 +1,64 @@
+id: aps_6_4_4
+version: 1
+source_description: The topic "Gewässerschutz" ("Protection des eaux") in the chapter "Umweltschutz" of
+  the domain "Infrastruktur und Umwelt" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Water Protection
+definition: Parliamentary affairs under this topic focus on safeguarding water resources from pollution,
+  ensuring the quality of drinking water, and preserving aquatic ecosystems through legislation, regulation,
+  and oversight of water management practices.
+include:
+- drinking water quality
+- wastewater treatment
+- river and lake protection
+- groundwater conservation
+- pollution prevention
+- water resource management
+- aquatic habitat preservation
+- chemical and industrial discharges
+exclude:
+- air quality regulation
+- waste disposal policies
+- climate change mitigation measures
+- energy production and distribution
+- transport infrastructure planning
+- agricultural land use policies
+- urban development zoning
+terms:
+  de:
+  - Gewässerschutz
+  - Trinkwasserqualität
+  - Abwasserreinigung
+  - Gewässerrückhaltebecken
+  - Grundwasserschutz
+  - Wasserqualitätskontrolle
+  - Schadstoffeinträge
+  - Aquatische Ökosysteme
+  fr:
+  - protection des eaux
+  - qualité de l'eau potable
+  - traitement des eaux usées
+  - préservation des rivières et lacs
+  - conservation des nappes phréatiques
+  - gestion des ressources hydriques
+  - prévention de la pollution
+  - écosystèmes aquatiques
+  it:
+  - protezione delle acque
+  - qualità dell'acqua potabile
+  - trattamento delle acque reflue
+  - conservazione di fiumi e laghi
+  - protezione delle falde freatiche
+  - gestione delle risorse idriche
+  - prevenzione dell'inquinamento
+  - ecosistemi acquatici
+  rm:
+  - protecziun da las auas
+  - qualitad da l'aua da baiver
+  - tractamaint da las auas persas
+  - preservaziun da flums e lais
+  - protecziun da las auas sutteranas
+  - gestiun da las resursas idricas
+  - prevenziun da la polluziun
+  - ecosistems aquatics

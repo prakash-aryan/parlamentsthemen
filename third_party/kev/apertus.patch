@@ -1,0 +1,53 @@
+diff --git a/kev/model.py b/kev/model.py
+index 1fffa11..12b956e 100644
+--- a/kev/model.py
++++ b/kev/model.py
+@@ -9,6 +9,17 @@ from transformers.cache_utils import LinearAttentionCacheLayerMixin
+ # Reuse existing rarely-used Qwen special tokens as delimiters (state, q, opt, /opt, decide) so no
+ # embedding rows need to be added/trained; LoRA adapts their meaning.
+ SPECIAL = ["<|fim_prefix|>", "<|fim_middle|>", "<|box_start|>", "<|box_end|>", "<|fim_suffix|>"]
++SPECIAL_APERTUS = ["<|fim_begin|>", "<|fim_hole|>", "<|tool_output_start|>", "<|tool_output_end|>", "<|fim_end|>"]
++
++
++_SPECIALS_CACHE = {}
++
++
++def specials(tok):
++    key = id(tok)
++    if key not in _SPECIALS_CACHE:
++        _SPECIALS_CACHE[key] = SPECIAL if tok.convert_tokens_to_ids("<|fim_prefix|>") not in (None, tok.unk_token_id) else SPECIAL_APERTUS
++    return _SPECIALS_CACHE[key]
+ # training context: state tokens, tokens per question branch, and the whole packed record. Frozen suites are admitted with
+ # this rule (kev.suite) and training applies it to records built on the fly, so train and eval see the same population.
+ MAX_STATE, MAX_BRANCH, MAX_PACKED = 384, 1024, 2048
+@@ -101,9 +112,11 @@ def encode(tok, rec, max_state=MAX_STATE, max_branch=MAX_BRANCH, strict=False, o
+     state_tokens = user_tokens(tok, rec["state"])
+     if strict and len(state_tokens) + 1 > max_state:
+         raise ContextOverflow(f"state exceeds {max_state} tokens: {len(state_tokens) + 1}", state_tokens=len(state_tokens) + 1, max_state=max_state)
+-    S = [tok.convert_tokens_to_ids(SPECIAL[0])] + state_tokens[: max_state - 1]
++    sp = specials(tok)
++    bos = [tok.bos_token_id] if sp is SPECIAL_APERTUS and tok.bos_token_id is not None else []
++    S = bos + [tok.convert_tokens_to_ids(sp[0])] + state_tokens[: max_state - 1 - len(bos)]
+     ids, seg, pos, opt = list(S), [0] * len(S), list(range(len(S))), [OPT_NONE] * len(S)
+-    q_id, o_id, c_id, d_id = (tok.convert_tokens_to_ids(t) for t in SPECIAL[1:])
++    q_id, o_id, c_id, d_id = (tok.convert_tokens_to_ids(t) for t in sp[1:])
+     decide_idx, opt_idx = [], []
+     for k, q in enumerate(rec["questions"], start=1):
+         instr = [q_id] + user_tokens(tok, q["instr"])
+@@ -264,13 +277,15 @@ class DecisionModel(nn.Module):
+         self.option_isolation = option_isolation
+         if lora:
+             from peft import LoraConfig, get_peft_model
+-            extra = {"trainable_token_indices": {"embed_tokens": [tok.convert_tokens_to_ids(t) for t in SPECIAL]}} if special_embeddings else {}
++            extra = {"trainable_token_indices": {"embed_tokens": [tok.convert_tokens_to_ids(t) for t in specials(tok)]}} if special_embeddings else {}
+             targets = {"all": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
+                        "dense": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],   # "all" minus the DeltaNet projections on hybrids (retention ablation)
+                        "attn": ["q_proj", "k_proj", "v_proj", "o_proj"], "qv": ["q_proj", "v_proj"]}[lora_targets]
+             if self.hybrid and lora_targets in ("all", "attn"):
+                 # Gated DeltaNet projections (transformers 5 names, verified on Qwen3_5TextModel); the mixer's out_proj too
+                 targets = targets + ["in_proj_qkv", "in_proj_z", "in_proj_a", "in_proj_b", "out_proj"]
++            present = {n.rsplit(".", 1)[-1] for n, _ in self.lm.named_modules()}
++            targets = [t for t in targets if t in present]
+             cfg = LoraConfig(task_type="FEATURE_EXTRACTION", r=lora, lora_alpha=2 * lora, lora_dropout=0.05, target_modules=targets, **extra)
+             self.lm = get_peft_model(self.lm, cfg)
+         self.head = PointerHead(self.lm.config.hidden_size, dp=head_dim)

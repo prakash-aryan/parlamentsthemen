@@ -1,0 +1,64 @@
+id: aps_5_2_8
+version: 1
+source_description: The topic "Erwerbsersatzordnung (EO)" ("Allocations pour perte de gain (APG)") in
+  the chapter "Sozialversicherungen" of the domain "Gesundheit und Sozialsystem" in the Année Politique
+  Suisse classification of Swiss politics. Cover what parliamentary affairs on this topic are typically
+  about, and what belongs to neighbouring topics of the same chapter instead.
+name: Loss of Income Allocation Scheme (EO/APG)
+definition: Parliamentary affairs concerning the Swiss system of financial support for individuals unable
+  to work due to military or civilian service, illness, accident, maternity, or unemployment. This includes
+  debates on benefit levels, eligibility criteria, financing, and reforms to ensure adequate income replacement
+  for affected citizens.
+include:
+- military service compensation
+- civilian service benefits
+- maternity allowance
+- unemployment insurance supplements
+- illness and accident benefits
+- financing of EO/APG
+- eligibility criteria review
+- benefit amount adjustments
+exclude:
+- old-age and survivors' pensions
+- disability insurance
+- healthcare costs
+- social assistance (Sozialhilfe)
+- family allowances
+- unemployment insurance core benefits
+terms:
+  de:
+  - Erwerbsersatzordnung (EO)
+  - APG (Allocations pour perte de gain)
+  - Militärdienstentschädigung
+  - Zivildienstentschädigung
+  - Mutterschaftsentschädigung
+  - Krankentaggeld
+  - Unfallentschädigung
+  - Finanzierung der EO
+  fr:
+  - Ordonnance sur les allocations pour perte de gain (APG)
+  - Indemnités de perte de gain
+  - Indemnités de service militaire
+  - Indemnités de service civil
+  - Allocations de maternité
+  - Indemnités journalières maladie
+  - Indemnités accident
+  - Financement de l'APG
+  it:
+  - Ordinanza sulle indennità di perdita di guadagno (IPG)
+  - Indennità per perdita di guadagno
+  - Indennità per servizio militare
+  - Indennità per servizio civile
+  - Indennità di maternità
+  - Indennità giornaliera per malattia
+  - Indennità per infortunio
+  - Finanziamento dell'IPG
+  rm:
+  - Ordinaziun davart las indemnisaziuns da perdita da gudogn (IPG)
+  - Indemnisaziun da perdita da gudogn
+  - Indemnisaziun per servetsch militar
+  - Indemnisaziun per servetsch civil
+  - Indemnisaziun da maternitad
+  - Indemnisaziun per malsogna
+  - Indemnisaziun per accident
+  - Finanziaziun da l'IPG

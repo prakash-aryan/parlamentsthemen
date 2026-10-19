@@ -1,0 +1,64 @@
+id: aps_6_4_2
+version: 1
+source_description: The topic "Naturschutz" ("Protection de la nature") in the chapter "Umweltschutz"
+  of the domain "Infrastruktur und Umwelt" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Nature Conservation
+definition: Parliamentary affairs concerning the protection of natural habitats, biodiversity, endangered
+  species, and ecological integrity within Switzerland's environmental framework. These motions, postulates,
+  interpellations, and questions address policies, legislation, and measures to preserve natural landscapes,
+  forests, waters, and wildlife from human-induced threats.
+include:
+- protection of natural habitats
+- biodiversity preservation
+- endangered species
+- ecological integrity
+- wildlife conservation
+- natural landscape preservation
+- forest protection
+- water body conservation
+exclude:
+- energy production
+- transport infrastructure
+- urban development
+- waste management
+- climate change mitigation policies
+- agricultural practices
+terms:
+  de:
+  - Naturschutz
+  - Biodiversität
+  - Artenschutz
+  - Lebensraumschutz
+  - Ökologie
+  - Schutzgebiete
+  - Wildtiere
+  - Flora und Fauna
+  fr:
+  - protection de la nature
+  - biodiversité
+  - espèces menacées
+  - intégrité écologique
+  - habitats naturels
+  - réserves naturelles
+  - faune et flore
+  - conservation
+  it:
+  - protezione della natura
+  - biodiversità
+  - specie minacciate
+  - integrità ecologica
+  - habitat naturali
+  - aree protette
+  - fauna e flora
+  - conservazione
+  rm:
+  - protecziun da la natira
+  - biodiversitad
+  - specias periclitadas
+  - integritad ecologica
+  - habitats natirals
+  - aschas protegidas
+  - fauna e flora
+  - conservaziun

@@ -1,0 +1,67 @@
+id: aps_8_2_2
+version: 1
+source_description: The topic "Staatsrechnung" ("Comptes d'Etat") in the chapter "Öffentliche Finanzen"
+  of the domain "Wirtschaft und Finanzen" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: State Accounts
+definition: Parliamentary scrutiny of the federal government's annual financial statements, including
+  budget execution, revenue collection, expenditure management, and financial reporting accuracy. It involves
+  reviewing the state's financial performance against approved budgets and assessing compliance with fiscal
+  rules.
+include:
+- federal budget execution
+- revenue and expenditure reporting
+- financial statement accuracy
+- compliance with fiscal rules
+- audit of public funds
+- transparency in state finances
+- public debt management
+exclude:
+- tax policy proposals
+- new legislative spending initiatives
+- economic development programs
+- budget planning and approval
+- financial regulation of private sector
+- cantonal or municipal financial oversight
+terms:
+  de:
+  - Staatsrechnung
+  - Finanzrechnung
+  - Haushaltsabschluss
+  - Ausgabenkontrolle
+  - Einnahmenbericht
+  - Finanztransparenz
+  - Rechnungsprüfung
+  - Budgetvollzug
+  - Staatshaushalt
+  fr:
+  - comptes d'État
+  - rapport financier
+  - exécution du budget
+  - contrôle des dépenses
+  - transparence budgétaire
+  - vérification des comptes
+  - gestion de la dette publique
+  - rapport de clôture
+  - finances publiques
+  it:
+  - conti dello Stato
+  - rendiconto finanziario
+  - esecuzione del bilancio
+  - controllo delle spese
+  - trasparenza finanziaria
+  - verifica dei conti
+  - gestione del debito pubblico
+  - chiusura dei conti
+  - finanze pubbliche
+  rm:
+  - quints dal stadi
+  - rendachint finanzial
+  - execuziun dal preventiv
+  - controlla da las expensas
+  - transparenza da finanzas
+  - verificaziun dals quints
+  - gestiun dal debits public
+  - serrada dals quints
+  - finanzas publicas

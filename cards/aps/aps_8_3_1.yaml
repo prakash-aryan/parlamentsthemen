@@ -1,0 +1,65 @@
+id: aps_8_3_1
+version: 1
+source_description: The topic "Geld- und Währungspolitik" ("Politique monétaire") in the chapter "Geld,
+  Währung und Kredit" of the domain "Wirtschaft und Finanzen" in the Année Politique Suisse classification
+  of Swiss politics. Cover what parliamentary affairs on this topic are typically about, and what belongs
+  to neighbouring topics of the same chapter instead.
+name: Monetary Policy
+definition: Parliamentary affairs under this topic focus on the formulation, implementation, and oversight
+  of Switzerland's monetary policy, including decisions on interest rates, money supply, and the stability
+  of the Swiss franc. It covers discussions on the role of the Swiss National Bank (SNB), inflation control,
+  financial market regulation, and the impact of monetary policy on the national and global economy.
+include:
+- Swiss National Bank (SNB) decisions
+- Interest rate setting
+- Money supply management
+- Inflation control
+- Swiss franc stability
+- Financial market regulation
+- International monetary relations
+- SNB independence and accountability
+exclude:
+- Tax policy
+- Budget allocation
+- Public debt management
+- Banking sector regulation
+- Consumer protection
+- Trade policy
+- Labor market policies
+terms:
+  de:
+  - Geldpolitik
+  - Währungsstabilität
+  - SNB-Leitlinien
+  - Zinspolitik
+  - Inflationsbekämpfung
+  - Geldmenge
+  - Finanzmarktregulierung
+  - Währungsreserven
+  fr:
+  - politique monétaire
+  - stabilité du franc suisse
+  - banque nationale suisse (BNS)
+  - taux d'intérêt
+  - inflation
+  - offre de monnaie
+  - régulation des marchés financiers
+  - réserves de change
+  it:
+  - politica monetaria
+  - stabilità del franco svizzero
+  - Banca Nazionale Svizzera (BNS)
+  - tassi d'interesse
+  - inflazione
+  - offerta di moneta
+  - regolamentazione dei mercati finanziari
+  - riserve valutarie
+  rm:
+  - politica monetara
+  - stabilitad dal franc svizzer
+  - Banca naziunala svizra (BNS)
+  - tariffas d'interess
+  - inflaziun
+  - quantitad da daner
+  - regulaziun dals martgads finanzials
+  - reservas da valuta

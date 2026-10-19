@@ -1,0 +1,62 @@
+id: aps_7_1_7
+version: 1
+source_description: The topic "Datenschutz" ("Protection des données") in the chapter "Rechtsordnung"
+  of the domain "Rechts- und Sicherheitspolitik" in the Année Politique Suisse classification of Swiss
+  politics. Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Data Protection
+definition: Parliamentary affairs concerning the protection of personal data and privacy rights, including
+  legislation, oversight of data processing practices, and safeguarding individual freedoms in the digital
+  age.
+include:
+- personal data protection laws
+- privacy rights
+- data processing regulations
+- digital surveillance oversight
+- information security
+- individual data rights
+- compliance with data protection standards
+exclude:
+- criminal law enforcement
+- intelligence services operations
+- cybersecurity infrastructure
+- international data transfers
+- data protection in private sector
+- digital identity systems
+terms:
+  de:
+  - Datenschutz
+  - Personendaten
+  - Datenschutzgesetz
+  - Privatsphäre
+  - Datensicherheit
+  - Informationsfreiheit
+  - Öffentlichkeitsprinzip
+  - Datenaustausch
+  fr:
+  - protection des données
+  - données personnelles
+  - loi sur la protection des données
+  - vie privée
+  - sécurité des données
+  - liberté d'information
+  - principe de transparence
+  - échange de données
+  it:
+  - protezione dei dati
+  - dati personali
+  - legge sulla protezione dei dati
+  - vita privata
+  - sicurezza dei dati
+  - libertà d'informazione
+  - principio di trasparenza
+  - scambio di dati
+  rm:
+  - protecziun da datas
+  - datas persunalas
+  - lescha davart la protecziun da datas
+  - vita privata
+  - segirezza da datas
+  - libertad d’infurmaziun
+  - princip da transparenza
+  - barat da datas

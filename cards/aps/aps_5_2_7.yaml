@@ -1,0 +1,63 @@
+id: aps_5_2_7
+version: 1
+source_description: The topic "Mutterschaftsversicherung" ("Assurance-maternité") in the chapter "Sozialversicherungen"
+  of the domain "Gesundheit und Sozialsystem" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Maternity Insurance
+definition: Parliamentary affairs on maternity insurance focus on the design, funding, scope, and administration
+  of social security benefits for mothers before, during, and after childbirth, including benefit duration,
+  payment levels, eligibility criteria, and integration with existing health and social systems.
+include:
+- maternity benefit duration
+- eligibility for new mothers
+- financing of maternity benefits
+- coordination with health insurance
+- parental leave entitlements
+- benefit levels and indexation
+- administrative procedures
+- equal treatment of self-employed mothers
+exclude:
+- paternity leave policies
+- childcare infrastructure funding
+- family tax allowances
+- long-term care insurance
+- unemployment insurance
+- disability insurance
+terms:
+  de:
+  - Mutterschaftsversicherung
+  - Mutterschaftsentschädigung
+  - Wochenanspruch
+  - Finanzierung
+  - Anspruchsvoraussetzungen
+  - Selbstständige
+  - Koordination mit Krankenversicherung
+  - Indexierung der Leistungen
+  fr:
+  - assurance-maternité
+  - indemnité de maternité
+  - durée du congé
+  - financement
+  - conditions d’éligibilité
+  - indépendantes
+  - coordination avec l’assurance-maladie
+  - indexation des prestations
+  it:
+  - assicurazione maternità
+  - indennità di maternità
+  - durata del congedo
+  - finanziamento
+  - requisiti di ammissibilità
+  - indipendenti
+  - coordinamento con l'assicurazione malattia
+  - indicizzazione delle prestazioni
+  rm:
+  - segirada da maternitad
+  - indemnisaziun da maternitad
+  - durada dal congedi
+  - finanziaziun
+  - cundiziuns d'admissiun
+  - independents
+  - coordinaziun cun l'assicuranza da malsauns
+  - indicaziun da las prestaziuns

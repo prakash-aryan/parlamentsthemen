@@ -1,0 +1,64 @@
+id: aps_8_4_8
+version: 1
+source_description: The topic "Jagd und Fischerei" ("Chasse et pêche") in the chapter "Landwirtschaft"
+  of the domain "Wirtschaft und Finanzen" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Hunting and Fishing
+definition: Parliamentary affairs concerning the regulation, management, and policy of hunting and fishing
+  activities in Switzerland, including wildlife conservation, licensing, seasonal restrictions, and sustainable
+  practices.
+include:
+- hunting licenses
+- fishing quotas
+- wildlife protection
+- seasonal hunting/fishing regulations
+- conservation of fish and game species
+- hunting and fishing rights
+- equipment standards
+- poaching prevention
+exclude:
+- agricultural subsidies
+- dairy farming
+- crop subsidies
+- livestock regulations
+- organic farming standards
+- food safety
+- rural development
+terms:
+  de:
+  - Jagdrecht
+  - Fischereirecht
+  - Wildtiermanagement
+  - Jagd- und Fischereiquoten
+  - Wildschutz
+  - Jagd- und Angelausweise
+  - Saisonbestimmungen
+  - Nachhaltige Nutzung
+  fr:
+  - droit de chasse
+  - droit de pêche
+  - gestion de la faune
+  - quotas de chasse et de pêche
+  - protection de la faune
+  - permis de chasse et de pêche
+  - réglementations saisonnières
+  - exploitation durable
+  it:
+  - diritto di caccia
+  - diritto di pesca
+  - gestione della fauna selvatica
+  - quote di caccia e pesca
+  - protezione della fauna
+  - permessi di caccia e pesca
+  - disposizioni stagionali
+  - sfruttamento sostenibile
+  rm:
+  - dretg da chatscha
+  - dretg da pestga
+  - gestiun da la fauna selvadia
+  - quotas da chatscha e pestga
+  - protecziun da la fauna
+  - permiss da chatscha e pestga
+  - restricziuns stagiunalas
+  - utilisaziun durabla

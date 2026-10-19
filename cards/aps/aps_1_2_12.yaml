@@ -1,0 +1,64 @@
+id: aps_1_2_12
+version: 1
+source_description: The topic "Verbände" ("Associations") in the chapter "Institutionen" of the domain
+  "Akteure und Institutionen" in the Année Politique Suisse classification of Swiss politics. Cover what
+  parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics of
+  the same chapter instead.
+name: Parliamentary Affairs on Associations
+definition: This topic covers parliamentary motions, postulates, interpellations, and questions related
+  to the role, regulation, funding, and influence of associations in Swiss politics, including their interaction
+  with government and public policy. It examines how associations shape legislative agendas, advocate
+  for interests, and are held accountable by parliament. It also addresses transparency, lobbying practices,
+  and the legal framework governing associations.
+include:
+- association funding
+- association lobbying
+- association transparency
+- association regulation
+- association influence on policy
+- association-government relations
+- association accountability
+exclude:
+- individual political parties
+- civil society organizations (non-association)
+- trade unions
+- non-governmental organizations (NGOs)
+- foundations
+- charitable institutions
+terms:
+  de:
+  - Verbände
+  - Lobbying
+  - Finanzierung
+  - Transparenz
+  - Interessenvertretung
+  - Gesetzgebung
+  - Behördenkontakt
+  - Rechtsrahmen
+  fr:
+  - associations
+  - lobbying
+  - financement
+  - transparence
+  - représentation d'intérêts
+  - législation
+  - relations avec les autorités
+  - cadre juridique
+  it:
+  - associazioni
+  - lobbying
+  - finanziamento
+  - trasparenza
+  - rappresentanza di interessi
+  - legislazione
+  - rapporti con le autorità
+  - quadro giuridico
+  rm:
+  - associaziuns
+  - lobbying
+  - finanziaziun
+  - transparenza
+  - represchentaziun d’interess
+  - legislaziun
+  - relaziuns cun las autoritads
+  - quadru giuridic

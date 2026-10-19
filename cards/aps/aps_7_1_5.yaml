@@ -1,0 +1,61 @@
+id: aps_7_1_5
+version: 1
+source_description: The topic "Staatsangehörigkeit" ("Nationalité") in the chapter "Rechtsordnung" of
+  the domain "Rechts- und Sicherheitspolitik" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Nationality Law
+definition: Parliamentary affairs concerning the acquisition, loss, and regulation of Swiss citizenship,
+  including naturalization procedures, dual citizenship, and the rights and obligations of Swiss nationals.
+include:
+- Swiss citizenship acquisition
+- naturalization criteria
+- dual citizenship regulations
+- loss of citizenship
+- rights of Swiss nationals
+- citizenship for children
+- integration requirements
+exclude:
+- immigration policy
+- asylum procedures
+- foreign nationals' residency permits
+- border control
+- extradition treaties
+- international treaties on citizenship
+terms:
+  de:
+  - Staatsangehörigkeit
+  - Einbürgerung
+  - Doppelbürgerschaft
+  - Verlust der Staatsangehörigkeit
+  - Bürgerrechte
+  - Integration
+  - Naturalisation
+  - Rechte und Pflichten der Schweizer Bürger
+  fr:
+  - nationalité
+  - naturalisation
+  - double nationalité
+  - perte de la nationalité
+  - droits des citoyens
+  - intégration
+  - citoyenneté suisse
+  - obligations des citoyens
+  it:
+  - nazionalità
+  - naturalizzazione
+  - doppia cittadinanza
+  - perdita della cittadinanza
+  - diritti dei cittadini
+  - integrazione
+  - cittadinanza svizzera
+  - obblighi dei cittadini
+  rm:
+  - naziunalitad
+  - natiralisaziun
+  - doppia naziunalitad
+  - perdita da la naziunalitad
+  - dretgs dals burgheis
+  - integraziun
+  - burgais svizzer
+  - obligaziuns dals burgheis

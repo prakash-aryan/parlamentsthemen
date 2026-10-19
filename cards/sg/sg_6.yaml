@@ -1,0 +1,64 @@
+id: sg_6
+version: 1
+source_description: The subject area "Landesverteidigung, Sicherheit und Ordnung" of the systematic law
+  collection of the canton of St. Gallen, which the canton uses to classify the affairs of its cantonal
+  parliament. Cover what cantonal affairs in this subject area are typically about.
+name: Cantonal Defense, Security, and Public Order
+definition: This topic covers cantonal-level affairs related to the protection of the population, maintenance
+  of public safety, and the organization of defense and emergency response within the canton of St. Gallen.
+  It includes matters of law enforcement, civil protection, disaster management, and the canton's role
+  in national defense coordination. It also encompasses regulations on public order, security infrastructure,
+  and the legal framework governing security services at the cantonal level.
+include:
+- civil protection measures
+- disaster and emergency response
+- cantonal police organization
+- security infrastructure
+- public order regulations
+- cantonal defense coordination
+- emergency services
+- security policy at cantonal level
+exclude:
+- federal defense policy
+- national security strategy
+- international security affairs
+- military conscription
+- federal police operations
+- national border control
+terms:
+  de:
+  - Landesverteidigung
+  - Sicherheit
+  - öffentliche Ordnung
+  - Zivilschutz
+  - Katastrophenschutz
+  - Polizeiwesen
+  - Notfallmanagement
+  - Sicherheitsinfrastruktur
+  fr:
+  - défense cantonale
+  - sécurité publique
+  - ordre public
+  - protection civile
+  - gestion des catastrophes
+  - police cantonale
+  - intervention d'urgence
+  - infrastructure de sécurité
+  it:
+  - difesa cantonale
+  - sicurezza pubblica
+  - ordine pubblico
+  - protezione civile
+  - gestione delle catastrofi
+  - polizia cantonale
+  - gestione delle emergenze
+  - infrastrutture di sicurezza
+  rm:
+  - defensiun chantunala
+  - segirezza publica
+  - urden public
+  - protecziun civila
+  - gestiun da catastrofas
+  - polizia chantunala
+  - gestiun d'urgenzas
+  - infrastructura da segirezza

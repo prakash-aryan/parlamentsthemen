@@ -1,0 +1,67 @@
+id: aps_6_1_5
+version: 1
+source_description: The topic "Luftfahrt" ("Trafic aérien") in the chapter "Verkehr und Kommunikation"
+  of the domain "Infrastruktur und Umwelt" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Aviation
+definition: Parliamentary affairs concerning the regulation, safety, infrastructure, and environmental
+  impact of civil and military aviation within Switzerland, including airport operations, air traffic
+  management, and aviation policy.
+include:
+- airport infrastructure development
+- aviation safety regulations
+- air traffic management
+- aviation noise pollution
+- aviation emissions and climate impact
+- civil aviation policy
+- military aviation coordination
+- aviation industry support
+exclude:
+- road transport policy
+- rail transport infrastructure
+- public transit systems
+- maritime transport regulations
+- telecommunications networks
+- postal services
+terms:
+  de:
+  - Luftfahrt
+  - Flugverkehr
+  - Flugsicherheit
+  - Flughafeninfrastruktur
+  - Lärmschutz
+  - CO₂-Emissionen
+  - Zivilluftfahrt
+  - Militärluftfahrt
+  - Luftverkehrsmanagement
+  fr:
+  - aviation
+  - sécurité aérienne
+  - gestion du trafic aérien
+  - infrastructure aéroportuaire
+  - bruit des aéronefs
+  - émissions de CO₂
+  - aviation civile
+  - aviation militaire
+  - réglementation aérienne
+  it:
+  - aviazione
+  - sicurezza aerea
+  - gestione del traffico aereo
+  - infrastrutture aeroportuali
+  - inquinamento acustico
+  - emissioni di CO₂
+  - aviazione civile
+  - aviazione militare
+  - normative aeronautiche
+  rm:
+  - aviatica
+  - segirezza aviatica
+  - gestiun dal traffic aviatic
+  - infrastructura d'eroport
+  - canera d'aviuns
+  - emissiuns da CO₂
+  - aviatica civila
+  - aviatica militara
+  - normativas aviaticas

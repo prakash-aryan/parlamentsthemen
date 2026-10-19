@@ -1,0 +1,67 @@
+id: aps_4_4_2
+version: 1
+source_description: The topic "Presse" ("Presse") in the chapter "Medien" of the domain "Gesellschaft
+  und Kultur" in the Année Politique Suisse classification of Swiss politics. Cover what parliamentary
+  affairs on this topic are typically about, and what belongs to neighbouring topics of the same chapter
+  instead.
+name: Press Freedom and Media Policy
+definition: Parliamentary affairs concerning the regulation, protection, and role of the press in Swiss
+  society, including media ownership, journalistic ethics, access to information, and the relationship
+  between media and public institutions.
+include:
+- media regulation
+- journalistic freedom
+- public access to information
+- media ownership transparency
+- protection of sources
+- media ethics
+- digital media policy
+- press subsidies
+exclude:
+- broadcasting content regulation
+- cultural promotion
+- film and arts funding
+- intellectual property
+- data protection
+- privacy laws
+terms:
+  de:
+  - Pressefreiheit
+  - Medienregulierung
+  - Quellenschutz
+  - Informationsfreiheit
+  - Medienethik
+  - Medienkonzentration
+  - Öffentlichkeitsprinzip
+  - Medienförderung
+  - Journalistische Unabhängigkeit
+  fr:
+  - liberté de la presse
+  - régulation des médias
+  - protection des sources
+  - accès à l'information
+  - éthique journalistique
+  - concentration des médias
+  - principe de transparence
+  - subventions aux médias
+  - indépendance journalistique
+  it:
+  - libertà di stampa
+  - regolamentazione dei media
+  - protezione delle fonti
+  - accesso all'informazione
+  - etica giornalistica
+  - concentrazione dei media
+  - principio di trasparenza
+  - sussidi ai media
+  - indipendenza giornalistica
+  rm:
+  - libertad da pressa
+  - regulaziun da medias
+  - protecziun da las funtaunas
+  - access a l’infurmaziun
+  - etica schurnalistica
+  - concentraziun da medias
+  - princip da transparenza
+  - subvenziuns als medias
+  - independenza schurnalistica

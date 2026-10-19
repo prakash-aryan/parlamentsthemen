@@ -1,0 +1,68 @@
+id: curia_10
+version: 1
+source_description: 'The subject area "Europapolitik" (French: "Politique européenne", Italian: "Politica
+  europea") that the Swiss Parliamentary Services assign to federal parliamentary affairs in Curia Vista.
+  Cover what affairs in this subject area are typically about.'
+name: Swiss European Policy
+definition: This topic covers parliamentary affairs related to Switzerland's relations, agreements, and
+  cooperation with the European Union and other European states. It includes discussions on trade, migration,
+  environmental policies, and legal harmonization within the European context. It also addresses Switzerland's
+  position and strategy regarding European integration and its impact on Swiss sovereignty and domestic
+  legislation.
+include:
+- Swiss-EU bilateral agreements
+- European trade relations
+- Schengen/Dublin agreements
+- Migration and asylum policy
+- Environmental cooperation with EU
+- Legal harmonization with EU
+- Swiss position on EU integration
+- Impact of EU regulations on Switzerland
+exclude:
+- Domestic Swiss-only legislation
+- Cantonal or municipal policy
+- Non-European international relations
+- Purely internal Swiss political debates
+- Swiss foreign policy outside Europe
+- EU accession discussions
+terms:
+  de:
+  - Europapolitik
+  - EU-Beziehungen
+  - bilaterale Abkommen
+  - Freihandel
+  - Migration
+  - Umweltkooperation
+  - Schengen/Dublin
+  - Rechtsharmonisierung
+  - EU-Integration
+  fr:
+  - politique européenne
+  - relations avec l'UE
+  - accords bilatéraux
+  - libre-échange
+  - migration
+  - coopération environnementale
+  - Schengen/Dublin
+  - harmonisation juridique
+  - position de la Suisse vis-à-vis de l'UE
+  it:
+  - politica europea
+  - relazioni con l'UE
+  - accordi bilaterali
+  - libero scambio
+  - migrazione
+  - cooperazione ambientale
+  - Schengen/Dublino
+  - armonizzazione giuridica
+  - posizione della Svizzera nei confronti dell'UE
+  rm:
+  - politica europeica
+  - relaziuns cun l'UE
+  - accords bilaterals
+  - libra commerzi
+  - migraziun
+  - cooperaziun ambientala
+  - Schengen/Dublin
+  - armonisaziun giuridica
+  - posiziun da la Svizra visavi l'UE

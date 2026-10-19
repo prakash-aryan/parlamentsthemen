@@ -1,0 +1,68 @@
+id: aps_6_3
+version: 1
+source_description: 'The chapter "Raumplanung und Wohnungswesen" ("Aménagement du territoire et logement")
+  of the domain "Infrastruktur und Umwelt" in the Année Politique Suisse classification of Swiss politics.
+  It contains these topics: Raumplanung; Wohnungsbau und -eigentum; Mietwesen; Bodenrecht. Cover what
+  parliamentary affairs in this chapter are typically about.'
+name: Spatial Planning and Housing
+definition: This topic covers parliamentary debates and initiatives related to Switzerland's land use
+  policies, housing construction, property ownership, rental regulations, and land rights. It addresses
+  how Switzerland manages its territory, ensures adequate housing supply, regulates rental markets, and
+  governs land ownership and development rights.
+include:
+- Land use planning
+- Housing construction
+- Property ownership
+- Rental market regulation
+- Land rights and zoning
+- Urban development
+- Housing affordability
+- Sustainable building practices
+exclude:
+- Transport infrastructure
+- Energy policy
+- Environmental protection (general)
+- Agricultural policy
+- Taxation on real estate
+terms:
+  de:
+  - Raumplanung
+  - Wohnungsbau
+  - Mietrecht
+  - Bodenrecht
+  - Zonenplanung
+  - Wohnungsmarkt
+  - Eigentumsrechte
+  - Nachhaltige Entwicklung
+  - Städtebau
+  - Bauordnung
+  fr:
+  - Aménagement du territoire
+  - Construction de logements
+  - Propriété immobilière
+  - Droit du bail
+  - Droit foncier
+  - Planification urbaine
+  - Marché locatif
+  - Développement durable
+  - Réglementation de la construction
+  it:
+  - Pianificazione territoriale
+  - Edilizia abitativa
+  - Proprietà fondiaria
+  - Diritto di locazione
+  - Diritto fondiario
+  - Urbanistica
+  - Mercato degli affitti
+  - Sviluppo sostenibile
+  - Normative edilizie
+  rm:
+  - Planisaziun dal territori
+  - Construcziun d'abitaziuns
+  - Dretg da locaziun
+  - Dretg funsil
+  - Zonaziun
+  - Mercat d'affits
+  - Dretg da proprietad
+  - Svilup durabel
+  - Urbanissem

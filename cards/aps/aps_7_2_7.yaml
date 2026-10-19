@@ -1,0 +1,65 @@
+id: aps_7_2_7
+version: 1
+source_description: The topic "Öffentliche Sicherheit" ("Sécurité publique") in the chapter "Sicherheitspolitik"
+  of the domain "Rechts- und Sicherheitspolitik" in the Année Politique Suisse classification of Swiss
+  politics. Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Public Safety
+definition: Parliamentary affairs under this topic address measures and policies related to maintaining
+  public order, preventing crime, and ensuring the safety of citizens within Switzerland. It includes
+  debates on law enforcement, emergency response, and the legal framework governing security operations.
+  The focus is on the protection of individuals and society against threats such as terrorism, organized
+  crime, and civil unrest.
+include:
+- crime prevention
+- police powers and oversight
+- emergency services coordination
+- counter-terrorism measures
+- public order maintenance
+- security infrastructure
+- civil protection
+- border security
+exclude:
+- military defense
+- foreign policy
+- intelligence services
+- cybersecurity (if classified separately)
+- private security services
+- disaster relief (non-security aspects)
+terms:
+  de:
+  - Öffentliche Sicherheit
+  - Polizeikompetenzen
+  - Kriminalprävention
+  - Gefahrenabwehr
+  - Katastrophenschutz
+  - Terrorismusbekämpfung
+  - Sicherheitsinfrastruktur
+  - Grenzsicherheit
+  fr:
+  - sécurité publique
+  - pouvoirs de police
+  - prévention du crime
+  - lutte contre le terrorisme
+  - protection civile
+  - sécurité aux frontières
+  - gestion des urgences
+  - ordre public
+  it:
+  - sicurezza pubblica
+  - competenze di polizia
+  - prevenzione della criminalità
+  - lotta al terrorismo
+  - protezione civile
+  - sicurezza alle frontiere
+  - gestione delle emergenze
+  - ordine pubblico
+  rm:
+  - segirezza publica
+  - cumpetenzas da polizia
+  - prevenziun dal crim
+  - cumbat cunter il terrorissem
+  - protecziun civila
+  - segirezza als cunfins
+  - gestiun d'urgenzas
+  - urden public

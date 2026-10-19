@@ -1,0 +1,65 @@
+id: curia_2831
+version: 1
+source_description: 'The subject area "Kultur" (French: "Culture", Italian: "Cultura") that the Swiss
+  Parliamentary Services assign to federal parliamentary affairs in Curia Vista. Cover what affairs in
+  this subject area are typically about.'
+name: Cultural Affairs
+definition: This topic covers parliamentary matters related to the preservation, promotion, and development
+  of cultural life in Switzerland, including arts, heritage, language diversity, and cultural policy.
+include:
+- arts funding
+- cultural heritage preservation
+- language promotion
+- museums and archives
+- film and media support
+- cultural diversity
+- literature and publishing
+- cultural education programs
+exclude:
+- economic policy
+- healthcare
+- education system structure
+- transport infrastructure
+- environmental regulations
+- immigration policy
+terms:
+  de:
+  - Kulturpolitik
+  - Kunstförderung
+  - Kulturerbe
+  - Sprachförderung
+  - Museen
+  - Filmförderung
+  - Kulturelle Vielfalt
+  - Literatur
+  - Kulturelle Bildung
+  fr:
+  - politique culturelle
+  - soutien aux arts
+  - patrimoine culturel
+  - promotion linguistique
+  - musées
+  - aide au cinéma
+  - diversité culturelle
+  - édition littéraire
+  - éducation culturelle
+  it:
+  - politica culturale
+  - sostegno alle arti
+  - patrimonio culturale
+  - promozione linguistica
+  - musei
+  - sostegno al cinema
+  - diversità culturale
+  - editoria letteraria
+  - educazione culturale
+  rm:
+  - politica culturala
+  - sustegn a las arts
+  - patrimoni cultural
+  - promoziun linguistica
+  - museums
+  - sustegn al film
+  - diversitad culturala
+  - litteratura
+  - educaziun culturala

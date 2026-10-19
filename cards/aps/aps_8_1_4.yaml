@@ -1,0 +1,63 @@
+id: aps_8_1_4
+version: 1
+source_description: The topic "Wettbewerb" ("Concurrence") in the chapter "Wirtschaftspolitik" of the
+  domain "Wirtschaft und Finanzen" in the Année Politique Suisse classification of Swiss politics. Cover
+  what parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics
+  of the same chapter instead.
+name: Economic Competition
+definition: Parliamentary affairs concerning the regulation, promotion, and monitoring of competition
+  within the Swiss economy, including antitrust measures, market access, and fair business practices.
+include:
+- antitrust legislation
+- market access rules
+- competition policy
+- cartel prevention
+- consumer protection
+- fair business practices
+- regulatory oversight
+- economic efficiency
+exclude:
+- tax policy
+- monetary policy
+- employment policy
+- industrial subsidies
+- trade agreements
+- financial market regulation
+- state aid control
+terms:
+  de:
+  - Wettbewerbspolitik
+  - Kartellrecht
+  - Marktzugang
+  - Wettbewerbsregulierung
+  - Konsumentenschutz
+  - Wirtschaftsliberalisierung
+  - Regulierungsaufsicht
+  - Preiswettbewerb
+  fr:
+  - politique de concurrence
+  - droit des cartels
+  - accès au marché
+  - régulation concurrentielle
+  - protection des consommateurs
+  - libéralisation économique
+  - surveillance réglementaire
+  - concurrence des prix
+  it:
+  - politica della concorrenza
+  - diritto antitrust
+  - accesso al mercato
+  - regolamentazione della concorrenza
+  - protezione dei consumatori
+  - liberalizzazione economica
+  - sorveglianza normativa
+  - concorrenza dei prezzi
+  rm:
+  - politica da concurrenza
+  - dretg antitrust
+  - access al martgà
+  - regulaziun da concurrenza
+  - protecziun da consuments
+  - liberalisaziun economica
+  - surveglianza normativa
+  - concurrenza dals pretschs

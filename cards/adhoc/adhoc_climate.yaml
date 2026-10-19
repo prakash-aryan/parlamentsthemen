@@ -1,0 +1,78 @@
+id: adhoc_climate
+version: 1
+source_description: 'Climate change: parliamentary affairs about climate change and climate policy, including
+  greenhouse gas reduction, net zero targets, the CO2 law, climate adaptation, extreme weather caused
+  by climate change, climate protection in transport, buildings, agriculture and finance, and climate
+  strikes. Excludes general environmental protection without a climate aspect.'
+name: Climate Change Policy
+definition: Parliamentary motions, postulates, interpellations, and questions concerning climate change
+  mitigation, adaptation strategies, and climate-related legislation, including targets for greenhouse
+  gas reduction, net zero goals, implementation of the CO2 law, and sector-specific climate protection
+  measures.
+include:
+- greenhouse gas reduction targets
+- net zero commitments
+- CO2 law implementation
+- climate adaptation measures
+- extreme weather response
+- climate protection in transport
+- climate action in buildings
+- agriculture and climate change
+- finance and climate policy
+- climate strikes and public engagement
+exclude:
+- general environmental protection
+- waste management
+- biodiversity conservation
+- water quality regulation
+- air pollution unrelated to climate change
+- general energy policy without climate focus
+terms:
+  de:
+  - Klimawandel
+  - Treibhausgasreduktion
+  - Netto-Null-Ziel
+  - CO2-Gesetz
+  - Klimawandelanpassung
+  - Extremwetter
+  - Klimaschutz im Verkehr
+  - Klimaschutz in Gebäuden
+  - Klimaschutz in der Landwirtschaft
+  - Klimafinanzierung
+  - Klimastreiks
+  fr:
+  - changement climatique
+  - réduction des gaz à effet de serre
+  - objectif zéro net
+  - loi sur le CO2
+  - adaptation au changement climatique
+  - phénomènes météorologiques extrêmes
+  - protection climatique dans les transports
+  - protection climatique dans le bâtiment
+  - protection climatique en agriculture
+  - financement climatique
+  - grèves pour le climat
+  it:
+  - cambiamento climatico
+  - riduzione dei gas serra
+  - obiettivo zero netto
+  - legge sul CO2
+  - adattamento climatico
+  - eventi meteorologici estremi
+  - protezione climatica nei trasporti
+  - protezione climatica negli edifici
+  - protezione climatica in agricoltura
+  - finanza climatica
+  - scioperi per il clima
+  rm:
+  - midada dal clima
+  - reducziun da gas da serra
+  - finamira zero netto
+  - lescha davart il CO2
+  - adattaziun al midada dal clima
+  - eveniments meteorologics extrems
+  - protecziun dal clima en il traffic
+  - protecziun dal clima en edifizis
+  - protecziun dal clima en agricultura
+  - finanzas climaticas
+  - firmas per il clima

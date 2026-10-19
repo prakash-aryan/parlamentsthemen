@@ -1,0 +1,73 @@
+id: aps_6_2_2
+version: 1
+source_description: The topic "Stromnetz und -vertrieb" ("Réseau et distribution d'électricité") in the
+  chapter "Energie" of the domain "Infrastruktur und Umwelt" in the Année Politique Suisse classification
+  of Swiss politics. Cover what parliamentary affairs on this topic are typically about, and what belongs
+  to neighbouring topics of the same chapter instead.
+name: Electricity Grid and Distribution
+definition: Parliamentary affairs on this topic focus on the infrastructure, operation, and regulation
+  of electricity networks and the mechanisms of electricity distribution to consumers. It includes debates
+  on grid expansion, maintenance, security, reliability, and the integration of renewable energy sources
+  into the distribution system. The topic also covers issues related to tariff structures, consumer protection,
+  and the role of public versus private utilities in electricity distribution.
+include:
+- electricity grid infrastructure
+- distribution network planning
+- grid security and reliability
+- renewable energy integration
+- electricity tariffs and pricing
+- consumer protection in electricity supply
+- public vs. private utility models
+- smart grid technologies
+exclude:
+- electricity generation (power plants)
+- nuclear energy policy
+- fossil fuel energy sources
+- energy storage solutions
+- electricity market liberalization
+- national energy strategy
+terms:
+  de:
+  - Stromnetz
+  - Stromverteilung
+  - Netzinfrastruktur
+  - Netzsicherheit
+  - Tarifgestaltung
+  - Konsumentenschutz
+  - Energieverteilung
+  - Smart Grid
+  - Netzausbau
+  - Stromleitungen
+  fr:
+  - réseau électrique
+  - distribution d'électricité
+  - infrastructure du réseau
+  - sécurité du réseau
+  - tarification de l'électricité
+  - protection des consommateurs
+  - réseau de distribution
+  - smart grid
+  - extension du réseau
+  - lignes électriques
+  it:
+  - rete elettrica
+  - distribuzione di energia elettrica
+  - infrastruttura della rete
+  - sicurezza della rete
+  - tariffe elettriche
+  - protezione dei consumatori
+  - rete di distribuzione
+  - smart grid
+  - espansione della rete
+  - linee elettriche
+  rm:
+  - rait electric
+  - distribuziun d'electricitad
+  - infrastructura da la rait
+  - segirezza da la rait
+  - tariffas d'electricitad
+  - protecziun dals consuments
+  - rait da distribuziun
+  - smart grid
+  - expansiun da la rait
+  - lingias electricas

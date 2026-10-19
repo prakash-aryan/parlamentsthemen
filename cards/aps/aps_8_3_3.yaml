@@ -1,0 +1,73 @@
+id: aps_8_3_3
+version: 1
+source_description: The topic "Nationalbank" ("Banque nationale") in the chapter "Geld, Währung und Kredit"
+  of the domain "Wirtschaft und Finanzen" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Swiss National Bank (SNB)
+definition: Parliamentary affairs concerning the Swiss National Bank focus on its monetary policy, independence,
+  financial stability, currency management, and oversight of the banking system. These include debates
+  on interest rates, foreign exchange interventions, and the SNB's role in economic regulation and crisis
+  management.
+include:
+- monetary policy decisions
+- SNB independence and governance
+- Swiss franc exchange rate management
+- financial stability and banking supervision
+- gold reserves and foreign currency holdings
+- inflation targeting and price stability
+- SNB's role in economic crises
+- transparency and accountability of SNB actions
+exclude:
+- taxation policy
+- budget allocation for public services
+- regulations on consumer credit
+- state-owned enterprise operations
+- trade agreements and tariffs
+- environmental impact of financial activities
+- social welfare programs
+terms:
+  de:
+  - Schweizerische Nationalbank (SNB)
+  - Geldpolitik
+  - Unabhängigkeit der SNB
+  - Wechselkursmanagement
+  - Finanzstabilität
+  - Preisstabilität
+  - Goldreserven
+  - Notenbankpolitik
+  - Bankenaufsicht
+  - Transparenz
+  fr:
+  - Banque nationale suisse (BNS)
+  - politique monétaire
+  - indépendance de la BNS
+  - gestion du taux de change
+  - stabilité financière
+  - stabilité des prix
+  - réserves d'or
+  - politique de la banque centrale
+  - surveillance bancaire
+  - transparence
+  it:
+  - Banca Nazionale Svizzera (BNS)
+  - politica monetaria
+  - indipendenza della BNS
+  - gestione del tasso di cambio
+  - stabilità finanziaria
+  - stabilità dei prezzi
+  - riserve auree
+  - politica della banca centrale
+  - sorveglianza bancaria
+  - trasparenza
+  rm:
+  - Banca naziunala svizra (BNS)
+  - politica monetara
+  - independenza da BNS
+  - gestiun dal curs da stgomi
+  - stabilitad finanziala
+  - stabilitad dals prezis
+  - reservas d'aur
+  - politica da la banca centrala
+  - surveglianza da bancas
+  - transparenza

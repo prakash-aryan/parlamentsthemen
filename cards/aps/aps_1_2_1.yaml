@@ -1,0 +1,63 @@
+id: aps_1_2_1
+version: 1
+source_description: The topic "Bundesrat" ("Conseil fédéral") in the chapter "Institutionen" of the domain
+  "Akteure und Institutionen" in the Année Politique Suisse classification of Swiss politics. Cover what
+  parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics of
+  the same chapter instead.
+name: Federal Council (Bundesrat / Conseil fédéral)
+definition: Parliamentary affairs concerning the composition, powers, responsibilities, and oversight
+  of the Swiss Federal Council, including its members, portfolios, decision-making processes, and accountability
+  to the Federal Assembly.
+include:
+- Federal Council composition
+- Council member portfolios
+- Council decision-making
+- Council accountability
+- Cabinet oversight
+- Federal Council policies
+- Council leadership
+- Council-legislature relations
+exclude:
+- Individual federal laws
+- Specific policy areas (e.g., education, environment)
+- Cantonal or city council affairs
+- Parliamentary committees' internal procedures
+- Presidential functions
+- Cabinet staff or administration
+terms:
+  de:
+  - Bundesrat
+  - Bundesratsmitglieder
+  - Ressortverteilung
+  - Regierungsfunktion
+  - Kontrolle durch das Parlament
+  - Kabinettspolitik
+  - Bundesratsentscheidungen
+  - Verantwortlichkeit
+  fr:
+  - Conseil fédéral
+  - membres du Conseil fédéral
+  - répartition des départements
+  - fonction gouvernementale
+  - contrôle parlementaire
+  - politique du gouvernement
+  - décisions du Conseil fédéral
+  - responsabilité
+  it:
+  - Consiglio federale
+  - membri del Consiglio federale
+  - ripartizione dei dipartimenti
+  - funzione governativa
+  - controllo parlamentare
+  - politica del governo
+  - decisioni del Consiglio federale
+  - responsabilità
+  rm:
+  - Cussegl federal
+  - commembers dal Cussegl federal
+  - repartiziun dals dicasteris
+  - funcziun guvernamentala
+  - controlla tras l'Assamblea federala
+  - politica da la regenza
+  - decisiuns dal Cussegl federal
+  - responsabladad

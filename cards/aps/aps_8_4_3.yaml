@@ -1,0 +1,66 @@
+id: aps_8_4_3
+version: 1
+source_description: The topic "Lebensmittel" ("Denrées alimentaires") in the chapter "Landwirtschaft"
+  of the domain "Wirtschaft und Finanzen" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Food and Agriculture
+definition: Parliamentary affairs concerning food production, safety, quality, supply chains, and agricultural
+  policies within the economic and financial domain. Includes debates on farming practices, food security,
+  sustainability, and the economic viability of the agricultural sector.
+include:
+- food safety regulations
+- agricultural subsidies
+- organic farming
+- food supply chain
+- rural development
+- sustainable agriculture
+- livestock farming
+- agricultural exports
+exclude:
+- healthcare policies
+- environmental protection laws
+- trade agreements (general)
+- consumer protection (non-food)
+- energy policy
+terms:
+  de:
+  - Lebensmittel
+  - Landwirtschaft
+  - Ernährungssicherheit
+  - Bauernpolitik
+  - Bio-Landbau
+  - Futtermittel
+  - Agrarwirtschaft
+  - Konsumentenschutz (Lebensmittel)
+  - Export von Agrarprodukten
+  fr:
+  - denrées alimentaires
+  - agriculture
+  - sécurité alimentaire
+  - politique agricole
+  - agriculture biologique
+  - chaîne d'approvisionnement alimentaire
+  - développement rural
+  - élevage
+  - exportation de produits agricoles
+  it:
+  - alimenti
+  - agricoltura
+  - sicurezza alimentare
+  - politica agricola
+  - agricoltura biologica
+  - catena di approvvigionamento alimentare
+  - sviluppo rurale
+  - allevamento
+  - esportazione di prodotti agricoli
+  rm:
+  - vivonda
+  - agricultura
+  - segirezza da vivonda
+  - politica agricola
+  - agricultura biologica
+  - chadaina da provedimaint da vivonda
+  - svilup rural
+  - tratga da biestga
+  - export da products agriculs

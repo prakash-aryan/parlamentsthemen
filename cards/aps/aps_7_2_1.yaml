@@ -1,0 +1,63 @@
+id: aps_7_2_1
+version: 1
+source_description: The topic "Grundfragen zur Armee" ("Questions fondamentales sur l'armée") in the chapter
+  "Sicherheitspolitik" of the domain "Rechts- und Sicherheitspolitik" in the Année Politique Suisse classification
+  of Swiss politics. Cover what parliamentary affairs on this topic are typically about, and what belongs
+  to neighbouring topics of the same chapter instead.
+name: Army Fundamental Questions
+definition: Parliamentary inquiries and debates concerning the core principles, purpose, structure, and
+  future of the Swiss armed forces, including its role in national security, defense strategy, and alignment
+  with constitutional mandates.
+include:
+- Army's constitutional role
+- Defense strategy and doctrine
+- Military organization and structure
+- Swiss neutrality and defense policy
+- Arms procurement and equipment
+- Military service obligations
+- Civil-military relations
+- Future of the armed forces
+exclude:
+- Cybersecurity policy
+- Border control and migration
+- Intelligence services oversight
+- Disaster response coordination
+- International peacekeeping missions
+- Military budget allocation details
+terms:
+  de:
+  - Grundfragen zur Armee
+  - Verfassungsrolle der Armee
+  - Sicherheitsstrategie
+  - Militärische Organisation
+  - Neutralität
+  - Rüstungsbeschaffung
+  - Wehrpflicht
+  - Zivil-militärische Beziehungen
+  fr:
+  - Questions fondamentales sur l'armée
+  - Rôle constitutionnel de l'armée
+  - Stratégie de sécurité
+  - Organisation militaire
+  - Neutralité
+  - Acquisition d'armements
+  - Obligation de servir
+  - Relations civilo-militaires
+  it:
+  - Questioni fondamentali sull'esercito
+  - Ruolo costituzionale dell'esercito
+  - Strategia di sicurezza
+  - Organizzazione militare
+  - Neutralità
+  - Acquisti di armamenti
+  - Obbligo di servizio militare
+  - Relazioni civile-militari
+  rm:
+  - Dumondas fundamentalas davart l'armada
+  - Rola constituziunala da l'armada
+  - Strategia da segirezza
+  - Organisaziun militara
+  - Neutralitad
+  - Acquist d'armas
+  - Obligaziun da servir
+  - Relaziuns civilo-militars

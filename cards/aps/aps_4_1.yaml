@@ -1,0 +1,76 @@
+id: aps_4_1
+version: 1
+source_description: 'The chapter "Soziale Gruppen" ("Groupes sociaux") of the domain "Gesellschaft und
+  Kultur" in the Année Politique Suisse classification of Swiss politics. It contains these topics: Bevölkerungsentwicklung;
+  Migration; Asylwesen; Frauen- und Gleichstellungsfragen; Familien; Kinder und Jugendliche; Altersfragen;
+  LGBTQIA+; Menschen mit Behinderungen; Fahrende. Cover what parliamentary affairs in this chapter are
+  typically about.'
+name: Social Groups
+definition: This topic covers parliamentary discussions and legislative matters related to the composition,
+  rights, and well-being of various social groups within Swiss society, including demographic trends,
+  migration, asylum, gender equality, family policies, youth and children's issues, aging populations,
+  LGBTQIA+ rights, disability inclusion, and the specific needs of the traveling community.
+include:
+- Population development
+- Migration
+- Asylum policy
+- Gender equality
+- Family policies
+- Youth and children's issues
+- Aging and elderly care
+- LGBTQIA+ rights
+- Disability inclusion
+- Rights of the traveling community
+exclude:
+- Economic policy
+- Environmental regulations
+- Infrastructure development
+- Foreign policy
+- Taxation
+- Labor market regulations
+- Healthcare system organization
+terms:
+  de:
+  - Bevölkerungsentwicklung
+  - Migration
+  - Asylwesen
+  - Frauen- und Gleichstellung
+  - Familienpolitik
+  - Kinder und Jugend
+  - Altersfragen
+  - LGBTQIA+
+  - Menschen mit Behinderungen
+  - Fahrende
+  fr:
+  - Évolution démographique
+  - Migration
+  - Politique d'asile
+  - Égalité des sexes
+  - Politique familiale
+  - Enfants et jeunes
+  - Vieillissement
+  - LGBTQIA+
+  - Personnes handicapées
+  - Tziganes
+  it:
+  - Sviluppo demografico
+  - Migrazione
+  - Politica d'asilo
+  - Parità di genere
+  - Politica familiare
+  - Bambini e giovani
+  - Invecchiamento
+  - LGBTQIA+
+  - Persone con disabilità
+  - Popolo nomade
+  rm:
+  - Svilup demografic
+  - Migraziun
+  - Politica d'asil
+  - Egualitad da las dunnas
+  - Politica da famiglia
+  - Uffants e giuvens
+  - Vegliadetgna
+  - LGBTQIA+
+  - Persunas cun impediments
+  - Populaziun viagianta

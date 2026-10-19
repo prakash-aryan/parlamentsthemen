@@ -1,0 +1,66 @@
+id: aps_3_1
+version: 1
+source_description: 'The chapter "Europa- und Aussenpolitik" ("Politique européenne et étrangère") of
+  the domain "Europa- und Aussenpolitik" in the Année Politique Suisse classification of Swiss politics.
+  It contains these topics: Beziehungen zur EU; Zwischenstaatliche Beziehungen; Beziehungen zu internationalen
+  Organisationen; Neutralität; Gute Dienste; Aussenwirtschaftspolitik; Entwicklungspolitik; Auslandschweizerinnen
+  und -schweizer. Cover what parliamentary affairs in this chapter are typically about.'
+name: Swiss Foreign and European Policy
+definition: This topic covers parliamentary debates and motions related to Switzerland's external relations,
+  including its stance on the European Union, bilateral agreements with other states, engagement with
+  international organizations, the principle of neutrality, diplomatic mediation efforts, trade policy
+  with foreign nations, development aid programs, and support for Swiss citizens living abroad.
+include:
+- Relations with the EU
+- Bilateral state relations
+- Relations with international organizations
+- Swiss neutrality
+- Good offices (mediation)
+- Foreign economic policy
+- Development policy
+- Swiss citizens abroad
+exclude:
+- Domestic social policy
+- Environmental regulations
+- Education system reforms
+- Healthcare services
+- Infrastructure projects
+- Taxation policy
+- Labor market regulations
+terms:
+  de:
+  - Europa- und Aussenpolitik
+  - Beziehungen zur EU
+  - zwischenstaatliche Beziehungen
+  - Neutralität
+  - Gute Dienste
+  - Aussenwirtschaftspolitik
+  - Entwicklungspolitik
+  - Auslandschweizerinnen und -schweizer
+  fr:
+  - Politique européenne et étrangère
+  - relations avec l'UE
+  - relations interétatiques
+  - neutralité
+  - bons offices
+  - politique économique extérieure
+  - politique de développement
+  - Suissesses et Suisses de l'étranger
+  it:
+  - Politica europea ed estera
+  - relazioni con l'UE
+  - relazioni interstatali
+  - neutralità
+  - buoni uffici
+  - politica economica estera
+  - politica di sviluppo
+  - Svizzere e Svizzeri all'estero
+  rm:
+  - Politica europeica ed externa
+  - relaziuns cun l'UE
+  - relaziuns interstatalas
+  - neutralitad
+  - buns uffizis
+  - politica economica d'ordaifer
+  - politica da svilup
+  - Svizras e Svizzers a l'exteriur

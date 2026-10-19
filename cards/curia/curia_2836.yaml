@@ -1,0 +1,63 @@
+id: curia_2836
+version: 1
+source_description: 'The subject area "Sozialer Schutz" (French: "Protection sociale", Italian: "Protezione
+  sociale") that the Swiss Parliamentary Services assign to federal parliamentary affairs in Curia Vista.
+  Cover what affairs in this subject area are typically about.'
+name: Social Protection
+definition: Affairs concerning policies and measures aimed at safeguarding individuals and families against
+  social risks such as poverty, unemployment, illness, disability, and old age. Includes discussions on
+  social insurance, welfare benefits, social assistance, and the equitable distribution of social resources.
+include:
+- social insurance
+- unemployment benefits
+- healthcare access
+- pensions and retirement
+- social assistance
+- family support
+- disability benefits
+- housing support
+exclude:
+- economic development
+- taxation policy
+- education system
+- environmental regulations
+- criminal justice
+- foreign policy
+- infrastructure projects
+terms:
+  de:
+  - Sozialschutz
+  - Sozialversicherung
+  - Arbeitslosenversicherung
+  - AHV/IV
+  - Sozialhilfe
+  - Familienleistungen
+  - Behindertenversorgung
+  - Wohnungsförderung
+  fr:
+  - protection sociale
+  - assurance sociale
+  - assurance chômage
+  - AVS/AI
+  - aide sociale
+  - prestations familiales
+  - assurance invalidité
+  - logement social
+  it:
+  - protezione sociale
+  - assicurazione sociale
+  - disoccupazione
+  - AVS/AI
+  - assistenza sociale
+  - prestazioni familiari
+  - invalidità
+  - sostegno all’alloggio
+  rm:
+  - protecziun sociala
+  - segirada sociala
+  - assicuranza da dischoccupaziun
+  - AVS/AI
+  - agid social
+  - prestaziuns da famiglia
+  - invaliditad
+  - sustegn d’abitar

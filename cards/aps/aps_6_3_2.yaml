@@ -1,0 +1,65 @@
+id: aps_6_3_2
+version: 1
+source_description: The topic "Wohnungsbau und -eigentum" ("Construction de logements et propriété") in
+  the chapter "Raumplanung und Wohnungswesen" of the domain "Infrastruktur und Umwelt" in the Année Politique
+  Suisse classification of Swiss politics. Cover what parliamentary affairs on this topic are typically
+  about, and what belongs to neighbouring topics of the same chapter instead.
+name: Housing Construction and Ownership
+definition: Parliamentary affairs on this topic focus on policies, regulations, and initiatives related
+  to the development, construction, and ownership of residential properties. It includes debates on affordable
+  housing, urban planning for residential areas, property rights, and measures to address housing shortages
+  or speculation.
+include:
+- Affordable housing policies
+- Residential construction projects
+- Property ownership regulations
+- Housing market stability
+- Urban residential planning
+- Rental market oversight
+- Social housing initiatives
+- Homeownership promotion
+exclude:
+- Transport infrastructure development
+- Energy efficiency standards for buildings
+- Environmental protection measures
+- Commercial real estate development
+- Agricultural land use planning
+- Tourism accommodation policies
+- Industrial zoning regulations
+terms:
+  de:
+  - Wohnungsbau
+  - Wohneigentum
+  - Mietrecht
+  - Wohnungsmarkt
+  - Sozialwohnungen
+  - Bauvorhaben
+  - Eigentumsrechte
+  - Wohnraumversorgung
+  fr:
+  - Construction de logements
+  - Propriété immobilière
+  - Marché locatif
+  - Logements sociaux
+  - Planification urbaine résidentielle
+  - Droit de la propriété
+  - Offre de logements
+  - Spéculation immobilière
+  it:
+  - Costruzione di abitazioni
+  - Proprietà abitativa
+  - Mercato immobiliare
+  - Alloggi sociali
+  - Pianificazione urbana residenziale
+  - Diritti di proprietà
+  - Offerta di alloggi
+  - Speculazione edilizia
+  rm:
+  - Construcziun d'abitaziuns
+  - Proprieted d'abitaziuns
+  - Mercat d'alloschis
+  - Abitaziuns socialas
+  - Planisaziun urbana da quartiers d'abitar
+  - Dretgs da proprietad
+  - Provediment d'abitaziuns
+  - Speculaziun immobigliara

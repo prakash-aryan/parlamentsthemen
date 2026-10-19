@@ -1,0 +1,71 @@
+id: aps_6_1_1
+version: 1
+source_description: The topic "Verkehrspolitik" ("Politique des transports") in the chapter "Verkehr und
+  Kommunikation" of the domain "Infrastruktur und Umwelt" in the Année Politique Suisse classification
+  of Swiss politics. Cover what parliamentary affairs on this topic are typically about, and what belongs
+  to neighbouring topics of the same chapter instead.
+name: Transport Policy
+definition: Parliamentary affairs concerning the planning, regulation, and development of transport systems
+  (road, rail, air, water, public transit) within Switzerland, including infrastructure investment, mobility
+  strategies, and environmental impacts of transport.
+include:
+- public transport networks
+- road infrastructure development
+- rail transport expansion
+- airport and aviation policy
+- waterway transport regulation
+- mobility strategy and planning
+- transport infrastructure funding
+- traffic safety measures
+- intermodal transport connections
+exclude:
+- telecommunications regulation
+- digital infrastructure development
+- postal services policy
+- broadcasting and media regulation
+- information and communication technology standards
+terms:
+  de:
+  - Verkehrspolitik
+  - Mobilität
+  - Infrastruktur
+  - ÖV (öffentlicher Verkehr)
+  - Strassenbau
+  - Eisenbahn
+  - Flugverkehr
+  - Schifffahrt
+  - Finanzierung
+  - Umweltverträglichkeit
+  fr:
+  - politique des transports
+  - mobilité
+  - infrastructure
+  - transports publics
+  - construction routière
+  - chemin de fer
+  - aviation
+  - navigation
+  - financement
+  - impact environnemental
+  it:
+  - politica dei trasporti
+  - mobilità
+  - infrastruttura
+  - trasporto pubblico
+  - costruzione stradale
+  - ferrovia
+  - aviazione
+  - navigazione
+  - finanziamento
+  - compatibilità ambientale
+  rm:
+  - politica da transports
+  - mobilitad
+  - infrastructura
+  - transports publics
+  - construcziun da vias
+  - viafier
+  - aviatica
+  - navigaziun
+  - finanziaziun
+  - cumpatibilitad cun l'ambient

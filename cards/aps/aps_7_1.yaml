@@ -1,0 +1,73 @@
+id: aps_7_1
+version: 1
+source_description: 'The chapter "Rechtsordnung" ("Ordre juridique") of the domain "Rechts- und Sicherheitspolitik"
+  in the Année Politique Suisse classification of Swiss politics. It contains these topics: Grundrechte;
+  Strafrecht; Zivilrecht; Internationales Recht; Staatsangehörigkeit; Rechtshilfe; Datenschutz. Cover
+  what parliamentary affairs in this chapter are typically about.'
+name: Legal System and Fundamental Rights
+definition: This topic covers parliamentary debates and initiatives related to Switzerland's legal framework,
+  including fundamental rights protection, criminal law, civil law, international law, citizenship, legal
+  assistance between jurisdictions, and data protection.
+include:
+- Fundamental rights
+- Criminal law
+- Civil law
+- International law
+- Citizenship
+- Legal assistance
+- Data protection
+- Legal framework
+- Constitutional law
+exclude:
+- Economic policy
+- Taxation
+- Education
+- Healthcare
+- Environmental regulations
+- Infrastructure
+- Labor law
+terms:
+  de:
+  - Rechtsordnung
+  - Grundrechte
+  - Strafrecht
+  - Zivilrecht
+  - Internationales Recht
+  - Staatsangehörigkeit
+  - Rechtshilfe
+  - Datenschutz
+  - Verfassungsrecht
+  - Justizwesen
+  fr:
+  - Ordre juridique
+  - Droits fondamentaux
+  - Droit pénal
+  - Droit civil
+  - Droit international
+  - Nationalité
+  - Entraide judiciaire
+  - Protection des données
+  - Droit constitutionnel
+  - Système judiciaire
+  it:
+  - Ordinamento giuridico
+  - Diritti fondamentali
+  - Diritto penale
+  - Diritto civile
+  - Diritto internazionale
+  - Cittadinanza
+  - Assistenza giudiziaria
+  - Protezione dei dati
+  - Diritto costituzionale
+  - Sistema giudiziario
+  rm:
+  - Orden giuridic
+  - Dretgs fundamentals
+  - Dretg penal
+  - Dretg civil
+  - Dretg internaziunal
+  - Cidadanza
+  - Agid giudizial
+  - Protecziun da datas
+  - Dretg constituziunal
+  - Sistem giudizial

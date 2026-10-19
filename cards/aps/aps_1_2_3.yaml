@@ -1,0 +1,66 @@
+id: aps_1_2_3
+version: 1
+source_description: The topic "Konkordanz" ("Concordance") in the chapter "Institutionen" of the domain
+  "Akteure und Institutionen" in the Année Politique Suisse classification of Swiss politics. Cover what
+  parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics of
+  the same chapter instead.
+name: Concordance System
+definition: Concordance refers to the Swiss political practice of seeking broad consensus among major
+  political parties to ensure stable governance and avoid polarizing conflicts. It involves informal agreements
+  and power-sharing arrangements among parties to maintain continuity in policy implementation and government
+  formation. This system is central to Switzerland's consociational democracy and aims to balance diverse
+  interests across linguistic and regional divides.
+include:
+- informal power-sharing agreements
+- coalition-building across party lines
+- consensus-based decision-making
+- government stability through compromise
+- major party cooperation
+- avoidance of divisive votes
+- inclusive policy formulation
+- long-term governance continuity
+exclude:
+- formal legislative procedures
+- individual motions or postulates
+- specific policy proposals
+- interpellations on government actions
+- parliamentary questions on current affairs
+- cantonal or municipal governance structures
+- electoral campaign strategies
+terms:
+  de:
+  - Konkordanz
+  - Konsenspolitik
+  - Mehrparteienkoalition
+  - Grosses Einvernehmen
+  - Stabilität der Regierung
+  - Parteienkooperation
+  - verfassungsmässige Zusammenarbeit
+  - politische Verständigung
+  fr:
+  - concordance
+  - consensus politique
+  - gouvernement de coalition large
+  - entente entre partis
+  - stabilité gouvernementale
+  - coopération interpartis
+  - compromis institutionnel
+  - équilibre des forces politiques
+  it:
+  - concordanza
+  - politica di consenso
+  - coalizione di governo ampia
+  - intesa tra partiti
+  - stabilità governativa
+  - cooperazione interpartitica
+  - compromesso istituzionale
+  - equilibrio delle forze politiche
+  rm:
+  - concordanza
+  - cunvegnientscha politica
+  - coaliziun da plirs partids
+  - cunvegna tranter partidas
+  - stabilitad da la regenza
+  - cooperaziun interpartida
+  - cumpromiss instituziunal
+  - equiliber da las forzas politicas

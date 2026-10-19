@@ -1,0 +1,71 @@
+id: aps_2_2
+version: 1
+source_description: 'The chapter "Wahlen" ("Elections") of the domain "Direkte Demokratie und Wahlen"
+  in the Année Politique Suisse classification of Swiss politics. It contains these topics: National-
+  und Ständeratswahlen; Wahlen in kantonale Regierungen; Wahlen in kantonale Parlamente; Kommunale Wahlen.
+  Cover what parliamentary affairs in this chapter are typically about.'
+name: Swiss Elections
+definition: This topic covers parliamentary affairs related to the organization, conduct, and regulation
+  of elections at the national, cantonal, and municipal levels in Switzerland, including electoral systems,
+  voter rights, and election administration.
+include:
+- National Council elections
+- Council of States elections
+- Cantonal government elections
+- Cantonal parliament elections
+- Municipal council elections
+- Electoral law reforms
+- Voter eligibility criteria
+- Election campaign regulations
+exclude:
+- Referendums
+- Initiatives
+- Parliamentary motions
+- Interpellations
+- Postulates
+- Questions to the government
+terms:
+  de:
+  - Nationalratswahlen
+  - Ständeratswahlen
+  - Kantonsregierungswahlen
+  - Kantonsparlamentswahlen
+  - Kommunalwahlen
+  - Wahlrecht
+  - Wahlverfahren
+  - Stimmberechtigung
+  - Wahlkampffinanzierung
+  - Wahlkreisreformen
+  fr:
+  - élections au Conseil national
+  - élections au Conseil des États
+  - élections aux gouvernements cantonaux
+  - élections aux parlements cantonaux
+  - élections communales
+  - droit de vote
+  - procédure électorale
+  - électorat
+  - financement des campagnes
+  - réformes des circonscriptions
+  it:
+  - elezioni al Consiglio nazionale
+  - elezioni al Consiglio degli Stati
+  - elezioni ai governi cantonali
+  - elezioni ai parlamenti cantonali
+  - elezioni comunali
+  - diritto di voto
+  - procedura elettorale
+  - elettorato
+  - finanziamento delle campagne
+  - riforme dei collegi
+  rm:
+  - elecziuns dal Cussegl naziunal
+  - elecziuns dal Cussegl dals stadis
+  - elecziuns da las regenzas chantunalas
+  - elecziuns dals parlaments chantunals
+  - elecziuns communalas
+  - dretg da vuschar
+  - procedura electorala
+  - electorat
+  - finanziaziun da las campagnas
+  - reforms dals circuls

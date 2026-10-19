@@ -1,0 +1,62 @@
+id: aps_6_2_4
+version: 1
+source_description: The topic "Wasserkraft" ("Force hydraulique") in the chapter "Energie" of the domain
+  "Infrastruktur und Umwelt" in the Année Politique Suisse classification of Swiss politics. Cover what
+  parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics of
+  the same chapter instead.
+name: Hydropower
+definition: Parliamentary affairs on hydropower focus on the generation, regulation, and environmental
+  impact of electricity produced from water resources, including dam construction, river management, and
+  energy policy implications.
+include:
+- Hydroelectric power plants
+- River and reservoir management
+- Renewable energy policy
+- Environmental impact assessments
+- Energy supply security
+- Water rights and usage
+- Small-scale hydropower projects
+exclude:
+- Nuclear energy
+- Fossil fuel power generation
+- Wind and solar energy
+- Grid infrastructure development
+- Energy efficiency measures
+- Carbon pricing and emissions trading
+terms:
+  de:
+  - Wasserkraft
+  - Wasserkraftwerke
+  - Stauseen
+  - Flussregulierung
+  - Energieversorgung
+  - Umweltverträglichkeit
+  - Wasserrechte
+  - Kleinwasserkraft
+  fr:
+  - Force hydraulique
+  - Centrales hydroélectriques
+  - Barrages
+  - Gestion des cours d'eau
+  - Politique énergétique
+  - Impact environnemental
+  - Droits d'eau
+  - Petite hydraulique
+  it:
+  - Energia idroelettrica
+  - Centrali idroelettriche
+  - Dighe
+  - Gestione dei corsi d'acqua
+  - Politica energetica
+  - Impatto ambientale
+  - Diritti d'acqua
+  - Piccola idraulica
+  rm:
+  - Energia idraulica
+  - Ovras idraulicas
+  - Segns
+  - Gestiun da flums
+  - Politica d'energia
+  - Impact ambiental
+  - Dretgs d'aua
+  - Idraulica pitschna

@@ -1,0 +1,67 @@
+id: aps_5_1_9
+version: 1
+source_description: The topic "Sozialhilfe" ("Assistance sociale") in the chapter "Gesundheit, Sozialhilfe,
+  Sport" of the domain "Gesundheit und Sozialsystem" in the Année Politique Suisse classification of Swiss
+  politics. Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Social Assistance
+definition: Parliamentary affairs concerning the provision, funding, and regulation of social assistance
+  programs aimed at supporting individuals and families in need within Switzerland. This includes debates
+  on eligibility criteria, benefit levels, integration measures, and the coordination between federal,
+  cantonal, and communal social welfare systems.
+include:
+- eligibility criteria for social assistance
+- benefit levels and financial support
+- integration and employment programs
+- coordination between federal and cantonal welfare
+- social assistance for vulnerable groups
+- funding models and budget allocation
+- monitoring and evaluation of welfare programs
+exclude:
+- healthcare services and medical treatment
+- sports infrastructure and promotion
+- unemployment insurance and job placement
+- pensions and retirement benefits
+- housing policy and subsidies
+- child and family support programs
+terms:
+  de:
+  - Sozialhilfe
+  - Sozialleistungen
+  - Bedürftigenunterstützung
+  - Integrationsmassnahmen
+  - Kantonsbeiträge
+  - Wohnkosten
+  - Existenzminimum
+  - Sozialamt
+  - Leistungsanspruch
+  fr:
+  - aide sociale
+  - assistance publique
+  - prestations sociales
+  - conditions d'éligibilité
+  - insertion professionnelle
+  - coordination fédérale-cantonale
+  - minimum vital
+  - bureau social
+  - droit aux prestations
+  it:
+  - assistenza sociale
+  - prestazioni assistenziali
+  - criteri di idoneità
+  - integrazione lavorativa
+  - coordinamento federale-cantonale
+  - fabbisogno vitale
+  - ufficio sociale
+  - diritto alle prestazioni
+  - sostegno ai bisognosi
+  rm:
+  - agid social
+  - prestaziuns socialas
+  - cundiziuns d'admissiun
+  - integraziun professiunala
+  - coordinaziun federala-cantunala
+  - basegn vital
+  - uffizi social
+  - dretg a prestaziuns
+  - sustegn per basegnus

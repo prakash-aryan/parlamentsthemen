@@ -1,0 +1,63 @@
+id: aps_8_5_6
+version: 1
+source_description: The topic "Arbeitnehmendenschutz" ("Protection des travailleurs") in the chapter "Arbeit"
+  of the domain "Wirtschaft und Finanzen" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Worker Protection
+definition: Parliamentary affairs concerning the legal, social, and economic safeguards for employees,
+  including health and safety regulations, working conditions, labor rights, and social security provisions.
+include:
+- occupational health and safety
+- working time regulations
+- minimum wage policies
+- labor law enforcement
+- social security benefits
+- protection against unfair dismissal
+- equal pay for equal work
+- rights of temporary and gig workers
+exclude:
+- economic competitiveness policies
+- taxation of businesses
+- trade agreements
+- monetary policy
+- industrial subsidies
+- entrepreneurial support programs
+- labor market flexibility reforms
+terms:
+  de:
+  - Arbeitnehmerschutz
+  - Arbeitsbedingungen
+  - Arbeitssicherheit
+  - Arbeitszeitgesetz
+  - Kündigungsschutz
+  - Sozialversicherungen
+  - Lohngleichheit
+  - Gleichstellung am Arbeitsplatz
+  fr:
+  - protection des travailleurs
+  - conditions de travail
+  - sécurité au travail
+  - durée du travail
+  - protection contre le licenciement
+  - assurances sociales
+  - égalité salariale
+  - égalité des chances au travail
+  it:
+  - protezione dei lavoratori
+  - condizioni di lavoro
+  - sicurezza sul lavoro
+  - orario di lavoro
+  - tutela contro il licenziamento
+  - assicurazioni sociali
+  - parità salariale
+  - parità di opportunità sul lavoro
+  rm:
+  - protecziun dals lavuraints
+  - cundiziuns da lavur
+  - segirezza sin il plaz da lavur
+  - durada da lavur
+  - protecziun cunter relaschada
+  - segiranzas socialas
+  - egualitad da paja
+  - egualitad da las schanzas sin il plaz da lavur

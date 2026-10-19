@@ -1,0 +1,72 @@
+id: adhoc_covid19
+version: 1
+source_description: 'Covid-19: parliamentary affairs about the Covid-19 pandemic and its consequences,
+  including protective measures, vaccination, the Covid certificate, testing, economic support such as
+  Covid loans and short-time work compensation during the pandemic, effects on health care, schools and
+  culture, and the review of the pandemic response. Excludes epidemics in general when Covid-19 is not
+  concerned.'
+name: Covid-19 Pandemic Response
+definition: Parliamentary affairs focusing on measures, policies, and evaluations related to the Covid-19
+  pandemic, including protective actions, vaccination programs, the Covid certificate, testing protocols,
+  economic support mechanisms, and impacts on healthcare, education, and culture.
+include:
+- protective measures
+- vaccination programs
+- Covid certificate
+- testing protocols
+- economic support (Covid loans, short-time work)
+- healthcare system impacts
+- schools and education
+- cultural sector effects
+- pandemic response review
+exclude:
+- general epidemics
+- non-Covid-19 infectious diseases
+- long-term public health strategies unrelated to Covid-19
+- pre-pandemic health policies
+- post-pandemic recovery unrelated to Covid-19
+terms:
+  de:
+  - Covid-19
+  - Schutzmassnahmen
+  - Impfprogramm
+  - Covid-Zertifikat
+  - Teststrategie
+  - Wirtschaftshilfe
+  - Kurzarbeitsentschädigung
+  - Gesundheitswesen
+  - Schulen
+  - Kultur
+  fr:
+  - Covid-19
+  - mesures de protection
+  - programme de vaccination
+  - certificat Covid
+  - stratégie de tests
+  - aide économique
+  - indemnité en cas de réduction de l'horaire de travail
+  - système de santé
+  - écoles
+  - secteur culturel
+  it:
+  - Covid-19
+  - misure di protezione
+  - programma di vaccinazione
+  - certificato Covid
+  - strategia di test
+  - sostegno economico
+  - indennità per lavoro ridotto
+  - sistema sanitario
+  - scuole
+  - settore culturale
+  rm:
+  - Covid-19
+  - mesiras da protecziun
+  - program da vaccinaziun
+  - certificat Covid
+  - strategia da test
+  - agid economic
+  - indemnisaziun per lavur reducida
+  - sistem da sanadad
+  - scolas
+  - sectur cultural

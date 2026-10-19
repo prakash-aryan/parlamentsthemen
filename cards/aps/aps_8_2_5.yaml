@@ -1,0 +1,63 @@
+id: aps_8_2_5
+version: 1
+source_description: The topic "Finanzausgleich" ("Péréquation financière") in the chapter "Öffentliche
+  Finanzen" of the domain "Wirtschaft und Finanzen" in the Année Politique Suisse classification of Swiss
+  politics. Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Intergovernmental Financial Equalization
+definition: Parliamentary affairs concerning the redistribution of financial resources between different
+  levels of government (federal, cantonal, municipal) to ensure fiscal equity and equal living conditions
+  across Switzerland's diverse regions and cantons.
+include:
+- Cantonal tax revenue redistribution
+- Federal subsidies to financially weaker cantons
+- Municipal financial equalization mechanisms
+- Fiscal capacity balancing
+- Intercantonal financial compensation schemes
+- Regional economic development funding
+- Equalization of public service costs
+- Financing of infrastructure in disadvantaged areas
+exclude:
+- Direct federal taxation policies
+- Cantonal budget allocation decisions
+- Municipal debt management
+- Specific sectoral subsidies (e.g., agriculture)
+- Tax harmonization between cantons
+- Budget deficit reduction measures
+terms:
+  de:
+  - Finanzausgleich
+  - interkantonale Finanzausgleich
+  - fiskalische Ausgleich
+  - Geldausgleich
+  - Finanzkraftausgleich
+  - Regionalfinanzierung
+  - Gleichheit der Lebensbedingungen
+  - Finanzielle Solidarität
+  fr:
+  - péréquation financière
+  - compensation financière intercantonale
+  - équilibre fiscal
+  - redistribution des ressources
+  - solidarité financière
+  - égalité des chances régionales
+  - compensation des disparités fiscales
+  - financement régional
+  it:
+  - perequazione finanziaria
+  - compensazione finanziaria intercantonale
+  - equilibrio fiscale
+  - redistribuzione delle risorse
+  - solidarietà finanziaria
+  - uguaglianza delle condizioni di vita
+  - finanziamento regionale
+  - compensazione delle disparità fiscali
+  rm:
+  - gulivaziun finanziala
+  - compensaziun finanziala intercantunala
+  - equilibri fiscal
+  - redistribuziun da resursas
+  - solidaritad finanziala
+  - egualitad da cundiziuns da vita
+  - finanziaziun regiunala
+  - compensaziun da disparitads fiscalas

@@ -1,0 +1,63 @@
+id: aps_4_4_1
+version: 1
+source_description: The topic "Medienpolitische Grundfragen" ("Aspects généraux de la politique médiatique")
+  in the chapter "Medien" of the domain "Gesellschaft und Kultur" in the Année Politique Suisse classification
+  of Swiss politics. Cover what parliamentary affairs on this topic are typically about, and what belongs
+  to neighbouring topics of the same chapter instead.
+name: Media Policy Foundations
+definition: Parliamentary debates and motions concerning the fundamental principles, goals, and framework
+  of media policy in Switzerland, including issues of media freedom, diversity, public service broadcasting,
+  and the role of the state in the media landscape.
+include:
+- media freedom
+- public service broadcasting
+- media diversity
+- state regulation of media
+- digital media policy
+- media pluralism
+- press freedom
+- media funding models
+exclude:
+- specific media law amendments
+- individual media outlet regulation
+- copyright and intellectual property
+- cultural policy funding
+- film and audiovisual support
+- media literacy education programs
+terms:
+  de:
+  - Medienpolitik-Grundfragen
+  - Medienfreiheit
+  - Medienvielfalt
+  - Öffentlich-rechtlicher Rundfunk
+  - Staatsaufsicht über Medien
+  - Medienpluralismus
+  - Medienfreiheitsartikel
+  - Medienrahmenbedingungen
+  fr:
+  - questions fondamentales de la politique des médias
+  - liberté des médias
+  - diversité médiatique
+  - service public audiovisuel
+  - régulation étatique des médias
+  - pluralisme médiatique
+  - article sur la liberté des médias
+  - cadre médiatique
+  it:
+  - questioni fondamentali della politica dei media
+  - libertà dei media
+  - diversità mediatica
+  - servizio pubblico audiovisivo
+  - regolamentazione statale dei media
+  - pluralismo dei media
+  - articolo sulla libertà dei media
+  - quadro mediatico
+  rm:
+  - questiuns fundamentalas da la politica da medias
+  - libertad da medias
+  - diversitad da medias
+  - servetsch public audiovisual
+  - regulaziun statala da medias
+  - pluralissem da medias
+  - artichel davart la libertad da medias
+  - quader medial

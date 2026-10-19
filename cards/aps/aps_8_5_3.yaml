@@ -1,0 +1,60 @@
+id: aps_8_5_3
+version: 1
+source_description: The topic "Löhne" ("Salaires") in the chapter "Arbeit" of the domain "Wirtschaft und
+  Finanzen" in the Année Politique Suisse classification of Swiss politics. Cover what parliamentary affairs
+  on this topic are typically about, and what belongs to neighbouring topics of the same chapter instead.
+name: Wages and Salaries
+definition: Parliamentary affairs concerning the regulation, setting, and conditions of wages and salaries
+  across different sectors, including minimum wage proposals, equal pay for equal work, salary transparency,
+  and the impact of wages on economic competitiveness and social welfare.
+include:
+- Minimum wage legislation
+- Equal pay for equal work
+- Salary transparency
+- Wage negotiations
+- Impact of wages on employment
+- Social security contributions
+- Collective bargaining agreements
+exclude:
+- Unemployment benefits
+- Labor market flexibility
+- Working time regulations
+- Occupational safety
+- Pension system reforms
+terms:
+  de:
+  - Löhne
+  - Entlöhnung
+  - Mindestlohn
+  - Gleicher Lohn für gleiche Arbeit
+  - Lohntransparenz
+  - Tarifverträge
+  - Lohnentwicklung
+  - Sozialpartnerschaft
+  fr:
+  - Salaires
+  - Rémunération
+  - Salaire minimum
+  - Égalité salariale
+  - Transparence salariale
+  - Négociations salariales
+  - Évolution des salaires
+  - Partenariat social
+  it:
+  - Stipendi
+  - Retribuzione
+  - Salario minimo
+  - Parità di retribuzione
+  - Trasparenza salariale
+  - Contratti collettivi
+  - Evoluzione dei salari
+  - Partenariato sociale
+  rm:
+  - Pajaglia
+  - Remuneraziun
+  - Pajaglia minimala
+  - Pajaglia eguala per lavur eguala
+  - Transparenza da las pajaglias
+  - Contracts collectivs
+  - Evoluziun da las pajaglias
+  - Partenadi social

@@ -1,0 +1,65 @@
+id: aps_1_1_3
+version: 1
+source_description: The topic "Territorialfragen" ("Questions territoriales") in the chapter "Politische
+  Grundfragen" of the domain "Akteure und Institutionen" in the Année Politique Suisse classification
+  of Swiss politics. Cover what parliamentary affairs on this topic are typically about, and what belongs
+  to neighbouring topics of the same chapter instead.
+name: Territorial Questions
+definition: Parliamentary affairs concerning the organization, boundaries, and governance of Swiss territories,
+  including cantonal borders, regional autonomy, and the relationship between federal and cantonal jurisdictions.
+include:
+- cantonal borders
+- regional autonomy
+- federal-cantonal jurisdiction
+- territorial reorganization
+- municipal boundaries
+- language regions
+- cross-border cooperation
+exclude:
+- economic policy
+- social welfare
+- education system
+- environmental regulations
+- taxation
+- transport infrastructure
+terms:
+  de:
+  - Territorialfragen
+  - Kantonsgrenzen
+  - Regionalautonomie
+  - Gebietsorganisation
+  - Grenzziehung
+  - Kantonszugehörigkeit
+  - Sprachregionen
+  - Gemeindegrenzen
+  - Grenzüberschreitende Zusammenarbeit
+  fr:
+  - questions territoriales
+  - frontières cantonales
+  - autonomie régionale
+  - organisation du territoire
+  - délimitation des frontières
+  - appartenance cantonale
+  - régions linguistiques
+  - frontières communales
+  - coopération transfrontalière
+  it:
+  - questioni territoriali
+  - confini cantonali
+  - autonomia regionale
+  - organizzazione del territorio
+  - delimitazione dei confini
+  - appartenenza cantonale
+  - regioni linguistiche
+  - confini comunali
+  - cooperazione transfrontaliera
+  rm:
+  - dumondas territorialas
+  - cunfins chantunals
+  - autonomia regiunala
+  - organisaziun dal territori
+  - delimitaziun dals cunfins
+  - appartenenza chantunala
+  - regiuns linguisticas
+  - cunfins communals
+  - cooperaziun transfrontaliera

@@ -1,0 +1,73 @@
+id: curia_66
+version: 1
+source_description: 'The subject area "Energie" (French: "Énergie", Italian: "Energia") that the Swiss
+  Parliamentary Services assign to federal parliamentary affairs in Curia Vista. Cover what affairs in
+  this subject area are typically about.'
+name: Energy Policy
+definition: This topic covers parliamentary affairs related to the production, distribution, consumption,
+  and regulation of energy in Switzerland. It includes discussions on renewable energy sources, energy
+  efficiency, nuclear power, fossil fuels, and the transition to sustainable energy systems. It also encompasses
+  energy security, pricing mechanisms, and environmental impacts of energy use.
+include:
+- renewable energy sources
+- energy efficiency measures
+- nuclear power regulation
+- fossil fuel phase-out
+- energy security
+- electricity pricing
+- sustainable energy transition
+- energy infrastructure development
+- environmental impact of energy use
+exclude:
+- transportation policy
+- agricultural subsidies
+- healthcare funding
+- education reform
+- taxation policy
+- immigration rules
+- cultural funding
+terms:
+  de:
+  - Energiepolitik
+  - Erneuerbare Energien
+  - Energieeffizienz
+  - Kernenergie
+  - Fossile Energieträger
+  - Energieversorgungssicherheit
+  - Strompreise
+  - Nachhaltige Energieversorgung
+  - Energieinfrastruktur
+  - Umweltauswirkungen
+  fr:
+  - politique énergétique
+  - énergies renouvelables
+  - efficacité énergétique
+  - énergie nucléaire
+  - combustibles fossiles
+  - sécurité énergétique
+  - prix de l'électricité
+  - transition énergétique durable
+  - infrastructure énergétique
+  - impacts environnementaux
+  it:
+  - politica energetica
+  - energie rinnovabili
+  - efficienza energetica
+  - energia nucleare
+  - combustibili fossili
+  - sicurezza energetica
+  - prezzi dell'elettricità
+  - transizione energetica sostenibile
+  - infrastrutture energetiche
+  - impatto ambientale
+  rm:
+  - politica d'energia
+  - energias regenerablas
+  - efficienza energetica
+  - energia nucleara
+  - combustibels fossils
+  - segirezza energetica
+  - prets da l'electricitad
+  - transiziun energetica durabla
+  - infrastructura energetica
+  - impacts sin l'ambient

@@ -1,0 +1,65 @@
+id: aps_6_2_1
+version: 1
+source_description: The topic "Energiepolitik" ("Politique énergétique") in the chapter "Energie" of the
+  domain "Infrastruktur und Umwelt" in the Année Politique Suisse classification of Swiss politics. Cover
+  what parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics
+  of the same chapter instead.
+name: Energy Policy
+definition: Parliamentary affairs concerning the development, regulation, and implementation of Switzerland's
+  energy strategy, including renewable energy sources, nuclear power, energy efficiency, and the transition
+  to a sustainable energy system.
+include:
+- renewable energy promotion
+- nuclear power phase-out
+- energy efficiency standards
+- electricity market regulation
+- energy storage solutions
+- climate change mitigation through energy
+- energy independence and security
+- sustainable energy infrastructure
+exclude:
+- transportation policy
+- building codes and construction
+- waste management
+- agricultural policy
+- water management
+- urban planning
+- telecommunications infrastructure
+terms:
+  de:
+  - Energiepolitik
+  - Erneuerbare Energien
+  - Kernenergie
+  - Energieeffizienz
+  - Strommarkt
+  - Energieversorgungssicherheit
+  - Klimaschutz durch Energie
+  - Energiewende
+  - Energiegesetzgebung
+  fr:
+  - politique énergétique
+  - énergies renouvelables
+  - énergie nucléaire
+  - efficacité énergétique
+  - marché de l'électricité
+  - sécurité d'approvisionnement énergétique
+  - transition énergétique
+  - législation énergétique
+  it:
+  - politica energetica
+  - energie rinnovabili
+  - energia nucleare
+  - efficienza energetica
+  - mercato dell'elettricità
+  - sicurezza dell'approvvigionamento energetico
+  - transizione energetica
+  - legislazione energetica
+  rm:
+  - politica d'energia
+  - energias regenerablas
+  - energia nucleara
+  - efficienza energetica
+  - martgà d'electricitad
+  - segirezza dal provedimaint d'energia
+  - transiziun energetica
+  - legislaziun d'energia

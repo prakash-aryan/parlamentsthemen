@@ -1,0 +1,67 @@
+id: aps_4_2_2
+version: 1
+source_description: The topic "Berufsbildung" ("Formation professionnelle") in the chapter "Bildung und
+  Forschung" of the domain "Gesellschaft und Kultur" in the Année Politique Suisse classification of Swiss
+  politics. Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Vocational Education and Training
+definition: Parliamentary affairs on vocational education and training focus on the development, funding,
+  regulation, and quality assurance of apprenticeship systems, vocational schools, and continuing education
+  programs within Switzerland's dual education model.
+include:
+- apprenticeship programs
+- vocational schools
+- dual education system
+- continuing vocational training
+- skills development
+- labor market integration
+- teacher training for vocational education
+- equality in access to vocational paths
+exclude:
+- higher education institutions
+- university research funding
+- primary and secondary school curricula
+- general adult education
+- cultural heritage preservation
+- arts and creative industries funding
+terms:
+  de:
+  - Berufsbildung
+  - Lehre
+  - Duale Ausbildung
+  - Berufsschule
+  - Weiterbildung
+  - Berufslehre
+  - Berufsbildungsgesetz
+  - Qualifikationsverfahren
+  - Berufsorientierung
+  fr:
+  - formation professionnelle
+  - apprentissage
+  - système dual
+  - école professionnelle
+  - formation continue
+  - orientation professionnelle
+  - loi sur la formation professionnelle
+  - procédure de qualification
+  - insertion professionnelle
+  it:
+  - formazione professionale
+  - tirocinio
+  - sistema duale
+  - scuola professionale
+  - formazione continua
+  - orientamento professionale
+  - legge sulla formazione professionale
+  - procedura di qualificazione
+  - integrazione nel mercato del lavoro
+  rm:
+  - furmaziun professiunala
+  - amprendissadi
+  - sistem dual
+  - scola professiunala
+  - furmaziun cuntinua
+  - orientaziun professiunala
+  - lescha davart la furmaziun professiunala
+  - procedura da qualificaziun
+  - integraziun en il martgà da lavur

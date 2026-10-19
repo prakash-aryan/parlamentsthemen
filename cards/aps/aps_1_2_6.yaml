@@ -1,0 +1,69 @@
+id: aps_1_2_6
+version: 1
+source_description: The topic "Judikative" ("Tribunaux") in the chapter "Institutionen" of the domain
+  "Akteure und Institutionen" in the Année Politique Suisse classification of Swiss politics. Cover what
+  parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics of
+  the same chapter instead.
+name: Judiciary
+definition: Parliamentary affairs concerning the organization, functioning, independence, and oversight
+  of courts and judicial authorities at federal, cantonal, and municipal levels. Includes debates on judicial
+  appointments, court procedures, legal reforms, and the relationship between the judiciary and other
+  branches of government.
+include:
+- court organization
+- judicial independence
+- appointment of judges
+- court procedures
+- legal reforms
+- oversight of judiciary
+- conflict between branches
+- access to justice
+exclude:
+- law enforcement
+- police powers
+- criminal investigations
+- penal code amendments
+- prosecution authority
+- prison system
+- criminal procedure
+terms:
+  de:
+  - Justiz
+  - Gerichtsorganisation
+  - Richterwahl
+  - Justizreform
+  - richterliche Unabhängigkeit
+  - Justizaufsicht
+  - Verfassungsgericht
+  - Bundesgericht
+  - Zivilprozessrecht
+  fr:
+  - judiciaire
+  - organisation judiciaire
+  - nomination des juges
+  - indépendance de la justice
+  - réforme judiciaire
+  - contrôle de la justice
+  - tribunal constitutionnel
+  - tribunal fédéral
+  - procédure civile
+  it:
+  - giudiziario
+  - organizzazione giudiziaria
+  - nomina dei giudici
+  - indipendenza della giustizia
+  - riforma giudiziaria
+  - controllo della giustizia
+  - tribunale costituzionale
+  - tribunale federale
+  - procedura civile
+  rm:
+  - giudiziala
+  - organisaziun giudiziala
+  - tscharna da derschaders
+  - independenza da la giustia
+  - reforma giudiziala
+  - survagliaziun da la giustia
+  - tribunal constituziunal
+  - tribunal federal
+  - procedura civila

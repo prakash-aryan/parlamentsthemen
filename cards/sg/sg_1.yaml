@@ -1,0 +1,61 @@
+id: sg_1
+version: 1
+source_description: The subject area "Arbeit und Gewerbe" of the systematic law collection of the canton
+  of St. Gallen, which the canton uses to classify the affairs of its cantonal parliament. Cover what
+  cantonal affairs in this subject area are typically about.
+name: Labor and Trades
+definition: This topic covers cantonal parliamentary affairs related to employment, labor market conditions,
+  vocational training, and the regulation of trades and industries within the canton of St. Gallen.
+include:
+- employment policies
+- labor market regulation
+- vocational education and training
+- trade and industry regulation
+- working conditions
+- apprenticeship programs
+- labor disputes
+- economic development in trades
+exclude:
+- federal tax policy
+- national social security
+- international trade agreements
+- criminal law
+- cantonal budget allocation
+- municipal zoning laws
+terms:
+  de:
+  - Arbeit
+  - Gewerbe
+  - Arbeitsmarkt
+  - Berufsbildung
+  - Arbeitsbedingungen
+  - Handwerk
+  - Industrie
+  - Lehre
+  fr:
+  - travail
+  - métiers
+  - marché du travail
+  - formation professionnelle
+  - conditions de travail
+  - artisanat
+  - industrie
+  - apprentissage
+  it:
+  - lavoro
+  - mestieri
+  - mercato del lavoro
+  - formazione professionale
+  - condizioni di lavoro
+  - artigianato
+  - industria
+  - tirocinio
+  rm:
+  - lavur
+  - misteris
+  - martgà da lavur
+  - furmaziun professiunala
+  - cundiziuns da lavur
+  - mistergnanza
+  - industria
+  - amprendissadi

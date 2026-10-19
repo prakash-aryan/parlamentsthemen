@@ -1,0 +1,62 @@
+id: sg_2
+version: 1
+source_description: The subject area "Erziehung, Bildung, Kultur" of the systematic law collection of
+  the canton of St. Gallen, which the canton uses to classify the affairs of its cantonal parliament.
+  Cover what cantonal affairs in this subject area are typically about.
+name: Education, Culture, and Upbringing
+definition: This topic covers cantonal parliamentary affairs related to the organization, funding, and
+  regulation of educational institutions, cultural activities, and youth upbringing within the canton
+  of St. Gallen.
+include:
+- school system
+- vocational training
+- higher education
+- cultural policy
+- museums and heritage
+- youth programs
+- language education
+- arts funding
+exclude:
+- federal education policy
+- private school regulations
+- international cultural exchanges
+- national heritage sites
+- federal funding for culture
+- private cultural institutions
+terms:
+  de:
+  - Bildung
+  - Schulsystem
+  - Kulturpolitik
+  - Jugendförderung
+  - Sprachunterricht
+  - Museen
+  - Kunstförderung
+  - Berufsbildung
+  fr:
+  - éducation
+  - politique culturelle
+  - système scolaire
+  - encadrement des jeunes
+  - langues
+  - musées
+  - soutien aux arts
+  - formation professionnelle
+  it:
+  - istruzione
+  - politica culturale
+  - sistema scolastico
+  - promozione giovanile
+  - lingue
+  - musei
+  - sostegno alle arti
+  - formazione professionale
+  rm:
+  - scolaziun
+  - politica culturala
+  - sistem da scola
+  - promoziun da giuvenils
+  - linguas
+  - museums
+  - sustegn a las arts
+  - furmaziun professiunala

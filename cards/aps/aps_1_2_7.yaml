@@ -1,0 +1,68 @@
+id: aps_1_2_7
+version: 1
+source_description: The topic "Föderalismus" ("Fédéralisme") in the chapter "Institutionen" of the domain
+  "Akteure und Institutionen" in the Année Politique Suisse classification of Swiss politics. Cover what
+  parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics of
+  the same chapter instead.
+name: Federalism
+definition: Parliamentary affairs on federalism address the distribution and balance of powers between
+  the Swiss Confederation and its cantons, as well as between cantonal and municipal levels. They examine
+  issues of autonomy, subsidiarity, intergovernmental relations, and the constitutional framework governing
+  federal-state relations. Such affairs often debate the scope of cantonal competencies, financial equalization,
+  and the coordination of policies across different levels of government.
+include:
+- distribution of powers between Confederation and cantons
+- cantonal autonomy and competencies
+- subsidiarity in policy implementation
+- intergovernmental coordination and cooperation
+- financial equalization between cantons
+- constitutional provisions on federalism
+- municipal-cantonal relations
+- decentralization of public services
+exclude:
+- individual legislative proposals (motions, postulates)
+- specific policy areas (e.g., education, healthcare)
+- parliamentary questions on current events
+- procedural rules of parliament
+- election or appointment of officials
+terms:
+  de:
+  - Föderalismus
+  - Gewaltenteilung
+  - Kantonsautonomie
+  - Subsidiarität
+  - Intergouvernementale Beziehungen
+  - Finanzausgleich
+  - Verfassungsrecht
+  - Dezentralisierung
+  - Kompetenzverteilung
+  fr:
+  - fédéralisme
+  - séparation des pouvoirs
+  - autonomie cantonale
+  - subsidiarité
+  - relations intergouvernementales
+  - péréquation financière
+  - droit constitutionnel
+  - décentralisation
+  - répartition des compétences
+  it:
+  - federalismo
+  - separazione dei poteri
+  - autonomia cantonale
+  - sussidiarietà
+  - relazioni intergovernative
+  - perequazione finanziaria
+  - diritto costituzionale
+  - decentralizzazione
+  - ripartizione delle competenze
+  rm:
+  - federalissem
+  - separaziun da las pussanzas
+  - autonomia chantunala
+  - subsidiaritad
+  - relaziuns interguvernamentalas
+  - perequaziun finanziala
+  - dretg constituziunal
+  - decentralisaziun
+  - repartiziun da las cumpetenzas

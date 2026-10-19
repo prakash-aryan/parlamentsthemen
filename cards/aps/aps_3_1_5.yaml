@@ -1,0 +1,63 @@
+id: aps_3_1_5
+version: 1
+source_description: The topic "Gute Dienste" ("Bons offices") in the chapter "Europa- und Aussenpolitik"
+  of the domain "Europa- und Aussenpolitik" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Good Offices in Foreign Policy
+definition: Parliamentary affairs concerning Switzerland's mediation and facilitation efforts in international
+  conflicts, negotiations, or diplomatic disputes, often undertaken at the request of other states or
+  international organizations.
+include:
+- Swiss mediation in international conflicts
+- Facilitation of diplomatic negotiations
+- Neutrality-based conflict resolution
+- International peacebuilding initiatives
+- Swiss role as intermediary state
+- Humanitarian diplomacy efforts
+- Support for international dialogue processes
+- Promotion of peaceful dispute settlement
+exclude:
+- Direct foreign aid programs
+- Swiss military deployments abroad
+- Bilateral trade agreements
+- Swiss foreign aid budget decisions
+- Diplomatic representation establishment
+- Voting on international treaties
+terms:
+  de:
+  - Gute Dienste
+  - Vermittlung
+  - Neutralität
+  - Konfliktlösung
+  - Friedensförderung
+  - Diplomatische Vermittlung
+  - Zwischenstaatliche Verhandlungen
+  - Humanitäre Diplomatie
+  fr:
+  - Bons offices
+  - Médiation
+  - Neutralité
+  - Résolution de conflits
+  - Construction de la paix
+  - Médiation diplomatique
+  - Négociations internationales
+  - Diplomatie humanitaire
+  it:
+  - Buoni uffici
+  - Mediazione
+  - Neutralità
+  - Risoluzione dei conflitti
+  - Costruzione della pace
+  - Mediazione diplomatica
+  - Negoziazioni internazionali
+  - Diplomazia umanitaria
+  rm:
+  - Buns uffizis
+  - Mediaziun
+  - Neutralitad
+  - Schliaziun da conflicts
+  - Promoziun da la pasch
+  - Mediaziun diplomatica
+  - Contractivas internaziunalas
+  - Diplomazia humanitara

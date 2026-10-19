@@ -1,0 +1,61 @@
+id: aps_4_2_4
+version: 1
+source_description: The topic "Hochschulen" ("Hautes écoles") in the chapter "Bildung und Forschung" of
+  the domain "Gesellschaft und Kultur" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Higher Education
+definition: Parliamentary affairs concerning the organization, funding, governance, and academic policies
+  of universities, universities of applied sciences, and other higher education institutions in Switzerland.
+include:
+- university funding
+- higher education governance
+- research grants
+- student admissions
+- campus infrastructure
+- academic freedom
+- vocational higher education
+exclude:
+- primary and secondary education
+- cultural heritage preservation
+- museum funding
+- language policy
+- youth programs
+- public libraries
+terms:
+  de:
+  - Hochschulen
+  - Forschung
+  - Studienfinanzierung
+  - Akademische Autonomie
+  - Hochschulrat
+  - Studiengänge
+  - Forschungsförderung
+  - Hochschulpolitik
+  fr:
+  - hautes écoles
+  - recherche
+  - financement universitaire
+  - autonomie académique
+  - council d'université
+  - programmes d'études
+  - subventions de recherche
+  - politique universitaire
+  it:
+  - università
+  - ricerca
+  - finanziamento dell'istruzione superiore
+  - autonomia accademica
+  - consiglio universitario
+  - corsi di studio
+  - sussidi per la ricerca
+  - politica universitaria
+  rm:
+  - scolas autas
+  - perscrutaziun
+  - finanziaziun da scolaziun superiura
+  - autonomia academica
+  - cussegl da scola auta
+  - programs da studi
+  - subvenziuns per perscrutaziun
+  - politica da scolas autas

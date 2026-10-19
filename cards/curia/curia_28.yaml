@@ -1,0 +1,71 @@
+id: curia_28
+version: 1
+source_description: 'The subject area "Soziale Fragen" (French: "Questions sociales", Italian: "Questioni
+  sociali") that the Swiss Parliamentary Services assign to federal parliamentary affairs in Curia Vista.
+  Cover what affairs in this subject area are typically about.'
+name: Social Affairs
+definition: This subject area encompasses parliamentary matters related to social welfare, equality, labor
+  conditions, social security, poverty alleviation, and the well-being of vulnerable or disadvantaged
+  groups within Swiss society.
+include:
+- social welfare programs
+- labor market regulations
+- social security benefits
+- poverty reduction
+- equality and anti-discrimination
+- healthcare access
+- housing policy
+- integration of migrants and minorities
+exclude:
+- environmental protection
+- transport infrastructure
+- taxation policy
+- foreign policy
+- defense and security
+- cultural heritage preservation
+- agricultural subsidies
+terms:
+  de:
+  - Sozialpolitik
+  - Sozialversicherung
+  - Arbeitsbedingungen
+  - Armut
+  - Gleichstellung
+  - Wohnungswesen
+  - Gesundheitsversorgung
+  - Integration
+  - Sozialhilfe
+  - Arbeitslosigkeit
+  fr:
+  - politique sociale
+  - assurance sociale
+  - conditions de travail
+  - pauvreté
+  - égalité
+  - logement
+  - santé publique
+  - intégration
+  - aide sociale
+  - chômage
+  it:
+  - politica sociale
+  - previdenza sociale
+  - condizioni di lavoro
+  - povertà
+  - parità
+  - alloggio
+  - sanità pubblica
+  - integrazione
+  - assistenza sociale
+  - disoccupazione
+  rm:
+  - politica sociala
+  - segirada sociala
+  - cundiziuns da lavur
+  - povertad
+  - egualitad
+  - abitaziun
+  - sanitad publica
+  - integraziun
+  - agid social
+  - disoccupaziun

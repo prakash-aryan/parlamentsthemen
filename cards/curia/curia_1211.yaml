@@ -1,0 +1,75 @@
+id: curia_1211
+version: 1
+source_description: 'The subject area "Zivilrecht" (French: "Droit civil", Italian: "Diritto civile")
+  that the Swiss Parliamentary Services assign to federal parliamentary affairs in Curia Vista. Cover
+  what affairs in this subject area are typically about.'
+name: Civil Law
+definition: Civil law in Swiss parliamentary affairs encompasses legal provisions governing private rights
+  and obligations between individuals, including family law, inheritance, property, contracts, torts,
+  and obligations. It addresses legal relationships not involving the state as a party, focusing on dispute
+  resolution, legal protections, and the regulation of personal and economic interactions. This subject
+  area includes legislative proposals, inquiries, and debates related to the Swiss Civil Code (Zivilgesetzbuch/ZGB)
+  and related federal laws.
+include:
+- Swiss Civil Code (ZGB)
+- family law
+- inheritance law
+- property rights
+- contract law
+- torts and liability
+- obligations and debts
+- personal status
+- guardianship and custody
+exclude:
+- criminal law
+- administrative law
+- constitutional law
+- tax law
+- international law
+- public law disputes
+- criminal liability
+terms:
+  de:
+  - Zivilrecht
+  - Zivilgesetzbuch (ZGB)
+  - Familienrecht
+  - Erbrecht
+  - Eigentumsrecht
+  - Vertragsrecht
+  - Haftpflicht
+  - Obligationenrecht
+  - Personenstand
+  - Obhut und Sorgerecht
+  fr:
+  - droit civil
+  - code civil
+  - droit de la famille
+  - droit des successions
+  - droit de la propriété
+  - droit des contrats
+  - responsabilité civile
+  - obligations
+  - état civil
+  - garde et autorité parentale
+  it:
+  - diritto civile
+  - codice civile
+  - diritto di famiglia
+  - diritto successorio
+  - diritto della proprietà
+  - diritto contrattuale
+  - responsabilità civile
+  - obbligazioni
+  - stato civile
+  - custodia e autorità parentale
+  rm:
+  - dretg civil
+  - cudesch civil
+  - dretg da famiglia
+  - dretg d'ierta
+  - dretg da proprietad
+  - dretg da contracts
+  - respunsabladad civila
+  - obligaziuns
+  - stadi civil
+  - custodia ed autoritad genitoriala

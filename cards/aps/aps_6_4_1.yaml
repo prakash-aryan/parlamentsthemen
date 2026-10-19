@@ -1,0 +1,71 @@
+id: aps_6_4_1
+version: 1
+source_description: The topic "Allgemeiner Umweltschutz" ("Politique de protection de l'environnement")
+  in the chapter "Umweltschutz" of the domain "Infrastruktur und Umwelt" in the Année Politique Suisse
+  classification of Swiss politics. Cover what parliamentary affairs on this topic are typically about,
+  and what belongs to neighbouring topics of the same chapter instead.
+name: General Environmental Protection
+definition: Parliamentary affairs under this topic address broad policies and measures to safeguard the
+  environment, including pollution control, conservation of natural resources, climate change mitigation,
+  and sustainable development at federal, cantonal, and city levels.
+include:
+- pollution prevention
+- climate change mitigation
+- resource conservation
+- sustainable development
+- waste management
+- biodiversity protection
+- environmental impact assessments
+- green infrastructure
+exclude:
+- specific sectoral environmental issues (e.g., nuclear energy, water management)
+- transport infrastructure projects
+- energy policy
+- agricultural environmental regulations
+- urban planning specifics
+- waste disposal facilities
+terms:
+  de:
+  - Umweltschutz
+  - Klimaschutz
+  - Nachhaltigkeit
+  - Luftreinhaltung
+  - Ressourcenschonung
+  - Biodiversität
+  - Umweltverträglichkeitsprüfung
+  - Grüne Infrastruktur
+  - Schadstoffreduktion
+  - Umweltpolitik
+  fr:
+  - protection de l'environnement
+  - lutte contre le changement climatique
+  - développement durable
+  - qualité de l'air
+  - conservation des ressources
+  - biodiversité
+  - étude d'impact environnemental
+  - infrastructure verte
+  - réduction des polluants
+  - politique environnementale
+  it:
+  - protezione ambientale
+  - lotta al cambiamento climatico
+  - sviluppo sostenibile
+  - qualità dell'aria
+  - conservazione delle risorse
+  - biodiversità
+  - valutazione d'impatto ambientale
+  - infrastrutture verdi
+  - riduzione degli inquinanti
+  - politica ambientale
+  rm:
+  - protecziun generala da l'ambient
+  - cumbat cunter il midament climatic
+  - svilup durabel
+  - qualitad da l'aria
+  - conservaziun da resursas
+  - biodiversitad
+  - examinaziun d'impact ambiental
+  - infrastructura verda
+  - reducziun da substanzas nuschaivlas
+  - politica d'ambient

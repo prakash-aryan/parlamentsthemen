@@ -1,0 +1,66 @@
+id: aps_6_4_5
+version: 1
+source_description: The topic "Luftreinhaltung" ("Gestion de la qualité de l'air") in the chapter "Umweltschutz"
+  of the domain "Infrastruktur und Umwelt" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Air Quality Management
+definition: Parliamentary affairs under this topic focus on measures to monitor, regulate, and improve
+  air quality across Switzerland, including emissions control, pollution reduction strategies, and enforcement
+  of environmental standards.
+include:
+- air pollution monitoring
+- emission limits for vehicles and industry
+- renewable energy promotion
+- public health impacts of air quality
+- urban air quality improvement
+- cross-border air pollution agreements
+- incentives for clean technologies
+- legislation on fine particulate matter (PM2.5, PM10)
+exclude:
+- waste management
+- water quality regulation
+- noise pollution control
+- climate change mitigation policies
+- biodiversity protection measures
+terms:
+  de:
+  - Luftreinhaltung
+  - Feinstaubbelastung
+  - Emissionen
+  - Luftqualitätsmonitoring
+  - Umweltgesetzgebung
+  - CO2-Reduktion
+  - saubere Mobilität
+  - Industrieabgase
+  - Gesundheitsrisiken
+  fr:
+  - gestion de la qualité de l'air
+  - pollution atmosphérique
+  - particules fines
+  - surveillance de l'air
+  - normes d'émissions
+  - transition énergétique
+  - mobilité propre
+  - effets sur la santé
+  - lois environnementales
+  it:
+  - qualità dell'aria
+  - inquinamento atmosferico
+  - particolato fine
+  - monitoraggio dell'aria
+  - norme sulle emissioni
+  - energia rinnovabile
+  - mobilità sostenibile
+  - salute pubblica
+  - legislazione ambientale
+  rm:
+  - qualitad da l'aria
+  - polluziun da l'aria
+  - particules finas
+  - surveglianza da l'aria
+  - limits d'emissiuns
+  - energia regenerabla
+  - mobilitad durabla
+  - impacts sin la sanadad
+  - legislaziun d'ambient

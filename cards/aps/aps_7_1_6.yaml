@@ -1,0 +1,62 @@
+id: aps_7_1_6
+version: 1
+source_description: The topic "Rechtshilfe" ("Entraide judiciaire") in the chapter "Rechtsordnung" of
+  the domain "Rechts- und Sicherheitspolitik" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Judicial Assistance
+definition: Parliamentary affairs concerning the legal mechanisms and procedures through which Swiss authorities
+  cooperate with foreign jurisdictions in criminal investigations, extradition, and mutual legal support.
+  This includes debates on treaties, domestic implementation, data protection, and the balance between
+  international obligations and national legal standards.
+include:
+- extradition treaties
+- mutual legal assistance agreements
+- international criminal cooperation
+- data protection in cross-border cases
+- implementation of international conventions
+- Swiss participation in EU judicial frameworks
+- domestic legal adjustments for foreign requests
+- transparency and oversight of assistance requests
+exclude:
+- domestic criminal procedure
+- national criminal law
+- civil law disputes
+- intelligence sharing
+- border control and migration enforcement
+- international trade law
+- human rights policy (general)
+terms:
+  de:
+  - Rechtshilfe
+  - Auslieferungsvertrag
+  - internationale Rechtshilfe
+  - StPO-Anwendung
+  - Datenschutz
+  - EU-Justizrahmen
+  - Grenzkontrolle
+  - Überwachungsmassnahmen
+  fr:
+  - entraide judiciaire
+  - traité d'extradition
+  - coopération pénale internationale
+  - protection des données
+  - cadre judiciaire UE
+  - procédure pénale nationale
+  - surveillance
+  it:
+  - assistenza giudiziaria
+  - trattato di estradizione
+  - cooperazione penale internazionale
+  - protezione dei dati
+  - quadro giudiziario UE
+  - procedura penale svizzera
+  - sorveglianza
+  rm:
+  - assistenza giudiziala
+  - tract d’extradiziun
+  - cooperaziun penala internaziunala
+  - protecziun da datas
+  - quader giudizial UE
+  - procedura penala svizra
+  - surveglianza

@@ -1,0 +1,73 @@
+id: aps_3_1_7
+version: 1
+source_description: The topic "Entwicklungspolitik" ("Politique de développement") in the chapter "Europa-
+  und Aussenpolitik" of the domain "Europa- und Aussenpolitik" in the Année Politique Suisse classification
+  of Swiss politics. Cover what parliamentary affairs on this topic are typically about, and what belongs
+  to neighbouring topics of the same chapter instead.
+name: Development Policy
+definition: Parliamentary affairs under this topic focus on Switzerland's international development cooperation,
+  aid programs, and strategies to reduce global poverty and inequality. It covers debates on funding,
+  priorities, and effectiveness of Swiss development initiatives abroad. The topic also addresses Switzerland's
+  role in multilateral development frameworks and partnerships.
+include:
+- Swiss international aid programs
+- Global poverty reduction strategies
+- Multilateral development cooperation
+- Aid effectiveness and evaluation
+- Swiss development priorities abroad
+- Humanitarian assistance and disaster relief
+- Sustainable development goals implementation
+- Development finance and funding mechanisms
+exclude:
+- Domestic social welfare programs
+- Swiss foreign trade agreements
+- Bilateral diplomatic relations
+- Arms exports and security policy
+- Swiss immigration and asylum policy
+- Environmental policy (unless linked to development)
+- Cultural exchange programs
+terms:
+  de:
+  - Entwicklungspolitik
+  - Internationale Entwicklungszusammenarbeit
+  - Entwicklungshilfe
+  - Nachhaltige Entwicklung
+  - Armutsbekämpfung
+  - Multilaterale Zusammenarbeit
+  - Aid Effectiveness
+  - Entwicklungsprioritäten
+  - Finanzierungsmechanismen
+  - Humanitäre Hilfe
+  fr:
+  - Politique de développement
+  - Coopération au développement
+  - Aide au développement
+  - Objectifs de développement durable
+  - Lutte contre la pauvreté
+  - Coopération multilatérale
+  - Efficacité de l'aide
+  - Priorités de développement
+  - Financement du développement
+  - Aide humanitaire
+  it:
+  - Politica di sviluppo
+  - Cooperazione allo sviluppo
+  - Aiuto allo sviluppo
+  - Obiettivi di sviluppo sostenibile
+  - Lotta alla povertà
+  - Cooperazione multilaterale
+  - Efficacia dell'aiuto
+  - Priorità di sviluppo
+  - Meccanismi di finanziamento
+  - Aiuto umanitario
+  rm:
+  - Politica da svilup
+  - Cooperaziun da svilup
+  - Agid al svilup
+  - Finanzas per il svilup
+  - Cumbatter la povertad
+  - Cooperaziun multilaterala
+  - Efficacitad da l'agid
+  - Prioritads da svilup
+  - Objectivs da svilup durabel
+  - Agid umanitar

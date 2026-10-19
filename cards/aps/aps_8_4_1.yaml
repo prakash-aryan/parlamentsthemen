@@ -1,0 +1,64 @@
+id: aps_8_4_1
+version: 1
+source_description: The topic "Agrarpolitik" ("Politique agricole") in the chapter "Landwirtschaft" of
+  the domain "Wirtschaft und Finanzen" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Agricultural Policy
+definition: Parliamentary affairs concerning the regulation, support, and development of agriculture in
+  Switzerland, including subsidies, rural development, food security, and environmental sustainability
+  in farming practices.
+include:
+- subsidies for farmers
+- rural development programs
+- food security measures
+- environmental sustainability in agriculture
+- animal welfare regulations
+- organic farming promotion
+- agricultural research funding
+- export and import policies for agricultural products
+exclude:
+- financial market regulation
+- industrial policy
+- trade agreements (general)
+- urban planning
+- energy policy
+- transport infrastructure
+- tourism development
+terms:
+  de:
+  - Agrarpolitik
+  - Landwirtschaftssubventionen
+  - ländliche Entwicklung
+  - Nachhaltige Landwirtschaft
+  - Tierwohl
+  - Bio-Landbau
+  - Agrarforschung
+  - Export- und Importpolitik für Agrarprodukte
+  fr:
+  - politique agricole
+  - subventions agricoles
+  - développement rural
+  - agriculture durable
+  - bien-être animal
+  - agriculture biologique
+  - recherche agronomique
+  - politique d'exportation et d'importation de produits agricoles
+  it:
+  - politica agricola
+  - sussidi all'agricoltura
+  - sviluppo rurale
+  - agricoltura sostenibile
+  - benessere animale
+  - agricoltura biologica
+  - ricerca agraria
+  - politica di esportazione e importazione di prodotti agricoli
+  rm:
+  - politica agricola
+  - subvenziuns per purs
+  - svilup rural
+  - agricultura durabla
+  - bainstar d'animals
+  - agricultura biologica
+  - perscrutaziun agricola
+  - politica d'export e d'import da products agriculs

@@ -1,0 +1,64 @@
+id: aps_7_1_1
+version: 1
+source_description: The topic "Grundrechte" ("Droits fondamentaux") in the chapter "Rechtsordnung" of
+  the domain "Rechts- und Sicherheitspolitik" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Fundamental Rights
+definition: Parliamentary affairs concerning the protection, interpretation, and application of individual
+  and collective rights guaranteed by the Swiss Constitution and international human rights treaties.
+  This includes debates on civil liberties, equality, privacy, freedom of expression, and the balance
+  between security measures and fundamental rights.
+include:
+- protection of civil liberties
+- equality and non-discrimination
+- privacy and data protection
+- freedom of expression and information
+- right to a fair trial
+- application of international human rights conventions
+- constitutional guarantees of individual rights
+- balancing security measures with fundamental rights
+exclude:
+- criminal law procedures
+- national security strategies
+- border control and migration policy
+- intelligence and surveillance operations
+- police powers and law enforcement
+- penal system reforms
+terms:
+  de:
+  - Grundrechte
+  - Menschenrechte
+  - Persönliche Freiheit
+  - Meinungsfreiheit
+  - Datenschutz
+  - Diskriminierungsverbot
+  - Rechtsstaatlichkeit
+  - Verhältnismässigkeit
+  fr:
+  - droits fondamentaux
+  - libertés individuelles
+  - égalité et non-discrimination
+  - protection des données
+  - liberté d'expression
+  - procédure équitable
+  - convention internationale des droits de l'homme
+  - proportionnalité
+  it:
+  - diritti fondamentali
+  - libertà individuali
+  - uguaglianza e non discriminazione
+  - protezione dei dati
+  - libertà di espressione
+  - processo equo
+  - convenzione internazionale sui diritti umani
+  - proporzionalità
+  rm:
+  - dretgs fundamentals
+  - libertads individualas
+  - egualitad e nun discriminaziun
+  - protecziun da datas
+  - libertad d’expressiun
+  - process equitabel
+  - convenziun internaziunala davart ils dretgs umans
+  - proporziunalitad

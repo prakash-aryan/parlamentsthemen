@@ -1,0 +1,73 @@
+id: aps_6_1_2
+version: 1
+source_description: The topic "Öffentlicher Verkehr" ("Transport public") in the chapter "Verkehr und
+  Kommunikation" of the domain "Infrastruktur und Umwelt" in the Année Politique Suisse classification
+  of Swiss politics. Cover what parliamentary affairs on this topic are typically about, and what belongs
+  to neighbouring topics of the same chapter instead.
+name: Public Transportation
+definition: Parliamentary affairs concerning the planning, funding, regulation, and operation of public
+  transport systems (trains, trams, buses, boats, cable cars) within Switzerland, including infrastructure
+  development, accessibility, sustainability, and integration with other transport modes.
+include:
+- public transport infrastructure
+- railway networks
+- bus and tram services
+- cable car and funicular systems
+- transport accessibility for disabled persons
+- sustainable mobility
+- integration of transport modes
+- public transport funding
+- ticketing and fare systems
+exclude:
+- private car usage
+- road construction and maintenance
+- aviation policy
+- shipping and maritime transport
+- telecommunications regulation
+- postal services
+- personal mobility devices (e.g., e-bikes)
+terms:
+  de:
+  - Öffentlicher Verkehr
+  - Schienenverkehr
+  - Buslinien
+  - Tram
+  - Seilbahnen
+  - Barrierefreiheit
+  - Nachhaltige Mobilität
+  - Verkehrsintegration
+  - Finanzierung des ÖV
+  - Tarifsysteme
+  fr:
+  - Transports publics
+  - Réseau ferroviaire
+  - Lignes de bus
+  - Tramway
+  - Téléphériques
+  - Accessibilité
+  - Mobilité durable
+  - Intégration des modes de transport
+  - Financement des transports publics
+  - Systèmes tarifaires
+  it:
+  - Trasporto pubblico
+  - Rete ferroviaria
+  - Linee di autobus
+  - Tram
+  - Funivie
+  - Accessibilità
+  - Mobilità sostenibile
+  - Integrazione modi di trasporto
+  - Finanziamento trasporto pubblico
+  - Sistemi tariffari
+  rm:
+  - Transport public
+  - Rait da viafier
+  - Lingias da bus
+  - Tram
+  - Telefericas
+  - Accessibilitad
+  - Mobilitad durabla
+  - Integraziun dals modus da transport
+  - Finanziaziun dal transport public
+  - Sistems da tariffas

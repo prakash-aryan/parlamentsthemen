@@ -1,0 +1,72 @@
+id: aps_3_1_6
+version: 1
+source_description: The topic "Aussenwirtschaftspolitik" ("Politique économique extérieure") in the chapter
+  "Europa- und Aussenpolitik" of the domain "Europa- und Aussenpolitik" in the Année Politique Suisse
+  classification of Swiss politics. Cover what parliamentary affairs on this topic are typically about,
+  and what belongs to neighbouring topics of the same chapter instead.
+name: Swiss Foreign Economic Policy
+definition: Parliamentary affairs concerning Switzerland's trade relations, economic agreements, and market
+  access with non-EU countries, including negotiations, ratification of trade treaties, and economic diplomacy.
+  It covers measures to promote Swiss exports, attract foreign investment, and ensure economic competitiveness
+  in the global market.
+include:
+- bilateral trade agreements
+- export promotion
+- market access negotiations
+- economic diplomacy
+- foreign investment
+- trade barriers
+- WTO commitments
+- economic sanctions
+exclude:
+- EU integration
+- Schengen/Dublin agreements
+- immigration policy
+- development aid
+- human rights diplomacy
+- security policy
+terms:
+  de:
+  - Aussenwirtschaftspolitik
+  - Freihandelsabkommen
+  - Exportförderung
+  - Wirtschaftsdiplomatie
+  - Marktzugang
+  - Handelshemmnisse
+  - WTO-Verpflichtungen
+  - Investitionsschutz
+  - Wirtschaftsbeziehungen
+  - Zollpolitik
+  fr:
+  - politique économique extérieure
+  - accords de libre-échange
+  - promotion des exportations
+  - diplomatie économique
+  - accès aux marchés
+  - barrières commerciales
+  - engagements OMC
+  - protection des investissements
+  - relations économiques
+  - politique douanière
+  it:
+  - politica economica estera
+  - accordi di libero scambio
+  - promozione delle esportazioni
+  - diplomazia economica
+  - accesso ai mercati
+  - barriere commerciali
+  - impegni OMC
+  - protezione degli investimenti
+  - relazioni economiche
+  - politica doganale
+  rm:
+  - politica economica d'ordaifer
+  - cunvegnas da commerzi liber
+  - promoziun da las exportaziuns
+  - diplomazia economica
+  - access als martgads
+  - barrieras commercialas
+  - impegns OMC
+  - protecziun d'investiziuns
+  - relaziuns economicas
+  - politica da dazi

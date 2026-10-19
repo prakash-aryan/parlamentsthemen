@@ -1,0 +1,122 @@
+id: digitalisation
+version: 2
+source_description: 'Digitalisation, in the sense of the list of political affairs on digitalisation published by
+  Digital Public Services Switzerland: affairs about the digital transformation of the state, the administration,
+  the economy and society. This covers e-government and digital public services, electronic identity, cybersecurity,
+  artificial intelligence, data protection and the use of data, digital media, and broadband and telecommunication
+  networks.'
+name: Digitalisation
+definition: Affairs about the digital transformation of the state, the administration, the economy and society.
+  This covers e-government and digital public services, IT systems and IT projects of public bodies, electronic
+  identity, cybersecurity and cybercrime, artificial intelligence, data protection and the use and exchange of data,
+  the digital economy and online platforms, digital and broadcast media, and broadband and telecommunication networks.
+include:
+- e-government, online services and digital administration
+- IT systems, software and IT procurement of public bodies
+- electronic identity, electronic voting and paperless parliamentary work
+- cybersecurity, cyberattacks, cybercrime and cyberbullying
+- artificial intelligence and algorithms
+- data protection, open data and data exchange between authorities
+- digital economy, online platforms, e-commerce and their taxation
+- digital skills and digital tools in schools and training
+- remote work and home office
+- digital media, social media and broadcasting technology (DAB+, FM switch-off)
+- broadband, mobile networks (5G) and telecommunication
+exclude:
+- affairs that mention a website, e-mail or a digital tool only in passing
+- budget, tax or staff matters without a digital component
+- transport or energy infrastructure without digital technology
+- general economic or social policy without a digital aspect
+terms:
+  de:
+  - Digitalisierung
+  - E-Government
+  - digitale Identität
+  - Cybersicherheit
+  - Künstliche Intelligenz
+  - Datenschutz
+  - Datenverwendung
+  - digitale Medien
+  - Breitbandnetze
+  - Telekommunikationsnetze
+  - Informatik
+  - IT-System
+  - Software
+  - Onlineplattform
+  - Onlinehandel
+  - Cyberkriminalität
+  - Cybermobbing
+  - E-Voting
+  - elektronische Stimmabgabe
+  - Homeoffice
+  - Open Data
+  - Datenaustausch
+  - 5G
+  - DAB+
+  - digitale Wirtschaft
+  fr:
+  - numérisation
+  - e-gouvernement
+  - identité numérique
+  - cybersécurité
+  - intelligence artificielle
+  - protection des données
+  - utilisation des données
+  - médias numériques
+  - réseaux à large bande
+  - réseaux de télécommunication
+  - informatique
+  - système informatique
+  - logiciel
+  - plateforme en ligne
+  - commerce en ligne
+  - cybercriminalité
+  - cyberharcèlement
+  - vote électronique
+  - télétravail
+  - données ouvertes
+  - échange de données
+  - 5G
+  - DAB+
+  - économie numérique
+  it:
+  - digitalizzazione
+  - e-governo
+  - identità digitale
+  - cybersicurezza
+  - intelligenza artificiale
+  - protezione dei dati
+  - uso dei dati
+  - media digitali
+  - reti a banda larga
+  - reti di telecomunicazione
+  - informatica
+  - sistema informatico
+  - software
+  - piattaforma online
+  - commercio online
+  - cibercriminalità
+  - cyberbullismo
+  - voto elettronico
+  - telelavoro
+  - dati aperti
+  - scambio di dati
+  - 5G
+  - DAB+
+  - economia digitale
+  rm:
+  - digitalisaziun
+  - e-gouvern
+  - identitad digitala
+  - cybersgirezza
+  - intelligenza artificiala
+  - protecziun da datas
+  - utilisaziun da datas
+  - medias digitalas
+  - retgs da banda lada
+  - retgs da telecommunicaziun
+  - informatica
+  - votaziun electronica
+  - lavur da chasa
+  - datas avertas
+note: Version 2 widens version 1 after an error analysis on the development split (affairs before 2024) only.

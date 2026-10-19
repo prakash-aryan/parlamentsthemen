@@ -1,0 +1,63 @@
+id: aps_4_3_1
+version: 1
+source_description: The topic "Kultur" ("Culture") in the chapter "Kultur, Sprache, Kirchen" of the domain
+  "Gesellschaft und Kultur" in the Année Politique Suisse classification of Swiss politics. Cover what
+  parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics of
+  the same chapter instead.
+name: Culture
+definition: Parliamentary affairs under this topic focus on policies, funding, and initiatives related
+  to arts, heritage, cultural diversity, and the promotion of cultural activities and institutions in
+  Switzerland. It encompasses debates on cultural preservation, support for creative industries, and the
+  role of culture in social cohesion and national identity.
+include:
+- arts funding
+- cultural heritage preservation
+- museums and galleries
+- support for creative industries
+- cultural diversity and inclusion
+- language promotion
+- cultural events and festivals
+- cultural education programs
+exclude:
+- religious affairs
+- language policy implementation
+- church-state relations
+- media regulation
+- tourism promotion
+terms:
+  de:
+  - Kulturpolitik
+  - Kunstförderung
+  - Kulturerbe
+  - Museen
+  - Kreativwirtschaft
+  - Kulturelle Vielfalt
+  - Sprachförderung
+  - Kulturveranstaltungen
+  fr:
+  - politique culturelle
+  - soutien aux arts
+  - patrimoine culturel
+  - musées et galeries
+  - industrie créative
+  - diversité culturelle
+  - promotion linguistique
+  - événements culturels
+  it:
+  - politica culturale
+  - sostegno alle arti
+  - patrimonio culturale
+  - musei e gallerie
+  - economia creativa
+  - diversità culturale
+  - promozione linguistica
+  - manifestazioni culturali
+  rm:
+  - politica culturala
+  - sustegn a las arts
+  - patrimoni cultural
+  - museums e gallarias
+  - economia creativa
+  - diversitad culturala
+  - promoziun linguistica
+  - eveniments culturals

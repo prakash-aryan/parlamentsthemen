@@ -1,0 +1,64 @@
+id: aps_5_1_2
+version: 1
+source_description: The topic "Ärzte und Pflegepersonal" ("Médecins et personnel soignant") in the chapter
+  "Gesundheit, Sozialhilfe, Sport" of the domain "Gesundheit und Sozialsystem" in the Année Politique
+  Suisse classification of Swiss politics. Cover what parliamentary affairs on this topic are typically
+  about, and what belongs to neighbouring topics of the same chapter instead.
+name: Healthcare Workforce
+definition: Parliamentary affairs concerning the availability, training, working conditions, and retention
+  of doctors and nursing staff within Switzerland's healthcare system. Includes debates on workforce shortages,
+  professional development, and policies to ensure adequate medical and nursing care across all regions.
+include:
+- doctor recruitment and retention
+- nursing staff shortages
+- healthcare workforce training programs
+- working conditions for medical professionals
+- salaries and benefits for doctors and nurses
+- rural healthcare access
+- international medical workforce integration
+- continuing education for healthcare providers
+exclude:
+- pharmaceutical pricing
+- health insurance coverage
+- hospital infrastructure development
+- public health campaigns
+- medical research funding
+- e-health and digital health systems
+- healthcare financing models
+terms:
+  de:
+  - Arzt- und Pflegefachkräftemangel
+  - Ausbildung im Gesundheitswesen
+  - Arbeitsbedingungen
+  - Löhne und Sozialleistungen
+  - Ruraler Versorgungsgrad
+  - Weiterbildung
+  - Fachkräftebindung
+  - Gesundheitsfachpersonen
+  fr:
+  - pénurie de médecins et infirmiers
+  - formation du personnel soignant
+  - conditions de travail
+  - rémunération
+  - accessibilité aux soins en milieu rural
+  - perfectionnement professionnel
+  - rétention des compétences
+  - professionnels de la santé
+  it:
+  - carenza di medici e infermieri
+  - formazione del personale sanitario
+  - condizioni di lavoro
+  - retribuzione
+  - accesso alle cure nelle zone rurali
+  - aggiornamento professionale
+  - fidelizzazione del personale
+  - professionisti sanitari
+  rm:
+  - mancanza da miedis e tgirunzs
+  - scolaziun dal persunal da sanadad
+  - cundiziuns da lavur
+  - pajaglia e prestaziuns socialas
+  - access a las tgira en regiuns ruralas
+  - furmaziun supplementara
+  - liamaziun da las forzas
+  - professiunists da sanadad

@@ -1,0 +1,67 @@
+id: aps_6_1_8
+version: 1
+source_description: The topic "Telekommunikation" ("Télécommunication") in the chapter "Verkehr und Kommunikation"
+  of the domain "Infrastruktur und Umwelt" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Telecommunications
+definition: Parliamentary affairs concerning the regulation, development, and infrastructure of telecommunications
+  networks, services, and policies in Switzerland, including broadband expansion, spectrum allocation,
+  and digital infrastructure.
+include:
+- Broadband expansion
+- 5G network rollout
+- Spectrum allocation
+- Digital infrastructure
+- Telecom regulation
+- Universal service obligations
+- Cybersecurity in telecom
+- Data privacy in telecom services
+exclude:
+- Postal services
+- Railway infrastructure
+- Road transport networks
+- Air traffic regulation
+- Energy grid infrastructure
+- Environmental impact of transport
+terms:
+  de:
+  - Telekommunikation
+  - Breitbandausbau
+  - 5G-Netz
+  - Frequenzvergabe
+  - Telekom-Regulierung
+  - Universaldienst
+  - Cybersicherheit
+  - Datenschutz
+  - Netzneutralität
+  fr:
+  - Télécommunications
+  - Déploiement du haut débit
+  - Réseau 5G
+  - Attribution de fréquences
+  - Régulation des télécoms
+  - Service universel
+  - Sécurité informatique
+  - Protection des données
+  - Neutralité du net
+  it:
+  - Telecomunicazioni
+  - Espansione della banda larga
+  - Rete 5G
+  - Assegnazione delle frequenze
+  - Regolamentazione delle telecomunicazioni
+  - Servizio universale
+  - Sicurezza informatica
+  - Protezione dei dati
+  - Neutralità della rete
+  rm:
+  - Telecommunicaziun
+  - Expansiun da la banda lada
+  - Rait 5G
+  - Assegnaziun da frequenzas
+  - Regulaziun da las telecommunicaziuns
+  - Servetsch universal
+  - Segirezza informatica
+  - Protecziun da datas
+  - Neutralitad da la rait

@@ -1,0 +1,73 @@
+id: curia_48
+version: 1
+source_description: 'The subject area "Verkehr" (French: "Transports", Italian: "Trasporti") that the
+  Swiss Parliamentary Services assign to federal parliamentary affairs in Curia Vista. Cover what affairs
+  in this subject area are typically about.'
+name: Transportation
+definition: This topic covers parliamentary affairs related to the planning, construction, operation,
+  and regulation of all modes of transport within Switzerland, including road, rail, air, water, and public
+  transit systems.
+include:
+- road infrastructure
+- railway networks
+- public transport systems
+- aviation policy
+- waterway transport
+- traffic safety regulations
+- intermodal transport connections
+- sustainable mobility
+- transport funding and subsidies
+exclude:
+- energy policy
+- environmental protection
+- urban planning
+- building construction
+- digital infrastructure
+- healthcare services
+- education policy
+- agriculture
+terms:
+  de:
+  - Verkehr
+  - Strassenverkehr
+  - Eisenbahn
+  - Öffentlicher Verkehr
+  - Luftfahrt
+  - Schifffahrt
+  - Mobilität
+  - Verkehrssicherheit
+  - Intermodaler Verkehr
+  - Nachhaltige Mobilität
+  - Verkehrsfinanzierung
+  fr:
+  - Transports
+  - Réseau routier
+  - Rail
+  - Transports publics
+  - Aviation
+  - Navigation
+  - Sécurité routière
+  - Mobilité durable
+  - Financement des transports
+  - Intermodalité
+  it:
+  - Trasporti
+  - Infrastruttura stradale
+  - Ferrovia
+  - Trasporto pubblico
+  - Aviazione
+  - Trasporto fluviale
+  - Sicurezza stradale
+  - Mobilità sostenibile
+  - Finanziamento dei trasporti
+  - Intermodalità
+  rm:
+  - Traffic
+  - Viafier
+  - Transport public
+  - Aviatica
+  - Navigaziun
+  - Siertad da traffic
+  - Mobilitad durabla
+  - Finanziaziun da transports
+  - Intermodalitad

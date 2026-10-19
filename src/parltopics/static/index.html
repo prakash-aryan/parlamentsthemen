@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang="de" translate="no">
+<head>
+<meta charset="utf-8">
+<meta name="google" content="notranslate">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Parlamentsthemen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Instrument+Sans:wdth,wght@75..100,400..700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+  :root {
+    --paper: #f6f4ef;
+    --card: #ffffff;
+    --ink: #111111;
+    --grey: #6d6a64;
+    --hair: #d9d5cc;
+    --red: #e3000f;
+    --yes: #0a8f4d;
+    --amber: #b97700;
+    --s1: 8px; --s2: 16px; --s3: 24px; --s4: 40px; --s5: 64px;
+    --font-display: "Archivo", "Arial Narrow", Arial, sans-serif;
+    --font-body: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+    color-scheme: light;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { background: var(--paper); color: var(--ink); font: 400 16px/1.5 var(--font-body); padding-left: max(16px, 2.5vw, env(safe-area-inset-left, 0px)); padding-right: max(16px, 2.5vw, env(safe-area-inset-right, 0px)); padding-block: 0 var(--s5); }
+  .page { width: 100%; }
+  [hidden] { display: none !important; }
+  .topbar { display: flex; justify-content: space-between; gap: var(--s1) var(--s2); padding-block: var(--s2); border-bottom: 2px solid var(--ink); font: 600 12px/1.5 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; flex-wrap: wrap; }
+  .topbar span:last-child { color: var(--red); }
+
+  .hero { position: relative; display: grid; align-content: start; min-height: clamp(400px, 52vh, 640px); overflow: hidden; border-bottom: 2px solid var(--ink); cursor: crosshair; touch-action: pan-y; }
+  .hero canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  .hero-text { position: relative; display: grid; gap: var(--s3); justify-items: start; padding-block: var(--s3) var(--s4); pointer-events: none; }
+  .hero h1 { margin: 0; font: 900 clamp(56px, 10vw, 220px)/.82 var(--font-display); font-stretch: 68%; letter-spacing: -.02em; text-transform: uppercase; }
+  html:not([lang="de"]) .hero h1 { font-size: clamp(40px, 8vw, 180px); }
+  .hero h1 em { font-style: normal; color: var(--red); display: block; }
+  .hero .lede { margin: 0; padding-left: .06em; font: 500 20px/1.35 var(--font-body); max-width: 40ch; text-wrap: balance; }
+  .langs { display: flex; gap: 4px; pointer-events: auto; cursor: default; padding: 2px; }
+  .langs button { font: 600 14px/1 var(--font-mono); letter-spacing: .06em; padding: 7px 10px 6px; border: 1.5px solid transparent; background: transparent; color: var(--grey); cursor: pointer; transition: color .15s, border-color .15s, background .15s; }
+  .langs button:hover { color: var(--ink); }
+  .langs .sep { width: 1.5px; background: var(--hair); margin: 4px 6px; }
+  .langs button[aria-pressed="true"] { color: var(--ink); border-color: var(--ink); background: var(--card); }
+  .langs button:focus-visible { outline: 3px solid var(--red); outline-offset: 2px; }
+
+  .num { font: 600 12px/1 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--red); }
+  .field { display: grid; gap: var(--s1); }
+  select, input { width: 100%; padding: 11px 12px; border: 1.5px solid var(--ink); border-radius: 0; background: var(--paper); color: var(--ink); font: 500 15px/1.35 var(--font-body); }
+  select:focus, input:focus { outline: 3px solid var(--red); outline-offset: 1px; }
+  .go { padding: var(--s2) 20px; border: 0; background: var(--red); color: #fff; font: 800 20px/1 var(--font-display); font-stretch: 75%; text-transform: uppercase; letter-spacing: .04em; cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: background .15s, letter-spacing .2s; }
+  .go:hover { background: var(--ink); letter-spacing: .07em; }
+  .go[disabled] { cursor: progress; background: var(--grey); }
+  .go:focus-visible, .flag:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+  .note { margin: 0; font-size: 14px; color: var(--grey); max-width: 70ch; }
+  .fnote { margin: 0; padding: var(--s1) var(--s2); border-left: 4px solid var(--amber); background: var(--card); font-size: 14px; max-width: 80ch; }
+  select option:disabled { color: var(--hair); }
+
+  .finder { margin-top: var(--s5); display: grid; gap: var(--s2); }
+  .finder > h2 { margin-bottom: var(--s1); }
+  .finder > .filters { margin-top: var(--s1); }
+  .finder h2 { margin: 0; font: 800 clamp(30px, 3.6vw, 52px)/1 var(--font-display); font-stretch: 75%; text-transform: uppercase; text-wrap: balance; }
+  .sbar { display: grid; grid-template-columns: minmax(0, 1fr) auto; border: 2px solid var(--ink); background: var(--card); }
+  .sbar input { border: 0; padding: 18px 20px; font: 500 clamp(18px, 2vw, 24px)/1.2 var(--font-body); background: var(--card); color: var(--ink); min-width: 0; }
+  .sbar input:focus { outline: 3px solid var(--red); outline-offset: -3px; }
+  .sbar .go { min-width: 200px; gap: var(--s2); }
+  .examples { display: flex; flex-wrap: wrap; gap: var(--s1); }
+  .examples button { border: 1.5px solid var(--ink); background: transparent; padding: var(--s1) 12px; font: 500 14px/1.2 var(--font-body); color: var(--ink); cursor: pointer; transition: background .15s, color .15s; }
+  .examples button:hover { background: var(--ink); color: var(--paper); }
+  .filters { display: grid; grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.2fr) minmax(0, .7fr) minmax(0, .7fr); gap: var(--s2); }
+  .filters .field > span { font: 600 12px/1 var(--font-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--grey); }
+  .rcount { margin: var(--s2) 0 0; font: 600 12px/1.3 var(--font-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--grey); }
+  .hits { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--ink); }
+  .hits:empty { border-top: 0; }
+  .hit { border-bottom: 1.5px solid var(--hair); }
+  .hit.open { background: var(--card); margin-inline: calc(-1 * var(--s2)); padding-inline: var(--s2); }
+  .hit-head { width: 100%; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--s1) var(--s3); text-align: left; background: none; border: 0; padding: var(--s3) 0; cursor: pointer; color: var(--ink); }
+  .hit-title { font: 700 clamp(16px, 1.4vw, 19px)/1.3 var(--font-body); text-wrap: pretty; }
+  .hit-head:hover .hit-title { text-decoration: underline; text-underline-offset: 3px; }
+  .hit-head:focus-visible { outline: 3px solid var(--red); outline-offset: -3px; }
+  .hit-meta { grid-column: 1; font: 500 12px/1.5 var(--font-mono); color: var(--grey); letter-spacing: .02em; }
+  .hit-side { grid-column: 2; grid-row: 1 / span 2; display: grid; justify-items: end; align-content: start; gap: var(--s1); }
+  .hit-body { padding: 0 0 var(--s4); display: grid; gap: var(--s3); max-width: 1100px; }
+  .tag { font: 700 11px/1 var(--font-mono); letter-spacing: .04em; text-transform: uppercase; padding: 6px var(--s1); border: 1.5px solid currentColor; white-space: nowrap; }
+  .tag.yes { color: var(--yes); } .tag.likely, .tag.unsure { color: var(--amber); } .tag.no { color: var(--grey); }
+  .facts { display: flex; flex-wrap: wrap; gap: var(--s1); }
+  .facts span { font: 600 12px/1.3 var(--font-mono); padding: var(--s1) 12px; border: 1.5px solid var(--ink); letter-spacing: .04em; background: var(--card); }
+  .verdict-line { margin: 0; display: flex; flex-wrap: wrap; gap: var(--s1) var(--s2); align-items: center; font-size: 14px; color: var(--grey); }
+  .evidence { border-left: 6px solid var(--red); padding: var(--s1) 0 var(--s1) var(--s2); font-size: 15px; line-height: 1.6; max-height: 200px; overflow: auto; }
+  mark { background: #ffe066; color: inherit; padding: 0 2px; }
+  .reason { margin: 0; font: 500 15px/1.45 var(--font-body); }
+  .reason b { font: 600 12px/1 var(--font-mono); color: var(--red); letter-spacing: .08em; text-transform: uppercase; margin-right: 8px; }
+  .topics { display: grid; gap: var(--s1); }
+  .topics ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: var(--s1); }
+  .pill { display: inline-flex; align-items: stretch; border: 1.5px solid currentColor; background: var(--card); }
+  .pill.yes { color: var(--yes); } .pill.likely { color: var(--amber); }
+  .pill button { border: 0; background: none; color: inherit; cursor: pointer; text-align: left; font: 700 12px/1 var(--font-mono); letter-spacing: .04em; padding: var(--s1) 10px; }
+  .pill .pick { text-transform: uppercase; }
+  .pill .pick:hover { text-decoration: underline; }
+  .pill .wrong { border-left: 1.5px solid currentColor; color: var(--grey); font-weight: 600; font-size: 11px; white-space: nowrap; }
+  .pill .wrong:hover { background: var(--red); color: #fff; }
+  .pill .done { white-space: nowrap; padding: var(--s1) 10px; border-left: 1.5px solid currentColor; font: 600 11px/1 var(--font-mono); color: var(--grey); }
+  .links { display: flex; flex-wrap: wrap; gap: var(--s1); align-items: center; }
+  .links a, .links button { border: 1.5px solid var(--ink); background: var(--card); color: var(--ink); padding: 10px 14px; font: 700 12px/1 var(--font-mono); letter-spacing: .06em; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: background .15s, color .15s; }
+  .links a:hover, .links button:hover { background: var(--ink); color: var(--paper); }
+  .links .flag:hover { background: var(--red); border-color: var(--red); color: #fff; }
+  .flagged { font: 600 12px/1.4 var(--font-mono); color: var(--yes); letter-spacing: .04em; }
+  .similar { display: grid; gap: var(--s1); }
+  .similar ol { list-style: none; margin: 0; padding: 0; display: grid; border-top: 1.5px solid var(--ink); }
+  .similar button { width: 100%; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: baseline; text-align: left; background: none; border: 0; border-bottom: 1px solid var(--hair); padding: 10px 0; cursor: pointer; color: var(--ink); font: 500 14px/1.35 var(--font-body); }
+  .similar button:hover .t { text-decoration: underline; }
+  .similar .t { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .similar .w { font: 400 12px/1 var(--font-mono); color: var(--grey); }
+  footer { margin-top: var(--s5); padding-top: var(--s2); border-top: 2px solid var(--ink); font: 400 12px/1.4 var(--font-mono); color: var(--grey); }
+
+  @media (max-width: 880px) {
+    .filters { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+    .sbar { grid-template-columns: 1fr; } .sbar .go { width: 100%; min-width: 0; }
+    .hit-head { grid-template-columns: 1fr; } .hit-side { grid-column: 1; grid-row: auto; justify-items: start; }
+    .hero { min-height: 420px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; animation-delay: 0s !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="topbar"><span id="topleft"></span><span data-i="topright"></span></div>
+
+  <header class="hero" id="hero">
+    <canvas id="alps" aria-hidden="true"></canvas>
+    <div class="hero-text">
+      <nav class="langs" id="langs" aria-label="Sprache"></nav>
+      <h1><span data-i="h1a"></span><em data-i="h1b"></em></h1>
+      <p class="lede" data-i="lede"></p>
+    </div>
+  </header>
+
+  <section class="finder" id="finder">
+    <span class="num" data-i="s_num"></span>
+    <h2 data-i="s_h2"></h2>
+    <form class="sbar" id="sform" autocomplete="off" role="search">
+      <input id="q" type="search" aria-labelledby="sgo">
+      <button class="go" id="sgo" type="submit"><span data-i="s_go"></span><span aria-hidden="true">→</span></button>
+    </form>
+    <div class="examples" id="examples"></div>
+    <div class="filters">
+      <label class="field"><span data-i="f_topic"></span><select id="topic"></select></label>
+      <label class="field"><span data-i="f_level"></span><select id="level"></select></label>
+      <label class="field"><span data-i="f_from"></span><input id="yfrom" type="number" inputmode="numeric" min="1950" max="2026" placeholder="1990"></label>
+      <label class="field"><span data-i="f_to"></span><input id="yto" type="number" inputmode="numeric" min="1950" max="2026" placeholder="2026"></label>
+    </div>
+    <p class="fnote" id="fnote" aria-live="polite" hidden></p>
+    <p class="note" data-i="r_hint"></p>
+    <p class="rcount" id="rcount" aria-live="polite"></p>
+    <p class="note" id="rnote" hidden></p>
+    <ol class="hits" id="hits"></ol>
+  </section>
+
+  <footer data-i="footer"></footer>
+</div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+const LANGS = ["de", "fr", "it", "rm", "en"];
+const I18N = {
+  de: {
+    title: "Parlamentsthemen", parl: "Parlamente", affairs: "Geschäfte", topright: "Bund · Kantone · Städte · Gemeinden", langs: "Sprache",
+    h1a: "Parlaments", h1b: "themen",
+    lede: "Finden Sie Geschäfte aus allen Schweizer Parlamenten nach Thema, Satz oder Stichwort, in jeder Landessprache.",
+    footer: "Daten: OpenParlData.ch. Themen werden automatisch zugeordnet; falsche Zuordnungen können gemeldet werden.",
+    federal: "Bund", failed: "Die Suche ist fehlgeschlagen. Bitte später erneut versuchen.",
+    s_num: "Suche", s_h2: "Was beschäftigt die Parlamente?", s_placeholder: "Satz oder Stichwort, zum Beispiel: Velowege in der Stadt", s_go: "Suchen",
+    f_topic: "Nur Geschäfte zum Thema", f_none: "Alle Themen", f_level: "Ebene", f_from: "ab Jahr", f_to: "bis Jahr",
+    levels: {"all": "alle Ebenen", "country": "Bund", "canton": "Kanton", "city": "Stadt", "municipality": "Gemeinde"},
+    g_adhoc: "Themen für alle Parlamente", g_curia: "Sachbereiche des Bundesparlaments", g_sg: "Sachbereiche des Kantons St. Gallen",
+    examples: ["Künstliche Intelligenz in der Verwaltung", "Velowege und Verkehrssicherheit", "bezahlbarer Wohnraum", "Cyberangriffe auf Spitäler"],
+    r_count: "{n} Geschäfte zu «{q}»", r_count_topic: "{n} Geschäfte zu «{q}» zum Thema «{t}»",
+    r_none: "Keine Treffer.", r_loading: "Suche läuft …",
+    r_open: "Originalseite", r_similar: "Ähnliche Geschäfte", r_type: "Art", r_state: "Stand", r_date: "Datum",
+    r_hint: "Suchbegriff und Thema lassen sich einzeln oder zusammen verwenden. Der Suchbegriff beschreibt in eigenen Worten und in jeder Landessprache, worum es gehen soll; das Thema zeigt nur Geschäfte, die diesem Thema zugeordnet sind.",
+    why: "Warum", quote_hint: "Die markierte Stelle zeigt, warum das Thema «{t}» zutrifft.",
+    verdict: {yes: "trifft zu", likely: "trifft wahrscheinlich zu", unsure: "unsicher", no: "trifft nicht zu"},
+    t_head: "Themen dieses Geschäfts", t_loading: "Themen werden bestimmt …", t_none: "Keinem Thema eindeutig zugeordnet.",
+    t_wrong: "passt nicht", t_reported: "gemeldet, danke", t_pick: "Nach diesem Thema suchen",
+    flag: "«{t}» passt nicht? Melden", flagged: "Danke für die Meldung.",
+    title_only: "Für dieses Geschäft ist nur der Titel verfügbar.",
+    adhoc: {digitalisation: "Digitalisierung"},
+    r_count_browse: "{n} Geschäfte zum Thema «{t}»",
+    r_note_browse: "Gezeigt werden die Geschäfte, die am deutlichsten zum Thema gehören, die neuesten zuerst. Die Liste ist nicht vollständig; mit einem Suchbegriff lässt sie sich eingrenzen.",
+    r_note_qt: "Gezeigt werden nur Treffer, die dem Thema «{t}» zugeordnet sind.",
+    r_empty: "Geben Sie einen Suchbegriff ein oder wählen Sie ein Thema.",
+    r_loading_topic: "Suche läuft, die Treffer werden dem Thema zugeordnet …",
+    n_curia: "Die Sachbereiche des Bundesparlaments gelten nur für Geschäfte des Bundes. Die Ebene ist deshalb auf «Bund» festgelegt.",
+    n_sg: "Die Sachbereiche des Kantons St. Gallen gelten nur für Geschäfte des Kantons St. Gallen. Die Suche ist deshalb auf diesen Kanton beschränkt.",
+    n_years: "«Ab Jahr» lag nach «bis Jahr». Die beiden Jahre wurden getauscht.",
+    n_reset: "Das Thema «{t}» gilt nicht für diese Ebene und wurde entfernt.",
+    r_none_qt: "Keine der {c} besten Treffer zu «{q}» gehört zum Thema «{t}».", r_none_topic: "Zum Thema «{t}» wurden keine Geschäfte gefunden.",
+    r_hint_qt: "Versuchen Sie einen anderen Suchbegriff oder lassen Sie das Suchfeld leer, um alle Geschäfte zum Thema zu sehen.",
+    canvas: ["Digitalisierung", "Verkehr", "Umwelt", "Gesundheit", "Migration", "Energie", "Bildung"],
+  },
+  fr: {
+    title: "Thèmes parlementaires", parl: "parlements", affairs: "objets", topright: "Confédération · cantons · villes · communes", langs: "Langue",
+    h1a: "Thèmes", h1b: "parlementaires",
+    lede: "Trouvez les objets de tous les parlements suisses par thème, par phrase ou par mot-clé, dans chaque langue nationale.",
+    footer: "Données : OpenParlData.ch. Les thèmes sont attribués automatiquement ; une attribution erronée peut être signalée.",
+    federal: "Confédération", failed: "La recherche a échoué. Veuillez réessayer plus tard.",
+    s_num: "Recherche", s_h2: "De quoi parlent les parlements ?", s_placeholder: "Phrase ou mot-clé, par exemple : pistes cyclables en ville", s_go: "Chercher",
+    f_topic: "Seulement les objets sur le thème", f_none: "Tous les thèmes", f_level: "Niveau", f_from: "dès l'année", f_to: "jusqu'en",
+    levels: {"all": "tous les niveaux", "country": "Confédération", "canton": "Canton", "city": "Ville", "municipality": "Commune"},
+    g_adhoc: "Thèmes pour tous les parlements", g_curia: "Domaines du Parlement fédéral", g_sg: "Domaines du canton de Saint-Gall",
+    examples: ["intelligence artificielle dans l'administration", "pistes cyclables", "logements abordables", "cyberattaques contre les hôpitaux"],
+    r_count: "{n} objets pour « {q} »", r_count_topic: "{n} objets pour « {q} » sur le thème « {t} »",
+    r_none: "Aucun résultat.", r_loading: "Recherche en cours …",
+    r_open: "Page d'origine", r_similar: "Objets similaires", r_type: "Type", r_state: "État", r_date: "Date",
+    r_hint: "Le terme de recherche et le thème s'utilisent seuls ou ensemble. Le terme de recherche décrit, avec vos propres mots et dans chaque langue nationale, ce que vous cherchez ; le thème ne montre que les objets attribués à ce thème.",
+    why: "Pourquoi", quote_hint: "Le passage surligné montre pourquoi le thème « {t} » correspond.",
+    verdict: {yes: "correspond", likely: "correspond probablement", unsure: "incertain", no: "ne correspond pas"},
+    t_head: "Thèmes de cet objet", t_loading: "Recherche des thèmes …", t_none: "Aucun thème attribué avec certitude.",
+    t_wrong: "erroné", t_reported: "signalé, merci", t_pick: "Chercher ce thème",
+    flag: "« {t} » ne correspond pas ? Signaler", flagged: "Merci pour le signalement.",
+    title_only: "Seul le titre de cet objet est disponible.",
+    adhoc: {digitalisation: "Numérisation"},
+    r_count_browse: "{n} objets sur le thème « {t} »",
+    r_note_browse: "Sont affichés les objets qui relèvent le plus clairement du thème, les plus récents d'abord. La liste n'est pas complète ; un terme de recherche permet de la préciser.",
+    r_note_qt: "Seuls les résultats attribués au thème « {t} » sont affichés.",
+    r_empty: "Saisissez un terme de recherche ou choisissez un thème.",
+    r_loading_topic: "Recherche en cours, les résultats sont attribués au thème …",
+    n_curia: "Les domaines du Parlement fédéral ne s'appliquent qu'aux objets de la Confédération. Le niveau est donc fixé sur « Confédération ».",
+    n_sg: "Les domaines du canton de Saint-Gall ne s'appliquent qu'aux objets de ce canton. La recherche est donc limitée au canton de Saint-Gall.",
+    n_years: "« Dès l'année » était postérieure à « jusqu'en ». Les deux années ont été inversées.",
+    n_reset: "Le thème « {t} » ne s'applique pas à ce niveau et a été retiré.",
+    r_none_qt: "Aucun des {c} meilleurs résultats pour « {q} » ne relève du thème « {t} ».", r_none_topic: "Aucun objet n'a été trouvé sur le thème « {t} ».",
+    r_hint_qt: "Essayez un autre terme ou laissez le champ de recherche vide pour voir tous les objets du thème.",
+    canvas: ["Numérisation", "Transports", "Environnement", "Santé", "Migration", "Énergie", "Formation"],
+  },
+  it: {
+    title: "Temi parlamentari", parl: "parlamenti", affairs: "oggetti", topright: "Confederazione · cantoni · città · comuni", langs: "Lingua",
+    h1a: "Temi", h1b: "parlamentari",
+    lede: "Trovate gli oggetti di tutti i parlamenti svizzeri per tema, frase o parola chiave, in ogni lingua nazionale.",
+    footer: "Dati: OpenParlData.ch. I temi sono attribuiti automaticamente; un'attribuzione errata può essere segnalata.",
+    federal: "Confederazione", failed: "La ricerca non è riuscita. Riprovare più tardi.",
+    s_num: "Ricerca", s_h2: "Di cosa si occupano i parlamenti?", s_placeholder: "Frase o parola chiave, ad esempio: piste ciclabili in città", s_go: "Cerca",
+    f_topic: "Solo oggetti sul tema", f_none: "Tutti i temi", f_level: "Livello", f_from: "dall'anno", f_to: "fino al",
+    levels: {"all": "tutti i livelli", "country": "Confederazione", "canton": "Cantone", "city": "Città", "municipality": "Comune"},
+    g_adhoc: "Temi per tutti i parlamenti", g_curia: "Settori del Parlamento federale", g_sg: "Settori del Cantone di San Gallo",
+    examples: ["intelligenza artificiale nell'amministrazione", "piste ciclabili", "alloggi a prezzi accessibili", "attacchi informatici agli ospedali"],
+    r_count: "{n} oggetti per «{q}»", r_count_topic: "{n} oggetti per «{q}» sul tema «{t}»",
+    r_none: "Nessun risultato.", r_loading: "Ricerca in corso …",
+    r_open: "Pagina originale", r_similar: "Oggetti simili", r_type: "Tipo", r_state: "Stato", r_date: "Data",
+    r_hint: "Il termine di ricerca e il tema si usano da soli o insieme. Il termine di ricerca descrive con parole vostre, in ogni lingua nazionale, ciò che cercate; il tema mostra solo gli oggetti attribuiti a quel tema.",
+    why: "Perché", quote_hint: "Il passaggio evidenziato mostra perché il tema «{t}» è pertinente.",
+    verdict: {yes: "pertinente", likely: "probabilmente pertinente", unsure: "incerto", no: "non pertinente"},
+    t_head: "Temi di questo oggetto", t_loading: "Ricerca dei temi …", t_none: "Nessun tema attribuito con certezza.",
+    t_wrong: "errato", t_reported: "segnalato, grazie", t_pick: "Cerca questo tema",
+    flag: "«{t}» non è pertinente? Segnala", flagged: "Grazie per la segnalazione.",
+    title_only: "Per questo oggetto è disponibile solo il titolo.",
+    adhoc: {digitalisation: "Digitalizzazione"},
+    r_count_browse: "{n} oggetti sul tema «{t}»",
+    r_note_browse: "Sono mostrati gli oggetti che rientrano più chiaramente nel tema, i più recenti prima. L'elenco non è completo; un termine di ricerca permette di restringerlo.",
+    r_note_qt: "Sono mostrati solo i risultati attribuiti al tema «{t}».",
+    r_empty: "Inserite un termine di ricerca o scegliete un tema.",
+    r_loading_topic: "Ricerca in corso, i risultati vengono attribuiti al tema …",
+    n_curia: "I settori del Parlamento federale valgono solo per gli oggetti della Confederazione. Il livello è quindi fissato su «Confederazione».",
+    n_sg: "I settori del Cantone di San Gallo valgono solo per gli oggetti di questo cantone. La ricerca è quindi limitata al Cantone di San Gallo.",
+    n_years: "«Dall'anno» era successivo a «fino al». I due anni sono stati scambiati.",
+    n_reset: "Il tema «{t}» non vale per questo livello ed è stato rimosso.",
+    r_none_qt: "Nessuno dei {c} migliori risultati per «{q}» rientra nel tema «{t}».", r_none_topic: "Non è stato trovato alcun oggetto sul tema «{t}».",
+    r_hint_qt: "Provate un altro termine o lasciate vuoto il campo di ricerca per vedere tutti gli oggetti del tema.",
+    canvas: ["Digitalizzazione", "Trasporti", "Ambiente", "Salute", "Migrazione", "Energia", "Formazione"],
+  },
+  rm: {
+    title: "Temas parlamentars", parl: "parlaments", affairs: "fatgs", topright: "Confederaziun · chantuns · citads · vischnancas", langs: "Lingua",
+    h1a: "Temas", h1b: "parlamentars",
+    lede: "Chattai fatgs da tut ils parlaments svizzers tenor tema, frasa u pled-clav, en mintga lingua naziunala.",
+    footer: "Datas: OpenParlData.ch. Ils temas vegnan attribuids automaticamain; ina attribuziun sbagliada po vegnir annunziada.",
+    federal: "Confederaziun", failed: "La tschertga n'è betg reussida. Empruvai pli tard anc ina giada.",
+    s_num: "Tschertga", s_h2: "Da tge s'occupan ils parlaments?", s_placeholder: "Frasa u pled-clav, per exempel: vias da velo en la citad", s_go: "Tschertgar",
+    f_topic: "Mo fatgs tar il tema", f_none: "Tut ils temas", f_level: "Nivel", f_from: "dapi l'onn", f_to: "fin l'onn",
+    levels: {"all": "tut ils nivels", "country": "Confederaziun", "canton": "Chantun", "city": "Citad", "municipality": "Vischnanca"},
+    g_adhoc: "Temas per tut ils parlaments", g_curia: "Secturs dal parlament federal", g_sg: "Secturs dal chantun Son Gagl",
+    examples: ["intelligenza artifiziala en l'administraziun", "vias da velo", "abitaziuns a pretschs pajabels", "attaccas cibernetics sin ospitals"],
+    r_count: "{n} fatgs per «{q}»", r_count_topic: "{n} fatgs per «{q}» tar il tema «{t}»",
+    r_none: "Nagins resultats.", r_loading: "Tschertga en lavur …",
+    r_open: "Pagina originala", r_similar: "Fatgs sumegliants", r_type: "Gener", r_state: "Stadi", r_date: "Data",
+    r_hint: "Il term da tschertga ed il tema pon vegnir duvrads sulets u ensemen. Il term da tschertga descriva cun agens pleds ed en mintga lingua naziunala tge che Vus tschertgais; il tema mussa mo fatgs attribuids a quest tema.",
+    why: "Pertge", quote_hint: "Il passadi marcà mussa pertge ch'il tema «{t}» correspunda.",
+    verdict: {yes: "correspunda", likely: "correspunda probablamain", unsure: "malsegir", no: "na correspunda betg"},
+    t_head: "Temas da quest fatg", t_loading: "Ils temas vegnan determinads …", t_none: "Attribuì a nagin tema cun segirezza.",
+    t_wrong: "sbaglià", t_reported: "annunzià, grazia", t_pick: "Tschertgar quest tema",
+    flag: "«{t}» na correspunda betg? Annunziar", flagged: "Grazia per l'annunzia.",
+    title_only: "Per quest fatg è disponibel mo il titel.",
+    adhoc: {digitalisation: "Digitalisaziun"},
+    r_count_browse: "{n} fatgs tar il tema «{t}»",
+    r_note_browse: "Mussads vegnan ils fatgs che tutgan il pli cler tar il tema, ils pli novs l'emprim. La glista n'è betg cumpletta; cun in term da tschertga sa la vegnir restrenschida.",
+    r_note_qt: "Mussads vegnan mo resultats attribuids al tema «{t}».",
+    r_empty: "Endatai in term da tschertga u tschernai in tema.",
+    r_loading_topic: "Tschertga en lavur, ils resultats vegnan attribuids al tema …",
+    n_curia: "Ils secturs dal parlament federal valan mo per fatgs da la Confederaziun. Il nivel è perquai fixà sin «Confederaziun».",
+    n_sg: "Ils secturs dal chantun Son Gagl valan mo per fatgs da quest chantun. La tschertga è perquai limitada al chantun Son Gagl.",
+    n_years: "«Dapi l'onn» era suenter «fin l'onn». Ils dus onns èn vegnids barattads.",
+    n_reset: "Il tema «{t}» na vala betg per quest nivel ed è vegnì allontanà.",
+    r_none_qt: "Nagin dals {c} meglers resultats per «{q}» na tutga tar il tema «{t}».", r_none_topic: "Nagins fatgs tar il tema «{t}» n'èn vegnids chattads.",
+    r_hint_qt: "Empruvai in auter term u laschai il champ da tschertga vid per vesair tut ils fatgs tar il tema.",
+    canvas: ["Digitalisaziun", "Traffic", "Ambient", "Sanadad", "Migraziun", "Energia", "Furmaziun"],
+  },
+  en: {
+    title: "Parliament Topics", parl: "parliaments", affairs: "affairs", topright: "Federal · cantons · cities · municipalities", langs: "Language",
+    h1a: "Parliament", h1b: "topics",
+    lede: "Find affairs from every Swiss parliament by topic, sentence or keyword, in any national language.",
+    footer: "Data: OpenParlData.ch. Topics are assigned automatically; a wrong assignment can be reported.",
+    federal: "Federal", failed: "The search failed. Please try again later.",
+    s_num: "Search", s_h2: "What are the parliaments dealing with?", s_placeholder: "A sentence or a keyword, for example: cycle lanes in the city", s_go: "Search",
+    f_topic: "Only affairs on the topic", f_none: "All topics", f_level: "Level", f_from: "from year", f_to: "to year",
+    levels: {"all": "all levels", "country": "Federal", "canton": "Canton", "city": "City", "municipality": "Municipality"},
+    g_adhoc: "Topics for all parliaments", g_curia: "Subject areas of the federal parliament", g_sg: "Subject areas of the Canton of St. Gallen",
+    examples: ["AI in public administration", "cycle lanes and road safety", "affordable housing", "cyberattacks on hospitals"],
+    r_count: "{n} affairs for “{q}”", r_count_topic: "{n} affairs for “{q}” on “{t}”",
+    r_none: "No results.", r_loading: "Searching …",
+    r_open: "Original page", r_similar: "Similar affairs", r_type: "Type", r_state: "Status", r_date: "Date",
+    r_hint: "Search terms and topic work on their own or together. The search terms describe what you are looking for in your own words, in any national language; the topic shows only affairs assigned to that topic.",
+    why: "Why", quote_hint: "The highlighted passage shows why “{t}” applies.",
+    verdict: {yes: "applies", likely: "probably applies", unsure: "uncertain", no: "does not apply"},
+    t_head: "Topics of this affair", t_loading: "Finding topics …", t_none: "No topic assigned with confidence.",
+    t_wrong: "wrong", t_reported: "reported, thank you", t_pick: "Search this topic",
+    flag: "“{t}” does not fit? Report it", flagged: "Thank you for the report.",
+    title_only: "Only the title of this affair is available.",
+    adhoc: {digitalisation: "Digitalisation"},
+    r_count_browse: "{n} affairs on “{t}”",
+    r_note_browse: "These are the affairs that belong most clearly to the topic, newest first. The list is not complete; add search terms to narrow it down.",
+    r_note_qt: "Only results assigned to the topic “{t}” are shown.",
+    r_empty: "Enter search terms or choose a topic.",
+    r_loading_topic: "Searching and assigning the results to the topic …",
+    n_curia: "The subject areas of the federal parliament apply to federal affairs only, so the level is set to “Federal”.",
+    n_sg: "The subject areas of the Canton of St. Gallen apply to affairs of that canton only, so the search is limited to the Canton of St. Gallen.",
+    n_years: "“From year” was later than “to year”. The two years were swapped.",
+    n_reset: "The topic “{t}” does not apply to this level and was removed.",
+    r_none_qt: "None of the {c} best matches for “{q}” belongs to the topic “{t}”.", r_none_topic: "No affairs were found on the topic “{t}”.",
+    r_hint_qt: "Try other search terms, or leave the search field empty to see all affairs on the topic.",
+    canvas: ["Digitalisation", "Transport", "Environment", "Health", "Migration", "Energy", "Education"],
+  },
+};
+let LANG = "de", TOPICS_META = [];
+const T = () => I18N[LANG];
+const fmt = (n) => Number(n).toLocaleString(LANG === "fr" ? "fr-CH" : LANG === "en" ? "en-GB" : "de-CH");
+const TOPIC_COLOURS = ["#e3000f", "#2160c4", "#0a8f4d", "#8a3fc0", "#d98b00", "#0094a8", "#c2185b"];
+const RIDGE = [[-80, 2200], [0, 2350], [40, 2650], [70, 3050], [95, 3450], [110, 3692], [122, 3540], [135, 3704], [146, 3610], [158, 3689], [178, 3350], [195, 3150],
+  [212, 3300], [230, 3620], [246, 3920], [255, 4078], [262, 3985], [272, 4042], [290, 3720], [306, 3480], [322, 3500], [345, 3820], [362, 4120], [370, 4274],
+  [381, 4110], [398, 3860], [420, 3620], [442, 3480], [465, 3390], [482, 3560], [499, 3730], [512, 3890], [520, 3967], [530, 3840], [546, 3620], [562, 3470],
+  [578, 3580], [592, 3820], [606, 4010], [616, 4092], [624, 4110], [634, 4078], [647, 3950], [662, 3700], [680, 3466], [697, 3560], [710, 3680], [718, 3695],
+  [728, 3630], [743, 3910], [755, 4110], [762, 4158], [773, 4070], [791, 3850], [812, 3700], [832, 3800], [850, 3983], [866, 3870], [885, 3962], [902, 3700],
+  [918, 3800], [936, 3600], [952, 3754], [975, 3520], [1000, 3780], [1020, 3460], [1042, 3300], [1062, 3360], [1078, 3590], [1088, 3661], [1098, 3560],
+  [1108, 3650], [1118, 3590], [1128, 3623], [1146, 3400], [1172, 3020], [1200, 2700], [1280, 2300]];
+const PREALPS = [[-80, 1500], [0, 1700], [30, 1950], [62, 2150], [80, 2197], [140, 2170], [165, 1980], [200, 1700], [250, 1600], [300, 1880], [330, 2051],
+  [352, 1900], [400, 1550], [470, 1320], [560, 1250], [680, 1300], [780, 1380], [860, 1650], [915, 2000], [955, 2362], [995, 2050], [1030, 1700], [1055, 1820],
+  [1078, 2150], [1084, 2190], [1102, 2178], [1108, 1980], [1135, 1930], [1160, 2080], [1176, 2175], [1200, 1950], [1280, 1600]];
+
+(function alps() {
+  const hero = $("hero"), cv = $("alps"), ctx = cv.getContext("2d");
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let seed = 11;
+  const rnd = () => (seed = seed * 16807 % 2147483647) / 2147483647;
+  const Y = (a) => 300 - (a - 2600) * 0.16, YP = (a) => 300 - (a - 900) * 0.085;
+  const crag = (pts, depth, amp) => {
+    let out = pts;
+    for (let d = 0; d < depth; d++) {
+      const next = [out[0]];
+      for (let i = 1; i < out.length; i++) {
+        const [x0, y0] = out[i - 1], [x1, y1] = out[i], len = Math.hypot(x1 - x0, y1 - y0);
+        next.push([(x0 + x1) / 2 + (rnd() - .5) * (x1 - x0) * .3, Math.max((y0 + y1) / 2 + (rnd() - .5) * len * amp, Math.min(y0, y1) + .4)], out[i]);
+      }
+      out = next;
+    }
+    return out;
+  };
+  const far = crag(RIDGE.map(([x, a]) => [x, Y(a)]), 4, .3);
+  const pre = crag(PREALPS.map(([x, a]) => [x, YP(a)]), 3, .16);
+  const hatch = {shade: [], rock: [], light: []};
+  for (let i = 1; i < far.length; i++) {
+    const [x0, y0] = far[i - 1], [x1, y1] = far[i];
+    if (x1 <= x0) continue;
+    const sl = (y1 - y0) / (x1 - x0);
+    for (let x = Math.ceil(x0 / 2.4) * 2.4; x < x1; x += 2.4) {
+      const y = y0 + sl * (x - x0) + 1;
+      if (sl > .12) hatch.shade.push([x, y, (8 + Math.min(70, sl * 24)) * (.6 + rnd() * .7)]);
+      if (sl > 2) hatch.rock.push([x, y, (4 + Math.min(26, sl * 5)) * (.6 + rnd() * .6)]);
+      if (sl < -1.2 && rnd() < .35) hatch.light.push([x, y, (5 + Math.min(26, -sl * 6)) * (.5 + rnd() * .7)]);
+    }
+  }
+  const hills = [], trees = [];
+  for (let x = -80; x <= 1280; x += 6) {
+    const y = 280 + Math.sin(x / 97) * 7 + Math.sin(x / 37 + 1) * 3;
+    hills.push([x, y]);
+    if (Math.sin(x / 53) + Math.sin(x / 19) > .3) trees.push([x + rnd() * 3, y + 1, 4 + rnd() * 5]);
+  }
+  const sprite = () => {
+    const c = document.createElement("canvas"), g = c.getContext("2d");
+    c.width = 320; c.height = 90;
+    for (let i = 0; i < 16; i++) {
+      const x = 320 * (.12 + rnd() * .76), y = 90 * (.5 + rnd() * .22), r = 90 * (.18 + rnd() * .26);
+      const grd = g.createRadialGradient(x, y, 0, x, y, r);
+      grd.addColorStop(0, "rgba(255,255,255,.85)"); grd.addColorStop(1, "rgba(255,255,255,0)");
+      g.fillStyle = grd; g.beginPath(); g.arc(x, y, r, 0, 7); g.fill();
+    }
+    return c;
+  };
+  const sprites = [sprite(), sprite(), sprite()];
+  const clouds = Array.from({length: 9}, (_, i) => ({u: -200 + rnd() * 1500, y: i < 5 ? 205 + rnd() * 50 : 120 + rnd() * 45, w: 160 + rnd() * 220,
+    sp: (i < 5 ? .006 : .01) * (.6 + rnd() * .8), a: i < 5 ? .7 : .35, s: sprites[i % 3], layer: i < 5 ? 0 : 1}));
+  const LAND = .45;
+  const hex = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
+  const mix = (a, b, k) => { const A = hex(a), B = hex(b); return `rgb(${A.map((v, i) => Math.round(v + (B[i] - v) * k)).join(",")})`; };
+
+  let W = 0, H = 0, dpr = 1, s = 1, sy = 1, uc = 600, parts = [], last = 0, running = true;
+  const ptr = {x: 0, y: 0, tx: 0, ty: 0, rx: 0, ry: 0, vis: 0, until: 0, active: false};
+  let pinned = null, pinnedUntil = 0;
+  const spawn = (x, y, burst) => ({x, y, vx: burst ? (rnd() - .5) * 3 : .2 + rnd() * .3, vy: burst ? (rnd() - .5) * 3 : (rnd() - .5) * .2,
+    rot: rnd() * 6, vr: (rnd() - .5) * .03, ph: rnd() * 6, topic: Math.floor(rnd() * TOPIC_COLOURS.length), read: 0});
+  const skyTop = () => H * .05, skyBottom = () => H - (300 - 150) * sy;
+
+  function resize() {
+    W = hero.clientWidth; H = hero.clientHeight; dpr = Math.min(2, devicePixelRatio || 1);
+    cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
+    const [u0, u1] = W < 700 ? [430, 880] : [0, 1200];
+    uc = (u0 + u1) / 2; s = W / (u1 - u0); sy = Math.min(s, H * .68 / 300);
+    const n = Math.max(24, Math.min(80, Math.round(W * H / 15000)));
+    while (parts.length < n) parts.push(spawn(rnd() * W, skyTop() + rnd() * (skyBottom() - skyTop())));
+    parts.length = Math.min(parts.length, n + 60);
+    if (reduce) draw(5000);
+  }
+
+  function poly(pts, px, ty, close) {
+    ctx.beginPath();
+    pts.forEach(([u, v], i) => (i ? ctx.lineTo(px(u), ty(v)) : ctx.moveTo(px(u), ty(v))));
+    if (close) { ctx.lineTo(px(pts[pts.length - 1][0]), H + 2); ctx.lineTo(px(pts[0][0]), H + 2); ctx.closePath(); }
+  }
+
+  function draw(t) {
+    const dt = Math.min(50, t - last || 16), k = dt / 16.7;
+    last = t;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, W, H);
+    if (ptr.until && t > ptr.until) { ptr.active = false; ptr.until = 0; }
+    ptr.vis += ((ptr.active ? 1 : 0) - ptr.vis) * .07 * k;
+    ptr.rx += (ptr.tx - ptr.rx) * .16 * k; ptr.ry += (ptr.ty - ptr.ry) * .16 * k;
+    ptr.x += ((ptr.active ? ptr.rx / W - .5 : 0) - ptr.x) * .03 * k; ptr.y += ((ptr.active ? ptr.ry / H - .5 : 0) - ptr.y) * .03 * k;
+    const cyc = (t / 36000) % 1, g = Math.pow(Math.max(0, Math.sin(cyc * Math.PI * 2)), 1.4);
+    const layer = (f) => (u) => W / 2 + (u - uc) * s - ptr.x * W * f + Math.sin(t * .00004) * W * f * .4;
+    const lift = (f) => (v) => H - (300 - v) * sy - ptr.y * H * f * .4;
+
+    const sky = ctx.createLinearGradient(0, 0, 0, H);
+    sky.addColorStop(0, "#f6f4ef"); sky.addColorStop(.6, mix("#f6f4ef", "#f8f0ea", g)); sky.addColorStop(1, mix("#f3f3f0", "#f7eee7", g));
+    ctx.fillStyle = sky; ctx.fillRect(0, 0, W, H);
+
+    const pf = layer(.012), tf = lift(.012);
+    const sunX = pf(1010), sunY = tf(40 + g * 130), sr = 30 * s;
+    const sun = ctx.createRadialGradient(sunX, sunY, 0, sunX, sunY, sr * 3);
+    sun.addColorStop(0, `rgba(255,${Math.round(214 - g * 50)},${Math.round(180 - g * 60)},.25)`); sun.addColorStop(.33, "rgba(255,200,170,.08)"); sun.addColorStop(1, "rgba(255,200,170,0)");
+    ctx.fillStyle = sun; ctx.beginPath(); ctx.arc(sunX, sunY, sr * 3, 0, 7); ctx.fill();
+
+    ctx.globalAlpha = LAND;
+    const snow = ctx.createLinearGradient(0, tf(40), 0, tf(300));
+    snow.addColorStop(0, mix("#fbfbfa", "#fde2d6", g * .8)); snow.addColorStop(.35, mix("#f3f4f4", "#f8e6de", g * .5)); snow.addColorStop(.75, "#e9edef"); snow.addColorStop(1, "#e2e7ea");
+    poly(far, pf, tf, true); ctx.fillStyle = snow; ctx.fill();
+    const strokes = (list, colour, width) => {
+      ctx.beginPath();
+      list.forEach(([u, v, l]) => { const x = pf(u); if (x < -2 || x > W + 2) return; ctx.moveTo(x, tf(v)); ctx.lineTo(x, tf(v + l)); });
+      ctx.strokeStyle = colour; ctx.lineWidth = width; ctx.stroke();
+    };
+    strokes(hatch.shade, "rgba(59,74,92,.16)", Math.max(.5, .7 * s));
+    strokes(hatch.light, "rgba(59,74,92,.08)", Math.max(.4, .55 * s));
+    strokes(hatch.rock, "rgba(30,38,48,.26)", Math.max(.6, .95 * s));
+    poly(far, pf, tf, false); ctx.strokeStyle = "rgba(17,17,17,.38)"; ctx.lineWidth = 1; ctx.lineJoin = "round"; ctx.stroke();
+
+    const cloudPass = (lay, pfn, tfn) => clouds.forEach((c) => {
+      if (c.layer !== lay) return;
+      if (!reduce) c.u += c.sp * dt;
+      if (c.u > uc + W / (2 * s) + 60) c.u = uc - W / (2 * s) - c.w - 60;
+      ctx.globalAlpha = c.a * LAND; ctx.drawImage(c.s, pfn(c.u), tfn(c.y) - c.w * s * 90 / 640, c.w * s, c.w * s * 90 / 320);
+    });
+    cloudPass(1, pf, tf);
+    ctx.globalAlpha = LAND;
+
+    const pp = layer(.03), tp = lift(.03);
+    cloudPass(0, pp, tp);
+    ctx.globalAlpha = LAND;
+    const haze = ctx.createLinearGradient(0, tp(170), 0, tp(300));
+    haze.addColorStop(0, "#e1e6ea"); haze.addColorStop(1, "#eef0f0");
+    poly(pre, pp, tp, true); ctx.fillStyle = haze; ctx.fill();
+    poly(pre, pp, tp, false); ctx.strokeStyle = "rgba(93,110,128,.3)"; ctx.lineWidth = .9; ctx.stroke();
+
+    const ph = layer(.06), th = lift(.06);
+    poly(hills, ph, th, true); ctx.fillStyle = "#e4e7e6"; ctx.fill();
+    poly(hills, ph, th, false); ctx.strokeStyle = "rgba(59,74,92,.22)"; ctx.lineWidth = .8; ctx.stroke();
+    ctx.beginPath();
+    trees.forEach(([u, v, h]) => { const x = ph(u), y = th(v); if (x < -4 || x > W + 4) return; ctx.moveTo(x - 1.9 * s, y); ctx.lineTo(x, y - h * sy); ctx.lineTo(x + 1.9 * s, y); });
+    ctx.fillStyle = "rgba(59,74,92,.16)"; ctx.fill();
+
+    ctx.globalAlpha = 1;
+    const R = Math.max(44, Math.min(80, W * .065)) * (.8 + .2 * ptr.vis), top = skyTop(), bottom = skyBottom(), seen = [];
+    if (ptr.vis > .01) {
+      const lens = ctx.createRadialGradient(ptr.rx, ptr.ry, R * .2, ptr.rx, ptr.ry, R);
+      lens.addColorStop(0, `rgba(255,255,255,${.7 * ptr.vis})`); lens.addColorStop(1, "rgba(255,255,255,0)");
+      ctx.fillStyle = lens; ctx.beginPath(); ctx.arc(ptr.rx, ptr.ry, R, 0, 7); ctx.fill();
+      ctx.strokeStyle = `rgba(17,17,17,${.16 * ptr.vis})`; ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.arc(ptr.rx, ptr.ry, R, 0, 7); ctx.stroke();
+      ctx.beginPath();
+      for (let a = 0; a < 4; a++) {
+        const c = Math.cos(a * Math.PI / 2 + t * .0002), sn = Math.sin(a * Math.PI / 2 + t * .0002);
+        ctx.moveTo(ptr.rx + c * (R + 3), ptr.ry + sn * (R + 3)); ctx.lineTo(ptr.rx + c * (R + 8), ptr.ry + sn * (R + 8));
+      }
+      ctx.strokeStyle = `rgba(17,17,17,${.35 * ptr.vis})`; ctx.stroke();
+    }
+    if (!reduce && rnd() < .012 * k) parts[Math.floor(rnd() * parts.length)].read = 1;
+    parts.forEach((p) => {
+      if (!reduce) {
+        p.vx += ((.32 + .22 * Math.sin(p.y * .01 + t * .0003)) - p.vx) * .02 * k;
+        p.vy += (Math.sin(p.x * .008 + t * .0005 + p.ph) * .16 - p.vy) * .02 * k;
+        if (p.y < top) p.vy += .03 * k;
+        if (p.y > bottom) p.vy -= .03 * k;
+      }
+      const dx = p.x - ptr.rx, dy = p.y - ptr.ry, d = Math.hypot(dx, dy) || 1;
+      if (ptr.vis > .3 && d < R) {
+        p.read = Math.min(1, p.read + .07 * k);
+        if (!reduce) { p.vx += (-dy / d) * .02 * k; p.vy += (dx / d) * .02 * k; }
+        seen.push([d, p]);
+      } else p.read = Math.max(0, p.read - .003 * k);
+      if (!reduce) { p.x += p.vx * k; p.y += p.vy * k; p.rot += p.vr * k; }
+      if (p.x > W + 12) Object.assign(p, spawn(-10, top + rnd() * (bottom - top)));
+      if (p.x < -14) p.x = W + 10;
+      ctx.save(); ctx.translate(p.x, p.y); ctx.rotate(p.rot);
+      ctx.fillStyle = p.read > .02 ? mix("#ffffff", TOPIC_COLOURS[p.topic], p.read) : "#ffffff";
+      ctx.strokeStyle = "rgba(17,17,17,.32)"; ctx.lineWidth = .8;
+      ctx.fillRect(-3.5, -4.5, 7, 9); ctx.strokeRect(-3.5, -4.5, 7, 9);
+      ctx.beginPath(); ctx.moveTo(-1.8, -2); ctx.lineTo(1.8, -2); ctx.moveTo(-1.8, 0); ctx.lineTo(1.8, 0); ctx.moveTo(-1.8, 2); ctx.lineTo(.8, 2);
+      ctx.strokeStyle = p.read > .5 ? "rgba(255,255,255,.8)" : "rgba(17,17,17,.2)"; ctx.stroke();
+      ctx.restore();
+    });
+
+    if (pinned && t > pinnedUntil) pinned = null;
+    seen.sort((a, b) => a[0] - b[0]);
+    const tags = (pinned ? [[1, pinned]] : []).concat(seen.filter(([, p]) => p !== pinned && p.read > .5).map(([, p]) => [ptr.vis * (p.read - .5) * 2, p]));
+    ctx.font = `600 10px "JetBrains Mono", ui-monospace, monospace`; ctx.textAlign = "left"; ctx.textBaseline = "middle";
+    const placed = [];
+    for (const [alpha, p] of tags) {
+      if (placed.length >= (pinned ? 1 : 3) || alpha <= .02) break;
+      const label = T().canvas[p.topic].toUpperCase(), w = ctx.measureText(label).width + 10, h = 16;
+      const x = p.x + 9 + w > W ? p.x - 9 - w : p.x + 9, y = p.y - h / 2;
+      if (placed.some((r) => x < r.x + r.w + 4 && x + w + 4 > r.x && y < r.y + r.h + 3 && y + h + 3 > r.y)) continue;
+      placed.push({x, y, w, h});
+      ctx.globalAlpha = alpha;
+      ctx.fillStyle = "rgba(255,255,255,.94)"; ctx.fillRect(x, y, w, h);
+      ctx.strokeStyle = TOPIC_COLOURS[p.topic]; ctx.lineWidth = 1; ctx.strokeRect(x + .5, y + .5, w - 1, h - 1);
+      ctx.fillStyle = TOPIC_COLOURS[p.topic]; ctx.fillText(label, x + 5, y + h / 2 + .5);
+      if (p === pinned) { ctx.beginPath(); ctx.arc(p.x, p.y, 9 + 2 * Math.sin(t * .008), 0, 7); ctx.stroke(); }
+    }
+    ctx.globalAlpha = 1; ctx.textBaseline = "alphabetic";
+  }
+
+  const loop = (t) => { if (running) draw(t); requestAnimationFrame(loop); };
+  const at = (e) => { const r = cv.getBoundingClientRect(); return [e.clientX - r.left, e.clientY - r.top]; };
+  hero.addEventListener("pointermove", (e) => {
+    if (e.pointerType !== "mouse") return;
+    if (e.target.closest(".langs")) { ptr.active = false; return; }
+    [ptr.tx, ptr.ty] = at(e);
+    if (ptr.vis < .05) { ptr.rx = ptr.tx; ptr.ry = ptr.ty; }
+    ptr.active = true;
+  });
+  hero.addEventListener("pointerleave", () => { ptr.active = false; });
+  hero.addEventListener("pointerdown", (e) => {
+    if (e.target.closest(".langs")) return;
+    const [x, y] = at(e); ptr.tx = x; ptr.ty = y;
+    if (ptr.vis < .05) { ptr.rx = x; ptr.ry = y; }
+    ptr.active = true; ptr.until = e.pointerType === "mouse" ? 0 : performance.now() + 2500;
+    let best = null, bd = 34;
+    parts.forEach((q) => { const d = Math.hypot(q.x - x, q.y - y); if (d < bd) { bd = d; best = q; } });
+    if (best) { pinned = best; pinnedUntil = performance.now() + 3500; best.read = 1; best.vx *= .2; best.vy *= .2; }
+  });
+  new ResizeObserver(resize).observe(hero);
+  resize();
+  if (!reduce) {
+    new IntersectionObserver(([en]) => { running = en.isIntersecting && !document.hidden; }).observe(hero);
+    document.addEventListener("visibilitychange", () => { running = !document.hidden; });
+    requestAnimationFrame(loop);
+  }
+})();
+
+function highlight(text, quote) {
+  const t = esc(text || ""); if (!quote) return t;
+  const q = esc(quote), i = t.toLowerCase().indexOf(q.toLowerCase());
+  return i < 0 ? `${t} <mark>${q}</mark>` : `${i > 220 ? "… " : ""}${t.slice(Math.max(0, i - 220), i)}<mark>${t.slice(i, i + q.length)}</mark>${t.slice(i + q.length, i + q.length + 420)} …`;
+}
+
+const topicName = (id, names) => {
+  const L = T(); if (L.adhoc[id]) return L.adhoc[id];
+  const m = names ? {names} : TOPICS_META.find((x) => x.id === id);
+  return m ? (m.names?.[LANG] || m.name || id) : id;
+};
+const scopeOf = (id) => (TOPICS_META.find((x) => x.id === id) || {}).scope || null;
+const verdict = (a) => !a ? null : a.decision === "yes" ? (a.confidence === "low" ? "likely" : "yes") : (a.confidence === "low" ? "unsure" : "no");
+const where = (b) => (b === "CHE" ? T().federal : b || "");
+const LEVELS = ["", "country", "canton", "city", "municipality"];
+let HITS = [], LASTQ = null, SEARCH_TOPIC = null, MODE = null, SEARCHED = false, CHECKED = 0;
+const OPEN = new Set(), DETAIL = {}, FLAGGED = new Set(), NOTES = {scope: null, years: false, reset: null};
+
+function renderNotes() {
+  const L = T(), parts = [];
+  if (NOTES.reset) parts.push(L.n_reset.replace("{t}", topicName(NOTES.reset)));
+  if (NOTES.scope) parts.push(L[NOTES.scope]);
+  if (NOTES.years) parts.push(L.n_years);
+  $("fnote").textContent = parts.join(" ");
+  $("fnote").hidden = !parts.length;
+}
+
+function metaLine(h) {
+  const L = T();
+  return [h.body_name || where(h.body_key), L.levels[h.level] || "", h.year ? Math.round(h.year) : "",
+          LANG === "en" && h.affair_type && h.affair_type !== "unknown" ? h.affair_type : "", h.number ? `Nr. ${h.number}` : ""].filter(Boolean).join(" · ");
+}
+
+function tagFor(h) {
+  const v = verdict(h.topic_answer); if (!v || !SEARCH_TOPIC) return "";
+  return `<span class="tag ${v}">${esc(topicName(SEARCH_TOPIC))} · ${esc(T().verdict[v])}</span>`;
+}
+
+function topicsHTML(id, d) {
+  const L = T();
+  if (d.topics === null) return "";
+  if (d.topics === undefined) return `<div class="topics"><span class="num">${esc(L.t_head)}</span><p class="note">${esc(L.t_loading)}</p></div>`;
+  const shown = d.topics.filter((r) => r.decision === "yes");
+  if (!shown.length) return `<div class="topics"><span class="num">${esc(L.t_head)}</span><p class="note">${esc(L.t_none)}</p></div>`;
+  const known = new Set(TOPICS_META.map((x) => x.id));
+  return `<div class="topics"><span class="num">${esc(L.t_head)}</span><ul>${shown.map((r) => {
+    const v = verdict(r), key = `${id}:${r.topic}`, name = esc(topicName(r.topic, r.names));
+    const pick = `<button type="button" class="pick" ${known.has(r.topic) ? `data-act="pick" data-topic="${esc(r.topic)}" title="${esc(L.t_pick)}"` : "disabled"}>${name} · ${esc(L.verdict[v])}</button>`;
+    const flag = FLAGGED.has(key) ? `<span class="done">${esc(L.t_reported)}</span>` : `<button type="button" class="wrong" data-act="flag" data-id="${id}" data-topic="${esc(r.topic)}">${esc(L.t_wrong)}</button>`;
+    return `<li class="pill ${v}">${pick}${flag}</li>`;
+  }).join("")}</ul></div>`;
+}
+
+function detailHTML(h, d) {
+  const L = T(), ev = d.evidence, id = h.openparldata_id, v = verdict(h.topic_answer);
+  const facts = [[L.r_type, d.type], [L.r_state, d.state], [L.r_date, d.begin_date]].filter(([, x]) => x)
+    .map(([k, x]) => `<span>${esc(k)}: ${esc(x)}</span>`).join("");
+  const line = SEARCH_TOPIC && v && ev?.evidence_quote ? `<p class="verdict-line">${esc(L.quote_hint.replace("{t}", topicName(SEARCH_TOPIC)))}</p>` : "";
+  const text = d.excerpt ? `<div class="evidence">${ev?.evidence_quote ? highlight(d.excerpt, ev.evidence_quote) : esc(d.excerpt.slice(0, 900)) + (d.excerpt.length > 900 ? " …" : "")}</div>` : "";
+  const sim = d.similar ? `<div class="similar"><span class="num">${esc(L.r_similar)}</span><ol>${d.similar.map((x) => `<li><button type="button" data-q="${esc(x.title || "")}"><span class="t">${esc((x.title || "#" + x.openparldata_id).slice(0, 150))}</span><span class="w">${esc(x.body_name || where(x.body_key))}</span></button></li>`).join("")}</ol></div>` : "";
+  const key = `${id}:${SEARCH_TOPIC}`;
+  const flag = SEARCH_TOPIC && (v === "yes" || v === "likely") ? (FLAGGED.has(key) ? `<span class="flagged">${esc(L.flagged)}</span>` : `<button type="button" class="flag" data-act="flag" data-id="${id}" data-topic="${esc(SEARCH_TOPIC)}">${esc(L.flag.replace("{t}", topicName(SEARCH_TOPIC)))}</button>`) : "";
+  return `${facts ? `<div class="facts">${facts}</div>` : ""}
+    ${line}${text}
+    ${d.text_source === "title_only" ? `<p class="note">${esc(L.title_only)}</p>` : ""}
+    ${ev?.reason ? `<p class="reason"><b>${esc(L.why)}</b>${esc(ev.reason)}</p>` : ""}
+    ${topicsHTML(id, d)}
+    <div class="links">
+      ${d.url_external ? `<a href="${esc(d.url_external)}" target="_blank" rel="noopener">${esc(L.r_open)} ↗</a>` : ""}
+      <a href="${esc(d.url_openparldata)}" target="_blank" rel="noopener">OpenParlData ↗</a>
+      ${d.similar ? "" : `<button type="button" data-act="sim" data-id="${id}">${esc(L.r_similar)}</button>`}
+      ${flag}
+    </div>${sim}`;
+}
+
+function renderHits() {
+  const L = T(), n = HITS.length, t = SEARCH_TOPIC ? topicName(SEARCH_TOPIC) : "";
+  let count = "", note = "";
+  if (!SEARCHED) count = MODE === "empty" ? L.r_empty : "";
+  else if (!n) count = MODE === "query" ? L.r_none : MODE === "query_topic" ? L.r_none_qt.replace("{c}", CHECKED).replace("{q}", LASTQ).replace("{t}", t) : L.r_none_topic.replace("{t}", t);
+  else if (MODE === "topic") count = L.r_count_browse.replace("{n}", n).replace("{t}", t);
+  else if (MODE === "query_topic") count = L.r_count_topic.replace("{n}", n).replace("{q}", LASTQ).replace("{t}", t);
+  else count = L.r_count.replace("{n}", n).replace("{q}", LASTQ);
+  if (SEARCHED && n && MODE === "topic") note = L.r_note_browse;
+  if (SEARCHED && MODE === "query_topic") note = n ? L.r_note_qt.replace("{t}", t) : L.r_hint_qt;
+  $("rcount").textContent = count;
+  $("rnote").textContent = note; $("rnote").hidden = !note;
+  $("hits").innerHTML = HITS.map((h) => {
+    const id = h.openparldata_id, open = OPEN.has(id);
+    return `<li class="hit ${open ? "open" : ""}">
+      <button class="hit-head" type="button" data-id="${id}" aria-expanded="${open}">
+        <span class="hit-title">${esc(h.title || "#" + id)}</span>
+        <span class="hit-meta">${esc(metaLine(h))}</span>
+        <span class="hit-side">${tagFor(h)}</span>
+      </button>
+      <div class="hit-body" ${open ? "" : "hidden"}>${DETAIL[id] ? detailHTML(h, DETAIL[id]) : `<p class="note">${esc(L.r_loading)}</p>`}</div>
+    </li>`;
+  }).join("");
+}
+
+let SEQ = 0;
+async function runSearch(q) {
+  q = (q || "").trim(); if (q.length < 2) q = "";
+  const topic = $("topic").value, L = T();
+  $("q").value = q; OPEN.clear();
+  if (!q && !topic) { HITS = []; SEARCHED = false; MODE = "empty"; LASTQ = null; renderHits(); return; }
+  const params = new URLSearchParams({limit: 20});
+  if (q) params.set("q", q);
+  if (topic) params.set("topic", topic);
+  const sc = scopeOf(topic);
+  if (sc?.body) params.set("body", sc.body);
+  if ($("level").value) params.set("level", $("level").value);
+  if ($("yfrom").value) params.set("year_from", $("yfrom").value);
+  if ($("yto").value) params.set("year_to", $("yto").value);
+  const seq = ++SEQ;
+  $("sgo").disabled = true; HITS = []; SEARCHED = false; MODE = null; renderHits();
+  $("rcount").textContent = topic ? L.r_loading_topic : L.r_loading;
+  try {
+    const r = await fetch(`/search?${params}`), d = await r.json();
+    if (seq !== SEQ) return;
+    if (!r.ok) throw new Error(d.detail || "failed");
+    LASTQ = d.query || ""; SEARCH_TOPIC = d.topic; MODE = d.mode; HITS = d.results; SEARCHED = true; CHECKED = d.checked || 0;
+    renderHits();
+  } catch (e) { if (seq === SEQ) { $("rcount").textContent = T().failed; $("rnote").hidden = true; } }
+  finally { if (seq === SEQ) $("sgo").disabled = false; }
+}
+const rerun = () => { if (SEARCHED || $("q").value.trim() || $("topic").value) runSearch($("q").value); };
+
+async function toggle(id) {
+  if (OPEN.has(id)) { OPEN.delete(id); renderHits(); return; }
+  OPEN.add(id); renderHits();
+  if (DETAIL[id]) return;
+  let d;
+  try { d = await (await fetch(`/affairs/${id}/detail?lang=${LANG}`)).json(); } catch (e) { d = {url_openparldata: `https://api.openparldata.ch/v1/affairs/${id}`}; }
+  DETAIL[id] = d; renderHits();
+  fetch(`/affairs/${id}/topics/live`).then((r) => (r.ok ? r.json() : null)).catch(() => null).then((rows) => { d.topics = rows; renderHits(); });
+  const h = HITS.find((x) => x.openparldata_id === id), v = verdict(h?.topic_answer);
+  if (SEARCH_TOPIC && v && v !== "no") {
+    try {
+      const r = await fetch("/classify", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({topic: SEARCH_TOPIC, affair_id: id})});
+      if (r.ok) { d.evidence = await r.json(); renderHits(); }
+    } catch (e) {}
+  }
+}
+
+function applyScope() {
+  const sc = scopeOf($("topic").value), lvl = $("level");
+  [...lvl.options].forEach((o) => { o.disabled = !!sc && o.value !== sc.level; });
+  if (sc && lvl.value !== sc.level) lvl.value = sc.level;
+  NOTES.scope = sc ? (sc.body === "SG" ? "n_sg" : "n_curia") : null;
+  renderNotes();
+}
+
+function renderTopics() {
+  const L = T(), sel = $("topic"), cur = sel.value, lvl = $("level").value;
+  const applies = (t) => !t.scope || !lvl || t.scope.level === lvl;
+  const opt = (t) => `<option value="${esc(t.id)}">${esc(topicName(t.id))}</option>`;
+  const group = (label, ts) => ts.length ? `<optgroup label="${esc(label)}">${ts.map(opt).join("")}</optgroup>` : "";
+  const byName = (a, b) => topicName(a.id).localeCompare(topicName(b.id));
+  const shown = TOPICS_META.filter(applies);
+  sel.innerHTML = `<option value="">${esc(L.f_none)}</option>`
+    + group(L.g_adhoc, shown.filter((t) => !t.scope).sort(byName))
+    + group(L.g_curia, shown.filter((t) => t.scope?.body === "CHE").sort(byName))
+    + group(L.g_sg, shown.filter((t) => t.scope?.body === "SG").sort(byName));
+  if (cur && !shown.some((t) => t.id === cur)) { NOTES.reset = cur; sel.value = ""; }
+  else sel.value = cur || "";
+}
+
+function checkYears() {
+  const a = $("yfrom"), b = $("yto");
+  NOTES.years = false;
+  if (a.value && b.value && Number(a.value) > Number(b.value)) { [a.value, b.value] = [b.value, a.value]; NOTES.years = true; }
+  renderNotes();
+}
+
+$("sform").addEventListener("submit", (e) => { e.preventDefault(); runSearch($("q").value); });
+$("examples").addEventListener("click", (e) => { const b = e.target.closest("button[data-q]"); if (b) runSearch(b.dataset.q); });
+$("hits").addEventListener("click", async (e) => {
+  const head = e.target.closest(".hit-head"); if (head) { toggle(Number(head.dataset.id)); return; }
+  const q = e.target.closest(".similar button[data-q]"); if (q) { runSearch(q.dataset.q); window.scrollTo({top: $("finder").offsetTop - 16, behavior: "smooth"}); return; }
+  const act = e.target.closest("[data-act]"); if (!act) return;
+  if (act.dataset.act === "pick") {
+    NOTES.reset = null; $("topic").value = act.dataset.topic; applyScope(); renderTopics(); $("topic").value = act.dataset.topic;
+    runSearch($("q").value); window.scrollTo({top: $("finder").offsetTop - 16, behavior: "smooth"}); return;
+  }
+  const id = Number(act.dataset.id), d = DETAIL[id];
+  if (act.dataset.act === "sim") {
+    try { d.similar = await (await fetch(`/affairs/${id}/similar?limit=5`)).json(); } catch (err) { d.similar = []; }
+    renderHits();
+  } else if (act.dataset.act === "flag") {
+    const topic = act.dataset.topic;
+    try { await fetch("/flags", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({affair_id: id, topic})}); } catch (err) {}
+    FLAGGED.add(`${id}:${topic}`); renderHits();
+  }
+});
+$("topic").addEventListener("change", () => { NOTES.reset = null; applyScope(); renderTopics(); rerun(); });
+$("level").addEventListener("change", () => { NOTES.reset = null; applyScope(); renderTopics(); rerun(); });
+["yfrom", "yto"].forEach((k) => $(k).addEventListener("change", () => { checkYears(); rerun(); }));
+
+function renderFilters() {
+  const L = T(), cur = $("level").value;
+  $("level").innerHTML = LEVELS.map((l) => `<option value="${l}">${esc(L.levels[l || "all"])}</option>`).join("");
+  $("level").value = cur || "";
+  $("examples").innerHTML = L.examples.map((x) => `<button type="button" data-q="${esc(x)}">${esc(x)}</button>`).join("");
+  $("q").placeholder = L.s_placeholder;
+}
+
+function setLang(lang, first = false) {
+  if (!I18N[lang] || (lang === LANG && !first)) return;
+  LANG = lang;
+  const L = T();
+  document.documentElement.lang = lang;
+  document.title = L.title;
+  document.querySelectorAll("[data-i]").forEach((el) => { el.textContent = L[el.dataset.i]; });
+  $("topleft").textContent = `OpenParlData · 88 ${L.parl}`;
+  $("langs").setAttribute("aria-label", L.langs);
+  $("langs").innerHTML = LANGS.map((l) => `${l === "en" ? '<i class="sep" aria-hidden="true"></i>' : ""}<button type="button" lang="${l}" data-l="${l}" aria-pressed="${l === lang}">${l.toUpperCase()}</button>`).join("");
+  renderFilters();
+  renderTopics();
+  applyScope();
+  renderHits();
+}
+$("langs").addEventListener("mouseover", (e) => { const b = e.target.closest("button[data-l]"); if (b) setLang(b.dataset.l); });
+$("langs").addEventListener("click", (e) => { const b = e.target.closest("button[data-l]"); if (b) setLang(b.dataset.l); });
+$("langs").addEventListener("focusin", (e) => { const b = e.target.closest("button[data-l]"); if (b) setLang(b.dataset.l); });
+
+setLang("de", true);
+fetch("/topics").then((r) => r.json()).then((topics) => {
+  TOPICS_META = topics.filter((t) => t.calibrated);
+  renderTopics();
+}).catch(() => {}).finally(() => runSearch(T().examples[0]));
+</script>
+</body>
+</html>

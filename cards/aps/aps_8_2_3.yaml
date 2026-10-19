@@ -1,0 +1,63 @@
+id: aps_8_2_3
+version: 1
+source_description: The topic "Finanzordnung und Sparmassnahmen" ("Ordre financier et mesures d’économie")
+  in the chapter "Öffentliche Finanzen" of the domain "Wirtschaft und Finanzen" in the Année Politique
+  Suisse classification of Swiss politics. Cover what parliamentary affairs on this topic are typically
+  about, and what belongs to neighbouring topics of the same chapter instead.
+name: Public Finance Regulations and Austerity Measures
+definition: Parliamentary affairs concerning the rules governing public finances, budgetary discipline,
+  and the implementation of cost-saving or efficiency-enhancing measures by the state or public entities.
+include:
+- budgetary rules
+- public spending limits
+- austerity programs
+- fiscal consolidation
+- public sector efficiency
+- debt management
+- financial transparency
+- savings targets
+exclude:
+- tax policy
+- economic stimulus
+- investment promotion
+- social welfare funding
+- infrastructure financing
+- subsidy allocation
+- monetary policy
+terms:
+  de:
+  - Finanzordnung
+  - Sparmassnahmen
+  - Haushaltsdisziplin
+  - Staatsverschuldung
+  - Finanzhaushaltgesetz
+  - Effizienzsteigerung
+  - Kostenreduktion
+  - Budgetvorschriften
+  fr:
+  - régime financier
+  - mesures d’économie
+  - discipline budgétaire
+  - endettement public
+  - transparence financière
+  - optimisation des coûts
+  - règles budgétaires
+  - consolidation fiscale
+  it:
+  - disciplina finanziaria
+  - misure di risparmio
+  - regole di bilancio
+  - indebitamento pubblico
+  - trasparenza finanziaria
+  - efficienza delle spese
+  - riduzione dei costi
+  - consolidamento fiscale
+  rm:
+  - urden da finanzas publicas
+  - mesiras da spargn
+  - disciplina dal preventiv
+  - debit public
+  - transparenza finanziala
+  - optimaziun dals custs
+  - reglas da preventiv
+  - consolidaziun fiscala

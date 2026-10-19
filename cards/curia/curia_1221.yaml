@@ -1,0 +1,64 @@
+id: curia_1221
+version: 1
+source_description: 'The subject area "Gerichtswesen" (French: "Justice", Italian: "Giustizia") that the
+  Swiss Parliamentary Services assign to federal parliamentary affairs in Curia Vista. Cover what affairs
+  in this subject area are typically about.'
+name: Swiss Justice System
+definition: This topic covers parliamentary affairs related to the administration of justice, legal frameworks,
+  court organization, and the functioning of the judicial branch in Switzerland. It includes discussions
+  on legislation affecting courts, legal procedures, access to justice, and the independence of the judiciary.
+include:
+- court organization
+- judicial independence
+- legal procedures
+- access to justice
+- criminal law
+- civil law
+- administrative courts
+- judge appointments
+exclude:
+- education policy
+- healthcare services
+- taxation
+- transport infrastructure
+- environmental regulations
+- social welfare programs
+- defense and security
+terms:
+  de:
+  - Justizwesen
+  - Gerichtsorganisation
+  - Rechtsstaatlichkeit
+  - Strafrecht
+  - Zivilrecht
+  - Verwaltungsgericht
+  - Richterwahl
+  - Justizreformen
+  fr:
+  - système judiciaire
+  - indépendance de la justice
+  - procédures juridiques
+  - accès à la justice
+  - droit pénal
+  - droit civil
+  - tribunaux administratifs
+  - nomination des juges
+  it:
+  - sistema giudiziario
+  - indipendenza della giustizia
+  - procedure legali
+  - accesso alla giustizia
+  - diritto penale
+  - diritto civile
+  - tribunali amministrativi
+  - nomina dei giudici
+  rm:
+  - giustia
+  - organisaziun da las dretgiras
+  - stadi da dretg
+  - proceduras giuridicas
+  - access a la giustia
+  - dretg penal
+  - dretg civil
+  - dretgira administrativa
+  - elecziun da derschaders

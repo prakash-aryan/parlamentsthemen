@@ -1,0 +1,64 @@
+id: aps_4_1_2
+version: 1
+source_description: The topic "Migration" ("Migration") in the chapter "Soziale Gruppen" of the domain
+  "Gesellschaft und Kultur" in the Année Politique Suisse classification of Swiss politics. Cover what
+  parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics of
+  the same chapter instead.
+name: Migration
+definition: Parliamentary affairs under this topic address policies, integration, asylum procedures, and
+  the social and economic impacts of migration in Switzerland, including issues related to refugees, labor
+  migration, and the rights of foreign residents.
+include:
+- Asylum and refugee policies
+- Labor migration and work permits
+- Integration programs for migrants
+- Residency and citizenship rights
+- Border control and migration enforcement
+- Social inclusion of migrant communities
+- Family reunification procedures
+- Return and repatriation policies
+exclude:
+- General foreign policy
+- International trade agreements
+- Cultural exchange programs
+- Tourism regulations
+- National security (non-migration related)
+- Domestic social welfare (non-migrant specific)
+- Language policy
+terms:
+  de:
+  - Migration
+  - Asylpolitik
+  - Arbeitsmigration
+  - Integration
+  - Aufenthaltsrecht
+  - Flüchtlinge
+  - Familiennachzug
+  - Rückkehrpolitik
+  fr:
+  - Migration
+  - Politique d'asile
+  - Migration de travail
+  - Intégration
+  - Droit de séjour
+  - Réfugiés
+  - Regroupement familial
+  - Politique de retour
+  it:
+  - Migrazione
+  - Politica d'asilo
+  - Migrazione lavorativa
+  - Integrazione
+  - Permesso di soggiorno
+  - Rifugiati
+  - Ricongiungimento familiare
+  - Politica di rimpatrio
+  rm:
+  - Migraziun
+  - Politica d'asil
+  - Migraziun da lavur
+  - Integraziun
+  - Dretg da dimora
+  - Refugiads
+  - Reunificaziun da famiglia
+  - Politica da return

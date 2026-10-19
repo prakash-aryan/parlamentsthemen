@@ -1,0 +1,66 @@
+id: aps_8_2_4
+version: 1
+source_description: The topic "Steuern" ("Impôts") in the chapter "Öffentliche Finanzen" of the domain
+  "Wirtschaft und Finanzen" in the Année Politique Suisse classification of Swiss politics. Cover what
+  parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics of
+  the same chapter instead.
+name: Taxation
+definition: Parliamentary affairs concerning the design, implementation, and reform of tax systems at
+  federal, cantonal, and municipal levels, including tax rates, exemptions, and fiscal equity.
+include:
+- income tax
+- corporate tax
+- value-added tax (VAT)
+- property tax
+- tax incentives
+- tax evasion prevention
+- tax harmonization
+- tax administration
+exclude:
+- public spending
+- budget allocation
+- debt management
+- subsidies
+- social security contributions
+- customs duties
+terms:
+  de:
+  - Steuern
+  - Einkommenssteuer
+  - Kantonssteuern
+  - Mehrwertsteuer
+  - Grundstücksteuer
+  - Steuererleichterungen
+  - Steuerharmonisierung
+  - Steuerflucht
+  - Steuerverwaltung
+  fr:
+  - impôts
+  - impôt sur le revenu
+  - impôts cantonaux
+  - taxe sur la valeur ajoutée (TVA)
+  - impôt foncier
+  - allégements fiscaux
+  - harmonisation fiscale
+  - évasion fiscale
+  - administration fiscale
+  it:
+  - imposte
+  - imposta sul reddito
+  - imposte cantonali
+  - imposta sul valore aggiunto (IVA)
+  - imposta sulla proprietà
+  - incentivi fiscali
+  - armonizzazione fiscale
+  - fuga fiscale
+  - amministrazione fiscale
+  rm:
+  - taglias
+  - taglia sin las entradas
+  - taglias chantunalas
+  - taglia sin la valur agiunta (TVA)
+  - taglia sin la proprietad
+  - incitaments fiscals
+  - armonisaziun fiscala
+  - fugia fiscala
+  - administraziun da taglias

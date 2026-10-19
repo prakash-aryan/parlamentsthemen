@@ -1,0 +1,66 @@
+id: aps_4_1_8
+version: 1
+source_description: The topic "LGBTQIA+" ("LGBTQIA+") in the chapter "Soziale Gruppen" of the domain "Gesellschaft
+  und Kultur" in the Année Politique Suisse classification of Swiss politics. Cover what parliamentary
+  affairs on this topic are typically about, and what belongs to neighbouring topics of the same chapter
+  instead.
+name: LGBTQIA+ Rights and Inclusion
+definition: Parliamentary affairs under this topic address policies, legal frameworks, and social measures
+  concerning the rights, equality, and inclusion of lesbian, gay, bisexual, transgender, queer, intersex,
+  asexual, and other sexual and gender minority groups in Swiss society. It covers issues such as anti-discrimination
+  laws, marriage and partnership rights, gender identity recognition, access to healthcare, and social
+  integration. The focus is on ensuring equal treatment and combating prejudice within the social and
+  cultural fabric of Switzerland.
+include:
+- same-sex marriage and partnership rights
+- anti-discrimination legislation
+- gender identity and legal recognition
+- LGBTQIA+ youth support and education
+- healthcare access for LGBTQIA+ individuals
+- hate crime prevention and prosecution
+- visibility and representation in public life
+- social integration and community support programs
+exclude:
+- general family policy
+- immigration and asylum procedures
+- religious freedom and church-state relations
+- sexual health education in schools (if not specifically LGBTQIA+ focused)
+- cultural heritage preservation
+- sports and physical activity policies
+terms:
+  de:
+  - LGBTQIA+-Rechte
+  - Diskriminierungsverbot
+  - Ehe für alle
+  - Geschlechtsidentität
+  - Gesundheitsversorgung
+  - Hassverbrechen
+  - Repräsentation
+  - Soziale Inklusion
+  fr:
+  - droits LGBTQIA+
+  - interdiction de la discrimination
+  - mariage pour tous
+  - identité de genre
+  - accès aux soins
+  - crimes de haine
+  - représentation
+  - inclusion sociale
+  it:
+  - diritti LGBTQIA+
+  - divieto di discriminazione
+  - matrimonio egualitario
+  - identità di genere
+  - accesso alle cure
+  - crimini d'odio
+  - rappresentanza
+  - inclusione sociale
+  rm:
+  - dretgs LGBTQIA+
+  - scumond da discriminaziun
+  - maridaglia eguala
+  - identitad da gender
+  - access a la sanadad
+  - crims d'odi
+  - represchentaziun
+  - inclusiun sociala

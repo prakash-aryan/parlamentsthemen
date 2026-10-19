@@ -1,0 +1,64 @@
+id: aps_2_1_6
+version: 1
+source_description: The topic "Stimm- und Wahlrecht" ("Droit de vote et d'éligibilité") in the chapter
+  "Direkte Demokratie" of the domain "Direkte Demokratie und Wahlen" in the Année Politique Suisse classification
+  of Swiss politics. Cover what parliamentary affairs on this topic are typically about, and what belongs
+  to neighbouring topics of the same chapter instead.
+name: Voting and Eligibility Rights
+definition: Parliamentary affairs concerning the legal framework, exercise, and reform of the right to
+  vote and stand for election in Switzerland, including suffrage age, citizenship requirements, electoral
+  procedures, and equal participation rights.
+include:
+- suffrage age
+- citizenship requirements
+- electoral procedures
+- equal participation rights
+- voter registration
+- ballot access
+- electoral district boundaries
+- voting methods (postal, electronic)
+exclude:
+- referendum results
+- popular initiative outcomes
+- election campaign financing
+- party financing
+- ballot question wording
+- electoral fraud
+- voter turnout statistics
+terms:
+  de:
+  - Stimm- und Wahlrecht
+  - Wahlberechtigung
+  - Stimmfähigkeit
+  - Wahlverfahren
+  - Wahlkreisgrenzen
+  - Stimmabgabe
+  - Passivlegitimation
+  - Gleichberechtigung
+  fr:
+  - droit de vote et d'éligibilité
+  - électorat
+  - procédures électorales
+  - âge du droit de vote
+  - nationalité
+  - inscription des électeurs
+  - égalité de participation
+  - circonscriptions électorales
+  it:
+  - diritto di voto e di eleggibilità
+  - elettorato attivo e passivo
+  - procedure elettorali
+  - età del diritto di voto
+  - cittadinanza
+  - registrazione elettorale
+  - parità di partecipazione
+  - circoscrizioni elettorali
+  rm:
+  - dretg da vuschar e d'eleger
+  - elettorad
+  - proceduras electoralas
+  - vegliadetgna da votar
+  - cidadanza
+  - registraziun dals electurs
+  - egualitad da participaziun
+  - circumscripziuns electorals

@@ -1,0 +1,64 @@
+id: aps_5_1_4
+version: 1
+source_description: The topic "Medikamente" ("Médicaments") in the chapter "Gesundheit, Sozialhilfe, Sport"
+  of the domain "Gesundheit und Sozialsystem" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Medications
+definition: Parliamentary affairs on medications focus on the regulation, availability, pricing, and safety
+  of pharmaceutical products within Switzerland's healthcare system. They address issues such as drug
+  approval processes, reimbursement by health insurers, access to essential medicines, and the impact
+  of medication policies on public health.
+include:
+- pharmaceutical pricing
+- drug approval and regulation
+- reimbursement by health insurers
+- access to essential medicines
+- medication safety and side effects
+- generic drug policies
+- pharmaceutical industry oversight
+- medication shortages
+exclude:
+- hospital infrastructure
+- public health campaigns
+- social welfare benefits
+- sports funding and facilities
+- long-term care services
+- healthcare personnel training
+terms:
+  de:
+  - Medikamente
+  - Arzneimittel
+  - Preisgestaltung
+  - Kostenübernahme
+  - Zulassung
+  - Sicherheit
+  - Generika
+  - Pharmaindustrie
+  fr:
+  - médicaments
+  - réglementation
+  - prix
+  - remboursement
+  - autorisation
+  - sécurité
+  - génériques
+  - industrie pharmaceutique
+  it:
+  - farmaci
+  - regolamentazione
+  - prezzi
+  - rimborso
+  - autorizzazione
+  - sicurezza
+  - generici
+  - industria farmaceutica
+  rm:
+  - medicaments
+  - prets
+  - rembursament
+  - autorisaziun
+  - segirezza
+  - generica
+  - industria farmaceutica
+  - disponibilitad

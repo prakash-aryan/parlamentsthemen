@@ -1,0 +1,65 @@
+id: aps_8_1_7
+version: 1
+source_description: The topic "Wirtschaftsordnung" ("Ordre économique") in the chapter "Wirtschaftspolitik"
+  of the domain "Wirtschaft und Finanzen" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Economic System
+definition: Parliamentary affairs under this topic examine the fundamental principles, structures, and
+  regulations governing economic activity within Switzerland, including market mechanisms, competition
+  policy, and the role of the state in the economy.
+include:
+- market regulation
+- competition policy
+- state economic role
+- economic freedom
+- privatization
+- economic governance
+- monetary policy framework
+- economic liberalization
+exclude:
+- taxation policy
+- budget allocation
+- social security
+- employment policy
+- trade agreements
+- financial market supervision
+- regional economic development
+terms:
+  de:
+  - Wirtschaftsordnung
+  - Marktregulierung
+  - Wettbewerbspolitik
+  - Staatliche Wirtschaftsaufgabe
+  - Wirtschaftsfreiheit
+  - Privatisierung
+  - Wirtschaftssteuerung
+  - Liberalisierung
+  - Wirtschaftsordnung Schweiz
+  fr:
+  - ordre économique
+  - régulation du marché
+  - politique de la concurrence
+  - rôle de l'État dans l'économie
+  - liberté économique
+  - privatisation
+  - gouvernance économique
+  - libéralisation économique
+  it:
+  - ordinamento economico
+  - regolamentazione del mercato
+  - politica della concorrenza
+  - ruolo dello Stato nell'economia
+  - libertà economica
+  - privatizzazione
+  - governance economica
+  - liberalizzazione economica
+  rm:
+  - urden economic
+  - regulaziun dal martgà
+  - politica da concurrenza
+  - rol dal stadi en l’economia
+  - libertad economica
+  - privatisaziun
+  - guvernanza economica
+  - liberalisaziun economica

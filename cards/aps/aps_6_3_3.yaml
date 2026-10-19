@@ -1,0 +1,64 @@
+id: aps_6_3_3
+version: 1
+source_description: The topic "Mietwesen" ("Logement et loyer") in the chapter "Raumplanung und Wohnungswesen"
+  of the domain "Infrastruktur und Umwelt" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Housing and Rents
+definition: Parliamentary affairs under this topic focus on regulations, policies, and initiatives related
+  to rental housing, including rent control, housing affordability, tenant rights, and the supply of residential
+  properties. It addresses issues such as the balance between private and social housing, urban development
+  impacts on housing availability, and measures to ensure adequate and affordable housing for all income
+  groups.
+include:
+- rent control mechanisms
+- tenant protection laws
+- social housing development
+- housing affordability policies
+- rental market regulation
+- housing supply strategies
+- urban planning and housing integration
+exclude:
+- building construction permits
+- energy efficiency standards for buildings
+- real estate investment incentives
+- commercial property regulations
+- agricultural land use planning
+- infrastructure project funding
+terms:
+  de:
+  - Mietrecht
+  - Mietpreisregulierung
+  - Wohnungsbau
+  - Mieter*innenrechte
+  - Wohnungsmarkt
+  - Sozialwohnungen
+  - Wohnraumversorgung
+  - Wohnungsnotstand
+  fr:
+  - logement locatif
+  - régulation des loyers
+  - protection des locataires
+  - construction de logements sociaux
+  - pénurie de logements
+  - marché du logement
+  - politique du logement
+  - droit du bail
+  it:
+  - affitti
+  - regolamentazione degli affitti
+  - diritti degli inquilini
+  - edilizia abitativa sociale
+  - carenza di alloggi
+  - mercato immobiliare
+  - politica abitativa
+  - contratto di locazione
+  rm:
+  - chasas da locaziun
+  - regulaziun dals tschains
+  - protecziun dals locaturs
+  - chasas d'abitar socialas
+  - mancanza d'abitaziuns
+  - martgà d'immobiglias
+  - politica d'abitar
+  - contract da locaziun

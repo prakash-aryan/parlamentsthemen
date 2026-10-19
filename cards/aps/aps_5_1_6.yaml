@@ -1,0 +1,68 @@
+id: aps_5_1_6
+version: 1
+source_description: The topic "Medizinische Forschung" ("Recherche médicale") in the chapter "Gesundheit,
+  Sozialhilfe, Sport" of the domain "Gesundheit und Sozialsystem" in the Année Politique Suisse classification
+  of Swiss politics. Cover what parliamentary affairs on this topic are typically about, and what belongs
+  to neighbouring topics of the same chapter instead.
+name: Medical Research
+definition: Parliamentary affairs under this topic focus on funding, regulation, ethical standards, and
+  policy frameworks for medical research in Switzerland, including clinical trials, innovation incentives,
+  and public health research priorities.
+include:
+- clinical trials regulation
+- research funding allocation
+- ethical guidelines for medical studies
+- public health research priorities
+- innovation incentives in healthcare
+- data sharing in medical research
+- collaboration between academia and industry
+- regulation of new medical technologies
+exclude:
+- healthcare service delivery
+- social welfare programs
+- sports policy and funding
+- drug pricing and reimbursement
+- hospital infrastructure development
+- public health campaigns
+- social insurance schemes
+terms:
+  de:
+  - medizinische Forschung
+  - klinische Studien
+  - Forschungsförderung
+  - ethische Richtlinien
+  - Innovationsanreize
+  - Datenfreigabe
+  - Akademie-Industrie-Kooperation
+  - Regulierung neuer MedTech
+  - öffentliche Gesundheitsforschung
+  fr:
+  - recherche médicale
+  - essais cliniques
+  - financement de la recherche
+  - directives éthiques
+  - incitations à l'innovation
+  - partage de données
+  - collaboration université-industrie
+  - régulation des nouvelles technologies médicales
+  - recherche en santé publique
+  it:
+  - ricerca medica
+  - studi clinici
+  - finanziamento della ricerca
+  - linee guida etiche
+  - incentivi all'innovazione
+  - condivisione dei dati
+  - collaborazione università-industria
+  - regolamentazione delle nuove tecnologie mediche
+  - ricerca in sanità pubblica
+  rm:
+  - perscrutaziun medicinala
+  - studis clinics
+  - finanziaziun da perscrutaziun
+  - directivas eticas
+  - incentivs per innovaziun
+  - partiziun da datas
+  - collavuraziun academia-industria
+  - regulaziun da novas tecnologias medicinalas
+  - perscrutaziun da sanadad publica

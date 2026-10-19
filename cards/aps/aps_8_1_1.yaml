@@ -1,0 +1,68 @@
+id: aps_8_1_1
+version: 1
+source_description: The topic "Konjunkturlage und -politik" ("Situation et politique conjoncturelle")
+  in the chapter "Wirtschaftspolitik" of the domain "Wirtschaft und Finanzen" in the Année Politique Suisse
+  classification of Swiss politics. Cover what parliamentary affairs on this topic are typically about,
+  and what belongs to neighbouring topics of the same chapter instead.
+name: Economic Cycle and Conjunctural Policy
+definition: Parliamentary affairs on this topic focus on the current state of the economy, business cycles,
+  and government measures to stabilize or stimulate economic activity. It covers debates on fiscal and
+  monetary policies aimed at managing economic fluctuations, employment levels, and overall economic performance.
+include:
+- economic growth trends
+- business cycle analysis
+- fiscal stimulus measures
+- monetary policy impacts
+- unemployment rates
+- economic stability policies
+- recession prevention strategies
+- sector-specific economic performance
+exclude:
+- long-term structural economic reforms
+- tax policy overhauls
+- industrial strategy development
+- financial market regulation
+- social welfare programs
+- environmental economic policies
+- trade agreements and tariffs
+terms:
+  de:
+  - Konjunkturlage
+  - Konjunkturpolitik
+  - Wirtschaftszyklus
+  - Stabilitätspolitik
+  - Fiskalpolitik
+  - Geldpolitik
+  - Arbeitsmarkt
+  - Wirtschaftswachstum
+  - Rezessionsbekämpfung
+  fr:
+  - situation conjoncturelle
+  - politique conjoncturelle
+  - cycle économique
+  - stabilité économique
+  - politique budgétaire
+  - politique monétaire
+  - marché du travail
+  - croissance économique
+  - prévention de récession
+  it:
+  - situazione congiunturale
+  - politica congiunturale
+  - ciclo economico
+  - stabilità economica
+  - politica fiscale
+  - politica monetaria
+  - mercato del lavoro
+  - crescita economica
+  - prevenzione recessione
+  rm:
+  - situaziun conjuncturala
+  - politica conjuncturala
+  - ciclus economic
+  - stabilitad economica
+  - politica fiscala
+  - politica monetara
+  - martgà da lavur
+  - creschientscha economica
+  - prevenziun da recessiun

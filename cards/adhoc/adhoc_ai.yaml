@@ -1,0 +1,71 @@
+id: adhoc_ai
+version: 1
+source_description: 'Artificial intelligence: parliamentary affairs about artificial intelligence and
+  algorithms, including their regulation, use in the administration, schools, health care and the economy,
+  generative AI, automated decisions, risks for jobs, rights and democracy, and research and investment
+  in AI. Excludes general IT projects without AI.'
+name: Artificial Intelligence in Public Policy
+definition: Parliamentary discussions and motions concerning the development, regulation, and deployment
+  of artificial intelligence and algorithms across public sectors, including their impact on employment,
+  human rights, democratic processes, and the economy.
+include:
+- AI regulation
+- algorithmic decision-making
+- generative AI
+- AI in administration
+- AI in education
+- AI in healthcare
+- AI in the economy
+- automated decision systems
+- AI research funding
+exclude:
+- general IT infrastructure projects
+- non-AI software development
+- basic computer literacy programs
+- standard data management systems
+- generic digital transformation initiatives
+terms:
+  de:
+  - Künstliche Intelligenz
+  - Algorithmenregulierung
+  - automatisierte Entscheidungsfindung
+  - generative KI
+  - Verwendung in der Verwaltung
+  - Bildungstechnologien
+  - Gesundheitswesen
+  - Arbeitsmarkt
+  - Demokratie und Grundrechte
+  - Forschung und Investitionen
+  fr:
+  - intelligence artificielle
+  - régulation des algorithmes
+  - décision automatisée
+  - IA générative
+  - utilisation dans l'administration
+  - éducation
+  - santé
+  - économie
+  - emploi
+  - droits démocratiques
+  it:
+  - intelligenza artificiale
+  - regolamentazione degli algoritmi
+  - decisioni automatizzate
+  - IA generativa
+  - uso nell'amministrazione
+  - scuola
+  - sanità
+  - economia
+  - posti di lavoro
+  - diritti democratici
+  rm:
+  - intelligenza artifiziala
+  - regulaziun d'algoritms
+  - decisiuns automaticas
+  - IA generativa
+  - administraziun publica
+  - scolaziun
+  - sanitad
+  - economia
+  - lavur
+  - dretgs democratics

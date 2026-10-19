@@ -1,0 +1,69 @@
+id: sg_9
+version: 1
+source_description: The subject area "Zivilrecht, Strafrecht, Rechtspflege" of the systematic law collection
+  of the canton of St. Gallen, which the canton uses to classify the affairs of its cantonal parliament.
+  Cover what cantonal affairs in this subject area are typically about.
+name: Canton of St. Gallen Civil, Criminal, and Judicial Law Affairs
+definition: This topic covers parliamentary matters related to civil law, criminal law, and the administration
+  of justice within the Canton of St. Gallen, as classified under its systematic law collection. It includes
+  debates, motions, and inquiries concerning legal frameworks, court procedures, and penal systems specific
+  to the canton. These affairs reflect the canton's legislative and oversight role in shaping and monitoring
+  its legal order.
+include:
+- civil law reforms
+- criminal code amendments
+- judicial organization
+- court procedures
+- penal system oversight
+- legal aid provisions
+- data protection in justice
+- enforcement of judgments
+exclude:
+- federal constitutional law
+- international law
+- tax law
+- administrative law
+- environmental law
+- social security law
+- trade law
+terms:
+  de:
+  - Zivilrecht
+  - Strafrecht
+  - Rechtspflege
+  - Gerichtsorganisation
+  - Strafvollzug
+  - Zivilprozessordnung
+  - Strafprozessordnung
+  - Rechtshilfe
+  - Justizreformen
+  fr:
+  - droit civil
+  - droit pénal
+  - administration de la justice
+  - organisation judiciaire
+  - exécution des peines
+  - procédure civile
+  - procédure pénale
+  - aide juridique
+  - réformes judiciaires
+  it:
+  - diritto civile
+  - diritto penale
+  - amministrazione della giustizia
+  - organizzazione giudiziaria
+  - esecuzione delle pene
+  - procedura civile
+  - procedura penale
+  - assistenza legale
+  - riforme giudiziarie
+  rm:
+  - dretg civil
+  - dretg penal
+  - administraziun da la giustia
+  - organisaziun giudiziala
+  - execuziun da las painas
+  - procedura civila
+  - procedura penala
+  - agid giuridic
+  - refurmas giudizialas

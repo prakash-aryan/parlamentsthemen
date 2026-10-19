@@ -1,0 +1,8 @@
+{
+  "model": "apertus-v1-5-8b",
+  "card": "cards/curia/curia_28.yaml",
+  "a": 0.04953573968953395,
+  "b": -1.6560554770249056,
+  "threshold": -8.887499652929534,
+  "fitted_on": "curia dev sample (600 affairs, 68 positives)"
+}

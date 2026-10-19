@@ -1,0 +1,73 @@
+id: curia_2446
+version: 1
+source_description: 'The subject area "Steuer" (French: "Fiscalité", Italian: "Imposte") that the Swiss
+  Parliamentary Services assign to federal parliamentary affairs in Curia Vista. Cover what affairs in
+  this subject area are typically about.'
+name: Taxation
+definition: This topic covers parliamentary affairs related to the design, implementation, and administration
+  of taxes at federal, cantonal, and municipal levels in Switzerland. It includes discussions on tax rates,
+  exemptions, compliance, revenue generation, and the impact of taxation on individuals, businesses, and
+  the economy. It also encompasses debates on tax fairness, efficiency, and reforms to align with economic
+  and social policy goals.
+include:
+- income tax
+- value-added tax (VAT)
+- corporate tax
+- property tax
+- tax exemptions
+- tax compliance
+- tax administration
+- tax reform
+- tax evasion prevention
+exclude:
+- social security contributions
+- customs duties
+- environmental levies
+- fines and penalties
+- public spending allocation
+- budget approval
+terms:
+  de:
+  - Steuern
+  - Einkommenssteuer
+  - Mehrwertsteuer
+  - Kantonssteuern
+  - Gewinnsteuer
+  - Grundstücksteuer
+  - Steuerbefreiungen
+  - Steuererhebung
+  - Steuerharmonisierung
+  - Steuergerechtigkeit
+  fr:
+  - fiscalité
+  - impôt sur le revenu
+  - TVA
+  - impôts cantonaux
+  - impôt sur les bénéfices
+  - impôt foncier
+  - exonérations fiscales
+  - administration fiscale
+  - réforme fiscale
+  - équité fiscale
+  it:
+  - imposte
+  - imposta sul reddito
+  - IVA
+  - imposte cantonali
+  - imposta sul profitto
+  - imposta sulla proprietà
+  - esenzioni fiscali
+  - riscossione delle imposte
+  - armonizzazione fiscale
+  - giustizia fiscale
+  rm:
+  - taglia
+  - taglia sin las entradas
+  - taglia da valur agiuntada
+  - taglias chantunalas
+  - taglia sin las societads
+  - taglia sin la proprietad
+  - exemziuns da taglia
+  - incassament da taglia
+  - harmonisaziun da taglia
+  - gistadad fiscala

@@ -1,0 +1,61 @@
+id: aps_2_1_2
+version: 1
+source_description: The topic "Referendum" ("Référendum") in the chapter "Direkte Demokratie" of the domain
+  "Direkte Demokratie und Wahlen" in the Année Politique Suisse classification of Swiss politics. Cover
+  what parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics
+  of the same chapter instead.
+name: Popular Referendums
+definition: Parliamentary affairs concerning the initiation, processing, and outcome of popular referendums,
+  including discussions on referendum thresholds, validity of signatures, and the implementation of referendum
+  results.
+include:
+- Initiation of popular referendums
+- Referendum signature collection
+- Validity of referendum proposals
+- Referendum campaigning
+- Processing of referendum results
+- Implementation of referendum outcomes
+- Referendum threshold debates
+exclude:
+- Legislative proposals (belongs to 'Bills' topic)
+- Parliamentary questions (belongs to 'Questions' topic)
+- Postulates (belongs to 'Postulates' topic)
+- Interpellations (belongs to 'Interpellations' topic)
+- Cantonal-specific referendum procedures (belongs to cantonal classifications)
+terms:
+  de:
+  - Volksabstimmung
+  - Referendumsinitiative
+  - Unterschriftenbogen
+  - Referendumsergebnis
+  - Volkswillen
+  - Referendumsschwelle
+  - Abstimmungsvorlage
+  - Umsetzung des Abstimmungsergebnisses
+  fr:
+  - référendum populaire
+  - initiative de référendum
+  - collecte de signatures
+  - résultat du référendum
+  - volonté populaire
+  - seuil référendaire
+  - proposition de référendum
+  - mise en œuvre du résultat
+  it:
+  - referendum popolare
+  - iniziativa referendaria
+  - raccolta di firme
+  - risultato del referendum
+  - volontà popolare
+  - soglia referendaria
+  - proposta referendaria
+  - attuazione del risultato
+  rm:
+  - referendum popular
+  - iniziativa da referendum
+  - collecziun da suttascripziuns
+  - resultat dal referendum
+  - voluntad populara
+  - sigl referendari
+  - proposta da referendum
+  - realisaziun dal resultat

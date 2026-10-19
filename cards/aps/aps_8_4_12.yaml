@@ -1,0 +1,64 @@
+id: aps_8_4_12
+version: 1
+source_description: The topic "Umweltschutz in der Landwirtschaft" ("Protection de l'environnement dans
+  l'agriculture") in the chapter "Landwirtschaft" of the domain "Wirtschaft und Finanzen" in the Année
+  Politique Suisse classification of Swiss politics. Cover what parliamentary affairs on this topic are
+  typically about, and what belongs to neighbouring topics of the same chapter instead.
+name: Environmental Protection in Agriculture
+definition: Parliamentary affairs on this topic focus on measures to reduce environmental impacts of farming
+  practices, promote sustainable agriculture, and regulate agricultural activities to protect soil, water,
+  air, biodiversity, and climate within the economic and financial policy framework.
+include:
+- agricultural emissions reduction
+- sustainable farming practices
+- soil and water protection
+- biodiversity preservation in farmland
+- organic farming incentives
+- pesticide and fertilizer regulation
+- climate-friendly agricultural policies
+- agri-environmental schemes
+exclude:
+- direct agricultural subsidies
+- food price regulation
+- rural development infrastructure
+- agricultural trade agreements
+- farmland consolidation
+- animal welfare standards
+- food safety regulations
+terms:
+  de:
+  - Umweltschutz in der Landwirtschaft
+  - nachhaltige Landwirtschaft
+  - Emissionsreduktion
+  - Biodiversität
+  - Pestizidregulierung
+  - Düngemittelmanagement
+  - Klimaanpassung
+  - Agri-Umweltmassnahmen
+  fr:
+  - protection de l'environnement en agriculture
+  - agriculture durable
+  - réduction des émissions
+  - biodiversité
+  - réglementation des pesticides
+  - gestion des engrais
+  - adaptation climatique
+  - mesures agri-environnementales
+  it:
+  - protezione ambientale in agricoltura
+  - agricoltura sostenibile
+  - riduzione delle emissioni
+  - biodiversità
+  - regolamentazione dei pesticidi
+  - gestione dei fertilizzanti
+  - adattamento climatico
+  - misure agro-ambientali
+  rm:
+  - protecziun da l'ambient en agricultura
+  - agricultura durabla
+  - reducziun da las emissiuns
+  - biodiversitad
+  - regulaziun da pesticids
+  - gestiun da fertilizants
+  - adattaziun al clima
+  - mesiras agro-ambientalas

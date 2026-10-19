@@ -1,0 +1,64 @@
+id: aps_7_2_6
+version: 1
+source_description: The topic "Zivildienst und Dienstverweigerung" ("Service civil et refus de servir")
+  in the chapter "Sicherheitspolitik" of the domain "Rechts- und Sicherheitspolitik" in the Année Politique
+  Suisse classification of Swiss politics. Cover what parliamentary affairs on this topic are typically
+  about, and what belongs to neighbouring topics of the same chapter instead.
+name: Civil Service and Conscientious Objection
+definition: Parliamentary affairs concerning the regulation, administration, and ethical implications
+  of alternative civilian service as a substitute for military service, as well as the legal framework
+  and political debates around conscientious objection to military service in Switzerland.
+include:
+- civilian service alternatives
+- conscription system
+- conscientious objection rights
+- administrative procedures for service alternatives
+- ethical debates on military service
+- legal status of objectors
+- duration and conditions of civil service
+- equality between military and civil service
+exclude:
+- military defense strategy
+- armed forces organization
+- international security alliances
+- counter-terrorism measures
+- border security policies
+- military procurement
+terms:
+  de:
+  - Zivildienst
+  - Dienstverweigerung
+  - Kriegsdienstverweigerung
+  - Wehrpflicht
+  - Freiwilligendienst
+  - Gewissensfreiheit
+  - Zivildienstpflicht
+  - Dienstpflicht
+  - Alternativdienst
+  fr:
+  - service civil
+  - objection de conscience
+  - refus de servir
+  - service militaire
+  - obligation de servir
+  - liberté de conscience
+  - service de remplacement
+  - droit d'objection
+  it:
+  - servizio civile
+  - obiezione di coscienza
+  - rifiuto di prestare servizio militare
+  - obbligo di leva
+  - servizio sostitutivo
+  - libertà di coscienza
+  - diritto all'obiezione
+  - alternativa al servizio militare
+  rm:
+  - servetsch civil
+  - obieziun da conscienza
+  - refusa da servir en l'armada
+  - obligaziun da servir
+  - servetsch alternativ
+  - libertad da conscienza
+  - obligaziun da far servetsch civil
+  - dretg d'obieziun

@@ -1,0 +1,74 @@
+id: aps_5_2_5
+version: 1
+source_description: The topic "Unfallversicherung" ("Assurance-accidents") in the chapter "Sozialversicherungen"
+  of the domain "Gesundheit und Sozialsystem" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Accident Insurance
+definition: Parliamentary affairs on accident insurance focus on the regulation, funding, and administration
+  of mandatory insurance schemes that provide compensation for work-related and non-work-related injuries
+  and illnesses. This includes debates on premium rates, benefit levels, coverage scope, and the efficiency
+  of insurance institutions. It also covers issues related to prevention, rehabilitation, and the integration
+  of accident insurance with other social security systems.
+include:
+- compulsory accident insurance coverage
+- workplace safety regulations
+- injury and illness compensation
+- premium calculation and funding
+- rehabilitation and return-to-work programs
+- insurance institution oversight
+- coordination with other social insurances
+- prevention of occupational hazards
+exclude:
+- healthcare service provision
+- medical research funding
+- pension system administration
+- unemployment insurance benefits
+- family allowance programs
+- disability pension schemes
+- public health campaigns
+terms:
+  de:
+  - Unfallversicherung
+  - UVG
+  - Prämien
+  - Leistungen
+  - Versicherer
+  - Prävention
+  - Invalidenrente
+  - Taggelder
+  - Arbeitsunfälle
+  - Nichtberufsunfälle
+  fr:
+  - assurance-accidents
+  - LAA
+  - primes
+  - indemnités
+  - assureur
+  - prévention
+  - rente d'invalidité
+  - indemnités journalières
+  - accidents professionnels
+  - accidents non professionnels
+  it:
+  - assicurazione contro gli infortuni
+  - LAINF
+  - premi
+  - indennità
+  - assicuratore
+  - prevenzione
+  - rendita d'invalidità
+  - indennità giornaliere
+  - infortuni professionali
+  - infortuni non professionali
+  rm:
+  - segirada cunter accidents
+  - LAA
+  - premias
+  - indemnisaziuns
+  - segirader
+  - prevenziun
+  - renta d'invaliditad
+  - indemnisaziuns da di
+  - accidents da lavur
+  - accidents betg da lavur

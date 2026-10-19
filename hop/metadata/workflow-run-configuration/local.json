@@ -1,0 +1,12 @@
+{
+  "engineRunConfiguration" : {
+    "Local" : {
+      "safe_mode" : false,
+      "transactional" : false
+    }
+  },
+  "defaultSelection" : true,
+  "name" : "local",
+  "description" : "Runs the workflow in the local engine",
+  "executionInfoLocationName" : ""
+}

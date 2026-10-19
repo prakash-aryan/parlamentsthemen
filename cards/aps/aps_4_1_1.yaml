@@ -1,0 +1,64 @@
+id: aps_4_1_1
+version: 1
+source_description: The topic "Bevölkerungsentwicklung" ("Evolution de la population") in the chapter
+  "Soziale Gruppen" of the domain "Gesellschaft und Kultur" in the Année Politique Suisse classification
+  of Swiss politics. Cover what parliamentary affairs on this topic are typically about, and what belongs
+  to neighbouring topics of the same chapter instead.
+name: Population dynamics
+definition: Parliamentary affairs on population dynamics examine trends, causes, and consequences of demographic
+  changes such as birth rates, migration, aging, and urbanization within Switzerland. They address policy
+  implications for social services, housing, labor markets, and regional development. These affairs often
+  seek data, analysis, or measures to manage demographic shifts.
+include:
+- birth rate trends
+- migration flows
+- aging population
+- urbanization patterns
+- demographic projections
+- impact on social security
+- housing demand
+- labor market effects
+exclude:
+- individual social welfare cases
+- specific cultural heritage preservation
+- language policy implementation
+- educational curriculum design
+- healthcare service delivery
+- environmental conservation measures
+terms:
+  de:
+  - Bevölkerungsentwicklung
+  - Demografie
+  - Geburtenrate
+  - Migration
+  - Alterspyramide
+  - Städtewachstum
+  - Bevölkerungsprognose
+  - Arbeitskräftebedarf
+  fr:
+  - évolution démographique
+  - démographie
+  - taux de natalité
+  - flux migratoires
+  - vieillissement de la population
+  - urbanisation
+  - projection démographique
+  - besoin en main-d'œuvre
+  it:
+  - evoluzione demografica
+  - demografia
+  - tasso di natalità
+  - flussi migratori
+  - invecchiamento della popolazione
+  - urbanizzazione
+  - proiezione demografica
+  - domanda di manodopera
+  rm:
+  - svilup demografic
+  - demografia
+  - taxa da naschientschas
+  - flus migrants
+  - vegliantada da la populaziun
+  - urbanisaziun
+  - projecziun demografica
+  - basegn da lavur

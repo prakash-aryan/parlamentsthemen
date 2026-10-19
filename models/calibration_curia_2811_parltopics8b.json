@@ -1,0 +1,9 @@
+{
+  "model": "apertus-parltopics-8b",
+  "card": "curia_2811",
+  "a": 1.8238103401257004,
+  "b": -1.9297956809139811,
+  "threshold": 1.4337243638660127,
+  "calibrated": true,
+  "fitted_on": "curia_dev_sample.parquet, 600 affairs before 2024, 48 positives"
+}

@@ -1,0 +1,63 @@
+id: sg_4
+version: 1
+source_description: The subject area "Gesundheitspflege, Sozialversicherung, Sozialhilfe" of the systematic
+  law collection of the canton of St. Gallen, which the canton uses to classify the affairs of its cantonal
+  parliament. Cover what cantonal affairs in this subject area are typically about.
+name: Cantonal Health, Social Insurance, and Welfare Affairs
+definition: This topic covers parliamentary matters related to the organization, funding, and delivery
+  of health services, social insurance schemes, and welfare support within the canton of St. Gallen. It
+  includes debates and decisions on access to healthcare, social security benefits, poverty alleviation
+  programs, and the administration of social services by cantonal authorities.
+include:
+- Healthcare system organization
+- Social insurance schemes
+- Welfare and poverty alleviation
+- Cantonal health policy
+- Social security benefits
+- Public health initiatives
+- Long-term care services
+- Social assistance programs
+exclude:
+- Federal-level health or social policy
+- City-level social services
+- Private insurance matters
+- International health cooperation
+- Educational policy
+- Environmental regulations
+terms:
+  de:
+  - Gesundheitspflege
+  - Sozialversicherung
+  - Sozialhilfe
+  - Kantonale Gesundheitspolitik
+  - Sozialleistungen
+  - Armutbekämpfung
+  - Langzeitpflege
+  - Sozialdienste
+  fr:
+  - Soins de santé
+  - Assurance sociale
+  - Aide sociale
+  - Politique cantonale de la santé
+  - Prestations sociales
+  - Lutte contre la pauvreté
+  - Soins de longue durée
+  - Services sociaux
+  it:
+  - Assistenza sanitaria
+  - Assicurazione sociale
+  - Assistenza sociale
+  - Politica sanitaria cantonale
+  - Prestazioni sociali
+  - Lotta alla povertà
+  - Cure a lungo termine
+  - Servizi sociali
+  rm:
+  - Tgira da sanadad
+  - Segirada soziala
+  - Agid social
+  - Politica da sanadad chantunala
+  - Prestaziuns socialas
+  - Cumbatter la povertad
+  - Tgira a lung termin
+  - Servetschs socials

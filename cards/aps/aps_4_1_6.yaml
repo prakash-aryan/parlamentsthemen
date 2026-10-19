@@ -1,0 +1,71 @@
+id: aps_4_1_6
+version: 1
+source_description: The topic "Kinder und Jugendliche" ("Enfants et adolescents") in the chapter "Soziale
+  Gruppen" of the domain "Gesellschaft und Kultur" in the Année Politique Suisse classification of Swiss
+  politics. Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Children and Youth
+definition: Parliamentary affairs concerning the well-being, development, education, protection, and social
+  integration of children and adolescents in Switzerland. This includes policies on childcare, youth services,
+  school systems, youth participation, and measures to prevent child poverty and promote healthy development.
+include:
+- childcare and early education
+- youth services and programs
+- school and vocational education
+- child protection and welfare
+- youth participation and rights
+- prevention of child poverty
+- health and development of children
+- integration of immigrant youth
+exclude:
+- elderly care and pension systems
+- adult education and lifelong learning
+- cultural heritage preservation
+- urban planning and housing
+- environmental protection
+- economic development and employment
+terms:
+  de:
+  - Kinder
+  - Jugendliche
+  - Kinderbetreuung
+  - Jugendförderung
+  - Schulwesen
+  - Kinderschutz
+  - Jugendpartizipation
+  - Kinderarmut
+  - Integration
+  - Gesundheit
+  fr:
+  - enfants
+  - adolescents
+  - garde d'enfants
+  - aide à la jeunesse
+  - système scolaire
+  - protection de l'enfance
+  - participation des jeunes
+  - pauvreté infantile
+  - intégration
+  - santé
+  it:
+  - bambini
+  - adolescenti
+  - asili nido
+  - servizi per i giovani
+  - sistema scolastico
+  - protezione dell'infanzia
+  - partecipazione giovanile
+  - povertà infantile
+  - integrazione
+  - salute
+  rm:
+  - uffants
+  - giuvenils
+  - cussagliaziun d'uffants
+  - promoziun da giuvenils
+  - sistem da scola
+  - protecziun d'uffants
+  - participaziun da giuvenils
+  - povertad d'uffants
+  - integraziun
+  - sanadad

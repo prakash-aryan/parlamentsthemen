@@ -1,0 +1,64 @@
+id: aps_2_2_2
+version: 1
+source_description: The topic "Wahlen in kantonale Regierungen" ("Elections des gouvernements cantonaux")
+  in the chapter "Wahlen" of the domain "Direkte Demokratie und Wahlen" in the Année Politique Suisse
+  classification of Swiss politics. Cover what parliamentary affairs on this topic are typically about,
+  and what belongs to neighbouring topics of the same chapter instead.
+name: Cantonal Government Elections
+definition: Parliamentary affairs concerning the election, composition, and functioning of cantonal governments,
+  including debates on electoral procedures, candidate qualifications, and the role of cantonal executive
+  bodies.
+include:
+- cantonal government election procedures
+- electoral rules for cantonal executives
+- composition of cantonal governments
+- qualifications of cantonal government candidates
+- parliamentary debates on cantonal executive formation
+- investigations into cantonal election irregularities
+- representation and diversity in cantonal governments
+- parliamentary oversight of cantonal executive appointments
+exclude:
+- federal council elections
+- municipal council elections
+- referendums on cantonal government structure
+- cantonal legislative elections
+- election financing regulations (general)
+- voter turnout analysis (general)
+- ballot initiative campaigns
+terms:
+  de:
+  - Wahlen in kantonale Regierungen
+  - Kantonsregierung
+  - Wahlverfahren
+  - Regierungsmitglieder
+  - Wahlberechtigung
+  - Wahlkampf
+  - Wahlresultate
+  - Regierungsbildung
+  fr:
+  - élections des gouvernements cantonaux
+  - exécutif cantonal
+  - procédure électorale
+  - membres du gouvernement cantonal
+  - droit de vote cantonal
+  - campagne électorale
+  - résultats des élections
+  - formation du gouvernement
+  it:
+  - elezioni dei governi cantonali
+  - esecutivo cantonale
+  - procedura elettorale
+  - membri del governo cantonale
+  - diritto di voto cantonale
+  - campagna elettorale
+  - risultati elettorali
+  - formazione del governo
+  rm:
+  - elecziuns dals regenzas chantunalas
+  - regenza chantunala
+  - procedura electorala
+  - commembers da la regenza chantunala
+  - dretg da vuschar chantunal
+  - campagna electorala
+  - resultats da las elecziuns
+  - furmaziun da la regenza

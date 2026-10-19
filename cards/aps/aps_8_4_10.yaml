@@ -1,0 +1,72 @@
+id: aps_8_4_10
+version: 1
+source_description: The topic "Forstwirtschaft" ("Sylviculture") in the chapter "Landwirtschaft" of the
+  domain "Wirtschaft und Finanzen" in the Année Politique Suisse classification of Swiss politics. Cover
+  what parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics
+  of the same chapter instead.
+name: Forestry
+definition: Parliamentary affairs concerning the management, conservation, and sustainable use of forest
+  resources in Switzerland, including timber production, biodiversity protection, forest policy, and the
+  role of forests in climate change mitigation and adaptation.
+include:
+- forest management plans
+- timber production and trade
+- biodiversity and ecosystem protection
+- forest policy and legislation
+- climate change and carbon sequestration
+- forest fire prevention and control
+- reforestation and afforestation
+- public access to forests
+exclude:
+- agricultural crop production
+- livestock farming
+- rural development programs
+- agricultural subsidies
+- food safety regulations
+- farmland preservation
+- agri-environmental schemes
+terms:
+  de:
+  - Forstwirtschaft
+  - Waldbewirtschaftung
+  - Holzproduktion
+  - Biodiversität
+  - Waldpolitik
+  - Klimaschutz
+  - Waldbrandprävention
+  - Aufforstung
+  - Waldgesetzgebung
+  - Nachhaltige Nutzung
+  fr:
+  - sylviculture
+  - gestion forestière
+  - production de bois
+  - biodiversité
+  - politique forestière
+  - protection du climat
+  - prévention des incendies
+  - reboisement
+  - législation forestière
+  - utilisation durable
+  it:
+  - selvicoltura
+  - gestione forestale
+  - produzione di legname
+  - biodiversità
+  - politica forestale
+  - protezione del clima
+  - prevenzione incendi
+  - rimboschimento
+  - legislazione forestale
+  - uso sostenibile
+  rm:
+  - selvicultura
+  - gestiun da guaud
+  - producziun da laina
+  - biodiversitad
+  - politica da guaud
+  - protecziun dal clima
+  - prevenziun d'incendis
+  - reforestaziun
+  - legislaziun forestala
+  - utilisaziun durabla

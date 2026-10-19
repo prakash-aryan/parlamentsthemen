@@ -1,0 +1,63 @@
+id: aps_4_1_3
+version: 1
+source_description: The topic "Asylwesen" ("Asile") in the chapter "Soziale Gruppen" of the domain "Gesellschaft
+  und Kultur" in the Année Politique Suisse classification of Swiss politics. Cover what parliamentary
+  affairs on this topic are typically about, and what belongs to neighbouring topics of the same chapter
+  instead.
+name: Asylum Policy
+definition: Parliamentary affairs concerning the regulation, administration, and implementation of asylum
+  procedures in Switzerland, including reception conditions, integration measures, and the handling of
+  asylum applications.
+include:
+- asylum procedures
+- reception and accommodation
+- integration programs
+- refugee status determination
+- return and deportation policies
+- funding for asylum services
+- legal framework for asylum
+exclude:
+- immigration policy for skilled workers
+- naturalization procedures
+- domestic social welfare
+- housing policy for Swiss citizens
+- criminal law regarding migrants
+- international refugee conventions (general)
+terms:
+  de:
+  - Asylwesen
+  - Asylverfahren
+  - Flüchtlingspolitik
+  - Aufnahmebedingungen
+  - Integration
+  - Wegweisung
+  - Asylgesetz
+  - Schutzstatus
+  - Asylunterkunft
+  fr:
+  - asile
+  - procédure d'asile
+  - politique d'accueil
+  - conditions d'accueil
+  - intégration des réfugiés
+  - renvoi
+  - statut de protection
+  - loi sur l'asile
+  it:
+  - asilo
+  - procedura d'asilo
+  - politica d'accoglienza
+  - condizioni di accoglienza
+  - integrazione dei rifugiati
+  - allontanamento
+  - statuto di protezione
+  - legge sull'asilo
+  rm:
+  - asil
+  - procedura d'asil
+  - politica d'accoglientscha
+  - cundiziuns d'accoglientscha
+  - integraziun da fugitivs
+  - expulsiun
+  - statut da protecziun
+  - lescha davart l'asil

@@ -1,0 +1,61 @@
+id: aps_4_4_4
+version: 1
+source_description: The topic "Digitale Medien" ("Médias numériques") in the chapter "Medien" of the domain
+  "Gesellschaft und Kultur" in the Année Politique Suisse classification of Swiss politics. Cover what
+  parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics of
+  the same chapter instead.
+name: Digital Media
+definition: Parliamentary affairs concerning the regulation, impact, and development of digital platforms,
+  online content, and digital communication technologies within the broader context of media and society.
+include:
+- online content regulation
+- digital platform accountability
+- data privacy in media
+- digital media literacy
+- social media governance
+- online hate speech
+- digital media infrastructure
+exclude:
+- traditional print media regulation
+- broadcast licensing
+- cinema policy
+- cultural heritage preservation
+- public library funding
+- radio frequency allocation
+terms:
+  de:
+  - digitale Medien
+  - Online-Inhalte
+  - Plattformregulierung
+  - Datenschutz
+  - Medienkompetenz
+  - Social Media
+  - Hassrede im Netz
+  - Medieninfrastruktur
+  fr:
+  - médias numériques
+  - contenu en ligne
+  - régulation des plateformes
+  - protection des données
+  - alphabétisation médiatique
+  - réseaux sociaux
+  - haine en ligne
+  - infrastructure médiatique
+  it:
+  - media digitali
+  - contenuti online
+  - regolamentazione delle piattaforme
+  - protezione dei dati
+  - alfabetizzazione mediatica
+  - social media
+  - discorso d'odio online
+  - infrastruttura dei media
+  rm:
+  - medias digitals
+  - cuntegns online
+  - regulaziun da plattafurmas
+  - protecziun da datas
+  - alfabetisaziun mediala
+  - social media
+  - orda d'odi online
+  - infrastructura da medias

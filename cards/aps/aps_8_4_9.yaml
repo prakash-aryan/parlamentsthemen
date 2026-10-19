@@ -1,0 +1,67 @@
+id: aps_8_4_9
+version: 1
+source_description: The topic "Grossraubtiere" ("Grands prédateurs") in the chapter "Landwirtschaft" of
+  the domain "Wirtschaft und Finanzen" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Large Predators in Agriculture
+definition: Parliamentary affairs concerning the management, regulation, and coexistence of large predators
+  (such as wolves, bears, lynxes) within Swiss agricultural landscapes, including livestock protection,
+  compensation schemes, and policy measures.
+include:
+- wolf management policies
+- bear population control
+- lynx impact on livestock
+- compensation for predator-related livestock losses
+- predator deterrence measures
+- agricultural land protection from predators
+- coexistence strategies between farmers and large predators
+- regulatory frameworks for predator populations
+exclude:
+- general biodiversity conservation
+- wildlife habitat preservation
+- national park regulations
+- hunting quotas for game species
+- pest control in non-agricultural areas
+- international wildlife treaties
+terms:
+  de:
+  - Grossraubtiere
+  - Wolfsmanagement
+  - Bärenpopulation
+  - Luchs und Nutztiere
+  - Schadenvergütung
+  - Abschreckungsmassnahmen
+  - Landwirtschaftsschutz
+  - Koexistenz
+  - Regulierungsmassnahmen
+  fr:
+  - grands prédateurs
+  - gestion des loups
+  - population d'ours
+  - lynx et bétail
+  - indemnisation des pertes
+  - mesures de dissuasion
+  - protection des terres agricoles
+  - coexistence
+  - cadres réglementaires
+  it:
+  - grandi predatori
+  - gestione del lupo
+  - popolazione di orsi
+  - lince e bestiame
+  - indennizzo danni
+  - misure di dissuasione
+  - protezione delle terre agricole
+  - coesistenza
+  - quadri normativi
+  rm:
+  - gronds predaturs
+  - gestiun dals lufs
+  - populaziun d’urs
+  - luf e muvel
+  - indemnisaziun da donns
+  - mesiras da dissuasiun
+  - protecziun da terren agricul
+  - coexistenza
+  - structuras da regulaziun

@@ -1,0 +1,65 @@
+id: curia_4
+version: 1
+source_description: 'The subject area "Staatspolitik" (French: "Politique d''Etat", Italian: "Politica
+  nazionale") that the Swiss Parliamentary Services assign to federal parliamentary affairs in Curia Vista.
+  Cover what affairs in this subject area are typically about.'
+name: State Policy
+definition: State Policy encompasses overarching strategies, frameworks, and decisions made by the federal
+  government that shape the nation's governance, sovereignty, and international standing. It includes
+  matters related to the structure of the state, constitutional principles, federalism, and Switzerland's
+  role in the international community. This subject area covers broad policy directions rather than specific
+  sectoral issues.
+include:
+- Federalism
+- Constitutional matters
+- National sovereignty
+- International relations
+- State structure
+- Governance frameworks
+- National security policy
+- Federal-state coordination
+exclude:
+- Healthcare policy
+- Education policy
+- Transport infrastructure
+- Environmental regulations
+- Taxation
+- Labor market regulations
+- Agricultural policy
+terms:
+  de:
+  - Staatspolitik
+  - Bundesverfassung
+  - Föderalismus
+  - Staatsaufbau
+  - Souveränität
+  - Aussenpolitik
+  - Regierungsform
+  - Bundesstaat
+  fr:
+  - Politique d'Etat
+  - Fédéralisme
+  - Souveraineté
+  - Constitution fédérale
+  - Relations internationales
+  - Structure de l'Etat
+  - Forme de gouvernement
+  - Coordination Confédération-cantons
+  it:
+  - Politica nazionale
+  - Federalismo
+  - Sovranità
+  - Costituzione federale
+  - Relazioni internazionali
+  - Struttura dello Stato
+  - Forma di governo
+  - Coordinamento Confederazione-cantoni
+  rm:
+  - Politica dal stadi
+  - Federalissem
+  - Sovranitad
+  - Constituziun federala
+  - Relaziuns internaziunalas
+  - Structura dal stadi
+  - Forma da guvern
+  - Coordinaziun Confederaziun-cantuns

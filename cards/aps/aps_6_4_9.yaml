@@ -1,0 +1,64 @@
+id: aps_6_4_9
+version: 1
+source_description: The topic "Schutz vor Naturgefahren" ("Protection contre les forces naturelles") in
+  the chapter "Umweltschutz" of the domain "Infrastruktur und Umwelt" in the Année Politique Suisse classification
+  of Swiss politics. Cover what parliamentary affairs on this topic are typically about, and what belongs
+  to neighbouring topics of the same chapter instead.
+name: Protection against Natural Hazards
+definition: Parliamentary affairs under this topic focus on measures to prevent, mitigate, and respond
+  to natural disasters such as floods, landslides, avalanches, and earthquakes, including infrastructure
+  planning, early warning systems, and risk management policies.
+include:
+- flood protection infrastructure
+- avalanche control measures
+- landslide prevention
+- early warning systems
+- risk mapping and zoning
+- recovery and emergency response plans
+- climate change adaptation strategies
+- insurance and compensation schemes for natural disasters
+exclude:
+- air pollution control
+- waste management
+- water quality regulation
+- biodiversity conservation
+- energy efficiency standards
+- urban noise reduction
+- chemical hazard regulation
+terms:
+  de:
+  - Naturgefahrenabwehr
+  - Hochwasserschutz
+  - Lawinenverbauung
+  - Risikomanagement
+  - Frühwarnsysteme
+  - Katastrophenvorsorge
+  - Klimaanpassung
+  - Schadenversicherung
+  fr:
+  - protection contre les risques naturels
+  - prévention des inondations
+  - contrôle des avalanches
+  - cartographie des risques
+  - systèmes d'alerte précoce
+  - planification d'urgence
+  - adaptation au changement climatique
+  - indemnisation des catastrophes
+  it:
+  - protezione contro i pericoli naturali
+  - prevenzione delle inondazioni
+  - controllo valanghe
+  - mappatura del rischio
+  - sistemi di allerta precoce
+  - piani di emergenza
+  - adattamento climatico
+  - indennizzi per catastrofi
+  rm:
+  - protecziun cunter privels natirals
+  - prevenziun d'inundaziuns
+  - cuntrolla da lavinas
+  - cartaziun da ris-chs
+  - sistems d'alerta anticipada
+  - prevenziun da catastrofas
+  - adattaziun al clima
+  - assicuranza cunter donns natirals

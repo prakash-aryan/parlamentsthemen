@@ -1,0 +1,64 @@
+id: aps_4_4_3
+version: 1
+source_description: The topic "Radio und Fernsehen" ("Radio et télévision") in the chapter "Medien" of
+  the domain "Gesellschaft und Kultur" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Swiss Radio and Television Policy
+definition: Parliamentary affairs concerning the regulation, funding, content, and public service mandate
+  of radio and television in Switzerland, including broadcasting law, media diversity, and public service
+  obligations.
+include:
+- Public service broadcasting mandate
+- Swiss Broadcasting Corporation (SRG SSR)
+- Media regulation and licensing
+- Funding models (licence fees, taxes)
+- Content diversity and pluralism
+- Digital transition of radio and TV
+- Accessibility and inclusion in broadcasting
+- Media independence and editorial freedom
+exclude:
+- Print media regulation
+- Online news platforms and social media
+- Film and cinema policy
+- Intellectual property and copyright
+- Press freedom and journalism ethics
+- Cultural funding for arts and heritage
+- Telecommunications infrastructure
+terms:
+  de:
+  - Radio- und Fernsehgesetz
+  - SRG SSR
+  - Empfangsgebühren
+  - Programmauftrag
+  - Medienvielfalt
+  - Digitaler Wandel
+  - Barrierefreiheit
+  - Redaktionsunabhängigkeit
+  fr:
+  - Loi sur la radio et la télévision
+  - SSR SRG
+  - Redevances de réception
+  - Mission de service public
+  - Diversité des médias
+  - Transition numérique
+  - Accessibilité
+  - Indépendance rédactionnelle
+  it:
+  - Legge sulla radio e televisione
+  - SSR SRG
+  - Tasse di ricezione
+  - Missione di servizio pubblico
+  - Diversità mediatica
+  - Transizione digitale
+  - Accessibilità
+  - Indipendenza redazionale
+  rm:
+  - Lescha da radio e televisiun
+  - SSR SRG
+  - Taxas da recepziun
+  - Missiun da servetsch public
+  - Diversitad da medias
+  - Transiziun digitala
+  - Accessibilitad
+  - Independenza redacziunala

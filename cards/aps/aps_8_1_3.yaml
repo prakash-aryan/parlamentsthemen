@@ -1,0 +1,67 @@
+id: aps_8_1_3
+version: 1
+source_description: The topic "Gesellschaftsrecht" ("Droit des sociétés") in the chapter "Wirtschaftspolitik"
+  of the domain "Wirtschaft und Finanzen" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Corporate Law
+definition: Parliamentary affairs concerning the legal framework governing the formation, operation, governance,
+  and dissolution of companies and other business entities in Switzerland. This includes regulations on
+  company types, shareholder rights, corporate governance standards, and compliance requirements.
+include:
+- company formation and registration
+- shareholder rights and duties
+- corporate governance rules
+- limited liability companies
+- joint-stock companies
+- business entity dissolution
+- compliance and reporting obligations
+- cross-border corporate structures
+exclude:
+- banking and financial regulation
+- taxation of corporations
+- labor law and employment
+- intellectual property rights
+- antitrust and competition policy
+- insurance sector regulation
+terms:
+  de:
+  - Gesellschaftsrecht
+  - Aktienrecht
+  - GmbH-Recht
+  - Unternehmensgründung
+  - Gesellschaftsform
+  - Geschäftsführung
+  - Kapitalvorschriften
+  - Auflösung einer Gesellschaft
+  - Gesellschaftsvertrag
+  fr:
+  - droit des sociétés
+  - droit des sociétés anonymes
+  - SARL
+  - constitution d'entreprise
+  - gouvernance d'entreprise
+  - dissolution de société
+  - responsabilité limitée
+  - statuts sociaux
+  - obligations de reporting
+  it:
+  - diritto societario
+  - società anonima
+  - società a responsabilità limitata
+  - costituzione di società
+  - governance societaria
+  - scioglimento di società
+  - responsabilità limitata
+  - statuti societari
+  - obblighi di rendiconto
+  rm:
+  - dretg da societads
+  - societad anonima
+  - societad cun responsabladad limitada
+  - fundaziun da societad
+  - guvernanza da societad
+  - schliaziun da societad
+  - responsabladad limitada
+  - statuts da societad
+  - obligaziuns da rapport

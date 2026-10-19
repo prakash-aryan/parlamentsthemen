@@ -1,0 +1,69 @@
+id: aps_7_2_9
+version: 1
+source_description: The topic "Cybersicherheit" ("Cybersécurité") in the chapter "Sicherheitspolitik"
+  of the domain "Rechts- und Sicherheitspolitik" in the Année Politique Suisse classification of Swiss
+  politics. Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Cybersecurity
+definition: Parliamentary affairs on cybersecurity address the protection of digital infrastructure, data
+  privacy, and resilience against cyber threats within Switzerland's security policy framework. They cover
+  legislation, oversight of government agencies, and measures to safeguard critical systems and information
+  from cyberattacks and espionage. The focus is on national and cross-border digital security strategies,
+  incident response, and international cooperation.
+include:
+- digital infrastructure protection
+- data privacy and encryption
+- cyber threat detection and response
+- critical infrastructure security
+- international cyber cooperation
+- legislation on cybercrime
+- oversight of federal cyber agencies
+- cyber defense strategies
+exclude:
+- physical border security
+- conventional military defense
+- domestic law enforcement operations
+- intellectual property rights enforcement
+- internet censorship and content regulation
+- telecommunications market regulation
+terms:
+  de:
+  - Cybersicherheit
+  - digitale Infrastruktur
+  - Datenverschlüsselung
+  - Cyberbedrohung
+  - kritische Infrastruktur
+  - internationale Cybersicherheitszusammenarbeit
+  - Cyberabwehr
+  - Gesetzgebung zu Cyberkriminalität
+  - Aufsicht über Cyberbehörden
+  fr:
+  - cybersécurité
+  - infrastructure numérique
+  - chiffrement des données
+  - menace cybernétique
+  - infrastructure critique
+  - coopération internationale en cybersécurité
+  - défense cybernétique
+  - législation sur la cybercriminalité
+  - surveillance des agences de cybersécurité
+  it:
+  - sicurezza informatica
+  - infrastruttura digitale
+  - crittografia dei dati
+  - minaccia informatica
+  - infrastrutture critiche
+  - cooperazione internazionale in materia di sicurezza informatica
+  - difesa informatica
+  - legislazione sulla criminalità informatica
+  - sorveglianza delle agenzie di sicurezza informatica
+  rm:
+  - segirezza d'internet
+  - infrastructura digitala
+  - criptaziun da datas
+  - minazza cibernetica
+  - infrastructuras criticas
+  - cooperaziun internaziunala en materia da segirezza d'internet
+  - defensiun cibernetica
+  - legislaziun davart la criminalitad cibernetica
+  - surveglianza da las agenzias da segirezza d'internet

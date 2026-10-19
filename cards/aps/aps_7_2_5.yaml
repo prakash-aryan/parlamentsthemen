@@ -1,0 +1,66 @@
+id: aps_7_2_5
+version: 1
+source_description: The topic "Bevölkerungsschutz" ("Protection civile") in the chapter "Sicherheitspolitik"
+  of the domain "Rechts- und Sicherheitspolitik" in the Année Politique Suisse classification of Swiss
+  politics. Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Civil Protection
+definition: Parliamentary affairs under this topic focus on measures, legislation, and funding related
+  to protecting the civilian population from natural disasters, accidents, and armed conflict. It includes
+  emergency response planning, infrastructure resilience, and coordination between federal, cantonal,
+  and local authorities. The topic also covers public awareness campaigns, training programs, and the
+  role of civil protection organizations.
+include:
+- emergency response planning
+- disaster risk reduction
+- civil protection infrastructure
+- public awareness campaigns
+- training and drills
+- intercantonal coordination
+- funding for civil protection
+- role of civil protection organizations
+exclude:
+- military defense strategy
+- intelligence and counterterrorism
+- border security and migration control
+- cybersecurity and data protection
+- firefighting and rescue services (unless linked to civil protection)
+- health crisis management (e.g., pandemics)
+terms:
+  de:
+  - Bevölkerungsschutz
+  - Katastrophenschutz
+  - Notfallplanung
+  - Zivilschutzorganisationen
+  - Risikomanagement
+  - Interkantonale Zusammenarbeit
+  - Ausbildung und Übungen
+  - Infrastrukturresilienz
+  - Finanzierung
+  fr:
+  - protection civile
+  - gestion des catastrophes
+  - planification d'urgence
+  - organisations de protection civile
+  - coordination intercantonale
+  - formation et exercices
+  - résilience des infrastructures
+  - financement
+  it:
+  - protezione civile
+  - gestione delle catastrofi
+  - pianificazione d'emergenza
+  - organizzazioni di protezione civile
+  - coordinamento intercantonale
+  - formazione ed esercitazioni
+  - resilienza delle infrastrutture
+  - finanziamento
+  rm:
+  - protecziun civila
+  - gestiun da catastrofas
+  - planisaziun d'urgenza
+  - organisaziuns da protecziun civila
+  - collavuraziun intercantunala
+  - scolaziun ed exercizis
+  - resistenza da las infrastructuras
+  - finanziaziun

@@ -1,0 +1,62 @@
+id: aps_6_1_7
+version: 1
+source_description: The topic "Post" ("Poste") in the chapter "Verkehr und Kommunikation" of the domain
+  "Infrastruktur und Umwelt" in the Année Politique Suisse classification of Swiss politics. Cover what
+  parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics of
+  the same chapter instead.
+name: Postal Services
+definition: Parliamentary affairs concerning the organization, regulation, funding, and provision of postal
+  services in Switzerland, including universal service obligations, pricing, infrastructure, and competition
+  within the postal sector.
+include:
+- universal service obligation
+- postal pricing and tariffs
+- postal infrastructure development
+- competition in postal services
+- delivery services
+- postal subsidies
+- digital transformation of postal services
+exclude:
+- telecommunications regulation
+- internet governance
+- railway infrastructure
+- road transport policy
+- air transport regulation
+- energy supply and networks
+terms:
+  de:
+  - Postwesen
+  - Universaldienst
+  - Posttarife
+  - Postinfrastruktur
+  - Postwettbewerb
+  - Postsubventionen
+  - digitale Transformation
+  - Paketdienstleistungen
+  fr:
+  - services postaux
+  - service universel
+  - tarifs postaux
+  - infrastructure postale
+  - concurrence postale
+  - subventions postales
+  - transformation numérique
+  - livraison de colis
+  it:
+  - servizi postali
+  - servizio universale
+  - tariffe postali
+  - infrastruttura postale
+  - concorrenza postale
+  - sussidi postali
+  - trasformazione digitale
+  - consegna pacchi
+  rm:
+  - servetsch postal
+  - servetsch universal
+  - tariffas postalas
+  - infrastructura postala
+  - concurrenza postala
+  - subvenziuns postalas
+  - transfurmaziun digitala
+  - consegna da pachets

@@ -1,0 +1,67 @@
+id: aps_2_1_9
+version: 1
+source_description: The topic "Politikfinanzierung" ("Financement de la politique") in the chapter "Direkte
+  Demokratie" of the domain "Direkte Demokratie und Wahlen" in the Année Politique Suisse classification
+  of Swiss politics. Cover what parliamentary affairs on this topic are typically about, and what belongs
+  to neighbouring topics of the same chapter instead.
+name: Political Financing
+definition: Parliamentary affairs on political financing examine the funding mechanisms for political
+  parties, election campaigns, and democratic processes, including transparency, limits on donations,
+  public subsidies, and the regulation of campaign spending.
+include:
+- party funding transparency
+- campaign finance limits
+- public subsidies to political parties
+- donation regulations
+- financial reporting requirements
+- equality in campaign financing
+- anti-corruption measures in funding
+- regulation of third-party spending
+exclude:
+- electoral system design
+- voting procedures
+- ballot initiative rules
+- referendum organization
+- parliamentary immunity
+- civil service neutrality
+terms:
+  de:
+  - Politikfinanzierung
+  - Parteifinanzen
+  - Wahlkampffinanzierung
+  - Spendenregelung
+  - Transparenzpflicht
+  - Öffentliche Parteisubventionen
+  - Finanzierungsquellen
+  - Kampagnenkosten
+  - Spendenobergrenzen
+  fr:
+  - financement politique
+  - financement des partis
+  - réglementation des dons
+  - subventions publiques
+  - transparence financière
+  - limites de dépenses
+  - sources de financement
+  - rapport financier
+  - contrôle des fonds
+  it:
+  - finanziamento politico
+  - finanziamento dei partiti
+  - regolamentazione delle donazioni
+  - trasparenza finanziaria
+  - sussidi pubblici
+  - limiti di spesa
+  - fonti di finanziamento
+  - rendicontazione
+  - controllo dei fondi
+  rm:
+  - finanziaziun politica
+  - finanziaziun da partidas
+  - regulaziun da donaziuns
+  - subvenziuns publicas
+  - transparenza finanziala
+  - limits da expensas
+  - funtaunas da finanziaziun
+  - rapport finanzial
+  - controlla dals fonds

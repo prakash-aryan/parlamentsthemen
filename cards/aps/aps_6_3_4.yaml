@@ -1,0 +1,64 @@
+id: aps_6_3_4
+version: 1
+source_description: The topic "Bodenrecht" ("Droit foncier") in the chapter "Raumplanung und Wohnungswesen"
+  of the domain "Infrastruktur und Umwelt" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Land Law
+definition: Parliamentary affairs concerning the legal framework governing the acquisition, use, ownership,
+  and transfer of land, including regulations on zoning, expropriation, and property rights within the
+  context of spatial planning and housing policy.
+include:
+- land ownership regulations
+- zoning and land-use planning
+- expropriation procedures
+- property rights and easements
+- land development permits
+- agricultural land protection
+- urban land allocation
+- compensation for land use restrictions
+exclude:
+- building codes and construction standards
+- housing subsidies and social housing
+- transport infrastructure planning
+- environmental impact assessments
+- energy policy and renewable energy on land
+- cultural heritage preservation of buildings
+terms:
+  de:
+  - Bodenrecht
+  - Eigentumsrecht
+  - Zonenplanung
+  - Enteignung
+  - Baurecht
+  - Grundstückverkehr
+  - Landnutzungsplanung
+  - Flächennutzungsplan
+  - Baulandreserven
+  fr:
+  - droit foncier
+  - propriété foncière
+  - aménagement du territoire
+  - expropriation
+  - plan d'affectation
+  - utilisation du sol
+  - droit de construire
+  - réserves de terrains à bâtir
+  it:
+  - diritto fondiario
+  - proprietà terriera
+  - piano di utilizzazione
+  - espropriazione
+  - pianificazione territoriale
+  - uso del suolo
+  - permessi di costruzione
+  - riserve di aree edificabili
+  rm:
+  - dretg funsil
+  - proprietad funsila
+  - planisaziun territoriala
+  - expropriaziun
+  - plan d'utilisaziun
+  - utilisaziun dal terren
+  - lubientscha da construcziun
+  - reservas da terren da biagier

@@ -1,0 +1,64 @@
+id: aps_2_2_4
+version: 1
+source_description: The topic "Kommunale Wahlen" ("Elections communales") in the chapter "Wahlen" of the
+  domain "Direkte Demokratie und Wahlen" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Municipal Elections
+definition: Parliamentary affairs concerning the organization, conduct, and regulation of elections at
+  the municipal level in Switzerland, including voting procedures, electoral rolls, and the implementation
+  of local democratic processes.
+include:
+- municipal election regulations
+- voting procedures at local level
+- electoral roll management
+- ballot design and accessibility
+- implementation of local voting rights
+- election monitoring and oversight
+- campaign financing rules for municipal elections
+- electoral disputes and appeals
+exclude:
+- federal referendums
+- cantonal legislative elections
+- national popular initiatives
+- parliamentary committee elections
+- election financing at cantonal level
+- voting systems for national elections
+- election observation at federal level
+terms:
+  de:
+  - kommunale Wahlen
+  - Wahlverfahren auf Gemeindeebene
+  - Stimmregister
+  - Wahlzettel
+  - Wahlbehörde
+  - Wahlbeschwerde
+  - Wahlbeteiligung
+  - Wahlkampfregeln
+  fr:
+  - élections communales
+  - procédures de vote locales
+  - listes électorales communales
+  - bulletins de vote
+  - autorité électorale
+  - recours électoral
+  - participation électorale
+  - règles de campagne
+  it:
+  - elezioni comunali
+  - procedure di voto a livello comunale
+  - liste elettorali comunali
+  - schede elettorali
+  - autorità elettorale
+  - ricorso elettorale
+  - partecipazione al voto
+  - norme della campagna elettorale
+  rm:
+  - elecziuns communalas
+  - proceduras da votaziun localas
+  - glistas electoralas communalas
+  - cedels da votaziun
+  - autoritad electorala
+  - recurs electoral
+  - participaziun a las elecziuns
+  - reglas da la campagna electorala

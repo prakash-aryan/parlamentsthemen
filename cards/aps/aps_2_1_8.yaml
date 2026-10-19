@@ -1,0 +1,64 @@
+id: aps_2_1_8
+version: 1
+source_description: The topic "Politische Kampagnen" ("Campagnes politiques") in the chapter "Direkte
+  Demokratie" of the domain "Direkte Demokratie und Wahlen" in the Année Politique Suisse classification
+  of Swiss politics. Cover what parliamentary affairs on this topic are typically about, and what belongs
+  to neighbouring topics of the same chapter instead.
+name: Political Campaigns
+definition: Parliamentary affairs under this topic focus on the organization, financing, transparency,
+  and regulation of political campaigns in the context of direct democracy and elections. It covers how
+  campaigns influence voter behavior, the role of political parties, and measures to ensure fair competition
+  and prevent abuse. The topic also examines the impact of new media and digital platforms on campaigning.
+include:
+- campaign financing regulations
+- transparency of campaign funding
+- role of political parties in campaigns
+- digital campaigning and social media
+- campaign advertising rules
+- election campaign coordination
+- anti-corruption measures in campaigns
+- campaign ethics and conduct
+exclude:
+- referendum and initiative proposals
+- ballot question wording
+- voter registration procedures
+- electoral district boundaries
+- vote counting and results
+- post-election analysis
+terms:
+  de:
+  - Wahlkampagnen
+  - Finanzierung von Wahlkampagnen
+  - Transparenz
+  - Politische Parteien
+  - Digitale Kommunikation
+  - Werbung
+  - Ethik
+  - Regulierung
+  fr:
+  - campagnes électorales
+  - financement des campagnes
+  - transparence
+  - partis politiques
+  - communication numérique
+  - publicité
+  - éthique
+  - réglementation
+  it:
+  - campagne elettorali
+  - finanziamento delle campagne
+  - trasparenza
+  - partiti politici
+  - comunicazione digitale
+  - pubblicità
+  - etica
+  - regolamentazione
+  rm:
+  - campagnas electoralas
+  - finanziaziun da las campagnas
+  - transparenza
+  - partidas politicas
+  - communicaziun digitala
+  - reclama
+  - etica
+  - regulaziun

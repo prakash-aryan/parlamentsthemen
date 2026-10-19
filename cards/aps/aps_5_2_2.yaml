@@ -1,0 +1,63 @@
+id: aps_5_2_2
+version: 1
+source_description: The topic "Alters- und Hinterlassenenversicherung (AHV)" ("Assurance-vieillesse et
+  survivants (AVS)") in the chapter "Sozialversicherungen" of the domain "Gesundheit und Sozialsystem"
+  in the Année Politique Suisse classification of Swiss politics. Cover what parliamentary affairs on
+  this topic are typically about, and what belongs to neighbouring topics of the same chapter instead.
+name: Old-age and Survivors' Insurance (AHV/AVS)
+definition: Parliamentary affairs concerning the financing, benefits, coverage, and administration of
+  Switzerland's mandatory old-age and survivors' pension scheme, including debates on contribution rates,
+  pension levels, eligibility criteria, and reforms to ensure long-term sustainability.
+include:
+- AHV contribution rates
+- pension benefit levels
+- eligibility for old-age pensions
+- survivors' benefits
+- financing of AHV/AVS
+- sustainability of pension system
+- coordination with other social insurances
+- administrative efficiency of AHV/AVS
+exclude:
+- unemployment insurance
+- disability insurance
+- health insurance
+- family allowances
+- social assistance
+- private pension schemes
+terms:
+  de:
+  - Alters- und Hinterlassenenversicherung (AHV)
+  - AHV-Beiträge
+  - AHV-Rente
+  - Leistungen
+  - Finanzierung
+  - Nachhaltigkeit
+  - Anspruchsvoraussetzungen
+  - Revision AHV
+  fr:
+  - Assurance-vieillesse et survivants (AVS)
+  - cotisations AVS
+  - rente AVS
+  - prestations
+  - financement
+  - durabilité
+  - conditions d'octroi
+  - réforme AVS
+  it:
+  - Assicurazione per la vecchiaia e i superstiti (AVS)
+  - contributi AVS
+  - rendita AVS
+  - prestazioni
+  - finanziamento
+  - sostenibilità
+  - condizioni di diritto
+  - riforma AVS
+  rm:
+  - Assicuranza da vegls e survivents (AVS)
+  - contribuziuns AVS
+  - rendita AVS
+  - prestaziuns
+  - finanziaziun
+  - persistenza
+  - cundiziuns da dretg
+  - revisiun AVS

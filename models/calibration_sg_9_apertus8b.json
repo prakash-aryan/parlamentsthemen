@@ -1,0 +1,8 @@
+{
+  "model": "apertus-v1-5-8b",
+  "card": "cards/sg/sg_9.yaml",
+  "a": 0.08874812135673514,
+  "b": -3.229966719021338,
+  "threshold": 15.539999766350098,
+  "fitted_on": "sg dev sample (600 affairs, 11 positives)"
+}

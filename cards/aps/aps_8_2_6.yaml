@@ -1,0 +1,66 @@
+id: aps_8_2_6
+version: 1
+source_description: The topic "Finanzhaushalt der Kantone und Gemeinden" ("Budgets des cantons et des
+  communes") in the chapter "Öffentliche Finanzen" of the domain "Wirtschaft und Finanzen" in the Année
+  Politique Suisse classification of Swiss politics. Cover what parliamentary affairs on this topic are
+  typically about, and what belongs to neighbouring topics of the same chapter instead.
+name: Cantonal and Municipal Budgets
+definition: Parliamentary affairs concerning the financial planning, revenue, and expenditure of cantons
+  and municipalities, including budget approvals, deficit management, and financial oversight mechanisms.
+include:
+- Cantonal budget approval
+- Municipal financial planning
+- Revenue sources (taxes, fees)
+- Expenditure allocation (infrastructure, services)
+- Budget deficit control
+- Financial audits of cantonal/municipal accounts
+- Debt management by cantons and communes
+- Investment decisions in public infrastructure
+exclude:
+- Federal budget and finance
+- Tax harmonization between cantons
+- Inter-cantonal financial equalization
+- National debt management
+- EU financial regulations (not applicable)
+- Private sector corporate finance
+terms:
+  de:
+  - Kantonshaushalt
+  - Gemeindehaushalt
+  - Finanzplanung
+  - Steuereinnahmen
+  - Ausgabenbewilligung
+  - Haushaltsdefizit
+  - Finanzrechnung
+  - Investitionsentscheidungen
+  - Schuldenmanagement
+  fr:
+  - Budget cantonal
+  - Budget communal
+  - Planification financière
+  - Recettes fiscales
+  - Approbation des dépenses
+  - Déficit budgétaire
+  - Comptes financiers
+  - Décisions d'investissement
+  - Gestion de la dette
+  it:
+  - Bilancio cantonale
+  - Bilancio comunale
+  - Pianificazione finanziaria
+  - Entrate fiscali
+  - Approvazione delle spese
+  - Deficit di bilancio
+  - Conto finanziario
+  - Decisioni di investimento
+  - Gestione del debito
+  rm:
+  - Budget chantunal
+  - Budget communal
+  - Planisaziun finanziala
+  - Entradas fiscalas
+  - Approvaziun da las expensas
+  - Deficit da budget
+  - Rendaquint finanzial
+  - Decisiuns d'investiziun
+  - Gestiun da debits

@@ -1,0 +1,45 @@
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-parltopics}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+      POSTGRES_DB: ${POSTGRES_DB:-parltopics}
+    command: ["postgres", "-c", "shared_buffers=1GB", "-c", "maintenance_work_mem=4GB", "-c", "max_parallel_maintenance_workers=4"]
+    shm_size: 6gb
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "127.0.0.1:${DB_PORT:-5433}:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-parltopics}"]
+      interval: 5s
+      retries: 20
+
+  app:
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-parltopics}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-parltopics}
+      LLM_NAME: ${LLM_NAME:-apertus-v1-5-8b}
+      LLM_BASE_URL: ${LLM_BASE_URL:-}
+      LLM_API_KEY: ${LLM_API_KEY:-}
+      PARLTOPICS_DECISION_URL: ${PARLTOPICS_DECISION_URL:-}
+      ELEVENLABS_API_KEY: ${ELEVENLABS_API_KEY:-}
+      ELEVENLABS_VOICE_ID: ${ELEVENLABS_VOICE_ID:-XrExE9yKIg1WjnnlVkGX}
+      PARLTOPICS_REVIEW_TOKEN: ${PARLTOPICS_REVIEW_TOKEN:-}
+      HF_HUB_OFFLINE: ${HF_HUB_OFFLINE:-0}
+    volumes:
+      - ./data:/app/data:ro
+      - ./runs:/app/runs
+      - hfcache:/root/.cache/huggingface
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "${APP_PORT:-8765}:8765"
+
+volumes:
+  pgdata:
+  hfcache:

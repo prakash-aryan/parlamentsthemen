@@ -1,0 +1,64 @@
+id: curia_24
+version: 1
+source_description: 'The subject area "Finanzwesen" (French: "Finances", Italian: "Finanze") that the
+  Swiss Parliamentary Services assign to federal parliamentary affairs in Curia Vista. Cover what affairs
+  in this subject area are typically about.'
+name: Public Finance and Budgetary Affairs
+definition: This topic covers parliamentary matters related to the management, allocation, and oversight
+  of public funds at federal, cantonal, and city levels. It includes debates on budget planning, revenue
+  generation, expenditure control, financial regulations, and fiscal policy impacts on the economy and
+  society.
+include:
+- federal budget
+- taxation
+- public spending
+- debt management
+- financial regulations
+- budgetary oversight
+- revenue allocation
+- fiscal policy
+exclude:
+- environmental policy
+- education policy
+- healthcare policy
+- transport infrastructure
+- cultural funding
+- social welfare programs
+- immigration policy
+terms:
+  de:
+  - Finanzwesen
+  - Bundeshaushalt
+  - Steuern
+  - Staatsausgaben
+  - Schuldenmanagement
+  - Finanzregulierung
+  - Budgetkontrolle
+  - Fiskalpolitik
+  fr:
+  - finances publiques
+  - budget fédéral
+  - imposition
+  - dépenses publiques
+  - gestion de la dette
+  - réglementation financière
+  - contrôle budgétaire
+  - politique fiscale
+  it:
+  - finanze pubbliche
+  - bilancio federale
+  - tassazione
+  - spese pubbliche
+  - gestione del debito
+  - regolamentazione finanziaria
+  - controllo di bilancio
+  - politica fiscale
+  rm:
+  - finanzas publicas
+  - budget federal
+  - imposiziun
+  - expensas publicas
+  - gestiun da debits
+  - regulaziun finanziala
+  - controlla dal budget
+  - politica fiscala

@@ -1,0 +1,72 @@
+id: aps_8_2_1
+version: 1
+source_description: The topic "Budget" ("Budget") in the chapter "Öffentliche Finanzen" of the domain
+  "Wirtschaft und Finanzen" in the Année Politique Suisse classification of Swiss politics. Cover what
+  parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics of
+  the same chapter instead.
+name: Budget Affairs
+definition: Parliamentary motions, postulates, interpellations, and questions concerning the preparation,
+  approval, execution, and auditing of public budgets at federal, cantonal, and city levels. Includes
+  debates on revenue sources, expenditure priorities, deficit management, and fiscal policy compliance.
+include:
+- Budget preparation
+- Revenue allocation
+- Expenditure priorities
+- Deficit and surplus management
+- Budget execution monitoring
+- Fiscal policy compliance
+- Taxation and revenue measures
+- Public spending efficiency
+exclude:
+- Debt management
+- Economic stimulus packages
+- Monetary policy
+- Banking regulation
+- Financial market oversight
+- Infrastructure financing specifics
+- Social welfare program funding details
+terms:
+  de:
+  - Haushalt
+  - Finanzplan
+  - Einnahmen
+  - Ausgaben
+  - Defizit
+  - Staatsrechnung
+  - Finanzpolitik
+  - Budgetkontrolle
+  - Steuererträge
+  - Kreditbewilligung
+  fr:
+  - Budget
+  - Plan financier
+  - Recettes
+  - Dépenses
+  - Déficit
+  - Compte d'État
+  - Politique financière
+  - Contrôle budgétaire
+  - Recettes fiscales
+  - Octroi de crédits
+  it:
+  - Bilancio
+  - Piano finanziario
+  - Entrate
+  - Spese
+  - Deficit
+  - Conto di Stato
+  - Politica finanziaria
+  - Controllo di bilancio
+  - Entrate fiscali
+  - Concessione di crediti
+  rm:
+  - Budget
+  - Plan da finanzas
+  - Entradas
+  - Expensas
+  - Deficit
+  - Rendaquint
+  - Politica da finanzas
+  - Controlla dal budget
+  - Entradas fiscalas
+  - Concessiun da credits

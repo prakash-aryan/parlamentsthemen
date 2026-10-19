@@ -1,0 +1,60 @@
+id: aps_1_1_2
+version: 1
+source_description: The topic "Verfassungsfragen" ("Questions constitutionnelles") in the chapter "Politische
+  Grundfragen" of the domain "Akteure und Institutionen" in the Année Politique Suisse classification
+  of Swiss politics. Cover what parliamentary affairs on this topic are typically about, and what belongs
+  to neighbouring topics of the same chapter instead.
+name: Constitutional Questions
+definition: Parliamentary affairs concerning the interpretation, amendment, and application of the Swiss
+  Federal Constitution, including fundamental rights, federal structure, and constitutional guarantees.
+include:
+- Federal Constitution interpretation
+- Constitutional amendments
+- Federal structure and cantonal autonomy
+- Fundamental rights and freedoms
+- Constitutional guarantees
+- Constitutional court rulings review
+- Constitutional compliance of laws
+exclude:
+- Specific legislative proposals (motions/postulates)
+- Government accountability (interpellations)
+- General policy inquiries (questions)
+- International treaties and agreements
+- Administrative procedures
+terms:
+  de:
+  - Verfassungsfragen
+  - Verfassungsauslegung
+  - Verfassungsänderung
+  - Bundesstaat
+  - Kantonsautonomie
+  - Grundrechte
+  - Verfassungsgarantien
+  - Verfassungsgerichtsurteile
+  fr:
+  - Questions constitutionnelles
+  - Interprétation de la Constitution
+  - Modification constitutionnelle
+  - Structure fédérale
+  - Autonomie cantonale
+  - Droits fondamentaux
+  - Garanties constitutionnelles
+  - Arrêts du Tribunal fédéral
+  it:
+  - Questioni costituzionali
+  - Interpretazione della Costituzione
+  - Modifica costituzionale
+  - Struttura federale
+  - Autonomia cantonale
+  - Diritti fondamentali
+  - Garanzie costituzionali
+  - Sentenze del Tribunale federale
+  rm:
+  - Dumondas constituziunalas
+  - Interpretaziun da la Constituziun
+  - Midada constituziunala
+  - Structura federala
+  - Autonomia chantunala
+  - Dretgs fundamentals
+  - Garanzias constituziunalas
+  - Sentenzias dal Tribunal federal

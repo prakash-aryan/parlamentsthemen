@@ -1,0 +1,63 @@
+id: aps_8_4_6
+version: 1
+source_description: The topic "Tierhaltung und Tierschutz" ("Détention d'animaux et protection des animaux")
+  in the chapter "Landwirtschaft" of the domain "Wirtschaft und Finanzen" in the Année Politique Suisse
+  classification of Swiss politics. Cover what parliamentary affairs on this topic are typically about,
+  and what belongs to neighbouring topics of the same chapter instead.
+name: Animal Husbandry and Animal Welfare
+definition: Parliamentary affairs concerning the conditions of keeping farm and domestic animals, including
+  welfare standards, housing requirements, transport regulations, and enforcement of animal protection
+  laws within agricultural contexts.
+include:
+- barn and housing conditions
+- animal transport regulations
+- welfare standards for livestock
+- enforcement of animal protection laws
+- routine veterinary care
+- breeding practices
+- organic farming animal welfare
+- certification of animal-friendly products
+exclude:
+- wildlife conservation
+- zoo animal welfare
+- pest control
+- food safety inspections
+- agricultural subsidies
+- land use planning
+terms:
+  de:
+  - Tierhaltung
+  - Tierschutz
+  - Stallklima
+  - Transportbestimmungen
+  - Wohlfahrt
+  - Kontrollen
+  - Verordnung
+  - Landwirtschaft
+  fr:
+  - détention d'animaux
+  - protection des animaux
+  - conditions d'élevage
+  - transport d'animaux
+  - bien-être
+  - contrôles
+  - réglementation
+  - agriculture
+  it:
+  - detenzione di animali
+  - protezione degli animali
+  - condizioni di allevamento
+  - trasporto di animali
+  - benessere animale
+  - controlli
+  - normativa
+  - agricoltura
+  rm:
+  - tegna da biestga
+  - protecziun d'animals
+  - cundiziuns da stalla
+  - transport d'animals
+  - bainstar
+  - controllas
+  - ordinaziun
+  - agricultura

@@ -1,0 +1,62 @@
+id: aps_8_5_5
+version: 1
+source_description: The topic "Arbeitszeit" ("Temps de travail") in the chapter "Arbeit" of the domain
+  "Wirtschaft und Finanzen" in the Année Politique Suisse classification of Swiss politics. Cover what
+  parliamentary affairs on this topic are typically about, and what belongs to neighbouring topics of
+  the same chapter instead.
+name: Working Hours
+definition: Parliamentary affairs concerning the regulation, duration, and conditions of working time
+  in Switzerland, including labor law provisions, overtime, rest periods, and work-life balance policies.
+include:
+- standard working hours
+- overtime regulations
+- rest and break periods
+- work-life balance
+- labor law compliance
+- flexible working time models
+- shift work arrangements
+- working time recording
+exclude:
+- minimum wage
+- unemployment benefits
+- occupational safety
+- industrial relations
+- collective bargaining
+- employment contracts
+terms:
+  de:
+  - Arbeitszeit
+  - Arbeitszeitgesetz
+  - Überstunden
+  - Ruhezeiten
+  - Arbeitszeitmodelle
+  - Flexibilisierung
+  - Schichtarbeit
+  - Arbeitszeitkontrolle
+  fr:
+  - temps de travail
+  - durée du travail
+  - heures supplémentaires
+  - pauses
+  - équilibre vie professionnelle-vie privée
+  - modèles d'horaires
+  - travail par équipes
+  - enregistrement du temps de travail
+  it:
+  - orario di lavoro
+  - durata del lavoro
+  - ore supplementari
+  - pause
+  - equilibrio vita professionale-vita privata
+  - modelli di orario flessibile
+  - lavoro a turni
+  - registrazione del tempo di lavoro
+  rm:
+  - temp da lavur
+  - durada da lavur
+  - sururas
+  - pausas
+  - equiliber vita professiunala-vita privata
+  - models d'urari flexibels
+  - lavur en squadras
+  - registraziun dal temp da lavur

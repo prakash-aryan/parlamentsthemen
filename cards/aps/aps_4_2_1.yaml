@@ -1,0 +1,67 @@
+id: aps_4_2_1
+version: 1
+source_description: The topic "Grundschulen" ("Ecole obligatoire") in the chapter "Bildung und Forschung"
+  of the domain "Gesellschaft und Kultur" in the Année Politique Suisse classification of Swiss politics.
+  Cover what parliamentary affairs on this topic are typically about, and what belongs to neighbouring
+  topics of the same chapter instead.
+name: Compulsory Primary Education
+definition: Parliamentary affairs concerning the organization, funding, curriculum, and quality of primary
+  education in Switzerland, including school infrastructure, teacher training, and access to education
+  for all children.
+include:
+- primary school curriculum
+- school infrastructure and construction
+- teacher training and qualifications
+- equality of access to education
+- special needs education in primary schools
+- language instruction in multilingual regions
+- school funding models
+- primary school assessment and standards
+exclude:
+- higher education and universities
+- vocational education and training
+- adult education and lifelong learning
+- research funding and innovation
+- cultural policy and heritage
+- youth programs and extracurricular activities
+terms:
+  de:
+  - Grundschule
+  - obligatorische Schulzeit
+  - Lehrplan
+  - Schulbau
+  - Lehrerausbildung
+  - Schulfinanzierung
+  - Inklusion
+  - Sprachunterricht
+  - Bildungsstandards
+  fr:
+  - école obligatoire
+  - cycle primaire
+  - programme scolaire
+  - construction scolaire
+  - formation des enseignants
+  - financement de l'école
+  - inclusion scolaire
+  - enseignement des langues
+  - normes éducatives
+  it:
+  - scuola dell'obbligo
+  - scuola primaria
+  - programma scolastico
+  - costruzione scolastica
+  - formazione degli insegnanti
+  - finanziamento scolastico
+  - inclusione
+  - insegnamento delle lingue
+  - standard educativi
+  rm:
+  - scola obligatorica
+  - scola primara
+  - program da scola
+  - construcziun da scola
+  - scolaziun dals scolasts
+  - finanziaziun da scola
+  - inclusiun
+  - instrucziun da linguas
+  - standards da furmaziun

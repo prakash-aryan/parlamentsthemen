@@ -1,0 +1,71 @@
+id: adhoc_housing
+version: 1
+source_description: 'Housing shortage and rents: parliamentary affairs about the shortage of affordable
+  housing, rising rents and housing costs, reference interest rates, non-profit and cooperative housing,
+  densification to create more housing, second homes and short-term rentals as they affect housing supply,
+  and tenant protection. Excludes construction law or spatial planning without a housing supply aspect.'
+name: Housing Affordability and Supply
+definition: Parliamentary affairs addressing the shortage of affordable housing, rising rents and housing
+  costs, reference interest rates affecting housing finance, promotion of non-profit and cooperative housing
+  models, densification strategies to increase housing stock, and the impact of second homes and short-term
+  rentals on housing availability, alongside tenant protection measures.
+include:
+- affordable housing shortage
+- rising rents
+- housing costs
+- reference interest rates
+- non-profit housing
+- cooperative housing
+- urban densification
+- second homes
+- short-term rentals
+- tenant protection
+exclude:
+- general construction law
+- spatial planning without housing supply focus
+- building permits
+- zoning regulations
+terms:
+  de:
+  - Wohnungsmangel
+  - Mietpreissteigerung
+  - Wohneigentum
+  - Referenzzinssatz
+  - Genossenschaftliches Wohnen
+  - Dichtbauweise
+  - Zweitwohnungen
+  - Kurzzeitvermietung
+  - Mieter*innenschutz
+  fr:
+  - pénurie de logements
+  - hausse des loyers
+  - coûts du logement
+  - taux d'intérêt de référence
+  - logement sans but lucratif
+  - habitat coopératif
+  - densification urbaine
+  - secondes résidences
+  - locations de courte durée
+  - protection des locataires
+  it:
+  - carenza di alloggi
+  - aumento degli affitti
+  - costi dell'abitazione
+  - tasso di interesse di riferimento
+  - abitazione senza scopo di lucro
+  - abitazione cooperativa
+  - edificazione compatta
+  - case secondarie
+  - affitti brevi
+  - protezione degli inquilini
+  rm:
+  - mancanza d'abitaziuns
+  - augmaint dals fits
+  - custs d'abitar
+  - tschains da referenza
+  - abitaziuns senza intent da profit
+  - abitaziuns cooperativas
+  - construcziun densa
+  - segundas abitaziuns
+  - locaziuns a curta durada
+  - protecziun dals locaturs
