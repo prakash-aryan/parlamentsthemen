@@ -385,9 +385,9 @@ body.print .slide:last-child { break-after: auto; page-break-after: auto; }
       <div class="covrow"><span class="covl" style="width:120px">Digitalisation</span>
         <div class="track"><div class="rb bar seg" data-fill="#b2f2bb" data-fs="solid" data-r="4" style="width:460px">all 318,801 affairs</div></div></div>
       <div class="covrow"><span class="covl" style="width:120px">All 29 topics</span>
-        <div class="track"><div class="rb bar seg" data-fill="#b2f2bb" data-fs="solid" data-r="4" style="width:94px"></div><div class="rb bar seg" data-fill="#e9ecef" data-fs="solid" data-r="4" style="width:366px">64,978 of 318,801 (20%)</div></div></div>
-      <p class="small" style="font-size:13.5px">All 29 topics: 2024 to 2026 and the first 15,000 from 2023, newest first.</p>
-      <p class="small" style="font-size:13.5px">Backfill: about 8,000 affairs per hour on three GPUs; the remaining 254,000 affairs need about 90 GPU-hours (about 30 hours on three GPUs). New affairs: about one GPU-minute per night.</p>
+        <div class="track"><div class="rb bar seg" data-fill="#b2f2bb" data-fs="solid" data-r="4" style="width:115px"></div><div class="rb bar seg" data-fill="#e9ecef" data-fs="solid" data-r="4" style="width:345px">79,978 of 318,801 (25%)</div></div></div>
+      <p class="small" style="font-size:13.5px">All 29 topics: 2024 to 2026 and the 30,000 most recent earlier affairs, newest first.</p>
+      <p class="small" style="font-size:13.5px">Backfill: about 8,000 affairs per hour on three GPUs; the remaining 239,000 affairs need about 85 GPU-hours (about 29 hours on three GPUs). New affairs: about one GPU-minute per night.</p>
     </div>
     <div class="rb panel" data-at="3.0" data-fill="#d0bfff" data-fs="hachure" data-r="10" style="width:818px">
       <p class="grp" style="font-size:25px">As good as a frontier model<sup class="fn">6</sup></p>
@@ -416,8 +416,8 @@ body.print .slide:last-child { break-after: auto; page-break-after: auto; }
   <div class="fns">
     <p><sup class="fn">1</sup> APS topics: https://anneepolitique.swiss/de/themen/ &nbsp; <sup class="fn">2</sup> Our evaluation, the baselines and the frontier-model judge (Claude Opus 5.5 and Claude Sonnet 5.5): Technical report, section 4</p>
     <p><sup class="fn">3</sup> DVS list: https://www.digital-public-services-switzerland.ch/en/news/political-activities-regarding-digitalisation &nbsp; <sup class="fn">4</sup> Demokratis: https://github.com/Demokratis-ch/demokratis-ml</p>
-    <p><sup class="fn">5</sup> Comparison and blend (a logistic blend per area, fitted on earlier affairs): scripts/evaluation/metrics_build.py &nbsp; <sup class="fn">6</sup> Full frontier comparison: scripts/evaluation/judge_extend.py &nbsp; <sup class="fn">8</sup> Technical report, section 4</p>
-    <p><sup class="fn">7</sup> New-scheme scores: scripts/evaluation/zero_shot_embeddings.py (embeddings matched to the topic card text, no labels); the legal XLM-RoBERTa has no output there: it can only score the 28 areas it was trained on</p>
+    <p><sup class="fn">5</sup> Comparison and blend (a logistic blend per area, fitted on earlier affairs): Technical report, section 4 &nbsp; <sup class="fn">6</sup> Full frontier comparison: Technical report, section 4 &nbsp; <sup class="fn">8</sup> Technical report, section 4</p>
+    <p><sup class="fn">7</sup> New-scheme scores: embeddings matched to the topic card text, no labels; the legal XLM-RoBERTa has no output there: it can only score the 28 areas it was trained on</p>
   </div>
   <span class="pageno">5</span>
 </section>
@@ -540,8 +540,8 @@ body.print .slide:last-child { break-after: auto; page-break-after: auto; }
   <div class="row" style="margin-top:22px; gap:34px; width:1480px; align-items:flex-start">
     <div class="col" style="width:900px; gap:10px; align-items:center">
       <div class="rb frame" data-r="10" style="width:900px; height:522px">
-        <video id="demo" src="media/walkthrough.mp4" autoplay muted loop playsinline preload="auto" style="object-fit:contain; background:#ffffff"></video>
-        <img id="demo-still" src="img/walkthrough_still.png" alt="A frame of the recorded walkthrough" style="display:none; object-fit:contain">
+        <video id="demo" src="media/demo_captioned.mp4" autoplay muted loop playsinline preload="auto" style="object-fit:contain; background:#ffffff"></video>
+        <img id="demo-still" src="img/demo_captioned_still.png" alt="A frame of the demo video: the review panel" style="display:none; object-fit:contain">
       </div>
       <div class="rb quote" data-fill="#e9ecef" data-r="16" style="margin-top:6px; width:820px; font-size:20px; padding:8px 24px"><span class="hand red" style="font-size:28px">Parlamentsthemen</span> · Invincibles<br><span style="font-size:17px">Model: <a class="lnk" href="https://huggingface.co/merabro/Apertus-ParlTopics-8B" target="_blank" rel="noopener">huggingface.co/merabro/Apertus-ParlTopics-8B</a><br>Code: <a class="lnk" href="https://github.com/prakash-aryan/parlamentsthemen" target="_blank" rel="noopener">github.com/prakash-aryan/parlamentsthemen</a></span></div>
     </div>
