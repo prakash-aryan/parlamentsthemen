@@ -1,0 +1,26 @@
+{
+  "name": "parlamentsthemen",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-01",
+  "workers_dev": true,
+  "routes": [{ "pattern": "<your hostname>", "custom_domain": true }],
+  "preview_urls": false,
+  "observability": { "enabled": true },
+  "assets": { "directory": "../../../web/out", "binding": "ASSETS", "run_worker_first": ["/api/*"] },
+  "containers": [
+    { "class_name": "Embedder", "image": "../embedder/Dockerfile", "max_instances": 1, "instance_type": { "vcpu": 1, "memory_mib": 3072, "disk_mb": 6000 } }
+  ],
+  "durable_objects": { "bindings": [{ "name": "EMBEDDER", "class_name": "Embedder" }] },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Embedder"] }],
+  "d1_databases": [{ "binding": "DB", "database_name": "parlamentsthemen", "database_id": "<D1 database id>" }],
+  "ratelimits": [
+    { "name": "RL_API", "namespace_id": "4101", "simple": { "limit": 240, "period": 60 } },
+    { "name": "RL_EMBED", "namespace_id": "4102", "simple": { "limit": 40, "period": 60 } }
+  ],
+  "analytics_engine_datasets": [{ "binding": "AE", "dataset": "parlamentsthemen_usage" }],
+  "vars": {
+    "ZILLIZ_URL": "<Zilliz cluster endpoint>",
+    "DAILY_EMBEDS": "3000"
+  },
+  "triggers": { "crons": ["17 5 * * *"] }
+}

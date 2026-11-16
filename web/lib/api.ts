@@ -28,6 +28,7 @@ export interface Hit {
   title_de?: string | null;
   title_fr?: string | null;
   title_it?: string | null;
+  title_en?: string | null;
   outcome?: OutcomeKey | null;
   title_only?: boolean | null;
   keyword_match?: boolean;
@@ -48,6 +49,7 @@ export interface SearchResponse {
   body: string | null;
   year_from: number | null;
   year_to: number | null;
+  weak_match?: boolean;
   results: Hit[];
 }
 
@@ -103,6 +105,7 @@ export interface SimilarAffair {
   title_de?: string | null;
   title_fr?: string | null;
   title_it?: string | null;
+  title_en?: string | null;
   body_key?: string | null;
   body_name?: string | null;
 }
@@ -188,6 +191,7 @@ export interface ReviewItem {
   title_de?: string | null;
   title_fr?: string | null;
   title_it?: string | null;
+  title_en?: string | null;
   body_key?: string | null;
   body_name?: string | null;
   level?: string | null;

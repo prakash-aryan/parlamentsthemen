@@ -37,6 +37,8 @@ type Result =
 const EMPTY: Filters = { q: "", topic: "", level: "", yfrom: "", yto: "", body: "" };
 const LEVEL_ORDER = ["country", "canton", "city", "municipality"];
 
+const STATIC = process.env.NEXT_PUBLIC_STATIC === "1";
+
 const verdictOf = (a?: TopicAnswer | null): Verdict | null =>
   !a ? null : a.decision === "yes" ? (a.confidence === "low" ? "likely" : "yes") : (a.confidence === "low" ? "unsure" : "no");
 
@@ -105,7 +107,7 @@ function Highlight({ text, quote, stems }: { text: string; quote?: string | null
   return <>{from > 0 ? "… " : ""}<Marked text={text} from={from} to={to} stems={stems} quote={[i, i + quote.length]} /> …</>;
 }
 
-type Titled = { title?: string | null; title_de?: string | null; title_fr?: string | null; title_it?: string | null };
+type Titled = { title?: string | null; title_de?: string | null; title_fr?: string | null; title_it?: string | null; title_en?: string | null };
 
 function readUrl(): { f: Filters; lang: Lang | null } {
   if (typeof window === "undefined") return { f: EMPTY, lang: null };
@@ -163,6 +165,7 @@ export default function ParlTopics() {
   const requested = useRef<Set<string>>(new Set());
   const finderRef = useRef<HTMLElement>(null);
   const started = useRef(false);
+  const autoQ = useRef("");
   const yfromRef = useRef<HTMLInputElement>(null);
   const ytoRef = useRef<HTMLInputElement>(null);
   const onYearRef = useRef<(key: "yfrom" | "yto", value: string) => void>(() => {});
@@ -185,10 +188,10 @@ export default function ParlTopics() {
 
   const asLang = useCallback((l?: string | null): Lang => (l && (LANGS as string[]).includes(l) ? l as Lang : lang), [lang]);
   const titleLang = useCallback((x: Titled & { lang?: string | null }): Lang =>
-    ((lang === "de" && x.title_de) || (lang === "fr" && x.title_fr) || (lang === "it" && x.title_it)) ? lang : asLang(x.lang), [lang, asLang]);
+    ((lang === "de" && x.title_de) || (lang === "fr" && x.title_fr) || (lang === "it" && x.title_it) || (lang === "en" && x.title_en)) ? lang : asLang(x.lang), [lang, asLang]);
 
   const titleFor = useCallback((x: Titled) =>
-    (lang === "de" ? x.title_de : lang === "fr" ? x.title_fr : lang === "it" ? x.title_it : null) || x.title || "", [lang]);
+    (lang === "de" ? x.title_de : lang === "fr" ? x.title_fr : lang === "it" ? x.title_it : lang === "en" ? x.title_en : null) || x.title || "", [lang]);
 
   const scopeOf = useCallback((id: string) => topics.find((t) => t.id === id)?.scope ?? null, [topics]);
   const cardHash = useCallback((id: string) => topics.find((t) => t.id === id)?.card_hash ?? "", [topics]);
@@ -224,6 +227,7 @@ export default function ParlTopics() {
     started.current = true;
     const fromUrl = readUrl();
     api.bodies().then(setBodies).catch(() => setBodies([]));
+    if (STATIC) fetch(`${process.env.NEXT_PUBLIC_API_BASE ?? ""}/warm`, { method: "POST" }).catch(() => {});
     speechSupport().then(setSupport);
     api.reviewStatus().then((r) => setReviewAvail(r.available)).catch(() => setReviewAvail(false));
     try {
@@ -237,7 +241,7 @@ export default function ParlTopics() {
         const fromLink = Boolean(fromUrl.f.q || fromUrl.f.topic);
         const start = fromLink ? fromUrl.f : { ...EMPTY, q: I18N[fromUrl.lang ?? "de"].examples[0] };
         runSearch(start);
-        if (!fromLink) { setExIdx(0); setF({ ...start, q: "" }); }
+        if (!fromLink) { autoQ.current = start.q; setExIdx(0); setF({ ...start, q: "" }); }
       });
   }, [runSearch]);
 
@@ -246,7 +250,10 @@ export default function ParlTopics() {
   }, [lang, f]);
 
   const searched = result.status === "done" || result.status === "loading";
-  const rerun = (next: Filters) => { if (searched || next.q.trim() || next.topic) runSearch(next); else setF(next); };
+  const rerun = (next: Filters) => {
+    if (!next.q.trim() && autoQ.current) next = { ...next, q: autoQ.current };
+    if (searched || next.q.trim() || next.topic) runSearch(next); else setF(next);
+  };
 
   const onTopic = (topic: string) => {
     const sc = scopeOf(topic);
@@ -331,7 +338,7 @@ export default function ParlTopics() {
     loadDetail(id, lang);
     loadLive(id);
     const v = verdictOf(h.topic_answer);
-    if (topic && v && v !== "no") loadEvidence(id, topic);
+    if (!STATIC && topic && v && v !== "no") loadEvidence(id, topic);
   };
 
   useEffect(() => {
@@ -451,6 +458,7 @@ export default function ParlTopics() {
     else count = `${L.r_count.replace("{n}", String(n)).replace("{q}", q)} · ${L.r_sorted_rel}`;
     if (d.mode === "topic" && n) note = d.stored ? L.r_note_stored : L.r_note_browse;
     if (d.mode === "query_topic") note = n ? L.r_note_qt.replace("{t}", t) : L.r_hint_qt;
+    if (d.weak_match && d.mode === "query" && n) note = L.r_weak;
   }
   const listLoading = (result.status === "loading" && !result.prev) || (result.status === "idle" && !topicsReady);
   const ovShown = ov && ov.total > 0 && shown ? ov : null;
@@ -464,7 +472,7 @@ export default function ParlTopics() {
   const dymParts = L.dym.split("{q}");
 
   useEffect(() => {
-    if (!searchTopic || !shownResults) return;
+    if (STATIC || !searchTopic || !shownResults) return;
     for (const h of shownResults) {
       const v = verdictOf(h.topic_answer);
       if (open.has(h.openparldata_id) && v && v !== "no") loadEvidence(h.openparldata_id, searchTopic);
@@ -544,7 +552,7 @@ export default function ParlTopics() {
           <div className="qwrap">
             <div className="ghost" aria-hidden="true"><span className="typed">{f.q}</span><span className="rest">{ghostRest}</span></div>
             <input id="q" type="search" aria-label={L.s_go} placeholder="" value={f.q}
-              onChange={(e) => setF({ ...f, q: e.target.value })}
+              onChange={(e) => { autoQ.current = ""; setF({ ...f, q: e.target.value }); }}
               onKeyDown={(e) => {
                 const atEnd = e.currentTarget.selectionStart === f.q.length;
                 if (suggestion && ((e.key === "Tab" && !e.shiftKey) || (e.key === "ArrowRight" && atEnd))) {
@@ -959,7 +967,7 @@ function AffairBody({ L, id, listen, detail: d, titleOnly, verdict, searchTopic,
                           aria-pressed={r.corrected && r.decision === "no"} disabled={st === "sending"} onClick={() => onCorrect(r.topic, "no")}>✕</button>
                         {st === "failed" && <span className="done failed">{L.rv_failed}</span>}
                       </>
-                    ) : !r.corrected && <FlagButton L={L} state={flags[key]} label={L.t_wrong} className="wrong" onFlag={() => onFlag(id, r.topic)} />}
+                    ) : !STATIC && !r.corrected && <FlagButton L={L} state={flags[key]} label={L.t_wrong} className="wrong" onFlag={() => onFlag(id, r.topic)} />}
                   </li>
                 );
               })}
@@ -977,7 +985,7 @@ function AffairBody({ L, id, listen, detail: d, titleOnly, verdict, searchTopic,
         {d.url_external && <a href={d.url_external} target="_blank" rel="noopener noreferrer">{L.r_open} ↗</a>}
         <a href={d.url_openparldata} target="_blank" rel="noopener noreferrer">OpenParlData ↗</a>
         {!similar && <button type="button" data-act="sim" onClick={onSimilar}>{L.r_similar}</button>}
-        {searchTopic && (verdict === "yes" || verdict === "likely") && (
+        {!STATIC && searchTopic && (verdict === "yes" || verdict === "likely") && (
           <FlagButton L={L} state={flags[`${id}:${searchTopic}`]} label={L.flag.replace("{t}", topicName(searchTopic))} className="flag" onFlag={() => onFlag(id, searchTopic)} />
         )}
       </div>

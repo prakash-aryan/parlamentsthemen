@@ -39,3 +39,7 @@ web/.next/
 # Trained adapter (on Hugging Face)
 models/apertus-parltopics-8b/
 docs/
+
+# Cloudflare deployment
+deploy/cloudflare/embedder/model/
+.wrangler/

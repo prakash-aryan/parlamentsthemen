@@ -20,7 +20,7 @@
   "de": "Künstliche Intelligenz",
   "fr": "Intelligence artificielle",
   "it": "Intelligenza artificiale",
-  "rm": "Künstliche Intelligenz",
+  "rm": "Intelligenza artifiziala",
   "en": "Artificial intelligence"
  },
  "adhoc_climate": {
@@ -28,7 +28,7 @@
   "de": "Klimawandel",
   "fr": "Changement climatique",
   "it": "Cambiamenti climatici",
-  "rm": "Klimawandel",
+  "rm": "Midada dal clima",
   "en": "Climate change"
  },
  "adhoc_housing": {
@@ -36,7 +36,7 @@
   "de": "Wohnungsnot und Mieten",
   "fr": "Pénurie de logements et loyers",
   "it": "Penuria di alloggi e affitti",
-  "rm": "Wohnungsnot und Mieten",
+  "rm": "Scarscitad d'abitaziuns e tschains",
   "en": "Housing shortage and rents"
  },
  "adhoc_energy_security": {
@@ -44,7 +44,7 @@
   "de": "Sichere Energieversorgung",
   "fr": "Sécurité de l'approvisionnement énergétique",
   "it": "Sicurezza dell'approvvigionamento energetico",
-  "rm": "Sichere Energieversorgung",
+  "rm": "Segirezza dal provediment d'energia",
   "en": "Energy supply security"
  },
  "adhoc_ukraine": {
@@ -52,7 +52,7 @@
   "de": "Krieg in der Ukraine",
   "fr": "Guerre en Ukraine",
   "it": "Guerra in Ucraina",
-  "rm": "Krieg in der Ukraine",
+  "rm": "Guerra en l'Ucraina",
   "en": "War in Ukraine"
  },
  "aps_1_1": {
@@ -62,7 +62,7 @@
   "de": "Politische Grundfragen",
   "fr": "Problèmes politiques fondamentaux",
   "it": "Questioni politiche fondamentali",
-  "rm": "Politische Grundfragen",
+  "rm": "Questis fundamentalas politicas",
   "en": "Fundamental political questions"
  },
  "aps_1_2": {
@@ -72,7 +72,7 @@
   "de": "Institutionen",
   "fr": "Institutions",
   "it": "Istituzioni",
-  "rm": "Institutionen",
+  "rm": "Instituziuns",
   "en": "Institutions"
  },
  "aps_2_1": {
@@ -82,7 +82,7 @@
   "de": "Direkte Demokratie",
   "fr": "Démocratie directe",
   "it": "Democrazia diretta",
-  "rm": "Direkte Demokratie",
+  "rm": "Democrazia directa",
   "en": "Direct democracy"
  },
  "aps_2_2": {
@@ -92,7 +92,7 @@
   "de": "Wahlen",
   "fr": "Elections",
   "it": "Elezioni",
-  "rm": "Wahlen",
+  "rm": "Elecziuns",
   "en": "Elections"
  },
  "aps_3_1": {
@@ -102,7 +102,7 @@
   "de": "Europa- und Aussenpolitik",
   "fr": "Politique européenne et étrangère",
   "it": "Politica europea ed estera",
-  "rm": "Europa- und Aussenpolitik",
+  "rm": "Politica europeica e da l'exteriur",
   "en": "European and foreign policy"
  },
  "aps_4_1": {
@@ -112,7 +112,7 @@
   "de": "Soziale Gruppen",
   "fr": "Groupes sociaux",
   "it": "Gruppi sociali",
-  "rm": "Soziale Gruppen",
+  "rm": "Gruppas socialas",
   "en": "Social groups"
  },
  "aps_4_2": {
@@ -122,7 +122,7 @@
   "de": "Bildung und Forschung",
   "fr": "Enseignement et recherche",
   "it": "Formazione e ricerca",
-  "rm": "Bildung und Forschung",
+  "rm": "Educaziun e retschertga",
   "en": "Education and research"
  },
  "aps_4_3": {
@@ -132,7 +132,7 @@
   "de": "Kultur, Sprache, Kirchen",
   "fr": "Culture, langues, églises",
   "it": "Cultura, lingue, chiese",
-  "rm": "Kultur, Sprache, Kirchen",
+  "rm": "Cultura, lungatgs, baselgias",
   "en": "Culture, languages, churches"
  },
  "aps_4_4": {
@@ -142,7 +142,7 @@
   "de": "Medien",
   "fr": "Médias",
   "it": "Media",
-  "rm": "Medien",
+  "rm": "Medias",
   "en": "Media"
  },
  "aps_5_1": {
@@ -152,7 +152,7 @@
   "de": "Gesundheit, Sozialhilfe, Sport",
   "fr": "Santé, assistance sociale, sport",
   "it": "Sanità, aiuto sociale, sport",
-  "rm": "Gesundheit, Sozialhilfe, Sport",
+  "rm": "Sanadad, assistenza sociala, sport",
   "en": "Health, social assistance, sport"
  },
  "aps_5_2": {
@@ -162,7 +162,7 @@
   "de": "Sozialversicherungen",
   "fr": "Assurances sociales",
   "it": "Assicurazioni sociali",
-  "rm": "Sozialversicherungen",
+  "rm": "Assicuranzas socialas",
   "en": "Social insurance"
  },
  "aps_6_1": {
@@ -172,7 +172,7 @@
   "de": "Verkehr und Kommunikation",
   "fr": "Transports et communications",
   "it": "Trasporti e comunicazioni",
-  "rm": "Verkehr und Kommunikation",
+  "rm": "Traffic e communicaziun",
   "en": "Transport and communications"
  },
  "aps_6_2": {
@@ -180,9 +180,9 @@
   "level": "chapter",
   "code": "6.2",
   "de": "Energie",
-  "fr": "Energie",
+  "fr": "Énergie",
   "it": "Energia",
-  "rm": "Energie",
+  "rm": "Energia",
   "en": "Energy"
  },
  "aps_6_3": {
@@ -192,7 +192,7 @@
   "de": "Raumplanung und Wohnungswesen",
   "fr": "Aménagement du territoire et logement",
   "it": "Pianificazione del territorio e alloggio",
-  "rm": "Raumplanung und Wohnungswesen",
+  "rm": "Planisaziun dal territori e fatgs d'abitar",
   "en": "Spatial planning and housing"
  },
  "aps_6_4": {
@@ -202,7 +202,7 @@
   "de": "Umweltschutz",
   "fr": "Protection de l'environnement",
   "it": "Protezione dell'ambiente",
-  "rm": "Umweltschutz",
+  "rm": "Protecziun da l'ambient",
   "en": "Environmental protection"
  },
  "aps_7_1": {
@@ -212,7 +212,7 @@
   "de": "Rechtsordnung",
   "fr": "Ordre juridique",
   "it": "Ordinamento giuridico",
-  "rm": "Rechtsordnung",
+  "rm": "Ordnung giuridica",
   "en": "Legal order"
  },
  "aps_7_2": {
@@ -222,7 +222,7 @@
   "de": "Sicherheitspolitik",
   "fr": "Politique de sécurité",
   "it": "Politica di sicurezza",
-  "rm": "Sicherheitspolitik",
+  "rm": "Politica da segirezza",
   "en": "Security policy"
  },
  "aps_8_1": {
@@ -232,7 +232,7 @@
   "de": "Wirtschaftspolitik",
   "fr": "Politique économique",
   "it": "Politica economica",
-  "rm": "Wirtschaftspolitik",
+  "rm": "Politica economica",
   "en": "Economic policy"
  },
  "aps_8_2": {
@@ -242,7 +242,7 @@
   "de": "Öffentliche Finanzen",
   "fr": "Finances publiques",
   "it": "Finanze pubbliche",
-  "rm": "Öffentliche Finanzen",
+  "rm": "Finanzas publicas",
   "en": "Public finances"
  },
  "aps_8_3": {
@@ -252,7 +252,7 @@
   "de": "Geld, Währung und Kredit",
   "fr": "Credit et monnaie",
   "it": "Moneta, valuta e credito",
-  "rm": "Geld, Währung und Kredit",
+  "rm": "Daners, valuta e credit",
   "en": "Money, currency and credit"
  },
  "aps_8_4": {
@@ -262,7 +262,7 @@
   "de": "Landwirtschaft",
   "fr": "Agriculture",
   "it": "Agricoltura",
-  "rm": "Landwirtschaft",
+  "rm": "Agricultura",
   "en": "Agriculture"
  },
  "aps_8_5": {
@@ -272,7 +272,7 @@
   "de": "Arbeit",
   "fr": "Travail",
   "it": "Lavoro",
-  "rm": "Arbeit",
+  "rm": "Lavur",
   "en": "Labour"
  },
  "aps_1_1_1": {
@@ -282,7 +282,7 @@
   "de": "Nationale Identität",
   "fr": "Identité nationale",
   "it": "Identità nazionale",
-  "rm": "Nationale Identität",
+  "rm": "Identitad naziunala",
   "en": "National identity",
   "parent": "aps_1_1"
  },
@@ -293,7 +293,7 @@
   "de": "Verfassungsfragen",
   "fr": "Questions constitutionnelles",
   "it": "Questioni costituzionali",
-  "rm": "Verfassungsfragen",
+  "rm": "Questius constituziunals",
   "en": "Constitutional questions",
   "parent": "aps_1_1"
  },
@@ -304,7 +304,7 @@
   "de": "Territorialfragen",
   "fr": "Questions territoriales",
   "it": "Questioni territoriali",
-  "rm": "Territorialfragen",
+  "rm": "Questius territorials",
   "en": "Territorial questions",
   "parent": "aps_1_1"
  },
@@ -315,7 +315,7 @@
   "de": "Jurafrage",
   "fr": "Question jurassienne",
   "it": "Questione giurassiana",
-  "rm": "Jurafrage",
+  "rm": "Dumonda dal Giura",
   "en": "Jura question",
   "parent": "aps_1_1"
  },
@@ -326,7 +326,7 @@
   "de": "Bundesrat",
   "fr": "Conseil fédéral",
   "it": "Consiglio federale",
-  "rm": "Bundesrat",
+  "rm": "Cussegl federal",
   "en": "Federal Council",
   "parent": "aps_1_2"
  },
@@ -337,7 +337,7 @@
   "de": "Verwaltung",
   "fr": "Administration",
   "it": "Amministrazione",
-  "rm": "Verwaltung",
+  "rm": "Administraziun",
   "en": "Administration",
   "parent": "aps_1_2"
  },
@@ -348,7 +348,7 @@
   "de": "Konkordanz",
   "fr": "Concordance",
   "it": "Concordanza",
-  "rm": "Konkordanz",
+  "rm": "Cunvegna",
   "en": "Concordance",
   "parent": "aps_1_2"
  },
@@ -370,7 +370,7 @@
   "de": "Lobbyismus",
   "fr": "Lobbyisme",
   "it": "Lobbismo",
-  "rm": "Lobbyismus",
+  "rm": "Lobbyissem",
   "en": "Lobbying",
   "parent": "aps_1_2"
  },
@@ -381,7 +381,7 @@
   "de": "Judikative",
   "fr": "Tribunaux",
   "it": "Tribunali",
-  "rm": "Judikative",
+  "rm": "Judicativa",
   "en": "Courts",
   "parent": "aps_1_2"
  },
@@ -392,7 +392,7 @@
   "de": "Föderalismus",
   "fr": "Fédéralisme",
   "it": "Federalismo",
-  "rm": "Föderalismus",
+  "rm": "Federativissem",
   "en": "Federalism",
   "parent": "aps_1_2"
  },
@@ -403,7 +403,7 @@
   "de": "Kantone",
   "fr": "Cantons",
   "it": "Cantoni",
-  "rm": "Kantone",
+  "rm": "Chantuns",
   "en": "Cantons",
   "parent": "aps_1_2"
  },
@@ -414,7 +414,7 @@
   "de": "Städte, Regionen, Gemeinden",
   "fr": "Villes, régions, communes",
   "it": "Città, regioni, comuni",
-  "rm": "Städte, Regionen, Gemeinden",
+  "rm": "Vilas, regiuns, vischnancas",
   "en": "Cities, regions, municipalities",
   "parent": "aps_1_2"
  },
@@ -425,7 +425,7 @@
   "de": "Parteiensystem",
   "fr": "Système des partis",
   "it": "Sistema dei partiti",
-  "rm": "Parteiensystem",
+  "rm": "Sistem da partidas",
   "en": "Party system",
   "parent": "aps_1_2"
  },
@@ -436,7 +436,7 @@
   "de": "Parteien",
   "fr": "Partis",
   "it": "Partiti",
-  "rm": "Parteien",
+  "rm": "Partidas",
   "en": "Parties",
   "parent": "aps_1_2"
  },
@@ -447,7 +447,7 @@
   "de": "Verbände",
   "fr": "Associations",
   "it": "Associazioni",
-  "rm": "Verbände",
+  "rm": "Associaziuns",
   "en": "Associations",
   "parent": "aps_1_2"
  },
@@ -458,7 +458,7 @@
   "de": "Volksabstimmung",
   "fr": "Votation populaire",
   "it": "Votazione popolare",
-  "rm": "Volksabstimmung",
+  "rm": "Votaziun dal pievel",
   "en": "Popular vote",
   "parent": "aps_2_1"
  },
@@ -480,7 +480,7 @@
   "de": "Volksinitiative",
   "fr": "Initiative populaire",
   "it": "Iniziativa popolare",
-  "rm": "Volksinitiative",
+  "rm": "Iniziativa dal pievel",
   "en": "Popular initiative",
   "parent": "aps_2_1"
  },
@@ -502,7 +502,7 @@
   "de": "Wahl- und Abstimmungsverfahren",
   "fr": "Procédure de vote et d'élection",
   "it": "Procedura di voto e di elezione",
-  "rm": "Wahl- und Abstimmungsverfahren",
+  "rm": "Proceduras d’elecziun e da votaziun",
   "en": "Voting and election procedures",
   "parent": "aps_2_1"
  },
@@ -513,7 +513,7 @@
   "de": "Stimm- und Wahlrecht",
   "fr": "Droit de vote et d'éligibilité",
   "it": "Diritto di voto e di eleggibilità",
-  "rm": "Stimm- und Wahlrecht",
+  "rm": "Dretg da vuschar e dretg d'eleger",
   "en": "Right to vote and to stand for election",
   "parent": "aps_2_1"
  },
@@ -524,7 +524,7 @@
   "de": "Politische Beteiligung",
   "fr": "Participation politique",
   "it": "Partecipazione politica",
-  "rm": "Politische Beteiligung",
+  "rm": "Participaziun politica",
   "en": "Political participation",
   "parent": "aps_2_1"
  },
@@ -535,7 +535,7 @@
   "de": "Politische Kampagnen",
   "fr": "Campagnes politiques",
   "it": "Campagne politiche",
-  "rm": "Politische Kampagnen",
+  "rm": "Campagnas politicas",
   "en": "Political campaigns",
   "parent": "aps_2_1"
  },
@@ -546,7 +546,7 @@
   "de": "Politikfinanzierung",
   "fr": "Financement de la politique",
   "it": "Finanziamento della politica",
-  "rm": "Politikfinanzierung",
+  "rm": "Finanziaziun da la politica",
   "en": "Political financing",
   "parent": "aps_2_1"
  },
@@ -557,7 +557,7 @@
   "de": "National- und Ständeratswahlen",
   "fr": "Elections du Conseil national et du Conseil des Etats",
   "it": "Elezioni del Consiglio nazionale e del Consiglio degli Stati",
-  "rm": "National- und Ständeratswahlen",
+  "rm": "Elecziuns dal Cussegl naziunal e dal Cussegl dals chantuns",
   "en": "National Council and Council of States elections",
   "parent": "aps_2_2"
  },
@@ -568,7 +568,7 @@
   "de": "Wahlen in kantonale Regierungen",
   "fr": "Elections des gouvernements cantonaux",
   "it": "Elezioni dei governi cantonali",
-  "rm": "Wahlen in kantonale Regierungen",
+  "rm": "Elecziuns dals guverns chantunals",
   "en": "Cantonal government elections",
   "parent": "aps_2_2"
  },
@@ -579,7 +579,7 @@
   "de": "Wahlen in kantonale Parlamente",
   "fr": "Elections des parlements cantonaux",
   "it": "Elezioni dei parlamenti cantonali",
-  "rm": "Wahlen in kantonale Parlamente",
+  "rm": "Elecziuns dals parlaments chantunals",
   "en": "Cantonal parliament elections",
   "parent": "aps_2_2"
  },
@@ -590,7 +590,7 @@
   "de": "Kommunale Wahlen",
   "fr": "Elections communales",
   "it": "Elezioni comunali",
-  "rm": "Kommunale Wahlen",
+  "rm": "Elecziuns communalas",
   "en": "Municipal elections",
   "parent": "aps_2_2"
  },
@@ -601,7 +601,7 @@
   "de": "Beziehungen zur EU",
   "fr": "Relations avec l'Union européenne (UE)",
   "it": "Relazioni con l'UE",
-  "rm": "Beziehungen zur EU",
+  "rm": "Relaziuns cun la UE",
   "en": "Relations with the EU",
   "parent": "aps_3_1"
  },
@@ -612,7 +612,7 @@
   "de": "Zwischenstaatliche Beziehungen",
   "fr": "Relations avec d'autres Etats",
   "it": "Relazioni con altri Stati",
-  "rm": "Zwischenstaatliche Beziehungen",
+  "rm": "Relaziuns cun auters stadis",
   "en": "Relations with other states",
   "parent": "aps_3_1"
  },
@@ -623,7 +623,7 @@
   "de": "Beziehungen zu internationalen Organisationen",
   "fr": "Relations avec des organisations internationales",
   "it": "Relazioni con organizzazioni internazionali",
-  "rm": "Beziehungen zu internationalen Organisationen",
+  "rm": "Relaziuns cun organisaziuns internaziunalas",
   "en": "Relations with international organisations",
   "parent": "aps_3_1"
  },
@@ -634,7 +634,7 @@
   "de": "Neutralität",
   "fr": "Neutralité",
   "it": "Neutralità",
-  "rm": "Neutralität",
+  "rm": "Neutralitad",
   "en": "Neutrality",
   "parent": "aps_3_1"
  },
@@ -645,7 +645,7 @@
   "de": "Gute Dienste",
   "fr": "Bons offices",
   "it": "Buoni uffici",
-  "rm": "Gute Dienste",
+  "rm": "Buns uffizis",
   "en": "Good offices",
   "parent": "aps_3_1"
  },
@@ -656,7 +656,7 @@
   "de": "Aussenwirtschaftspolitik",
   "fr": "Politique économique extérieure",
   "it": "Politica economica esterna",
-  "rm": "Aussenwirtschaftspolitik",
+  "rm": "Politica economica externa",
   "en": "Foreign economic policy",
   "parent": "aps_3_1"
  },
@@ -667,7 +667,7 @@
   "de": "Entwicklungspolitik",
   "fr": "Politique de développement",
   "it": "Politica di sviluppo",
-  "rm": "Entwicklungspolitik",
+  "rm": "Politica da svilup",
   "en": "Development policy",
   "parent": "aps_3_1"
  },
@@ -678,7 +678,7 @@
   "de": "Auslandschweizerinnen und -schweizer",
   "fr": "Suisses de l'étranger",
   "it": "Svizzeri all'estero",
-  "rm": "Auslandschweizerinnen und -schweizer",
+  "rm": "Svizzers a l'exteriur",
   "en": "Swiss abroad",
   "parent": "aps_3_1"
  },
@@ -689,7 +689,7 @@
   "de": "Bevölkerungsentwicklung",
   "fr": "Evolution de la population",
   "it": "Evoluzione demografica",
-  "rm": "Bevölkerungsentwicklung",
+  "rm": "Svilup da la populaziun",
   "en": "Population development",
   "parent": "aps_4_1"
  },
@@ -700,7 +700,7 @@
   "de": "Migration",
   "fr": "Migration",
   "it": "Migrazione",
-  "rm": "Migration",
+  "rm": "Migraziun",
   "en": "Migration",
   "parent": "aps_4_1"
  },
@@ -711,7 +711,7 @@
   "de": "Asylwesen",
   "fr": "Asile",
   "it": "Asilo",
-  "rm": "Asylwesen",
+  "rm": "Asil",
   "en": "Asylum",
   "parent": "aps_4_1"
  },
@@ -722,7 +722,7 @@
   "de": "Frauen- und Gleichstellungsfragen",
   "fr": "Femmes et égalité des sexes",
   "it": "Donne e parità dei sessi",
-  "rm": "Frauen- und Gleichstellungsfragen",
+  "rm": "Dumondas da dunnas e d'egualitad da las dunnas",
   "en": "Women and gender equality",
   "parent": "aps_4_1"
  },
@@ -733,7 +733,7 @@
   "de": "Familien",
   "fr": "Familles",
   "it": "Famiglie",
-  "rm": "Familien",
+  "rm": "Familias",
   "en": "Families",
   "parent": "aps_4_1"
  },
@@ -744,7 +744,7 @@
   "de": "Kinder und Jugendliche",
   "fr": "Enfants et adolescents",
   "it": "Bambini e giovani",
-  "rm": "Kinder und Jugendliche",
+  "rm": "Uffants e giuvenils",
   "en": "Children and young people",
   "parent": "aps_4_1"
  },
@@ -755,7 +755,7 @@
   "de": "Altersfragen",
   "fr": "Questions relatives à l'âge",
   "it": "Questioni legate all'età",
-  "rm": "Altersfragen",
+  "rm": "Vegliandr",
   "en": "Ageing",
   "parent": "aps_4_1"
  },
@@ -777,7 +777,7 @@
   "de": "Menschen mit Behinderungen",
   "fr": "Personnes en situation de handicap",
   "it": "Persone con disabilità",
-  "rm": "Menschen mit Behinderungen",
+  "rm": "Persunas cun impediments",
   "en": "People with disabilities",
   "parent": "aps_4_1"
  },
@@ -788,7 +788,7 @@
   "de": "Fahrende",
   "fr": "Gens du voyage",
   "it": "Nomadi",
-  "rm": "Fahrende",
+  "rm": "Viagiants",
   "en": "Travellers",
   "parent": "aps_4_1"
  },
@@ -799,7 +799,7 @@
   "de": "Grundschulen",
   "fr": "Ecole obligatoire",
   "it": "Scuola dell'obbligo",
-  "rm": "Grundschulen",
+  "rm": "Scola fundamentala obligatorica",
   "en": "Compulsory schooling",
   "parent": "aps_4_2"
  },
@@ -810,7 +810,7 @@
   "de": "Berufsbildung",
   "fr": "Formation professionnelle",
   "it": "Formazione professionale",
-  "rm": "Berufsbildung",
+  "rm": "Formaziun professiunala",
   "en": "Vocational education",
   "parent": "aps_4_2"
  },
@@ -821,7 +821,7 @@
   "de": "Mittelschulen",
   "fr": "Enseignement secondaire supérieur",
   "it": "Scuole medie superiori",
-  "rm": "Mittelschulen",
+  "rm": "Scolas medias",
   "en": "Upper secondary schools",
   "parent": "aps_4_2"
  },
@@ -832,7 +832,7 @@
   "de": "Hochschulen",
   "fr": "Hautes écoles",
   "it": "Scuole universitarie",
-  "rm": "Hochschulen",
+  "rm": "Scol'auta",
   "en": "Higher education",
   "parent": "aps_4_2"
  },
@@ -843,7 +843,7 @@
   "de": "Forschung",
   "fr": "Recherche",
   "it": "Ricerca",
-  "rm": "Forschung",
+  "rm": "Perscrutaziun",
   "en": "Research",
   "parent": "aps_4_2"
  },
@@ -854,7 +854,7 @@
   "de": "Kultur",
   "fr": "Culture",
   "it": "Cultura",
-  "rm": "Kultur",
+  "rm": "Cultura",
   "en": "Culture",
   "parent": "aps_4_3"
  },
@@ -865,7 +865,7 @@
   "de": "Sprachfragen",
   "fr": "Questions linguistiques",
   "it": "Questioni linguistiche",
-  "rm": "Sprachfragen",
+  "rm": "Questius da lingua",
   "en": "Language questions",
   "parent": "aps_4_3"
  },
@@ -876,7 +876,7 @@
   "de": "Religion und Kirchen",
   "fr": "Religion et Eglises",
   "it": "Religione e chiese",
-  "rm": "Religion und Kirchen",
+  "rm": "Religiun e baselgias",
   "en": "Religion and churches",
   "parent": "aps_4_3"
  },
@@ -887,7 +887,7 @@
   "de": "Heimatschutz und Denkmalpflege",
   "fr": "Protection des sites et du patrimoine",
   "it": "Protezione del paesaggio e dei monumenti",
-  "rm": "Heimatschutz und Denkmalpflege",
+  "rm": "Protecziun dal patrimoni naziunal e tgira da monuments",
   "en": "Heritage and monument protection",
   "parent": "aps_4_3"
  },
@@ -898,7 +898,7 @@
   "de": "Urheberrecht",
   "fr": "Droit d'auteur",
   "it": "Diritto d'autore",
-  "rm": "Urheberrecht",
+  "rm": "Dretg d'autur",
   "en": "Copyright",
   "parent": "aps_4_3"
  },
@@ -909,7 +909,7 @@
   "de": "Medienpolitische Grundfragen",
   "fr": "Aspects généraux de la politique médiatique",
   "it": "Questioni fondamentali di politica dei media",
-  "rm": "Medienpolitische Grundfragen",
+  "rm": "Questius fundamentals da la politica da medias",
   "en": "General media policy",
   "parent": "aps_4_4"
  },
@@ -920,7 +920,7 @@
   "de": "Presse",
   "fr": "Presse",
   "it": "Stampa",
-  "rm": "Presse",
+  "rm": "Pressa",
   "en": "Press",
   "parent": "aps_4_4"
  },
@@ -931,7 +931,7 @@
   "de": "Radio und Fernsehen",
   "fr": "Radio et télévision",
   "it": "Radio e televisione",
-  "rm": "Radio und Fernsehen",
+  "rm": "Radio e televisiun",
   "en": "Radio and television",
   "parent": "aps_4_4"
  },
@@ -942,7 +942,7 @@
   "de": "Digitale Medien",
   "fr": "Médias numériques",
   "it": "Media digitali",
-  "rm": "Digitale Medien",
+  "rm": "Medias digitalas",
   "en": "Digital media",
   "parent": "aps_4_4"
  },
@@ -953,7 +953,7 @@
   "de": "Meinungsforschung",
   "fr": "Sondages",
   "it": "Sondaggi",
-  "rm": "Meinungsforschung",
+  "rm": "Retschertga d'opiniuns",
   "en": "Opinion polls",
   "parent": "aps_4_4"
  },
@@ -964,7 +964,7 @@
   "de": "Gesundheitspolitik",
   "fr": "Politique de la santé",
   "it": "Politica sanitaria",
-  "rm": "Gesundheitspolitik",
+  "rm": "Politica da sanadad",
   "en": "Health policy",
   "parent": "aps_5_1"
  },
@@ -975,7 +975,7 @@
   "de": "Ärzte und Pflegepersonal",
   "fr": "Médecins et personnel soignant",
   "it": "Medici e personale curante",
-  "rm": "Ärzte und Pflegepersonal",
+  "rm": "Medis e persunal da tgira",
   "en": "Doctors and nursing staff",
   "parent": "aps_5_1"
  },
@@ -986,7 +986,7 @@
   "de": "Spitäler",
   "fr": "Hôpitaux",
   "it": "Ospedali",
-  "rm": "Spitäler",
+  "rm": "Spitals",
   "en": "Hospitals",
   "parent": "aps_5_1"
  },
@@ -997,7 +997,7 @@
   "de": "Medikamente",
   "fr": "Médicaments",
   "it": "Medicamenti",
-  "rm": "Medikamente",
+  "rm": "Medicaments",
   "en": "Medicines",
   "parent": "aps_5_1"
  },
@@ -1008,7 +1008,7 @@
   "de": "Suchtmittel",
   "fr": "Stupéfiants",
   "it": "Stupefacenti",
-  "rm": "Suchtmittel",
+  "rm": "Substanzas da dependenza",
   "en": "Addictive substances",
   "parent": "aps_5_1"
  },
@@ -1019,7 +1019,7 @@
   "de": "Medizinische Forschung",
   "fr": "Recherche médicale",
   "it": "Ricerca medica",
-  "rm": "Medizinische Forschung",
+  "rm": "Perscrutaziun medicinala",
   "en": "Medical research",
   "parent": "aps_5_1"
  },
@@ -1030,7 +1030,7 @@
   "de": "Fortpflanzungsmedizin",
   "fr": "Procréation médicalement assistée",
   "it": "Medicina della procreazione",
-  "rm": "Fortpflanzungsmedizin",
+  "rm": "Medischina da reproducziun",
   "en": "Reproductive medicine",
   "parent": "aps_5_1"
  },
@@ -1041,7 +1041,7 @@
   "de": "Epidemien und Pandemien",
   "fr": "Epidémies et pandémies",
   "it": "Epidemie e pandemie",
-  "rm": "Epidemien und Pandemien",
+  "rm": "Epidemias e pandemias",
   "en": "Epidemics and pandemics",
   "parent": "aps_5_1"
  },
@@ -1052,7 +1052,7 @@
   "de": "Sozialhilfe",
   "fr": "Assistance sociale",
   "it": "Aiuto sociale",
-  "rm": "Sozialhilfe",
+  "rm": "Assistenza sociala",
   "en": "Social assistance",
   "parent": "aps_5_1"
  },
@@ -1074,7 +1074,7 @@
   "de": "Sozialversicherungen allgemein",
   "fr": "Assurances sociales en général",
   "it": "Assicurazioni sociali in generale",
-  "rm": "Sozialversicherungen allgemein",
+  "rm": "Assicuranzas socialas en general",
   "en": "Social insurance in general",
   "parent": "aps_5_2"
  },
@@ -1085,7 +1085,7 @@
   "de": "Alters- und Hinterlassenenversicherung (AHV)",
   "fr": "Assurance-vieillesse et survivants (AVS)",
   "it": "Assicurazione vecchiaia e superstiti (AVS)",
-  "rm": "Alters- und Hinterlassenenversicherung (AHV)",
+  "rm": "Assicuranza per vegls e survivents (AVS)",
   "en": "Old-age and survivors' insurance (AHV)",
   "parent": "aps_5_2"
  },
@@ -1096,7 +1096,7 @@
   "de": "Invalidenversicherung (IV)",
   "fr": "Assurance-invalidité (AI)",
   "it": "Assicurazione invalidità (AI)",
-  "rm": "Invalidenversicherung (IV)",
+  "rm": "Assicuranza d'invaliditad (AI)",
   "en": "Invalidity insurance (IV)",
   "parent": "aps_5_2"
  },
@@ -1107,7 +1107,7 @@
   "de": "Krankenversicherung",
   "fr": "Assurance-maladie",
   "it": "Assicurazione malattie",
-  "rm": "Krankenversicherung",
+  "rm": "Assicuranza da malsauns",
   "en": "Health insurance",
   "parent": "aps_5_2"
  },
@@ -1118,7 +1118,7 @@
   "de": "Unfallversicherung",
   "fr": "Assurance-accidents",
   "it": "Assicurazione infortuni",
-  "rm": "Unfallversicherung",
+  "rm": "Assicuranza d’accidents",
   "en": "Accident insurance",
   "parent": "aps_5_2"
  },
@@ -1129,7 +1129,7 @@
   "de": "Arbeitslosenversicherung (ALV)",
   "fr": "Assurance-chômage",
   "it": "Assicurazione contro la disoccupazione (AD)",
-  "rm": "Arbeitslosenversicherung (ALV)",
+  "rm": "Assicuranza cunter la dischoccupaziun (AD)",
   "en": "Unemployment insurance (ALV)",
   "parent": "aps_5_2"
  },
@@ -1140,7 +1140,7 @@
   "de": "Mutterschaftsversicherung",
   "fr": "Assurance-maternité",
   "it": "Assicurazione maternità",
-  "rm": "Mutterschaftsversicherung",
+  "rm": "Assicuranza da maternitad",
   "en": "Maternity insurance",
   "parent": "aps_5_2"
  },
@@ -1151,7 +1151,7 @@
   "de": "Erwerbsersatzordnung (EO)",
   "fr": "Allocations pour perte de gain (APG)",
   "it": "Indennità di perdita di guadagno (IPG)",
-  "rm": "Erwerbsersatzordnung (EO)",
+  "rm": "Uorden per cumpensar il gudogn (EO)",
   "en": "Income compensation (EO)",
   "parent": "aps_5_2"
  },
@@ -1162,7 +1162,7 @@
   "de": "Berufliche Vorsorge",
   "fr": "Prévoyance professionnelle",
   "it": "Previdenza professionale",
-  "rm": "Berufliche Vorsorge",
+  "rm": "Prevenziun professiunala",
   "en": "Occupational pensions",
   "parent": "aps_5_2"
  },
@@ -1173,7 +1173,7 @@
   "de": "Private Vorsorge",
   "fr": "Prévoyance privée",
   "it": "Previdenza privata",
-  "rm": "Private Vorsorge",
+  "rm": "Prevediment privat",
   "en": "Private pensions",
   "parent": "aps_5_2"
  },
@@ -1184,7 +1184,7 @@
   "de": "Ergänzungsleistungen (EL)",
   "fr": "Prestations complémentaires (PC)",
   "it": "Prestazioni complementari (PC)",
-  "rm": "Ergänzungsleistungen (EL)",
+  "rm": "Supplements (SU)",
   "en": "Supplementary benefits (EL)",
   "parent": "aps_5_2"
  },
@@ -1195,7 +1195,7 @@
   "de": "Verkehrspolitik",
   "fr": "Politique des transports",
   "it": "Politica dei trasporti",
-  "rm": "Verkehrspolitik",
+  "rm": "Politica da traffic",
   "en": "Transport policy",
   "parent": "aps_6_1"
  },
@@ -1206,7 +1206,7 @@
   "de": "Öffentlicher Verkehr",
   "fr": "Transport public",
   "it": "Trasporti pubblici",
-  "rm": "Öffentlicher Verkehr",
+  "rm": "Transport public",
   "en": "Public transport",
   "parent": "aps_6_1"
  },
@@ -1217,7 +1217,7 @@
   "de": "Strassenverkehr",
   "fr": "Trafic routier",
   "it": "Traffico stradale",
-  "rm": "Strassenverkehr",
+  "rm": "Traffic sin via",
   "en": "Road traffic",
   "parent": "aps_6_1"
  },
@@ -1228,7 +1228,7 @@
   "de": "Eisenbahn",
   "fr": "Chemin de fer",
   "it": "Ferrovia",
-  "rm": "Eisenbahn",
+  "rm": "Viafiers",
   "en": "Railways",
   "parent": "aps_6_1"
  },
@@ -1239,7 +1239,7 @@
   "de": "Luftfahrt",
   "fr": "Trafic aérien",
   "it": "Aviazione",
-  "rm": "Luftfahrt",
+  "rm": "aviatica",
   "en": "Aviation",
   "parent": "aps_6_1"
  },
@@ -1250,7 +1250,7 @@
   "de": "Schifffahrt",
   "fr": "Navigation",
   "it": "Navigazione",
-  "rm": "Schifffahrt",
+  "rm": "Navigaziun",
   "en": "Shipping",
   "parent": "aps_6_1"
  },
@@ -1261,7 +1261,7 @@
   "de": "Post",
   "fr": "Poste",
   "it": "Posta",
-  "rm": "Post",
+  "rm": "Postas",
   "en": "Postal services",
   "parent": "aps_6_1"
  },
@@ -1272,7 +1272,7 @@
   "de": "Telekommunikation",
   "fr": "Télécommunication",
   "it": "Telecomunicazioni",
-  "rm": "Telekommunikation",
+  "rm": "Telecommunicaziun",
   "en": "Telecommunications",
   "parent": "aps_6_1"
  },
@@ -1283,7 +1283,7 @@
   "de": "Digitalisierung",
   "fr": "Numérisation",
   "it": "Digitalizzazione",
-  "rm": "Digitalisierung",
+  "rm": "Digitalisaziun",
   "en": "Digitalisation",
   "parent": "aps_6_1"
  },
@@ -1294,7 +1294,7 @@
   "de": "Energiepolitik",
   "fr": "Politique énergétique",
   "it": "Politica energetica",
-  "rm": "Energiepolitik",
+  "rm": "Politica d'energia",
   "en": "Energy policy",
   "parent": "aps_6_2"
  },
@@ -1305,7 +1305,7 @@
   "de": "Stromnetz und -vertrieb",
   "fr": "Réseau et distribution d'électricité",
   "it": "Rete elettrica e distribuzione",
-  "rm": "Stromnetz und -vertrieb",
+  "rm": "Rait electrica e distribuziun",
   "en": "Electricity grid and distribution",
   "parent": "aps_6_2"
  },
@@ -1316,7 +1316,7 @@
   "de": "Erdöl und Erdgas",
   "fr": "Produits pétroliers et gaz",
   "it": "Petrolio e gas naturale",
-  "rm": "Erdöl und Erdgas",
+  "rm": "Petroli e gas natiral",
   "en": "Oil and natural gas",
   "parent": "aps_6_2"
  },
@@ -1327,7 +1327,7 @@
   "de": "Wasserkraft",
   "fr": "Force hydraulique",
   "it": "Energia idroelettrica",
-  "rm": "Wasserkraft",
+  "rm": "Energia idraulica",
   "en": "Hydropower",
   "parent": "aps_6_2"
  },
@@ -1338,7 +1338,7 @@
   "de": "Erneuerbare Energien",
   "fr": "Energies renouvelables",
   "it": "Energie rinnovabili",
-  "rm": "Erneuerbare Energien",
+  "rm": "Energias regenerablas",
   "en": "Renewable energy",
   "parent": "aps_6_2"
  },
@@ -1349,7 +1349,7 @@
   "de": "Kernenergie",
   "fr": "Energie nucléaire",
   "it": "Energia nucleare",
-  "rm": "Kernenergie",
+  "rm": "Energia nucleara",
   "en": "Nuclear energy",
   "parent": "aps_6_2"
  },
@@ -1360,7 +1360,7 @@
   "de": "Raumplanung",
   "fr": "Aménagement du territoire",
   "it": "Pianificazione del territorio",
-  "rm": "Raumplanung",
+  "rm": "Planisaziun dal territori",
   "en": "Spatial planning",
   "parent": "aps_6_3"
  },
@@ -1371,7 +1371,7 @@
   "de": "Wohnungsbau und -eigentum",
   "fr": "Construction de logements et propriété",
   "it": "Costruzione di abitazioni e proprietà",
-  "rm": "Wohnungsbau und -eigentum",
+  "rm": "Construcziun ed acquist d'abitaziuns",
   "en": "Housing construction and ownership",
   "parent": "aps_6_3"
  },
@@ -1382,7 +1382,7 @@
   "de": "Mietwesen",
   "fr": "Logement et loyer",
   "it": "Locazione",
-  "rm": "Mietwesen",
+  "rm": "Locaziun",
   "en": "Tenancy",
   "parent": "aps_6_3"
  },
@@ -1393,7 +1393,7 @@
   "de": "Bodenrecht",
   "fr": "Droit foncier",
   "it": "Diritto fondiario",
-  "rm": "Bodenrecht",
+  "rm": "Dretg funsils",
   "en": "Land law",
   "parent": "aps_6_3"
  },
@@ -1404,7 +1404,7 @@
   "de": "Allgemeiner Umweltschutz",
   "fr": "Politique de protection de l'environnement",
   "it": "Protezione dell'ambiente in generale",
-  "rm": "Allgemeiner Umweltschutz",
+  "rm": "Protecziun generala da l'ambient",
   "en": "General environmental protection",
   "parent": "aps_6_4"
  },
@@ -1415,7 +1415,7 @@
   "de": "Naturschutz",
   "fr": "Protection de la nature",
   "it": "Protezione della natura",
-  "rm": "Naturschutz",
+  "rm": "Protecziun da la natira",
   "en": "Nature conservation",
   "parent": "aps_6_4"
  },
@@ -1426,7 +1426,7 @@
   "de": "Bodenschutz",
   "fr": "Protection des sols",
   "it": "Protezione del suolo",
-  "rm": "Bodenschutz",
+  "rm": "Protecziun dal terren",
   "en": "Soil protection",
   "parent": "aps_6_4"
  },
@@ -1437,7 +1437,7 @@
   "de": "Gewässerschutz",
   "fr": "Protection des eaux",
   "it": "Protezione delle acque",
-  "rm": "Gewässerschutz",
+  "rm": "Protecziun da las auas",
   "en": "Water protection",
   "parent": "aps_6_4"
  },
@@ -1448,7 +1448,7 @@
   "de": "Luftreinhaltung",
   "fr": "Gestion de la qualité de l'air",
   "it": "Protezione dell'aria",
-  "rm": "Luftreinhaltung",
+  "rm": "Mantegniment da l'aria pura",
   "en": "Air quality",
   "parent": "aps_6_4"
  },
@@ -1459,7 +1459,7 @@
   "de": "Klimapolitik",
   "fr": "Politique climatique",
   "it": "Politica climatica",
-  "rm": "Klimapolitik",
+  "rm": "Politica climatica",
   "en": "Climate policy",
   "parent": "aps_6_4"
  },
@@ -1470,7 +1470,7 @@
   "de": "Lärmschutz",
   "fr": "Mesures contre le bruit",
   "it": "Protezione contro il rumore",
-  "rm": "Lärmschutz",
+  "rm": "Protecziun cunter canera",
   "en": "Noise protection",
   "parent": "aps_6_4"
  },
@@ -1481,7 +1481,7 @@
   "de": "Abfälle und Recycling",
   "fr": "Déchets et recyclage",
   "it": "Rifiuti e riciclaggio",
-  "rm": "Abfälle und Recycling",
+  "rm": "Ruments e recicladi",
   "en": "Waste and recycling",
   "parent": "aps_6_4"
  },
@@ -1492,7 +1492,7 @@
   "de": "Schutz vor Naturgefahren",
   "fr": "Protection contre les forces naturelles",
   "it": "Protezione contro i pericoli naturali",
-  "rm": "Schutz vor Naturgefahren",
+  "rm": "Protecziun cunter privels da la natira",
   "en": "Protection against natural hazards",
   "parent": "aps_6_4"
  },
@@ -1503,7 +1503,7 @@
   "de": "Grundrechte",
   "fr": "Droits fondamentaux",
   "it": "Diritti fondamentali",
-  "rm": "Grundrechte",
+  "rm": "Dretgs fundamentals",
   "en": "Fundamental rights",
   "parent": "aps_7_1"
  },
@@ -1514,7 +1514,7 @@
   "de": "Strafrecht",
   "fr": "Droit pénal",
   "it": "Diritto penale",
-  "rm": "Strafrecht",
+  "rm": "Dretg penal",
   "en": "Criminal law",
   "parent": "aps_7_1"
  },
@@ -1525,7 +1525,7 @@
   "de": "Zivilrecht",
   "fr": "Droit civil",
   "it": "Diritto civile",
-  "rm": "Zivilrecht",
+  "rm": "Dretg civil",
   "en": "Civil law",
   "parent": "aps_7_1"
  },
@@ -1536,7 +1536,7 @@
   "de": "Internationales Recht",
   "fr": "Droit international",
   "it": "Diritto internazionale",
-  "rm": "Internationales Recht",
+  "rm": "Dretg internaziunal",
   "en": "International law",
   "parent": "aps_7_1"
  },
@@ -1547,7 +1547,7 @@
   "de": "Staatsangehörigkeit",
   "fr": "Nationalité",
   "it": "Cittadinanza",
-  "rm": "Staatsangehörigkeit",
+  "rm": "Nationalitad",
   "en": "Citizenship",
   "parent": "aps_7_1"
  },
@@ -1558,7 +1558,7 @@
   "de": "Rechtshilfe",
   "fr": "Entraide judiciaire",
   "it": "Assistenza giudiziaria",
-  "rm": "Rechtshilfe",
+  "rm": "Assistenza giudiziala reciproca",
   "en": "Mutual legal assistance",
   "parent": "aps_7_1"
  },
@@ -1569,7 +1569,7 @@
   "de": "Datenschutz",
   "fr": "Protection des données",
   "it": "Protezione dei dati",
-  "rm": "Datenschutz",
+  "rm": "Protecziun da datas",
   "en": "Data protection",
   "parent": "aps_7_1"
  },
@@ -1580,7 +1580,7 @@
   "de": "Grundfragen zur Armee",
   "fr": "Questions fondamentales sur l'armée",
   "it": "Questioni fondamentali sull'esercito",
-  "rm": "Grundfragen zur Armee",
+  "rm": "Questius fundamentals davart l’armada",
   "en": "Fundamental questions on the army",
   "parent": "aps_7_2"
  },
@@ -1591,7 +1591,7 @@
   "de": "Militärorganisation",
   "fr": "Organisation militaire",
   "it": "Organizzazione militare",
-  "rm": "Militärorganisation",
+  "rm": "Organisaziun militara",
   "en": "Military organisation",
   "parent": "aps_7_2"
  },
@@ -1602,7 +1602,7 @@
   "de": "Rüstung",
   "fr": "Armement",
   "it": "Armamento",
-  "rm": "Rüstung",
+  "rm": "Armaments",
   "en": "Armaments",
   "parent": "aps_7_2"
  },
@@ -1613,7 +1613,7 @@
   "de": "Militäreinsätze",
   "fr": "Engagements militaires",
   "it": "Impieghi militari",
-  "rm": "Militäreinsätze",
+  "rm": "Dispatgaments militars",
   "en": "Military deployments",
   "parent": "aps_7_2"
  },
@@ -1624,7 +1624,7 @@
   "de": "Bevölkerungsschutz",
   "fr": "Protection civile",
   "it": "Protezione della popolazione",
-  "rm": "Bevölkerungsschutz",
+  "rm": "Protecziun da la populaziun",
   "en": "Civil protection",
   "parent": "aps_7_2"
  },
@@ -1635,7 +1635,7 @@
   "de": "Zivildienst und Dienstverweigerung",
   "fr": "Service civil et refus de servir",
   "it": "Servizio civile e obiezione di coscienza",
-  "rm": "Zivildienst und Dienstverweigerung",
+  "rm": "Servetsch civil e objecziun da conscienza",
   "en": "Civilian service and conscientious objection",
   "parent": "aps_7_2"
  },
@@ -1646,7 +1646,7 @@
   "de": "Öffentliche Sicherheit",
   "fr": "Sécurité publique",
   "it": "Sicurezza pubblica",
-  "rm": "Öffentliche Sicherheit",
+  "rm": "Segirezza publica",
   "en": "Public security",
   "parent": "aps_7_2"
  },
@@ -1657,7 +1657,7 @@
   "de": "Polizei",
   "fr": "Police",
   "it": "Polizia",
-  "rm": "Polizei",
+  "rm": "Polizia",
   "en": "Police",
   "parent": "aps_7_2"
  },
@@ -1668,7 +1668,7 @@
   "de": "Cybersicherheit",
   "fr": "Cybersécurité",
   "it": "Cibersicurezza",
-  "rm": "Cybersicherheit",
+  "rm": "Segirezza da la rete",
   "en": "Cybersecurity",
   "parent": "aps_7_2"
  },
@@ -1679,7 +1679,7 @@
   "de": "Versorgungssicherheit",
   "fr": "Sécurité d'approvisionnement",
   "it": "Sicurezza dell'approvvigionamento",
-  "rm": "Versorgungssicherheit",
+  "rm": "Segirezza dal provediment",
   "en": "Security of supply",
   "parent": "aps_7_2"
  },
@@ -1690,7 +1690,7 @@
   "de": "Konjunkturlage und -politik",
   "fr": "Situation et politique conjoncturelle",
   "it": "Situazione e politica congiunturale",
-  "rm": "Konjunkturlage und -politik",
+  "rm": "Situaziun e politica conjuncturala",
   "en": "Economic situation and policy",
   "parent": "aps_8_1"
  },
@@ -1701,7 +1701,7 @@
   "de": "Strukturpolitik",
   "fr": "Politique structurelle",
   "it": "Politica strutturale",
-  "rm": "Strukturpolitik",
+  "rm": "Politica da structura",
   "en": "Structural policy",
   "parent": "aps_8_1"
  },
@@ -1712,7 +1712,7 @@
   "de": "Gesellschaftsrecht",
   "fr": "Droit des sociétés",
   "it": "Diritto societario",
-  "rm": "Gesellschaftsrecht",
+  "rm": "Dretg da societads",
   "en": "Company law",
   "parent": "aps_8_1"
  },
@@ -1723,7 +1723,7 @@
   "de": "Wettbewerb",
   "fr": "Concurrence",
   "it": "Concorrenza",
-  "rm": "Wettbewerb",
+  "rm": "Concurrenza",
   "en": "Competition",
   "parent": "aps_8_1"
  },
@@ -1734,7 +1734,7 @@
   "de": "Konsumentinnen- und Konsumentenschutz",
   "fr": "Protection des consommateurs/trices",
   "it": "Protezione dei consumatori",
-  "rm": "Konsumentinnen- und Konsumentenschutz",
+  "rm": "Protecziun da consumentas e consuments",
   "en": "Consumer protection",
   "parent": "aps_8_1"
  },
@@ -1745,7 +1745,7 @@
   "de": "Tourismus",
   "fr": "Tourisme",
   "it": "Turismo",
-  "rm": "Tourismus",
+  "rm": "Turissem",
   "en": "Tourism",
   "parent": "aps_8_1"
  },
@@ -1756,7 +1756,7 @@
   "de": "Wirtschaftsordnung",
   "fr": "Ordre économique",
   "it": "Ordinamento economico",
-  "rm": "Wirtschaftsordnung",
+  "rm": "Urdin economic",
   "en": "Economic order",
   "parent": "aps_8_1"
  },
@@ -1778,7 +1778,7 @@
   "de": "Staatsrechnung",
   "fr": "Comptes d'Etat",
   "it": "Consuntivo",
-  "rm": "Staatsrechnung",
+  "rm": "Renda dal stadi",
   "en": "State accounts",
   "parent": "aps_8_2"
  },
@@ -1789,7 +1789,7 @@
   "de": "Finanzordnung und Sparmassnahmen",
   "fr": "Ordre financier et mesures d’économie",
   "it": "Ordinamento finanziario e misure di risparmio",
-  "rm": "Finanzordnung und Sparmassnahmen",
+  "rm": "Urdin da finanzas e mesiras da spargn",
   "en": "Financial order and savings measures",
   "parent": "aps_8_2"
  },
@@ -1800,7 +1800,7 @@
   "de": "Steuern",
   "fr": "Impôts",
   "it": "Imposte",
-  "rm": "Steuern",
+  "rm": "Taglias",
   "en": "Taxes",
   "parent": "aps_8_2"
  },
@@ -1811,7 +1811,7 @@
   "de": "Finanzausgleich",
   "fr": "Péréquation financière",
   "it": "Perequazione finanziaria",
-  "rm": "Finanzausgleich",
+  "rm": "Gulivaziun da finanzas",
   "en": "Fiscal equalisation",
   "parent": "aps_8_2"
  },
@@ -1822,7 +1822,7 @@
   "de": "Finanzhaushalt der Kantone und Gemeinden",
   "fr": "Budgets des cantons et des communes",
   "it": "Finanze dei Cantoni e dei Comuni",
-  "rm": "Finanzhaushalt der Kantone und Gemeinden",
+  "rm": "Finanzas chantunalas e communalas",
   "en": "Cantonal and municipal finances",
   "parent": "aps_8_2"
  },
@@ -1833,7 +1833,7 @@
   "de": "Geld- und Währungspolitik",
   "fr": "Politique monétaire",
   "it": "Politica monetaria",
-  "rm": "Geld- und Währungspolitik",
+  "rm": "Politica monetara e da valuta",
   "en": "Monetary policy",
   "parent": "aps_8_3"
  },
@@ -1844,7 +1844,7 @@
   "de": "Finanzwesen",
   "fr": "Affaires financières",
   "it": "Settore finanziario",
-  "rm": "Finanzwesen",
+  "rm": "Sectur finanzial",
   "en": "Financial sector",
   "parent": "aps_8_3"
  },
@@ -1855,7 +1855,7 @@
   "de": "Nationalbank",
   "fr": "Banque nationale",
   "it": "Banca nazionale",
-  "rm": "Nationalbank",
+  "rm": "Banca naziunala",
   "en": "National Bank",
   "parent": "aps_8_3"
  },
@@ -1866,7 +1866,7 @@
   "de": "Banken",
   "fr": "Banques",
   "it": "Banche",
-  "rm": "Banken",
+  "rm": "Bancas",
   "en": "Banks",
   "parent": "aps_8_3"
  },
@@ -1877,7 +1877,7 @@
   "de": "Börsen",
   "fr": "Bourses",
   "it": "Borse",
-  "rm": "Börsen",
+  "rm": "Bursas",
   "en": "Stock exchanges",
   "parent": "aps_8_3"
  },
@@ -1888,7 +1888,7 @@
   "de": "Versicherungen",
   "fr": "Assurances",
   "it": "Assicurazioni",
-  "rm": "Versicherungen",
+  "rm": "Assicuranzas",
   "en": "Insurance",
   "parent": "aps_8_3"
  },
@@ -1899,7 +1899,7 @@
   "de": "Agrarpolitik",
   "fr": "Politique agricole",
   "it": "Politica agricola",
-  "rm": "Agrarpolitik",
+  "rm": "Politica agrara",
   "en": "Agricultural policy",
   "parent": "aps_8_4"
  },
@@ -1910,7 +1910,7 @@
   "de": "Beschäftigte in der Landwirtschaft",
   "fr": "Personnes employées dans l'agriculture",
   "it": "Persone occupate nell'agricoltura",
-  "rm": "Beschäftigte in der Landwirtschaft",
+  "rm": "Persunas occupadas en l'agricultura",
   "en": "People employed in agriculture",
   "parent": "aps_8_4"
  },
@@ -1921,7 +1921,7 @@
   "de": "Lebensmittel",
   "fr": "Denrées alimentaires",
   "it": "Derrate alimentari",
-  "rm": "Lebensmittel",
+  "rm": "Vivonda",
   "en": "Food",
   "parent": "aps_8_4"
  },
@@ -1932,7 +1932,7 @@
   "de": "Pflanzliche Produktion",
   "fr": "Production végétale",
   "it": "Produzione vegetale",
-  "rm": "Pflanzliche Produktion",
+  "rm": "Producziun da plantas",
   "en": "Crop production",
   "parent": "aps_8_4"
  },
@@ -1943,7 +1943,7 @@
   "de": "Tierische Produktion",
   "fr": "Production animale",
   "it": "Produzione animale",
-  "rm": "Tierische Produktion",
+  "rm": "Producziun d'animals",
   "en": "Animal production",
   "parent": "aps_8_4"
  },
@@ -1954,7 +1954,7 @@
   "de": "Tierhaltung und Tierschutz",
   "fr": "Détention d'animaux et protection des animaux",
   "it": "Detenzione e protezione degli animali",
-  "rm": "Tierhaltung und Tierschutz",
+  "rm": "Tegnida d'animals e protecziun dals animals",
   "en": "Animal husbandry and welfare",
   "parent": "aps_8_4"
  },
@@ -1965,7 +1965,7 @@
   "de": "Tierversuche",
   "fr": "Expérimentation animale",
   "it": "Sperimentazione animale",
-  "rm": "Tierversuche",
+  "rm": "Experiments cun animals",
   "en": "Animal experiments",
   "parent": "aps_8_4"
  },
@@ -1976,7 +1976,7 @@
   "de": "Jagd und Fischerei",
   "fr": "Chasse et pêche",
   "it": "Caccia e pesca",
-  "rm": "Jagd und Fischerei",
+  "rm": "Chatscha e pestga",
   "en": "Hunting and fishing",
   "parent": "aps_8_4"
  },
@@ -1987,7 +1987,7 @@
   "de": "Grossraubtiere",
   "fr": "Grands prédateurs",
   "it": "Grandi predatori",
-  "rm": "Grossraubtiere",
+  "rm": "Gronds predaturs",
   "en": "Large predators",
   "parent": "aps_8_4"
  },
@@ -1998,7 +1998,7 @@
   "de": "Forstwirtschaft",
   "fr": "Sylviculture",
   "it": "Selvicoltura",
-  "rm": "Forstwirtschaft",
+  "rm": "Silvicultura",
   "en": "Forestry",
   "parent": "aps_8_4"
  },
@@ -2009,7 +2009,7 @@
   "de": "Gentechnologie",
   "fr": "Génie génétique",
   "it": "Ingegneria genetica",
-  "rm": "Gentechnologie",
+  "rm": "Gentecnologia",
   "en": "Genetic engineering",
   "parent": "aps_8_4"
  },
@@ -2020,7 +2020,7 @@
   "de": "Umweltschutz in der Landwirtschaft",
   "fr": "Protection de l'environnement dans l'agriculture",
   "it": "Protezione dell'ambiente nell'agricoltura",
-  "rm": "Umweltschutz in der Landwirtschaft",
+  "rm": "Protecziun da l'ambient en l'agricultura",
   "en": "Environmental protection in agriculture",
   "parent": "aps_8_4"
  },
@@ -2031,7 +2031,7 @@
   "de": "Arbeitsrecht",
   "fr": "Droit du travail",
   "it": "Diritto del lavoro",
-  "rm": "Arbeitsrecht",
+  "rm": "Dretg da lavur",
   "en": "Labour law",
   "parent": "aps_8_5"
  },
@@ -2042,7 +2042,7 @@
   "de": "Arbeitsmarkt",
   "fr": "Marché du travail",
   "it": "Mercato del lavoro",
-  "rm": "Arbeitsmarkt",
+  "rm": "Martgà da lavur",
   "en": "Labour market",
   "parent": "aps_8_5"
  },
@@ -2053,7 +2053,7 @@
   "de": "Löhne",
   "fr": "Salaires",
   "it": "Salari",
-  "rm": "Löhne",
+  "rm": "Pajas",
   "en": "Wages",
   "parent": "aps_8_5"
  },
@@ -2064,7 +2064,7 @@
   "de": "Sozialpartnerschaft",
   "fr": "Partenariat social",
   "it": "Partenariato sociale",
-  "rm": "Sozialpartnerschaft",
+  "rm": "Partenadi social",
   "en": "Social partnership",
   "parent": "aps_8_5"
  },
@@ -2075,7 +2075,7 @@
   "de": "Arbeitszeit",
   "fr": "Temps de travail",
   "it": "Orario di lavoro",
-  "rm": "Arbeitszeit",
+  "rm": "Temp da lavur",
   "en": "Working time",
   "parent": "aps_8_5"
  },
@@ -2086,7 +2086,7 @@
   "de": "Arbeitnehmendenschutz",
   "fr": "Protection des travailleurs",
   "it": "Protezione dei lavoratori",
-  "rm": "Arbeitnehmendenschutz",
+  "rm": "Protecziun dals lavurants",
   "en": "Worker protection",
   "parent": "aps_8_5"
  },
@@ -2095,7 +2095,7 @@
   "de": "Wirtschaft",
   "fr": "Économie",
   "it": "Economia",
-  "rm": "Wirtschaft",
+  "rm": "Economia",
   "en": "Economy"
  },
  "curia_2841": {
@@ -2103,7 +2103,7 @@
   "de": "Gesundheit",
   "fr": "Santé",
   "it": "Salute",
-  "rm": "Gesundheit",
+  "rm": "Sanadad",
   "en": "Health"
  },
  "curia_4": {
@@ -2111,7 +2111,7 @@
   "de": "Staatspolitik",
   "fr": "Politique d'Etat",
   "it": "Politica nazionale",
-  "rm": "Staatspolitik",
+  "rm": "Politica dal stadi",
   "en": "State policy"
  },
  "curia_24": {
@@ -2119,7 +2119,7 @@
   "de": "Finanzwesen",
   "fr": "Finances",
   "it": "Finanze",
-  "rm": "Finanzwesen",
+  "rm": "Finanzas",
   "en": "Finance"
  },
  "curia_52": {
@@ -2127,7 +2127,7 @@
   "de": "Umwelt",
   "fr": "Environnement",
   "it": "Ambiente",
-  "rm": "Umwelt",
+  "rm": "Ambiaint",
   "en": "Environment"
  },
  "curia_8": {
@@ -2135,7 +2135,7 @@
   "de": "Internationale Politik",
   "fr": "Politique internationale",
   "it": "Politica internazionale",
-  "rm": "Internationale Politik",
+  "rm": "Politica internaziunala",
   "en": "International policy"
  },
  "curia_28": {
@@ -2143,7 +2143,7 @@
   "de": "Soziale Fragen",
   "fr": "Questions sociales",
   "it": "Questioni sociali",
-  "rm": "Soziale Fragen",
+  "rm": "Questius socialas",
   "en": "Social questions"
  },
  "curia_9": {
@@ -2151,7 +2151,7 @@
   "de": "Sicherheitspolitik",
   "fr": "Politique de sécurité",
   "it": "Politica di sicurezza",
-  "rm": "Sicherheitspolitik",
+  "rm": "Politica da segirezza",
   "en": "Security policy"
  },
  "curia_48": {
@@ -2159,7 +2159,7 @@
   "de": "Verkehr",
   "fr": "Transports",
   "it": "Trasporti",
-  "rm": "Verkehr",
+  "rm": "Traffic",
   "en": "Transport"
  },
  "curia_2811": {
@@ -2167,7 +2167,7 @@
   "de": "Migration",
   "fr": "Politique migratoire",
   "it": "Migrazione",
-  "rm": "Migration",
+  "rm": "Migraziun",
   "en": "Migration"
  },
  "curia_34": {
@@ -2175,7 +2175,7 @@
   "de": "Medien und Kommunikation",
   "fr": "Médias et communication",
   "it": "Media e comunicazione",
-  "rm": "Medien und Kommunikation",
+  "rm": "Medias e communicaziun",
   "en": "Media and communication"
  },
  "curia_55": {
@@ -2183,7 +2183,7 @@
   "de": "Landwirtschaft",
   "fr": "Agriculture",
   "it": "Agricoltura",
-  "rm": "Landwirtschaft",
+  "rm": "Agricultura",
   "en": "Agriculture"
  },
  "curia_66": {
@@ -2191,7 +2191,7 @@
   "de": "Energie",
   "fr": "Énergie",
   "it": "Energia",
-  "rm": "Energie",
+  "rm": "Energia",
   "en": "Energy"
  },
  "curia_44": {
@@ -2199,7 +2199,7 @@
   "de": "Beschäftigung und Arbeit",
   "fr": "Emploi et travail",
   "it": "Occupazione e lavoro",
-  "rm": "Beschäftigung und Arbeit",
+  "rm": "Emploi e lavur",
   "en": "Employment and labour"
  },
  "curia_10": {
@@ -2207,7 +2207,7 @@
   "de": "Europapolitik",
   "fr": "Politique européenne",
   "it": "Politica europea",
-  "rm": "Europapolitik",
+  "rm": "Politica europeica",
   "en": "European policy"
  },
  "curia_12": {
@@ -2215,7 +2215,7 @@
   "de": "Recht Allgemein",
   "fr": "Droit",
   "it": "Diritto generale",
-  "rm": "Recht Allgemein",
+  "rm": "Dretg general",
   "en": "Law in general"
  },
  "curia_32": {
@@ -2223,7 +2223,7 @@
   "de": "Bildung",
   "fr": "Éducation",
   "it": "Formazione",
-  "rm": "Bildung",
+  "rm": "Educaziun",
   "en": "Education"
  },
  "curia_2836": {
@@ -2231,7 +2231,7 @@
   "de": "Sozialer Schutz",
   "fr": "Protection sociale",
   "it": "Protezione sociale",
-  "rm": "Sozialer Schutz",
+  "rm": "Protecziun sociala",
   "en": "Social protection"
  },
  "curia_2846": {
@@ -2239,7 +2239,7 @@
   "de": "Raumplanung und Wohnungswesen",
   "fr": "Aménagement du territoire et logement",
   "it": "Pianificazione territoriale e alloggi",
-  "rm": "Raumplanung und Wohnungswesen",
+  "rm": "Planisaziun dal territori e fatgs d'abitar",
   "en": "Spatial planning and housing"
  },
  "curia_2446": {
@@ -2247,7 +2247,7 @@
   "de": "Steuer",
   "fr": "Fiscalité",
   "it": "Imposte",
-  "rm": "Steuer",
+  "rm": "Taglia",
   "en": "Taxation"
  },
  "curia_1236": {
@@ -2255,7 +2255,7 @@
   "de": "Menschenrechte",
   "fr": "Droits de l'homme",
   "it": "Diritti umani",
-  "rm": "Menschenrechte",
+  "rm": "Dretgs umans",
   "en": "Human rights"
  },
  "curia_1216": {
@@ -2263,7 +2263,7 @@
   "de": "Strafrecht",
   "fr": "Droit pénal",
   "it": "Diritto penale",
-  "rm": "Strafrecht",
+  "rm": "Dretg penal",
   "en": "Criminal law"
  },
  "curia_2831": {
@@ -2271,7 +2271,7 @@
   "de": "Kultur",
   "fr": "Culture",
   "it": "Cultura",
-  "rm": "Kultur",
+  "rm": "Cultura",
   "en": "Culture"
  },
  "curia_36": {
@@ -2279,7 +2279,7 @@
   "de": "Wissenschaft und Forschung",
   "fr": "Science et recherche",
   "it": "Scienza e ricerca",
-  "rm": "Wissenschaft und Forschung",
+  "rm": "Scienza e retschertga",
   "en": "Science and research"
  },
  "curia_421": {
@@ -2295,7 +2295,7 @@
   "de": "Zivilrecht",
   "fr": "Droit civil",
   "it": "Diritto civile",
-  "rm": "Zivilrecht",
+  "rm": "Dretg civil",
   "en": "Civil law"
  },
  "curia_1231": {
@@ -2303,7 +2303,7 @@
   "de": "Internationales Recht",
   "fr": "Droit international",
   "it": "Diritto internazionale",
-  "rm": "Internationales Recht",
+  "rm": "Dretg internaziunal",
   "en": "International law"
  },
  "curia_1221": {
@@ -2311,79 +2311,79 @@
   "de": "Gerichtswesen",
   "fr": "Justice",
   "it": "Giustizia",
-  "rm": "Gerichtswesen",
+  "rm": "Güdisch",
   "en": "Justice"
  },
  "sg_1": {
   "scheme": "sg",
   "de": "Arbeit und Gewerbe",
-  "fr": "Arbeit und Gewerbe",
-  "it": "Arbeit und Gewerbe",
-  "rm": "Arbeit und Gewerbe",
+  "fr": "Travail et artisanat",
+  "it": "Lavoro e commercio",
+  "rm": "Lavur e mastergn",
   "en": "Labour and trade"
  },
  "sg_2": {
   "scheme": "sg",
   "de": "Erziehung, Bildung, Kultur",
-  "fr": "Erziehung, Bildung, Kultur",
-  "it": "Erziehung, Bildung, Kultur",
-  "rm": "Erziehung, Bildung, Kultur",
+  "fr": "Éducation, formation, culture",
+  "it": "Educazione, formazione, cultura",
+  "rm": "Educaziun, furmaziun, cultura",
   "en": "Education, schools, culture"
  },
  "sg_3": {
   "scheme": "sg",
   "de": "Finanzen, Regalien, Unternehmungen, Feuerschutz",
-  "fr": "Finanzen, Regalien, Unternehmungen, Feuerschutz",
-  "it": "Finanzen, Regalien, Unternehmungen, Feuerschutz",
-  "rm": "Finanzen, Regalien, Unternehmungen, Feuerschutz",
+  "fr": "Finances, monopoles étatiques, entreprises, protection contre l'incendie",
+  "it": "Finanze, monopoli statali, imprese, protezione antincendio",
+  "rm": "Finanzas, regalias, interpresas, protecziun cunter incendis",
   "en": "Finance, state monopolies, enterprises, fire protection"
  },
  "sg_4": {
   "scheme": "sg",
   "de": "Gesundheitspflege, Sozialversicherung, Sozialhilfe",
-  "fr": "Gesundheitspflege, Sozialversicherung, Sozialhilfe",
-  "it": "Gesundheitspflege, Sozialversicherung, Sozialhilfe",
-  "rm": "Gesundheitspflege, Sozialversicherung, Sozialhilfe",
+  "fr": "Soins de santé, assurance sociale, aide sociale",
+  "it": "Assistenza sanitaria, assicurazione sociale, assistenza sociale",
+  "rm": "Tgira da sanadad, assicuranza sociala, assistenza sociala",
   "en": "Health care, social insurance, social assistance"
  },
  "sg_5": {
   "scheme": "sg",
   "de": "Grundlagen und Organisation",
-  "fr": "Grundlagen und Organisation",
-  "it": "Grundlagen und Organisation",
-  "rm": "Grundlagen und Organisation",
+  "fr": "Fondements et organisation",
+  "it": "Fondamenti e organizzazione",
+  "rm": "Fundamentas ed organisaziun",
   "en": "Foundations and organisation"
  },
  "sg_6": {
   "scheme": "sg",
   "de": "Landesverteidigung, Sicherheit und Ordnung",
-  "fr": "Landesverteidigung, Sicherheit und Ordnung",
-  "it": "Landesverteidigung, Sicherheit und Ordnung",
-  "rm": "Landesverteidigung, Sicherheit und Ordnung",
+  "fr": "Défense, sécurité et ordre",
+  "it": "Difesa, sicurezza e ordine",
+  "rm": "Defensiun, segirezza ed urden",
   "en": "Defence, security and order"
  },
  "sg_7": {
   "scheme": "sg",
   "de": "Landwirtschaft, Tierhaltung, Waldwirtschaft, Umweltschutz",
-  "fr": "Landwirtschaft, Tierhaltung, Waldwirtschaft, Umweltschutz",
-  "it": "Landwirtschaft, Tierhaltung, Waldwirtschaft, Umweltschutz",
-  "rm": "Landwirtschaft, Tierhaltung, Waldwirtschaft, Umweltschutz",
+  "fr": "Agriculture, élevage, sylviculture, protection de l'environnement",
+  "it": "Agricoltura, allevamento, selvicoltura, protezione ambientale",
+  "rm": "Agricultura, tegnida d'animals, selvicultura, protecziun da l'ambient",
   "en": "Agriculture, animal husbandry, forestry, environmental protection"
  },
  "sg_8": {
   "scheme": "sg",
   "de": "Verkehr, Bau, Energie, Gewässer",
-  "fr": "Verkehr, Bau, Energie, Gewässer",
-  "it": "Verkehr, Bau, Energie, Gewässer",
-  "rm": "Verkehr, Bau, Energie, Gewässer",
+  "fr": "Transport, construction, énergie, eaux",
+  "it": "Trasporti, costruzione, energia, acque",
+  "rm": "Traffic, construcziun, energia, auas",
   "en": "Transport, construction, energy, waters"
  },
  "sg_9": {
   "scheme": "sg",
   "de": "Zivilrecht, Strafrecht, Rechtspflege",
-  "fr": "Zivilrecht, Strafrecht, Rechtspflege",
-  "it": "Zivilrecht, Strafrecht, Rechtspflege",
-  "rm": "Zivilrecht, Strafrecht, Rechtspflege",
+  "fr": "Droit civil, droit pénal, administration de la justice",
+  "it": "Diritto civile, diritto penale, amministrazione della giustizia",
+  "rm": "Dretg civil, dretg penal, administraziun da la giustia",
   "en": "Civil law, criminal law, administration of justice"
  }
 }

@@ -46,6 +46,7 @@ export interface Dict {
   r_count_topic: string;
   r_count_browse: string;
   r_none: string;
+  r_weak: string;
   r_none_qt: string;
   r_none_topic: string;
   r_loading: string;
@@ -157,7 +158,7 @@ export const I18N: Record<Lang, Dict> = {
     g_adhoc: "Themen für alle Parlamente", g_curia: "Sachbereiche des Bundesparlaments", g_sg: "Sachbereiche des Kantons St. Gallen",
     examples: ["Künstliche Intelligenz in der Verwaltung", "Velowege und Verkehrssicherheit", "bezahlbarer Wohnraum", "Cyberangriffe auf Spitäler"],
     r_count: "{n} angezeigte Treffer zu «{q}»", r_count_topic: "{n} angezeigte Treffer zu «{q}» im Thema «{t}»",
-    r_none: "Keine Treffer.", r_loading: "Suche läuft …",
+    r_none: "Keine Treffer.", r_weak: "Keine engen Treffer gefunden. Die folgenden Geschäfte passen womöglich nicht zur Suche.", r_loading: "Suche läuft …",
     r_open: "Originalseite", r_similar: "Ähnliche Geschäfte", r_type: "Art", r_state: "Stand", r_date: "Datum",
     dym: "Meinten Sie: «{q}»?", r_hint: "Suche in eigenen Worten, auch in anderen Landessprachen. Ein Thema grenzt die Treffer ein.",
     why: "Warum", quote_hint: "Vorgeschlagener Beleg. Bitte im Kontext prüfen.",
@@ -197,7 +198,7 @@ export const I18N: Record<Lang, Dict> = {
     g_adhoc: "Thèmes pour tous les parlements", g_curia: "Domaines du Parlement fédéral", g_sg: "Domaines du canton de Saint-Gall",
     examples: ["intelligence artificielle dans l'administration", "pistes cyclables", "logements abordables", "cyberattaques contre les hôpitaux"],
     r_count: "{n} résultats affichés pour « {q} »", r_count_topic: "{n} résultats affichés pour « {q} » dans le thème « {t} »",
-    r_none: "Aucun résultat.", r_loading: "Recherche en cours …",
+    r_none: "Aucun résultat.", r_weak: "Aucun résultat proche. Les objets ci-dessous ne correspondent peut-être pas à la recherche.", r_loading: "Recherche en cours …",
     r_open: "Page d'origine", r_similar: "Objets similaires", r_type: "Type", r_state: "État", r_date: "Date",
     dym: "Vouliez-vous dire : « {q} » ?", r_hint: "Recherchez avec vos propres mots, dans une langue nationale. Un thème permet de filtrer les résultats.",
     why: "Pourquoi", quote_hint: "Extrait proposé. À vérifier dans son contexte.",
@@ -237,7 +238,7 @@ export const I18N: Record<Lang, Dict> = {
     g_adhoc: "Temi per tutti i parlamenti", g_curia: "Settori del Parlamento federale", g_sg: "Settori del Cantone di San Gallo",
     examples: ["intelligenza artificiale nell'amministrazione", "piste ciclabili", "alloggi a prezzi accessibili", "attacchi informatici agli ospedali"],
     r_count: "{n} risultati mostrati per «{q}»", r_count_topic: "{n} risultati mostrati per «{q}» nel tema «{t}»",
-    r_none: "Nessun risultato.", r_loading: "Ricerca in corso …",
+    r_none: "Nessun risultato.", r_weak: "Nessun risultato molto vicino. Gli oggetti seguenti potrebbero non corrispondere alla ricerca.", r_loading: "Ricerca in corso …",
     r_open: "Pagina originale", r_similar: "Oggetti simili", r_type: "Tipo", r_state: "Stato", r_date: "Data",
     dym: "Forse cercavi: «{q}»?", r_hint: "Cercate con parole vostre, anche in altre lingue nazionali. Un tema restringe i risultati.",
     why: "Perché", quote_hint: "Passaggio proposto. Da verificare nel contesto.",
@@ -275,9 +276,9 @@ export const I18N: Record<Lang, Dict> = {
     f_topic: "Mo fatgs tar il tema", f_none: "Tut ils temas", f_level: "Nivel", f_from: "dapi l'onn", f_to: "fin l'onn",
     levels: {"all": "tut ils nivels", "country": "Confederaziun", "canton": "Chantun", "city": "Citad", "municipality": "Vischnanca"},
     g_adhoc: "Temas per tut ils parlaments", g_curia: "Secturs dal parlament federal", g_sg: "Secturs dal chantun Son Gagl",
-    examples: ["intelligenza artifiziala en l'administraziun", "vias da velo", "abitaziuns a pretschs pajabels", "attaccas cibernetics sin ospitals"],
+    examples: ["intelligenza artifiziala en l'administraziun", "vias da velo", "energia solara", "attaccas cibernetics sin ospitals"],
     r_count: "{n} resultats mussads per «{q}»", r_count_topic: "{n} resultats mussads per «{q}» en il tema «{t}»",
-    r_none: "Nagins resultats.", r_loading: "Tschertga en lavur …",
+    r_none: "Nagins resultats.", r_weak: "Nagins resultats stretgs chattads. Ils fatgs suandants na correspundan forsa betg a la tschertga.", r_loading: "Tschertga en lavur …",
     r_open: "Pagina originala", r_similar: "Fatgs sumegliants", r_type: "Gener", r_state: "Stadi", r_date: "Data",
     dym: "Manegiais Vus: «{q}»?", r_hint: "Tschertgai cun agens pleds, er en autras linguas naziunalas. In tema restrenscha ils resultats.",
     why: "Pertge", quote_hint: "Passadi proponì. Controllai el en il context.",
@@ -308,7 +309,7 @@ export const I18N: Record<Lang, Dict> = {
     g_aps: "Standard topics (Année Politique Suisse)", r_note_stored: "The newest matches for the topic, ordered by year. The overview counts all affairs on the topic.", ov_head: "Overview", ov_line: "{n} affairs in {p} parliaments", ov_line_one: "{n} affairs in 1 parliament", ov_pool: "Among the {k} best-matching affairs", ov_pool_topic: "Among the {k} affairs closest to the topic", ov_hint: "Click a parliament to limit the results to it.", ov_only: "Only {b}", ov_all: "All parliaments", ov_closed: "“Closed, outcome not stated” means the parliament reports only that the affair is closed, not how it ended.",
     title: "Parliament Topics", parl: "parliaments", topright: "Federal · cantons · cities · municipalities", langs: "Language",
     h1a: "Parliament", h1b: "topics",
-    lede: "Find affairs (motions, questions and bills) from every Swiss parliament by topic, sentence or keyword, in any national language.",
+    lede: "Find affairs (motions, questions and bills) from every Swiss parliament by topic, sentence or keyword, in English or any national language.",
     footer: "Data: OpenParlData.ch. Topics are assigned automatically; a wrong assignment can be reported.",
     federal: "Federal", failed: "The search failed. Please try again later.",
     s_num: "Search", s_h2: "What are the parliaments dealing with?", s_placeholder: "A sentence or a keyword, for example: cycle lanes in the city", s_go: "Search",
@@ -317,9 +318,9 @@ export const I18N: Record<Lang, Dict> = {
     g_adhoc: "Topics for all parliaments", g_curia: "Subject areas of the federal parliament", g_sg: "Subject areas of the Canton of St. Gallen",
     examples: ["AI in public administration", "cycle lanes and road safety", "affordable housing", "cyberattacks on hospitals"],
     r_count: "{n} results shown for “{q}”", r_count_topic: "{n} results shown for “{q}” in the topic “{t}”",
-    r_none: "No results.", r_loading: "Searching …",
+    r_none: "No results.", r_weak: "No close matches found. The affairs below may not fit the search.", r_loading: "Searching …",
     r_open: "Original page", r_similar: "Similar affairs", r_type: "Type", r_state: "Status", r_date: "Date",
-    dym: "Did you mean: “{q}”?", r_hint: "Search in your own words, in any national language. A topic narrows the results.",
+    dym: "Did you mean: “{q}”?", r_hint: "Search in your own words, in English or any national language. A topic narrows the results.",
     why: "Why", quote_hint: "Suggested passage. Please check it in context.",
     verdict: {"yes": "Topic suggested", "likely": "Possible link", "unsure": "uncertain", "no": "not suggested"},
     t_head: "Topics of this affair", t_loading: "Finding topics …", t_none: "No topic assigned with confidence.",

@@ -8,7 +8,7 @@ OpenParlData.ch collects more than 300,000 affairs from Swiss federal, cantonal 
 | Apertus v1.5 70B (drafting topic cards) | [huggingface.co/swiss-ai/Apertus-v1.5-70B](https://huggingface.co/swiss-ai/Apertus-v1.5-70B) |
 | Apertus-ParlTopics-8B (our trained decision model) | [huggingface.co/merabro/Apertus-ParlTopics-8B](https://huggingface.co/merabro/Apertus-ParlTopics-8B) |
 
-Demo video (2 minutes): https://prakash-aryan.github.io/parlamentsthemen/media/demo_captioned.mp4. Slides: https://prakash-aryan.github.io/parlamentsthemen/. Technical report: [technical_report.md](technical_report.md) and [Invincibles_Report.pdf](Invincibles_Report.pdf).
+**Try it:** https://parlamentsthemen.prakasharyan.dev is a public read-only version with all 323,441 affairs from 88 parliaments. It accepts searches in English and the four national languages and shows English titles ([deploy/cloudflare](deploy/cloudflare/README.md)). Demo video (2 minutes): https://prakash-aryan.github.io/parlamentsthemen/media/demo_captioned.mp4. Slides: https://prakash-aryan.github.io/parlamentsthemen/. Technical report: [technical_report.md](technical_report.md) and [Invincibles_Report.pdf](Invincibles_Report.pdf).
 
 ## How it works
 
@@ -17,7 +17,6 @@ Demo video (2 minutes): https://prakash-aryan.github.io/parlamentsthemen/media/d
 Every topic of every scheme is written as a short **topic card**. Apertus 1.5 8B, trained as a **decision model** (Apertus-ParlTopics-8B), reads an affair once and returns one score per card in a single pass; scores are calibrated where labelled earlier affairs exist. APS chapters, a canton's categories and an ad-hoc topic such as digitalisation are sets of cards that operators add, so a new topic needs no retraining (its threshold still needs validation). Stored results come from Apertus-ParlTopics-8B: all 29 topics for the 49,978 affairs from 2024 to 2026, and digitalisation for all 318,801 affairs; the other 28 topics for the older affairs are being added. Live decisions for affairs without stored results come from Apertus-ParlTopics-8B when its server is configured (`PARLTOPICS_DECISION_URL`), otherwise from untrained Apertus 1.5 8B; the "Warum" explanations use untrained Apertus 1.5 8B through the `LLM_*` endpoint. Anyone can report a wrong topic; reports are stored for review. Results are stored in PostgreSQL with pgvector, served by FastAPI, and shown on a search page in German, French, Italian and Romansh (interface languages) that can read results aloud and accept a spoken query.
 
 - Technical report: [technical_report.md](technical_report.md) and `Invincibles_Report.pdf`
-- Demo video: to be added
 - Trained model, configuration, metrics and model card: https://huggingface.co/merabro/Apertus-ParlTopics-8B
 
 ## The structure
@@ -33,6 +32,7 @@ Every topic of every scheme is written as a short **topic card**. Apertus 1.5 8B
 | `models/` | Calibration and thresholds per topic |
 | `scripts/gpu/` | Kev setup, training and the model server |
 | `third_party/kev/` | The patch that adapts Kev to Apertus 1.5 |
+| `deploy/cloudflare/` | The public read-only version: Cloudflare Worker, query encoder container, data export and English titles |
 | `figures/` | Figures used in this README and in the technical report |
 
 ## Environment
