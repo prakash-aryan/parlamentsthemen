@@ -1,0 +1,1749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parlamentsthemen: how it works and how it runs</title>
+<style>
+@font-face { font-family: "Excali"; src: url("fonts/Excalifont-Latin.woff2") format("woff2"); }
+@font-face { font-family: "Comic"; src: url("fonts/ComicShanns-Latin.woff2") format("woff2"); unicode-range: U+0000-218F, U+2200-10FFFF; }
+@font-face { font-family: "Comic"; src: url("fonts/ComicShanns-Symbols.woff2") format("woff2"); unicode-range: U+2190-21FF; }
+
+:root { --ink: #1e1e1e; --red: #e03131; --blue: #1971c2; --grey: #868e96; }
+@page { size: 1600px 900px; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: #ffffff; height: 100%; }
+body { font-family: "Comic", sans-serif; color: var(--ink); overflow: hidden; cursor: default; }
+
+#stage { position: absolute; left: 0; top: 0; width: 1600px; height: 900px; transform-origin: 0 0; }
+.slide {
+  position: absolute; left: 0; top: 0; width: 1600px; height: 900px; overflow: hidden; background: #ffffff;
+  padding: 30px 60px 36px; display: flex; flex-direction: column; align-items: center;
+  opacity: 0; visibility: hidden; transition: opacity .5s ease, visibility 0s linear .5s;
+}
+.slide.active { opacity: 1; visibility: visible; transition: opacity .5s ease, visibility 0s; }
+.slide > svg.deco { position: absolute; left: 0; top: 0; width: 1600px; height: 900px; z-index: 0; pointer-events: none; overflow: visible; }
+.slide > *:not(svg) { position: relative; z-index: 1; }
+.abs { position: absolute !important; }
+.pageno { position: absolute !important; right: 24px; bottom: 12px; font-size: 14px; color: var(--grey); }
+.fns { position: absolute !important; left: 60px; right: 80px; bottom: 10px; font-size: 12px; line-height: 1.38; color: var(--grey); }
+.fns p { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+sup.fn { font-size: 0.62em; color: var(--blue); vertical-align: super; line-height: 0; margin-left: 1px; }
+.fns sup.fn { font-size: 0.9em; vertical-align: baseline; color: var(--grey); }
+
+[data-at] { opacity: 0; transform: translateY(6px); transition: opacity .6s ease, transform .6s ease; }
+[data-at].on { opacity: 1; transform: none; }
+.deco g.fade { opacity: 0; transition: opacity .6s ease; }
+.deco g.fade.on { opacity: 1; }
+.deco g.grow { transform-box: fill-box; transform-origin: 0 50%; transform: scaleX(0); transition: transform 1.3s cubic-bezier(.2,.7,.2,1); }
+.deco g.grow.on { transform: scaleX(1); }
+.instant, .instant *, .instant g, .instant path { transition: none !important; }
+
+h1, h2, .hand { font-family: "Excali", "Comic", sans-serif; font-weight: normal; }
+h1 { color: var(--red); font-size: 116px; line-height: 1.05; text-align: center; }
+h2 { color: var(--red); font-size: 56px; line-height: 1.1; text-align: center; }
+h3 { font-family: "Excali", "Comic", sans-serif; font-weight: normal; color: var(--red); font-size: 30px; margin-bottom: 6px; }
+.ul { display: inline-block; }
+.sub { font-size: 25px; text-align: center; margin-top: 6px; line-height: 1.35; }
+.red { color: var(--red); }
+.blue { color: var(--blue); }
+.grey { color: var(--grey); }
+.small { font-size: 18px; line-height: 1.35; }
+.center { text-align: center; }
+.rb { padding: 14px 20px; position: relative; }
+.quote { font-size: 22px; text-align: center; line-height: 1.4; padding: 12px 30px; }
+.row { display: flex; gap: 26px; align-items: stretch; }
+.col { display: flex; flex-direction: column; }
+.grow1 { flex: 1; }
+.frame { padding: 6px; }
+.frame img, .frame video { display: block; width: 100%; height: 100%; object-fit: cover; background: #e9ecef; }
+
+ul.dots { list-style: none; }
+ul.dots li { position: relative; padding-left: 24px; margin: 8px 0; font-size: 21px; line-height: 1.34; }
+ul.dots li::before { content: ""; position: absolute; left: 2px; top: 9px; width: 10px; height: 10px; border-radius: 50% 45% 50% 48%; background: var(--ink); }
+
+.node { position: absolute !important; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-size: 16px; line-height: 1.3; padding: 10px 14px; }
+.nm { font-family: "Excali", sans-serif; font-size: 25px; color: var(--red); line-height: 1.15; }
+.pill { font-size: 14px; line-height: 1.25; padding: 3px 10px; white-space: nowrap; }
+.pills { position: absolute; top: -14px; right: 10px; display: flex; gap: 6px; }
+.bignum { font-family: "Excali", sans-serif; font-size: 52px; line-height: 1.05; white-space: nowrap; }
+.bignum .unit { font-family: "Comic", sans-serif; font-size: 16px; color: var(--blue); }
+.val { font-family: "Excali", sans-serif; font-size: 27px; white-space: nowrap; }
+.barrow { display: flex; align-items: center; gap: 12px; font-size: 19px; margin-top: 14px; }
+.barlabel { width: 300px; text-align: right; font-size: 19px; flex: none; line-height: 1.2; }
+.bar { height: 34px; padding: 0; flex: none; }
+table.cmp { border-collapse: collapse; font-size: 19px; }
+table.cmp td, table.cmp th { padding: 7px 12px; text-align: left; vertical-align: middle; line-height: 1.25; }
+table.cmp th { font-family: "Excali", sans-serif; font-weight: normal; color: var(--blue); font-size: 22px; }
+table.cmp td.n { text-align: right; font-family: "Excali", sans-serif; font-size: 24px; white-space: nowrap; }
+table.cmp tr.best td.n { color: #2b8a3e; }
+.code { font-family: "Comic", monospace; font-size: 17px; line-height: 1.45; white-space: pre; text-align: left; }
+.rq { width: 350px; font-size: 20px; line-height: 1.34; padding: 16px 18px 16px; }
+.rq .nm { display: block; margin: 2px 0 4px; }
+.badge { display: inline-block; font-family: "Excali", sans-serif; font-size: 20px; color: #fff; border-radius: 50%; width: 34px; height: 34px; line-height: 34px; text-align: center; }
+.step { font-size: 20px; line-height: 1.3; padding: 16px 16px; text-align: center; }
+.step b { font-weight: normal; font-family: "Excali", sans-serif; font-size: 28px; display: block; }
+.layer { width: 800px; padding: 13px 18px; font-size: 19px; line-height: 1.3; display: flex; gap: 14px; align-items: baseline; }
+.layer b { font-weight: normal; font-family: "Excali", sans-serif; font-size: 27px; width: 220px; flex: none; color: var(--ink); }
+.check { width: 360px; font-size: 19px; line-height: 1.34; padding: 14px 18px; }
+.check b { font-weight: normal; font-family: "Excali", sans-serif; font-size: 26px; color: var(--red); display: block; }
+
+/* video tiles */
+.tiles { display: grid; gap: 14px 26px; margin-top: 10px; }
+.tile { display: flex; flex-direction: column; gap: 4px; }
+.tile .frame { padding: 5px; }
+.tile .tt { display: flex; align-items: baseline; gap: 10px; }
+.tile .tt .hand { font-size: 27px; color: var(--red); }
+.tile .tt .rob { font-size: 16px; color: var(--blue); }
+.tile .tn { font-size: 17px; line-height: 1.3; }
+.tile .tn b { font-weight: normal; font-family: "Excali", sans-serif; font-size: 19px; }
+.vlab { position: absolute; top: 12px; left: 12px; background: #ffffffdd; border-radius: 6px; padding: 2px 10px; font-family: "Excali", sans-serif; font-size: 19px; }
+
+.worlds { display: grid; grid-template-columns: repeat(8, 54px); gap: 8px; margin-top: 10px; }
+.world { width: 54px; height: 34px; padding: 0; }
+.world::after { content: ""; position: absolute; left: 22px; top: 12px; width: 10px; height: 10px; border-radius: 50%; background: var(--ink); }
+.slide.active .world.on::after { animation: drift 2.4s ease-in-out infinite alternate; }
+.world:nth-child(3n)::after { animation-duration: 1.9s !important; }
+.world:nth-child(4n+1)::after { animation-delay: -1s !important; }
+@keyframes drift { from { transform: translate(-12px, 4px); } to { transform: translate(12px, -4px); } }
+.ltr { display: inline-block; }
+.slide.active .ltr { animation: ltrIn .55s cubic-bezier(.2,.7,.2,1) both; }
+@keyframes ltrIn { from { opacity: 0; transform: translateY(18px) rotate(-4deg); } to { opacity: 1; transform: none; } }
+body.print .ltr { animation: none !important; }
+@media (prefers-reduced-motion: reduce) {
+  .slide.active .ltr { animation: none; }
+  .slide, .slide.active { transition: none; }
+}
+body.print { overflow: visible; height: auto; }
+body.print #stage { position: static; transform: none !important; height: auto; }
+body.print .slide { position: relative; opacity: 1; visibility: visible; transition: none; break-after: page; page-break-after: always; }
+body.print .slide:last-child { break-after: auto; page-break-after: auto; }
+[data-at].fx-wipe { opacity: 1; transform: none; clip-path: inset(0 100% 0 0); transition: clip-path .9s cubic-bezier(.6,.05,.3,1); }
+[data-at].fx-wipe.on { clip-path: inset(0 0 0 0); }
+[data-at].fx-wipe-down { opacity: 1; transform: none; clip-path: inset(0 0 100% 0); transition: clip-path .9s cubic-bezier(.6,.05,.3,1); }
+[data-at].fx-wipe-down.on { clip-path: inset(0 0 0 0); }
+[data-at].fx-type { opacity: 1; transform: none; clip-path: inset(0 100% 0 0); transition: clip-path 1.4s steps(28, end); }
+[data-at].fx-type.on { clip-path: inset(0 0 0 0); }
+[data-at].fx-pop { transform: scale(.55); transition: opacity .35s ease, transform .55s cubic-bezier(.3,1.6,.5,1); }
+[data-at].fx-stamp { transform: scale(1.7) rotate(-6deg); transition: opacity .18s ease, transform .28s cubic-bezier(.5,0,.8,.4); }
+[data-at].fx-stamp.on { transform: rotate(-2deg); }
+[data-at].fx-drop { transform: translateY(-70px) rotate(-7deg); transition: opacity .3s ease, transform .7s cubic-bezier(.3,1.4,.5,1); }
+[data-at].fx-drop.on { transform: rotate(var(--tilt, -1.5deg)); }
+[data-at].fx-swing { transform-origin: 50% 0; transform: rotate(-16deg); transition: opacity .3s ease, transform 1s cubic-bezier(.3,1.7,.4,1); }
+[data-at].fx-flip { transform: perspective(900px) rotateY(85deg); transition: opacity .3s ease, transform .75s cubic-bezier(.2,.8,.2,1); }
+[data-at].fx-slide-left { transform: translateX(-90px); transition: opacity .6s ease, transform .7s cubic-bezier(.2,.8,.2,1); }
+[data-at].fx-slide-right { transform: translateX(90px); transition: opacity .6s ease, transform .7s cubic-bezier(.2,.8,.2,1); }
+[data-at].fx-rise { transform: translateY(46px); transition: opacity .6s ease, transform .8s cubic-bezier(.2,.8,.2,1); }
+[data-at].fx-zoom { transform: scale(1.18); transition: opacity .7s ease, transform 1s cubic-bezier(.2,.8,.2,1); }
+[data-at].fx-blur { filter: blur(10px); transform: none; transition: opacity .7s ease, filter .9s ease; }
+[data-at].fx-blur.on { filter: none; }
+[data-at].fx-shake.on { animation: fxShake .5s ease .45s 1; }
+@keyframes fxShake { 0%,100% { transform: none; } 25% { transform: rotate(-2.5deg); } 50% { transform: rotate(2deg); } 75% { transform: rotate(-1deg); } }
+.slide.active .fx-bob.on { animation: fxBob 3.2s ease-in-out 1s infinite; }
+@keyframes fxBob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+.fx-mark { background-image: linear-gradient(transparent 55%, var(--mark, #ffec99) 55%, var(--mark, #ffec99) 92%, transparent 92%); background-repeat: no-repeat; background-size: 0% 100%; transition: background-size .9s ease .3s; padding: 0 2px; }
+[data-at].fx-mark { opacity: 1; transform: none; }
+.on .fx-mark, .fx-mark.on { background-size: 100% 100%; }
+.fx-circle { position: relative; display: inline-block; }
+.fx-circle::after { content: ""; position: absolute; inset: -8px -14px; border: 3px solid var(--red); border-radius: 50% 46% 52% 48%; transform: rotate(-3deg); clip-path: inset(0 100% 0 0); transition: clip-path .8s ease .5s; }
+.on .fx-circle::after, .fx-circle.on::after { clip-path: inset(0 0 0 0); }
+
+body.tr-slide .slide { transform: translateX(120px); transition: opacity .5s ease, transform .6s cubic-bezier(.2,.8,.2,1), visibility 0s linear .6s; }
+body.tr-slide .slide.active { transform: none; transition: opacity .5s ease, transform .6s cubic-bezier(.2,.8,.2,1), visibility 0s; }
+body.tr-zoom .slide { transform: scale(.94); transition: opacity .5s ease, transform .6s ease, visibility 0s linear .6s; }
+body.tr-zoom .slide.active { transform: none; transition: opacity .5s ease, transform .6s ease, visibility 0s; }
+body.tr-page .slide { transform-origin: 0 50%; transform: perspective(1800px) rotateY(-14deg); transition: opacity .55s ease, transform .7s cubic-bezier(.2,.8,.2,1), visibility 0s linear .7s; }
+body.tr-page .slide.active { transform: none; transition: opacity .55s ease, transform .7s cubic-bezier(.2,.8,.2,1), visibility 0s; }
+body.tr-wipe .slide { opacity: 1; clip-path: inset(0 0 0 100%); transition: clip-path .75s cubic-bezier(.6,.05,.3,1), visibility 0s linear .75s; }
+body.tr-wipe .slide.active { clip-path: inset(0 0 0 0); transition: clip-path .75s cubic-bezier(.6,.05,.3,1), visibility 0s; }
+body.tr-rise .slide { transform: translateY(60px); transition: opacity .5s ease, transform .65s cubic-bezier(.2,.8,.2,1), visibility 0s linear .65s; }
+body.tr-rise .slide.active { transform: none; transition: opacity .5s ease, transform .65s cubic-bezier(.2,.8,.2,1), visibility 0s; }
+
+
+body.accent-red { --red: #e03131; --blue: #1971c2; --mark: #ffec99; }
+body.accent-ocean { --red: #1864ab; --blue: #e8590c; --mark: #a5d8ff; }
+body.accent-forest { --red: #2b8a3e; --blue: #7048e8; --mark: #b2f2bb; }
+body.accent-violet { --red: #6741d9; --blue: #0c8599; --mark: #d0bfff; }
+body.accent-ember { --red: #d9480f; --blue: #1971c2; --mark: #ffd8a8; }
+body.accent-ink { --red: #1e1e1e; --blue: #e03131; --mark: #ffec99; }
+
+body.print [class*="fx-"], body.print .slide { transform: none !important; clip-path: none !important; filter: none !important; animation: none !important; }
+body.print .fx-mark { background-size: 100% 100% !important; }
+body.print .fx-circle::after { clip-path: none !important; }
+@media (prefers-reduced-motion: reduce) { [class*="fx-"], body[class*="tr-"] .slide { transition: none !important; animation: none !important; } }
+
+/* ---------- sticky label titles ---------- */
+.shead {
+  position: relative;
+  align-self: flex-start;
+  margin: 0 0 0 2px;
+  padding: 8px 32px 11px 24px;
+  background: var(--note, #ede9fe);
+  transform: rotate(var(--tilt, -1.3deg));
+  box-shadow: 4px 6px 0 rgba(30, 30, 30, .08);
+}
+.shead::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 48px;
+  width: 96px;
+  height: 22px;
+  transform: rotate(-3deg);
+  background: rgba(233, 236, 239, .85);
+  border: 1px solid rgba(30, 30, 30, .10);
+}
+.shead h2 { text-align: left; font-size: 42px; line-height: 1.08; }
+.shead .kick {
+  margin-bottom: 3px;
+  font-family: "Comic", sans-serif;
+  font-size: 14px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: #495057;
+}
+.sbody { width: 1480px; margin-top: 28px; }
+.foot { position: absolute !important; left: 60px; bottom: 14px; font-size: 15px; color: #868e96; }
+.pageno {
+  right: 26px !important;
+  bottom: 16px !important;
+  width: 30px;
+  height: 30px;
+  line-height: 30px !important;
+  font-family: "Excali", sans-serif;
+  font-size: 15px !important;
+  color: #fff;
+  background: var(--red);
+  border-radius: 50%;
+  text-align: center;
+}
+
+/* ---------- title ---------- */
+#s-title, #s-links { justify-content: center; }
+.kick-top {
+  margin-top: 4px;
+  font-size: 16px;
+  letter-spacing: .24em;
+  text-transform: uppercase;
+  color: #495057;
+}
+.tnote {
+  position: relative;
+  align-self: center;
+  padding: 2px 48px 8px;
+  background: #ede9fe;
+  transform: rotate(-1.1deg);
+  box-shadow: 6px 8px 0 rgba(30, 30, 30, .08);
+}
+.tnote::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  margin-left: -58px;
+  width: 116px;
+  height: 24px;
+  transform: rotate(-2deg);
+  background: rgba(233, 236, 239, .85);
+  border: 1px solid rgba(30, 30, 30, .10);
+}
+.tnote h1 { font-size: 100px; }
+.tline { margin-top: 10px; font-size: 52px; color: var(--ink); }
+.urlbox {
+  margin-top: 26px;
+  width: 1120px;
+  padding: 16px 30px;
+  font-size: 34px;
+  text-align: center;
+  letter-spacing: .01em;
+}
+#s-title .row { margin-top: 8px; }
+
+/* ---------- text ---------- */
+.lede { font-size: 21px; line-height: 1.4; }
+p.para { font-size: 20px; line-height: 1.4; margin-bottom: 11px; }
+p.para:last-child { margin-bottom: 0; }
+.kickline {
+  margin-bottom: 8px;
+  font-family: "Excali", sans-serif;
+  font-size: 24px;
+  color: var(--red);
+}
+
+/* ---------- cards ---------- */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 16px 18px;
+  font-size: 18px;
+  line-height: 1.36;
+}
+.card .nm { font-size: 25px; line-height: 1.15; }
+.card .badge { margin-bottom: 4px; }
+.colhead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 82px;
+  padding: 8px 24px;
+  font-family: "Excali", sans-serif;
+  font-size: 33px;
+  color: var(--ink);
+}
+.colhead img { height: 62px; }
+
+/* ---------- ticks and crosses ---------- */
+.tk, .xx { position: relative; display: inline-block; width: 20px; height: 20px; flex: none; margin-top: 3px; }
+.tk::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 5px;
+  width: 10px;
+  height: 6px;
+  border-left: 3px solid #2f9e44;
+  border-bottom: 3px solid #2f9e44;
+  transform: rotate(-45deg);
+}
+.xx::before, .xx::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 8px;
+  width: 15px;
+  height: 3px;
+  border-radius: 2px;
+  background: #e03131;
+}
+.xx::before { transform: rotate(45deg); }
+.xx::after { transform: rotate(-45deg); }
+.li {
+  display: flex;
+  gap: 10px;
+  margin: 7px 0;
+  font-size: 19px;
+  line-height: 1.36;
+  align-items: flex-start;
+}
+.li .tx { flex: 1; }
+.li .tx b { font-family: "Excali", sans-serif; font-weight: normal; font-size: 22px; }
+
+/* ---------- numbers ---------- */
+.kpi { padding: 12px 16px; font-size: 17px; line-height: 1.32; }
+.kpi .num {
+  display: block;
+  font-family: "Excali", sans-serif;
+  font-size: 34px;
+  line-height: 1.2;
+  color: var(--red);
+}
+.statcard { position: relative; padding: 18px 22px; }
+.statcard .bignum { display: block; color: var(--red); }
+.statcap { display: block; width: 400px; margin-top: 2px; font-size: 18px; line-height: 1.32; }
+.statico { position: absolute; right: 14px; top: 14px; }
+
+/* ---------- pipeline ---------- */
+.pbox {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 14px 16px;
+  min-height: 196px;
+  font-size: 16.5px;
+  line-height: 1.34;
+}
+.pbox .nm { font-size: 24px; line-height: 1.12; }
+.pbox .ver {
+  display: inline-block;
+  align-self: flex-start;
+  margin-bottom: 2px;
+  padding: 1px 9px;
+  font-size: 13px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--blue);
+  border-radius: 4px;
+}
+.arrow {
+  width: 53px;
+  flex: none;
+  align-self: center;
+  font-size: 36px;
+  text-align: center;
+  color: var(--ink);
+}
+
+/* ---------- numbered steps ---------- */
+.step2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 14px 18px;
+  font-size: 18px;
+  line-height: 1.36;
+}
+.step2 .badge { flex: none; }
+.step3 {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 9px 0;
+  border-bottom: 2px dashed #e9ecef;
+  font-size: 20px;
+  line-height: 1.34;
+}
+.step3:last-child { border-bottom: none; }
+.step3 .badge { flex: none; }
+.step3 .tx { flex: 1; padding-top: 3px; }
+
+/* ---------- timeline ---------- */
+.track { position: relative; width: 1480px; margin-top: 30px; }
+.track::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 7px;
+  height: 3px;
+  background: #d0bfff;
+}
+.stop { position: relative; padding-top: 28px; }
+.stop::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 14px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--red);
+  box-shadow: 0 0 0 4px #fff;
+}
+.stop .kick {
+  display: block;
+  font-size: 14px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: #868e96;
+}
+.stop .num {
+  display: block;
+  font-family: "Excali", sans-serif;
+  font-size: 46px;
+  line-height: 1.1;
+  color: var(--red);
+}
+.stop p { margin-top: 4px; font-size: 17px; line-height: 1.36; }
+
+/* ---------- sticky notes ---------- */
+.note {
+  position: relative;
+  padding: 22px 22px 16px;
+  background: var(--c, #ffec99);
+  transform: rotate(var(--tilt, -1.4deg));
+  box-shadow: 5px 7px 0 rgba(30, 30, 30, .09);
+}
+.note::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  margin-left: -46px;
+  width: 92px;
+  height: 22px;
+  transform: rotate(2deg);
+  background: rgba(255, 255, 255, .72);
+  border: 1px solid rgba(30, 30, 30, .08);
+}
+.note .nt {
+  display: block;
+  margin-bottom: 8px;
+  padding-bottom: 5px;
+  border-bottom: 2px dashed rgba(30, 30, 30, .2);
+  font-family: "Excali", sans-serif;
+  font-size: 25px;
+  line-height: 1.16;
+  color: var(--ink);
+}
+.note p { font-size: 18px; line-height: 1.38; }
+
+/* ---------- questions ---------- */
+.qacard { justify-content: flex-start; gap: 6px; min-height: 186px; }
+.qacard .q {
+  font-family: "Excali", sans-serif;
+  font-size: 27px;
+  line-height: 1.15;
+  color: var(--red);
+}
+.qacard .a { font-size: 19px; line-height: 1.4; }
+
+/* ---------- diagram ---------- */
+.wires {
+  position: absolute !important;
+  left: 0;
+  top: 0;
+  width: 1600px;
+  height: 900px;
+  z-index: 0 !important;
+  pointer-events: none;
+}
+.node.dia { font-size: 15px; line-height: 1.32; gap: 2px; }
+.node.dia .nm { font-size: 23px; }
+
+/* ---------- links ---------- */
+.linkrow {
+  display: flex;
+  align-items: baseline;
+  gap: 22px;
+  padding: 13px 0;
+  border-bottom: 2px dashed #e9ecef;
+  width: 1420px;
+}
+.linkrow:last-of-type { border-bottom: none; }
+.linkrow .lab {
+  width: 140px;
+  flex: none;
+  font-family: "Excali", sans-serif;
+  font-size: 26px;
+  color: var(--red);
+}
+.linkrow .url { font-size: 24px; }
+.linkrow .who { font-size: 24px; }
+.linkrow .lslot { width: 34px; flex: none; align-self: center; }
+.linkrow .lslot img { height: 28px; display: block; }
+
+/* ---------- wide comparison table ---------- */
+table.cmp.lg { margin-top: 4px; }
+table.cmp.lg td, table.cmp.lg th { padding: 12px 12px; font-size: 20px; }
+table.cmp.lg td.n { font-size: 28px; }
+table.cmp.lg th { font-size: 21px; line-height: 1.15; }
+
+/* ---------- per-slide rhythm ---------- */
+#s-problem .sbody { margin-top: 32px; }
+#s-model .pbox { min-height: 210px; }
+#s-quality .sbody { margin-top: 42px; }
+#s-quality table.cmp.lg td, #s-quality table.cmp.lg th { padding: 15px 12px; }
+#s-runs .colhead { height: 92px; font-size: 34px; }
+#s-runs .li { font-size: 20px; margin: 11px 0; }
+#s-lang .track { margin-top: 40px; }
+#s-lang .stop p { font-size: 17.5px; }
+#s-demo .step3 { font-size: 21px; padding: 13px 0; }
+#s-limits .note p { font-size: 18.5px; }
+
+/* ---------- refinements ---------- */
+#s-search .step2 { min-height: 150px; }
+#s-test .rb.card { min-height: 300px; }
+#s-test .kpi .num { font-size: 40px; }
+#s-test .pill { font-size: 17px !important; }
+#s-lang .track::before { left: 24px; right: auto; width: 1113px; }
+#s-demo .step3 { font-size: 23px; padding: 16px 0; }
+
+#s-cost .statcap { margin-top: 6px; }
+#s-test .rb.card:last-child { justify-content: space-between; }
+
+.unichip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 14px;
+  padding: 5px 8px;
+  background: var(--red);
+  border-radius: 6px;
+  vertical-align: middle;
+}
+
+/* ---------- illustrated deck ---------- */
+.kbig { font-family: "Excali", sans-serif; line-height: .95; color: var(--red); white-space: nowrap; }
+.klab { font-size: 19px; line-height: 1.2; }
+.chip { padding: 7px 15px; font-size: 19px; white-space: nowrap; }
+.chip b { font-family: "Comic", sans-serif; font-weight: normal; font-size: 22px; color: var(--red); }
+.flab { font-family: "Excali", sans-serif; font-size: 26px; color: var(--red); line-height: 1.1; }
+.stage { font-family: "Excali", sans-serif; font-size: 21px; line-height: 1.1; text-align: center; }
+.stagesub { font-size: 16px; color: #495057; }
+.srow { display: grid; grid-template-columns: 1fr 110px 110px; align-items: baseline; padding: 6px 0; border-bottom: 2px dashed #e9ecef; }
+.srow .sname { font-size: 20px; }
+.srow .sv { text-align: right; font-family: "Excali", sans-serif; font-size: 33px; color: var(--red); }
+.srow .sv2 { text-align: right; font-family: "Excali", sans-serif; font-size: 33px; color: #868e96; }
+.tiny { font-size: 17.5px; }
+.tiny b { font-family: "Excali", sans-serif; font-weight: normal; font-size: 26px; color: var(--red); }
+.lrow { display: flex; align-items: baseline; gap: 16px; }
+.tstat { display: flex; flex-direction: column; gap: 2px; }
+.stn { display: flex; align-items: center; gap: 12px; font-size: 21px; margin: 6px 0; }
+.stn .badge { width: 32px; height: 32px; line-height: 32px; font-size: 16px; }
+.qrbox { display: flex; flex-direction: column; align-items: center; }
+.qrpad { background: #ffffff; padding: 14px; }
+.qrcap { margin-top: 8px; font-size: 16px; }
+.qmini { padding-bottom: 9px; margin-bottom: 9px; border-bottom: 2px dashed #e9ecef; }
+.qmini:last-child { border-bottom: none; }
+.qmini .q { font-family: "Excali", sans-serif; font-size: 23px; color: var(--red); line-height: 1.15; }
+.qmini .a { font-size: 16.5px; line-height: 1.35; }
+.note2 {
+  position: relative;
+  width: 470px;
+  height: 206px;
+  padding: 14px 20px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: var(--c, #fff3bf);
+  transform: rotate(var(--tilt, -1.4deg));
+  box-shadow: 5px 7px 0 rgba(30, 30, 30, .09);
+}
+.note2 img { height: 86px; }
+.note2 p { font-family: "Excali", sans-serif; font-size: 25px; line-height: 1.12; color: #1e1e1e; }
+#s-title .urlbox { margin-top: 0; }
+.notes { display: none; }
+
+/* ---------- speaker notes (HTML only) ---------- */
+#notespanel {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 32vh;
+  overflow: auto;
+  display: none;
+  padding: 14px 28px 18px;
+  background: #fffdf7;
+  border-top: 3px solid #6741d9;
+  box-shadow: 0 -8px 22px rgba(0, 0, 0, .10);
+  font-family: "Comic", sans-serif;
+  font-size: 15px;
+  line-height: 1.45;
+  z-index: 99;
+}
+#notespanel.on { display: block; }
+#notespanel h3 { font-family: "Excali", sans-serif; font-size: 20px; color: #6741d9; margin-bottom: 4px; }
+#notespanel p { margin: 3px 0; }
+#noteshint { position: fixed; right: 14px; top: 10px; font-family: "Comic", sans-serif; font-size: 12px; color: #adb5bd; z-index: 98; }
+body.print #notespanel, body.print #noteshint { display: none !important; }
+
+/* ---------- gallery layout: title note fixed, body centred ---------- */
+.shead { position: absolute !important; top: 30px; left: 60px; margin: 0; z-index: 3; }
+.slide { justify-content: center; }
+.sbody { margin-top: 0; padding-top: 40px; }
+
+/* ---------- sticky note tape and question sizing ---------- */
+.note2::before {
+  content: "";
+  position: absolute;
+  top: -11px;
+  left: 50%;
+  margin-left: -46px;
+  width: 92px;
+  height: 20px;
+  transform: rotate(2deg);
+  background: rgba(255, 255, 255, .8);
+  border: 1px solid rgba(30, 30, 30, .08);
+}
+.note2 img { height: 96px; }
+.qmini { padding-bottom: 13px; margin-bottom: 13px; }
+.qmini .q { font-size: 26px; }
+.qmini .a { font-size: 19px; line-height: 1.38; }
+
+.pill { font-size: 16px; padding: 4px 11px; }
+.note2 img { height: 108px; }
+
+/* ---------- technical slides ---------- */
+.tcard {
+  position: relative;
+  width: 900px;
+  padding: 30px 34px 24px;
+  background: #ffffff;
+  border: 3px solid #1e1e1e;
+  box-shadow: 8px 10px 0 rgba(30, 30, 30, .10);
+  transform: rotate(-.7deg);
+}
+.tcard-tab {
+  position: absolute;
+  top: -32px;
+  left: 50%;
+  margin-left: -72px;
+  width: 144px;
+  height: 32px;
+  background: #ffffff;
+  border: 3px solid #1e1e1e;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+}
+.tband { padding: 12px 0 11px; border-bottom: 2px dashed #ced4da; }
+.tband:last-child { border-bottom: none; }
+.tband .tfield {
+  display: block;
+  font-family: "Comic", sans-serif;
+  font-size: 14px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+.tband .tval { display: block; margin-top: 2px; font-size: 26px; line-height: 1.2; }
+.tband.name { margin: -10px 0 0; padding: 10px 16px 14px; background: #ede9fe; }
+.tband.name .tval { font-family: "Excali", sans-serif; font-size: 38px; color: var(--red); line-height: 1.1; }
+
+.t1col { width: 464px; display: flex; flex-direction: column; align-items: center; gap: 5px; text-align: center; }
+.t1title { font-family: "Excali", sans-serif; font-size: 29px; color: var(--red); line-height: 1.1; }
+.t1line { font-size: 19px; line-height: 1.3; min-height: 50px; }
+
+.mask { display: grid; grid-template-columns: 64px repeat(4, 46px); gap: 4px; align-items: center; }
+.mask .mlab { font-family: "Comic", sans-serif; font-size: 15px; text-align: right; padding-right: 6px; color: #495057; }
+.mask .mcol { font-family: "Comic", sans-serif; font-size: 15px; text-align: center; color: #495057; }
+.mcell { width: 46px; height: 46px; border: 2px solid #1e1e1e; }
+.mcell.on { background: var(--red); }
+
+.lchip {
+  display: inline-block;
+  margin: 4px 6px 0 0;
+  padding: 3px 10px;
+  border: 2px solid #1e1e1e;
+  background: #ffd8a8;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.thbar { position: relative; width: 800px; height: 26px; background: #e9ecef; border: 2px solid #1e1e1e; margin-top: 36px; }
+.thfill { position: absolute; left: 0; top: 0; bottom: 0; width: 56%; background: #d0bfff; }
+.thmark {
+  position: absolute;
+  left: 56%;
+  top: -30px;
+  transform: translateX(-11px);
+  width: 0;
+  height: 0;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-top: 20px solid var(--red);
+}
+.mbar { display: flex; align-items: center; gap: 12px; margin: 10px 0; font-size: 18px; }
+
+table.tech { border-collapse: collapse; width: 100%; font-size: 20px; }
+table.tech th {
+  font-family: "Excali", sans-serif;
+  font-size: 20px;
+  color: var(--blue);
+  text-align: right;
+  padding: 7px 12px;
+  border-bottom: 3px solid #1e1e1e;
+}
+table.tech th:first-child { text-align: left; }
+table.tech td { padding: 8px 12px; border-bottom: 1px dashed #dee2e6; }
+table.tech td.n { text-align: right; font-family: "Excali", sans-serif; font-size: 25px; }
+table.tech tr.hl td { background: #ede9fe; }
+.lesson { font-size: 17px; padding: 7px 14px; border-radius: 10px; background: #f1f3f5; }
+
+/* ---------- highlighted third approach ---------- */
+.t1col.ours {
+  position: relative;
+  background: #ede9fe;
+  border-radius: 8px;
+  padding: 18px 9px 16px;
+}
+.oursmark {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+  background: var(--red);
+  color: #ffffff;
+  font-family: "Excali", sans-serif;
+  font-size: 18px;
+  padding: 2px 16px;
+}
+.t1title { min-height: 64px; }
+
+.t1img { height: 232px; display: flex; align-items: center; justify-content: center; width: 100%; }
+
+.static-mode .slide, .static-mode .slide.active { transition: none !important; }
+</style>
+</head>
+<body class="accent-violet static-mode">
+<div id="stage">
+<section class="slide" data-mode="draw" id="s-title" data-layout="title">
+  <p class="kick-top">Briefing for DINAcon, 18 November 2026</p>
+  <div class="tnote" style="margin-top:12px"><h1>Parlamentsthemen</h1></div>
+  <p class="hand tline">how it works and how it runs</p>
+  <div class="row" style="margin-top:22px; gap:30px; align-items:center">
+    <div class="rb urlbox" data-fill="#d0bfff" data-fs="solid" data-r="14" style="width:940px; font-size:31px">https://parlamentsthemen.prakasharyan.dev</div>
+    <div class="qrbox">
+      <div class="qrpad"><img src="qr/qr_parlamentsthemen.svg" alt="QR code to the live site" style="width:236px; height:236px; display:block"></div>
+      <p class="qrcap">Scan to open the live site</p>
+    </div>
+  </div>
+  <div class="row" style="margin-top:14px; gap:16px; align-items:center">
+    <img src="img/ico_parliament.png" alt="" style="height:80px">
+    <p style="font-size:21px">Team Invincibles · Hack Apertus Liebefeld, 3rd place</p>
+  </div>
+  <span class="pageno">1</span>
+  <div class="notes">
+    <p>Briefing for DINAcon, 18 November 2026. Team Invincibles placed third at Hack Apertus Liebefeld. The live site is parliamentsthemen.prakasharyan.dev; the QR code opens it.</p>
+    <p>The deck explains what the application does, how it is served, what the numbers mean and how to run the short demo. The full detail that used to sit on the slides is in these notes.</p>
+  </div>
+</section>
+
+<section class="slide" data-mode="draw" id="s-problem" data-layout="hero-image">
+  <div class="shead" style="--tilt:-1.5deg"><h2>The problem in one slide</h2></div>
+  <div class="sbody row" style="gap:44px; align-items:center">
+    <img src="img/ill_problem.png" alt="" style="height:500px">
+    <div class="col" style="width:990px; gap:16px">
+      <div class="row" style="align-items:flex-end; gap:18px">
+        <span class="kbig" style="font-size:150px">22%</span>
+        <span style="font-size:30px; padding-bottom:24px">carry a topic</span>
+      </div>
+      <div class="row" style="gap:12px; flex-wrap:wrap">
+        <span class="rb chip" data-r="8">Curia Vista <b>28</b></span>
+        <span class="rb chip" data-r="8">St. Gallen <b>9</b></span>
+        <span class="rb chip" data-r="8">Thurgau <b>118</b></span>
+        <span class="rb chip" data-r="8">Zug <b>37</b></span>
+      </div>
+      <p style="font-size:23px">Full text search. Four schemes, no shared labels.</p>
+    </div>
+  </div>
+  <div class="foot">Parlamentsthemen · Briefing for DINAcon, 18 November 2026</div>
+  <span class="pageno">2</span>
+  <div class="notes">
+    <p>OpenParlData.ch holds affairs such as motions, questions and bills from federal, cantonal and municipal parliaments in German, French, Italian and Romansh. They are searchable mainly by full text.</p>
+    <p>Only about 22% carry a topic. The schemes differ: Curia Vista 28 areas for the federal parliament, St. Gallen 9 categories, Thurgau 118 and the City of Zug 37. Année Politique Suisse has a standard two-level scheme with 22 chapters and 165 topics, but the affairs carry no labels for it.</p>
+    <p>Digital Public Services Switzerland needs digitalisation affairs found across the whole dataset, not inside one scheme.</p>
+  </div>
+</section>
+
+<section class="slide" data-mode="draw" id="s-card" data-layout="card-grid">
+  <div class="shead" style="--tilt:-1.2deg"><h2>The idea: a topic is a card</h2></div>
+  <div class="sbody row" style="gap:22px; align-items:center">
+    <img src="img/ill_pointer.png" alt="" style="height:360px">
+    <div class="col" style="width:940px; align-items:center; gap:14px">
+      <div class="tcard">
+        <div class="tcard-tab"></div>
+        <div class="tband name"><span class="tfield">Name</span><span class="tval">Digitalisierung</span></div>
+        <div class="tband"><span class="tfield">Definition</span><span class="tval">Affairs about digital administration, data and IT in the state and society</span></div>
+        <div class="tband"><span class="tfield">Include</span><span class="tval">e-government, open data, cybersecurity</span></div>
+        <div class="tband"><span class="tfield">Exclude</span><span class="tval">telecom pricing, media policy</span></div>
+      </div>
+      <p style="font-size:21px">One pass per affair · 7 ad-hoc topics</p>
+    </div>
+  </div>
+  <div class="foot">Parlamentsthemen · Briefing for DINAcon, 18 November 2026</div>
+  <span class="pageno">3</span>
+  <div class="notes">
+    <p>Every topic of every scheme becomes a short plain-language card: a name, a definition, examples to include and near neighbours to exclude. The card on the slide is the digitalisation card.</p>
+    <p>The model reads an affair once and returns one probability per card in a single pass. Each probability is calibrated per topic, so a threshold means the same thing across cards. A new topic is a new card plus a validated threshold, not a retraining run.</p>
+    <p>The seven ad-hoc topics are digitalisation, climate change, housing shortage and rents, energy supply security, artificial intelligence, Covid-19 and war in Ukraine.</p>
+  </div>
+</section>
+
+<section class="slide" data-mode="draw" id="s-model" data-layout="pipeline">
+  <div class="shead" style="--tilt:-1.4deg"><h2>The model: Apertus-ParlTopics-8B</h2></div>
+  <div class="sbody">
+    <img src="img/ill_pipeline.png" alt="" style="width:1200px; display:block; margin:0 auto">
+    <div class="row" style="width:1200px; margin:2px auto 0; gap:0">
+      <div class="col" style="width:300px; align-items:center; gap:4px">
+        <img src="img/logo_apertus.svg" alt="Apertus" style="height:16px">
+        <span class="stage">Apertus 1.5 8B</span>
+      </div>
+      <div class="col" style="width:300px; align-items:center; gap:4px"><span class="stage">LoRA rank 16</span><span class="stagesub">159 MB</span></div>
+      <div class="col" style="width:300px; align-items:center; gap:4px"><span class="stage">yes/no head</span><span class="stagesub">8 MB</span></div>
+      <div class="col" style="width:300px; align-items:center; gap:4px"><span class="stage">probability</span><span class="stagesub">per card</span></div>
+    </div>
+    <div class="row" style="margin-top:16px; gap:16px; width:1480px">
+      <div class="rb kpi" data-r="10" style="width:358px"><span class="num">6,728</span>affairs, before 2024</div>
+      <div class="rb kpi" data-r="10" style="width:358px"><span class="num">31,837</span>yes/no questions</div>
+      <div class="rb kpi" data-r="10" style="width:358px"><span class="num">1 epoch</span>whole training set</div>
+      <div class="rb kpi" data-r="10" style="width:358px"><span class="num">1.8 h</span>one RTX A6000</div>
+    </div>
+    <div class="row" style="margin-top:12px; gap:12px; justify-content:center; align-items:center">
+      <img src="img/logo_huggingface.svg" alt="Hugging Face" style="height:28px">
+      <span style="font-size:16px">merabro/Apertus-ParlTopics-8B</span>
+    </div>
+  </div>
+  <div class="foot">Parlamentsthemen · Briefing for DINAcon, 18 November 2026</div>
+  <span class="pageno">4</span>
+  <div class="notes">
+    <p>Apertus 1.5 8B is the Swiss open model by ETH Zurich, EPFL and CSCS. The base weights are unchanged. On top sit a LoRA adapter of rank 16 (159 MB) and a small yes/no head (8 MB).</p>
+    <p>It was trained as a decision model with Kev, which is open under Apache-2.0. Training data: 6,728 federal affairs from before 2024 with 31,837 yes/no questions from Curia Vista labels. One epoch took 1.8 hours on one RTX A6000.</p>
+    <p>The model was never trained on APS, on digitalisation or on any cantonal or city scheme. Those sets test whether a topic transfers to a scheme the model has not seen. The model is open on Hugging Face at merabro/Apertus-ParlTopics-8B.</p>
+  </div>
+</section>
+
+<section class="slide" data-mode="draw" id="s-t1" data-layout="split-compare">
+  <div class="shead" style="--tilt:-1.3deg"><h2>How a language model becomes a classifier</h2></div>
+  <div class="sbody row" style="gap:30px; align-items:flex-start">
+    <div class="t1col">
+      <div class="t1img"><img src="img/ill_prompt.png" alt="" style="height:232px"></div>
+      <p class="t1title">Prompt a chat model</p>
+      <p class="t1line">no fine-tuning</p>
+      <span class="rb pill" data-fill="#e9ecef" data-r="8">no training</span>
+      <span class="rb pill" data-fill="#e9ecef" data-r="8">slow, wording-sensitive</span>
+      <span class="rb pill" data-fill="#e9ecef" data-r="8">poor calibration</span>
+    </div>
+    <div class="t1col">
+      <div class="t1img"><img src="img/ill_encoder.png" alt="" style="height:232px"></div>
+      <p class="t1title">Fine-tuned encoder classifier</p>
+      <p class="t1line">for example XLM-RoBERTa, fixed label list</p>
+      <span class="rb pill" data-fill="#e9ecef" data-r="8">fast, accurate</span>
+      <span class="rb pill" data-fill="#e9ecef" data-r="8">thousands of examples per label</span>
+      <span class="rb pill" data-fill="#e9ecef" data-r="8">new label = retrain</span>
+    </div>
+    <div class="t1col ours">
+      <span class="oursmark">ours</span>
+      <div class="t1img"><img src="img/ill_decision.png" alt="" style="max-width:100%; max-height:232px"></div>
+      <p class="t1title">Our approach: fine-tuned decision model</p>
+      <p class="t1line">Apertus 1.5 8B fine-tuned with Kev (LoRA)</p>
+      <span class="rb pill" data-fill="#ffffff" data-r="8">label = question, answer yes or no</span>
+      <span class="rb pill" data-fill="#ffffff" data-r="8">new topic = new question, no retraining</span>
+      <span class="rb pill" data-fill="#ffffff" data-r="8">one model, every scheme</span>
+      <span class="rb pill" data-fill="#ffffff" data-r="8">6,728 affairs, 1 epoch</span>
+    </div>
+  </div>
+  <div class="foot">Parlamentsthemen · Briefing for DINAcon, 18 November 2026</div>
+  <span class="pageno">5</span>
+  <div class="notes">
+    <p>Three ways to turn a language model into a classifier. (a) Prompt a chat model with the question Is this about digitalisation, yes or no, then read the probability of the word yes. No training is needed, but it is slow, sensitive to wording and poorly calibrated.</p>
+    <p>(b) A fine-tuned encoder such as XLM-RoBERTa takes text in and returns a fixed list of labels. It is fast and accurate, but every label needs thousands of labelled examples and a new label means retraining.</p>
+    <p>(c) Our approach: a fine-tuned decision model. We fine-tuned Apertus 1.5 8B with Kev as a decision model; the label is written as a question in plain language and the model answers yes or no for each question. A new topic is a new question, so no retraining is needed. One model serves every scheme. This adapter was trained on 6,728 affairs for one epoch.</p>
+  </div>
+</section>
+
+<section class="slide" data-mode="draw" id="s-t2" data-layout="whiteboard-diagram">
+  <div class="shead" style="--tilt:-1.2deg"><h2>Inside the decision model: one pass for all topics</h2></div>
+  <svg class="wires" viewBox="0 0 1600 900" aria-hidden="true">
+    <defs>
+      <marker id="ah2" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto">
+        <path d="M 1 1 L 11 6 L 1 11" fill="none" stroke="#1e1e1e" stroke-width="1.6"></path>
+      </marker>
+    </defs>
+    <path d="M 420 298 L 420 352 L 250 352 L 250 404" fill="none" stroke="#1e1e1e" stroke-width="1.9" marker-end="url(#ah2)"></path>
+    <path d="M 420 298 L 420 352 L 610 352 L 610 404" fill="none" stroke="#1e1e1e" stroke-width="1.9" marker-end="url(#ah2)"></path>
+    <path d="M 420 298 L 420 352 L 970 352 L 970 404" fill="none" stroke="#1e1e1e" stroke-width="1.9" marker-end="url(#ah2)"></path>
+  </svg>
+  <div class="rb node dia" data-fill="#e9ecef" data-fs="solid" data-r="12" style="left:90px; top:176px; width:660px; height:120px">
+    <span class="nm">affair text</span>
+    <span>state, up to 1,024 tokens</span>
+  </div>
+  <div class="rb node dia" data-fill="#d0bfff" data-fs="solid" data-r="12" style="left:90px; top:410px; width:320px; height:176px">
+    <span class="nm">card A</span>
+    <span>question</span>
+    <span>yes / no</span>
+    <span>&lt;decide&gt;</span>
+  </div>
+  <div class="rb node dia" data-fill="#d0bfff" data-fs="solid" data-r="12" style="left:450px; top:410px; width:320px; height:176px">
+    <span class="nm">card B</span>
+    <span>question</span>
+    <span>yes / no</span>
+    <span>&lt;decide&gt;</span>
+  </div>
+  <div class="rb node dia" data-fill="#d0bfff" data-fs="solid" data-r="12" style="left:810px; top:410px; width:320px; height:176px">
+    <span class="nm">card C</span>
+    <span>question</span>
+    <span>yes / no</span>
+    <span>&lt;decide&gt;</span>
+  </div>
+  <div class="abs" style="left:1190px; top:210px; width:290px">
+    <div class="mask">
+      <span class="mlab"></span><span class="mcol">text</span><span class="mcol">A</span><span class="mcol">B</span><span class="mcol">C</span>
+      <span class="mlab">text</span><span class="mcell on"></span><span class="mcell"></span><span class="mcell"></span><span class="mcell"></span>
+      <span class="mlab">A</span><span class="mcell on"></span><span class="mcell on"></span><span class="mcell"></span><span class="mcell"></span>
+      <span class="mlab">B</span><span class="mcell on"></span><span class="mcell"></span><span class="mcell on"></span><span class="mcell"></span>
+      <span class="mlab">C</span><span class="mcell on"></span><span class="mcell"></span><span class="mcell"></span><span class="mcell on"></span>
+    </div>
+    <p class="small" style="margin-top:12px">mask: text to all, branch to itself</p>
+  </div>
+  <div class="abs" style="left:90px; top:650px">
+    <span class="kbig" style="font-size:78px">1 pass</span>
+    <span class="klab" style="margin-left:14px">all topics, text computed once</span>
+  </div>
+  <div class="foot">Parlamentsthemen · Briefing for DINAcon, 18 November 2026</div>
+  <span class="pageno">6</span>
+  <div class="notes">
+    <p>The affair text is read once and becomes a shared state of up to 1,024 tokens. After it come one branch per topic card: the question from the card, the two options yes and no, plus a special decide token.</p>
+    <p>A block-causal attention mask lets each branch see the affair text and itself, but not the other branches. The questions do not influence each other and the text is computed only once.</p>
+  </div>
+</section>
+
+<section class="slide" data-mode="draw" id="s-t3" data-layout="mind-map">
+  <div class="shead" style="--tilt:-1.1deg"><h2>The pointer head: from hidden states to a probability</h2></div>
+  <svg class="wires" viewBox="0 0 1600 900" aria-hidden="true">
+    <defs>
+      <marker id="ah3" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto">
+        <path d="M 1 1 L 11 6 L 1 11" fill="none" stroke="#1e1e1e" stroke-width="1.6"></path>
+      </marker>
+    </defs>
+    <path d="M 384 207 L 516 207" fill="none" stroke="#1e1e1e" stroke-width="1.9" marker-end="url(#ah3)"></path>
+    <path d="M 384 423 C 450 423, 450 207, 516 207" fill="none" stroke="#1e1e1e" stroke-width="1.9" marker-end="url(#ah3)"></path>
+    <path d="M 384 423 C 450 423, 450 607, 516 607" fill="none" stroke="#1e1e1e" stroke-width="1.9" marker-end="url(#ah3)"></path>
+    <path d="M 384 607 L 516 607" fill="none" stroke="#1e1e1e" stroke-width="1.9" marker-end="url(#ah3)"></path>
+    <path d="M 764 207 C 830 207, 830 400, 896 405" fill="none" stroke="#1e1e1e" stroke-width="1.9" marker-end="url(#ah3)"></path>
+    <path d="M 764 607 C 830 607, 830 430, 896 425" fill="none" stroke="#1e1e1e" stroke-width="1.9" marker-end="url(#ah3)"></path>
+    <path d="M 1104 415 L 1240 418" fill="none" stroke="#1e1e1e" stroke-width="1.9" marker-end="url(#ah3)"></path>
+  </svg>
+  <div class="rb node dia" data-fill="#e9ecef" data-fs="solid" data-r="12" style="left:80px; top:170px; width:300px; height:74px">
+    <span class="nm">yes end state</span>
+  </div>
+  <div class="rb node dia" data-fill="#d0bfff" data-fs="solid" data-r="12" style="left:80px; top:380px; width:300px; height:86px">
+    <span class="nm">decide state</span>
+  </div>
+  <div class="rb node dia" data-fill="#e9ecef" data-fs="solid" data-r="12" style="left:80px; top:570px; width:300px; height:74px">
+    <span class="nm">no end state</span>
+  </div>
+  <div class="rb node dia" data-fill="#b2f2bb" data-fs="solid" data-r="12" style="left:520px; top:170px; width:240px; height:74px">
+    <span class="nm">256-d dot</span>
+  </div>
+  <div class="rb node dia" data-fill="#b2f2bb" data-fs="solid" data-r="12" style="left:520px; top:570px; width:240px; height:74px">
+    <span class="nm">256-d dot</span>
+  </div>
+  <div class="rb node dia" data-fill="#ffec99" data-fs="solid" data-r="12" style="left:900px; top:370px; width:200px; height:90px">
+    <span class="nm">softmax</span>
+  </div>
+  <img src="img/ill_dial.png" alt="" style="position:absolute; left:1170px; top:260px; height:310px">
+  <p class="abs small" style="left:1190px; top:600px; width:250px; text-align:center">probability</p>
+  <div class="foot">Parlamentsthemen · Briefing for DINAcon, 18 November 2026</div>
+  <span class="pageno">7</span>
+  <div class="notes">
+    <p>The hidden state of the decide token is compared with the hidden states at the end of the yes and no options. Two small linear projections map each pair into 256 dimensions. A dot product gives one logit per option.</p>
+    <p>A softmax over yes and no turns the two logits into a probability.</p>
+  </div>
+</section>
+
+<section class="slide" data-mode="draw" id="s-t4" data-layout="stage-bars">
+  <div class="shead" style="--tilt:-1.2deg"><h2>Fine-tuning with Kev</h2></div>
+  <div class="sbody">
+    <div class="row" style="gap:26px; align-items:center; width:1480px">
+      <div class="rb col" data-fill="#e9ecef" data-fs="solid" data-r="12" style="width:620px; padding:22px 26px; align-items:flex-start">
+        <span class="nm" style="font-size:31px">Apertus 1.5 8B</span>
+        <span class="small">8 billion weights, frozen</span>
+        <div class="row" style="gap:0; flex-wrap:wrap">
+          <span class="lchip">q k v o</span><span class="lchip">up down</span>
+        </div>
+        <p class="small" style="margin-top:6px">LoRA rank 16 · alpha 32 · dropout 0.05</p>
+      </div>
+      <span class="arrow">→</span>
+      <div class="rb col" data-fill="#b2f2bb" data-fs="solid" data-r="12" style="width:300px; padding:22px 26px; align-items:flex-start">
+        <span class="nm" style="font-size:27px">pointer head</span>
+        <span class="small">8 MB</span>
+      </div>
+      <div class="col" style="width:300px; align-items:flex-start">
+        <span class="klab">adapter 159 MB</span>
+        <span class="klab">Kev, Apache-2.0</span>
+        <span class="small">one-file patch for Apertus</span>
+      </div>
+    </div>
+    <div class="row" style="margin-top:20px; gap:14px; width:1480px">
+      <div class="rb kpi" data-r="10" style="width:232px"><span class="num">6,728</span>records</div>
+      <div class="rb kpi" data-r="10" style="width:232px"><span class="num">31,837</span>yes/no questions</div>
+      <div class="rb kpi" data-r="10" style="width:232px"><span class="num">1 epoch</span>841 optimizer steps</div>
+      <div class="rb kpi" data-r="10" style="width:232px"><span class="num">1.8 h</span>one RTX A6000</div>
+      <div class="rb kpi" data-r="10" style="width:232px"><span class="num">42.8 GB</span>peak memory</div>
+      <div class="rb kpi" data-r="10" style="width:232px"><span class="num">7.06M</span>tokens</div>
+    </div>
+    <p class="small" style="margin-top:14px">batch 1 · accum 8 · lr 5e-5 · wd 0.01 · ls 0.1 · bf16 · 5 special tokens, no new embedding rows</p>
+  </div>
+  <div class="foot">Parlamentsthemen · Briefing for DINAcon, 18 November 2026</div>
+  <span class="pageno">8</span>
+  <div class="notes">
+    <p>Kev is an open implementation (Apache-2.0) of these decision models. We trained a LoRA adapter of rank 16 (alpha 32, dropout 0.05) on the attention projections (q, k, v, o) and the MLP projections (up, down) of Apertus 1.5 8B, plus the pointer head. The 8 billion base weights stay frozen.</p>
+    <p>Our one-file patch made Kev work with Apertus: it reuses five rarely used Apertus special tokens as the delimiters (state, question, option start, option end, decide), so no new embedding rows are added. It also skips projections that Apertus does not have.</p>
+    <p>Training: 6,728 records with 31,837 yes/no questions, one epoch, 841 optimizer steps (batch 1, gradient accumulation 8), learning rate 5e-5, weight decay 0.01, label smoothing 0.1, bf16, 7.06 million tokens, 1.8 hours on one RTX A6000, peak memory 42.8 GB. Output: adapter 159 MB and head 8 MB.</p>
+  </div>
+</section>
+
+<section class="slide" data-mode="draw" id="s-t5" data-layout="bar-chart">
+  <div class="shead" style="--tilt:-1.4deg"><h2>From score to decision: calibration and thresholds</h2></div>
+  <div class="sbody row" style="gap:40px; align-items:center">
+    <div class="col" style="width:860px">
+      <div class="row" style="gap:10px; align-items:center">
+        <span class="rb pill" data-fill="#e9ecef" data-r="8">raw logits</span>
+        <span class="hand" style="font-size:24px">→</span>
+        <span class="rb pill" data-fill="#e9ecef" data-r="8">Platt scaling</span>
+        <span class="hand" style="font-size:24px">→</span>
+        <span class="rb pill" data-fill="#e9ecef" data-r="8">calibrated p</span>
+      </div>
+      <div class="thbar"><span class="thfill"></span><span class="thmark"></span></div>
+      <div style="position:relative; width:800px; height:24px; margin-top:6px">
+        <span class="small" style="position:absolute; left:0">0</span>
+        <span class="small" style="position:absolute; left:388px; width:120px; text-align:center">threshold</span>
+        <span class="small" style="position:absolute; right:0">1</span>
+      </div>
+      <p class="small" style="margin-top:12px">one threshold per topic, fitted before 2024</p>
+      <p class="small">test uses only 2024 to 2026</p>
+      <div class="rb card" data-r="10" style="margin-top:14px; padding:10px 14px; width:820px">
+        <p class="small">no labels: 6 APS chapters, 6 ad-hoc topics</p>
+        <p class="small">shared default threshold, marked uncalibrated</p>
+      </div>
+      <p class="small" style="margin-top:10px">APS: 22 chapters, then the topics of the 3 most likely</p>
+    </div>
+    <div class="col" style="width:540px; gap:2px">
+      <span class="kbig" style="font-size:100px">0.97</span><span class="klab">recall at the monitoring threshold</span>
+      <span class="kbig" style="font-size:100px; margin-top:8px">0.18</span><span class="klab">precision</span>
+      <span class="kbig" style="font-size:100px; margin-top:8px">37</span><span class="klab">affairs per week to review</span>
+    </div>
+  </div>
+  <div class="foot">Parlamentsthemen · Briefing for DINAcon, 18 November 2026</div>
+  <span class="pageno">9</span>
+  <div class="notes">
+    <p>Raw logits are turned into calibrated probabilities per topic with Platt scaling, fitted on affairs from before 2024. A threshold per topic is fitted on the same earlier affairs. The test uses only affairs from 2024 to 2026.</p>
+    <p>Where no labels exist (six APS chapters and six ad-hoc topics) a shared default threshold is used and the topic is marked uncalibrated.</p>
+    <p>For digitalisation a lower monitoring threshold gives recall 0.97 at precision 0.18 on the test affairs, about 37 affairs per week to review. APS is assigned in two steps: first the 22 chapters, then the topics of the three most likely chapters.</p>
+  </div>
+</section>
+
+<section class="slide" data-mode="draw" id="s-t6" data-layout="table">
+  <div class="shead" style="--tilt:-1.1deg"><h2>What we learned from seven training runs</h2></div>
+  <div class="sbody">
+    <p class="small grey" style="margin-bottom:4px">average precision, 2024 to 2026 test affairs</p>
+    <table class="tech">
+      <tr><th>run</th><th>digitalisation</th><th>Curia Vista</th><th>St. Gallen</th></tr>
+      <tr><td>A · CV + digitalisation, soft labels</td><td class="n">0.35</td><td class="n">0.67</td><td class="n">0.67</td></tr>
+      <tr><td>B · same, plain labels</td><td class="n">0.42</td><td class="n">0.67</td><td class="n">0.67</td></tr>
+      <tr><td>C · Curia Vista only, 3,753</td><td class="n">0.42</td><td class="n">0.67</td><td class="n">0.69</td></tr>
+      <tr><td>D · C with 6,532 affairs</td><td class="n">0.41</td><td class="n">0.69</td><td class="n">0.66</td></tr>
+      <tr><td>E · C with two epochs</td><td class="n">0.41</td><td class="n">0.69</td><td class="n">0.66</td></tr>
+      <tr><td>F · C plus the Thurgau scheme</td><td class="n">0.45</td><td class="n">0.69</td><td class="n">0.69</td></tr>
+      <tr class="hl"><td>G · C plus 400 descriptors</td><td class="n">0.46</td><td class="n">0.71</td><td class="n">0.70</td></tr>
+    </table>
+    <div class="row" style="margin-top:16px; gap:14px; justify-content:center">
+      <span class="lesson">more topic variety helped most</span>
+      <span class="lesson">more data or a 2nd epoch: no gain</span>
+      <span class="lesson">incomplete digitalisation tags hurt</span>
+    </div>
+  </div>
+  <div class="foot">Parlamentsthemen · Briefing for DINAcon, 18 November 2026</div>
+  <span class="pageno">10</span>
+  <div class="notes">
+    <p>Seven training runs, scored as average precision on the 2024 to 2026 test affairs for digitalisation (never trained), the 28 Curia Vista areas and St. Gallen (never trained).</p>
+    <p>A: Curia Vista and digitalisation with softened labels, 0.35 / 0.67 / 0.67. B: same with plain labels, 0.42 / 0.67 / 0.67. C: Curia Vista only, 3,753 affairs, 0.42 / 0.67 / 0.69. D: C with 6,532 affairs, 0.41 / 0.69 / 0.66. E: C with two epochs, 0.41 / 0.69 / 0.66. F: C plus the Thurgau scheme, 0.45 / 0.69 / 0.69. G: C plus the 400 most frequent Curia Vista descriptors, 0.46 / 0.71 / 0.70, the released model.</p>
+    <p>Lesson: more variety of topics helped most; more of the same data or a second epoch did not; training on incomplete digitalisation tags hurt.</p>
+  </div>
+</section>
+
+<section class="slide" data-mode="draw" id="s-quality" data-layout="hero-image">
+  <div class="shead" style="--tilt:-1.1deg"><h2>How good it is</h2></div>
+  <div class="sbody row" style="gap:36px; align-items:center">
+    <div class="col" style="width:740px">
+      <div class="srow" style="border-bottom:none; padding-top:0">
+        <span class="sname small grey">micro F1</span>
+        <span class="small grey" style="text-align:right">ours</span>
+        <span class="small grey" style="text-align:right">baseline</span>
+      </div>
+      <div class="srow"><span class="sname">St. Gallen</span><span class="sv">0.71</span><span class="sv2">0.70</span></div>
+      <div class="srow"><span class="sname">Curia Vista</span><span class="sv">0.70</span><span class="sv2">0.69</span></div>
+      <div class="srow"><span class="sname">APS</span><span class="sv">0.63</span><span class="sv2">0.62</span></div>
+      <div class="srow"><span class="sname">2000 to 2023</span><span class="sv">0.61</span><span class="sv2">0.59</span></div>
+      <p style="font-size:24px; color:var(--red); font-family:'Excali',sans-serif; margin-top:8px">level, not better</p>
+      <p class="small" style="margin-top:4px">DE 0.71 · FR 0.70 · IT 0.70</p>
+      <div class="rb card" data-r="10" style="margin-top:12px; padding:10px 14px">
+        <p class="small grey">digitalisation · DVS tags</p>
+        <div class="row" style="gap:20px; margin-top:2px">
+          <span class="tiny"><b>1.00</b> precision</span>
+          <span class="tiny"><b>0.63</b> recall</span>
+          <span class="tiny"><b>0.97</b> lower cut</span>
+        </div>
+      </div>
+    </div>
+    <img src="img/ill_scale.png" alt="" style="height:500px">
+  </div>
+  <div class="foot">Parlamentsthemen · Briefing for DINAcon, 18 November 2026</div>
+  <span class="pageno">11</span>
+  <div class="notes">
+    <p>micro F1 on official labels: St. Gallen 0.71 against 0.70, Curia Vista 0.70 against 0.69, APS chapters 0.63 against 0.62. On 400 older federal affairs from 2000 to 2023, 0.61 against 0.59. The baseline column is Claude Opus 5.5, used only as a comparison.</p>
+    <p>Every difference lies inside the 95% interval, so the model is level with the baseline and not better. Quality is the same in German 0.71, French 0.70 and Italian 0.70.</p>
+    <p>Weak spot: against the DVS tags the model was right whenever it said yes (precision 1.00) but found 63% of the tagged affairs (recall 0.63). A lower monitoring threshold reaches recall 0.97 on affairs from 2024 to 2026.</p>
+  </div>
+</section>
+
+<section class="slide" data-mode="draw" id="s-t7" data-layout="table">
+  <div class="shead" style="--tilt:-1.2deg"><h2>Against other approaches</h2></div>
+  <div class="sbody">
+    <table class="tech">
+      <tr><th>approach</th><th>digitalisation</th><th>Curia Vista 28</th><th>St. Gallen</th><th>30 new topics</th></tr>
+      <tr><td>untrained Apertus 1.5 8B</td><td class="n">0.43</td><td class="n">0.51</td><td class="n">0.57</td><td class="n">-</td></tr>
+      <tr><td>legal XLM-RoBERTa</td><td class="n">0.42</td><td class="n">0.73</td><td>no output</td><td class="n">-</td></tr>
+      <tr><td>embedding classifier</td><td class="n">0.47</td><td class="n">0.74</td><td class="n">0.38</td><td class="n">0.39</td></tr>
+      <tr class="hl"><td>Apertus-ParlTopics-8B</td><td class="n">0.46</td><td class="n">0.71</td><td class="n">0.70</td><td class="n">0.70</td></tr>
+      <tr><td>ours + the embedding classifier</td><td class="n">0.49</td><td class="n">0.76</td><td class="n">-</td><td class="n">-</td></tr>
+    </table>
+    <p class="small" style="margin-top:10px">Both supervised baselines: 20,000 labelled affairs for these 28 areas (XLM-RoBERTa: three epochs)</p>
+    <p style="margin-top:16px; font-family:'Excali',sans-serif; font-size:23px; color:var(--red)">Three times more labels win a little on known areas. On a new scheme without labels, ours reaches 0.70.</p>
+  </div>
+  <div class="foot">Parlamentsthemen · Briefing for DINAcon, 18 November 2026</div>
+  <span class="pageno">12</span>
+  <div class="notes">
+    <p>Average precision. Untrained Apertus 1.5 8B: digitalisation 0.43, Curia Vista 0.51, new scheme St. Gallen 0.57.</p>
+    <p>Legal XLM-RoBERTa trained on 20,000 affairs for these 28 areas for three epochs: 0.42 and 0.73, with no output for a new scheme. An embedding classifier trained on 20,000 affairs for those 28 areas: 0.47 and 0.74, 0.38 on St. Gallen and 0.39 on 30 new topics.</p>
+    <p>Apertus-ParlTopics-8B, 6,728 affairs, one epoch, one model for every scheme: 0.46 and 0.71, then 0.70 on St. Gallen and 0.70 on 30 new topics. Ours combined with the embedding classifier: 0.49 and 0.76.</p>
+    <p>Message: supervised classifiers win slightly where they have three times more labels for exactly those areas; ours is the only one that handles a new scheme or a new topic without labels.</p>
+  </div>
+</section>
+
+<section class="slide" data-mode="draw" id="s-data" data-layout="big-number">
+  <div class="shead" style="--tilt:-1.6deg"><h2>The data today</h2></div>
+  <div class="sbody row" style="gap:40px; align-items:center">
+    <div class="col" style="width:960px; gap:10px">
+      <span class="kbig" style="font-size:172px">323,441</span>
+      <p style="font-size:22px">affairs · 88 parliaments · 1950 to 2026</p>
+      <div class="row" style="gap:18px; margin-top:6px">
+        <div class="rb kpi" data-r="10" style="width:300px"><span class="num">9.4 million</span>decisions</div>
+        <div class="rb kpi" data-r="10" style="width:300px"><span class="num">477,370</span>are yes</div>
+      </div>
+      <div class="row" style="gap:12px; margin-top:8px">
+        <span class="rb chip" data-r="8">7 + 22 topics</span>
+        <span class="rb chip" data-r="8">28 Curia Vista</span>
+        <span class="rb chip" data-r="8">9 St. Gallen</span>
+      </div>
+      <p class="small" style="margin-top:6px">4,440 new · 9,423 re-checked, 15 and 16 November</p>
+    </div>
+    <img src="img/ill_archive.png" alt="" style="height:540px">
+  </div>
+  <div class="foot">Parlamentsthemen · Briefing for DINAcon, 18 November 2026</div>
+  <span class="pageno">13</span>
+  <div class="notes">
+    <p>323,441 Swiss affairs from 88 parliaments, 1950 to 2026, fetched and scored up to 16 November 2026. Liechtenstein's 4,419 affairs are left out. The model produced 9.4 million topic decisions, of which 477,370 are yes.</p>
+    <p>The 7 ad-hoc topics and the 22 APS topics cover all 323,441 affairs. The 28 Curia Vista areas cover 2,751 federal affairs and the 9 St. Gallen categories cover 105.</p>
+    <p>On 15 and 16 November, 4,440 new affairs were scored and 9,423 changed texts re-checked.</p>
+  </div>
+</section>
+
+<section class="slide" data-mode="draw" id="s-runs" data-layout="split-compare">
+  <div class="shead" style="--tilt:-1.3deg"><h2>Two ways the service runs</h2></div>
+  <div class="sbody">
+    <img src="img/ill_machines.png" alt="" style="width:1000px; display:block; margin:0 auto">
+    <div class="row" style="width:1300px; margin:4px auto 0; gap:70px; align-items:flex-start">
+      <div class="col" style="width:600px">
+        <p class="flab" style="font-size:28px">Full service</p>
+        <div class="li"><span class="tk"></span><span class="tx">GPU and Postgres</span></div>
+        <div class="li"><span class="tk"></span><span class="tx">live decisions, reports, nightly job</span></div>
+      </div>
+      <div class="col" style="width:600px">
+        <p class="flab" style="font-size:28px">Public version</p>
+        <div class="li"><span class="tk"></span><span class="tx">Cloudflare, no GPU</span></div>
+        <div class="li"><span class="tk"></span><span class="tx">stored decisions only</span></div>
+        <div class="li"><span class="xx"></span><span class="tx" style="color:#868e96">explanations, reports, review</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="foot">Parlamentsthemen · Briefing for DINAcon, 18 November 2026</div>
+  <span class="pageno">14</span>
+  <div class="notes">
+    <p>Full service: Docker Compose with PostgreSQL plus pgvector and a FastAPI app that serves the search page. It computes live decisions for unscored affairs from Apertus-ParlTopics-8B on a GPU. It adds Warum explanations (quoted passage and reason) from Apertus 1.5 8B. Topic reports, a review mode, read-aloud and a nightly update job complete it.</p>
+    <p>Public version: Cloudflare, no GPU, read-only and stored decisions only. Explanations, reports, review and read-aloud are switched off there.</p>
+  </div>
+</section>
+
+<section class="slide" data-mode="draw" id="s-arch" data-layout="whiteboard-diagram">
+  <div class="shead" style="--tilt:-1.2deg"><h2>Architecture of the public version</h2></div>
+  <svg class="wires" viewBox="0 0 1600 900" aria-hidden="true">
+    <defs>
+      <marker id="ah" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto">
+        <path d="M 1 1 L 11 6 L 1 11" fill="none" stroke="#1e1e1e" stroke-width="1.6"></path>
+      </marker>
+    </defs>
+    <path d="M 276 504 L 332 504" fill="none" stroke="#1e1e1e" stroke-width="1.9" marker-end="url(#ah)"></path>
+    <path d="M 594 466 C 660 466, 668 300, 732 276" fill="none" stroke="#1e1e1e" stroke-width="1.9" marker-end="url(#ah)"></path>
+    <path d="M 594 502 C 668 502, 682 478, 732 475" fill="none" stroke="#1e1e1e" stroke-width="1.9" marker-end="url(#ah)"></path>
+    <path d="M 594 542 C 668 542, 678 638, 732 660" fill="none" stroke="#1e1e1e" stroke-width="1.9" marker-end="url(#ah)"></path>
+  </svg>
+  <div class="rb node dia" data-fill="#e9ecef" data-fs="solid" data-r="12" style="left:70px; top:452px; width:202px; height:104px">
+    <span class="nm">Visitor</span><span>browser</span>
+  </div>
+  <div class="rb node dia" data-fill="#d0bfff" data-fs="solid" data-r="12" style="left:340px; top:430px; width:252px; height:150px">
+    <img src="img/logo_cloudflare.png" alt="Cloudflare" style="height:20px; margin-bottom:9px">
+    <span class="nm">Cloudflare Worker</span>
+    <span>static page, /api</span>
+  </div>
+  <div class="rb node dia" data-fill="#a5d8ff" data-fs="solid" data-r="12" style="left:738px; top:196px; width:382px; height:160px">
+    <span class="nm">Query encoder</span>
+    <span>CPU, 1 vCPU, 3 GiB</span>
+    <span>1,024 numbers, 10 min</span>
+  </div>
+  <div class="rb node dia" data-fill="#b2f2bb" data-fs="solid" data-r="12" style="left:738px; top:405px; width:382px; height:140px">
+    <img src="img/logo_cloudflare.png" alt="Cloudflare" style="height:20px; margin-bottom:7px">
+    <span class="nm">D1 database</span>
+    <span>affairs, titles, yes decisions</span>
+  </div>
+  <div class="rb node dia" data-fill="#ffec99" data-fs="solid" data-r="12" style="left:738px; top:588px; width:382px; height:160px">
+    <img src="img/logo_zilliz.svg" alt="Zilliz" style="height:28px; margin-bottom:6px">
+    <span class="nm">Zilliz Cloud</span>
+    <span>323,441 vectors</span>
+    <span>level, year, topics</span>
+  </div>
+  <div class="abs" style="left:1190px; top:470px; width:280px; padding-left:16px; border-left:4px solid #d0bfff">
+    <p class="hand" style="font-size:23px; color:var(--red)">Read-only</p>
+    <p style="font-size:17px">no new scoring</p>
+  </div>
+  <div class="rb node dia" data-fill="#f1f3f5" data-fs="solid" data-r="10" style="left:70px; top:784px; width:1460px; height:54px; align-items:flex-start; text-align:left; padding:15px 22px">
+    <span style="font-size:16px">Prepared once: PostgreSQL export, vectors, English titles.</span>
+  </div>
+  <div class="foot">Parlamentsthemen · Briefing for DINAcon, 18 November 2026</div>
+  <span class="pageno">15</span>
+  <div class="notes">
+    <p>The Worker serves the static search page and a read-only API under /api with rate limits.</p>
+    <p>Query encoder: one small container running harrier-oss-v1-0.6b on CPU, 1 vCPU and 3 GiB, turns the search text into 1,024 numbers and sleeps after 10 idle minutes.</p>
+    <p>D1 is Cloudflare's SQLite: affairs, text excerpts, English titles and the yes topic decisions. Zilliz Cloud holds the 323,441 search vectors with level, parliament, year and topics as filter fields.</p>
+  </div>
+</section>
+
+<section class="slide" data-mode="draw" id="s-search" data-layout="timeline-path">
+  <div class="shead" style="--tilt:-1.4deg"><h2>What happens on one search</h2></div>
+  <div class="sbody row" style="gap:36px; align-items:center">
+    <img src="img/ill_search.png" alt="" style="width:850px">
+    <div class="col" style="width:580px">
+      <div class="stn"><span class="badge" style="background:#7048e8">1</span><span>query</span></div>
+      <div class="stn"><span class="badge" style="background:#f08c00">2</span><span>cache</span></div>
+      <div class="stn"><span class="badge" style="background:#e64980">3</span><span>vector, 0.35 s</span></div>
+      <div class="stn"><span class="badge" style="background:#15aabf">4</span><span>100 affairs</span></div>
+      <div class="stn"><span class="badge" style="background:#2f9e44">5</span><span>titles, boost</span></div>
+      <div class="stn"><span class="badge" style="background:#7048e8">6</span><span>20 results</span></div>
+      <div class="row" style="margin-top:14px; gap:10px">
+        <span class="rb pill" data-fill="#e9ecef" data-r="8">10 min cache</span>
+        <span class="rb pill" data-fill="#e9ecef" data-r="8">0.645 cut</span>
+      </div>
+    </div>
+  </div>
+  <div class="foot">Parlamentsthemen · Briefing for DINAcon, 18 November 2026</div>
+  <span class="pageno">16</span>
+  <div class="notes">
+    <p>1. The visitor types housing shortage. 2. The Worker looks the query up in a cache of earlier query vectors. 3. If the query is new, the encoder turns it into a vector, about 0.35 s when warm. 4. Zilliz Cloud returns the 100 closest affairs, already filtered by topic, level, parliament and years.</p>
+    <p>5. D1 adds titles, topics and texts; titles that contain all query words get a small boost. 6. The page shows 20 results and an overview of the 100 best matches by parliament and outcome.</p>
+    <p>Answers are cached at the edge for 10 minutes. A plain search whose best match is weak shows a no close matches note; the cut is cosine similarity below 0.645.</p>
+  </div>
+</section>
+
+<section class="slide" data-mode="draw" id="s-lang" data-layout="two-column">
+  <div class="shead" style="--tilt:-1.5deg"><h2>English and Romansh with Apertus</h2></div>
+  <div class="sbody row" style="gap:40px; align-items:center">
+    <div class="col" style="width:720px; gap:8px">
+      <div class="lrow"><span class="kbig" style="font-size:56px">323,441</span><span class="klab">titles</span></div>
+      <div class="lrow"><span class="kbig" style="font-size:56px">322,305</span><span class="klab">English</span></div>
+      <div class="lrow"><span class="kbig" style="font-size:56px">230</span><span class="klab">Romansh names</span></div>
+      <div class="lrow"><span class="kbig" style="font-size:56px">5</span><span class="klab">languages</span></div>
+      <div class="row" style="gap:8px; margin-top:4px">
+        <span class="rb pill" data-fill="#e9ecef" data-r="8">DE</span>
+        <span class="rb pill" data-fill="#e9ecef" data-r="8">FR</span>
+        <span class="rb pill" data-fill="#e9ecef" data-r="8">IT</span>
+        <span class="rb pill" data-fill="#e9ecef" data-r="8">RM</span>
+        <span class="rb pill" data-fill="#e9ecef" data-r="8">EN</span>
+      </div>
+      <p class="small" style="margin-top:4px">170 titles per second, one A100</p>
+    </div>
+    <img src="img/ill_globe.png" alt="" style="height:500px">
+  </div>
+  <div class="foot">Parlamentsthemen · Briefing for DINAcon, 18 November 2026</div>
+  <span class="pageno">17</span>
+  <div class="notes">
+    <p>All titles were translated into English once by Apertus 1.5 8B on the University of Bern's UBELIX cluster, with one A100 at about 170 titles per second. 322,305 of 323,441 titles have an English version.</p>
+    <p>Outputs that repeated the instruction or belonged to number-only titles were dropped; those keep the original title. Apertus also translated 230 Romansh topic names, the Romansh outcome words and the nine St. Gallen categories into French and Italian.</p>
+    <p>Interface languages: German, French, Italian, Romansh and English. Search works in any of them; a query in one language finds affairs in all others.</p>
+  </div>
+</section>
+
+<section class="slide" data-mode="draw" id="s-test" data-layout="big-number">
+  <div class="shead" style="--tilt:-1.4deg"><h2>How we tested the public site</h2></div>
+  <div class="sbody row" style="gap:36px; align-items:center">
+    <img src="img/ill_review.png" alt="" style="width:720px">
+    <div class="col" style="width:700px; gap:6px">
+      <div class="row" style="gap:26px; align-items:flex-end">
+        <div class="tstat"><span class="kbig" style="font-size:78px">75%</span><span class="klab">national languages</span></div>
+        <div class="tstat"><span class="kbig" style="font-size:78px">76%</span><span class="klab">English queries</span></div>
+        <div class="tstat"><span class="kbig" style="font-size:78px">94%</span><span class="klab">topic lists</span></div>
+      </div>
+      <p style="font-size:21px; margin-top:8px">84% to 96% of top three relevant</p>
+      <p style="font-size:21px">93% to 97% same top ten</p>
+      <p class="small grey" style="margin-top:6px">16 sessions · 4 bugs fixed · 98 lists</p>
+    </div>
+  </div>
+  <div class="foot">Parlamentsthemen · Briefing for DINAcon, 18 November 2026</div>
+  <span class="pageno">18</span>
+  <div class="notes">
+    <p>Automated relevance check with a separate language model as judge: 98 result lists with ten results each (73 queries, 25 topic lists). Clearly relevant 75% for queries in the national languages, 76% for English queries and 94% for topic lists. Between 84% and 96% of the top three results were clearly relevant.</p>
+    <p>Search results matched the full service: 93% to 97% of the top ten were identical.</p>
+    <p>Two rounds of eight browser sessions used the live page as different visitors: journalist, French analyst, Ticino user, English conference visitor, Romansh speaker, DVS monitoring, developer and QA tester. The four bugs they found are fixed.</p>
+  </div>
+</section>
+
+<section class="slide" data-mode="draw" id="s-links" data-layout="closing">
+  <div class="shead" style="--tilt:-1.3deg"><h2>Links and contact</h2></div>
+  <div class="sbody row" style="gap:34px; align-items:flex-start; width:1460px">
+    <div class="col" style="width:1000px">
+      <div class="linkrow"><span class="lslot"></span><span class="lab">Live</span><span class="url">https://parlamentsthemen.prakasharyan.dev</span></div>
+      <div class="linkrow"><span class="lslot"><img src="img/logo_github.svg" alt="GitHub"></span><span class="lab">Code</span><span class="url">https://github.com/prakash-aryan/parlamentsthemen</span></div>
+      <div class="linkrow"><span class="lslot"><img src="img/logo_huggingface.svg" alt="Hugging Face"></span><span class="lab">Model</span><span class="url">https://huggingface.co/merabro/Apertus-ParlTopics-8B</span></div>
+      <div class="linkrow"><span class="lslot"><img src="img/logo_openparldata.png" alt="OpenParlData"></span><span class="lab">Data</span><span class="url">https://openparldata.ch</span></div>
+      <div class="linkrow"><span class="lslot"></span><span class="lab">Contact</span><span class="who">Prakash Aryan</span></div>
+    </div>
+    <div class="qrbox">
+      <div class="qrpad"><img src="qr/qr_parlamentsthemen.svg" alt="QR code to the live site" style="width:236px; height:236px; display:block"></div>
+      <p class="qrcap">Scan to open the live site</p>
+    </div>
+  </div>
+  <div class="row" style="margin-top:26px; gap:22px; align-items:center; width:1460px">
+    <img src="img/ico_link.png" alt="" style="height:84px">
+    <p class="small grey">Calculations were performed on UBELIX (https://www.id.unibe.ch/hpc), the HPC cluster at the University of Bern. <span class="unichip"><img src="img/logo_unibe.svg" alt="University of Bern" style="height:30px"></span></p>
+  </div>
+  <span class="pageno">19</span>
+  <div class="notes">
+    <p>Live: https://parlamentsthemen.prakasharyan.dev. Code: https://github.com/prakash-aryan/parlamentsthemen. Model: https://huggingface.co/merabro/Apertus-ParlTopics-8B. Data: https://openparldata.ch. Contact: Prakash Aryan.</p>
+    <p>Credit: calculations were performed on UBELIX (https://www.id.unibe.ch/hpc), the HPC cluster at the University of Bern.</p>
+  </div>
+</section>
+
+</div>
+<script src="vendor/rough.js"></script>
+<script>
+const NS = "http://www.w3.org/2000/svg";
+const INK = "#1e1e1e";
+const P = new URLSearchParams(location.search);
+const PRINT = P.has("print");
+const stage = document.getElementById("stage");
+const slides = [...document.querySelectorAll(".slide")];
+const S = slides.map(() => ({ items: [], counters: [], papers: [], flow: null }));
+let cur = -1, t0 = 0;
+let seed = 7;
+
+const REDUCED = !!(window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches);
+const FIGS = {};
+const MARKS = {};
+const ARROWS = {};
+const FLOWS = {};
+
+
+function fit() {
+  if (PRINT) return;
+  const s = Math.min(innerWidth / 1600, innerHeight / 900);
+  stage.style.transform = `scale(${s})`;
+  stage.style.left = `${(innerWidth - 1600 * s) / 2}px`;
+  stage.style.top = `${(innerHeight - 900 * s) / 2}px`;
+}
+
+function rel(el, slide) {
+  let x = 0, y = 0, e = el;
+  while (e && e !== slide) { x += e.offsetLeft; y += e.offsetTop; e = e.offsetParent; }
+  return { x, y, w: el.offsetWidth, h: el.offsetHeight };
+}
+
+function roundRectPath(x, y, w, h, r) {
+  r = Math.min(r, w / 2, h / 2);
+  return `M ${x + r} ${y} L ${x + w - r} ${y} Q ${x + w} ${y} ${x + w} ${y + r} L ${x + w} ${y + h - r} Q ${x + w} ${y + h} ${x + w - r} ${y + h} L ${x + r} ${y + h} Q ${x} ${y + h} ${x} ${y + h - r} L ${x} ${y + r} Q ${x} ${y} ${x + r} ${y} Z`;
+}
+
+function timeOf(el) {
+  const a = el.closest("[data-at]");
+  return a ? parseFloat(a.dataset.at) : 0;
+}
+
+function grp(svg, children) {
+  const g = document.createElementNS(NS, "g");
+  children.forEach(c => g.appendChild(c));
+  svg.appendChild(g);
+  return g;
+}
+
+function arrowHead(rc, x1, y1, x2, y2, o) {
+  const a = Math.atan2(y2 - y1, x2 - x1), L = 15, s = 0.45;
+  return [-s, s].map(d => rc.line(x2, y2, x2 - L * Math.cos(a + d), y2 - L * Math.sin(a + d), o));
+}
+
+function paperIcon(rc, type) {
+  const g = document.createElementNS(NS, "g");
+  if (type === "go" || type === "next") {
+    g.appendChild(rc.circle(0, 0, 13, { fill: type === "go" ? "#40c057" : "#fab005", fillStyle: "solid", stroke: INK, strokeWidth: 1.1, roughness: 0.6, seed: seed++ }));
+    return g;
+  }
+  const fill = { text: "#ffffff", card: "#ffec99", vec: "#a5d8ff", score: "#b2f2bb", reason: "#d0bfff", report: "#ffc9c9" }[type];
+  g.appendChild(rc.rectangle(-9, -11, 18, 22, { fill, fillStyle: "solid", stroke: INK, strokeWidth: 1.2, roughness: 0.8, seed: seed++ }));
+  for (let i = 0; i < 3; i++) g.appendChild(rc.line(-5, -5 + i * 5, 5, -5 + i * 5, { stroke: INK, strokeWidth: 0.9, roughness: 0.4, seed: seed++ }));
+  return g;
+}
+
+function stickFigure(rc, x, y) {
+  const o = () => ({ stroke: INK, strokeWidth: 1.8, roughness: 1, seed: seed++ });
+  return [rc.circle(x, y + 12, 24, o()), rc.line(x, y + 24, x, y + 62, o()), rc.line(x, y + 36, x - 16, y + 52, o()),
+    rc.line(x, y + 36, x + 16, y + 50, o()), rc.line(x, y + 62, x - 13, y + 88, o()), rc.line(x, y + 62, x + 13, y + 88, o())];
+}
+
+function addGroup(st, slide, g, t, kind) {
+  st.items.push({ t, g, kind: kind || (slide.dataset.mode === "draw" ? "draw" : (t > 0 ? "fade" : "none")) });
+}
+
+function edgePath(e, slide) {
+  if (e.d) return e.d;
+  const a = rel(document.getElementById(e.from), slide), b = rel(document.getElementById(e.to), slide);
+  if (e.loop) {
+    const y = Math.max(a.y + a.h, b.y + b.h) + 46;
+    const x1 = a.x + a.w / 2, x2 = b.x + b.w / 2;
+    return `M ${x1} ${a.y + a.h + 4} L ${x1} ${y} L ${x2} ${y} L ${x2} ${b.y + b.h + 6}`;
+  }
+  const y1 = a.y + a.h / 2, y2 = b.y + b.h / 2;
+  return `M ${a.x + a.w + 6} ${y1} C ${(a.x + a.w + b.x) / 2} ${y1}, ${(a.x + a.w + b.x) / 2} ${y2}, ${b.x - 6} ${y2}`;
+}
+
+function buildSlide(slide, i) {
+  const st = S[i];
+  const svg = document.createElementNS(NS, "svg");
+  svg.setAttribute("class", "deco");
+  svg.setAttribute("viewBox", "0 0 1600 900");
+  slide.insertBefore(svg, slide.firstChild);
+  const rc = rough.svg(svg);
+  const base = { stroke: INK, strokeWidth: 1.6, roughness: 1.1, bowing: 1 };
+
+  slide.querySelectorAll(".rb").forEach(el => {
+    const r = rel(el, slide);
+    const small = el.classList.contains("pill");
+    const o = Object.assign({}, base, { seed: seed++ }, small ? { strokeWidth: 1.2, roughness: 0.8 } : {});
+    if (el.dataset.fill) {
+      o.fill = el.dataset.fill;
+      o.fillStyle = el.dataset.fs || "solid";
+      o.hachureGap = 7; o.fillWeight = 1.2; o.hachureAngle = -41;
+    }
+    if (el.dataset.dash) { o.strokeLineDash = [10, 8]; o.stroke = "#868e96"; }
+    const g = grp(svg, [rc.path(roundRectPath(r.x, r.y, r.w, r.h, +(el.dataset.r || 8)), o)]);
+    const isBar = el.classList.contains("bar");
+    addGroup(st, slide, g, timeOf(el), isBar && slide.dataset.mode === "draw" ? "grow" : (el.dataset.dash || small ? "fade" : undefined));
+  });
+
+  slide.querySelectorAll(".ul").forEach(el => {
+    const r = rel(el, slide);
+    const y = r.y + r.h - 2;
+    const g = grp(svg, [rc.line(r.x - 4, y, r.x + r.w + 4, y + 2, { stroke: "#e03131", strokeWidth: 2.4, roughness: 1.4, seed: seed++ })]);
+    addGroup(st, slide, g, 0.15, "draw");
+  });
+
+  slide.querySelectorAll("[data-at]").forEach(el => st.items.push({ t: parseFloat(el.dataset.at), el }));
+  slide.querySelectorAll(".count").forEach(el => st.counters.push({ el, t: timeOf(el) }));
+
+  if (FLOWS[slide.id]) buildFlow(slide, svg, rc, st, FLOWS[slide.id]);
+  (FIGS[slide.id] || []).forEach(f => addGroup(st, slide, grp(svg, stickFigure(rc, f.x, f.y)), f.t, "draw"));
+  (MARKS[slide.id] || []).forEach(m => {
+    const r = rel(document.getElementById(m.id), slide);
+    const x = r.x + r.w + 26, y = r.y + r.h / 2;
+    const o = { stroke: m.type === "tick" ? "#2b8a3e" : "#e03131", strokeWidth: 4, roughness: 1.2, seed: seed++ };
+    const parts = m.type === "tick"
+      ? [rc.line(x - 14, y, x - 4, y + 12, o), rc.line(x - 4, y + 12, x + 18, y - 16, o)]
+      : [rc.line(x - 13, y - 13, x + 13, y + 13, o), rc.line(x + 13, y - 13, x - 13, y + 13, o)];
+    addGroup(st, slide, grp(svg, parts), m.t, "draw");
+  });
+  st.items.forEach(it => { if (it.g) prepare(it); });
+}
+
+function buildFlow(slide, svg, rc, st, cfg) {
+  st.flow = cfg;
+  const layer = document.createElementNS(NS, "g");
+  cfg.edges.forEach(e => {
+    const d = edgePath(e, slide);
+    const ghost = document.createElementNS(NS, "path");
+    ghost.setAttribute("d", d);
+    ghost.setAttribute("fill", "none");
+    ghost.setAttribute("stroke", "none");
+    svg.appendChild(ghost);
+    const L = ghost.getTotalLength();
+    const a = ghost.getPointAtLength(Math.max(0, L - 14)), b = ghost.getPointAtLength(L);
+    const o = { stroke: e.color || INK, strokeWidth: 2.1, roughness: 0.9, bowing: 0.6, seed: seed++ };
+    const lineOpts = Object.assign({}, o, e.dash ? { strokeLineDash: [9, 7] } : {});
+    const g = grp(svg, [rc.path(d, lineOpts), ...arrowHead(rc, a.x, a.y, b.x, b.y, o)]);
+    addGroup(st, slide, g, e.t, e.dash ? "fade" : "draw");
+    const n = Math.max(1, Math.round(L / 150));
+    for (let k = 0; k < n; k++) {
+      const p = paperIcon(rc, e.type);
+      p.style.opacity = 0;
+      layer.appendChild(p);
+      st.papers.push({ g: p, ghost, L, k, n });
+    }
+  });
+  svg.appendChild(layer);
+}
+
+function movePapers(st, el) {
+  const cfg = st.flow;
+  for (const p of st.papers) {
+    if (el < cfg.start) { p.g.style.opacity = 0; continue; }
+    const u = (((el - cfg.start) * cfg.speed / p.L + p.k / p.n) % 1 + 1) % 1;
+    const pt = p.ghost.getPointAtLength(u * p.L);
+    p.g.setAttribute("transform", `translate(${pt.x.toFixed(1)},${pt.y.toFixed(1)})`);
+    const fadeOut = cfg.stop ? Math.max(0, Math.min(1, cfg.stop + 1 - el)) : 1;
+    p.g.style.opacity = Math.max(0, Math.min(1, u / 0.12, (1 - u) / 0.12, (el - cfg.start) / 0.8)) * fadeOut;
+  }
+}
+
+function prepare(it) {
+  const g = it.g;
+  g.classList.remove("on");
+  if (it.kind === "fade") g.classList.add("fade");
+  if (it.kind === "grow") g.classList.add("grow");
+  if (it.kind !== "draw") return;
+  g.querySelectorAll("path").forEach(p => {
+    const fill = p.getAttribute("fill");
+    p.style.transition = "none";
+    if (fill && fill !== "none") { p.style.opacity = 0; return; }
+    if (p.getAttribute("stroke-dasharray")) { p.style.opacity = 0; return; }
+    const L = p.getTotalLength();
+    p.dataset.len = L;
+    p.style.strokeDasharray = `${L} ${L}`;
+    p.style.strokeDashoffset = L;
+  });
+}
+
+function showItem(it, instant) {
+  it.shown = true;
+  if (it.el) { it.el.classList.add("on"); return; }
+  const g = it.g;
+  if (it.kind !== "draw") { g.classList.add("on"); return; }
+  g.querySelectorAll("path").forEach(p => {
+    if (instant) { p.style.transition = "none"; p.style.opacity = 1; p.style.strokeDashoffset = 0; return; }
+    if (p.style.opacity === "0") { p.style.transition = "opacity .7s ease"; p.style.opacity = 1; return; }
+    const L = +p.dataset.len || 0;
+    const dur = Math.min(1.3, Math.max(0.35, L / 900));
+    p.style.transition = `stroke-dashoffset ${dur}s ease-in-out`;
+    p.style.strokeDashoffset = 0;
+  });
+}
+
+function fmt(v, dec) { return v.toLocaleString("en-US", { minimumFractionDigits: dec, maximumFractionDigits: dec }); }
+
+function runCounter(c, instant) {
+  c.shown = true;
+  const to = parseFloat(c.el.dataset.to), dec = +(c.el.dataset.dec || 0);
+  const tok = c.tok = {};
+  if (instant) { c.el.textContent = fmt(to, dec); return; }
+  const s0 = performance.now(), dur = 1.6;
+  const step = now => {
+    if (c.tok !== tok) return;
+    const u = Math.min(1, (now - s0) / 1000 / dur);
+    c.el.textContent = fmt(to * (1 - Math.pow(1 - u, 3)), dec);
+    if (u < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+
+function resetSlide(i) {
+  const st = S[i];
+  slides[i].classList.add("instant");
+  st.items.forEach(it => { it.shown = false; if (it.el) it.el.classList.remove("on"); else prepare(it); });
+  st.counters.forEach(c => { c.shown = false; c.tok = null; c.el.textContent = fmt(0, +(c.el.dataset.dec || 0)); });
+  void slides[i].offsetWidth;
+  slides[i].classList.remove("instant");
+}
+
+function finishSlide(i) {
+  const st = S[i];
+  slides[i].classList.add("instant");
+  st.items.forEach(it => { if (!it.shown) showItem(it, true); });
+  st.counters.forEach(c => runCounter(c, true));
+  void slides[i].offsetWidth;
+  slides[i].classList.remove("instant");
+  if (i === cur) t0 = Math.min(t0, performance.now() - 1000 * (st.flow ? st.flow.start : 0));
+}
+
+function pending(i) { return S[i].items.some(it => !it.shown) || S[i].counters.some(c => !c.shown); }
+
+function enterHooks(i) {
+  slides[i].querySelectorAll("video.sv").forEach(v => {
+    if (REDUCED) return;
+    try { v.currentTime = 0; } catch (e) {}
+    v.play().catch(() => {});
+  });
+}
+function leaveHooks(i) {
+  if (i < 0) return;
+  slides[i].querySelectorAll("video.sv").forEach(v => v.pause());
+}
+
+function go(i, instant = false) {
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (cur >= 0) { leaveHooks(cur); slides[cur].classList.remove("active"); }
+  cur = i;
+  resetSlide(i);
+  slides[i].classList.add("active");
+  t0 = performance.now();
+  finishSlide(i);
+  enterHooks(i);
+  history.replaceState(null, "", `#${i + 1}`);
+}
+
+function next() {
+  if (cur < slides.length - 1) go(cur + 1);
+}
+
+function frame(now) {
+  if (cur >= 0) {
+    const el = (now - t0) / 1000, st = S[cur];
+    for (const it of st.items) if (!it.shown && el >= it.t) showItem(it, false);
+    for (const c of st.counters) if (!c.shown && el >= c.t) runCounter(c, false);
+    if (st.flow) movePapers(st, REDUCED ? st.flow.start + 2.3 : el);
+  }
+  requestAnimationFrame(frame);
+}
+
+addEventListener("keydown", e => {
+  if (["ArrowRight", "PageDown", " ", "Enter", "ArrowDown"].includes(e.key)) { e.preventDefault(); next(); }
+  else if (["ArrowLeft", "PageUp", "Backspace", "ArrowUp"].includes(e.key)) { e.preventDefault(); if (cur > 0) go(cur - 1); }
+  else if (e.key === "Home") go(0);
+  else if (e.key === "End") go(slides.length - 1, true);
+  else if (e.key === "r" || e.key === "R") go(cur);
+  else if (e.key === "f" || e.key === "F") {
+    if (document.fullscreenElement) document.exitFullscreen(); else document.documentElement.requestFullscreen();
+  }
+});
+addEventListener("click", e => { if (!e.target.closest("a")) next(); });
+addEventListener("resize", fit);
+
+// Print mode shows each video's poster frame instead of the video.
+if (PRINT) document.querySelectorAll("video.sv").forEach(v => {
+  const img = document.createElement("img");
+  img.src = v.getAttribute("poster");
+  img.setAttribute("style", v.getAttribute("style") || "");
+  v.replaceWith(img);
+});
+
+Promise.all([
+  document.fonts.load('20px "Excali"'), document.fonts.load('20px "Comic"'), document.fonts.ready,
+  ...Array.from(document.images).map(img => img.complete ? Promise.resolve() : new Promise(res => { img.onload = img.onerror = res; })),
+]).then(() => {
+  if (PRINT) document.body.classList.add("print");
+  slides.forEach((s, i) => buildSlide(s, i));
+  if (PRINT) {
+    slides.forEach((s, i) => finishSlide(i));
+    S.forEach(st => { if (st.flow) movePapers(st, st.flow.start + 2.3); });
+    document.body.setAttribute("data-ready", "1");
+    return;
+  }
+  fit();
+  const h = parseInt((location.hash || "#1").slice(1), 10);
+  const start = parseInt(P.get("slide") || h || 1, 10) - 1;
+  go(isNaN(start) ? 0 : start);
+  requestAnimationFrame(frame);
+  document.body.setAttribute("data-ready", "1");
+});
+</script>
+<script>
+(function () {
+  if (typeof PRINT !== "undefined" && PRINT) return;
+  var stage = document.getElementById("stage");
+  if (!stage) return;
+  var panel = document.createElement("div");
+  panel.id = "notespanel";
+  panel.innerHTML = '<h3>Speaker notes</h3><div class="npbody"></div>';
+  document.body.appendChild(panel);
+  var body = panel.querySelector(".npbody");
+  var shown = false;
+  function render() {
+    var s = document.querySelector(".slide.active");
+    var n = s && s.querySelector(".notes");
+    body.innerHTML = n ? n.innerHTML : "<p>No notes on this slide.</p>";
+  }
+  function toggle() {
+    shown = !shown;
+    panel.classList.toggle("on", shown);
+    if (shown) render();
+  }
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "n" || e.key === "N") { e.preventDefault(); toggle(); }
+  });
+  var hint = document.createElement("div");
+  hint.id = "noteshint";
+  hint.textContent = "N: notes";
+  document.body.appendChild(hint);
+  new MutationObserver(render).observe(stage, { subtree: true, attributes: true, attributeFilter: ["class"] });
+})();
+</script>
+</body>
+</html>
