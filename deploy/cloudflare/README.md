@@ -18,7 +18,7 @@ This folder holds the version that runs at https://parlamentsthemen.prakasharyan
 4. Export and import the data: `uv run python deploy/cloudflare/scripts/export_d1.py` writes SQL files to `runs/d1`; `deploy/cloudflare/scripts/import_d1.sh runs/d1` loads them and can be restarted. `ZILLIZ_URL=... ZILLIZ_TOKEN=... uv run python deploy/cloudflare/scripts/upload_vectors.py` uploads the vectors.
 5. Deploy: `cd deploy/cloudflare/worker && npm install && npx wrangler secret put ZILLIZ_TOKEN && npx wrangler deploy`.
 
-`src/data/*.json` are snapshots of `GET /topics` and `GET /bodies` from the full service and the legacy topic map; refresh them when cards change.
+The data on the public site is a snapshot from 16 November 2026; rerun steps 4 and 5 to refresh it. `src/data/*.json` are snapshots of `GET /topics` and `GET /bodies` from the full service and the legacy topic map; refresh them when cards change.
 
 ## English titles
 

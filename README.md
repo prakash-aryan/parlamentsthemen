@@ -4,6 +4,8 @@ OpenParlData.ch collects more than 300,000 affairs from Swiss federal, cantonal 
 
 **Try it:** https://parlamentsthemen.prakasharyan.dev is a public read-only version with all 323,441 affairs from 88 parliaments. It accepts searches in English and the four national languages and shows English titles ([deploy/cloudflare](deploy/cloudflare/README.md)).
 
+**Data:** all 323,441 Swiss affairs in OpenParlData from 1950 to 2026, fetched and scored up to 16 November 2026; Liechtenstein's 4,419 affairs are left out. The public site is a snapshot of that date and is not yet refreshed automatically.
+
 | Resource | URL |
 |---|---|
 | Apertus v1.5 8B (base) | [huggingface.co/swiss-ai/Apertus-v1.5-8B](https://huggingface.co/swiss-ai/Apertus-v1.5-8B) |
