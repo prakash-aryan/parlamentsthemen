@@ -108,7 +108,8 @@ Without Docker: `uv sync --extra db --extra embed`, `cd web && npm ci && npm run
 - The decision-model training and serving code is adapted from Kev (github.com/jaredpalmer/kev, Apache-2.0), an open implementation of the idea behind TypeSafe's System One models.
 - Data: OpenParlData.ch (open government data); Curia Vista data from the Parliamentary Services of the Federal Assembly.
 - Models: Apertus 1.5 by the Swiss AI Initiative (Apache-2.0, gated download with an acceptable use policy); harrier-oss-v1-0.6b (MIT).
-- Compute: CSCS inference via the Keera gateway; our own GPU server (four RTX A6000); the UBELIX cluster of the University of Bern.
+- Compute: CSCS inference via the Keera gateway; our own GPU server (four RTX A6000).
+- Calculations were performed on UBELIX (https://www.id.unibe.ch/hpc), the HPC cluster at the University of Bern: scoring new and changed affairs with Apertus-ParlTopics-8B, and translating titles and topic names with Apertus 1.5 8B.
 
 ## License
 
