@@ -1158,13 +1158,12 @@ table.tech tr.hl td { background: #ede9fe; }
       <div class="srow"><span class="sname">APS</span><span class="sv">0.63</span><span class="sv2">0.62</span></div>
       <div class="srow"><span class="sname">2000 to 2023</span><span class="sv">0.61</span><span class="sv2">0.59</span></div>
       <p style="font-size:24px; color:var(--red); font-family:'Excali',sans-serif; margin-top:8px">level, not better</p>
-      <p class="small" style="margin-top:4px">DE 0.71 · FR 0.70 · IT 0.70</p>
+      <p class="small" style="margin-top:4px">same affairs in DE · FR · IT: macro AP 0.71 · 0.70 · 0.70</p>
       <div class="rb card" data-r="10" style="margin-top:12px; padding:10px 14px">
-        <p class="small grey">digitalisation · DVS tags</p>
+        <p class="small grey">digitalisation · 30 affairs on the DVS list</p>
         <div class="row" style="gap:20px; margin-top:2px">
-          <span class="tiny"><b>1.00</b> precision</span>
-          <span class="tiny"><b>0.63</b> recall</span>
-          <span class="tiny"><b>0.97</b> lower cut</span>
+          <span class="tiny"><b>20 of 30</b> default threshold</span>
+          <span class="tiny"><b>29 of 30</b> monitoring threshold</span>
         </div>
       </div>
     </div>
@@ -1174,8 +1173,8 @@ table.tech tr.hl td { background: #ede9fe; }
   <span class="pageno">11</span>
   <div class="notes">
     <p>micro F1 on official labels: St. Gallen 0.71 against 0.70, Curia Vista 0.70 against 0.69, APS chapters 0.63 against 0.62. On 400 older federal affairs from 2000 to 2023, 0.61 against 0.59. The baseline column is Claude Opus 5.5, used only as a comparison.</p>
-    <p>Every difference lies inside the 95% interval, so the model is level with the baseline and not better. Quality is the same in German 0.71, French 0.70 and Italian 0.70.</p>
-    <p>Weak spot: against the DVS tags the model was right whenever it said yes (precision 1.00) but found 63% of the tagged affairs (recall 0.63). A lower monitoring threshold reaches recall 0.97 on affairs from 2024 to 2026.</p>
+    <p>Every difference lies inside the 95% interval, so the model is level with the baseline and not better. On the same 871 federal affairs in German, French and Italian, Curia Vista macro AP is 0.71, 0.70 and 0.70 (micro F1 0.69, 0.68 and 0.70), so the language of the text does not change the quality.</p>
+    <p>Digitalisation for DVS: at the default threshold the model finds 20 of the 30 affairs on the DVS list and 77% of the 855 PolitMonitor-tagged affairs from 2024 to 2026. The monitoring threshold, fitted on earlier affairs for 90% recall, finds 29 of the 30; on the test affairs it reaches recall 0.97 at precision 0.18, about 37 affairs per week to read (slide 9).</p>
   </div>
 </section>
 
